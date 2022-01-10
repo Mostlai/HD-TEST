@@ -2,39 +2,37 @@
 	{
 		"id": "bf",
 		"tags": "stress",
-		"name": "迷茫",
-		"desc": "你的思维完全混乱了",
+		"name": "befuddlement",
+		"desc": "Outright confusion in your studies",
 		"reverse": true,
 		"max": 10
 	},
 	{
 		"id": "unease",
-		"name": "不适",
-		"desc": "普遍的不适感",
+		"desc": "A general feeling of unwell",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10
 	},
 	{
 		"id": "weary",
-		"name": "疲倦",
-		"desc": "精神疲劳",
+		"name": "weariness",
+		"desc": "The fatigue of mental strain",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10
 	},
 	{
 		"id": "rage",
-		"name": "挫败",
-		"desc": "不断上升的扔书欲望",
+		"name": "frustration",
+		"desc": "Rising book-throwing urges",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10
 	},
 	{
 		"id": "madness",
-		"name": "疯狂",
-		"desc": "在神秘的影响下扭曲你的思想",
+		"desc": "Warping of your mind under magical influences",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10

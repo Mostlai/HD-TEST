@@ -1,42 +1,5 @@
 [
 	{
-		"id": "under_dreaam",
-		"name": "底层梦境",
-		"desc": "梦境的深处,实界的边缘,这里的时间流速更快,环境更危险",
-		"require": "evt_hq",
-		"title": "悟梦者",
-		"level": 1,
-		"length": 50,
-		"run": {
-			"back_dream": 0.1,
-			"hp": 0.9,
-			"stamina": 2,
-			"tili": 2,
-			"time": -0.8
-		},
-		"result": {
-			"snp_data": "2~7",
-			"zero_crystal": "2~7"
-		},
-		"boss": "dreamloot",
-		"spawns": [
-			[
-				"smz",
-				"smz"
-			],
-			[
-				"smz",
-				"smz",
-				"noshadow"
-			],
-			"balckwu",
-			[
-				"noshadow",
-				"balckwu"
-			]
-		]
-	},
-	{
 		"id": "sunnyfield",
 		"name": "Sunny Field",
 		"level": 1,
@@ -310,6 +273,98 @@
 		]
 	},
 	{
+		"id": "treffilwoods",
+		"name": "Treffil Woods edges",
+		"desc": "These enchanted woods are not particularly dangerous.",
+		"dist": 17,
+		"level": 4,
+		"length": 20,
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"herbs": "3~7",
+			"gems": "0~2"
+		},
+		"boss": {"20":[
+			"gobchief"
+		]},
+		"spawns": [
+			[
+				"goblin",
+				"goblin"
+			],
+			"gardengnome",
+			"wombat",
+			"slime",
+			"hobgoblin",
+			"ranger",
+			"elf",
+			"slinger"
+		],
+		"loot": {
+			"maxlevel": 4
+		}
+	},
+	{
+		"id": "underden",
+		"name": "Under Den",
+		"desc": "Proverbial den of thieves",
+		"require": "tier0",
+		"level": 5,
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"gold": "25~40"
+		},
+		"boss": "banditlord",
+		"spawns": [
+			"cutpurse",
+			"bandit",
+			[
+				"bat",
+				"bat",
+				"bat",
+				"bat"
+			],
+			"cutpurse",
+			"bandit",
+			"cutpurse"
+		]
+	},
+	{
+		"id": "veldranswreck",
+		"name": "Veldran's Wreck",
+		"desc": "Off the stormy cliffs of Arazor a mass of cracked spars marks the resting place of the largest ship ever sailed by man.",
+		"require": "g.waterlore.max>=10&&g.aragheights>0",
+		"level": 7,
+		"length": 75,
+		"bars": "breath",
+		"run": {
+			"stamina": 1
+		},
+		"effect": {
+			"breath": -2
+		},
+		"result": {
+			"gold": "50~75",
+			"watergem": "50%",
+			"gems": 10
+		},
+		"loot": {
+			"veldranearring": "5%"
+		},
+		"spawns": [
+			"eel",
+			"jellyfish",
+			"ghost",
+			"barracuda",
+			"piranha",
+			"electriceel"
+		]
+	},
+	{
 		"id": "aragheights",
 		"name": "Arag Heights",
 		"desc": "Barren mountains on the coast of Arazor.",
@@ -359,6 +414,79 @@
 			"skeleton",
 			"direrat"
 		]
+	},
+	{
+		"id": "sereditetemple",
+		"name": "Seredite Temple",
+		"desc": "Who they were or why they built this ruined temple in the seaside cliffs is a mystery lost to time.",
+		"level": 8,
+		"run": {
+			"stamina": 1.2
+		},
+		"result": {
+			"gold": "20~30",
+			"gems": "4~5"
+		},
+		"spawns": [
+			"naga",
+			[
+				"raven",
+				"raven",
+				"raven",
+				"raven"
+			],
+			"medusa",
+			[
+				"naga",
+				"naga"
+			],
+			"shriekingeel",
+			"naga",
+			"magicblade",
+			"evilpriest",
+			[
+				"eel",
+				"eel"
+			],
+			[
+				"crab",
+				"crab"
+			]
+		],
+		"flavor": "Would the ancient seredites appreciate the temple's new inhabitants?"
+	},
+	{
+		"id": "goblincamp",
+		"name": "Goblin Camp",
+		"start": {
+			"name": "Goblins, Goblins!",
+			"desc": "Rumors hint at a camp of goblins in the vicinity. As an aspiring wizard, convention dictates you test your mettle on their lives."
+		},
+		"desc": "The pesky creatures are everywhere.",
+		"require": "g.treffilwoods>0&&g.player.level>=4&&g.dist>=25",
+		"level": 4,
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"title": "Goblin Slayer",
+			"gold": "20~30"
+		},
+		"boss": "gobchief",
+		"spawns": [
+			[
+				"goblin",
+				"goblin"
+			],
+			"gobwarrior",
+			"gobwarrior",
+			"goblin",
+			"goblin",
+			"gobpriest"
+		],
+		"loot": {
+			"maxlevel": 3
+		}
 	},
 	{
 		"id": "orccamp",
@@ -528,6 +656,97 @@
 		]
 	},
 	{
+		"id": "mtgorborung",
+		"name": "Mount Gorborung",
+		"desc": "One of the most perilous mountains in the world. Many journey over its passes; none venture within.",
+		"level": 9,
+		"length": 50,
+		"run": {
+			"stamina": 2
+		},
+		"result": {
+			"title": "Mountaineer",
+			"watergem": "25%",
+			"airgem": "10%",
+			"gems": "3~5"
+		},
+		"spawns": [
+			"yeti",
+			"wolf",
+			"stonegolem",
+			"airelemental",
+			"icewalker",
+			"harpy",
+			"wolf",
+			"jazid",
+			"doppelganger",
+			"iceelemental",
+			"wight",
+			"wraith",
+			"bugbear",
+			"frixie",
+			"frixie",
+			"ogre",
+			"cavetroll",
+			"snowleopard"
+		]
+	},
+	{
+		"id": "greatbog",
+		"name": "The Great Bog",
+		"desc": "For hundreds of miles the great bog spreads across the dark center of Dhrune.",
+		"require": "g.player.dist>=200",
+		"level": 13,
+		"run": {
+			"stamina": 3
+		},
+		"length": 100,
+		"result": {
+			"title": "Fetid Pathfinder",
+			"gems": "3~5",
+			"gold": "100~200",
+			"bones": 10
+		},
+		"boss": "bogwitch",
+		"spawns": [
+			[
+				"direcrocodile",
+				"direcrocodile"
+			],
+			"ghost",
+			[
+				"leech",
+				"leech",
+				"leech",
+				"leech",
+				"leech"
+			],
+			"grimstalk",
+			"jazid",
+			"basilisk",
+			"stalker",
+			[
+				"corpse",
+				"corpse",
+				"corpse",
+				"corpse"
+			],
+			[
+				"eel",
+				"eel",
+				"eel"
+			],
+			"lesserwyrm",
+			"willowisp",
+			"direrat",
+			[
+				"piranha",
+				"piranha"
+			]
+		],
+		"flavor": "Also known as Barden's bog, no one can say exactly just who Barden was."
+	},
+	{
 		"id": "catacrypts",
 		"name": "The Catacrypts",
 		"desc": "Old Mirthemgnar dug its dungeons til they joined the hollows beneath the world. In terror they sealed them forever. Or so they tried.",
@@ -577,6 +796,225 @@
 			"earthelemental",
 			"airelemental",
 			"lightningelemental"
+		]
+	},
+	{
+		"id": "veldransstorehouse",
+		"name": "Veldran's Storehouse",
+		"desc": "Veldran never did manage to carve a kingdom from the wreck of Bodias' reign. But he did accrue a sizeable hoard.",
+		"level": 9,
+		"run": {
+			"stamina": 2
+		},
+		"length": 60,
+		"result": {
+			"gems": "3~5",
+			"gold": "80~150"
+		},
+		"spawns": [
+			[
+				"claygolem",
+				"claygolem",
+				"claygolem"
+			],
+			"hobgoblin",
+			"doppelganger",
+			"masterswordsman",
+			"irongolem",
+			"quasit",
+			[
+				"slime",
+				"slime",
+				"slime",
+				"slime"
+			],
+			[
+				"stonegolem",
+				"stonegolem"
+			],
+			"banditlord",
+			"magicmirror",
+			"woodgolem"
+		]
+	},
+	{
+		"id": "desillagrotto",
+		"name": "Desilla's Grotto",
+		"desc": "In all the world, the most enjoyable place to die.",
+		"require": "g.player.dist>=500",
+		"level": 15,
+		"run": {
+			"stamina": 2.5
+		},
+		"length": 75,
+		"result": {
+			"gems": "3~5",
+			"gold": "50~100",
+			"ichor": 1
+		},
+		"boss": "desillaconcubine",
+		"spawns": [
+			"masterswordsman",
+			[
+				"magicblade",
+				"magicblade"
+			],
+			[
+				"magicmirror",
+				"magicmirror"
+			],
+			"unicorn",
+			[
+				"pegasus",
+				"pegasus"
+			],
+			"quasit",
+			[
+				"stalker",
+				"willowisp"
+			],
+			[
+				"elf",
+				"elf",
+				"elf"
+			],
+			"incubus",
+			[
+				"imp",
+				"imp",
+				"imp"
+			],
+			"succubus"
+		],
+		"flavor": "Desilla was known as much for her entertainments as her ruthlessness."
+	},
+	{
+		"id": "charredkeep",
+		"name": "Charred Keep",
+		"desc": "Its smouldering ruins once more begin to burn.",
+		"level": 18,
+		"run": {
+			"stamina": 3
+		},
+		"length": 100,
+		"result": {
+			"title": "Lock Slayer",
+			"gold": "300~500",
+			"ichor": 3
+		},
+		"boss": {"100":[
+			"reddragon",
+			"karnivex",
+			"reddragon"
+		]},
+		"spawns": [
+			"mithrilgolem",
+			[
+				"bloodgolem",
+				"bloodgolem"
+			],
+			[
+				"magicmirror",
+				"magicmirror"
+			],
+			"maturereddragon",
+			[
+				"manticore",
+				"manticore"
+			],
+			"reddragon",
+			"demon",
+			"jazid",
+			[
+				"greendragon",
+				"greendragon"
+			],
+			"balrog",
+			"ancientvampire",
+			[
+				"masterswordsman",
+				"masterswordsman",
+				"masterswordsman"
+			]
+		],
+		"flavor": "Burned black by its own denizens"
+	},
+	{
+		"id": "belowgorborung",
+		"name": "Below Mt Gorborung",
+		"desc": "They say the roots of the mountain extend deeper than its heights.",
+		"level": 25,
+		"length": 100,
+		"require": "g.player.level>20&&g.mtgorborung>0",
+		"dist": 1200,
+		"run": {
+			"stamina": 3
+		},
+		"result": {
+			"title": "Lightless",
+			"earthgem": 5,
+			"gems": 10,
+			"tomes": 2
+		},
+		"boss": {
+			"50": "cthulhu",
+			"100": "gorborung"
+		},
+		"spawns": [
+			[
+				"stonegolem",
+				"stonegolem"
+			],
+			[
+				"magmaelemental",
+				"magmaelemental"
+			],
+			[
+				"earthelemental",
+				"earthelemental",
+				"earthelemental"
+			],
+			[
+				"dwarp",
+				"dwarp"
+			],
+			[
+				"callodiper",
+				"callodiper",
+				"callodiper"
+			],
+			[
+				"cavetroll",
+				"cavetroll"
+			],
+			[
+				"skellord",
+				"skellord"
+			],
+			[
+				"wyvern",
+				"wyvern"
+			],
+			"behemoth",
+			[
+				"trow",
+				"trow"
+			],
+			"reddragon",
+			"balrog",
+			"jazid",
+			"m_lichlord",
+			[
+				"shade",
+				"shade"
+			],
+			"beholder",
+			[
+				"ogre",
+				"ogre",
+				"ogre"
+			],
+			"cavetroll"
 		]
 	},
 	{

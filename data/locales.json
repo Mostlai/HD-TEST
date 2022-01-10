@@ -1,90 +1,5 @@
 [
 	{
-		"id": "zero_cave",
-		"name": "结晶矿场",
-		"level": 5,
-		"length": 20,
-		"locked": false,
-		"desc": "一处富含零结晶的矿场",
-		"run": {
-			"time": -0.1,
-			"tili": 0.2,
-			"stamina": 0.2
-		},
-		"result": {
-			"ganwu": 1,
-			"zero_crystal": 4
-		},
-		"loot": {
-			"money": "0~1",
-			"zero_crystal": 1
-		},
-		"encs": [
-			"enc_cave_1",
-			"enc_cave_2",
-			"enc_cave_3",
-			"enc_cave_4",
-			"enc_cave_5"
-		]
-	},
-	{
-		"id": "cold_3",
-		"name": "结冻地穴",
-		"level": 9,
-		"length": 35,
-		"sym": "❄️",
-		"require": "g.cold_2>0",
-		"desc": "一处极度寒冷的地穴",
-		"run": {
-			"time": -0.3,
-			"hp": 0.1,
-			"tili": 0.2,
-			"stamina": 0.2
-		},
-		"result": {
-			"sj_met": 0.05,
-			"ganwu": 10
-		},
-		"loot": {
-			"money": "5~7"
-		},
-		"encs": [
-			"enc_cold_1",
-			"enc_cold_2",
-			"enc_cold_3",
-			"enc_cold_4"
-		]
-	},
-	{
-		"id": "cold_4",
-		"name": "冰冻深层",
-		"level": 9,
-		"length": 20,
-		"sym": "❄️",
-		"require": "g.cold_3>0",
-		"desc": "地穴深处,这里有丰富的冰冻核心可以开采",
-		"run": {
-			"time": -0.3,
-			"tili": 0.2,
-			"stamina": 0.2
-		},
-		"result": {
-			"title": "冰霜行者",
-			"ganwu": 10
-		},
-		"loot": {
-			"cold_core": "3~6",
-			"money": "7~8"
-		},
-		"encs": [
-			"enc_cold_1",
-			"enc_cold_2",
-			"enc_cold_3",
-			"enc_cold_4",
-			"enc_cold_5"
-		]
-	},
-	{
 		"id": "mustylibrary",
 		"name": "musty library",
 		"level": 1,
@@ -136,6 +51,58 @@
 			"manatree",
 			"hiddencache",
 			"starrysky1"
+		]
+	},
+	{
+		"id": "eryleyot",
+		"name": "eryl eyot",
+		"level": 5,
+		"length": 30,
+		"desc": "The small and tranquil island is inhabited by an old hermit named thyffr",
+		"run": {
+			"stamina": 0.22
+		},
+		"result": {
+			"arcana": 0.1,
+			"research": 10
+		},
+		"loot": {
+			"scrolls": "1~4",
+			"herbs": "2~5"
+		},
+		"encs": [
+			"enc_chest3",
+			"brightvista",
+			"enc_thyffr",
+			"starrysky1",
+			"mysticwater"
+		]
+	},
+	{
+		"id": "loc_treffil",
+		"name": "Explore Treffil Wood",
+		"level": 7,
+		"length": 40,
+		"desc": "The deeper woods posses many features of interest to the magical scholar. The spirits of the place make sure to keep the troublemakers out.",
+		"run": {
+			"stamina": 0.25
+		},
+		"result": {
+			"arcana": 0.1,
+			"naturelore.exp": 10,
+			"herbalism.exp": 5,
+			"animals.exp": 5
+		},
+		"loot": {
+			"herbs": "5~10"
+		},
+		"encs": [
+			"manatree",
+			"mysticwater",
+			"brightvista",
+			"hauntedglade",
+			"enc_delki",
+			"hiddencache"
 		]
 	},
 	{

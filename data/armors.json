@@ -30,7 +30,7 @@
 		"armor": 3,
 		"slot": "head",
 		"enchants": 1,
-		"level": 2,
+		"level": 1,
 		"cost": 10
 	},
 	{
@@ -40,7 +40,7 @@
 		"slot": "chest",
 		"enchants": 1,
 		"cost": 10,
-		"level": 2
+		"level": 1
 	},
 	{
 		"id": "fc_shins",
@@ -49,76 +49,16 @@
 		"slot": "shins",
 		"enchants": 1,
 		"cost": 10,
-		"level": 2
+		"level": 1
 	},
 	{
 		"id": "fc_foot",
-		"name": "云翼战靴",
+		"name": "云翼护腿",
 		"armor": 2,
 		"slot": "feet",
 		"enchants": 1,
 		"cost": 10,
-		"level": 2
-	},
-	{
-		"id": "xsp",
-		"name": "修士袍",
-		"armor": 5,
-		"slot": "chest",
-		"enchants": 2,
-		"level": 10,
-		"cost": 10,
-		"alter": {
-			"mod": {
-				"self.resist.chaos": 2
-			}
-		},
-		"only": "sjmet"
-	},
-	{
-		"id": "xsl",
-		"name": "修士履",
-		"armor": 4,
-		"slot": "feet",
-		"enchants": 2,
-		"cost": 10,
-		"level": 10,
-		"alter": {
-			"mod": {
-				"self.resist.chaos": 1
-			}
-		},
-		"only": "sjmet"
-	},
-	{
-		"id": "xsg",
-		"name": "修士冠",
-		"armor": 5,
-		"slot": "head",
-		"enchants": 2,
-		"cost": 10,
-		"level": 10,
-		"alter": {
-			"mod": {
-				"self.resist.heli": 2
-			}
-		},
-		"only": "sjmet"
-	},
-	{
-		"id": "xsyd",
-		"name": "修士鞶带",
-		"armor": 4,
-		"slot": "waist",
-		"enchants": 1,
-		"cost": 10,
-		"level": 9,
-		"alter": {
-			"mod": {
-				"self.resist.chaos": 2
-			}
-		},
-		"only": "sjmet"
+		"level": 1
 	},
 	{
 		"id": "jerkin",
@@ -137,6 +77,20 @@
 		"cost": 100,
 		"level": 1,
 		"only": "natural,leather,cloth"
+	},
+	{
+		"id": "cap",
+		"armor": 1,
+		"slot": "head",
+		"cost": 15,
+		"level": 1
+	},
+	{
+		"id": "helm",
+		"armor": 2,
+		"slot": "head",
+		"cost": 30,
+		"level": 3
 	},
 	{
 		"id": "padded armor",

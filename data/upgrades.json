@@ -57,19 +57,6 @@
 		}
 	},
 	{
-		"id": "speed_1",
-		"name": "风行",
-		"desc": "运用合理加速行动",
-		"max": 1,
-		"require": "g.heli",
-		"cost": {
-			"heli": 3
-		},
-		"mod": {
-			"speed": 2
-		}
-	},
-	{
 		"id": "ganwu1",
 		"name": "领会感悟",
 		"desc": "看起来你触摸到了什么东西,你需要静静体会它",
@@ -98,9 +85,9 @@
 		"name": "铁质护甲",
 		"desc": "用铁保护自己",
 		"max": 1,
-		"require": "g.cu_iron>=1",
+		"require": "g.cu_tron>=1",
 		"cost": {
-			"cu_iron": 7
+			"cu_tron": 7
 		},
 		"mod": {
 			"player.defense": 2
@@ -111,9 +98,9 @@
 		"name": "铁质马具",
 		"desc": "给马儿披上马铠",
 		"max": 1,
-		"require": "g.cu_iron>=1",
+		"require": "g.cu_tron>=1",
 		"cost": {
-			"cu_iron": 7
+			"cu_tron": 7
 		},
 		"mod": {
 			"dist": 5
@@ -134,21 +121,6 @@
 		}
 	},
 	{
-		"id": "speed_2",
-		"name": "零尔风行",
-		"desc": "通过零结晶加速行动",
-		"max": 1,
-		"require": "g.zero_crystal>=1&&g.crafting_1>=2&&g.speed>=1",
-		"cost": {
-			"money": 50,
-			"star_map": 25,
-			"zero_crystal": 2
-		},
-		"mod": {
-			"speed": 1
-		}
-	},
-	{
 		"id": "heli_life_ult",
 		"name": "紫外混零",
 		"desc": "高密度紫外线照射后的零结晶有着更好的功效",
@@ -158,66 +130,10 @@
 			"ganwu": 10,
 			"snp_data": 1,
 			"money": 20,
-			"star_map": 26,
 			"zero_crystal": 4
 		},
 		"mod": {
 			"hp.max": 8
-		}
-	},
-	{
-		"id": "shenshi_fc_1",
-		"name": "神识聚焦",
-		"desc": "通过FC合金打造的聚焦装置能更有效的研究神识",
-		"max": 1,
-		"require": "g.shenshi_1>=4&&g.iron_copper>=1",
-		"cost": {
-			"lg": 1,
-			"snp_data": 4,
-			"money": 50,
-			"zero_crystal": 10,
-			"star_map": 45,
-			"ganwu": 40,
-			"shenshi": 1
-		},
-		"mod": {
-			"shenshi.max": 0.2,
-			"shenshi_1.max": 6
-		}
-	},
-	{
-		"id": "shenshi_weapon",
-		"name": "高能神识冲击",
-		"desc": "高能状态下的神经材料呈现出新的性质",
-		"max": 1,
-		"require": "g.sj_met>=3&&g.elect_get_1>=1",
-		"cost": {
-			"lg": 5,
-			"snp_data": 8,
-			"zero_crystal": 10,
-			"star_map": 45,
-			"ganwu": 100,
-			"shenshi": 1
-		},
-		"mod": {
-			"shenshi.max": 1
-		}
-	},
-	{
-		"id": "people_shenshi",
-		"name": "群体感知",
-		"desc": "通过感应周围生物，你能行走更远",
-		"max": 1,
-		"require": "g.shenshi_2>=3",
-		"cost": {
-			"lg": 2,
-			"ganwu": 140,
-			"zero_crystal": 10,
-			"star_map": 45,
-			"shenshi": 1
-		},
-		"mod": {
-			"dist": 10
 		}
 	},
 	{
@@ -228,8 +144,7 @@
 		"require": "g.zero_crystal>=1&&g.crafting_1>=2",
 		"cost": {
 			"money": 50,
-			"zero_crystal": 10,
-			"star_map": 35
+			"zero_crystal": 2
 		},
 		"mod": {
 			"zero_crystal.max": 5
@@ -243,42 +158,34 @@
 		"require": "g.reading>=3",
 		"cost": {
 			"money": 30,
-			"zero_crystal": 5,
-			"star_map": 25,
-			"exe_paper": 4
-		},
-		"mod": {
-			"Knowledge_class_1": true
-		}	
+			"exe_paper": 1
+		}
 	},
 	{
 		"id": "teacher_1",
 		"name": "城镇教师",
 		"desc": "博学的你足以担任这里的教师",
 		"max": 1,
-		"require": "g.biology_ast_1>=2 && g.chaos_sci>=2",
+		"require": "g.biology_ast_1>=2 && chaos_sci>=2",
 		"cost": {
-			"zero_crystal": 4,
-			"star_map": 45,
-			"exe_paper": 7
+			"exe_paper": 1
 		},
 		"mod": {
-			"money.rate": 0.3
+			"money.rate": 1.1
 		}
 	},
 	{
-		"id": "heli_life_ult_bio",
+		"id": "heli_life_ult",
 		"name": "超压紫外实验",
 		"desc": "极端环境下紫外对生命影响形式的研究",
 		"max": 1,
 		"require": "g.biology_ast_1>=1 && g.ult_guancha>=2",
 		"cost": {
 			"zero_crystal": 7,
-			"star_map": 45,
 			"money": 100
 		},
 		"mod": {
-			"hp.rate": 0.2
+			"hp.rate": 0.4
 		}
 	},
 	{
@@ -289,8 +196,6 @@
 		"require": "g.iron_copper>=5",
 		"cost": {
 			"iron_copper": 5,
-			"zero_crystal": 10,
-			"star_map": 30,
 			"money": 100
 		},
 		"mod": {
@@ -306,8 +211,7 @@
 		"require": "g.energ_1>=1",
 		"cost": {
 			"iron_copper": 10,
-			"zero_crystal": 10,
-			"star_map": 45,
+			"zero_crystal": 7,
 			"money": 100
 		},
 		"mod": {
@@ -323,8 +227,7 @@
 		"cost": {
 			"heli": 9,
 			"iron_copper": 8,
-			"zero_crystal": 10,
-			"star_map": 45,
+			"zero_crystal": 3,
 			"money": 140
 		},
 		"mod": {
@@ -340,12 +243,9 @@
 		"require": "g.zhuji_qianzhi_2>=1",
 		"cost": {
 			"chaos": 3,
-			"zero_crystal": 10,
-			"star_map": 45,
 			"elect": 20
 		},
 		"mod": {
-			"hundun_missile_2": true,
 			"chaos.max": 5,
 			"chaos.rate": 0.4
 		}
@@ -362,282 +262,6 @@
 		},
 		"mod": {
 			"dist": 10
-		}
-	},
-	{
-		"id": "super_mind_upd",
-		"name": "进阶知识",
-		"desc": "通过群体智慧了解更加深层的知识",
-		"max": 1,
-		"require": "g.super_mind>=1",
-		"cost": {
-			"super_mind": 5,
-			"star_map": 55,
-			"money": 300,
-			"lg": 8,
-			"star_map": 50,
-			"ganwu": 200
-		},
-		"mod": {
-			"energ_1.max": 2,
-			"energ_high_1.max":5,
-			"metal_1.max": 3,
-			"shenshi_1.max": 3,
-			"dream_1.max":3,
-			"chaos_sci": 5,
-			"ult_guancha.max":3,
-			"Knowledge_class_1.max":5,
-			"Knowledge_integration_1.max":5,
-			"crafting_1.max":5
-		}
-	},
-	{
-		"id": "bio_astro_upd",
-		"name": "超压升级",
-		"desc": "进一步研究生命的极端生存",
-		"max": 1,
-		"require": "g.biology_ast_1>=5",
-		"cost": {
-			"lg": 7,
-			"super_mind": 5,
-			"money": 300,
-			"tian": 10,
-			"zero_crystal": 17,
-			"snp_data": 10,
-			"exe_paper": 14,
-			"star_map": 55,
-			"books": 5,
-			"ganwu": 250
-		},
-		"mod": {
-			"biology_ast_1.max":5 
-		}
-	},
-	{
-		"id": "dirc_lunch",
-		"name": "定向发射",
-		"desc": "实现能量的定向发射",
-		"max": 1,
-		"need": "TENV",
-		"cost": {
-			"super_mind": 2,
-			"elect": 30,
-			"paper": 30,
-			"zero_crystal": 16,
-			"exe_paper": 10,
-			"ganwu": 100
-		},
-		"mod":{
-			"mc_guancha.max":5
-		}
-	},
-	{
-		"id": "frs_pro",
-		"name": "废热处理",
-		"desc": "研究安全处理这种高污染的流体",
-		"max": 1,
-		"cost": {
-			"lg": 8,
-			"jls": 30,
-			"super_mind": 5,
-			"elect": 30,
-			"heli": 1,
-			"shenshi": 1,
-			"hp": 20,
-			"star_map": 55,
-			"zero_crystal":18,
-			"paper": 30,
-			"exe_paper": 10,
-			"ganwu": 100
-		},
-		"mod":{
-			"frs": 5,
-			"frs.max":5,
-			"frs.rate": -0.2
-		}
-	},
-	{
-		"id": "frs_nj",
-		"name": "废热凝结",
-		"desc": "废热水或许还有其他作用...",
-		"max": 1,
-		"cost": {
-			"lg": 8,
-			"jls": 30,
-			"super_mind": 6,
-			"elect": 15,
-			"heli": 1,
-			"chaos": 5,
-			"shenshi": 1,
-			"hp": 20,
-			"star_map": 55,
-			"r_adv_w_sj1": 2,
-			"zero_crystal":12,
-			"paper": 30,
-			"exe_paper": 10,
-			"ganwu": 100
-		},
-		"mod":{
-			"dirty_core.max": 10,
-			"dirty_core": 1,
-			"dirty_core.rate": 0.01,
-			"frs.rate": -0.4
-		}
-	},
-	{
-		"id": "aofa_drive",
-		"name": "奥法驱动",
-		"desc": "利用合理和电能进行高效驱动",
-		"require": "g.super_mind>=3 && g.metal_app>=6 &&g.energ_1>=8 &&g.tian>=3",
-		"slot": "mount",
-		"tags": "steed",
-		"buy": {
-			"lg": 7,
-			"money": 180,
-			"super_mind":2,
-			"elect": 30,
-			"heli": 10,
-			"cu_iron": 20,
-			"cu_copper": 15,
-			"sj_met": 5,
-			"star_map": 50,
-			"tian": 5,
-			"human_power": 10
-		},
-		"mod": {
-			"dist": 50
-		}
-	},
-	{
-		"id": "dirty_jinji",
-		"name": "污痕荆棘",
-		"desc": "污浊之力与植物混合能提高生命力",
-		"max": 1,
-		"cost": {
-			"lg": 8,
-			"jls": 30,
-			"cold_core": 5,
-			"dirty_core": 10,
-			"super_mind": 2,
-			"heli": 1,
-			"chaos": 5,
-			"hp": 24,
-			"r_adv_w_sj1": 2,
-			"zero_crystal":12,
-			"paper": 30,
-			"star_map": 65,
-			"exe_paper": 10,
-			"ganwu": 130
-		},
-		"mod":{
-			"frs": 19,
-			"hp.max": 10,
-			"hp.rate": 0.1
-		}
-	},
-	{
-		"id": "dream_death",
-		"name": "梦死界",
-		"desc": "在一个深夜，一个寂静的深夜",
-		"max": 1,
-		"cost": {
-			"lg": 11,
-			"jls": 30,
-			"money": 250,
-			"cold_core": 10,
-			"dirty_core": 10,
-			"super_mind": 5,
-			"heli": 1,
-			"chaos": 5,
-			"zero_crystal":12,
-			"paper": 30,
-			"star_map": 65,
-			"exe_paper": 10,
-			"ganwu": 150
-		},
-		"mod":{
-			"frs": 29,
-			"hp.max": -2,
-			"hp.rate": -0.1
-		}
-	},
-	{
-		"id": "space_mind",
-		"name": "空间思考",
-		"desc": "混沌和合理表达的形式让你对空间概念产生了思索",
-		"max": 1,
-		"cost": {
-			"lg": 11,
-			"jls": 30,
-			"money": 400,
-			"alculation": 20,
-			"cold_core": 10,
-			"dirty_core": 10,
-			"r_adv_w_sj1": 2,
-			"super_mind": 5,
-			"heli": 1,
-			"chaos": 5,
-			"zero_crystal":20,
-			"paper": 40,
-			"books": 6,
-			"exe_paper": 16,
-			"ganwu": 200
-		},
-		"mod":{
-			"frs": 29
-		}
-	},
-	{
-		"id": "lfkjcc",
-		"name": "灵反空间存储",
-		"desc": "非实体空间进行高容量存储",
-		"max": 1,
-		"cost": {
-			"lg": 11,
-			"jls": 30,
-			"money": 100,
-			"super_mind": 5,
-			"alculation": 30,
-			"dirty_lingti": 10,
-			"cold_core": 10,
-			"dirty_core": 10,
-			"super_mind": 5,
-			"zero_crystal":20,
-			"paper": 40,
-			"books": 6,
-			"exe_paper": 16,
-			"ganwu": 200
-		},
-		"mod":{
-			"frs":29,
-			"zero_crystal.max": 10,
-			"sj_met.max": 10
-		}
-	},
-	{
-		"id": "huanjgl",
-		"name": "环境管理",
-		"desc": "高效的对环境进行管理",
-		"max": 1,
-		"cost": {
-			"lg": 11,
-			"jls": 20,
-			"money": 300,
-			"super_mind": 5,
-			"alculation": 30,
-			"cold_core": 10,
-			"dirty_core": 10,
-			"super_mind": 5,
-			"zero_crystal":15,
-			"sj_met": 8,
-			"paper": 40,
-			"books": 6,
-			"exe_paper": 16,
-			"ganwu": 200
-		},
-		"mod":{
-			"frs":19,
-			"space.max": -10
 		}
 	},
 	{
@@ -743,6 +367,19 @@
 		},
 		"mod": {
 			"runner.max": 1
+		}
+	},
+	{
+		"id": "mule",
+		"desc": "A mount that doesn't require much training.",
+		"require": "g.player.level>=4||g.animals>=2",
+		"slot": "mount",
+		"tags": "steed",
+		"buy": {
+			"gold": 100
+		},
+		"mod": {
+			"dist": 15
 		}
 	},
 	{
@@ -1702,6 +1339,26 @@
 		}
 	},
 	{
+		"id": "earthsign",
+		"name": "earth sign",
+		"require": "g.earthaffinity>0&&g.earth>14",
+		"lock": [
+			"watersign",
+			"airsign",
+			"firesign"
+		],
+		"warn": true,
+		"desc": "Born under the celestial sign of earth",
+		"cost": {
+			"research": 5000,
+			"earthgem": 15,
+			"tomes": 5
+		},
+		"mod": {
+			"player.resist.earth": 15
+		}
+	},
+	{
 		"id": "airsign",
 		"name": "wind sign",
 		"warn": true,
@@ -1749,6 +1406,22 @@
 		"mod": {
 			"gold.rate": 0.15
 		}
+	},
+	{
+		"id": "guidingstar",
+		"name": "guiding star",
+		"require": "g.astronomy>=15&&g.evil<=0",
+		"desc": "A light in the heavens guides your way.",
+		"cost": {
+			"research": 5000,
+			"arcana": 15
+		},
+		"mod": {
+			"player.tohit": 4,
+			"scrying.max": 2,
+			"scrying.rate": "2%"
+		},
+		"flavor": "Mornië Alantië"
 	},
 	{
 		"id": "wishingwells",
@@ -1822,6 +1495,23 @@
 		"mod": {
 			"research.max": 10,
 			"light.rate": 0.01
+		}
+	},
+	{
+		"id": "windchime",
+		"name": "windchime",
+		"tags": "airsource,spiritsource",
+		"desc": "Focus of air magic.",
+		"require": "g.space.max>10",
+		"cost": {
+			"gems": 10,
+			"research": 100
+		},
+		"mod": {
+			"air.rate": 0.01,
+			"air.max": 1,
+			"spirit.max": 1,
+			"spirit.rate": 0.005
 		}
 	},
 	{

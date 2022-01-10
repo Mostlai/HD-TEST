@@ -20,48 +20,6 @@
 		}
 	},
 	{
-		"id": "farmer",
-		"name": "农夫",
-		"desc": "租一块田来赚钱",
-		"actname": "成为农夫",
-		"actdesc": "收获....",
-		"require": "g.money>5",
-		"warn": true,
-		"log": {
-			"name": "租凭田地",
-			"desc": "你花了一小笔钱租了一小块地"
-		},
-		"cost": {
-			"money": 10
-		},
-		"disable": "businessman",
-		"result": {
-			"time": 30,
-			"money.rate": 0.01
-		}
-	},
-	{
-		"id": "businessman",
-		"name": "商人",
-		"desc": "贸易，赚取差价",
-		"actname": "成为商人",
-		"actdesc": "钱钱钱钱....",
-		"require": "g.money>5",
-		"warn": true,
-		"log": {
-			"name": "支起小摊",
-			"desc": "你花了一小笔钱开设了一个摊位"
-		},
-		"cost": {
-			"money": 10
-		},
-		"disable": "farmer",
-		"result": {
-			"time": 10,
-			"money.rate": 0.01
-		}
-	},
-	{
 		"id": "touch_daoli",
 		"name": "接触道理",
 		"desc": "你已经接触了一些东西,通过学习,你得知这种东西名为合理",
@@ -101,27 +59,27 @@
 		}
 	},
 	{
-		"id": "xuezhe",
-		"name": "学者",
-		"desc": "渊博",
-		"actname": "学无止境",
-		"actdesc": "学无止境",
-		"require": "g.fanshe_math>=1",
+		"id": "apprentice",
+		"desc": "Apprentice to a notable wizard",
+		"actname": "Apprenticeship",
+		"actdesc": "Become an apprentice.",
+		"require": "research",
+		"disable": [
+			"cleanstables"
+		],
 		"warn": false,
+		"log": {
+			"name": "Apprentice",
+			"desc": "After paying a small fee, you became apprenticed to a local wizard."
+		},
 		"cost": {
-			"books": 9,
-			"ganwu": 380,
-			"paper": 50,
-			"exe_paper": 20,
-			"star_map": 70,
-			"zero_crystal": 20,
-			"super_mind": 9,
-			"snp_data": 21
+			"research": 10,
+			"gold": 20
 		},
 		"result": {
-			"zero_crystal.rate": 0.05,
-			"ganwu.rate": 0.01,
-			"exe_paper.rate": 0.01
+			"research.max": 10,
+			"player.exp": 5,
+			"sp": 1
 		}
 	},
 	{

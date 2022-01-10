@@ -36,7 +36,7 @@
 		"name": "体力训练I",
 		"desc": "耗费体力运输重物,但是会缓慢提高体力上限",
 		"verb": "",
-		"require": "g.xiulian_ld_body_1>=1",
+		"require": "xiulian_ld_body_1>=1",
 		"cost": {
 			"tili": 1,
 			"stamina": 0.4,
@@ -60,8 +60,8 @@
 			"stamina": 0.4
 		},
 		"result": {
-			"time": 0.2,
-			"hp.max": 0.001
+			"time": 1,
+			"hp.max": 0.008
 		},
 		"flavor": "强身健体"
 	},
@@ -99,7 +99,7 @@
 		}
 	},
 	{
-		"id": "copper_get_1",
+		"id": "iron_get_1",
 		"name": "购买铜板",
 		"desc": "你难以找到铜矿,所以你只能买加工好的",
 		"verb": "",
@@ -108,7 +108,7 @@
 			"money": 0.6
 		},
 		"result": {
-			"cu_copper": 2,
+			"cu_coper": 2,
 			"time": 0.1
 		}
 	},
@@ -128,30 +128,9 @@
 			"tili": 0.2
 		},
 		"result": {
-			"metal_1.exp": 2,
+			"metal_1.exp": 20,
 			"metal_app.exp": 2,
 			"iron_copper": 6
-		}
-	},
-	{
-		"id": "sj_met_get_1",
-		"name": "合成神经材料",
-		"desc": "催动合理和混沌加工出神经材料",
-		"verb": "",
-		"require": "g.xiulian_struct_2>=1 && g.iron_copper>=1 && g.chaos_sci>=5",
-		"length": 10,
-		"cost": {
-			"iron_copper": 6,
-			"shenshi": 2
-		},
-		"run": {
-			"time": -0.5,
-			"tili": 0.2
-		},
-		"result": {
-			"metal_app.exp": 2,
-			"shenshi_1": 1,
-			"sj_met": 2
 		}
 	},
 	{
@@ -210,12 +189,9 @@
 		"verb": "写作中",
 		"require": "g.reading>0",
 		"length": 10,
-		"fill": [
-			"exe_paper"
-		],
 		"cost": {
-			"paper": 8,
-			"ganwu": 3
+			"paper": 1,
+			"ganwu": 2
 		},
 		"run": {
 			"time": -1.2,
@@ -226,39 +202,15 @@
 		}
 	},
 	{
-		"id": "ganwu_upg_1",
-		"name": "感悟升华",
-		"desc": "从大量感悟中提取精华",
-		"verb": "感悟中",
-		"require": "g.ganwu>=60",
-		"length": 15,
-		"fill": [
-			"lg"
-		],
-		"cost": {
-			"ganwu": 30
-		},
-		"run": {
-			"time": -1.2,
-			"tili": 0.2
-		},
-		"result": {
-			"lg": 2
-		}
-	},
-	{
 		"id": "write_starmap_1",
 		"name": "天文绘制",
 		"desc": "对天文进行观测,然后把知识写在稿纸上",
 		"verb": "绘制中",
 		"require": "g.xiulian_astro_zhuji_2>=1",
 		"length": 5,
-		"fill": [
-			"star_map"
-		],
 		"cost": {
 			"paper": 2,
-			"ganwu": 10
+			"ganwu": 1
 		},
 		"run": {
 			"time": -1.2,
@@ -267,61 +219,6 @@
 		},
 		"result": {
 			"star_map": 1
-		}
-	},
-	{
-		"id": "write_starmap_2",
-		"name": "天文观测",
-		"desc": "在低温望远镜下进行更细微的观测",
-		"verb": "观测中",
-		"require": "g.star_map_1>0",
-		"need": "Telescope",
-		"length": 8,
-		"fill": [
-			"star_map_1"
-		],
-		"cost": {
-			"star_map": 10,
-			"jls": 2,
-			"ganwu": 20
-		},
-		"run": {
-			"time": -2,
-			"jls":0.2,
-			"tili": 0.3,
-			"stamina": 0.2
-		},
-		"result": {
-			"star_map_1": 1
-		}
-	},
-	{
-		"id": "huoxi_hc",
-		"name": "活性合成",
-		"desc": "在低温下对零结晶进行加工",
-		"verb": "合成中",
-		"require": "g.life_crystal>0",
-		"need": "ColdBio",
-		"length": 8,
-		"fill": [
-			"life_crystal"
-		],
-		"cost": {
-			"zero_crystal": 10,
-			"sj_met":1,
-			"jls": 2,
-			"ganwu": 20
-		},
-		"run": {
-			"time": -2,
-			"jls":0.2,
-			"sj_met":0.1,
-			"hp":0.1,
-			"tili": 0.3,
-			"stamina": 0.2
-		},
-		"result": {
-			"life_crystal": 1.2
 		}
 	},
 	{
@@ -365,8 +262,7 @@
 			"tili",
 			"prismatic",
 			"stamina",
-			"hp",
-			"stress"
+			"hp"
 		],
 		"effect": {
 			"prismatic": {
@@ -376,8 +272,7 @@
 			"time": 1.7,
 			"tili": 10,
 			"stamina": 1,
-			"hp": 2,
-			"stress": -1
+			"hp": 2
 		}
 	},
 	{
@@ -387,74 +282,15 @@
 		"require": "heli",
 		"need": "g.runner.hasType('skill')",
 		"every": {
-			"30": {
-				"result.runner.exp": "0.01:30"
+			"25": {
+				"result.runner.exp": "0.02:25"
 			}
 		},
 		"cost": {
-			"ganwu": 0.1,
 			"heli": 0.1
 		},
 		"result": {
 			"runner.exp": 0.2
-		}
-	},
-	{
-		"id": "farmer_1",
-		"name": "种田",
-		"desc": "种下种子,收获粮食",
-		"verb": "种植中",
-		"perpetual": true,
-		"require": "g.farmer>=1",
-		"length": 10,
-		"fill": [
-			"money"
-		],
-		"cost": {
-			"money": 0.1
-		},
-		"run": {
-			"time": -0.02
-		},
-		"every": {
-			"75": {
-				"effect.money": "0.02:75"
-			}
-		},
-		"result": {
-			"money": 0.1
-		},
-		"effect": {
-			"money": 0.2
-		}
-	},
-	{
-		"id": "businessman_1",
-		"name": "经营摊位",
-		"desc": "经营摊位来赚取",
-		"verb": "经营中",
-		"perpetual": true,
-		"require": "g.businessman>=1",
-		"length": 10,
-		"fill": [
-			"money"
-		],
-		"cost": {
-			"money": 0.1
-		},
-		"run": {
-			"time": -0.02
-		},
-		"every": {
-			"75": {
-				"effect.money": "0.02:75"
-			}
-		},
-		"result": {
-			"money": 0.1
-		},
-		"effect": {
-			"money": 0.2
 		}
 	},
 	{
@@ -467,8 +303,6 @@
 		"length": 30,
 		"cost": {
 			"elect": 5,
-			"star_map": 30,
-			"zero_crystal": 3,
 			"heli": 7
 		},
 		"run": {
@@ -479,68 +313,6 @@
 		"result": {
 			"heli.max": 5,
 			"elect.rate": 2
-		}
-	},
-	{
-		"id": "hjgz",
-		"name": "环境改造",
-		"desc": "神观的运用使你对环境的控制和利用有了新的理解",
-		"verb": "改造中",
-		"require": "g.energ_shenshi>=5 && g.shenshi_4>=5",
-		"max": 1,
-		"length": 30,
-		"cost": {
-			"money": 400,
-			"super_mind": 6,
-			"sj_met": 10,
-			"star_map": 65,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 50,
-			"zero_crystal": 10
-		},
-		"run": {
-			"money": 0.5,
-			"time": -0.5,
-			"tili": 0.2
-		},
-		"result": {
-			"space.max": -10
-		}
-	},
-	{
-		"id": "huanjweihu",
-		"name": "环境维护",
-		"desc": "对周围环境进行治理",
-		"verb": "",
-		"require": "g.hjgz>=1",
-		"cost": {
-			"heli": 2,
-			"chaos": 2,
-			"elect": 4,
-			"tili": 0.7,
-			"stamina": 0.8
-		},
-		"result": {
-			"time": 1,
-			"money": 1,
-			"ganwu": 0.5
-		}
-	},
-	{
-		"id": "quchu_frs",
-		"name": "驱除废热",
-		"desc": "手动消耗生命力和混沌净化废热水",
-		"verb": "",
-		"require": "g.frs>0",
-		"cost": {
-			"frs": 2,
-			"chaos": 5,
-			"hp": 2
-		},
-		"result": {
-			"time": 1,
-			"jls": 2
 		}
 	},
 	{
@@ -1858,6 +1630,22 @@
 		"flavor": "If I could turn back time..."
 	},
 	{
+		"id": "mapstars",
+		"name": "map stars",
+		"length": 10,
+		"verb": "mapping stars",
+		"desc": "A complex diagram of lines and arcane symbols.",
+		"require": "g.astronomy>=5",
+		"fill": "starcharts",
+		"cost": {
+			"scrolls": 5
+		},
+		"run": {
+			"research": 10
+		},
+		"result": "starcharts"
+	},
+	{
 		"id": "bestiary",
 		"actname": "compile bestiary",
 		"verb": "researching beasts",
@@ -2292,6 +2080,43 @@
 		"mod": {
 			"unendingcodex.mod.codices.rate": "50%",
 			"tomes.rate": 0.005
+		}
+	},
+	{
+		"id": "almagest",
+		"desc": "Compile a manual of the sun and stars",
+		"actname": "almagest",
+		"require": "g.astronomy>=7&&g.tier1>0",
+		"max": 1,
+		"length": 50,
+		"cost": {
+			"codices": 30
+		},
+		"run": {
+			"research": 10,
+			"starcharts": 0.1
+		},
+		"log": {
+			"name": "almagest",
+			"desc": "Your map of the heavens is complete."
+		},
+		"mod": {
+			"starcharts.max": 10,
+			"research.max": 50,
+			"divination": {
+				"max": 1,
+				"rate": 0.2
+			},
+			"lore.max": 1,
+			"lore.rate": 0.2,
+			"astronomy": {
+				"max": 1,
+				"rate": "0.1+1%"
+			},
+			"planeslore": {
+				"max": 1,
+				"rate": "0.2+1%"
+			}
 		}
 	},
 	{

@@ -3,7 +3,6 @@
 		"id": "pl_workbench",
 		"name": "工作台",
 		"desc": "一张工作台让你可以从事生产工作",
-		"max": 1,
 		"tags": "work_space",
 		"locked": false,
 		"repeat": true,
@@ -18,7 +17,6 @@
 		"id": "pl_reasherbench",
 		"name": "研究台",
 		"desc": "一张足够大的桌子让你可以铺满各种稿纸",
-		"max": 1,
 		"tags": "research_space",
 		"locked": false,
 		"repeat": true,
@@ -37,27 +35,12 @@
 		"require": "g.money>50",
 		"repeat": true,
 		"cost": {
-			"money": 30
+			"money": 40
 		},
 		"mod": {
 			"inv.max": 2,
-			"money.max": 50,
+			"money.max": 75,
 			"space": 1
-		}
-	},
-	{
-		"id": "crystal_fbox",
-		"name": "结晶盒",
-		"desc": "能够存放结晶",
-		"require": "g.zcry_box>=1",
-		"repeat": true,
-		"cost": {
-			"money": 30,
-			"zero_crystal": 8
-		},
-		"mod": {
-			"zero_crystal.max": 5,
-			"space": 2
 		}
 	},
 	{
@@ -67,64 +50,11 @@
 		"require": "g.money.max>=125",
 		"repeat": true,
 		"cost": {
-			"money": 100
+			"money": 125
 		},
 		"mod": {
-			"inv.max": 3,
-			"money.max": 125,
-			"space": 2
-		}
-	},
-	{
-		"id": "fcchest",
-		"name": "合金箱子",
-		"desc": "更大容量的箱子",
-		"require": "g.iron_copper>=10",
-		"repeat": true,
-		"cost": {
-			"cu_iron": 20,
-			"cu_copper":20,
-			"iron_copper": 10,
-			"paper": 20,
-			"money": 150
-		},
-		"mod": {
-			"inv.max": 5,
-			"money.max": 200,
-			"space": 2
-		}
-	},
-	{
-		"id": "dream_ctc",
-		"name": "捕梦仪",
-		"desc": "捕获梦境",
-		"max": 1,
-		"require": "g.dream_1>=5",
-		"repeat": true,
-		"cost": {
-			"ganwu": 30,
-			"lg": 2,
-			"money": 100
-		},
-		"mod": {
-			"shenshi.max": 1,
-			"shenshi.rate": 0.01,
-			"space": 2
-		}
-	},
-	{
-		"id": "bed_1",
-		"name": "软床",
-		"desc": "柔软的床铺",
-		"tags": "bed",
-		"slot": "bed",
-		"max": 1,
-		"require": "g.stamina>=11",
-		"cost": {
-			"money": 40
-		},
-		"mod": {
-			"rest.effect.stamina": 0.27,
+			"inv.max": 2,
+			"money.max": 175,
 			"space": 2
 		}
 	},
@@ -133,7 +63,6 @@
 		"name": "天文仪",
 		"desc": "简单的天文仪器",
 		"tags": "astro",
-		"max": 1,
 		"require": "g.money.max>=50&&g.reading>=1&&g.crafting_1>=1",
 		"repeat": true,
 		"cost": {
@@ -152,7 +81,6 @@
 		"name": "简单培养皿",
 		"desc": "一块玻璃盘,供你进行小型的生物实验",
 		"tags": "bio",
-		"max": 1,
 		"require": "g.money.max>=50&&g.reading>=1&&g.crafting_1>=1",
 		"repeat": true,
 		"cost": {
@@ -171,7 +99,6 @@
 		"name": "紫外观察镜片",
 		"desc": "允许你观察从未见过的紫外线",
 		"tags": "ultraviolet_rays",
-		"max": 1,
 		"require": "g.reading>=3&&g.crafting_1>=3&&g.astronomy>=2",
 		"repeat": true,
 		"cost": {
@@ -200,29 +127,10 @@
 		"mod": {
 			"books.max": 2,
 			"paper.max":10,
-			"snp_data.max":4,
-			"exe_paper.max": 4,
-			"star_map.max": 4,
-			"space": 3
-		}
-	},
-	{
-		"id": "bantiaox",
-		"name": "板条箱",
-		"desc": "一个小型板条箱给你存放寻常金属",
-		"tags": "",
-		"require": "g.cu_iron>=10",
-		"repeat": true,
-		"cost": {
-			"cu_iron": 10,
-			"paper": 20,
-			"money": 100
-		},
-		"mod": {
-			"cu_iron.max": 10,
-			"cu_copper.max":10,
-			"iron_copper.max":5,
-			"space": 2
+			"snp_data.max":3,
+			"exe_paper.max": 2,
+			"star_map.max": 2,
+			"space": 4
 		}
 	},
 	{
@@ -237,7 +145,6 @@
 		},
 		"mod": {
 			"cu_iron.max": 5,
-			"cu_copper.max":5,
 			"cu_iron.rate": 0.001,
 			"space": 5
 		}
@@ -245,7 +152,6 @@
 	{
 		"id": "elect_mod_1",
 		"name": "感应线圈I",
-		"max": 1,
 		"desc": "用零结晶,铜板,铁板做的小型线圈",
 		"tags": "",
 		"require": "g.elect_expand>=1",
@@ -261,474 +167,6 @@
 			"energ_1.max": 3,
 			"elect.max": 3,
 			"space": 2
-		}
-	},
-	{
-		"id": "light_1",
-		"name": "光学底座",
-		"desc": "一个占地大的光学研究平台",
-		"tags": "slight",
-		"max": 1,
-		"require": "g.rlt_guancha>=4&&g.crafting_1>=8&&g.building_1>=2",
-		"repeat": true,
-		"cost": {
-			"zero_crystal": 6,
-			"iron_copper": 10,
-			"cu_iron": 20,
-			"cu_copper": 20,
-			"super_mind": 3,
-			"star_map": 30,
-			"sj_met": 5,
-			"money": 320
-		},
-		"mod": {
-			"rlt_guancha.rate": "1%",
-			"ult_guancha.rate": "1%",
-			"space": 6
-		}
-	},
-	{
-		"id": "sta_energ_output",
-		"name": "稳定能输送机",
-		"desc": "能稳定提供10V级电能",
-		"tags": "TENV",
-		"require": "g.energ_high_1>=8&&g.crafting_1>=10",
-		"repeat": true,
-		"cost": {
-			"zero_crystal": 6,
-			"iron_copper": 5,
-			"cu_copper": 15,
-			"super_mind": 3,
-			"star_map": 30,
-			"sj_met": 5,
-			"money": 260
-		},
-		"mod": {
-			"elect.rate": -0.7,
-			"rlt_guancha.rate": "1%",
-			"ult_guancha.rate": "1%",
-			"space": 6
-		}
-	},
-	{
-		"id": "small_tian_well",
-		"name": "小型钛矿场",
-		"desc": "花费人力帮你生产钛板",
-		"tags": "",
-		"require": "g.land_wa>=3 &&g.metal_1>=8",
-		"repeat": true,
-		"cost": {
-			"human_power": 22,
-			"iron_copper": 5,
-			"cu_iron": 30,
-			"cu_copper": 30,
-			"zero_crystal": 10,
-			"paper": 30,
-			"exe_paper": 10,
-			"sj_met": 5,
-			"money": 320
-		},
-		"mod": {
-			"elect.rate": -0.2,
-			"tian.max":5,
-			"tian.rate": 0.01,
-			"huaman_power.max": -2,
-			"space": 12
-		}
-	},
-	{
-		"id": "diwen_rongqi",
-		"name": "低温容器",
-		"desc": "这个容器内保持着低温,适合保存低温物品",
-		"tags": "",
-		"require": "g.cold_core>=1",
-		"repeat": true,
-		"cost": {
-			"human_power": 45,
-			"zero_crystal": 10,
-			"cu_iron": 25,
-			"cu_copper": 20,
-			"paper": 40,
-			"exe_paper": 10,
-			"sj_met": 5,
-			"tian": 10,
-			"cold_core": 4,
-			"money": 340
-		},
-		"mod": {
-			"elect.rate": -0.6,
-			"jls.max": 20,
-			"frs.max": 30,
-			"cold_core.max": 10,
-			"space": 4
-		}
-	},
-	{
-		"id": "sj_lnx",
-		"name": "神经冷凝箱",
-		"desc": "让普通水在冰冻核心作用下转化为晶流水,这个装置需求一个稳定的电能供给才能修建",
-		"tags": "",
-		"need": "TENV",
-		"require": "g.cold_core>=1",
-		"repeat": true,
-		"cost": {
-			"heli": 5,
-			"chaos": 5,
-			"human_power": 50,
-			"zero_crystal": 13,
-			"cu_iron": 25,
-			"cu_copper": 20,
-			"paper": 40,
-			"exe_paper": 10,
-			"sj_met": 5,
-			"tian": 10,
-			"cold_core": 15,
-			"money": 450
-		},
-		"mod": {
-			"heli.rate": -0.01,
-			"elect.rate": -1,
-			"jls.rate": 0.2,
-			"frs.rate": 0.1,
-			"cold_core.rate": -0.005,
-			"space": 5
-		}
-	},
-	{
-		"id": "small_zlk",
-		"name": "小型蒸馏口",
-		"desc": "缓慢净化废热水,这个装置需求一个稳定的电能供给才能修建",
-		"tags": "",
-		"need": "TENV",
-		"require": "g.frs>=1",
-		"repeat": true,
-		"cost": {
-			"human_power": 20,
-			"zero_crystal": 4,
-			"cu_iron": 10,
-			"cu_copper": 10,
-			"paper": 20,
-			"exe_paper": 5,
-			"sj_met": 5,
-			"tian": 10,
-			"cold_core": 4,
-			"money": 190
-		},
-		"mod": {
-			"elect.rate": -0.2,
-			"frs.rate": -0.5,
-			"space": 3
-		}
-	},
-	{
-		"id": "death_fatan",
-		"name": "向死法坛",
-		"desc": "将高能混沌导引到一点来研究死亡,建造此装置对健康有害....这个装置需求一个稳定的电能供给才能修建",
-		"tags": "Fdeath",
-		"need": "TENV",
-		"max": 1,
-		"require": "g.xiulian_death_1>=1",
-		"repeat": true,
-		"cost": {
-			"heli": 2,
-			"chaos": 5,
-			"shenshi": 1,
-			"zero_crystal": 13,
-			"super_mind": 3,
-			"human_power": 100,
-			"cu_iron": 25,
-			"cu_copper": 20,
-			"paper": 40,
-			"exe_paper": 10,
-			"sj_met": 5,
-			"money": 450
-		},
-		"mod": {
-			"lingti_xue.max": 5,
-			"hp.max": -2,
-			"hp.rate": -0.4,
-			"space": 5
-		}
-	},
-	{
-		"id": "liuguangboli",
-		"name": "流光玻璃瓶",
-		"desc": "摄人心魄的玻璃瓶,存放着不得安息的灵体....这个装置需求一个稳定的电能供给才能修建",
-		"tags": "",
-		"need": "TENV",
-		"max": 2,
-		"require": "g.xiulian_death_2>=1",
-		"repeat": true,
-		"cost": {
-			"dirty_lingti": 2,
-			"heli": 2,
-			"chaos": 5,
-			"shenshi": 1,
-			"zero_crystal": 13,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 80,
-			"cu_iron": 25,
-			"cu_copper": 20,
-			"paper": 40,
-			"exe_paper": 10,
-			"sj_met": 5,
-			"money": 450
-		},
-		"mod": {
-			"dirty_lingti.max": 8,
-			"dirty_lingti.rate": 0.001,
-			"hp.max": -1,
-			"hp.rate": -0.1,
-			"space": 2
-		}
-	},
-	{
-		"id": "huanjyanjiu",
-		"name": "环境研究台",
-		"desc": "更为高效的研究环境工程....这个装置需求一个稳定的电能供给才能修建",
-		"tags": "",
-		"need": "TENV",
-		"max": 1,
-		"require": "g.huanjing_xue>=2",
-		"repeat": true,
-		"cost": {
-			"dirty_lingti": 3,
-			"zero_crystal": 18,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 80,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"exe_paper": 10,
-			"sj_met": 9,
-			"money": 460
-		},
-		"mod": {
-			"huanjing_xue.max": 3,
-			"elect.rate": -0.3,
-			"hp.max": 1,
-			"hp.rate": 0.1,
-			"space": 3
-		}
-	},
-	{
-		"id": "twenty_sorce",
-		"name": "20V配电器",
-		"desc": "能稳定提供20V级电能",
-		"tags": "TENTYV",
-		"require": "g.fanshe_building>=2&&g.fanshe_math>=4&&g.xiulian_energ_cold_1>=1",
-		"repeat": true,
-		"cost": {
-			"dirty_lingti": 10,
-			"zero_crystal": 29,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 80,
-			"paper": 40,
-			"elect":30,
-			"snp_data": 12,
-			"tian": 10,
-			"iron_copper": 10,
-			"exe_paper": 10,
-			"sj_met": 9,
-			"money": 520
-		},
-		"mod": {
-			"elect.max":-1,
-			"elect.rate": -0.7,
-			"space": 10
-		}
-	},
-	{
-		"id": "wangyuanj_diz",
-		"name": "望远镜底座",
-		"desc": "一台低温望远镜的底座,此建筑需要接通20V级电源",
-		"tags": "TelescopeBase",
-		"require": "g.fanshe_building>=2&&g.xiulian_struct_cold_1>=1",
-		"need": "TENTYV",
-		"repeat": true,
-		"cost": {
-			"cold_core": 11,
-			"dirty_core": 5,
-			"jls":30,
-			"zero_crystal": 30,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 70,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"iron_copper": 10,
-			"exe_paper": 10,
-			"sj_met": 9,
-			"money": 400
-		},
-		"mod": {
-			"elect.rate": -0.3,
-			"space": 18
-		}
-	},
-	{
-		"id": "wangyuanj_jp",
-		"name": "望远镜镜片",
-		"desc": "一台低温望远镜的主镜片",
-		"tags": "Telescope",
-		"require": "g.fanshe_building>=2&&g.xiulian_info_cold_1>=1&&g.xiulian_eye_adv_astro>=1",
-		"need": "TelescopeBase",
-		"repeat": true,
-		"cost": {
-			"cold_core": 11,
-			"jls":30,
-			"zero_crystal": 35,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 80,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"iron_copper": 10,
-			"exe_paper": 10,
-			"sj_met": 9,
-			"money": 400
-		},
-		"mod": {
-			"star_map_1.rate": 0.001,
-			"elect.rate": -1.2,
-			"space": 18
-		}
-	},
-	{
-		"id": "cold_bio_lab",
-		"name": "低温生物实验室",
-		"desc": "小型生物实验室,此建筑需要接通20V级电源",
-		"tags": "ColdBio",
-		"require": "g.fanshe_building>=2&&g.xiulian_bio_cold_1>=1",
-		"need": "TENTYV",
-		"repeat": true,
-		"cost": {
-			"dirty_lingti": 10,
-			"cold_core": 11,
-			"dirty_core": 10,
-			"jls":30,
-			"zero_crystal": 35,
-			"super_mind": 5,
-			"alculation": 50,
-			"human_power": 70,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"iron_copper": 10,
-			"exe_paper": 10,
-			"sj_met": 9,
-			"money": 500
-		},
-		"mod": {
-			"life_crystal.rate": 0.001,
-			"elect.rate": -0.9,
-			"space": 20
-		}
-	},
-	{
-		"id": "ltxb",
-		"name": "灵体信标",
-		"desc": "灵体主导的地面发射信标,用于在非实界建立地面航标,此建筑需要接通20V级电源",
-		"tags": "spirit_beacon",
-		"max":1,
-		"require": "g.info_switch_1>=3&&g.stand_chejian>=1",
-		"need": "TENTYV",
-		"repeat": true,
-		"cost": {
-			"dirty_lingti": 10,
-			"cold_core": 22,
-			"dirty_core": 10,
-			"jls":40,
-			"zero_crystal": 30,
-			"super_mind": 9,
-			"alculation": 70,
-			"human_power": 200,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"iron_copper": 20,
-			"exe_paper": 10,
-			"sj_met": 10,
-			"money": 700
-		},
-		"mod": {
-			"elect.rate": -2,
-			"space": 5
-		}
-	},
-	{
-		"id": "ltwdq",
-		"name": "灵体稳定器",
-		"desc": "用于稳固灵体信标中的灵体",
-		"tags": "spirit_stable",
-		"max":1,
-		"require": "g.info_switch_1>=3&&g.stand_chejian>=1",
-		"need": "spirit_beacon",
-		"repeat": true,
-		"cost": {
-			"dirty_lingti": 10,
-			"cold_core": 22,
-			"dirty_core": 10,
-			"jls":40,
-			"zero_crystal": 30,
-			"super_mind": 9,
-			"alculation": 70,
-			"human_power": 200,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"cu_iron":30,
-			"cu_copper":30,
-			"iron_copper": 20,
-			"exe_paper": 10,
-			"sj_met": 10,
-			"money": 700
-		},
-		"mod": {
-			"elect.rate": -2,
-			"space": 15
-		}
-	},
-	{
-		"id": "huangquan_well",
-		"name": "黄泉稳流井",
-		"desc": "一个能引导你稳定前往非实界的稳流结构",
-		"tags": "hq_well",
-		"max":1,
-		"require": "g.huangquandy>=1&&g.xiulian_jizhun_2>=1&&g.xiulian_jizhun_3>=1&&g.xiulian_jihun1>=1",
-		"need": "spirit_stable",
-		"repeat": true,
-		"cost": {
-			"money": 700,
-			"jihun": 1,
-			"dirty_lingti": 10,
-			"cold_core": 22,
-			"dirty_core": 10,
-			"life_crystal": 5,
-			"jls":40,
-			"zero_crystal": 30,
-			"super_mind": 9,
-			"alculation": 85,
-			"human_power": 250,
-			"paper": 40,
-			"snp_data": 12,
-			"tian": 10,
-			"cu_iron":30,
-			"cu_copper":30,
-			"iron_copper": 20,
-			"exe_paper": 10,
-			"sj_met": 10
-		},
-		"mod": {
-			"hp.max": -20,
-			"elect.max": -10,
-			"elect.rate": -2,
-			"space": 4
 		}
 	},
 	{
@@ -763,10 +201,130 @@
 		}
 	},
 	{
+		"id": "woodbed",
+		"name": "wooden bed",
+		"desc": "Small wooden bed.",
+		"tags": "bed",
+		"slot": "bed",
+		"require": "g.stamina>=15",
+		"cost": {
+			"gold": 40
+		},
+		"mod": {
+			"rest.effect.stamina": 0.27,
+			"space": 2
+		}
+	},
+	{
+		"id": "fourposter",
+		"desc": "Four post bed",
+		"tags": "bed",
+		"slot": "bed",
+		"require": "g.stamina>=30",
+		"cost": {
+			"gold": 150
+		},
+		"mod": {
+			"dreams": {
+				"skipLocked": true,
+				"rate": 0.0001
+			},
+			"rest": {
+				"effect": {
+					"stamina": 0.4,
+					"hp": 0.02
+				}
+			},
+			"space": 4
+		}
+	},
+	{
+		"id": "burningcoals",
+		"name": "burning coals",
+		"desc": "Bed of burning coals",
+		"tags": "bed",
+		"slot": "bed",
+		"require": "g.fire>=10",
+		"cost": {
+			"fire": 10
+		},
+		"mod": {
+			"firelore.max": 1,
+			"rest": {
+				"effect": {
+					"stamina": 0.35,
+					"prismatic": 0.1,
+					"fire": 0.2
+				}
+			},
+			"space": 2
+		}
+	},
+	{
+		"id": "cache",
+		"name": "buried cache",
+		"desc": "A cache of treasure buried in the ground, protected by enchantment.",
+		"need": [
+			"outdoors",
+			"g.enchanting>0"
+		],
+		"max": 3,
+		"cost": {
+			"research": 50,
+			"gems": 3,
+			"mana": 5
+		},
+		"mod": {
+			"inv.max": 1,
+			"prismaticgems.max": 2,
+			"gold.max": 200,
+			"gems.max": 10,
+			"space": 1
+		}
+	},
+	{
+		"id": "vault",
+		"desc": "A safe space for treasure.",
+		"require": "g.space.max>=25",
+		"repeat": true,
+		"cost": {
+			"gold": 500
+		},
+		"mod": {
+			"inv.max": 2,
+			"prismaticgems.max": 10,
+			"tapestries.max": 3,
+			"gembox.max": 5,
+			"gold.max": 1800,
+			"gems.max": 20,
+			"space": 10
+		}
+	},
+	{
+		"id": "treasureroom",
+		"name": "treasure room",
+		"desc": "A large room for accumulated treasures.",
+		"require": "g.space.max>=50",
+		"repeat": true,
+		"cost": {
+			"gold": 1000,
+			"gems": 15
+		},
+		"mod": {
+			"inv.max": 3,
+			"prismaticgems.max": 20,
+			"tapestries.max": 5,
+			"gembox.max": 10,
+			"gold.max": 4000,
+			"gems.max": 50,
+			"space": 20
+		}
+	},
+	{
 		"id": "magiccircle",
 		"name": "magic circle",
 		"desc": "Magic circle",
-		"locked": true,
+		"require": "arcana",
 		"max": 3,
 		"cost": {
 			"research": 40,
@@ -784,7 +342,7 @@
 		"name": "rusty cage",
 		"desc": "A cramped cage for keeping tiny test subjects.",
 		"tags": "t_pets,shadowsource",
-		"locked": true,
+		"require": "neophyte",
 		"max": 3,
 		"cost": {
 			"gold": 50,
@@ -802,7 +360,7 @@
 		"id": "terrarium",
 		"desc": "A glass enclosure of dirt, insects, and wormy things.",
 		"tags": "earthsource,t_pets",
-		"locked": true,
+		"require": "neophyte",
 		"repeat": true,
 		"cost": {
 			"research": 40,
@@ -818,7 +376,7 @@
 		"id": "vivarium",
 		"desc": "A glass enclosure for small reptiles, snakes, and frogs.",
 		"tags": "earthsource,t_pets,naturesource",
-		"locked": true,
+		"require": "g.tier0>0&&g.naturelore>=5",
 		"cost": {
 			"research": 300,
 			"gold": 500
@@ -836,7 +394,7 @@
 		"id": "workbench",
 		"desc": "A small bench for arts and crafts. Necessary for many wizard studies.",
 		"tags": "workspace",
-		"locked": true,
+		"locked": false,
 		"repeat": true,
 		"cost": {
 			"gold": 15
@@ -850,7 +408,7 @@
 		"id": "writingdesk",
 		"name": "writing desk",
 		"desc": "A desk for working and scribing.",
-		"locked": true,
+		"require": "evt_helper",
 		"tags": "workspace",
 		"cost": {
 			"gold": 100
@@ -868,7 +426,7 @@
 		"name": "crafting table",
 		"tags": "workspace",
 		"desc": "Wide table for crafting projects.",
-		"locked": true,
+		"require": "evt_helper",
 		"cost": {
 			"gold": 100
 		},
@@ -883,7 +441,7 @@
 		"name": "enchanting table",
 		"tags": "workspace,enchantsource",
 		"desc": "Runed table for enchanting",
-		"locked": true,
+		"require": "enchanting",
 		"cost": {
 			"gold": 200,
 			"research": 200,
@@ -898,7 +456,7 @@
 	{
 		"id": "plant",
 		"name": "potted milkweed",
-		"locked": true,
+		"locked": false,
 		"desc": "Really brightens up the place.",
 		"tags": "plantsource",
 		"repeat": true,
@@ -915,7 +473,7 @@
 		"name": "creeping vine",
 		"desc": "A quickly growing plant",
 		"tags": "plantsource",
-		"locked": true,
+		"require": "g.herbalism>=4",
 		"max": 5,
 		"cost": {
 			"gold": 75
@@ -1002,6 +560,22 @@
 		}
 	},
 	{
+		"id": "telescope",
+		"require": "astronomy",
+		"tags": "starsource",
+		"cost": {
+			"gold": 400,
+			"research": 300
+		},
+		"mod": {
+			"arcana.max": 1,
+			"arcana.rate": 0.0001,
+			"astronomy.max": 2,
+			"astronomy.rate": 0.2,
+			"space": 2
+		}
+	},
+	{
 		"id": "scrollrack",
 		"name": "scroll rack",
 		"repeat": true,
@@ -1049,6 +623,40 @@
 			},
 			"tomes.max": 1,
 			"space": 2
+		}
+	},
+	{
+		"id": "casement",
+		"name": "casement window",
+		"tags": "lightsource,airsource",
+		"desc": "A simple window to let in light and air.",
+		"require": "g.space.max>=10",
+		"cost": {
+			"gold": 100
+		},
+		"mod": {
+			"light.rate": 0.01,
+			"air.max": 1,
+			"air.rate": 0.02,
+			"space": 1
+		}
+	},
+	{
+		"id": "latticewindow",
+		"name": "lattice window",
+		"tags": "lightsource,airsource",
+		"desc": "An elegant latticed portal for letting in air and light.",
+		"require": "g.space.max>=15",
+		"max": 3,
+		"cost": {
+			"gold": 300
+		},
+		"mod": {
+			"light.max": 1,
+			"airlore.max": 1,
+			"light.rate": 0.02,
+			"airlore.rate": 0.05,
+			"space": 1
 		}
 	},
 	{
@@ -1146,7 +754,7 @@
 	{
 		"id": "bonfire",
 		"tags": "firesource",
-		"locked": true,
+		"require": "g.space.max>=20",
 		"desc": "A burning pyre for the practice of pyromancy.",
 		"cost": {
 			"fire": 4
@@ -1180,7 +788,7 @@
 		"id": "fireplace",
 		"desc": "A cozy place for cooking food and brewing potions.",
 		"tags": "firesource",
-		"locked": true,
+		"require": "g.space.max>=15",
 		"repeat": true,
 		"cost": {
 			"gold": 175
@@ -1228,7 +836,7 @@
 		"id": "fountain",
 		"desc": "Water Fountain",
 		"tags": "watersource",
-		"locked": true,
+		"require": "g.space.max>20",
 		"cost": {
 			"gold": 500
 		},
@@ -1392,7 +1000,7 @@
 		"desc": "A simple, bare cell.",
 		"tags": "prison,shadowsource",
 		"repeat": true,
-		"locked": true,
+		"require": "g.tier0>0&&g.space.max>=20",
 		"cost": {
 			"gold": 400
 		},
@@ -1736,7 +1344,7 @@
 		"id": "pond",
 		"desc": "Pond",
 		"tags": "watersource",
-		"locked": true,
+		"require": "g.space.max>50",
 		"cost": {
 			"gold": 500
 		},
@@ -1755,7 +1363,7 @@
 		"name": "sand garden",
 		"tags": "earthsource",
 		"desc": "Rocks and sand form patterns of intricate design.",
-		"locked": true,
+		"require": "g.earth.max>=5&&g.space.max>=50",
 		"cost": {
 			"gold": 100,
 			"research": 100
@@ -1788,7 +1396,7 @@
 		"name": "lake of fire",
 		"desc": "A lake of burning fire.",
 		"tags": "firesource",
-		"locked": true,
+		"require": "g.fire.max>=10&&g.space.max>=100",
 		"cost": {
 			"fire": 10,
 			"gold": 100,
@@ -1806,7 +1414,7 @@
 		"id": "bottomlesspit",
 		"name": "bottomless pit",
 		"desc": "An endless hole in the ground.",
-		"locked": true,
+		"require": "g.planeslore>=12&&g.space.max>=20&&g.tier4>0",
 		"cost": {
 			"gems": 10,
 			"research": 500,
@@ -1849,7 +1457,7 @@
 		"id": "torturechamber",
 		"name": "torture chamber",
 		"desc": "A room for inquisitions and research.",
-		"locked": true,
+		"require": "g.evil>0&&g.space.max>=100",
 		"tags": "shadowsource",
 		"cost": {
 			"gold": 400,
@@ -1867,7 +1475,7 @@
 	{
 		"id": "graveyard",
 		"desc": "A resting place for the dead.",
-		"locked": true,
+		"require": "g.space.max>=100",
 		"tags": "shadowsource,spiritsource",
 		"cost": {
 			"gold": 700,
@@ -1891,7 +1499,7 @@
 		"id": "workshop",
 		"tags": "workspace",
 		"desc": "A space suitable for crafting and enchanting items.",
-		"locked": true,
+		"require": "g.space.max>=50&&(g.crafting>=7||g.enchanting>=7)",
 		"cost": {
 			"gold": 1000,
 			"research": 2500
