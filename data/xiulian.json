@@ -59,7 +59,7 @@
 		"cost": {
 			"ganwu": 3,
 			"zero_crystal": 3,
-			"heli": 3,
+			"heli": 2,
 			"books": 2,
 			"exe_paper": 2,
 			"snp_data":2
@@ -126,7 +126,7 @@
 		"max": 2,
 		"cost": {
 			"ganwu": 1,
-			"heli": 3,
+			"heli": 2,
 			"exe_paper": 3
 		},
 		"result": {
@@ -145,7 +145,7 @@
 		"cost": {
 			"money": 10,
 			"ganwu": 2,
-			"heli": 3,
+			"heli": 2,
 			"exe_paper": 3
 		},
 		"result": {
@@ -165,7 +165,7 @@
 		"cost": {
 			"money": 10,
 			"ganwu": 2,
-			"heli": 3,
+			"heli": 2,
 			"zero_crystal": 2,
 			"exe_paper": 3
 		},
