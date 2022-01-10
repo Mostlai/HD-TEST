@@ -59,8 +59,9 @@
 				"boss": {
 					"1": "robber",
 					"2": "tramp",
-					"3": "money",
-					"4": "tiger"
+					"3": "monkey",
+					"4": "tiger",
+					"5": "jingguai"
 				},
 				"result": {
 					"zero_crystal": "1~3",
