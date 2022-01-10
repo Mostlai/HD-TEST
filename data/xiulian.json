@@ -40,7 +40,7 @@
 		},
 		"result": {
 			"time": 30,
-			"heli.max": 0.5,
+			"heli.max": -0.5,
 			"heli.rate": -0.01,
 			"xiulian_jizhun_1": 1
 		}
@@ -66,7 +66,7 @@
 		},
 		"result": {
 			"time": 30,
-			"heli.max": 1,
+			"heli.max": -1,
 			"heli.rate": -0.01,
 			"xiulian_fangyuan_1": 1
 		}
@@ -90,7 +90,8 @@
 		"result": {
 			"time": 10,
 			"xiulian_life_1" : 1,
-			"age.max": 1825
+			"age": -1825,
+			"age.max": -1825
 		}
 	},
 	{
@@ -112,7 +113,8 @@
 		},
 		"result": {
 			"time": 10,
-			"age.max": 2825
+			"age": -2825,
+			"age.max": -2825
 		}
 	},
 	{
@@ -149,7 +151,7 @@
 		"result": {
 			"time": 30,
 			"xiulian_heli_li_1_soild" : 1,
-			"heli.max": 1,
+			"heli.max": -1,
 			"heli.rate": -0.1
 		}
 	},
@@ -171,7 +173,7 @@
 			"time": 12,
 			"xiulian_heli_li_1_esc" : 1,
 			"heli_missile": true,
-			"heli.max": 1,
+			"heli.max": -1,
 			"heli.rate": -0.1
 		}
 	},
@@ -191,7 +193,7 @@
 		"result": {
 			"time": 3,
 			"xiulian_ld_body_1" : 1,
-			"stamina.max": 5,
+			"stamina.max": -5,
 			"stamina.rate": -0.1
 		}
 	},
@@ -213,10 +215,10 @@
 		"result": {
 			"time": 10,
 			"xiulian_ld_body_2" : 1,
-			"hp.max": 2,
-			"tili.max": 5,
+			"hp.max": -2,
+			"tili.max": -5,
 			"tili.rate": -0.3,
-			"stamina.max": 3,
+			"stamina.max": -3,
 			"stamina.rate": -0.1
 		}
 	},
@@ -237,8 +239,8 @@
 		"result": {
 			"time": 6,
 			"xiulian_astro_zhuji_1" : 1,
-			"astronomy.max": 2,
-			"astronomy.rate": "1%"
+			"astronomy.max": -2,
+			"astronomy.rate": "-1%"
 		}
 	},
 	{
@@ -258,8 +260,8 @@
 		"result": {
 			"time": 6,
 			"xiulian_astro_zhuji_1_1" : 1,
-			"astronomy.max": 1,
-			"astronomy.rate": "1%"
+			"astronomy.max": -1,
+			"astronomy.rate": "-1%"
 		}
 	},
 	{
@@ -278,9 +280,9 @@
 		"result": {
 			"time": 50,
 			"xiulian_astro_zhuji_2" : 1,
-			"astronomy.max": 2,
-			"astronomy_1.max": 2,
-			"astronomy.rate": "1%"
+			"astronomy.max": -2,
+			"astronomy_1.max": -2,
+			"astronomy.rate": "-1%"
 		}
 	},
 	{
@@ -301,7 +303,7 @@
 			"time": 100,
 			"xiulian_astro_zhuji_3" : 1,
 			"chaos_sci.max": 2,
-			"chaos_sci.rate": "3%"
+			"chaos_sci.rate": "-3%"
 		}
 	},
 	{
@@ -324,8 +326,8 @@
 		"result": {
 			"time": 30,
 			"xiulian_eye_zhuji_1" : 1,
-			"heli.max": 2,
-			"astronomy.max": 2,
+			"heli.max": -2,
+			"astronomy.max": -2,
 			"astronomy.rate": "1%"
 		}
 	},
@@ -348,7 +350,7 @@
 		"result": {
 			"time": 10,
 			"xiulian_zhuji_1":1,
-			"heli.max": 3,
+			"heli.max": -3,
 			"age.max": 5000
 		},
 		"flavor": "飞跃"
@@ -438,15 +440,15 @@
 		},
 		"result": {
 			"time": 365,
-			"heli.max": 30,
-			"chaos.max": 30,
-			"heli.rate": 2,
-			"chaos.rate": 2,
-			"age.max": 7300,
-			"hp.max": 10,
-			"stamina.max": 7,
-			"tili.max": 10,
-			"tili.rate": 1,
+			"heli.max": -30,
+			"chaos.max": -30,
+			"heli.rate": -2,
+			"chaos.rate": -2,
+			"age.max": -7300,
+			"hp.max": -10,
+			"stamina.max": -7,
+			"tili.max": -10,
+			"tili.rate": -1,
 			"xiulian_zhuji_2" : 1
 		}
 	}
