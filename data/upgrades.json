@@ -1498,23 +1498,6 @@
 		}
 	},
 	{
-		"id": "windchime",
-		"name": "windchime",
-		"tags": "airsource,spiritsource",
-		"desc": "Focus of air magic.",
-		"require": "g.space.max>10",
-		"cost": {
-			"gems": 10,
-			"research": 100
-		},
-		"mod": {
-			"air.rate": 0.01,
-			"air.max": 1,
-			"spirit.max": 1,
-			"spirit.rate": 0.005
-		}
-	},
-	{
 		"id": "dreamcatcher",
 		"name": "dream catcher",
 		"desc": "You may not like what you catch.",

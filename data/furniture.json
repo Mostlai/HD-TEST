@@ -626,40 +626,6 @@
 		}
 	},
 	{
-		"id": "casement",
-		"name": "casement window",
-		"tags": "lightsource,airsource",
-		"desc": "A simple window to let in light and air.",
-		"require": "g.space.max>=10",
-		"cost": {
-			"gold": 100
-		},
-		"mod": {
-			"light.rate": 0.01,
-			"air.max": 1,
-			"air.rate": 0.02,
-			"space": 1
-		}
-	},
-	{
-		"id": "latticewindow",
-		"name": "lattice window",
-		"tags": "lightsource,airsource",
-		"desc": "An elegant latticed portal for letting in air and light.",
-		"require": "g.space.max>=15",
-		"max": 3,
-		"cost": {
-			"gold": 300
-		},
-		"mod": {
-			"light.max": 1,
-			"airlore.max": 1,
-			"light.rate": 0.02,
-			"airlore.rate": 0.05,
-			"space": 1
-		}
-	},
-	{
 		"id": "cloudchamber",
 		"name": "cloud chamber",
 		"tags": "airsource",
