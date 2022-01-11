@@ -79,20 +79,6 @@
 		"only": "natural,leather,cloth"
 	},
 	{
-		"id": "cap",
-		"armor": 1,
-		"slot": "head",
-		"cost": 15,
-		"level": 1
-	},
-	{
-		"id": "helm",
-		"armor": 2,
-		"slot": "head",
-		"cost": 30,
-		"level": 3
-	},
-	{
 		"id": "padded armor",
 		"armor": 3,
 		"slot": "chest",

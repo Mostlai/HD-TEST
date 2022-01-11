@@ -30,6 +30,15 @@
 		"max": 3
 	},
 	{
+		"id": "lg",
+		"name": "灵光",
+		"desc": "感悟的结晶",
+		"group": "修行",
+		"tags": "",
+		"require": "g.ganwu>=60",
+		"max": 5
+	},
+	{
 		"id": "books",
 		"name": "书籍",
 		"desc": "知识的载体",

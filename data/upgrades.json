@@ -200,11 +200,11 @@
 			"exe_paper": 1
 		},
 		"mod": {
-			"money.rate": 1.1
+			"money.rate": 0.3
 		}
 	},
 	{
-		"id": "heli_life_ult",
+		"id": "heli_life_ult_bio",
 		"name": "超压紫外实验",
 		"desc": "极端环境下紫外对生命影响形式的研究",
 		"max": 1,
@@ -214,7 +214,7 @@
 			"money": 100
 		},
 		"mod": {
-			"hp.rate": 0.4
+			"hp.rate": 0.2
 		}
 	},
 	{
@@ -1422,22 +1422,6 @@
 		"mod": {
 			"gold.rate": 0.15
 		}
-	},
-	{
-		"id": "guidingstar",
-		"name": "guiding star",
-		"require": "g.astronomy>=15&&g.evil<=0",
-		"desc": "A light in the heavens guides your way.",
-		"cost": {
-			"research": 5000,
-			"arcana": 15
-		},
-		"mod": {
-			"player.tohit": 4,
-			"scrying.max": 2,
-			"scrying.rate": "2%"
-		},
-		"flavor": "Mornië Alantië"
 	},
 	{
 		"id": "wishingwells",

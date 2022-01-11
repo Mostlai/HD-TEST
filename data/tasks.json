@@ -36,7 +36,7 @@
 		"name": "体力训练I",
 		"desc": "耗费体力运输重物,但是会缓慢提高体力上限",
 		"verb": "",
-		"require": "xiulian_ld_body_1>=1",
+		"require": "g.xiulian_ld_body_1>=1",
 		"cost": {
 			"tili": 1,
 			"stamina": 0.4,
@@ -108,7 +108,7 @@
 			"money": 0.6
 		},
 		"result": {
-			"cu_coper": 2,
+			"cu_copper": 2,
 			"time": 0.1
 		}
 	},
@@ -189,9 +189,12 @@
 		"verb": "写作中",
 		"require": "g.reading>0",
 		"length": 10,
+		"fill": [
+			"exe_paper"
+		],
 		"cost": {
-			"paper": 1,
-			"ganwu": 2
+			"paper": 8,
+			"ganwu": 3
 		},
 		"run": {
 			"time": -1.2,
@@ -202,15 +205,39 @@
 		}
 	},
 	{
+		"id": "ganwu_upg_1",
+		"name": "感悟升华",
+		"desc": "从大量感悟中提取精华",
+		"verb": "感悟中",
+		"require": "g.ganwu>=60",
+		"length": 15,
+		"fill": [
+			"lg"
+		],
+		"cost": {
+			"ganwu": 30
+		},
+		"run": {
+			"time": -1.2,
+			"tili": 0.2
+		},
+		"result": {
+			"lg": 2
+		}
+	},
+	{
 		"id": "write_starmap_1",
 		"name": "天文绘制",
 		"desc": "对天文进行观测,然后把知识写在稿纸上",
 		"verb": "绘制中",
 		"require": "g.xiulian_astro_zhuji_2>=1",
 		"length": 5,
+		"fill": [
+			"star_map"
+		],
 		"cost": {
 			"paper": 2,
-			"ganwu": 1
+			"ganwu": 10
 		},
 		"run": {
 			"time": -1.2,
@@ -287,6 +314,7 @@
 			}
 		},
 		"cost": {
+			"ganwu": 0.1,
 			"heli": 0.1
 		},
 		"result": {
@@ -301,6 +329,9 @@
 		"perpetual": true,
 		"require": "g.farmer>=1",
 		"length": 10,
+		"fill": [
+			"money"
+		],
 		"cost": {
 			"money": 0.1
 		},
@@ -308,15 +339,15 @@
 			"time": -0.02
 		},
 		"every": {
-			"25": {
-				"effect.money": "0.02:25"
+			"75": {
+				"effect.money": "0.02:75"
 			}
 		},
 		"result": {
-			"money": 2
+			"money": 0.1
 		},
 		"effect": {
-			"money": 0.5
+			"money": 0.2
 		}
 	},
 	{
@@ -327,6 +358,9 @@
 		"perpetual": true,
 		"require": "g.businessman>=1",
 		"length": 10,
+		"fill": [
+			"money"
+		],
 		"cost": {
 			"money": 0.1
 		},
@@ -334,15 +368,15 @@
 			"time": -0.02
 		},
 		"every": {
-			"25": {
-				"effect.money": "0.02:25"
+			"75": {
+				"effect.money": "0.02:75"
 			}
 		},
 		"result": {
-			"money": 2
+			"money": 0.1
 		},
 		"effect": {
-			"money": 0.5
+			"money": 0.2
 		}
 	},
 	{

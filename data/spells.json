@@ -1,11 +1,11 @@
 [
 	{
 		"id": "heli_enchant_1",
-		"name": "武器附魔",
+		"name": "合理之行",
 		"level": 1,
 		"locked":true,
 		"school": "附魔",
-		"desc": "将合理的力量附魔到武器上,在没有掌握合理实质化前,这是早期运用合理到战斗的方式。",
+		"desc": "将合理的力量运用到躲闪上,在没有掌握合理实质化前,这是早期运用合理到战斗的方式。",
 		"buy": {
 			"ganwu": 5,
 			"exe_paper": 1
@@ -16,35 +16,35 @@
 		},
 		"dot": {
 			"id": "weapon_enchat_1",
-			"name": "武器附魔I",
+			"name": "合理之行I",
 			"duration": 20,
 			"mod": {
-				"self.damage": 2
+				"self.dodge": 1
 			}
 		}
 	},
 	{
 		"id": "chaos_enchant_1",
-		"name": "混沌之锋",
+		"name": "混沌之行",
 		"level": 1,
 		"locked":true,
 		"school": "附魔",
-		"desc": "将混沌附着在武器上,这比合理更加致命",
+		"desc": "将混沌运用在躲闪上,这比合理更加难以琢磨",
 		"buy": {
 			"books": 3,
 			"star_map": 5,
 			"exe_paper": 7
 		},
-		"flavor": "什么东西",
+		"flavor": "捉摸不透",
 		"cost": {
 			"chaos": 2
 		},
 		"dot": {
 			"id": "weapon_enchat_2",
-			"name": "混沌附魔I",
+			"name": "混沌之行I",
 			"duration": 13,
 			"mod": {
-				"self.damage": 6
+				"self.dodge": 2
 			}
 		}
 	},

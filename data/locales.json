@@ -54,33 +54,6 @@
 		]
 	},
 	{
-		"id": "loc_treffil",
-		"name": "Explore Treffil Wood",
-		"level": 7,
-		"length": 40,
-		"desc": "The deeper woods posses many features of interest to the magical scholar. The spirits of the place make sure to keep the troublemakers out.",
-		"run": {
-			"stamina": 0.25
-		},
-		"result": {
-			"arcana": 0.1,
-			"naturelore.exp": 10,
-			"herbalism.exp": 5,
-			"animals.exp": 5
-		},
-		"loot": {
-			"herbs": "5~10"
-		},
-		"encs": [
-			"manatree",
-			"mysticwater",
-			"brightvista",
-			"hauntedglade",
-			"enc_delki",
-			"hiddencache"
-		]
-	},
-	{
 		"id": "pidwigcove",
 		"name": "pidwig's cove",
 		"level": 9,

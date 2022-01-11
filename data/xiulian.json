@@ -193,8 +193,8 @@
 		"result": {
 			"time": 3,
 			"xiulian_ld_body_1" : 1,
-			"stamina.max": -5,
-			"stamina.rate": -0.1
+			"stamina.max": -1,
+			"stamina.rate": -0.05
 		}
 	},
 	{
@@ -215,11 +215,11 @@
 		"result": {
 			"time": 10,
 			"xiulian_ld_body_2" : 1,
-			"hp.max": -2,
-			"tili.max": -5,
-			"tili.rate": -0.3,
-			"stamina.max": -3,
-			"stamina.rate": -0.1
+			"hp.max": -1,
+			"tili.max": -1,
+			"tili.rate": -0.1,
+			"stamina.max": -0.3,
+			"stamina.rate": -0.06
 		}
 	},
 	{
@@ -302,7 +302,7 @@
 		"result": {
 			"time": 100,
 			"xiulian_astro_zhuji_3" : 1,
-			"chaos_sci.max": 2,
+			"chaos_sci.max": -2,
 			"chaos_sci.rate": "-3%"
 		}
 	},
@@ -328,7 +328,7 @@
 			"xiulian_eye_zhuji_1" : 1,
 			"heli.max": -2,
 			"astronomy.max": -2,
-			"astronomy.rate": "1%"
+			"astronomy.rate": "-1%"
 		}
 	},
 	{
@@ -351,7 +351,8 @@
 			"time": 10,
 			"xiulian_zhuji_1":1,
 			"heli.max": -3,
-			"age.max": 5000
+			"age.max": -5000,
+			"age": -5000
 		},
 		"flavor": "飞跃"
 	},
@@ -430,7 +431,7 @@
 		"name": "FC切割实验(能量物理)",
 		"desc": "将FC合金铸成特定形状后对磁感线进行切割",
 		"tags": "能量物理",
-		"require": "g.fc_pro_duc>=1 && g.astro_zhuji_1_1>=1",
+		"require": "g.fc_pro_duc>=1 && g.xiulian_astro_zhuji_1_1>=1",
 		"max": 2,
 		"cost": {
 			"books": 5,

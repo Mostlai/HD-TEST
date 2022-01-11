@@ -35,12 +35,27 @@
 		"require": "g.money>50",
 		"repeat": true,
 		"cost": {
-			"money": 40
+			"money": 30
 		},
 		"mod": {
 			"inv.max": 2,
-			"money.max": 75,
+			"money.max": 50,
 			"space": 1
+		}
+	},
+	{
+		"id": "crystal_fbox",
+		"name": "结晶盒",
+		"desc": "能够存放结晶",
+		"require": "g.zcry_box>=1",
+		"repeat": true,
+		"cost": {
+			"money": 30,
+			"zero_crystal": 8
+		},
+		"mod": {
+			"zero_crystal.max": 4,
+			"space": 2
 		}
 	},
 	{
@@ -50,11 +65,11 @@
 		"require": "g.money.max>=125",
 		"repeat": true,
 		"cost": {
-			"money": 125
+			"money": 100
 		},
 		"mod": {
-			"inv.max": 2,
-			"money.max": 175,
+			"inv.max": 3,
+			"money.max": 125,
 			"space": 2
 		}
 	},
@@ -213,108 +228,6 @@
 		"mod": {
 			"rest.effect.stamina": 0.23,
 			"space": 1
-		}
-	},
-	{
-		"id": "fourposter",
-		"desc": "Four post bed",
-		"tags": "bed",
-		"slot": "bed",
-		"locked": true,
-		"cost": {
-			"gold": 150
-		},
-		"mod": {
-			"dreams": {
-				"skipLocked": true,
-				"rate": 0.0001
-			},
-			"rest": {
-				"effect": {
-					"stamina": 0.4,
-					"hp": 0.02
-				}
-			},
-			"space": 4
-		}
-	},
-	{
-		"id": "burningcoals",
-		"name": "burning coals",
-		"desc": "Bed of burning coals",
-		"tags": "bed",
-		"slot": "bed",
-		"locked": true,
-		"cost": {
-			"fire": 10
-		},
-		"mod": {
-			"firelore.max": 1,
-			"rest": {
-				"effect": {
-					"stamina": 0.35,
-					"prismatic": 0.1,
-					"fire": 0.2
-				}
-			},
-			"space": 2
-		}
-	},
-	{
-		"id": "cache",
-		"name": "buried cache",
-		"desc": "A cache of treasure buried in the ground, protected by enchantment.",
-		"locked": true,
-		"max": 3,
-		"cost": {
-			"research": 50,
-			"gems": 3,
-			"mana": 5
-		},
-		"mod": {
-			"inv.max": 1,
-			"prismaticgems.max": 2,
-			"gold.max": 200,
-			"gems.max": 10,
-			"space": 1
-		}
-	},
-	{
-		"id": "vault",
-		"desc": "A safe space for treasure.",
-		"locked": true,
-		"repeat": true,
-		"cost": {
-			"gold": 500
-		},
-		"mod": {
-			"inv.max": 2,
-			"prismaticgems.max": 10,
-			"tapestries.max": 3,
-			"gembox.max": 5,
-			"gold.max": 1800,
-			"gems.max": 20,
-			"space": 10
-		}
-	},
-	{
-		"id": "treasureroom",
-		"name": "treasure room",
-		"desc": "A large room for accumulated treasures.",
-		"locked": true,
-		"repeat": true,
-		"cost": {
-			"gold": 1000,
-			"gems": 15
-		},
-		"mod": {
-			"inv.max": 3,
-			"prismaticgems.max": 20,
-			"tapestries.max": 5,
-			"gembox.max": 10,
-			"gold.max": 4000,
-			"gems.max": 50,
-			"space": 20
 		}
 	},
 	{
