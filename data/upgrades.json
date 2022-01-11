@@ -100,7 +100,7 @@
 		"max": 1,
 		"require": "g.cu_iron>=1",
 		"cost": {
-			"cu_tron": 7
+			"cu_iron": 7
 		},
 		"mod": {
 			"player.defense": 2
@@ -113,7 +113,7 @@
 		"max": 1,
 		"require": "g.cu_iron>=1",
 		"cost": {
-			"cu_tron": 7
+			"cu_iron": 7
 		},
 		"mod": {
 			"dist": 5
