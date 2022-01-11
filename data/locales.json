@@ -54,31 +54,6 @@
 		]
 	},
 	{
-		"id": "eryleyot",
-		"name": "eryl eyot",
-		"level": 5,
-		"length": 30,
-		"desc": "The small and tranquil island is inhabited by an old hermit named thyffr",
-		"run": {
-			"stamina": 0.22
-		},
-		"result": {
-			"arcana": 0.1,
-			"research": 10
-		},
-		"loot": {
-			"scrolls": "1~4",
-			"herbs": "2~5"
-		},
-		"encs": [
-			"enc_chest3",
-			"brightvista",
-			"enc_thyffr",
-			"starrysky1",
-			"mysticwater"
-		]
-	},
-	{
 		"id": "loc_treffil",
 		"name": "Explore Treffil Wood",
 		"level": 7,

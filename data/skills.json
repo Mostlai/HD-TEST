@@ -2,7 +2,7 @@
 	{
 		"id": "reading",
 		"name": "阅读",
-		"need": "g.money>10",
+		"require": "g.money>10",
 		"desc": "在浩如烟海的典籍中寻找真理",
 		"buy": {
 			"money": 10
@@ -171,7 +171,7 @@
 		"mod": {
 			"astronomy.rate": "1%",
 			"astronomy_1.rate": "1%",
-			"ganwu.max": 5
+			"ganwu.max": 2
 		}
 	},
 	{
@@ -192,8 +192,8 @@
 			"sp": 0.07
 		},
 		"mod": {
-			"ganwu.max": 10,
-			"ganwu.rate": 0.3
+			"ganwu.max": 3,
+			"ganwu.rate": 0.1
 		}
 	},
 	{
@@ -237,9 +237,9 @@
 			"sp": 0.04
 		},
 		"mod": {
-			"hp.max": 5,
-			"tili.max":1,
-			"stamina.max":1
+			"hp.max": 1,
+			"tili.max":0.5,
+			"stamina.max":0.5
 		}
 	},
 	{
@@ -263,7 +263,7 @@
 			"biology_1.max": 2,
 			"astronomy_1.max": 1,
 			"hp.max": 2,
-			"tili.max":2,
+			"tili.max":1,
 			"stamina.max":1.3
 		}
 	},

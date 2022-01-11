@@ -207,7 +207,7 @@
 		"cost": {
 			"money": 50,
 			"tili": 15,
-			"ganwu": 4,
+			"ganwu": 20,
 			"heli": 2,
 			"zero_crystal": 3,
 			"exe_paper": 3
@@ -231,7 +231,7 @@
 		"max": 2,
 		"cost": {
 			"money": 50,
-			"ganwu": 4,
+			"ganwu": 30,
 			"heli": 2,
 			"snp_data": 3,
 			"exe_paper": 3
@@ -252,7 +252,7 @@
 		"max": 2,
 		"cost": {
 			"money": 50,
-			"ganwu": 4,
+			"ganwu": 30,
 			"heli": 2,
 			"snp_data": 3,
 			"exe_paper": 3
@@ -273,7 +273,7 @@
 		"max": 2,
 		"cost": {
 			"ganwu": 20,
-			"heli": 7,
+			"heli": 6,
 			"snp_data": 8,
 			"exe_paper": 7
 		},
@@ -294,7 +294,7 @@
 		"max": 2,
 		"cost": {
 			"ganwu": 30,
-			"heli": 7,
+			"heli": 6,
 			"snp_data": 8,
 			"star_map": 5,
 			"exe_paper": 7
@@ -315,7 +315,7 @@
 		"max": 2,
 		"cost": {
 			"money": 50,
-			"ganwu": 4,
+			"ganwu": 40,
 			"heli": 2,
 			"books": 3,
 			"zero_crystal": 3,
@@ -339,12 +339,12 @@
 		"max": 2,
 		"tags": "初入筑基",
 		"cost": {
-			"ganwu": 10,
+			"ganwu": 70,
 			"heli": 7,
 			"books": 5,
-			"zero_crystal": 10,
+			"zero_crystal": 8,
 			"snp_data": 5,
-			"paper": 10,
+			"paper": 25,
 			"exe_paper": 6
 		},
 		"result": {
@@ -410,6 +410,22 @@
 		}
 	},
 	{
+		"id": "struct_1",
+		"name": "合金工艺(物体结构)",
+		"desc": "将两种金属合为一体",
+		"tags": "物体结构",
+		"require": "g.xiulian_change_metal_3>=1",
+		"max": 2,
+		"cost": {
+			"books": 1,
+			"exe_paper": 1
+		},
+		"result": {
+			"time": 3,
+			"xiulian_struct_1" : 1
+		}
+	},
+	{
 		"id": "energ_1",
 		"name": "FC切割实验(能量物理)",
 		"desc": "将FC合金铸成特定形状后对磁感线进行切割",
@@ -431,20 +447,23 @@
 		"name": "筑基零重(初入筑基)",
 		"desc": "在结合天体,生物,材料,能量后,混沌与合理交织,电能被你带入世间,你的博学,力量和功业足以让你迈入这个层次,这是生命层次的飞跃",
 		"tags": "初入筑基",
-		"require": "g.chaos_up>=1 && g.zhuji_1>=1 && g.zhuji_qianzhi_2>=1",
+		"require": "g.chaos_up>=1 && g.xiulian_zhuji_1>=1 && g.zhuji_qianzhi_2>=1",
 		"max": 2,
 		"cost": {
+			"ganwu":100,
 			"heli": 5,
 			"elect": 20,
 			"chaos": 5
 		},
 		"result": {
+			"title": "筑基修士",
 			"time": 365,
 			"heli.max": -30,
 			"chaos.max": -30,
 			"heli.rate": -2,
 			"chaos.rate": -2,
 			"age.max": -7300,
+			"age": -7300,
 			"hp.max": -10,
 			"stamina.max": -7,
 			"tili.max": -10,

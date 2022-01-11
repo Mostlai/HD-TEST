@@ -36,7 +36,7 @@
 		"group": "知识",
 		"tags": "",
 		"require": "g.ganwu>0",
-		"max": 1
+		"max": 3
 	},
 	{
 		"id": "paper",
@@ -326,39 +326,6 @@
 		"tags": "",
 		"locked":true,
 		"max": 1
-	},
-	{
-		"id": "research",
-		"desc": "Research into the Arcane",
-		"max": 10
-	},
-	{
-		"id": "arcana",
-		"school": "arcane",
-		"desc": "Profound mystical knowledge",
-		"max": 0
-	},
-	{
-		"id": "scrolls",
-		"group": "books",
-		"desc": "Scroll of arcane lore",
-		"max": 10,
-		"mod": {
-			"research.rate": 0.005,
-			"research.max": 1
-		}
-	},
-	{
-		"id": "starcharts",
-		"desc": "A map of the stars",
-		"max": 10,
-		"mod": {
-			"research.max": 1,
-			"astronomy.max": 0.1,
-			"astronomy.rate": 0.02,
-			"planeslore.max": 0.05,
-			"planeslore.rate": 0.02
-		}
 	},
 	{
 		"id": "tapestries",
@@ -822,9 +789,9 @@
 	{
 		"id": "elect",
 		"tags": "Bar,prismatic",
-		"desc": "无序的,不合理的",
+		"desc": "致命能量",
 		"unit": false,
-		"color": "#808080",
+		"color": "#00BFFF",
 		"require": "g.energ_1>=1",
 		"name": "电能",
 		"max": 1

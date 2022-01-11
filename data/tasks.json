@@ -10,7 +10,7 @@
 			"stamina": 0.1
 		},
 		"result": {
-			"money": 0.4,
+			"money": 0.2,
 			"time": 0.5
 		},
 		"flavor": "劳苦..."
@@ -60,8 +60,8 @@
 			"stamina": 0.4
 		},
 		"result": {
-			"time": 1,
-			"hp.max": 0.008
+			"time": 0.2,
+			"hp.max": 0.001
 		},
 		"flavor": "强身健体"
 	},
@@ -99,7 +99,7 @@
 		}
 	},
 	{
-		"id": "iron_get_1",
+		"id": "copper_get_1",
 		"name": "购买铜板",
 		"desc": "你难以找到铜矿,所以你只能买加工好的",
 		"verb": "",
@@ -291,6 +291,58 @@
 		},
 		"result": {
 			"runner.exp": 0.2
+		}
+	},
+	{
+		"id": "farmer_1",
+		"name": "种田",
+		"desc": "种下种子,收获粮食",
+		"verb": "种植中",
+		"perpetual": true,
+		"require": "g.farmer>=1",
+		"length": 10,
+		"cost": {
+			"money": 0.1
+		},
+		"run": {
+			"time": -0.02
+		},
+		"every": {
+			"25": {
+				"effect.money": "0.02:25"
+			}
+		},
+		"result": {
+			"money": 2
+		},
+		"effect": {
+			"money": 0.5
+		}
+	},
+	{
+		"id": "businessman_1",
+		"name": "经营摊位",
+		"desc": "经营摊位来赚取",
+		"verb": "经营中",
+		"perpetual": true,
+		"require": "g.businessman>=1",
+		"length": 10,
+		"cost": {
+			"money": 0.1
+		},
+		"run": {
+			"time": -0.02
+		},
+		"every": {
+			"25": {
+				"effect.money": "0.02:25"
+			}
+		},
+		"result": {
+			"money": 2
+		},
+		"effect": {
+			"money": 0.5
 		}
 	},
 	{
@@ -1630,22 +1682,6 @@
 		"flavor": "If I could turn back time..."
 	},
 	{
-		"id": "mapstars",
-		"name": "map stars",
-		"length": 10,
-		"verb": "mapping stars",
-		"desc": "A complex diagram of lines and arcane symbols.",
-		"require": "g.astronomy>=5",
-		"fill": "starcharts",
-		"cost": {
-			"scrolls": 5
-		},
-		"run": {
-			"research": 10
-		},
-		"result": "starcharts"
-	},
-	{
 		"id": "bestiary",
 		"actname": "compile bestiary",
 		"verb": "researching beasts",
@@ -2080,43 +2116,6 @@
 		"mod": {
 			"unendingcodex.mod.codices.rate": "50%",
 			"tomes.rate": 0.005
-		}
-	},
-	{
-		"id": "almagest",
-		"desc": "Compile a manual of the sun and stars",
-		"actname": "almagest",
-		"require": "g.astronomy>=7&&g.tier1>0",
-		"max": 1,
-		"length": 50,
-		"cost": {
-			"codices": 30
-		},
-		"run": {
-			"research": 10,
-			"starcharts": 0.1
-		},
-		"log": {
-			"name": "almagest",
-			"desc": "Your map of the heavens is complete."
-		},
-		"mod": {
-			"starcharts.max": 10,
-			"research.max": 50,
-			"divination": {
-				"max": 1,
-				"rate": 0.2
-			},
-			"lore.max": 1,
-			"lore.rate": 0.2,
-			"astronomy": {
-				"max": 1,
-				"rate": "0.1+1%"
-			},
-			"planeslore": {
-				"max": 1,
-				"rate": "0.2+1%"
-			}
 		}
 	},
 	{

@@ -60,9 +60,7 @@
 					"1": "robber",
 					"2": "tramp",
 					"3": "monkey",
-					"4": "tiger",
-					"5": "jingguai"
-
+					"4": "tiger"
 				},
 				"result": {
 					"zero_crystal": "1~3",

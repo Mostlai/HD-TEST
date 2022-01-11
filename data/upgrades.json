@@ -57,6 +57,19 @@
 		}
 	},
 	{
+		"id": "speed_1",
+		"name": "风行",
+		"desc": "运用合理加速行动",
+		"max": 1,
+		"require": "g.heli",
+		"cost": {
+			"heli": 3
+		},
+		"mod": {
+			"speed": 2
+		}
+	},
+	{
 		"id": "ganwu1",
 		"name": "领会感悟",
 		"desc": "看起来你触摸到了什么东西,你需要静静体会它",
@@ -85,7 +98,7 @@
 		"name": "铁质护甲",
 		"desc": "用铁保护自己",
 		"max": 1,
-		"require": "g.cu_tron>=1",
+		"require": "g.cu_iron>=1",
 		"cost": {
 			"cu_tron": 7
 		},
@@ -98,7 +111,7 @@
 		"name": "铁质马具",
 		"desc": "给马儿披上马铠",
 		"max": 1,
-		"require": "g.cu_tron>=1",
+		"require": "g.cu_iron>=1",
 		"cost": {
 			"cu_tron": 7
 		},
@@ -118,6 +131,21 @@
 		"mod": {
 			"money.rate": -0.1,
 			"paper.rate": 0.3
+		}
+	},
+	{
+		"id": "speed_2",
+		"name": "零尔风行",
+		"desc": "通过零结晶加速行动",
+		"max": 1,
+		"require": "g.heli",
+		"require": "g.zero_crystal>=1&&g.crafting_1>=2&&g.speed>=1",
+		"cost": {
+			"money": 50,
+			"zero_crystal": 2
+		},
+		"mod": {
+			"speed": 1
 		}
 	},
 	{
@@ -157,6 +185,7 @@
 		"max": 1,
 		"require": "g.reading>=3",
 		"cost": {
+			"Knowledge_class_1": true,
 			"money": 30,
 			"exe_paper": 1
 		}
@@ -166,7 +195,7 @@
 		"name": "城镇教师",
 		"desc": "博学的你足以担任这里的教师",
 		"max": 1,
-		"require": "g.biology_ast_1>=2 && chaos_sci>=2",
+		"require": "g.biology_ast_1>=2 && g.chaos_sci>=2",
 		"cost": {
 			"exe_paper": 1
 		},
@@ -367,19 +396,6 @@
 		},
 		"mod": {
 			"runner.max": 1
-		}
-	},
-	{
-		"id": "mule",
-		"desc": "A mount that doesn't require much training.",
-		"require": "g.player.level>=4||g.animals>=2",
-		"slot": "mount",
-		"tags": "steed",
-		"buy": {
-			"gold": 100
-		},
-		"mod": {
-			"dist": 15
 		}
 	},
 	{

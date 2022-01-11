@@ -9,7 +9,7 @@
 			"money": 50
 		},
 		"mod": {
-			"space.max": 10
+			"space.max": 14
 		}
 	},
 	{
@@ -24,8 +24,8 @@
 			"paper": 20
 		},
 		"mod": {
-			"snp_data.rate":-0.01,
-			"space.max": 20
+			"snp_data.rate":0.01,
+			"space.max": 25
 		}
 	},
 	{

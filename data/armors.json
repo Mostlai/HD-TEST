@@ -30,7 +30,7 @@
 		"armor": 3,
 		"slot": "head",
 		"enchants": 1,
-		"level": 1,
+		"level": 2,
 		"cost": 10
 	},
 	{
@@ -40,7 +40,7 @@
 		"slot": "chest",
 		"enchants": 1,
 		"cost": 10,
-		"level": 1
+		"level": 2
 	},
 	{
 		"id": "fc_shins",
@@ -49,7 +49,7 @@
 		"slot": "shins",
 		"enchants": 1,
 		"cost": 10,
-		"level": 1
+		"level": 2
 	},
 	{
 		"id": "fc_foot",
@@ -58,7 +58,7 @@
 		"slot": "feet",
 		"enchants": 1,
 		"cost": 10,
-		"level": 1
+		"level": 2
 	},
 	{
 		"id": "jerkin",

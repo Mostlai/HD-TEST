@@ -59,6 +59,21 @@
 		}
 	},
 	{
+		"id": "bed_1",
+		"name": "软床",
+		"desc": "柔软的床铺",
+		"tags": "bed",
+		"slot": "bed",
+		"require": "g.stamina>=11",
+		"cost": {
+			"money": 40
+		},
+		"mod": {
+			"rest.effect.stamina": 0.27,
+			"space": 2
+		}
+	},
+	{
 		"id": "astronomical_instrument",
 		"name": "天文仪",
 		"desc": "简单的天文仪器",
@@ -130,7 +145,7 @@
 			"snp_data.max":3,
 			"exe_paper.max": 2,
 			"star_map.max": 2,
-			"space": 4
+			"space": 3
 		}
 	},
 	{
@@ -201,26 +216,11 @@
 		}
 	},
 	{
-		"id": "woodbed",
-		"name": "wooden bed",
-		"desc": "Small wooden bed.",
-		"tags": "bed",
-		"slot": "bed",
-		"require": "g.stamina>=15",
-		"cost": {
-			"gold": 40
-		},
-		"mod": {
-			"rest.effect.stamina": 0.27,
-			"space": 2
-		}
-	},
-	{
 		"id": "fourposter",
 		"desc": "Four post bed",
 		"tags": "bed",
 		"slot": "bed",
-		"require": "g.stamina>=30",
+		"locked": true,
 		"cost": {
 			"gold": 150
 		},
@@ -244,7 +244,7 @@
 		"desc": "Bed of burning coals",
 		"tags": "bed",
 		"slot": "bed",
-		"require": "g.fire>=10",
+		"locked": true,
 		"cost": {
 			"fire": 10
 		},
@@ -264,10 +264,7 @@
 		"id": "cache",
 		"name": "buried cache",
 		"desc": "A cache of treasure buried in the ground, protected by enchantment.",
-		"need": [
-			"outdoors",
-			"g.enchanting>0"
-		],
+		"locked": true,
 		"max": 3,
 		"cost": {
 			"research": 50,
@@ -285,7 +282,7 @@
 	{
 		"id": "vault",
 		"desc": "A safe space for treasure.",
-		"require": "g.space.max>=25",
+		"locked": true,
 		"repeat": true,
 		"cost": {
 			"gold": 500
@@ -304,7 +301,7 @@
 		"id": "treasureroom",
 		"name": "treasure room",
 		"desc": "A large room for accumulated treasures.",
-		"require": "g.space.max>=50",
+		"locked": true,
 		"repeat": true,
 		"cost": {
 			"gold": 1000,
@@ -324,7 +321,7 @@
 		"id": "magiccircle",
 		"name": "magic circle",
 		"desc": "Magic circle",
-		"require": "arcana",
+		"locked": true,
 		"max": 3,
 		"cost": {
 			"research": 40,
@@ -342,7 +339,7 @@
 		"name": "rusty cage",
 		"desc": "A cramped cage for keeping tiny test subjects.",
 		"tags": "t_pets,shadowsource",
-		"require": "neophyte",
+		"locked": true,
 		"max": 3,
 		"cost": {
 			"gold": 50,
@@ -360,7 +357,7 @@
 		"id": "terrarium",
 		"desc": "A glass enclosure of dirt, insects, and wormy things.",
 		"tags": "earthsource,t_pets",
-		"require": "neophyte",
+		"locked": true,
 		"repeat": true,
 		"cost": {
 			"research": 40,
@@ -376,7 +373,7 @@
 		"id": "vivarium",
 		"desc": "A glass enclosure for small reptiles, snakes, and frogs.",
 		"tags": "earthsource,t_pets,naturesource",
-		"require": "g.tier0>0&&g.naturelore>=5",
+		"locked": true,
 		"cost": {
 			"research": 300,
 			"gold": 500
@@ -394,7 +391,7 @@
 		"id": "workbench",
 		"desc": "A small bench for arts and crafts. Necessary for many wizard studies.",
 		"tags": "workspace",
-		"locked": false,
+		"locked": true,
 		"repeat": true,
 		"cost": {
 			"gold": 15
@@ -408,7 +405,7 @@
 		"id": "writingdesk",
 		"name": "writing desk",
 		"desc": "A desk for working and scribing.",
-		"require": "evt_helper",
+		"locked": true,
 		"tags": "workspace",
 		"cost": {
 			"gold": 100
@@ -426,7 +423,7 @@
 		"name": "crafting table",
 		"tags": "workspace",
 		"desc": "Wide table for crafting projects.",
-		"require": "evt_helper",
+		"locked": true,
 		"cost": {
 			"gold": 100
 		},
@@ -441,7 +438,7 @@
 		"name": "enchanting table",
 		"tags": "workspace,enchantsource",
 		"desc": "Runed table for enchanting",
-		"require": "enchanting",
+		"locked": true,
 		"cost": {
 			"gold": 200,
 			"research": 200,
@@ -456,7 +453,7 @@
 	{
 		"id": "plant",
 		"name": "potted milkweed",
-		"locked": false,
+		"locked": true,
 		"desc": "Really brightens up the place.",
 		"tags": "plantsource",
 		"repeat": true,
@@ -473,7 +470,7 @@
 		"name": "creeping vine",
 		"desc": "A quickly growing plant",
 		"tags": "plantsource",
-		"require": "g.herbalism>=4",
+		"locked": true,
 		"max": 5,
 		"cost": {
 			"gold": 75
@@ -556,22 +553,6 @@
 		"mod": {
 			"arcana.max": 1,
 			"arcana.rate": 0.0001,
-			"space": 2
-		}
-	},
-	{
-		"id": "telescope",
-		"require": "astronomy",
-		"tags": "starsource",
-		"cost": {
-			"gold": 400,
-			"research": 300
-		},
-		"mod": {
-			"arcana.max": 1,
-			"arcana.rate": 0.0001,
-			"astronomy.max": 2,
-			"astronomy.rate": 0.2,
 			"space": 2
 		}
 	},
@@ -720,7 +701,7 @@
 	{
 		"id": "bonfire",
 		"tags": "firesource",
-		"require": "g.space.max>=20",
+		"locked": true,
 		"desc": "A burning pyre for the practice of pyromancy.",
 		"cost": {
 			"fire": 4
@@ -754,7 +735,7 @@
 		"id": "fireplace",
 		"desc": "A cozy place for cooking food and brewing potions.",
 		"tags": "firesource",
-		"require": "g.space.max>=15",
+		"locked": true,
 		"repeat": true,
 		"cost": {
 			"gold": 175
@@ -802,7 +783,7 @@
 		"id": "fountain",
 		"desc": "Water Fountain",
 		"tags": "watersource",
-		"require": "g.space.max>20",
+		"locked": true,
 		"cost": {
 			"gold": 500
 		},
@@ -966,7 +947,7 @@
 		"desc": "A simple, bare cell.",
 		"tags": "prison,shadowsource",
 		"repeat": true,
-		"require": "g.tier0>0&&g.space.max>=20",
+		"locked": true,
 		"cost": {
 			"gold": 400
 		},
@@ -1310,7 +1291,7 @@
 		"id": "pond",
 		"desc": "Pond",
 		"tags": "watersource",
-		"require": "g.space.max>50",
+		"locked": true,
 		"cost": {
 			"gold": 500
 		},
@@ -1329,7 +1310,7 @@
 		"name": "sand garden",
 		"tags": "earthsource",
 		"desc": "Rocks and sand form patterns of intricate design.",
-		"require": "g.earth.max>=5&&g.space.max>=50",
+		"locked": true,
 		"cost": {
 			"gold": 100,
 			"research": 100
@@ -1362,7 +1343,7 @@
 		"name": "lake of fire",
 		"desc": "A lake of burning fire.",
 		"tags": "firesource",
-		"require": "g.fire.max>=10&&g.space.max>=100",
+		"locked": true,
 		"cost": {
 			"fire": 10,
 			"gold": 100,
@@ -1380,7 +1361,7 @@
 		"id": "bottomlesspit",
 		"name": "bottomless pit",
 		"desc": "An endless hole in the ground.",
-		"require": "g.planeslore>=12&&g.space.max>=20&&g.tier4>0",
+		"locked": true,
 		"cost": {
 			"gems": 10,
 			"research": 500,
@@ -1423,7 +1404,7 @@
 		"id": "torturechamber",
 		"name": "torture chamber",
 		"desc": "A room for inquisitions and research.",
-		"require": "g.evil>0&&g.space.max>=100",
+		"locked": true,
 		"tags": "shadowsource",
 		"cost": {
 			"gold": 400,
@@ -1441,7 +1422,7 @@
 	{
 		"id": "graveyard",
 		"desc": "A resting place for the dead.",
-		"require": "g.space.max>=100",
+		"locked": true,
 		"tags": "shadowsource,spiritsource",
 		"cost": {
 			"gold": 700,
@@ -1465,7 +1446,7 @@
 		"id": "workshop",
 		"tags": "workspace",
 		"desc": "A space suitable for crafting and enchanting items.",
-		"require": "g.space.max>=50&&(g.crafting>=7||g.enchanting>=7)",
+		"locked": true,
 		"cost": {
 			"gold": 1000,
 			"research": 2500
