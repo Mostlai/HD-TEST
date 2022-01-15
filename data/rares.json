@@ -1,0 +1,185 @@
+[
+	{
+		"id": "karnivexcrown",
+		"name": "crown of karnivex",
+		"desc": "The conceits of Karnivex were without bounds.",
+		"slot": "head",
+		"unique": true,
+		"level": 7,
+		"enchants": 7,
+		"armor": 5,
+		"alter": {
+			"mod": {
+				"self.bonuses.fire": "5%",
+				"self.resist.fire": 10,
+				"self.resist.silence": 5,
+				"self.tohit": 1,
+				"rage.rate": 0.5
+			}
+		}
+	},
+	{
+		"id": "veldranearring",
+		"name": "veldran's earring",
+		"desc": "A small blue stone with swirls of white.",
+		"unique": true,
+		"level": 5,
+		"enchants": 5,
+		"armor": 1,
+		"slot": "trinket",
+		"alter": {
+			"mod": {
+				"water.rate": 0.1,
+				"self.resist.water": 5
+			}
+		}
+	},
+	{
+		"id": "ecdysiastwrap",
+		"name": "wraps of the ecdysiast",
+		"type": "armor",
+		"slot": "shins",
+		"material": "silk",
+		"level": 7,
+		"enchants": 7,
+		"desc": "Desilla awarded her servants with articles of apparel.",
+		"alter": {
+			"mod": {
+				"self.resist.paralysis": 10,
+				"charms.max": 1,
+				"charms.rate": 0.3
+			}
+		},
+		"flavor": "The awards however, were given sparingly."
+	},
+	{
+		"id": "lillitscord",
+		"name": "lillit's cord",
+		"type": "armor",
+		"slot": "waist",
+		"armor": 2,
+		"unique": true,
+		"level": 5,
+		"enchants": 5,
+		"desc": "Lillit was known for her soothing presence.",
+		"alter": {
+			"mod": {
+				"rage.rate": -0.25
+			}
+		}
+	},
+	{
+		"id": "botanistgloves",
+		"name": "gloves of the botanist",
+		"type": "armor",
+		"slot": "hands",
+		"material": "basiliskhide",
+		"armor": 5,
+		"enchants": 5,
+		"alter": {
+			"mod": {
+				"self.resist.poison": 10
+			}
+		}
+	},
+	{
+		"id": "jazidscompass",
+		"name": "jazid's compass",
+		"unique": true,
+		"level": 10,
+		"enchants": 10,
+		"desc": "What leads your way can lead to you.",
+		"type": "armor",
+		"slot": "neck",
+		"alter": {
+			"mod": {
+				"s_travel.max": 2,
+				"bf.rate": -0.5
+			}
+		},
+		"flavor": "Jazid always finds his compass."
+	},
+	{
+		"id": "patronring1",
+		"name": "ring of the patron",
+		"unique": true,
+		"material": "adamant",
+		"desc": "A trinket bestowed on mages embroiled in the world's affairs.",
+		"alter": {
+			"mod": {
+				"space.max": "1%"
+			}
+		}
+	},
+	{
+		"id": "icedagg",
+		"name": "icy dagger",
+		"material": "ice",
+		"enchants": 3,
+		"type": "weapon",
+		"tohit": 1,
+		"attack": {
+			"kind": "pierce",
+			"damage": "2~4",
+			"dot": {
+				"duration": 5,
+				"dmg": "1~3",
+				"name": "frosty",
+				"kind": "frost"
+			}
+		},
+		"cost": {
+			"gold": 20
+		},
+		"level": 3
+	},
+	{
+		"id": "tenwickstick",
+		"name": "tenwick's walking stick",
+		"level": 5,
+		"enchants": 5,
+		"unique": true,
+		"type": "weapon",
+		"material": "wood",
+		"alter": {
+			"mod": {
+				"unease.rate": "-5%",
+				"weary.rate": "-10%",
+				"dist": "5%"
+			}
+		},
+		"attack": {
+			"dmg": "5~10",
+			"kind": "blunt"
+		}
+	},
+	{
+		"id": "titanhammer",
+		"name": "titan's hammer",
+		"desc": "Wrought from unyielding adamant, it hums with the energies of the earth.",
+		"type": "weapon",
+		"attack": {
+			"kind": "blunt",
+			"damage": "40~50"
+		},
+		"alter": {
+			"mod": {
+				"earth.rate": 1,
+				"earth.max": 10,
+				"self.defense": 30,
+				"smite.attack.tohit": 5,
+				"smite.level": -2,
+				"smite.attack.damage": "20%",
+				"fissure.cd": "-25%",
+				"fissure.attack.dot.duration": 1
+			}
+		},
+		"hands": 2,
+		"tags": "hammer",
+		"level": 10,
+		"enchants":10,
+		"sell": {
+			"gold": 1000
+		}
+	}
+]

@@ -1,0 +1,243 @@
+[
+	{
+		"id": "gloves",
+		"name": "皮手套",
+		"armor": 1,
+		"slot": "hands",
+		"cost": 20,
+		"enchants": 1,
+		"only": "cloth,leather"
+	},
+	{
+		"id": "boots",
+		"name": "布鞋",
+		"armor": 1,
+		"slot": "feet",
+		"cost": 20,
+		"enchants": 1,
+		"only": "cloth,leather,metal"
+	},
+	{
+		"id": "hat",
+		"name": "小帽子",
+		"armor": 0,
+		"slot": "head",
+		"cost": 10
+	},
+	{
+		"id": "fc_helmet",
+		"name": "云翼头盔",
+		"armor": 3,
+		"slot": "head",
+		"enchants": 1,
+		"level": 2,
+		"cost": 10
+	},
+	{
+		"id": "fc_armor",
+		"name": "云翼护甲",
+		"armor": 5,
+		"slot": "chest",
+		"enchants": 1,
+		"cost": 10,
+		"level": 2
+	},
+	{
+		"id": "fc_shins",
+		"name": "云翼护腿",
+		"armor": 4,
+		"slot": "shins",
+		"enchants": 1,
+		"cost": 10,
+		"level": 2
+	},
+	{
+		"id": "fc_foot",
+		"name": "云翼战靴",
+		"armor": 2,
+		"slot": "feet",
+		"enchants": 1,
+		"cost": 10,
+		"level": 2
+	},
+	{
+		"id": "jerkin",
+		"name": "坎肩",
+		"armor": 2,
+		"slot": "chest",
+		"cost": 100,
+		"level": 1,
+		"only": "natural,leather,cloth"
+	},
+	{
+		"id": "pants",
+		"name": "皮裤",
+		"armor": 2,
+		"slot": "shins",
+		"cost": 100,
+		"level": 1,
+		"only": "natural,leather,cloth"
+	},
+	{
+		"id": "padded armor",
+		"armor": 3,
+		"slot": "chest",
+		"cost": 150,
+		"level": 4,
+		"only": "leather,cloth"
+	},
+	{
+		"id": "chainmail",
+		"armor": 5,
+		"slot": "chest",
+		"cost": 350,
+		"level": 5,
+		"enchants": 2,
+		"only": "metal,ethereal"
+	},
+	{
+		"id": "plate mail",
+		"armor": 8,
+		"slot": "chest",
+		"cost": 700,
+		"level": 9,
+		"enchants": 2,
+		"only": "metal,ethereal"
+	},
+	{
+		"id": "robe",
+		"armor": 0,
+		"slot": "chest",
+		"cost": 50,
+		"only": "cloth",
+		"enchants": 10
+	},
+	{
+		"id": "conical helm",
+		"armor": 3,
+		"slot": "head",
+		"cost": 40,
+		"only": "metal,ethereal"
+	},
+	{
+		"id": "belt",
+		"armor": 0,
+		"slot": "waist",
+		"cost": 30,
+		"enchants": 2,
+		"only": "natural,cloth"
+	},
+	{
+		"id": "girdle",
+		"armor": 1,
+		"slot": "waist",
+		"cost": 50
+	},
+	{
+		"id": "cincture",
+		"armor": 1,
+		"slot": "waist",
+		"cost": 50,
+		"enchants": 3
+	},
+	{
+		"id": "sash",
+		"armor": 0,
+		"slot": "waist",
+		"cost": 10,
+		"only": "cloth",
+		"enchants": 3
+	},
+	{
+		"id": "cape",
+		"armor": 0,
+		"slot": "back",
+		"cost": 50,
+		"only": "cloth",
+		"enchants": 3
+	},
+	{
+		"id": "cloak",
+		"armor": 1,
+		"slot": "back",
+		"cost": 50,
+		"only": "cloth",
+		"enchants": 5
+	},
+	{
+		"id": "wings",
+		"armor": 1,
+		"slot": "back",
+		"level": 20,
+		"cost": 5000,
+		"properties": "10%",
+		"enchants": 4
+	},
+	{
+		"id": "greaves",
+		"armor": 1,
+		"slot": "shins",
+		"cost": 30
+	},
+	{
+		"id": "pendant",
+		"armor": 0,
+		"slot": "neck",
+		"cost": 300,
+		"properties": "5%",
+		"enchants": 4
+	},
+	{
+		"id": "collar",
+		"armor": 1,
+		"slot": "neck",
+		"cost": 30,
+		"enchants": 2
+	},
+	{
+		"id": "amulet",
+		"armor": 0,
+		"slot": "neck",
+		"cost": 500,
+		"level": 15,
+		"properties": "10%",
+		"enchants": 5
+	},
+	{
+		"id": "necklace",
+		"armor": 0,
+		"slot": "neck",
+		"cost": 50,
+		"properties": "1%",
+		"enchants": 3
+	},
+	{
+		"id": "band",
+		"armor": 0,
+		"slot": "fingers",
+		"kind": "ring",
+		"cost": 50,
+		"level": 3,
+		"properties": "1%",
+		"enchants": 3
+	},
+	{
+		"id": "loop",
+		"armor": 0,
+		"slot": "fingers",
+		"kind": "ring",
+		"cost": 10,
+		"level": 1,
+		"enchants": 2
+	},
+	{
+		"id": "ring",
+		"armor": 0,
+		"slot": "fingers",
+		"kind": "ring",
+		"level": 5,
+		"cost": 100,
+		"properties": "3%",
+		"enchants": 5
+	}
+]

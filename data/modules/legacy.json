@@ -1,0 +1,145 @@
+{
+	"module": "legacy",
+	"data": {
+		"materials": [
+			{
+				"id": "crimsonice",
+				"priceMod": 20,
+				"tohit": 10,
+				"bonus": 3,
+				"kind": "ice",
+				"noproc":true,
+				"level": 5
+			},
+			{
+				"id": "coldsteel",
+				"kind": "metal",
+				"priceMod": 30,
+				"tohit": 9,
+				"enchants": 4,
+				"bonus": 7,
+				"noproc":true,
+				"level": 5
+			},
+			{
+				"id": "permafrost",
+				"priceMod": 80,
+				"bonus": 10,
+				"tohit": 11,
+				"kind": "ice",
+				"noproc":true,
+				"level": 7
+			}
+		],
+		"rares": [
+			{
+				"id":"vorpal",
+				"name":"vorpal blade",
+				"level":14,
+				"type":"weapon",
+				"material":"quicksteel",
+				"tohit":10,
+				"attack":{
+					"kind":"slash",
+					"dmg":"5~10"
+				}
+			},
+			{
+				"id":"bdagg",
+				"name":"necrotic dagger",
+				"material":"bone",
+				"type":"weapon",
+				"tohit":2,
+				"attack":{ "kind":"pierce", "damage":"1~3","dot":{
+					"duration":3,
+					"dmg":"1~2",
+					"name":"necrosis",
+					"kind":"necrotic"
+
+				}}, "cost":20, "level":3
+			},
+			{
+				"id": "iceorb",
+				"name": "❄️orb of winters",
+				"tags":"t_event,t_orb",
+				"hands":2,
+				"desc": "A snowglobe with magical powers. It reminds you of colder days.",
+				"level": 10,
+				"material":"glass",
+				"unique": true,
+				"type": "weapon",
+				"enchants": 10,
+				"sell": {
+					"gold": 100
+				},
+				"attack": {
+					"name": "blizzard",
+					"tohit": 10,
+					"damage": "8~15",
+					"kind": "water",
+					"targets": "enemies",
+					"dot": {
+						"duration": 20,
+						"id":"frostbite",
+						"kind": "water",
+						"dmg": "8~15",
+						"mod": {
+							"self.speed": -5
+						}
+					}
+				},
+				"alter":{
+					"mod": {
+						"ice.rate": "20%",
+						"ice.max": "20%",
+						"icelore.rate": 2,
+						"water.rate": "20%",
+						"water.max": "20%",
+						"waterlore.rate": 2,
+						"fire.rate": "-80%",
+						"fire.max": "-80%"
+					}
+				}
+			},
+			{
+				"id": "iceorb",
+				"name": "orb of winters",
+				"desc": "A snowglobe with magical powers. It reminds you of colder days.",
+				"level": 10,
+				"save": true,
+				"unique": true,
+				"type": "weapon",
+				"tohit": 5,
+				"cost": {
+					"gold": 100
+				},
+				"attack": {
+					"name": "blizzard",
+					"damage": "5~12",
+					"kind": "water",
+					"targets": "enemies",
+					"dot": {
+						"duration": 20,
+						"kind": "water",
+						"dmg": "5~12",
+						"mod": {
+							"speed": -5
+						}
+					}
+				},
+				"alter": {
+					"mod": {
+						"ice.rate": "20%",
+						"ice.max": "20%",
+						"icelore.rate": 2,
+						"water.rate": "20%",
+						"water.max": "20%",
+						"waterlore.rate": 2,
+						"fire.rate": "-80%",
+						"fire.max": "-80%"
+					}
+				}
+			}
+		]
+	}
+}

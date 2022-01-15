@@ -1,0 +1,1048 @@
+{
+	"module": "ritualist",
+	"author": "regallion",
+	"email": "",
+	"git": "",
+	"data": {
+		"skills": [
+			{
+				"id": "ritualism",
+				"name": "rituals",
+				"require": "g.runner.max>1&&g.ritualchamber>0",
+				"desc": "Practice in the various magic rituals and their dangers",
+				"level": 25,
+				"buy": {
+					"sp": 15,
+					"codices": 50,
+					"tomes": 20
+				},
+				"run": {
+					"stamina": 1,
+					"prismatic": 1
+				},
+				"result": {
+					"ritualnotes": 0.1
+				},
+				"mod": {
+					"ritualward.rate": 0.0001
+				}
+			}
+		],
+		"tasks": [
+			{
+				"id": "ritual_arcane",
+				"name": "ritual of the arcane",
+				"tags": "t_ritual",
+				"desc": "A simple ritual, suitable for beginners.",
+				"perpetual": true,
+				"verb": "arcane ritual",
+				"require": "g.ritualism>0",
+				"buy": {
+					"ritualward": 1
+				},
+				"run": {
+					"stamina": 0.5
+				},
+				"effect": {
+					"ritualnotes": 0.0001
+				},
+				"runmod": {
+					"mana.rate": 1
+				}
+			},
+			{
+				"id": "ritual_lightbinding",
+				"name": "ritual of light binding",
+				"tags": "t_ritual",
+				"desc": "For those who have forsaken the light, the only option is force.",
+				"perpetual": true,
+				"verb": "lightbinding ritual",
+				"require": "g.evil>0&&g.ritualist>0",
+				"buy": {
+					"ritualward": 3
+				},
+				"run": {
+					"stamina": 1,
+					"shadow": 2
+				},
+				"effect": {
+					"ritualnotes": 0.0002
+				},
+				"runmod": {
+					"light.max": 10
+				}
+			},
+			{
+				"id": "ritual_curse",
+				"name": "ritual of cursing",
+				"tags": "t_ritual",
+				"desc": "Empower souls with malice to shield you from harm.",
+				"perpetual": true,
+				"verb": "cursing ritual",
+				"require": "g.ritualism>3&&g.evil>0",
+				"buy": {
+					"ritualward": 1
+				},
+				"run": {
+					"souls": 0.3
+				},
+				"effect": {
+					"ritualnotes": 0.0001
+				},
+				"runmod": {
+					"player.resist.shadow": 5,
+					"player.resist.light": 5,
+					"hp.max": 50,
+					"player.defense": 10
+				}
+			},
+			{
+				"id": "ritual_cultivation",
+				"name": "ritual of cultivation",
+				"tags": "t_ritual",
+				"desc": "Command the plants to grow and blossom",
+				"perpetual": true,
+				"verb": "cultivation ritual",
+				"require": "g.ritualism>3&&(g.druid+g.fey+g.kell+g.highkell)>0",
+				"buy": {
+					"ritualward": 1
+				},
+				"run": {
+					"nature": 2,
+					"bodies": 0.5
+				},
+				"effect": {
+					"ritualnotes": 0.0001
+				},
+				"runmod": {
+					"creepingvine.herbs.rate": 0.2,
+					"garden.herbs.rate": 1
+				}
+			},
+			{
+				"id": "ritual_healing",
+				"name": "ritual of healing",
+				"tags": "t_ritual",
+				"desc": "Fortify your body with light",
+				"perpetual": true,
+				"verb": "healing ritual",
+				"need": "g.evil<1",
+				"require": "g.ritualism>3&&g.evil<1",
+				"buy": {
+					"ritualward": 1
+				},
+				"run": {
+					"light": 2,
+					"lightgem": 0.2
+				},
+				"effect": {
+					"ritualnotes": 0.0001
+				},
+				"runmod": {
+					"hp.rate": 10,
+					"hp.max": 100
+				}
+			},
+			{
+				"id": "ritual_refresh",
+				"name": "ritual of refreshment",
+				"tags": "t_ritual",
+				"desc": "Drain vitality from living tissues to replenish your stamina.",
+				"perpetual": true,
+				"verb": "energy ritual",
+				"require": "g.ritualism>5",
+				"buy": {
+					"ritualward": 1
+				},
+				"run": {
+					"herbs": 5,
+					"bodies": 0.5,
+					"bloodgem": 0.075,
+					"weary": -1
+				},
+				"effect": {
+					"ritualnotes": 0.0001
+				},
+				"runmod": {
+					"stamina.rate": 1.5,
+					"stamina.max": 40
+				}
+			},
+			{
+				"id": "ritual_arcane_greater",
+				"name": "greater ritual of the arcane",
+				"tags": "t_ritual",
+				"desc": "An advanced ritual for those adept in ritual magic",
+				"perpetual": true,
+				"verb": "greater arcane ritual",
+				"require": "g.ritualism>6",
+				"buy": {
+					"ritualward": 4
+				},
+				"run": {
+					"stamina": 3,
+					"ritualpaper": 0.01
+				},
+				"effect": {
+					"ritualnotes": 0.0005
+				},
+				"runmod": {
+					"prismatic.rate": 1
+				}
+			},
+			{
+				"id": "ritual_curse_greater",
+				"name": "greater ritual of cursing",
+				"tags": "t_ritual",
+				"desc": "Empower legions of cursed souls to guard your mortal form",
+				"perpetual": true,
+				"verb": "greater cursing ritual",
+				"require": "g.ritualism>8&&g.evil>0",
+				"buy": {
+					"ritualward": 4
+				},
+				"run": {
+					"souls": 1,
+					"ritualpaper": 0.01
+				},
+				"effect": {
+					"ritualnotes": 0.0005
+				},
+				"runmod": {
+					"player.resist.shadow": 10,
+					"player.resist.light": 10,
+					"hp.max": 100,
+					"player.defense": 20
+				}
+			},
+			{
+				"id": "ritual_cultivation_greater",
+				"name": "greater ritual of cultivation",
+				"tags": "t_ritual",
+				"desc": "Use the lifeforce of multiple bodies to create a field of herbs in a blink of an eye",
+				"perpetual": true,
+				"verb": "greater cultivation ritual",
+				"require": "g.ritualism>8&&(g.druid+g.fey+g.kell+g.highkell)>0",
+				"buy": {
+					"ritualward": 4
+				},
+				"run": {
+					"nature": 5,
+					"bodies": 1.5,
+					"ritualpaper": 0.01
+				},
+				"effect": {
+					"ritualnotes": 0.0005
+				},
+				"runmod": {
+					"creepingvine.herbs.rate": 0.4,
+					"garden.herbs.rate": 1.8
+				}
+			},
+			{
+				"id": "ritual_healing_greater",
+				"name": "greater ritual of healing",
+				"tags": "t_ritual",
+				"desc": "Infuse yourself with a healing radiance",
+				"perpetual": true,
+				"verb": "greater healing ritual",
+				"need": "g.evil<1",
+				"require": "g.ritualism>8&&g.evil<1",
+				"buy": {
+					"ritualward": 4
+				},
+				"run": {
+					"light": 4,
+					"lightgem": 0.5,
+					"ritualpaper": 0.01
+				},
+				"effect": {
+					"ritualnotes": 0.0005
+				},
+				"runmod": {
+					"hp.rate": 20,
+					"hp.max": 150
+				}
+			},
+			{
+				"id": "ritual_refresh_greater",
+				"name": "greater ritual of energy",
+				"tags": "t_ritual",
+				"desc": "Pass on your exhaustion to others",
+				"perpetual": true,
+				"verb": "greater energy ritual",
+				"require": "g.ritualism>10",
+				"buy": {
+					"ritualward": 4
+				},
+				"run": {
+					"herbs": 12,
+					"bodies": 1,
+					"bloodgem": 0.1,
+					"weary": -2,
+					"ritualpaper": 0.01
+				},
+				"effect": {
+					"ritualnotes": 0.0005
+				},
+				"runmod": {
+					"stamina.rate": 3,
+					"stamina.max": 60
+				}
+			},
+			{
+				"id": "ritual_time",
+				"name": "ritual of time",
+				"tags": "t_ritual",
+				"desc": "Control the ebb and flow of time to your benefit",
+				"perpetual": true,
+				"verb": "time ritual",
+				"require": "g.ritualism>15&&g.masterritualist>0",
+				"buy": {
+					"ritualward": 10
+				},
+				"run": {
+					"tempus": 2,
+					"ritualpaper": 0.3,
+					"sindel": 0.05
+				},
+				"effect": {
+					"ritualnotes": 0.005
+				},
+				"runmod": {
+					"speed": 25
+				}
+			},
+			{
+				"id": "ritual_void",
+				"name": "ritual of void",
+				"tags": "t_ritual",
+				"desc": "Null",
+				"perpetual": true,
+				"verb": "void ritual",
+				"require": "g.ritualism>15&&g.masterritualist>0",
+				"buy": {
+					"ritualward": 10
+				},
+				"run": {
+					"voidgem": 0.1,
+					"ritualpaper": 0.3,
+					"sindel": 0.05
+				},
+				"effect": {
+					"ritualnotes": 0.005
+				},
+				"runmod": {
+					"stamina.rate": 7,
+					"stress.rate": -10
+				}
+			},
+			{
+				"id": "ritual_dreams",
+				"name": "ritual of dreams",
+				"tags": "t_ritual",
+				"desc": "Don't let your dreams be dreams",
+				"perpetual": true,
+				"verb": "dream ritual",
+				"require": "g.ritualism>15&&g.masterritualist>0",
+				"buy": {
+					"ritualward": 10
+				},
+				"run": {
+					"dreams": 0.07,
+					"ritualpaper": 0.3,
+					"sindel": 0.05
+				},
+				"effect": {
+					"ritualnotes": 0.005
+				},
+				"runmod": {
+					"player.resist.fire": 15,
+					"player.resist.light": 15,
+					"player.resist.shadow": 15,
+					"player.resist.water": 15,
+					"player.resist.earth": 15,
+					"player.resist.air": 15,
+					"player.resist.mana": 15,
+					"player.resist.blunt": 40,
+					"player.resist.slash": 40,
+					"player.resist.pierce": 40
+				}
+			},
+			{
+				"id": "ritual_fire",
+				"name": "ritual of fire",
+				"tags": "t_ritual",
+				"desc": "Blazing fire fills your soul",
+				"perpetual": true,
+				"verb": "fire ritual",
+				"require": "g.ritual_elementalboosters>0",
+				"buy": {
+					"ritualward": 2
+				},
+				"run": {
+					"prismatic": 1
+				},
+				"effect": {
+					"ritualnotes": 0.0002,
+					"fire": 3
+				},
+				"runmod": {
+					"player.bonuses.fire": "15%",
+					"player.resist.fire": 10
+				}
+			},
+			{
+				"id": "ritual_water",
+				"name": "ritual of water",
+				"tags": "t_ritual",
+				"desc": "Flowing water fills your soul",
+				"perpetual": true,
+				"verb": "water ritual",
+				"require": "g.ritual_elementalboosters>0",
+				"buy": {
+					"ritualward": 2
+				},
+				"run": {
+					"prismatic": 1
+				},
+				"effect": {
+					"ritualnotes": 0.0002,
+					"water": 3
+				},
+				"runmod": {
+					"player.bonuses.water": "15%",
+					"player.resist.water": 10
+				}
+			},
+			{
+				"id": "ritual_air",
+				"name": "ritual of air",
+				"tags": "t_ritual",
+				"desc": "Rushing wind fills your soul",
+				"perpetual": true,
+				"verb": "air ritual",
+				"require": "g.ritual_elementalboosters>0",
+				"buy": {
+					"ritualward": 2
+				},
+				"run": {
+					"prismatic": 1
+				},
+				"effect": {
+					"ritualnotes": 0.0002,
+					"air": 3
+				},
+				"runmod": {
+					"player.bonuses.air": "15%",
+					"player.resist.air": 10
+				}
+			},
+			{
+				"id": "ritual_earth",
+				"name": "ritual of earth",
+				"tags": "t_ritual",
+				"desc": "Crushing earth fills your soul",
+				"perpetual": true,
+				"verb": "earth ritual",
+				"require": "g.ritual_elementalboosters>0",
+				"buy": {
+					"ritualward": 2
+				},
+				"run": {
+					"prismatic": 1
+				},
+				"effect": {
+					"ritualnotes": 0.0002,
+					"earth": 3
+				},
+				"runmod": {
+					"player.bonuses.earth": "15%",
+					"player.resist.earth": 10
+				}
+			},
+			{
+				"id": "ritual_mana",
+				"name": "ritual of mana",
+				"tags": "t_ritual",
+				"desc": "Arcane power fills your soul",
+				"perpetual": true,
+				"verb": "mana ritual",
+				"require": "g.ritual_elementalboosters>0",
+				"buy": {
+					"ritualward": 2
+				},
+				"run": {
+					"prismatic": 1
+				},
+				"effect": {
+					"ritualnotes": 0.0002,
+					"mana": 3
+				},
+				"runmod": {
+					"player.bonuses.mana": "15%",
+					"player.resist.mana": 10
+				}
+			},
+			{
+				"id": "ritual_penance",
+				"name": "ritual of penance",
+				"tags": "t_ritual",
+				"desc": "Rapturous guilt fills your soul",
+				"perpetual": true,
+				"verb": "penance ritual",
+				"require": "g.ritual_elementalboosters>0",
+				"buy": {
+					"ritualward": 2
+				},
+				"run": {
+					"prismatic": 1
+				},
+				"effect": {
+					"ritualnotes": 0.0002,
+					"light": 3,
+					"shadow": 3
+				},
+				"runmod": {
+					"player.bonuses.light": "15%",
+					"player.resist.light": 10,
+					"player.bonuses.shadow": "15%",
+					"player.resist.shadow": 10
+				}
+			},
+			{
+				"id": "ritual_dawn",
+				"name": "ritual of dawn",
+				"tags": "t_ritual",
+				"desc": "A part of one whole, useless by itself, yet powerful nonetheless",
+				"perpetual": true,
+				"verb": "dawn ritual",
+				"require": "g.masterritualist>0",
+				"buy": {
+					"ritualward": 5
+				},
+				"run": {
+					"stamina": 2,
+					"hp": 10
+				},
+				"effect": {
+					"ritualnotes": 0.0003
+				},
+				"runmod": {
+					"ritual_dusk.mod.player.defense": 10,
+					"ritual_dusk.mod.player.bonuses.blunt": "10%",
+					"ritual_dusk.mod.player.bonuses.pierce": "10%",
+					"ritual_dusk.mod.player.bonuses.slash": "10%"
+				}
+			},
+			{
+				"id": "ritual_dusk",
+				"name": "ritual of dusk",
+				"tags": "t_ritual",
+				"desc": "A part of one whole, useless by itself, yet powerful nonetheless",
+				"perpetual": true,
+				"verb": "dusk ritual",
+				"require": "g.masterritualist>0",
+				"buy": {
+					"ritualward": 5
+				},
+				"run": {
+					"prismatic": 2
+				},
+				"effect": {
+					"ritualnotes": 0.0003
+				},
+				"runmod": {
+					"ritual_dawn.mod.speed": 5,
+					"ritual_dawn.mod.stress": -0.2,
+					"ritual_dawn.mod.dist": 100
+				}
+			},
+			{
+				"id": "ritual_mandala",
+				"name": "ritual of mandalas",
+				"tags": "t_ritual",
+				"desc": "The ultimate creation of a master ritualist, maintaining this ritual allows the user to perform any number of rituals within.",
+				"perpetual": true,
+				"verb": "mandala ritual",
+				"require": "g.ritualist>0&&g.masterritualist>0&&g.ritualism>=20",
+				"buy": {
+					"ritualward": 10
+				},
+				"run": {
+					"prismatic": 4,
+					"tempus": 2,
+					"timerune": 0.006
+				},
+				"effect": {
+					"ritualnotes": 0.005
+				},
+				"runmod": {
+					"t_ritual.mod.runner.max": 1
+				}
+			},
+			{
+				"id": "ritualpaper_raw",
+				"name": "create ritual paper",
+				"verb": "inscribing",
+				"require": "g.ritualism>=5",
+				"need": "workspace",
+				"desc": "To sustain advanced rituals, special papers inscribed with magical sigils needs to be prepared",
+				"fill": [
+					"ritualpaper"
+				],
+				"length": 5,
+				"cost": {
+					"gold": 250,
+					"research": 150
+				},
+				"run": {
+					"stamina": 0.5,
+					"mana": 1
+				},
+				"result": {
+					"ritualpaper": 1
+				},
+				"runmod": {}
+			},
+			{
+				"id": "ritualpaper_prepared",
+				"name": "inscribe ritual paper",
+				"verb": "inscribing",
+				"require": "(g.ritualist+g.masterritualist)>0",
+				"need": "workspace",
+				"desc": "By using pre-infused paper, the creation of ritual paper can be vastly simplified",
+				"fill": [
+					"ritualpaper"
+				],
+				"length": 2,
+				"cost": {
+					"rawritualpaper": 1,
+					"research": 100
+				},
+				"run": {
+					"stamina": 0.2,
+					"mana": 1
+				},
+				"result": {
+					"ritualpaper": 1
+				},
+				"runmod": {}
+			}
+		],
+		"upgrades": [
+			{
+				"id": "ritual_efficiency",
+				"name": "Efficient rituals",
+				"desc": "Skillful ritualists can save on materials by reducing the safety margins",
+				"require": "g.ritualist>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 5
+				},
+				"mod": {
+					"ritual_arcane.run.stamina": -0.2,
+					"ritual_cultivation.run.bodies": -0.1,
+					"ritual_curse.run.souls": -0.2,
+					"ritual_refresh.run.bodies": -0.1,
+					"ritual_refresh.run.bloodgem": -0.015,
+					"ritual_healing.run.lightgem": -0.04
+				},
+				"flavor": "The chances of arcane collapse are negligible in the short run"
+			},
+			{
+				"id": "ritual_power",
+				"name": "Powerful rituals",
+				"desc": "Make greater rituals great again",
+				"require": "g.ritualist>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 10
+				},
+				"mod": {
+					"ritual_arcane_greater.runmod.prismatic": 0.2,
+					"ritual_cultivation_greater.runmod.creepingvine.herbs.rate": 0.1,
+					"ritual_cultivation_greater.runmod.garden.herbs.rate": 0.4,
+					"ritual_curse_greater.runmod.player.defense": 10,
+					"ritual_refresh_greater.runmod.stamina.max": 20,
+					"ritual_healing_greater.runmod.hp.max": 50
+				},
+				"flavor": "We must build a ward"
+			},
+			{
+				"id": "ritual_elementalboosters",
+				"name": "Elemental rituals",
+				"desc": "Boost your elemental powers with specialized rituals",
+				"require": "g.ritualist>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 5,
+					"ritualnotes": 10
+				},
+				"mod": {
+					"ritualward.rate": 0.0001
+				}
+			},
+			{
+				"id": "ritual_paperproduction",
+				"name": "Spillthrough ink",
+				"desc": "Specialized ink allows for production of additional ritual paper per session",
+				"require": "g.masterritualist>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 15,
+					"ritualpaper": 20
+				},
+				"mod": {
+					"ritualpaper_raw.result.ritualpaper": 1,
+					"ritualpaper_raw.cost.gold": 150,
+					"ritualpaper_prepared.result.ritualpaper": 1,
+					"ritualpaper_prepared.cost.rawritualpaper": 1
+				},
+				"flavor": "'Do not process more than 2 sheets at a time' - common wisdom amongst one-handed ritualists."
+			},
+			{
+				"id": "ritual_papermakerenhancement",
+				"name": "Arcane isolation chamber",
+				"desc": "By putting your paper presses in specially isolated rooms, you can safely increase their production",
+				"require": "g.masterritualist>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 20,
+					"ritualpaper": 25
+				},
+				"mod": {
+					"ritualpapermaker.mod.rawritualpaper.rate": 0.001,
+					"ritualpapermaker.mod.space": -5
+				},
+				"flavor": "Paper, please"
+			},
+			{
+				"id": "ritual_cursedseals",
+				"name": "The five seals",
+				"desc": "An alternate use for your ritual paper.",
+				"require": "g.masterritualist>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 20,
+					"ritualpaper": 25
+				},
+				"mod": {
+					"ritualpaper.max": 5
+				},
+				"flavor": "No sight, no sound, no taste, no feeling, no smell. That is the fate of those who oppose you."
+			},
+			{
+				"id": "ritual_enhancedelementalboosters",
+				"name": "Enhanced elemental rituals",
+				"desc": "The elements can be further harmonized",
+				"require": "g.masterritualist>0&&ritual_elementalboosters>0",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 25,
+					"ritualpaper": 25
+				},
+				"mod": {
+					"ritual_air.effect.air": 1,
+					"ritual_air.runmod.player.bonuses.air": "5%",
+					"ritual_fire.effect.fire": 1,
+					"ritual_fire.runmod.player.bonuses.fire": "5%",
+					"ritual_water.effect.water": 1,
+					"ritual_water.runmod.player.bonuses.water": "5%",
+					"ritual_earth.effect.earth": 1,
+					"ritual_earth.runmod.player.bonuses.earth": "5%",
+					"ritual_mana.effect.mana": 1,
+					"ritual_mana.runmod.player.bonuses.mana": "5%",
+					"ritual_penance.effect.shadow": 1,
+					"ritual_penance.runmod.player.bonuses.shadow": "5%",
+					"ritual_penance.effect.light": 1,
+					"ritual_penance.runmod.player.bonuses.light": "5%"
+				}
+			},
+			{
+				"id": "ritual_notestorage",
+				"name": "an accurate magical index",
+				"desc": "Cataloguing your notes reduces clutter.",
+				"require": "g.ritualism>10",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 15,
+					"ritualpaper": 20
+				},
+				"mod": {
+					"archive.mod.ritualnotes.max": 10
+				},
+				"flavor": "Certainly non-scientific."
+			},
+			{
+				"id": "ritual_paperfolders",
+				"name": "reinforced folders",
+				"desc": "Specialized folders for unstable materials",
+				"require": "g.ritualism>5",
+				"max": 1,
+				"cost": {
+					"ritualward": 10,
+					"ritualnotes": 5
+				},
+				"mod": {
+					"bookcase.mod.rawritualpaper.max": 1,
+					"bookcase.mod.ritualpaper.max": 1
+				},
+				"flavor": "Garalad developed those after purchasing his fourth dwelling"
+			},
+			{
+				"id": "ritual_furtherstudy",
+				"name": "study ritual notes",
+				"desc": "Acquire further understanding of ritualistic magic",
+				"require": "g.ritualism>5",
+				"max": 500,
+				"cost": {
+					"ritualnotes": 3
+				},
+				"mod": {
+					"ritualism.max": 1,
+					"ritualnotes.max": 1,
+					"ritual_furtherstudy.cost.ritualnotes": 2
+				},
+				"flavor": "It gets only harder"
+			},
+			{
+				"id": "ritual_warddispersal",
+				"name": "disperse wards",
+				"desc": "Use excess ritual wards to further your understanding of magic",
+				"require": "g.ritualward>=10",
+				"max": 5,
+				"cost": {
+					"ritualward": 10
+				},
+				"mod": {
+					"ritualism.rate": "10+10%",
+					"planeslore.rate": "5+10%",
+					"lore.rate": "10+10%"
+				},
+				"flavor": "They say Garalad sometimes dispersed his wards in the middle of a ritual. The consequences were interesting to behold... from a distance"
+			},
+			{
+				"id": "ritual_warddispersal2",
+				"name": "disperse wards",
+				"desc": "Use excess ritual wards to further your understanding of magic. It seems that only marginal gains are left to acquire",
+				"require": "g.ritual_warddispersal>=5",
+				"max": 500,
+				"cost": {
+					"ritualward": 10
+				},
+				"mod": {
+					"ritualism.rate": "5+2%"
+				},
+				"flavor": "Some claim that Garalad never died, but rather developed a ritual that grants immortality. Such a feat seems unlikely."
+			}
+		],
+		"spells": [
+			{
+				"id": "thefirstseal",
+				"name": "seal limbs",
+				"level": 10,
+				"school": "sealing",
+				"cd": 90,
+				"desc": "Stop the flow of energy in an enemy's limbs.",
+				"require": "g.ritual_cursedseals>0",
+				"buy": {
+					"ritualnotes": 10
+				},
+				"cost": {
+					"ritualpaper": 5
+				},
+				"mod": {},
+				"dot": {
+					"name": "sealed limbs",
+					"duration": 5,
+					"flags": "noact"
+				}
+			},
+			{
+				"id": "thesecondseal",
+				"name": "seal mind",
+				"level": 10,
+				"school": "sealing",
+				"cd": 90,
+				"desc": "Stop the flow of energy in an enemy's mind.",
+				"require": "g.ritual_cursedseals>0",
+				"buy": {
+					"ritualnotes": 10
+				},
+				"cost": {
+					"ritualpaper": 5
+				},
+				"mod": {},
+				"dot": {
+					"id": "sealed mind",
+					"duration": 5,
+					"flags": "nocast"
+				}
+			},
+			{
+				"id": "thethirdseal",
+				"name": "seal heart",
+				"level": 10,
+				"school": "sealing",
+				"cd": 90,
+				"desc": "Stop the flow of energy in an enemy's heart.",
+				"require": "g.ritual_cursedseals>0",
+				"buy": {
+					"ritualnotes": 10
+				},
+				"cost": {
+					"ritualpaper": 5
+				},
+				"mod": {},
+				"dot": {
+					"name": "sealed heart",
+					"id": "fear"
+				}
+			},
+			{
+				"id": "thefourthseal",
+				"name": "seal dreams",
+				"level": 10,
+				"school": "sealing",
+				"cd": 90,
+				"desc": "Seal an adversary within his dreams.",
+				"require": "g.ritual_cursedseals>0",
+				"buy": {
+					"ritualnotes": 10
+				},
+				"cost": {
+					"ritualpaper": 5
+				},
+				"mod": {},
+				"dot": {
+					"name": "sealed dreams",
+					"duration": 5,
+					"id": "sleep"
+				}
+			},
+			{
+				"id": "thefifthseal",
+				"name": "seal reason",
+				"level": 10,
+				"school": "sealing",
+				"cd": 90,
+				"desc": "Seal an adversary's reason.",
+				"require": "g.ritual_cursedseals>0",
+				"buy": {
+					"ritualnotes": 10
+				},
+				"cost": {
+					"ritualpaper": 5
+				},
+				"mod": {},
+				"dot": {
+					"id": "sealed reason",
+					"duration": 5,
+					"flags": "charmed"
+				}
+			}
+		],
+		"furniture": [
+			{
+				"id": "ritualpapermaker",
+				"name": "paper press",
+				"desc": "Allows for easy preparation of paper layered with arcane energies",
+				"require": "(g.ritualist+g.masterritualist)>0",
+				"max": 10,
+				"cost": {
+					"gold": 1000,
+					"research": 500,
+					"arcana": 5
+				},
+				"mod": {
+					"rawritualpaper.rate": 0.001,
+					"gold.rate": -0.2,
+					"space": 20
+				}
+			}
+		],
+		"resources": [
+			{
+				"id": "ritualward",
+				"name": "ritual wards",
+				"group": "ritual",
+				"desc": "Specialized wards needed to prepare and improve various rituals",
+				"max": 3,
+				"flavor": "The cautionary tale of Garalad the Foolish is passed down from ritualist to ritualist"
+			},
+			{
+				"id": "ritualnotes",
+				"name": "ritual notes",
+				"group": "ritual",
+				"desc": "Detailed notes on performed rituals. Can be studied to further improve one's prowess at ritualistic magic.",
+				"max": 3,
+				"flavor": "If nothing else, your apprentices will appreciate finding those in the ruins."
+			},
+			{
+				"id": "rawritualpaper",
+				"name": "arcane paper",
+				"group": "ritual",
+				"desc": "Paper pressed with arcane energies, ready for conversion into ritual paper.",
+				"max": 5,
+				"flavor": "Garalad once put a stack of such paper on a shelf. The resulting explosion was seen from many miles away."
+			},
+			{
+				"id": "ritualpaper",
+				"name": "ritual paper",
+				"group": "ritual",
+				"desc": "Specialized paper inscribed with sigils of power. Stabilizes advanced rituals.",
+				"max": 5,
+				"flavor": "The knowledge of the necessary preparations was earned with blood and toil. Mostly blood."
+			}
+		],
+		"classes": [
+			{
+				"id": "ritualist",
+				"desc": "Perform arcane rituals to boost your powers.",
+				"tags": "t_tier2",
+				"require": "g.tier1>0&&g.ritualism>=5&&g.tier2==0",
+				"cost": {
+					"research": 700,
+					"arcana": 10,
+					"gold": 500
+				},
+				"mod": {
+					"tier2": true,
+					"ritualism.max": 2,
+					"ritualward.rate": 0.0002,
+					"rawritualpaper.rate": 0.001
+				},
+				"flavor": "The first rule of ritual magic is thus: 'Make sure you are prepared to contain the explosions.'"
+			},
+			{
+				"id": "masterritualist",
+				"name": "master ritualist",
+				"desc": "There is no ritual you fear to attempt.",
+				"tags": "t_tier5",
+				"require": "g.tier4>0&&g.ritualism>=10&&g.tier5==0",
+				"cost": {
+					"research": 3000,
+					"arcana": 25,
+					"ritualpaper": 25,
+					"ritualward": 10,
+					"ritualnotes": 15
+				},
+				"mod": {
+					"tier5": true,
+					"ritualism.max": 2,
+					"ritualward.rate": 0.0003,
+					"rawritualpaper.rate": 0.002
+				},
+				"flavor": "The last rule of ritual magic is thus: 'No cost is too great if it guarantees success.'"
+			}
+		]
+	}
+}

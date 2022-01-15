@@ -1,0 +1,334 @@
+[
+	{
+		"id": "evt_intro",
+		"name": "初来",
+		"require": "hp",
+		"desc": "平常的开头,生活艰苦的你靠为别人家做工来维持生计"
+	},
+	{
+		"id": "evt_freight",
+		"name": "新工作",
+		"require": "g.time>5 && g.pl_apprentice>0",
+		"desc": "经人介绍,你找到一份新的工作,你可以在业余时间耗费体力来运一些大件货物,这很累,但收入比扫地高",
+		"result": {
+			"freight": true
+		}
+	},
+	{
+		"id": "t_death",
+		"name": "寂静",
+		"require": "g.time > g.age",
+		"desc": "你的时间快到了，意识陷入沉寂当中,神识也逐渐消散....未知的事物让你的神识不至于泯灭，还有希望吗?",
+		"result": {
+			"death": true,
+			"death": 1
+		}
+	},
+	{
+		"id": "evt_freight",
+		"name": "新的锻炼方式",
+		"require": "g.xiulian_ld_body_1>=1&&g.freight",
+		"desc": "随着对身体素质的开发,你找到对体能训练的新方式",
+		"disable":["freight"]
+	},
+	{
+		"id": "evt_chaos",
+		"name": "混沌",
+		"require": "g.chaos",
+		"desc": "混沌让原本可预测的事实变为不可预测,这是一张全新的危险的力量",
+		"result": {
+			"chaos_enchant_1": true
+		}
+	},
+	{
+		"id": "evt_cold",
+		"name": "极寒之地",
+		"require": "g.xiulian_ld_cold>=1 &&g.xiulian_ld_panpa>=1 && g.ganwu_skill>=3",
+		"desc": "你清醒的头脑和强健的身体足以探索这片区域"
+	},
+	{
+		"id": "evt_scroll",
+		"name": "A tattered scroll",
+		"desc": "You buy a strange scroll from a travelling peddler. If you could only decipher the cryptic symbols."
+	},
+	{
+		"id": "evt_alcove",
+		"name": "Moving In",
+		"desc": "After taking your savings, your new master grants you a small nook under the stairs.",
+		"require": "alcove"
+	},
+	{
+		"id": "evt_helper",
+		"name": "Promotion",
+		"desc": "In return for your new services, your master grants you a small allowance for your studies. The position does require of course, some initial fees...",
+		"lock": "t_job",
+		"result": {
+			"arcana.rate": 0.0001,
+			"research.max": 10,
+			"lore.max": 1,
+			"lore.rate": 0.1,
+			"player.exp": 10
+		}
+	},
+	{
+		"id": "evt_rangers",
+		"name": "Impudent Meddlers",
+		"require": "g.wicked>0&&g.player.level>=15&&g.evilamt>=75",
+		"desc": "Hearing of your wicked deeds, the rangers of the Ettinmarch plots your downfall. An assault on their camps should crush their presumption."
+	},
+	{
+		"id": "evt_cabal",
+		"name": "Vile Plotters",
+		"require": "g.respectable>0&&g.player.level>=15&&g.virtue>=75",
+		"desc": "Learning of your virtuous ways, a cabal of ossurite priests plots your destruction. Travel to the Fetid Barrows and unravel their schemes."
+	},
+	{
+		"id": "tier0",
+		"name": "Solitary Magic",
+		"desc": "Some say the study of magic doesn't truly begin until apprenticeship ends. People say a lot of things.",
+		"disable": [
+			"study",
+			"chores",
+			"errands",
+			"leavemaster",
+			"slaymaster",
+			"pestcontrol",
+			"alcove",
+			"atticbedroom"
+		],
+		"lock": "t_tier0",
+		"result": {
+			"innroom": true,
+			"sp": 1,
+			"player.exp": 15,
+			"fame": 1
+		},
+		"mod": {
+			"research.max": 15,
+			"buyscroll.result.scrolls": 1,
+			"buyscroll.cost.gold": 20
+		}
+	},
+	{
+		"id": "tier1",
+		"name": "Professional Magick",
+		"desc": "Every province has its handful of runaway apprentices and failed Adepts. It's not uncommon for thieves and rangers to know a spell or two. They are nothing compared to the talents of a true professional.",
+		"disable": [
+			"prestidigitation"
+		],
+		"lock": [
+			"t_tier1",
+			"t_tier0"
+		],
+		"result": {
+			"sp": 1,
+			"player.exp": 15,
+			"fame": 2
+		},
+		"mod": {
+			"crafting.max": 1,
+			"arcanebody.max": 1,
+			"occultendure.max": 1,
+			"crystalmind.max": 1,
+			"buyscroll.result.scrolls": 1,
+			"buyscroll.cost.gold": 30
+		}
+	},
+	{
+		"id": "tier2",
+		"name": "Arcane Ascendant",
+		"desc": "The masses of arcane dabblers never reach such heights.",
+		"lock": "t_tier2",
+		"result": {
+			"player.exp": 25
+		},
+		"result": {
+			"fame": 3
+		},
+		"mod": {
+			"lore.max": 2,
+			"arcanebody.max": 1,
+			"occultendure.max": 1,
+			"crystalmind.max": 1,
+			"buyscroll.result.scrolls": 1,
+			"buyscroll.cost.gold": 40
+		}
+	},
+	{
+		"id": "tier3",
+		"name": "Magical Mastery",
+		"desc": "You are a master of your field of magic.",
+		"lock": "t_tier3",
+		"result": {
+			"sp": 1,
+			"player.exp": 50,
+			"fame": 4
+		},
+		"mod": {
+			"lore.max": 3,
+			"crafting.max": 2,
+			"arcanebody.max": 1,
+			"occultendure.max": 1,
+			"crystalmind.max": 1,
+			"buyscroll.result.scrolls": 1,
+			"buyscroll.cost.gold": 50
+		}
+	},
+	{
+		"id": "tier4",
+		"name": "Supreme Sorcery",
+		"desc": "Not even the masters could challenge you.",
+		"lock": "t_tier4",
+		"disable": [
+			"buyscroll"
+		],
+		"result": {
+			"sp": 1,
+			"player.exp": 75,
+			"fame": 5
+		},
+		"mod": {
+			"lore.max": 4,
+			"crafting.max": 2,
+			"arcanebody.max": 1,
+			"occultendure.max": 1,
+			"crystalmind.max": 1
+		}
+	},
+	{
+		"id": "tier5",
+		"name": "Dhrunic Magic",
+		"desc": "Magic from a forgotten age.",
+		"lock": "t_tier5",
+		"result": {
+			"sp": 1,
+			"player.exp": 100,
+			"fame": 6
+		},
+		"mod": {
+			"lore.max": 4,
+			"crafting.max": 2,
+			"arcanebody.max": 1,
+			"arcanebody2.max": 2,
+			"occultendure.max": 1,
+			"crystalmind.max": 2
+		}
+	},
+	{
+		"id": "tier6",
+		"name": "Ageless Magic",
+		"desc": "Ages of the world come and go; only these endure.",
+		"lock": "t_tier6",
+		"result": {
+			"sp": 1,
+			"player.exp": 100,
+			"fame": 7
+		},
+		"mod": {
+			"lore.max": 3,
+			"crafting.max": 4,
+			"arcanebody.max": 1,
+			"arcanebody2.max": 1,
+			"occultendure.max": 1,
+			"crystalmind.max": 1
+		}
+	},
+	{
+		"id": "tier7",
+		"name": "Dhrunic Pillar",
+		"desc": "A foundation of the world",
+		"lock": "t_tier7",
+		"result": {
+			"sp": 1,
+			"player.exp": 100,
+			"fame": 8
+		},
+		"mod": {
+			"lore.max": 4,
+			"crafting.max": 2,
+			"arcanebody.max": 1,
+			"arcanebody2.max": 2,
+			"occultendure.max": 1,
+			"crystalmind.max": 1
+		}
+	},
+	{
+		"id": "decent",
+		"require": "g.virtue>90&&g.evilamt<10",
+		"desc": "You are turning out to be an upstanding spellcaster.",
+		"mod": {
+			"light.rate": 0.1
+		}
+	},
+	{
+		"id": "respectable",
+		"require": "g.virtue>350&&g.evilamt<20",
+		"desc": "You have become a respected personage in the magical world.",
+		"result": {
+			"fame": 1
+		},
+		"mod": {
+			"light.rate": 0.1
+		}
+	},
+	{
+		"id": "good",
+		"name": "virtuous",
+		"require": "g.virtue>750&&g.evil<=0",
+		"desc": "Your actions have shown you to be a virtuous wizard.",
+		"mod": {
+			"light.max": 1,
+			"lightlore.rate": 0.1,
+			"lightlore.max": 1
+		}
+	},
+	{
+		"id": "secretfire",
+		"name": "servant of the secret fire",
+		"desc": "",
+		"mod": {
+			"firelore.rate": 0.2,
+			"firelore.max": 1,
+			"lightlore.rate": 0.2,
+			"lightlore.max": 1
+		}
+	},
+	{
+		"id": "immoral",
+		"desc": "You have taken your first steps on the path of evil. It's a good thing.",
+		"require": "g.evilamt>=5",
+		"mod": {
+			"shadowlore.rate": 0.2
+		}
+	},
+	{
+		"id": "wicked",
+		"desc": "Your wicked deeds put you on the sure path of evil. A few more steps, and there will be no turning back.",
+		"require": "g.evilamt>=250",
+		"result": {
+			"fame": 1
+		},
+		"mod": {
+			"shadowlore.max": 1,
+			"shadowlore.rate": 0.2
+		}
+	},
+	{
+		"id": "evil",
+		"name": "vile",
+		"desc": "Freed of pitiful notions of right, and morality, the dark arts lie open before you.",
+		"require": "g.evilamt>500",
+		"disable": [
+			"light",
+			"good",
+			"lightlore"
+		],
+		"mod": {
+			"shadow.max": 1,
+			"shadowlore": {
+				"max": 1,
+				"rate": 0.1
+			}
+		}
+	}
+]

@@ -1,0 +1,1231 @@
+[
+	{
+		"id": "enc_cave_1",
+		"name": "补给站",
+		"desc": "一个补给水分和食物的地方",
+		"effect": {
+			"hp": "1~2",
+			"stamina": "0~1",
+			"tili": "0~1"
+		},
+		"result": {
+			"ganwu": 0.1
+		}
+	},
+	{
+		"id": "enc_cave_2",
+		"name": "爆炸",
+		"desc": "突如其来的爆炸",
+		"effect": {
+			"weary": "1~2"
+		},
+		"result": {
+			"hp": -5
+		}
+	},
+	{
+		"id": "enc_cave_3",
+		"name": "大爆炸",
+		"desc": "突如其来的爆炸",
+		"effect": {
+			"weary": "1~2"
+		},
+		"result": {
+			"hp": -6
+		}
+	},
+	{
+		"id": "enc_cave_4",
+		"name": "矿工",
+		"desc": "喋喋不休的矿工一直跟你在谈话",
+		"effect": {
+			"weary": "0~1",
+			"unease": "0~1"
+		},
+		"result": {
+		}
+	},
+	{
+		"id": "enc_cave_5",
+		"name": "挖掘零结晶",
+		"desc": "努力干活",
+		"effect": {
+			"weary": "0~1",
+			"zero_crystal": "0~0.2"
+		},
+		"result": {
+			"zero_crystal": 0.2
+		}
+	},
+	{
+		"id": "enc_cold_1",
+		"name": "冰冻雕塑",
+		"desc": "一个被冻结了的雕塑",
+		"effect": {
+			"bf": "1~2"
+		},
+		"result": {
+			"ganwu": 1
+		}
+	},
+	{
+		"id": "enc_cold_2",
+		"name": "神秘武器",
+		"desc": "一件残破的武器",
+		"effect": {
+			"bf": "-1~2",
+			"rage": "0~2",
+			"weapon_1.exp": 1
+		}
+	},
+	{
+		"id": "enc_cold_3",
+		"name": "冰冻岩层",
+		"desc": "一块岩层,能让你获得地质勘探的经验",
+		"effect": {
+			"bf": "-1~2",
+			"weary": "0~2",
+			"land_kantan.exp": 1
+		}
+	},
+	{
+		"id": "enc_cold_4",
+		"name": "遗落骨骸",
+		"desc": "神秘的遗骨，透露着不安的感觉",
+		"effect": {
+			"bf": "-1~2",
+			"weary": "0~2",
+			"madness": "0~1",
+			"heli": -0.1,
+			"chaos": -0.1
+		}
+	},
+	{
+		"id": "enc_cold_5",
+		"name": "冰冻矿脉",
+		"desc": "蕴含大量的冰冻核心",
+		"effect": {
+			"bf": "-1~2",
+			"weary": "1~3"
+		},
+		"loot": {
+			"cold_core": "0~1"
+		}
+	},
+	{
+		"id": "enc_primer1",
+		"name": "magical primer",
+		"desc": "An introduction to magical theory.",
+		"effect": {
+			"bf": "-1~2",
+			"lore.exp": 1
+		},
+		"result": {
+			"research": 1,
+			"arcana": 0.01
+		}
+	},
+	{
+		"id": "enc_workbook1",
+		"name": "workbook",
+		"desc": "A book on the practical applications of magic",
+		"effect": {
+			"bf": "-1~2",
+			"rage": "0~2",
+			"crafting.exp": 2
+		}
+	},
+	{
+		"id": "enc_bookworm",
+		"name": "bookworm",
+		"desc": "A studious annelid to choose a home within a tome's pages.",
+		"effect": {
+			"bf": "1~2",
+			"lore.exp": 3
+		}
+	},
+	{
+		"id": "mysticwater",
+		"name": "mystic waters",
+		"level": 1,
+		"desc": "Water suffused with enchantments",
+		"effect": {
+			"bf": "-1~2",
+			"naturelore.exp": 1,
+			"waterlore.exp": 1,
+			"arcana": 0.001
+		},
+		"result": {
+			"watergem": "25%"
+		}
+	},
+	{
+		"id": "manatree",
+		"name": "mana tree",
+		"level": 2,
+		"desc": "A tree by a magic spring exhibits surprising qualities",
+		"effect": {
+			"bf": "-1~2",
+			"naturelore.exp": 2,
+			"herbalism.exp": 1
+		},
+		"result": {
+			"managem": "25%"
+		}
+	},
+	{
+		"id": "enc_heather",
+		"name": "heathered copse",
+		"level": 2,
+		"desc": "You rest in the shade amid flowers of heather.",
+		"effect": {
+			"rage": "-2~0",
+			"stamina": 1,
+			"mana": 1
+		}
+	},
+	{
+		"id": "enc_tapestry",
+		"name": "occult tapestry",
+		"level": 2,
+		"desc": "A tapestry with strange, hidden meanings",
+		"effect": {
+			"bf": "-1~2",
+			"rage": "0~2"
+		},
+		"result": {
+			"research": 1,
+			"arcana": 0.005
+		}
+	},
+	{
+		"id": "foggydale",
+		"name": "foggy dale",
+		"desc": "The fog here is so thick, you can't see your own hands.",
+		"effect": {
+			"bf": "1~2",
+			"rage": "0~1",
+			"unease": "1~2",
+			"airlore.exp": 2,
+			"spiritlore.exp": 1
+		}
+	},
+	{
+		"id": "enc_chest1",
+		"name": "dusty chest",
+		"desc": "A battered, wooden chest.",
+		"effect": {
+			"bf": "-1~2"
+		},
+		"loot": {
+			"gold": "2~10",
+			"scrolls": "1~2"
+		}
+	},
+	{
+		"id": "enc_chest2",
+		"name": "iron chest",
+		"desc": "A solid iron chest.",
+		"effect": {
+			"bf": "-1~1",
+			"rage": "0~1"
+		},
+		"loot": {
+			"gold": "5~14",
+			"codices": "0~2",
+			"scrolls": "2~4"
+		}
+	},
+	{
+		"id": "enc_chest3",
+		"name": "dusty chest",
+		"desc": "A small but solid chest.",
+		"effect": {
+			"rage": "1~3"
+		},
+		"loot": {
+			"gold": "0~50",
+			"gems": "2~5",
+			"runestones": "0~2",
+			"codices": "0~4"
+		}
+	},
+	{
+		"id": "enc_chest4",
+		"name": "oak chest",
+		"desc": "A sturdy, oaken chest.",
+		"effect": {
+			"rage": "2~4",
+			"weary": "1~3"
+		},
+		"loot": {
+			"gold": "0~300",
+			"firerune": "5%",
+			"earthrune": "5%",
+			"waterrune": "5%",
+			"airrune": "5%",
+			"tomes": "50%"
+		}
+	},
+	{
+		"id": "enc_primer2",
+		"name": "advanced primer",
+		"desc": "More advanced magical theory.",
+		"effect": {
+			"bf": "-1~3",
+			"weary": "0~2",
+			"rage": "0~2",
+			"lore.exp": 2,
+			"languages.exp": 1
+		},
+		"result": {
+			"codices": "10%",
+			"research": 10,
+			"arcana": 0.02
+		}
+	},
+	{
+		"id": "enc_thyffr",
+		"name": "talking to thyffr",
+		"desc": "Within a ramble of mundane details, thyffr often discloses some genuine history.",
+		"effect": {
+			"rage": "0~2",
+			"weary": "1~3",
+			"history.exp": 2,
+			"research": 1
+		},
+		"result": {
+			"arcana": 0.01
+		}
+	},
+	{
+		"id": "enc_delki",
+		"name": "babbling delki",
+		"desc": "The Delki of the woods know many things, but are seldom coherent.",
+		"effect": {
+			"rage": "1~2",
+			"weary": "1~3",
+			"naturelore.exp": 1,
+			"research": 1,
+			"lore.exp": 1
+		},
+		"result": {
+			"naturegem": "10%",
+			"arcana": 0.01
+		}
+	},
+	{
+		"id": "enc_gnome",
+		"name": "affable gnome",
+		"desc": "A gnome is always more than willing to talk over a pint or a pipe.",
+		"effect": {
+			"weary": "0~2",
+			"bf": "1~2",
+			"spellcraft.exp": 1,
+			"research": 1,
+			"lore.exp": 1
+		},
+		"result": {
+			"spellcraft.max": 0.001
+		}
+	},
+	{
+		"id": "enc_gibber",
+		"name": "gibbering",
+		"desc": "They hide in small cracks and in return for a wicked deed, will reveal one secret.",
+		"effect": {
+			"weary": "0~2",
+			"madness": "0~2",
+			"mysticism.exp": 1,
+			"research": 1
+		},
+		"result": {
+			"shadowgem": "5%",
+			"arcana": 0.01
+		},
+		"flavor": "Legend tells of a massive gibbering, who will answer any question in return for a murder."
+	},
+	{
+		"id": "enc_mummy",
+		"name": "mummified remains",
+		"desc": "A corpse preserved by the stale air",
+		"effect": {
+			"madness": "0~2",
+			"unease": "1~3",
+			"embalming.exp": 1,
+			"spiritlore.exp": 1,
+			"anatomy.exp": 1
+		},
+		"result": {
+			"anatomy.max": 0.001
+		},
+		"loot": {
+			"gold": "0~100",
+			"bonedust": "0~2",
+			"gems": "0~2",
+			"bodies": "30%"
+		}
+	},
+	{
+		"id": "eeriemoans",
+		"name": "eerie moans",
+		"desc": "You hear a faint moaning, but are unable to determine its source.",
+		"effect": {
+			"spiritlore.exp": 1,
+			"madness": 1
+		}
+	},
+	{
+		"id": "strangebones",
+		"name": "strange bones",
+		"desc": "You've never seen such bones before.",
+		"effect": {
+			"bf": "-1~2",
+			"unease": "0~3",
+			"anatomy.exp": 1
+		},
+		"result": {
+			"bones": "1~4"
+		}
+	},
+	{
+		"id": "enc_embalm1",
+		"name": "embalming apparatus",
+		"desc": "Fluids and recepticles for the preservation of corpses.",
+		"effect": {
+			"bf": "-1~2",
+			"unease": "0~2",
+			"reanimation.exp": 1,
+			"embalming.exp": 2
+		},
+		"result": {
+			"bonedust": "0~3"
+		}
+	},
+	{
+		"id": "sarcophagus",
+		"desc": "Ancient coffin marked by faded runes",
+		"level": 4,
+		"effect": {
+			"unease": "0~2",
+			"madness": "0~2",
+			"reanimation.exp": 2,
+			"embalming.exp": 2
+		},
+		"loot": {
+			"runestones": "10%",
+			"shadowgem": "30%",
+			"spiritgem": "30%",
+			"bodies": "50%"
+		}
+	},
+	{
+		"id": "enc_rats",
+		"name": "plague rats",
+		"desc": "The scurrying vermin are covered in welts",
+		"effect": {
+			"bf": "-1~2",
+			"unease": "0~2",
+			"reanimation.exp": 2
+		}
+	},
+	{
+		"id": "hauntedglade",
+		"name": "haunted glade",
+		"desc": "Trees here have an eerie aspect",
+		"effect": {
+			"madness": "1~2",
+			"unease": "0~2",
+			"shadowlore.exp": 1,
+			"spiritlore.exp": 1
+		},
+		"result": {
+			"spiritlore.max": 0.001
+		}
+	},
+	{
+		"id": "hiddencache",
+		"name": "hidden cache",
+		"desc": "You sense something buried nearby.",
+		"effect": {
+			"rage": "1~2",
+			"weary": "0~2",
+			"bf": "-1~2",
+			"naturelore.exp": 1
+		},
+		"loot": {
+			"gold": "0~50",
+			"gems": "2~5",
+			"scrolls": "2~5",
+			"codices": "0~4"
+		}
+	},
+	{
+		"id": "murkywater",
+		"name": "murky waters",
+		"desc": "Ominous shapes drift and flow beneath the murky waters.",
+		"effect": {
+			"bf": "0~2",
+			"unease": "2~3",
+			"madness": "1~2",
+			"waterlore.exp": 2,
+			"shadowlore.exp": 1,
+			"arcana.max": 0.05
+		}
+	},
+	{
+		"id": "enc_blackcat",
+		"name": "black cat",
+		"desc": "A black cat is an omen to be studied seriously",
+		"effect": {
+			"unease": "1~4",
+			"rage": "2~4",
+			"divination.exp": 1,
+			"scrying.exp": 1
+		},
+		"result": {
+			"spiritlore.max": 0.001,
+			"arcana": 0.04
+		}
+	},
+	{
+		"id": "enc_hest_ward",
+		"name": "warding charm",
+		"desc": "A hanging charm wards away the borgles and grimstalks.",
+		"effect": {
+			"unease": "1~5",
+			"bf": "1~5",
+			"charms.exp": 1,
+			"enchanting.exp": 1
+		},
+		"mod": {
+			"enchanting.max": "?1",
+			"charms.max": "?1"
+		}
+	},
+	{
+		"id": "enc_cauldron",
+		"name": "bubbling cauldron",
+		"desc": "The cauldron bubbles and glows with a odorous brew.",
+		"effect": {
+			"unease": "0~2",
+			"weary": "1~3",
+			"bf": "-1~2.5",
+			"potions.exp": 1,
+			"alchemy.exp": 1,
+			"crafting.exp": 1
+		},
+		"mod": {
+			"potions.max": "?1"
+		},
+		"loot": "hestiabrew"
+	},
+	{
+		"id": "enc_hettie",
+		"name": "hettie",
+		"desc": "An ancient gryffon lives atop the Rithel's solitary turret, and Hettie spends her days grooming and feeding the beast.",
+		"effect": {
+			"weary": "1~3",
+			"bf": "1~2"
+		},
+		"result": {
+			"magicbeasts.max": 0.001
+		}
+	},
+	{
+		"id": "enc_hestia",
+		"name": "Hestia",
+		"desc": "Hestia has no interest in the world outside Thangmor, but will teach those who come to her.",
+		"effect": {
+			"unease": "2~4",
+			"bf": "-2~3",
+			"herbalism.exp": 1
+		},
+		"result": {
+			"scrying.max": 0.001,
+			"history.max": 0.001,
+			"potions.exp": 0.001,
+			"arcana": 0.01
+		}
+	},
+	{
+		"id": "enc_pidwig",
+		"name": "Talk To Pidwig",
+		"desc": "Pidwig is sparse with words, but has seen many mysteries in his travels.",
+		"effect": {
+			"bf": "0~2",
+			"weary": "0~2",
+			"unease": "0~2",
+			"history.exp": 2,
+			"astronomy.exp": 1,
+			"lore.exp": 1
+		},
+		"result": {
+			"arcana": 0.05
+		}
+	},
+	{
+		"id": "pidwigtreasure",
+		"name": "pidwig's hoard",
+		"desc": "Over the years Pidwig has amassed a sizeable collection of gems and artifacts.",
+		"effect": {
+			"crafting.exp": 1,
+			"history.exp": 1,
+			"trickery.exp": 1,
+			"rage": "0~2",
+			"madness": "0~2"
+		},
+		"loot": "prismaticgems",
+		"flavor": "Perhaps he could be induced to part with some..."
+	},
+	{
+		"id": "starrysky1",
+		"name": "starry night",
+		"desc": "A clear sky affords an endless view of the firmament.",
+		"effect": {
+			"bf": "1~2",
+			"unease": "-1~2",
+			"madness": "-1~1",
+			"astronomy.exp": 1,
+			"planeslore.exp": 1,
+			"scrying.exp": 1
+		}
+	},
+	{
+		"id": "pidwigstars",
+		"name": "pidwig's starcharts",
+		"desc": "An old hand at astronomical calculations, Pidwig shares his extensive observations.",
+		"effect": {
+			"bf": "1~3",
+			"unease": "-1~2",
+			"madness": "-1~1",
+			"astronomy.exp": 3,
+			"planeslore.exp": 1,
+			"scrying.exp": 1
+		},
+		"loot": "starcharts"
+	},
+	{
+		"id": "sombersunset",
+		"name": "somber sunset",
+		"desc": "Lapping waves in the dying sun hint at secrets beyond your reach.",
+		"effect": {
+			"rage": "-1~-2",
+			"weary": "-1~-2",
+			"madness": "-1~-2",
+			"waterlore.exp": 1,
+			"mysticism.exp": 1,
+			"divination.exp": 1
+		}
+	},
+	{
+		"id": "brightvista",
+		"name": "bright vista",
+		"desc": "A small knoll reveals lands far into the distance",
+		"effect": {
+			"bf": "-1~-2",
+			"weary": "-1~-2",
+			"rage": "-1~-2",
+			"naturelore.exp": 1,
+			"lightlore.exp": 1
+		}
+	},
+	{
+		"id": "enc_tome",
+		"name": "runic tome",
+		"desc": "Even deciphering the runes is a tedious chore.",
+		"effect": {
+			"bf": "-1~4",
+			"rage": "0~4",
+			"unease": "0~2",
+			"lore.exp": 2
+		},
+		"result": {
+			"codices": 1,
+			"arcana": 0.01
+		}
+	},
+	{
+		"id": "enc_history",
+		"name": "dhrunic manuscript",
+		"desc": "Much that was is lost.",
+		"effect": {
+			"bf": "-1~4",
+			"rage": "0~4",
+			"history.exp": 2
+		},
+		"result": {
+			"history.max": 0.0001,
+			"arcana": 0.01
+		},
+		"flavor": "For none now live, who remember it."
+	},
+	{
+		"id": "enc_workbook2",
+		"name": "master's workbook",
+		"desc": "A book on the practical applications of magic",
+		"effect": {
+			"bf": "-1~3",
+			"madness": "0~3",
+			"rage": "1~3",
+			"crafting.exp": 4
+		},
+		"result": {
+			"crafting.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_furnace",
+		"name": "fazbit's furnace",
+		"desc": "Its embers still glow after centuries",
+		"effect": {
+			"bf": "-1~4",
+			"madness": "0~2",
+			"unease": "1~3",
+			"firelore.exp": 3
+		},
+		"result": {
+			"firelore.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_alchemy",
+		"name": "alchemical equipment",
+		"desc": "The uses of these instruments are beyond you.",
+		"effect": {
+			"bf": "-1~4",
+			"madness": "0~2",
+			"rage": "1~3",
+			"alchemy.exp": 3
+		},
+		"result": {
+			"alchemy.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_statue2",
+		"name": "crumbled statue",
+		"desc": "The old stonemasons often chiselled spells into their works.",
+		"effect": {
+			"earthlore.exp": 1,
+			"bf": "0~2",
+			"unease": "0~2",
+			"history.exp": 1
+		},
+		"result": {
+			"earthlore.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_statue4",
+		"name": "eldar statue",
+		"desc": "Its weathered face has gazed upon the world since the Wind Age.",
+		"effect": {
+			"madness": 1,
+			"bf": "3~7",
+			"unease": "3~7",
+			"history.exp": 2
+		},
+		"result": {
+			"runestones": "10%",
+			"history.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_battle1",
+		"name": "ancient battlefield",
+		"desc": "Blasted hills and scraps of armor still mark an ancient site of battle.",
+		"effect": {
+			"madness": 0.5,
+			"weary": "2~7",
+			"unease": "2~5",
+			"history.exp": 0.5
+		},
+		"result": {
+			"history.max": 0.0002
+		}
+	},
+	{
+		"id": "enc_mtpass",
+		"name": "thandhrun pass",
+		"desc": "Higher even than Gorboru, the passes of Thandhrun incessantly thunder.",
+		"effect": {
+			"madness": 0.5,
+			"weary": "4~7",
+			"rage": "2~7"
+		},
+		"result": {
+			"s_travel.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_oldstone",
+		"name": "the old stone",
+		"desc": "The massive head of stone and moss is said to be as old as the world itself.",
+		"effect": {
+			"unease": "3~4",
+			"bf": "0~-2",
+			"madness": "0~2",
+			"history.exp": 2
+		},
+		"flavor": "A voice seems to grumble from the ground."
+	},
+	{
+		"id": "enc_sindel",
+		"name": "star shrine",
+		"desc": "A glowing star cinder embedded in a shrine.",
+		"effect": {
+			"lightlore.exp": 1,
+			"bf": "2~5",
+			"weary": "0~-2",
+			"unease": "1~5",
+			"history.exp": 1
+		},
+		"result": {
+			"lightlore.max": 0.0001
+		},
+		"flavor": "You can't seem to pry it loose."
+	},
+	{
+		"id": "enc_tenwick",
+		"name": "tenwick",
+		"desc": "Tenwick is often on the trail, but always glad to stop and trade tales.",
+		"effect": {
+			"s_travel.exp": 1,
+			"weary": "2~3"
+		}
+	},
+	{
+		"id": "enc_wyrd",
+		"name": "wyrd sister",
+		"desc": "The Wyrd sister Hecubah waits by the roadside.",
+		"effect": {
+			"scrying.exp": 1,
+			"divination.exp": 1,
+			"madness": 2,
+			"bf": "3~7",
+			"unease": "2~4"
+		},
+		"result": {},
+		"flavor": "Blank verse is hard to interpret."
+	},
+	{
+		"id": "enc_gap",
+		"name": "markhul's gap",
+		"desc": "Gazing over the dizzy edge, you see no sign of a bottom",
+		"effect": {
+			"bf": "0~3",
+			"unease": "1~4",
+			"madness": "0~3",
+			"airlore.exp": 2
+		},
+		"result": {
+			"airgem": "10%",
+			"airlore.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_mirror1",
+		"name": "mirror of introspection",
+		"desc": "It's just you.",
+		"effect": {
+			"lightlore.exp": 1,
+			"weary": "1~3",
+			"unease": "1~2"
+		},
+		"result": {}
+	},
+	{
+		"id": "enc_mirror2",
+		"name": "mirror of false reflection",
+		"desc": "Something is wrong with the glass.",
+		"effect": {
+			"trickery.exp": 1,
+			"rage": "1~3",
+			"bf": "1~2"
+		},
+		"result": {}
+	},
+	{
+		"id": "enc_futuremirror",
+		"name": "mirror of foretelling",
+		"desc": "Visions of the future play in your reflection.",
+		"effect": {
+			"divination.exp": 1,
+			"madness": "1~3",
+			"unease": "2~3"
+		},
+		"result": {}
+	},
+	{
+		"id": "enc_rageemirror",
+		"name": "seething mirror",
+		"desc": "The glass fixes your gaze and stokes your wrath.",
+		"effect": {
+			"rage": "4~5"
+		},
+		"result": {}
+	},
+	{
+		"id": "enc_mirrorhall",
+		"name": "reflecting hallways",
+		"desc": "You soon become lost in the false cooridors.",
+		"effect": {
+			"trickery.exp": 1,
+			"rage": "2~3",
+			"bf": "3~5"
+		},
+		"result": {}
+	},
+	{
+		"id": "enc_voidmirror",
+		"name": "void mirror",
+		"desc": "You see all shapes clearly reflected; but completely black.",
+		"effect": {
+			"voidlore.exp": 1,
+			"void": 1,
+			"madness": "3~5",
+			"unease": "3~5"
+		},
+		"flavor": "For now you see in a mirror, darkly."
+	},
+	{
+		"id": "enc_watermirror",
+		"name": "water mirror",
+		"desc": "Through the mirror you appear to be drowning.",
+		"effect": {
+			"breath": -3,
+			"water": 1,
+			"rage": "2~4",
+			"unease": "3~5"
+		}
+	},
+	{
+		"id": "enc_pastmirror",
+		"name": "mirror of history",
+		"desc": "The mirror shows scenes from long ago.",
+		"effect": {
+			"history.exp": 1,
+			"bf": "1~2",
+			"unease": "1~2"
+		}
+	},
+	{
+		"id": "enc_farmirror",
+		"name": "a distant mirror",
+		"desc": "The mirror shows scenes from far away.",
+		"effect": {
+			"scrying.exp": 1,
+			"travel.exp": 1,
+			"bf": "1~2"
+		}
+	},
+	{
+		"id": "enc_sandstorm",
+		"name": "sandstorm",
+		"desc": "The blistering sands peel away your skin.",
+		"effect": {
+			"madness": "0~1",
+			"weary": "1~2",
+			"player.hp": -2,
+			"airlore.exp": 1,
+			"earthlore.exp": 1,
+			"earth": 0.5,
+			"air": 0.5
+		},
+		"result": {}
+	},
+	{
+		"id": "enc_oasis",
+		"name": "oasis",
+		"desc": "A cooling spring and frond trees relieve the monotony of the wastes.",
+		"effect": {
+			"weary": -2,
+			"madness": -1,
+			"unease": -1
+		}
+	},
+	{
+		"id": "enc_mirage",
+		"name": "mirage",
+		"desc": "Extended travel beneath the hot sun produces visceral visions in the sand.",
+		"effect": {
+			"madness": "1~3",
+			"unease": "0~2",
+			"bf": "0~2",
+			"lightlore.exp": 1
+		},
+		"result": {
+			"lightlore.max": 0.0001
+		}
+	},
+	{
+		"id": "enc_orremtrade",
+		"name": "lost trading post",
+		"desc": "In the midst of a wide desolation, a tall grey-skinned creature with no eyes offers you its wares.",
+		"effect": {
+			"unease": "2~3",
+			"madness": "1~3",
+			"mana": -1
+		},
+		"result": {
+			"bloodgem": "20%",
+			"managem": "10%",
+			"codices": "15%"
+		}
+	},
+	{
+		"id": "enc_madwinds",
+		"name": "winds of madness",
+		"desc": "Voices on the wind scream and echo in your mind.",
+		"effect": {
+			"madness": "2~5",
+			"mana": 0.5,
+			"spiritlore.exp": 1,
+			"spirit": 1,
+			"airlore.exp": 1
+		}
+	},
+	{
+		"id": "orrem_rains",
+		"name": "orrem rains",
+		"desc": "Rare but torrential, the Orrem rains are accounted a wonder of the world.",
+		"effect": {
+			"stamina": 1,
+			"waterlore.exp": 1,
+			"water": 0.5
+		}
+	},
+	{
+		"id": "enc_orrem_cave",
+		"name": "hidden cave",
+		"desc": "The shifting sands reveal a rocky cave. Perhaps some artifacts remain within.",
+		"effect": {
+			"unease": "1~3",
+			"void": 0.1
+		},
+		"result": {
+			"codices": "2~4",
+			"tomes": "0~3",
+			"runestones": "10%"
+		}
+	},
+	{
+		"id": "enc_caravan",
+		"name": "caravan",
+		"desc": "All features of the riders are hidden in robes. They communicate with gutteral sounds and gestures.",
+		"effect": {
+			"unease": "1~3"
+		},
+		"result": {
+			"s_travel.max": 0.001
+		}
+	},
+	{
+		"id": "enc_aeonclock",
+		"name": "aeon clock",
+		"desc": "Legend has it that Thurn himself crafted the ten leagues of clockworks in the Orrem Sands. Year by year, it ticks away the endless Aeons.",
+		"effect": {
+			"madness": "0~3",
+			"unease": "0~2",
+			"bf": "1~3",
+			"chronomancy.exp": 1,
+			"crafting.exp": 1,
+			"history.exp": 1
+		},
+		"result": {
+			"history.max": 0.001
+		},
+		"flavor": "Its vast face is nothing to what is reputed to lie buried below."
+	},
+	{
+		"id": "e_bloodgrass",
+		"name": "blood grass",
+		"desc": "Steel-sharp blades of grass bite into your boots.",
+		"effect": {
+			"weary": "1~3",
+			"rage": "1~3",
+			"hp": -2
+		}
+	},
+	{
+		"id": "e_spidermass",
+		"name": "spider swarm",
+		"desc": "Piled higher than your head, an eclectic mass of skittering spiders bars the path.",
+		"effect": {
+			"unease": "2~3",
+			"madness": "2~4",
+			"rage": "1~2",
+			"hp": -1
+		}
+	},
+	{
+		"id": "e_snakemass",
+		"name": "snake swarm",
+		"desc": "Writhing in heaps and drooping from branches, a mass of snakes covers the vicinity.",
+		"effect": {
+			"unease": "1~2",
+			"madness": "2~3",
+			"rage": "2~3",
+			"hp": -3
+		}
+	},
+	{
+		"id": "e_agolith",
+		"name": "agolith",
+		"desc": "Hidden in a deep pond, it lures its prey with a fruiting branch growing from its head.",
+		"effect": {
+			"unease": "1~2",
+			"weary": "0~1",
+			"herbalism.exp": 1,
+			"waterlore.exp": 1
+		}
+	},
+	{
+		"id": "e_cockatrice",
+		"name": "cockatrice",
+		"desc": "An unnatural blend of serpent and rooster. As its stare is death, you avert your gaze as you approach.",
+		"effect": {
+			"unease": "3~5",
+			"bf": "2~3",
+			"madness": "0~2",
+			"magicbeasts.exp": 1
+		}
+	},
+	{
+		"id": "e_trumple",
+		"name": "trumple",
+		"desc": "A stout tree with stumpy legs and a face inlaid within its trunk.",
+		"effect": {
+			"bf": "1~2",
+			"weary": "2~3",
+			"herbalism.exp": 1
+		},
+		"flavor": "It can't speak but likes it when you feed it oil."
+	},
+	{
+		"id": "e_balmuth",
+		"name": "balmuth",
+		"desc": "A gigantic reptile plows its jaw through the earth to eat.",
+		"effect": {
+			"bf": "1~2",
+			"earthlore2.exp": 1
+		},
+		"flavor": "It seems to like rocks the best."
+	},
+	{
+		"id": "e_moss_portal",
+		"name": "moss-stone portal",
+		"desc": "One of a dozen mossy portals at the edges of the menagerie. Their use is unknown.",
+		"effect": {
+			"unease": "3~4",
+			"bf": "3~4"
+		},
+		"result": {
+			"arcana": 0.01
+		}
+	},
+	{
+		"id": "e_big_scale",
+		"name": "scale of ouroboros",
+		"desc": "At the center of the menagerie a single massive scale merges with the tree.",
+		"effect": {
+			"unease": "3~4",
+			"madness": "4~5"
+		},
+		"flavor": "Best not disturb it."
+	},
+	{
+		"id": "e_gryffon",
+		"name": "gryffon",
+		"desc": "Generally peaceful creatures, a gryffon is nevertheless deadly when enraged.",
+		"effect": {
+			"unease": "1~2"
+		}
+	},
+	{
+		"id": "e_wyvern",
+		"name": "wyvern",
+		"desc": "Believed to be a distant cousin of dragons, some are even venomous.",
+		"effect": {
+			"unease": "2~3",
+			"airlore2.exp": 1
+		}
+	},
+	{
+		"id": "e_hydra",
+		"name": "hydra",
+		"desc": "A multi-headed beast rears its heads from the water.",
+		"effect": {
+			"unease": "2~3",
+			"rage": 0.5,
+			"waterlore2.exp": 1
+		}
+	},
+	{
+		"id": "e_barghest",
+		"name": "barghest",
+		"desc": "The great dog-like beast is a portent of death.",
+		"effect": {
+			"unease": "3~4",
+			"madness": "1~4",
+			"shadowlore2.exp": 1
+		}
+	},
+	{
+		"id": "e_phoenix",
+		"name": "phoenix",
+		"desc": "One of the rarest of birds, they are not uncommon in this place.",
+		"effect": {
+			"unease": "2~3",
+			"rage": 0.5,
+			"firelore2.exp": 1
+		}
+	},
+	{
+		"id": "e_pogler",
+		"name": "pod of poglers",
+		"desc": "The placid poglers angle their backs of bushy leaves to the sun.",
+		"effect": {
+			"bf": "2~3",
+			"rage": -0.5,
+			"naturelore2.exp": 1
+		}
+	},
+	{
+		"id": "e_flithy",
+		"name": "flithy",
+		"desc": "You meet a creeping creature with twenty furry legs and nothing else.",
+		"effect": {
+			"unease": "1~2",
+			"bf": "1~2",
+			"madness": "1~2"
+		}
+	},
+	{
+		"id": "e_bestiary1",
+		"name": "menagerie hanging",
+		"desc": "A pristine tapestry nearby displays a partial index of the menagerie.",
+		"effect": {
+			"unease": "1~2",
+			"madness": "1~2",
+			"rage": "1~2",
+			"hp": -3,
+			"research": 1
+		}
+	},
+	{
+		"id": "e_bestiary2",
+		"name": "bestiary",
+		"desc": "A manual of beastly lore rests atop an ancient pedestal.",
+		"effect": {
+			"unease": "1~2",
+			"madness": "1~2",
+			"rage": "1~2",
+			"hp": -3
+		},
+		"result": {
+			"animals.max": 0.001
+		}
+	}
+]

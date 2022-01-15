@@ -1,0 +1,418 @@
+{
+	"module": "spring",
+	"sym": "🌼",
+	"data": {
+		"events": [
+			{
+				"id": "spr_intro",
+				"desc": "As winter thaws, life springs new from the ground, and the eternal cycle begins again."
+			}
+		],
+		"potions": [
+			{
+				"id": "stone_soup",
+				"stack": true,
+				"desc": "A natural repast.",
+				"cost": {
+					"earthgem": 3,
+					"herbs": 10
+				},
+				"use": {
+					"dot": {
+						"mod": {
+							"earth.rate": "10%",
+							"duration": 600
+						}
+					}
+				}
+			}
+		],
+		"rares": [
+			{
+				"id": "valelily",
+				"name": "lily of the vale",
+				"desc": "A scented white flower, worn for luck.",
+				"slot": "trinket",
+				"alter": {
+					"mod": {
+						"luck": 1,
+						"nature.rate": "5%"
+					}
+				}
+			},
+			{
+				"id": "laurel_crown",
+				"name": "laurel crown",
+				"slot": "head",
+				"type": "armor",
+				"level": 10,
+				"armor": 1,
+				"alter": {
+					"mod": {
+						"charms.max": 1
+					}
+				}
+			},
+			{
+				"id": "spr_honey_jar",
+				"stack": true,
+				"desc": "A jar of golden honey."
+			},
+			{
+				"id": "spr_jar_bees",
+				"stack": true,
+				"desc": "A jar of wild bees.",
+				"use": "apiary"
+			}
+		],
+		"resources": [
+			{
+				"id": "spr_bees",
+				"name": "bees",
+				"max": 0,
+				"require": "apiculture",
+				"desc": "Bees have unexpected uses in spells of life and generation.",
+				"flavor": "Dbulm has a collection"
+			},
+			{
+				"id": "spr_hyacinth",
+				"name": "hyacinth",
+				"max": 5,
+				"desc": "A colorful and poisonous spring bloom.",
+				"flavor": "I could not speak, and my eyes failed, I was neither living nor dead, and I knew nothing."
+			},
+			{
+				"id": "spr_bees",
+				"name": "bees",
+				"require": "apiculture",
+				"desc": "Bees have unexpected uses in spells of life and generation.",
+				"flavor": "Dbulm has a collection"
+			}
+		],
+		"upgrades": [
+			{
+				"id": "spr_portal",
+				"name": "portal of trees",
+				"desc": "A portal of tree trucks grows from the ground. If you could activate it, you might learn where the beasts came from.",
+				"cost": {
+				}
+			},
+			{
+				"id": "spr_mabs_carriage",
+				"name": "queen mab's carriage",
+				"desc": "A fairie-carriage carved from an enchanted chestnut.",
+				"require": "",
+				"slot": "mount",
+				"cost": {
+					"research": 10000,
+					"gold": 10,
+					"spr_hyacinth": 10,
+					"spr_honey_jar": 5
+				},
+				"mod": {
+					"dist": 325,
+					"player.bonuses.nature": 2,
+					"naturelore.max": 1
+				}
+			},
+			{
+				"id": "spr_beeswax_candle",
+				"name": "beeswax candle",
+				"desc": "A candle with a refreshing aroma.",
+				"require": "spr_bees",
+				"max": 1,
+				"cost": {
+					"research": 300,
+					"gold": 10,
+					"spr_honey_jar": 5
+				},
+				"mod": {
+					"nature.rate": 0.02
+				}
+			}
+		],
+		"tasks": [
+			{
+				"id": "spr_task_maypole",
+				"name": "spring rites",
+				"desc": "Call on satyrs and dryads to weave spells about your maypole.",
+				"require": "spr_maypole",
+				"tags": "t_rest",
+				"slot": "rest",
+				"perpetual": true,
+				"verb": "directing weaves",
+				"fill": [
+					"hp",
+					"prismatic",
+					"stamina",
+					"stress"
+				],
+				"effect": {
+					"stress": -1.7,
+					"prismatic": {
+						"skipLocked": true,
+						"value": 0.7
+					},
+					"stamina": 0.7,
+					"hp": 1,
+					"nature": 0.3,
+					"spirit": 0.2
+				}
+			}
+		],
+		"skills": [
+			{
+				"id": "apiculture",
+				"require": "",
+				"level": 3,
+				"cost": {
+					"sp": 1
+				},
+				"desc": "Beekeeping has surprising uses in the magic of life and creation.",
+				"flavor": ""
+			}
+		],
+		"encounters": [
+			{
+				"id": "spr_stargaze",
+				"name": "stargazing",
+				"desc": "Bright spring skies bring new stars into view.",
+				"effect": {
+					"bf": "1~2",
+					"weary": "2~3"
+				},
+				"result": {
+					"starcharts": "1~2"
+				}
+			},
+			{
+				"id": "spr_enc_rumors",
+				"name": "idle rumors",
+				"desc": "Every year rumors abound of lights and music from the nearby woods.",
+				"effect": {
+					"bf": "1~2",
+					"unease": "1~2"
+				},
+				"result": {
+				}
+			},
+			{
+				"id": "spr_night_dance",
+				"name": "evening dances",
+				"desc": "With warmer weather and lighter skies, the celebrations last long into the night.",
+				"effect": {
+					"weary": "3~5"
+				},
+				"result": {
+				}
+			},
+			{
+				"id": "spr_bonfire",
+				"name": "festive fires",
+				"desc": "As evening fades to night, revellers kindle fires to continue the festivities.",
+				"effect": {
+					"rage": "1~3",
+					"wear": "0~2"
+				},
+				"result": {
+				}
+			},
+			{
+				"id": "spr_enc_maypole",
+				"name": "maypole dance",
+				"desc": "Young women from Aylesmeade weave patterns of colored ribbons around a bare trunk.",
+				"effect": {
+					"weaving.exp": 2,
+					"bf": "1~2",
+					"weary": "1~2"
+				},
+				"loot": {
+					"valelily": "10%"
+				}
+			},
+			{
+				"id": "spr_flowers",
+				"name": "potted flowers",
+				"desc": "Aylesmeade villagers arrange their spring blooms for sale.",
+				"effect": {
+					"herbalism.exp": 2,
+					"weary": "2~3"
+				},
+				"loot": {
+					"spr_hyacinth": 1
+				}
+			},
+			{
+				"id": "spr_enc_gobmarket",
+				"name": "goblin market",
+				"desc": "In the woods at night, goblins hold a market of their own.",
+				"effect": {
+					"gold": -10,
+					"rage": "1~3",
+					"madness": "3~4"
+				},
+				"result": {
+					"herbs": "4~10",
+					"gems": "5~10",
+					"managem": "40%"
+				}
+			},
+			{
+				"id": "spr_enc_market",
+				"name": "aylesmeade market",
+				"desc": "From spring spices to dwarven garnets, all manner of luxuries are bartered at the fair.",
+				"effect": {
+					"gold": -0.5,
+					"weary": "1~3",
+					"bf": "0~1"
+				},
+				"result": {
+					"herbs": "4~10"
+				}
+			},
+			{
+				"id": "spr_enc_tinker",
+				"name": "tinker's wagon",
+				"desc": "Tinker wagons from distant lands creak along the roads, to trade their wares at the fair.",
+				"effect": {
+					"rage": "1~3"
+				}
+			}
+		],
+		"locales": [
+			{
+				"id": "spr_fair",
+				"name": "aylesmeade fair",
+				"desc": "Each spring Aylesmeade holds its fabled fair in sight of the World Tree, Aesilwyr.",
+				"start": {
+				},
+				"encs": [
+					"spr_enc_maypole",
+					"spr_enc_market",
+					"spr_enc_tinker",
+					"spr_enc_rumors"
+				],
+				"flavor": ""
+			},
+			{
+				"id": "spr_aesilwyr",
+				"name": "tree of fate",
+				"desc": "At the center of the world the great idrasil stretches to the heavens.",
+				"encs": [
+				],
+				"flavor": "A single seed once fell from Yggrasil."
+			}
+		],
+		"furniture": [
+			{
+				"id": "spr_flower_pot",
+				"name": "flower pot",
+				"tags": "plantsource",
+				"cost": {
+					"spr_hyacinth": 5,
+					"herbs": 10,
+					"gold": 10
+				},
+				"mod": {
+					"spr_hyacinth.max": 5
+				}
+			},
+			{
+				"id": "spr_maypole",
+				"name": "maypole",
+				"desc": "Raise a maypole to perform spring rituals.",
+				"cost": {
+					"gold": 500,
+					"herbs": 30
+				}
+			},
+			{
+				"id": "spr_beehive",
+				"name": "beehive",
+				"desc": "A small hive for keeping bees.",
+				"cost": {
+					"gold": 100,
+					"herbs": 10,
+					"spr_honey_jar": 1
+				},
+				"mod": {
+					"spr_bees.max": 10
+				}
+			}
+		],
+		"dungeons": [
+			{
+				"id": "spr_wilds",
+				"name": "hidden wilds",
+				"desc": "A land of magic beasts, unknown to your lore.",
+				"length": 100,
+				"require": "spr_portal",
+				"start": {
+					"name": "",
+					"desc": ""
+				},
+				"run": {
+					"stamina": 2.5
+				},
+				"title": "Tamer of Wilds",
+				"mod": {
+					"magicbeasts.max": "?1"
+				},
+				"boss": "jabberwocky",
+				"loot": {
+					"maxlevel": 25
+				},
+				"spawns": [
+					"wyvern2",
+					[
+						"wyvern",
+						"wyvern",
+						"wyvern"
+					],
+					"m_cordyceps",
+					"m_stranglevine"
+				]
+			},
+			{
+				"id": "spr_sunnyfield",
+				"name": "sunny fields of stone",
+				"lock": "sunnyfield",
+				"level": 20,
+				"length": 100,
+				"dist": 0,
+				"start": {
+					"name": "",
+					"desc": "Returning from the fair you receive reports of fields overrun by great serpents and lizards. It may bear investigation."
+				},
+				"desc": "The fields you remember from former days are now overrun with fearsome beasts.",
+				"run": {
+					"stamina": 1.5
+				},
+				"result": {
+					"gold": "100~200"
+				},
+				"title": "Sunny Champion",
+				"loot": {
+					"maxlevel": 20
+				},
+				"boss": "wyvern2",
+				"spawns": [
+					"basilisk2",
+					"basilisk",
+					[
+						"wyvern",
+						"wyvern",
+						"wyvern"
+					],
+					"m_cordyceps",
+					"greendragon",
+					"manticore",
+					"direbear",
+					"cockatrice",
+					"basilisk"
+				],
+				"flavor": "Every budding mage needs to die somewhere."
+			}
+		]
+	}
+}

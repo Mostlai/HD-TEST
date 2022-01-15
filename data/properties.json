@@ -1,0 +1,206 @@
+[
+	{
+		"id": "prop_studious",
+		"name": "studious",
+		"level": 2,
+		"only": "cloth",
+		"priceMod": 20,
+		"mod": {
+			"research.rate": 1
+		}
+	},
+	{
+		"id": "prop_scholarly",
+		"name": "scholarly",
+		"priceMod": 30,
+		"level": 3,
+		"mod": {
+			"lore.max": 1,
+			"lore.rate": "15%"
+		}
+	},
+	{
+		"id": "prop_fire1",
+		"name": "warm",
+		"priceMod": 30,
+		"level": 2,
+		"mod": {
+			"self.bonuses.fire": "1%",
+			"fire.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_water1",
+		"name": "aquatic",
+		"priceMod": 30,
+		"level": 2,
+		"mod": {
+			"self.bonuses.water": "1%",
+			"water.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_air1",
+		"name": "whistling",
+		"priceMod": 30,
+		"level": 2,
+		"mod": {
+			"self.bonuses.air": "1%",
+			"air.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_earth1",
+		"name": "earthy",
+		"priceMod": 30,
+		"level": 2,
+		"mod": {
+			"self.bonuses.earth": "1%",
+			"earth.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_fire2",
+		"name": "fire",
+		"priceMod": 50,
+		"level": 5,
+		"mod": {
+			"self.bonuses.fire": "2%",
+			"fire.rate": "2%"
+		}
+	},
+	{
+		"id": "prop_water2",
+		"name": "brackish",
+		"priceMod": 50,
+		"level": 5,
+		"only": "rod",
+		"mod": {
+			"self.bonuses.water": "2%",
+			"water.rate": "2%"
+		}
+	},
+	{
+		"id": "prop_air2",
+		"name": "airy",
+		"priceMod": 50,
+		"level": 5,
+		"only": "rod",
+		"mod": {
+			"self.bonuses.air": "2%",
+			"air.rate": "2%"
+		}
+	},
+	{
+		"id": "prop_earth2",
+		"name": "earthy",
+		"priceMod": 50,
+		"level": 5,
+		"only": "rod",
+		"mod": {
+			"self.bonuses.earth": "2%",
+			"earth.rate": "2%"
+		}
+	},
+	{
+		"id": "prop_saintly",
+		"name": "saintly",
+		"priceMod": 100,
+		"level": 8,
+		"only": "greatstaff",
+		"mod": {
+			"self.bonuses.light": "20%",
+			"light.max": "25%",
+			"light.rate": "10%"
+		}
+	},
+	{
+		"id": "prop_dowsing",
+		"name": "dowsing",
+		"priceMod": 50,
+		"level": 5,
+		"only": "rod",
+		"mod": {
+			"self.bonuses.water": "1%",
+			"water.rate": "1%",
+			"herbs.rate": 1
+		}
+	},
+	{
+		"id": "prop_elemental",
+		"name": "elemental",
+		"priceMod": 100,
+		"level": 10,
+		"only": "greatstaff,wand,rod",
+		"mod": {
+			"self.bonuses.fire": "1%",
+			"self.bonuses.water": "1%",
+			"self.bonuses.air": "1%",
+			"self.bonuses.earth": "1%",
+			"fire.rate": "1%",
+			"water.rate": "1%",
+			"air.rate": "1%",
+			"earth.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_arcane",
+		"name": "arcane",
+		"priceMod": 100,
+		"level": 5,
+		"only": "staff,weap_orb,rod,greatstaff,ring",
+		"mod": {
+			"self.bonuses.mana": "1%",
+			"mana.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_masterly",
+		"name": "masterly",
+		"priceMod": 100,
+		"level": 3,
+		"only": [
+			"wand,weap_orb,rod,staff"
+		],
+		"mod": {
+			"self.allies.max": "1",
+			"self.minions.max": 1
+		}
+	},
+	{
+		"id": "prop_optic",
+		"name": "optic",
+		"priceMod": 100,
+		"level": 6,
+		"only": "weap_orb",
+		"mod": {
+			"self.tohit": 2
+		}
+	},
+	{
+		"id": "prop_disturbing",
+		"name": "disturbing",
+		"priceMod": 100,
+		"level": 8,
+		"only": "fetish",
+		"mod": {
+			"unease.rate": "1%",
+			"self.bonuses.spirit": "1%",
+			"spirit.rate": "1%"
+		}
+	},
+	{
+		"id": "prop_gloomy",
+		"name": "gloomy",
+		"priceMod": 100,
+		"level": 8,
+		"only": [
+			"fetish,greatstaff,staff"
+		],
+		"mod": {
+			"self.bonuses.shadow": "1%",
+			"shadow.max": "1%",
+			"shadow.rate": "1%"
+		}
+	}
+]

@@ -1,0 +1,907 @@
+[
+	{
+		"id": "heli_li_1",
+		"name": "初步认识合理之理(路径)",
+		"desc": "对于这种新的力量,我们应该学会如何以最大效率的利用他",
+		"tags": "路径",
+		"require": "g.heli",
+		"max": 2,
+		"buy": {
+			"books": 1
+		},
+		"cost": {
+			"ganwu": 1,
+			"heli": 3,
+			"books": 1,
+			"exe_paper": 2
+		},
+		"result": {
+			"time": 13,
+			"heli.rate": -0.01,
+			"xiulian_heli_1": 1
+		}
+	},
+	{
+		"id": "jizhun_1",
+		"name": "基准探讨(立足)",
+		"desc": "筑基的第一步,首先要探讨何谓基准,基准决定了后续修行路途中的标准,这个过程中你需要一些称之为零结晶的资源,或许附近的地点有一些",
+		"tags": "立足",
+		"require": "g.reading>=3&&g.heli",
+		"max": 2,
+		"buy": {
+			"books": 1
+		},
+		"cost": {
+			"ganwu": 1,
+			"zero_crystal": 1,
+			"heli": 3,
+			"books": 1,
+			"exe_paper": 2
+		},
+		"result": {
+			"time": 30,
+			"heli.max": -0.5,
+			"heli.rate": -0.01,
+			"xiulian_jizhun_1": 1
+		}
+	},
+	{
+		"id": "fangyuan_1",
+		"name": "寻找规矩(方圆)",
+		"desc": "充分考察自然后,你需要从中找出总在变化并限制一切的自然规则",
+		"tags": "方圆",
+		"require": "g.reading>=3&&g.heli&&g.xiulian_jizhun_1>=1",
+		"max": 2,
+		"buy": {
+			"books": 1,
+			"exe_paper":2
+		},
+		"cost": {
+			"ganwu": 3,
+			"zero_crystal": 3,
+			"heli": 2,
+			"books": 2,
+			"exe_paper": 2,
+			"snp_data":2
+		},
+		"result": {
+			"time": 30,
+			"heli.max": -1,
+			"heli.rate": -0.01,
+			"xiulian_fangyuan_1": 1
+		}
+	},
+	{
+		"id": "life_1",
+		"name": "悠久呼吸(永生之望)",
+		"desc": "运用合理使自己的呼吸更加绵长，从而延长寿命",
+		"tags": "永生之望",
+		"require": "g.heli",
+		"max": 2,
+		"buy": {
+			"books": 1
+		},
+		"cost": {
+			"ganwu": 1,
+			"heli": 3,
+			"books": 1,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 10,
+			"xiulian_life_1" : 1,
+			"age": -1825,
+			"age.max": -1825
+		}
+	},
+	{
+		"id": "life_2",
+		"name": "悠久呼吸II(永生之望)",
+		"desc": "运用合理使自己的呼吸更加绵长，从而延长寿命",
+		"tags": "永生之望",
+		"require": "g.xiulian_life_1>=1&&g.biology_1>=1",
+		"max": 2,
+		"buy": {
+			"books": 1
+		},
+		"cost": {
+			"ganwu": 1,
+			"zero_crystal": 3,
+			"heli": 3,
+			"books": 1,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 10,
+			"age": -2825,
+			"age.max": -2825
+		}
+	},
+	{
+		"id": "life_shenshi_1",
+		"name": "神识命理(永生之望)",
+		"desc": "通过神识来激活脑部潜能",
+		"tags": "永生之望",
+		"require": "g.shenshi_1>=6",
+		"max": 2,
+		"buy": {
+			"lg":1,
+			"books": 3
+		},
+		"cost": {
+			"ganwu": 90,
+			"heli": 3,
+			"chaos": 1
+		},
+		"result": {
+			"time": 10,
+			"age.max": -3650,
+			"age": -3650
+		}
+	},
+	{
+		"id": "life_cold_1",
+		"name": "凝结呼吸(永生之望)",
+		"desc": "低温下的缓慢呼吸",
+		"tags": "永生之望",
+		"require": "g.jls>=10",
+		"max": 2,
+		"buy": {
+			"lg":1,
+			"cold_core": 10,
+			"paper": 20,
+			"hp": 20,
+			"books": 3
+		},
+		"cost": {
+			"ganwu": 120,
+			"cold_core": 10,
+			"zero_crystal": 8,
+			"jls": 20,
+			"heli": 3,
+			"chaos": 1
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"age.max": -3650,
+			"age": -3650
+		}
+	},
+	{
+		"id": "heli_li_1_controll",
+		"name": "初步流控制(导向)",
+		"desc": "初步学会自动地获取合理并对其拥有更好的控制能力",
+		"tags": "导向",
+		"require": "g.xiulian_heli_1>0",
+		"max": 2,
+		"cost": {
+			"ganwu": 1,
+			"heli": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 7,
+			"xiulian_heli_li_1_controll" : 1,
+			"heli.rate": -0.1
+		}
+	},
+	{
+		"id": "heli_li_1_solid",
+		"name": "合理实质化(导向)",
+		"desc": "将合理化为不依赖其他的介质的形态,研究将允许解锁更多法术",
+		"tags": "导向",
+		"require": "g.xiulian_heli_1>0",
+		"max": 2,
+		"cost": {
+			"money": 10,
+			"ganwu": 2,
+			"heli": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"xiulian_heli_li_1_soild" : 1,
+			"heli.max": -1,
+			"heli.rate": -0.1
+		}
+	},
+	{
+		"id": "heli_li_1_escape",
+		"name": "合理外放(导向)",
+		"desc": "允许将合理作为纯粹能量形式外放出来",
+		"tags": "导向",
+		"require": "g.xiulian_heli_li_1_soild>0",
+		"max": 2,
+		"cost": {
+			"money": 10,
+			"ganwu": 2,
+			"heli": 2,
+			"zero_crystal": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 12,
+			"xiulian_heli_li_1_esc" : 1,
+			"heli_missile": true,
+			"heli.max": -1,
+			"heli.rate": -0.1
+		}
+	},
+	{
+		"id": "ld_body_1",
+		"name": "初等身体改造(生命构造)",
+		"desc": "运用合理改造原本羸弱的身躯",
+		"tags": "生命构造",
+		"require": "g.Knowledge_integration_1>=1",
+		"max": 2,
+		"cost": {
+			"tili": 10,
+			"ganwu": 4,
+			"heli": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 3,
+			"xiulian_ld_body_1" : 1,
+			"stamina.max": -1,
+			"stamina.rate": -0.05
+		}
+	},
+	{
+		"id": "ld_body_2",
+		"name": "超然形式I(生命构造)",
+		"desc": "蜕变的每一步",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_body_1>=1&&g.biology_1>=1",
+		"max": 2,
+		"cost": {
+			"money": 50,
+			"tili": 15,
+			"ganwu": 20,
+			"heli": 2,
+			"zero_crystal": 3,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 10,
+			"xiulian_ld_body_2" : 1,
+			"hp.max": -1,
+			"tili.max": -1,
+			"tili.rate": -0.1,
+			"stamina.max": -0.3,
+			"stamina.rate": -0.06
+		}
+	},
+	{
+		"id": "ld_body_3",
+		"name": "超然形式II(生命构造)",
+		"desc": "蜕变的每一步",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_body_2>=1&&g.jls>=1",
+		"max": 2,
+		"cost": {
+			"money": 180,
+			"cold_core": 10,
+			"jls": 20,
+			"r_adv_w_sj1":1,
+			"tili": 15,
+			"elect": 20,
+			"paper": 40,
+			"ganwu": 130,
+			"heli": 2,
+			"zero_crystal": 8,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 20,
+			"xiulian_ld_body_3" : 1,
+			"frs": 18,
+			"hp.max": -3,
+			"tili.max": -3,
+			"tili.rate": -0.1,
+			"stamina.max": -2,
+			"stamina.rate": -0.06
+		}
+	},
+	{
+		"id": "ld_dw_guancha",
+		"name": "双波生命实验(生命构造)",
+		"desc": "研究生命在两种波下的表现",
+		"tags": "生命构造",
+		"require": "g.biology_ast_1>=10&&g.rlt_guancha>=5",
+		"max": 2,
+		"cost": {
+			"money": 170,
+			"ganwu": 150,
+			"heli": 10,
+			"elect": 20,
+			"chaos": 5,
+			"star_map": 30,
+			"super_mind": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"xiulian_ld_dw_guancha" : 1,
+			"rlt_guancha.max": -5,
+			"hp.max": -10,
+			"tili.max": -1,
+			"tili.rate": -0.1
+		}
+	},
+	{
+		"id": "astro_zhuji_1",
+		"name": "大气假说(通天阶梯)",
+		"desc": "通过不断地实验与观察,你猜想你所在的大地是一个被气体包裹着的球体",
+		"tags": "通天阶梯",
+		"require": "g.snp_data>=1&&g.astronomy>=2",
+		"max": 2,
+		"cost": {
+			"money": 50,
+			"ganwu": 30,
+			"heli": 2,
+			"snp_data": 3,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 6,
+			"xiulian_astro_zhuji_1" : 1,
+			"astronomy.max": -2,
+			"astronomy.rate": "-1%"
+		}
+	},
+	{
+		"id": "astro_zhuji_1_1",
+		"name": "磁场假说(通天阶梯)",
+		"desc": "通过不断地实验与观察,你猜想存在一种名为磁场的场",
+		"tags": "通天阶梯",
+		"require": "g.snp_data>=1&&g.astronomy>=2",
+		"max": 2,
+		"cost": {
+			"money": 50,
+			"ganwu": 50,
+			"heli": 2,
+			"snp_data": 3,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 6,
+			"xiulian_astro_zhuji_1_1" : 1,
+			"astronomy.max": -1,
+			"astronomy.rate": "-1%"
+		}
+	},
+	{
+		"id": "astro_zhuji_2",
+		"name": "天体轨迹(通天阶梯)",
+		"desc": "你被他们的轨道所着迷",
+		"tags": "通天阶梯",
+		"require": "g.xiulian_astro_zhuji_1>=1",
+		"max": 2,
+		"cost": {
+			"ganwu": 50,
+			"heli": 6,
+			"snp_data": 8,
+			"exe_paper": 7
+		},
+		"result": {
+			"time": 50,
+			"xiulian_astro_zhuji_2" : 1,
+			"astronomy.max": -2,
+			"astronomy_1.max": -2,
+			"astronomy.rate": "-1%"
+		}
+	},
+	{
+		"id": "astro_zhuji_3",
+		"name": "混沌揭示(通天阶梯)",
+		"desc": "混沌运动学揭示了一种新的力量",
+		"tags": "通天阶梯",
+		"require": "g.chaos_sci>=3",
+		"max": 2,
+		"cost": {
+			"ganwu": 50,
+			"heli": 6,
+			"snp_data": 8,
+			"star_map": 5,
+			"exe_paper": 7
+		},
+		"result": {
+			"time": 100,
+			"xiulian_astro_zhuji_3" : 1,
+			"chaos_sci.max": -2,
+			"chaos_sci.rate": "-3%"
+		}
+	},
+	{
+		"id": "eye_zhuji_1",
+		"name": "外置扩展眼镜(观测之术)",
+		"desc": "你意识到还有很多看不见的光,这种开创性的随身镜片可以帮助你看到其中的一部分",
+		"tags": "观测之术",
+		"require": "g.snp_data>=1&&g.ult_guancha>=3&&g.astronomy>=2",
+		"max": 2,
+		"cost": {
+			"money": 50,
+			"ganwu": 70,
+			"heli": 2,
+			"books": 3,
+			"zero_crystal": 3,
+			"snp_data": 3,
+			"paper": 10,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"xiulian_eye_zhuji_1" : 1,
+			"heli.max": -2,
+			"astronomy.max": -2,
+			"astronomy.rate": "-1%"
+		}
+	},
+	{
+		"id": "zhuji_1",
+		"name": "筑基窥探",
+		"desc": "进行大量研究后,你足以窥探到筑基的一角",
+		"require": "g.xiulian_astro_zhuji_1>=1&&g.xiulian_eye_zhuji_1>=1&&g.xiulian_ld_body_1>=1&&g.xiulian_fangyuan_1>=1&&g.xiulian_jizhun_1>=1&&g.xiulian_heli_li_1_controll>=1",
+		"max": 2,
+		"tags": "初入筑基",
+		"cost": {
+			"ganwu": 70,
+			"heli": 7,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 5,
+			"paper": 25,
+			"exe_paper": 6
+		},
+		"result": {
+			"time": 10,
+			"xiulian_zhuji_1":1,
+			"heli.max": -3,
+			"age.max": -5000,
+			"age": -5000
+		},
+		"flavor": "飞跃"
+	},
+	{
+		"id": "change_metal_1",
+		"name": "固液变化(形态变化)",
+		"desc": "你观察到固体被熔化成了液体",
+		"tags": "形态变化",
+		"require": "g.metal_app>=4",
+		"max": 2,
+		"cost": {
+			"books": 3,
+			"zero_crystal": 5,
+			"paper": 10,
+			"exe_paper": 3,
+			"cu_iron": 5
+		},
+		"result": {
+			"time": 3,
+			"xiulian_change_metal_1" : 1
+		}
+	},
+	{
+		"id": "change_metal_2",
+		"name": "固气变化(形态变化)",
+		"desc": "你猜想极高温会将固体转化为气体",
+		"tags": "形态变化",
+		"require": "g.xiulian_change_metal_1>=1",
+		"max": 2,
+		"cost": {
+			"books": 1,
+			"zero_crystal": 5,
+			"paper": 10,
+			"exe_paper": 3,
+			"cu_iron": 1
+		},
+		"result": {
+			"time": 3,
+			"xiulian_change_metal_2" : 1
+		}
+	},
+	{
+		"id": "change_metal_3",
+		"name": "三态转化(形态变化)",
+		"desc": "你对物质的三种形态已经知晓了",
+		"tags": "形态变化",
+		"require": "g.xiulian_change_metal_2>=1",
+		"max": 2,
+		"cost": {
+			"books": 1,
+			"cu_iron": 5,
+			"cu_copper": 5,
+			"ganwu": 100,
+			"zero_crystal": 5,
+			"exe_paper": 1
+		},
+		"result": {
+			"time": 3,
+			"xiulian_change_metal_3" : 1
+		}
+	},
+	{
+		"id": "struct_1",
+		"name": "合金工艺(物体结构)",
+		"desc": "将两种金属合为一体",
+		"tags": "物体结构",
+		"require": "g.xiulian_change_metal_3>=1",
+		"max": 2,
+		"cost": {
+			"books": 4,
+			"paper": 20,
+			"exe_paper": 1,
+			"cu_iron": 5,
+			"cu_copper": 5,
+			"zero_crystal": 5
+		},
+		"result": {
+			"time": 3,
+			"xiulian_struct_1" : 1
+		}
+	},
+	{
+		"id": "struct_2",
+		"name": "神经物质(物体结构)",
+		"desc": "让金属具有思维....",
+		"tags": "物体结构",
+		"require": "g.shenshi_1>=6 && g.metal_app>=5",
+		"max": 2,
+		"cost": {
+			"books": 4,
+			"paper": 30,
+			"lg": 5,
+			"ganwu": 110,
+			"zero_crystal": 10,
+			"books": 3
+		},
+		"result": {
+			"time": 3,
+			"metal_app.max": -5,
+			"shenshi_1.max": -2,
+			"xiulian_struct_2" : 1
+		}
+	},
+	{
+		"id": "x_energ_1",
+		"name": "FC切割实验(能量物理)",
+		"desc": "将FC合金铸成特定形状后对磁感线进行切割",
+		"tags": "能量物理",
+		"require": "g.fc_pro_duc>=1 && g.xiulian_astro_zhuji_1_1>=1",
+		"max": 2,
+		"cost": {
+			"books": 5,
+			"exe_paper": 5,
+			"zero_crystal": 10,
+			"paper": 20,
+			"iron_copper": 10
+		},
+		"result": {
+			"time": 4,
+			"xiulian_energ_1" : 1
+		}
+	},
+	{
+		"id": "zhuji_2",
+		"name": "筑基零重(初入筑基)",
+		"desc": "在结合天体,生物,材料,能量后,混沌与合理交织,电能被你带入世间,神识成就思维之光,你的博学,力量和功业足以让你迈入这个层次,这是生命层次的飞跃",
+		"tags": "初入筑基",
+		"require": "g.chaos_up>=1 && g.xiulian_zhuji_1>=1 && g.zhuji_qianzhi_2>=1",
+		"max": 2,
+		"cost": {
+			"shenshi": 1,
+			"ganwu":150,
+			"heli": 5,
+			"elect": 20,
+			"chaos": 5
+		},
+		"result": {
+			"time": 365,
+			"heli.max": -30,
+			"chaos.max": -30,
+			"heli.rate": -2,
+			"chaos.rate": -2,
+			"age.max": -7300,
+			"age": -7300,
+			"hp.max": -10,
+			"stamina.max": -7,
+			"tili.max": -10,
+			"tili.rate": -1,
+			"xiulian_zhuji_2" : 1
+		}
+	},
+	{
+		"id": "x_info_1",
+		"name": "无线通讯(信息海)",
+		"desc": "研究无线传播信息",
+		"tags": "信息海",
+		"require": "g.mc_guancha>=10 && g.dirc_lunch>=1",
+		"max": 2,
+		"cost": {
+			"ganwu": 140,
+			"money": 130,
+			"elect": 30,
+			"paper": 40,
+			"exe_paper": 20,
+			"zero_crystal":15,
+			"alculation": 10,
+			"super_mind": 5,
+			"iron_copper": 5,
+			"star_map": 10
+		},
+		"result": {
+			"xiulian_x_info_1" : 1
+		}
+	},
+	{
+		"id": "ld_cold",
+		"name": "极寒环境适应(生命构造)",
+		"desc": "学习在极寒环境下生存",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_dw_guancha>=1",
+		"max": 2,
+		"cost": {
+			"money": 130,
+			"paper": 30,
+			"exe_paper": 15,
+			"zero_crystal":15,
+			"super_mind": 1,
+			"sj_met": 5,
+			"star_map": 13
+		},
+		"result": {
+			"xiulian_ld_cold" : 1
+		}
+	},
+	{
+		"id": "ld_panpa",
+		"name": "攀登技巧(生命构造)",
+		"desc": "学习在险峻地形行走,看上去以后会有用",
+		"tags": "生命构造",
+		"require": "g.biology_ast_1>=5",
+		"max": 2,
+		"cost": {
+			"tili": 15,
+			"stamina": 11,
+			"heli": 1,
+			"chaos": 1,
+			"money": 130,
+			"exe_paper": 15,
+			"zero_crystal":15,
+			"super_mind": 5,
+			"sj_met": 5,
+			"star_map": 20
+		},
+		"result": {
+			"xiulian_ld_panpa" : 1
+		}
+	},
+	{
+		"id": "change_res",
+		"name": "低温研究(形态变化)",
+		"desc": "在低温环境下研究能有效降低热运动带来的干扰",
+		"tags": "形态变化",
+		"require": "g.jls>=1",
+		"max": 2,
+		"cost": {
+			"heli": 1,
+			"chaos": 1,
+			"ganwu": 120,
+			"money": 130,
+			"human_power": 30,
+			"exe_paper": 30,
+			"zero_crystal":15,
+			"super_mind": 2,
+			"sj_met": 5,
+			"cold_core": 10,
+			"jls": 20,
+			"star_map": 20
+		},
+		"result": {
+			"frs": 15,
+			"xiulian_change_res" : 1
+		}
+	},
+	{
+		"id": "eye_adv_astro",
+		"name": "进阶天文观测(观测之术)",
+		"desc": "粗糙的天文记录的作用已经不如以往了",
+		"tags": "观测之术",
+		"require": "g.xiulian_change_res>=1 && g.jls>=5 && g.astronomy_1>=5",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 140,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"xiulian_eye_adv_astro" : 1
+		}
+	},
+	{
+		"id": "info_cold_1",
+		"name": "低温传播实验(信息海)",
+		"desc": "研究在低温环境下信息的传播速度",
+		"tags": "信息海",
+		"require": "g.xiulian_change_res>=1 && g.jls>=10 && g.mc_guancha>=5",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 140,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"xiulian_info_cold_1" : 1
+		}
+	},
+	{
+		"id": "energ_cold_1",
+		"name": "低温导电实验(能量物理)",
+		"desc": "研究在低温环境下的材料电导率变化",
+		"tags": "能量物理",
+		"require": "g.xiulian_change_res>=1",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 150,
+			"heli": 2,
+			"elect":30,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"xiulian_energ_cold_1" : 1
+		}
+	},
+	{
+		"id": "struct_cold_1",
+		"name": "低温材料性质(物体结构)",
+		"desc": "研究在低温环境下的各种材料的物理性质",
+		"tags": "物体结构",
+		"require": "g.xiulian_change_res>=1 && g.metal_app>=6 && g.building_1>=5 &&g.jls>=10",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 150,
+			"cu_iron": 20,
+			"cu_copper": 20,
+			"iron_copper": 10,
+			"tian": 10,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 10,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 30,
+			"frs": 19,
+			"xiulian_struct_cold_1" : 1
+		}
+	},
+	{
+		"id": "bio_cold_1",
+		"name": "低温生物样本(生命构造)",
+		"desc": "低温环境的生命形式研究",
+		"tags": "生命构造",
+		"require": "g.xiulian_change_res>=1 && g.biology_ast_1>=10 && g.bio_metal_1>=5 &&g.jls>=10",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 150,
+			"sj_met": 5,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"tian": 10,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 12,
+			"snp_data": 10,
+			"paper": 40,
+			"jls": 20,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 30,
+			"frs": 19,
+			"xiulian_bio_cold_1" : 1
+		}
+	},
+	{
+		"id": "bio_dirty_1",
+		"name": "污浊研究(生命构造)",
+		"desc": "混沌而危险的污浊核心中蕴含着神秘的力量",
+		"tags": "生命构造",
+		"require": "g.dirty_core>=3 && g.xiulian_bio_cold_1>=1",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 160,
+			"sj_met": 2,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"tian": 10,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 12,
+			"snp_data": 10,
+			"paper": 40,
+			"books": 5,
+			"jls": 20,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 60,
+			"frs": 19,
+			"xiulian_bio_dirty_1" : 1
+		}
+	},
+	{
+		"id": "death_1",
+		"name": "死谜(死亡)",
+		"desc": "人人惧怕死亡,死亡不该被惧怕",
+		"tags": "死亡",
+		"require": "g.shenshi_1>=10",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 160,
+			"sj_met": 2,
+			"heli": 2,
+			"human_power": 20,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"books": 3,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 100,
+			"xiulian_death_1" : 1
+		}
+	}
+]

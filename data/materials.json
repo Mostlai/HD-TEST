@@ -1,0 +1,271 @@
+[
+	{
+		"id": "silk",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"exclude": "weapon,ring,amulet",
+		"alter": {
+			"attack.tohit": -3,
+			"enchants.max": 5
+		}
+	},
+	{
+		"id": "cotton",
+		"kind": "cloth",
+		"level": 0,
+		"exclude": "weapon",
+		"alter": {
+			"attack.tohit": -3
+		}
+	},
+	{
+		"id": "stone",
+		"kind": "natural",
+		"weight": 3,
+		"level": 0,
+		"only": "weapon",
+		"alter": {
+			"enchants.max": 1,
+			"damage": 1
+		}
+	},
+	{
+		"id": "glass",
+		"kind": "natural",
+		"only": "weap_orb",
+		"weight": 1,
+		"level": 2,
+		"alter": {
+			"damage": 1,
+			"enchants.max": 2
+		}
+	},
+	{
+		"id": "leather",
+		"kind": "leather",
+		"weight": 1,
+		"priceMod": 1,
+		"level": 0,
+		"exclude": "weapon,ring,amulet",
+		"alter": {
+			"enchants.max": 2
+		}
+	},
+	{
+		"id": "wood",
+		"kind": "wood",
+		"adj": "wooden",
+		"priceMod": 1,
+		"level": 0,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 1,
+			"damage": 1,
+			"armor": 1,
+			"enchants.max": 3
+		}
+	},
+	{
+		"id": "bone",
+		"kind": "natural",
+		"priceMod": 1,
+		"level": 2,
+		"alter": {
+			"attack.tohit": 1,
+			"damage": 1,
+			"armor": 1,
+			"enchants.max": 3
+		}
+	},
+	{
+		"id": "ivory",
+		"kind": "natural",
+		"priceMod": 5,
+		"level": 4,
+		"alter": {
+			"attack.tohit": 2,
+			"damage": 2,
+			"armor": 2,
+			"enchants.max": 4
+		}
+	},
+	{
+		"id": "mat_gold",
+		"name": "gold",
+		"adj": "golden",
+		"kind": "metal",
+		"priceMod": 3,
+		"level": 4,
+		"alter": {
+			"attack.tohit": 2,
+			"damage": 2,
+			"armor": 2,
+			"enchants.max": 3
+		}
+	},
+	{
+		"id": "mat_ruby",
+		"name": "ruby",
+		"kind": "crystal",
+		"priceMod": 7,
+		"level": 6,
+		"alter": {
+			"attack.tohit": -1,
+			"damage": -2,
+			"enchants.max": 5
+		}
+	},
+	{
+		"id": "bronze",
+		"kind": "metal",
+		"weight": 2,
+		"priceMod": 5,
+		"level": 2,
+		"alter": {
+			"attack.tohit": 2,
+			"damage": 1,
+			"armor": 1,
+			"enchants.max": 1
+		}
+	},
+	{
+		"id": "iron",
+		"kind": "metal",
+		"weight": 2,
+		"priceMod": 10,
+		"level": 3,
+		"alter": {
+			"attack.tohit": 2,
+			"damage": 2,
+			"armor": 2,
+			"enchants.max": 2
+		}
+	},
+	{
+		"id": "steel",
+		"kind": "metal",
+		"weight": 2,
+		"priceMod": 20,
+		"level": 4,
+		"alter": {
+			"damage": 3,
+			"armor": 2,
+			"attack.tohit": 4,
+			"enchants.max": 1
+		}
+	},
+	{
+		"id": "dragonscale",
+		"name": "dragonscale",
+		"kind": "leather",
+		"weight": 1,
+		"priceMod": 50,
+		"level": 7,
+		"noproc": true,
+		"exclude": "weapon",
+		"alter": {
+			"armor": 9,
+			"enchants.max": 4,
+			"mod": {
+				"self.resist.fire": 10
+			}
+		}
+	},
+	{
+		"id": "basiliskhide",
+		"name": "basilisk hide",
+		"kind": "leather",
+		"weight": 1,
+		"priceMod": 30,
+		"level": 6,
+		"noproc": true,
+		"exclude": "weapon",
+		"alter": {
+			"armor": 4,
+			"enchants.max": 2,
+			"mod": {
+				"self.resist.paralysis": 10
+			}
+		}
+	},
+	{
+		"id": "quicksteel",
+		"kind": "metal",
+		"weight": 2,
+		"priceMod": 25,
+		"level": 5,
+		"alter": {
+			"damage": 5,
+			"armor": 4,
+			"attack.tohit": 7,
+			"enchants.max": 3
+		}
+	},
+	{
+		"id": "mithril",
+		"kind": "metal",
+		"weight": 1,
+		"priceMod": 100,
+		"level": 7,
+		"alter": {
+			"damage": 8,
+			"armor": 8,
+			"attack.tohit": 10,
+			"enchants.max": 6
+		}
+	},
+	{
+		"id": "ebonwood",
+		"kind": "wood",
+		"weight": 1,
+		"priceMod": 100,
+		"level": 8,
+		"alter": {
+			"damage": 6,
+			"armor": 6,
+			"attack.tohit": 12,
+			"enchants.max": 7
+		}
+	},
+	{
+		"id": "idrasil",
+		"kind": "wood",
+		"weight": 1,
+		"priceMod": 100,
+		"level": 8,
+		"alter": {
+			"damage": 7,
+			"armor": 7,
+			"attack.tohit": 9,
+			"enchants.max": 7
+		}
+	},
+	{
+		"id": "ethereal",
+		"kind": "ethereal",
+		"weight": 0,
+		"priceMod": 2000,
+		"level": 8,
+		"alter": {
+			"damage": 5,
+			"armor": 5,
+			"attack.tohit": 15,
+			"enchants.max": 3
+		}
+	},
+	{
+		"id": "adamant",
+		"kind": "metal",
+		"adj": "adamantine",
+		"priceMod": 1000,
+		"level": 9,
+		"alter": {
+			"damage": 10,
+			"armor": 10,
+			"attack.tohit": 12,
+			"enchants.max": 4
+		}
+	}
+]

@@ -1,0 +1,616 @@
+[
+	{
+		"id": "small_house",
+		"name": "小茅屋",
+		"desc": "城镇郊区的一间小茅屋",
+		"flavor": "起码能住人",
+		"require": "g.home_un>=1",
+		"cost": {
+			"money": 50
+		},
+		"mod": {
+			"space.max": 14
+		}
+	},
+	{
+		"id": "moutant_house",
+		"name": "小山庄",
+		"desc": "自己在山林里面盖一个小山庄",
+		"require": "g.snp_data>=1",
+		"cost": {
+			"money": 100,
+			"zero_crystal": 3,
+			"snp_data": 6,
+			"paper": 20
+		},
+		"mod": {
+			"snp_data.rate":0.01,
+			"space.max": 25
+		}
+	},
+	{
+		"id": "small_rehouse",
+		"name": "小型研究所",
+		"desc": "运用基础建筑学建造的房屋",
+		"require": "g.building_1>=3",
+		"cost": {
+			"money": 180,
+			"cu_iron": 10,
+			"cu_copper":10,
+			"snp_data": 5,
+			"zero_crystal": 8,
+			"iron_copper": 5,
+			"paper": 40
+		},
+		"mod": {
+			"money.max": 30,
+			"ganwu.rate":0.01,
+			"space.max": 40
+		}
+	},
+	{
+		"id": "earthspire",
+		"name": "earthen spire",
+		"desc": "An impervious spire of metal and stone.",
+		"cost": {
+			"research": 3000,
+			"gold": 3000,
+			"codices": 50
+		},
+		"require": "g.geosculpting>=5",
+		"mod": {
+			"minions.max": 10,
+			"space.max": 300,
+			"earthlore.max": 5,
+			"geosculpting.max": 3,
+			"earth.max": 5,
+			"earth.rate": 0.5
+		},
+		"flavor": "A monument to your geosculpting mastery."
+	},
+	{
+		"id": "atticbedroom",
+		"name": "Attic Bedroom",
+		"desc": "Noting your progress, your master begrudgingly offers you some space in the attic.",
+		"flavor": "Don't let it go to your head.",
+		"require": "neophyte",
+		"lock": [
+			"alcove"
+		],
+		"cost": {
+			"research": 100
+		},
+		"mod": {
+			"space.max": 10
+		}
+	},
+	{
+		"id": "innroom",
+		"name": "Lodge at Inn",
+		"desc": "Rented room of a local Inn",
+		"require": "tier0",
+		"log": {
+			"name": "Rented Room",
+			"desc": "You are now living at a local inn, losing precious coins to pay the rent."
+		},
+		"mod": {
+			"space.max": 12,
+			"gold.rate": -0.25
+		}
+	},
+	{
+		"id": "hut",
+		"desc": "A small hut on the edge of a village.",
+		"disable": "innroom",
+		"require": "tier0",
+		"cost": 300,
+		"mod": {
+			"space.max": 15
+		}
+	},
+	{
+		"id": "camp",
+		"desc": "A wild camp and its environs.",
+		"require": "g.tier0>0&&g.naturelore>=5",
+		"tags": "outdoors,starsource",
+		"disable": "innroom",
+		"cost": 75,
+		"mod": {
+			"space.max": 14,
+			"lore.rate": -0.1,
+			"research.rate": -0.1,
+			"earthlore.max": 1,
+			"naturelore.max": 2,
+			"naturelore.rate": 0.1,
+			"animals.max": 1,
+			"animals.rate": 0.1
+		}
+	},
+	{
+		"id": "wagon",
+		"name": "tinker's wagon",
+		"desc": "Wheeled carriage for a nomadic lifestyle. Now with donkey.",
+		"require": "g.tier0>0&&g.naturelore>=5",
+		"disable": "innroom",
+		"tags": "outdoors,t_pets",
+		"cost": 150,
+		"mod": {
+			"space.max": 12,
+			"naturelore.max": 2,
+			"earthlore.max": 1,
+			"naturelore.rate": 0.3,
+			"animals.max": 2,
+			"animals.rate": 0.15
+		}
+	},
+	{
+		"id": "cottage",
+		"desc": "Cozy and quaint.",
+		"require": "tier0",
+		"disable": "innroom",
+		"cost": {
+			"gold": 500,
+			"gems": 5
+		},
+		"mod": {
+			"tapestries.max": 1,
+			"minions.max": 1,
+			"space.max": 20
+		}
+	},
+	{
+		"id": "house",
+		"desc": "A modest house in a small town.",
+		"cost": {
+			"gold": 900,
+			"gems": 10
+		},
+		"disable": "innroom",
+		"require": "g.tier0>0&&g.arcana.max>=8",
+		"mod": {
+			"tapestries.max": 2,
+			"minions.max": 3,
+			"space.max": 30
+		}
+	},
+	{
+		"id": "shop",
+		"desc": "A small shop in a bustling city.",
+		"cost": {
+			"gold": 850,
+			"gems": 9
+		},
+		"require": "g.tier1>0&&g.crafting>=9",
+		"mod": {
+			"tapestries.max": 1,
+			"minions.max": 2,
+			"magicgems.max": 1,
+			"space.max": 25,
+			"gold.rate": 0.2,
+			"gold.max": 25,
+			"nature.rate": "-5%",
+			"arcana.rate": -0.002
+		}
+	},
+	{
+		"id": "inn",
+		"desc": "A quiet inn for hosting wayfarers.",
+		"cost": {
+			"gold": 2000,
+			"gems": 15
+		},
+		"require": "g.tier1>0&&g.languages>=7",
+		"mod": {
+			"tapestries.max": 2,
+			"minions.max": 5,
+			"space.max": 50,
+			"research.rate": -0.5,
+			"gold.max": 40,
+			"gold.rate": 0.4,
+			"arcana.rate": -0.001
+		}
+	},
+	{
+		"id": "lodge",
+		"desc": "A rugged lodge in the woods.",
+		"cost": {
+			"gold": 950,
+			"gems": 5
+		},
+		"require": "g.tier1>0&&g.naturelore>=7",
+		"mod": {
+			"tapestries.max": 3,
+			"minions.max": 5,
+			"space.max": 30,
+			"nature.max": 1,
+			"nature.rate": 0.1
+		}
+	},
+	{
+		"id": "gabledhouse",
+		"name": "gabled mansion",
+		"desc": "A spacious house with many gabled windows.",
+		"cost": {
+			"gold": 2000,
+			"gems": 10
+		},
+		"require": "g.tier1>0&&g.arcana>=10",
+		"mod": {
+			"tapestries.max": 4,
+			"minions.max": 5,
+			"space.max": 65
+		}
+	},
+	{
+		"id": "halftimber",
+		"name": "half-timber house",
+		"desc": "A vast home of rustic design",
+		"cost": {
+			"gold": 3000,
+			"gems": 15
+		},
+		"require": "g.tier1>0&&g.arcana>=10",
+		"mod": {
+			"tapestries.max": 3,
+			"minions.max": 7,
+			"space.max": 75
+		}
+	},
+	{
+		"id": "cave",
+		"desc": "A primitive dwelling well-suited to particular areas of study. Others less so.",
+		"require": "g.tier0>0&&(g.shadow+g.earth+g.nature)>0",
+		"tags": "outdoors",
+		"cost": {
+			"gold": 150
+		},
+		"mod": {
+			"minions.max": 2,
+			"space.max": 25,
+			"research.rate": -0.5,
+			"earthlore.max": 2,
+			"earthlore.rate": 0.1,
+			"shadowlore.max": 1,
+			"shadowlore.rate": 0.1,
+			"light.max": -2,
+			"light.rate": "-2%"
+		},
+		"lock": [
+			"latticewindow"
+		]
+	},
+	{
+		"id": "pavilion",
+		"desc": "An open elegant structure on a wide field.",
+		"cost": {
+			"gold": 800,
+			"gems": 15
+		},
+		"tags": "lightsource",
+		"require": "oracle",
+		"mod": {
+			"minions.max": 3,
+			"space.max": 50,
+			"light.rate": 0.1,
+			"air.rate": 0.1,
+			"mana.rate": 0.1,
+			"shadow.max": -1,
+			"shadow.rate": "-5%"
+		}
+	},
+	{
+		"id": "hauntedmanse",
+		"name": "haunted manse",
+		"desc": "Legends of this mansion speak of ghosts and horrors",
+		"cost": 2500,
+		"require": "hauntedmanor",
+		"tags": "spiritsource",
+		"mod": {
+			"tapestries.max": 2,
+			"space.max": 75,
+			"spiritlore.max": 1,
+			"spiritlore.rate": 0.1,
+			"shadow.rate": 0.1,
+			"demonology.max": 1
+		}
+	},
+	{
+		"id": "ancientruins",
+		"name": "ancient ruins",
+		"desc": "A rambling fortress of crumbled stone.",
+		"cost": 5000,
+		"require": "g.spirit>=15&&g.arcana>=12",
+		"mod": {
+			"tapestries.max": 2,
+			"minions.max": 10,
+			"space.max": 110,
+			"runelore.max": 2,
+			"demonology.max": 1,
+			"runelore.rate": "10%",
+			"spiritlore.max": 1,
+			"spiritlore.rate": 0.1,
+			"lore.rate": "10%"
+		}
+	},
+	{
+		"id": "tower",
+		"desc": "A stone tower in which to conduct your arcane investigations.",
+		"cost": 2500,
+		"require": "g.magician>0&&g.arcana>=20",
+		"tags": "airsource",
+		"mod": {
+			"tapestries.max": 2,
+			"minions.max": 5,
+			"space.max": 55,
+			"airlore.max": 1,
+			"airlore.rate": 0.1
+		}
+	},
+	{
+		"id": "lighthouse",
+		"desc": "A lighted tower on the shore of the ocean.",
+		"cost": 3000,
+		"require": "(g.magician+g.darkmagician+g.mage+g.elementalist+g.windmage+g.hydromancer)>0&&g.arcana>=20",
+		"mod": {
+			"minions.max": 5,
+			"space.max": 80,
+			"waterlore.max": 3,
+			"waterlore.rate": 0.1,
+			"lightlore.max": 3,
+			"lightlore.rate": 0.1
+		}
+	},
+	{
+		"id": "cataract",
+		"desc": "A deep hollow hidden behind a waterfall.",
+		"require": "g.water>=15&&g.naturelore>=10",
+		"cost": {
+			"gold": 1000,
+			"gems": 10
+		},
+		"tags": "watersource",
+		"mod": {
+			"minions.max": 4,
+			"space.max": 70,
+			"research.rate": "-10%",
+			"waterlore.max": 2,
+			"waterlore.rate": 0.2,
+			"naturelore.max": 1,
+			"naturelore.rate": 0.1,
+			"earthlore.max": 1,
+			"lightlore.max": -2,
+			"lightlore.rate": "-5%"
+		},
+		"lock": [
+			"latticewindow"
+		]
+	},
+	{
+		"id": "citadel",
+		"desc": "A stronghold to defend you from the petty forces of the world.",
+		"cost": 5000,
+		"require": "(g.magician+g.darkmagician+g.battlemage+g.dreadlord)>0&&g.arcana>=20",
+		"mod": {
+			"tapestries.max": 3,
+			"minions.max": 15,
+			"space.max": 200,
+			"nature.max": -1,
+			"nature.rate": "-5%"
+		}
+	},
+	{
+		"id": "academy",
+		"desc": "Austere house of learning",
+		"cost": {
+			"gold": 10000,
+			"research": 500
+		},
+		"require": "g.research>=400&&g.magician>0",
+		"mod": {
+			"tapestries.max": 5,
+			"minions.max": 20,
+			"space.max": 300,
+			"research.max": 50,
+			"research.rate": 0.4
+		}
+	},
+	{
+		"id": "temple",
+		"desc": "Sanctum of meditation and solitude.",
+		"cost": 10000,
+		"require": "(g.oracle+g.seer)>0",
+		"mod": {
+			"tapestries.max": 4,
+			"composure.max": 1,
+			"virtue.rate": 0.001,
+			"arcana.rate": 0.001,
+			"minions.max": 8,
+			"lightlore.max": 1,
+			"space.max": 200,
+			"shadow.max": -3,
+			"shadow.rate": "-10%"
+		}
+	},
+	{
+		"id": "magetower",
+		"name": "mage tower",
+		"desc": "Nothing is more iconic to the craft than the wizard in a tower.",
+		"require": "g.tier3>0&&(g.magician+g.mage+g.highmage+g.wizard+g.wizard2+g.wizard3)>1",
+		"cost": {
+			"gold": 7000,
+			"research": 5000,
+			"managem": 30,
+			"tomes": 20
+		},
+		"mod": {
+			"tapestries.max": 1,
+			"minions.max": 10,
+			"space.max": 420,
+			"mysticism.max": 1,
+			"prismatic.rate": 0.05,
+			"history.max": 1,
+			"arcana.rate": 0.0001
+		}
+	},
+	{
+		"id": "sm_idrasil",
+		"alias": "idrasil tree",
+		"name": "idrasil seedling",
+		"desc": "The seedlings of Yggdrasil become trees to rival mountains.",
+		"tags": "outdoors",
+		"cost": {
+			"gems": 30,
+			"herbs": 50
+		},
+		"require": "g.tier3>0&&g.nature>=10&&g.arcana>=10",
+		"mod": {
+			"minions.max": 10,
+			"space.max": 300,
+			"naturelore.max": 3,
+			"naturelore.rate": "2%",
+			"airlore.max": 1,
+			"fire.rate": "-3%"
+		}
+	},
+	{
+		"id": "palace",
+		"desc": "Luxurious, sprawling estate to advance your studies in maximum comfort.",
+		"cost": 10000,
+		"require": "tier2",
+		"mod": {
+			"tapestries.max": 4,
+			"minions.max": 20,
+			"space.max": 400,
+			"charms.max": 2,
+			"charms.rate": "10%",
+			"spirit.rate": "-2%",
+			"shadowlore.max": "-2%",
+			"research.rate": -0.5
+		}
+	},
+	{
+		"id": "castle",
+		"desc": "A vast and practical fortress, for the magic user with enemies.",
+		"require": "tier2",
+		"cost": 10000,
+		"mod": {
+			"tapestries.max": 5,
+			"minions.max": 20,
+			"space.max": 400,
+			"earthlore.max": 1,
+			"earthlore.rate": 0.2,
+			"earth.rate": 0.1
+		}
+	},
+	{
+		"id": "cove",
+		"tags": "outdoors",
+		"desc": "Hidden Cove",
+		"require": "g.tier3>0&&g.enchanter>0",
+		"cost": 3000,
+		"mod": {
+			"minions.max": 20,
+			"space.max": 350,
+			"airlore.max": 1,
+			"waterlore.max": 2,
+			"waterlore.rate": 0.2,
+			"water.max": 2,
+			"water.rate": 0.1
+		}
+	},
+	{
+		"id": "volcano",
+		"name": "volcanic lair",
+		"desc": "Stark lair carved into a mountain of fire",
+		"require": "g.fire>=20",
+		"cost": {
+			"research": 500,
+			"gold": 3000,
+			"firegem": 2
+		},
+		"tags": "firesource",
+		"mod": {
+			"minions.max": 20,
+			"space.max": 200,
+			"research.rate": -0.5,
+			"fire.max": 4,
+			"fire.rate": 0.2,
+			"firelore.max": 2,
+			"firelore.rate": 0.2,
+			"earthlore.max": 3,
+			"earthlore.rate": 0.2,
+			"water.max": "-15%",
+			"water.rate": -2
+		},
+		"lock": [
+			"latticewindow"
+		]
+	},
+	{
+		"id": "cavern",
+		"desc": "A wide and yawning cavern, deep beneath the earth",
+		"require": "g.tier2>0&&g.earthlore>=10",
+		"tags": "earthsource",
+		"cost": {
+			"research": 500,
+			"gold": 3000,
+			"earthgem": 20
+		},
+		"mod": {
+			"minions.max": 20,
+			"space.max": 200,
+			"research.rate": -0.5,
+			"earth.rate": 0.2,
+			"earthlore.max": 3,
+			"earthlore.rate": "20%",
+			"shadow.max": 3,
+			"shadow.rate": 0.2,
+			"demonology.max": 1,
+			"light.max": -3,
+			"lightlore.rate": -2,
+			"light.rate": "-10%"
+		},
+		"lock": [
+			"latticewindow"
+		]
+	},
+	{
+		"id": "grove",
+		"name": "Enchanted Grove",
+		"desc": "Enchanted Grove",
+		"tags": "outdoors",
+		"require": "g.tier3>0&&(g.enchanter+g.druid+g.witch)>0",
+		"cost": {
+			"gold": 5000,
+			"research": 2000,
+			"gems": 50
+		},
+		"mod": {
+			"minions.max": 20,
+			"space.max": 420,
+			"naturelore.max": 1,
+			"enchanting.max": 2,
+			"enchanting.rate": "10%"
+		}
+	},
+	{
+		"id": "island",
+		"name": "Shrouded Isle",
+		"tags": "outdoors",
+		"desc": "A lonely isle at sea",
+		"require": "g.tier3>0&&(g.enchanter+g.druid+g.witch)>0",
+		"cost": {
+			"gold": 5000,
+			"gems": 50,
+			"research": 2000
+		},
+		"mod": {
+			"minions.max": 25,
+			"space.max": 420,
+			"waterlore.max": 5,
+			"airlore.max": 2,
+			"water.rate": 0.1,
+			"air.rate": 0.05
+		}
+	}
+]

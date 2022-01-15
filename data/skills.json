@@ -1,0 +1,1842 @@
+[
+	{
+		"id": "reading",
+		"name": "阅读",
+		"require": "g.money>10",
+		"desc": "在浩如烟海的典籍中寻找真理",
+		"buy": {
+			"money": 10
+		},
+		"effect": {
+			"time": 0.5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"ganwu.rate": 0.02
+		}
+	},
+	{
+		"id": "crafting_1",
+		"name": "基础制造学",
+		"need": "work_space",
+		"desc": "学习制作基本的物件",
+		"buy": {
+			"books": 1
+		},
+		"effect": {
+			"time": 0.5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"ganwu.rate": 0.02
+		}
+	},
+	{
+		"id": "Knowledge_integration_1",
+		"name": "基础知识聚合",
+		"need": "research_space",
+		"desc": "量变产生质变",
+		"buy": {
+			"books": 1
+		},
+		"effect": {
+			"time": 0.5
+		},
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.rate": 0.01
+		}
+	},
+	{
+		"id": "Knowledge_class_1",
+		"name": "基础科学",
+		"need": "g.school_1>=1",
+		"desc": "最简单也最基础的科学",
+		"buy": {
+			"books": 1
+		},
+		"effect": {
+			"time": 0.74
+		},
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.max": 0.5,
+			"ganwu.rate": 0.01
+		}
+	},
+	{
+		"id": "ganwu_skill",
+		"name": "清醒思维",
+		"need": "g.Knowledge_class_1&&g.Knowledge_integration_1",
+		"desc": "在繁杂思绪中保留灵感",
+		"buy": {
+			"books": 1
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.max": 2
+		}
+	},
+	{
+		"id": "horse_training",
+		"name": "驯马术",
+		"need": "g.Knowledge_integration_1>=1",
+		"desc": "学会驯服一匹马",
+		"buy": {
+			"books": 1
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"run": {
+			"ganwu": 0.1,
+			"tili": 0.6,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"dist": "1%"
+		}
+	},
+	{
+		"id": "astronomy",
+		"name":"天文学",
+		"desc":"奥妙星辰",
+		"need": "astro",
+		"buy": {
+			"books": 1
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"result": {
+			"sp": 0.04
+		},
+		"mod": {
+			"astronomy_1.rate": "1%",
+			"ganwu.max": 2
+		}
+	},
+	{
+		"id": "ult_guancha",
+		"name":"紫外科学",
+		"desc":"对不可见的紫外线展开应用分析",
+		"need": "ultraviolet_rays",
+		"buy": {
+			"books": 1
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.2
+		},
+		"result": {
+			"sp": 0.6
+		},
+		"mod": {
+			"astronomy.rate": "1%",
+			"astronomy_1.rate": "1%",
+			"ganwu.max": 1
+		}
+	},
+	{
+		"id": "astronomy_1",
+		"name": "天体物理学",
+		"desc":"进一步对天体展开研究",
+		"need": "g.astronomy>=4",
+		"buy": {
+			"books": 1
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 3
+		},
+		"result": {
+			"sp": 0.07
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"ganwu.rate": 0.02
+		}
+	},
+	{
+		"id": "chaos_sci",
+		"name": "混沌运动学",
+		"desc":"基于对天体物理的研究,你发现了混沌运动的存在",
+		"need": "g.astronomy_1>=2 && g.xiulian_astro_zhuji_2>=1",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.3,
+			"star_map": 0.02,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 2
+		},
+		"result": {
+			"sp": 0.3
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"star_map.max": 5,
+			"star_map.rate": 0.04
+		}
+	},
+	{
+		"id": "biology_1",
+		"name":"基本生物学",
+		"desc":"研究生命的每一种形式",
+		"buy": {
+			"books": 1
+		},
+		"need": "bio",
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"result": {
+			"sp": 0.04
+		},
+		"mod": {
+			"hp.max": 0.3,
+			"tili.max":0.1,
+			"stamina.max":0.1
+		}
+	},
+	{
+		"id": "dream_1",
+		"name":"梦境学",
+		"desc":"深夜的思绪.....",
+		"buy": {
+			"lg": 1
+		},
+		"require": "g.lg>=1",
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"result": {
+			"sp": 0.04
+		},
+		"mod": {
+			"ganwu.max": 1.5,
+			"lg.max": 0.1,
+			"lg.rate":0.01
+		}
+	},
+	{
+		"id": "shenshi_1",
+		"name":"神识学",
+		"desc":"神识是大脑中的一个不可见存在，研究神识将进一步开发大脑",
+		"level": 2,
+		"buy": {
+			"lg": 1
+		},
+		"require": "g.dream_1>=4",
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.3
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"lg.max": 0.1,
+			"shenshi.rate": 0.01
+		}
+	},
+	{
+		"id": "shenshi_2",
+		"name":"群体思维学",
+		"desc":"通过进一步研究生物学和神识学,你认为生物与生物之间存在某种联系",
+		"level": 2,
+		"buy": {
+			"ganwu": 90,
+			"lg": 1
+		},
+		"require": "g.biology_1>=10 && g.shenshi_1>=10 && g.dream_1>=4",
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"lg.max": 0.3
+		}
+	},
+	{
+		"id": "shenshi_3",
+		"name":"群体政治学",
+		"desc":"进一步研究群体之间的政治倾向和心理状态",
+		"level": 2,
+		"buy": {
+			"ganwu": 120,
+			"lg": 1
+		},
+		"require": "g.shenshi_2>=5",
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"lg.max": 0.3,
+			"shenshi.max": 0.5
+		}
+	},
+	{
+		"id": "shenshi_4",
+		"name":"基础管理学",
+		"desc":"研究如何处理好人力分配",
+		"buy": {
+			"ganwu": 120,
+			"lg": 4
+		},
+		"require": "g.shenshi_3>=3",
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 1
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"ganwu.max": 2,
+			"human_power.max": 10,
+			"human_power.rate": 0.1,
+			"conquer_1.max": 1,
+			"conquer_2.max": 0.5
+		}
+	},
+	{
+		"id": "biology_ast_1",
+		"name":"超压生命学",
+		"desc":"结合天体物理与生物进行研究,探讨生命在极端环境下生存的可能",
+		"need": "g.biology_1>=5 && g.astronomy_1>=4",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.6
+		},
+		"effect": {
+			"time": 2
+		},
+		"result": {
+			"sp": 0.8
+		},
+		"mod": {
+			"biology_1.max": 2,
+			"astronomy_1.max": 1,
+			"hp.max": 0.8,
+			"tili.max":0.4,
+			"stamina.max":0.3
+		}
+	},
+	{
+		"id": "metal_1",
+		"name":"金属冶炼学",
+		"desc":"怎么获得更强大的金属",
+		"buy": {
+			"books": 1
+		},
+		"need": "metal",
+		"run": {
+			"ganwu": 0.1,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"result": {
+			"sp": 0.08
+		}
+	},
+	{
+		"id": "metal_app",
+		"name":"材料应用学",
+		"desc":"运用材料的艺术",
+		"require": "g.cu_iron>=7",
+		"buy": {
+			"books": 1
+		},
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 1
+		},
+		"result": {
+			"sp": 1
+		}
+	},
+	{
+		"id": "building_1",
+		"name":"基础建筑学",
+		"desc":"建造更为复杂的结构",
+		"need": "g.metal_app>=5",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.6
+		},
+		"result": {
+			"metal_app.max": 0.5
+		}
+	},
+	{
+		"id": "bio_metal_1",
+		"name":"生命工程学",
+		"desc":"学会如何用新型材料保护生命",
+		"need": "g.iron_copper>=3 && g.metal_app>=4 && g.biology_1>=3",
+		"buy": {
+			"books": 2
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.6
+		},
+		"effect": {
+			"time": 1.2
+		},
+		"result": {
+			"sp": 1
+		}
+	},
+	{
+		"id": "energ_1",
+		"name":"基础能量学",
+		"desc":"通过FC切割实验,你发现了一种新的能量形式",
+		"need": "g.xiulian_energ_1>=1",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.4
+		},
+		"effect": {
+			"time": 0.7
+		},
+		"result": {
+			"sp": 1
+		}
+	},
+	{
+		"id": "energ_metal_astr",
+		"name":"导压空间学",
+		"desc":"研究在何种环境下能获得最高的能量",
+		"need": "g.energ_1>=7 && g.metal_app>=4 &&g.astronomy>=7",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.52,
+			"stamina": 0.4
+		},
+		"effect": {
+			"time": 1
+		},
+		"result": {
+			"sp": 2
+		}
+	},
+	{
+		"id": "energ_high_1",
+		"name":"高能物理学",
+		"desc":"高能级下的科学",
+		"need": "g.energ_metal_astr>=2",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.6,
+			"stamina": 0.4
+		},
+		"effect": {
+			"time": 3
+		},
+		"result": {
+			"elect.max": 2,
+			"elect.rate": 1,
+			"sp": 2
+		}
+	},
+	{
+		"id": "weapon_1",
+		"name":"杀伤武器学",
+		"desc":"研究高效的杀灭生命",
+		"level": 3,
+		"need": "g.energ_high_1>=2 && g.shenshi_3>=5 && g.metal_app>=5",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.6,
+			"stamina": 0.4
+		},
+		"effect": {
+			"time": 3
+		},
+		"result": {
+			"alculation.max": 2,
+			"alculation.rate": 1,
+			"human_power.max":1,
+			"metal_app.max": 1,
+			"shenshi_3.max": 1,
+			"f_power": 4
+		}
+	},
+	{
+		"id": "rlt_guancha",
+		"name":"红外科学",
+		"desc":"对不可见的红外线展开应用分析",
+		"level": 2,
+		"require": "g.ult_guancha>=8 && g.energ_1>=8 && g.astronomy_1>=8",
+		"buy": {
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"astronomy.rate": "1%",
+			"astronomy_1.rate": "1%",
+			"ganwu.max": 6
+		}
+	},
+	{
+		"id": "mc_guancha",
+		"name":"微波科学",
+		"desc":"对不可见的微波展开应用分析",
+		"level": 3,
+		"need": "g.xiulian_ld_dw_guancha>=1 && g.rlt_guancha>=8 && g.energ_high_1>=8 && slight",
+		"buy": {
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"astronomy.rate": "1%",
+			"astronomy_1.rate": "1%",
+			"ganwu.max": 6
+		}
+	},
+	{
+		"id": "energ_shenshi",
+		"name":"电导神观学",
+		"desc":"对神识进行电力分析",
+		"level": 3,
+		"need": "g.shenshi_1>=10 && g.Knowledge_integration_1>=8 && g.energ_1>=8",
+		"buy": {
+			"super_mind": 4,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 0.7
+		},
+		"result": {
+			"sp": 0.3
+		},
+		"mod": {
+			"elect.max": 1,
+			"super_mind.max": 0.2
+		}
+	},
+	{
+		"id": "info_switch_1",
+		"name":"近距通讯学",
+		"desc":"研究如何有效的在两地交换信息",
+		"level": 4,
+		"need": "g.metal_app>=5 && g.astronomy>=10 && g.energ_1>=8 &&g.building_1>=5 &&g.xiulian_x_info_1>=1",
+		"buy": {
+			"super_mind": 5,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"dist": 5,
+			"super_mind.max": 0.2,
+			"super_mind.rate": 0.01
+		}
+	},
+	{
+		"id": "land_kantan",
+		"name":"地址勘探学",
+		"desc":"找出深埋地底的宝藏",
+		"level": 2,
+		"need": "g.Knowledge_integration_1>=8 && g.Knowledge_class_1>=10 && g.metal_app>=6 &&g.astronomy>=10",
+		"buy": {
+			"super_mind": 5,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"super_mind.max": 0.01
+		}
+	},
+	{
+		"id": "land_wa",
+		"name":"地层开采学",
+		"desc":"学习如何挖掘地下资源",
+		"level": 2,
+		"need": "g.land_kantan>=3 && g.energ_1>=10 &&g.human_power>=10",
+		"buy": {
+			"human_power": 10,
+			"super_mind": 2,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"super_mind.max": 0.01
+		}
+	},
+	{
+		"id": "liu_yy",
+		"name":"流体应用学",
+		"desc":"学习应用流体",
+		"level": 2,
+		"need": "g.energ_1>=10 && g.metal_app>=5 &&g.building_1>=5",
+		"buy": {
+			"super_mind": 2,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"human_power.max": 1.5
+		}
+	},
+	{
+		"id": "lingti_xue",
+		"name": "灵体学",
+		"need": "Fdeath",
+		"level": 5,
+		"desc": "灵魂,神秘的灵魂",
+		"buy": {
+			"books": 1
+		},
+		"effect": {
+			"time": 0.5
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.rate": 0.01
+		}
+	},
+	{
+		"id": "lore",
+		"name": "mage lore",
+		"school": "arcane",
+		"tags": "t_school",
+		"verb": "reading lore",
+		"desc": "Nothing is more important to a wizard than the depth of their lore.",
+		"locked": true,
+		"buy": {
+			"research": 20
+		},
+		"run": {
+			"stamina": 0.2
+		},
+		"result": {
+			"arcana": 1
+		},
+		"mod": {
+			"research.max": 5,
+			"spelllist.max": 0.5,
+			"arcana.max": 1
+		}
+	},
+	{
+		"id": "spellcraft",
+		"school": "arcane",
+		"verb": "studying spells",
+		"desc": "The ability to build greater spells from lesser is what separates a practitioner from a master.",
+		"require": "g.tier2>0&&g.lore>=15",
+		"level": 8,
+		"buy": {
+			"sp": 5
+		},
+		"run": {
+			"stamina": 0.2,
+			"research": 5
+		},
+		"mod": {
+			"research.max": 5,
+			"scraft": 1,
+			"userSpells.max": 0.7
+		}
+	},
+	{
+		"id": "concentrate",
+		"name": "concentration",
+		"desc": "Keep your mind and nerves sharp under pressure.",
+		"verb": "concentrating",
+		"require": "(g.mustylibrary+g.loc_spring)>=2",
+		"run": {
+			"stamina": 0.2
+		},
+		"mod": {
+			"history.rate": "1%",
+			"stress.max": 1
+		}
+	},
+	{
+		"id": "composure",
+		"name": "composure",
+		"desc": "Remain unfazed under strain.",
+		"require": "g.concentrate>=4",
+		"level": 3,
+		"run": {
+			"stamina": 0.3
+		},
+		"mod": {
+			"stress.rate": -0.1
+		}
+	},
+	{
+		"id": "trickery",
+		"school": "arcane",
+		"verb": "scheming",
+		"require": "g.prestidigitation>25",
+		"buy": {
+			"sp": 2
+		},
+		"run": {
+			"stamina": 0.2,
+			"gold": 1
+		},
+		"result": {
+			"sp": 0.15,
+			"arcana": 0.1
+		},
+		"mod": {
+			"luck": 0.4,
+			"dodge": 0.4
+		},
+		"flavor": "Sufficiently advanced sleight of hand is indistinguishable from magic"
+	},
+	{
+		"id": "conjuration",
+		"school": "arcane",
+		"verb": "conjuring",
+		"desc": "",
+		"require": "g.lore>=10&&g.divination>3",
+		"run": {
+			"stamina": 0.2,
+			"spirit": 0.2
+		},
+		"result": {
+			"arcana": 0.2,
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 1,
+			"summoning.max": 0.2,
+			"summoning.rate": 0.1
+		},
+		"flavor": "Who knows where things come from? They just appear."
+	},
+	{
+		"id": "runelore",
+		"alias": "runes",
+		"name": "runic lore",
+		"school": "arcane",
+		"verb": "translating",
+		"desc": "Study ancient Dhrunic runes.",
+		"require": "g.tier2>0&&g.dwarfbook>0",
+		"level": 7,
+		"buy": {
+			"sp": 3
+		},
+		"run": {
+			"stamina": 0.2,
+			"research": 1
+		},
+		"result": {
+			"arcana": 0.1,
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 5,
+			"languages.rate": "0.1+2%",
+			"languages.max": 0.2,
+			"lore.rate": 0.1,
+			"lore.max": 0.2
+		},
+		"flavor": ""
+	},
+	{
+		"id": "animals",
+		"name": "animal handling",
+		"need": "t_pets",
+		"buy": {
+			"research": 20
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05,
+			"research": 5
+		},
+		"mod": {
+			"research.max": 1
+		},
+		"flavor": "Tend the rabbits. Or horses."
+	},
+	{
+		"id": "magicbeasts",
+		"name": "magic beasts",
+		"require": "g.animals>=7&&g.naturelore>=5",
+		"desc": "",
+		"level": 3,
+		"run": {
+			"stamina": 0.7
+		},
+		"effect": {
+			"naturelore.exp": 1
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"animals.rate": "1%",
+			"allies.max": 0.25,
+			"research.max": 5
+		}
+	},
+	{
+		"id": "charms",
+		"require": "g.enchanting>=5&&g.lore>=10",
+		"level": 3,
+		"run": {
+			"stamina": 0.3
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 1,
+			"minions.max": "10%",
+			"allies.max": 1
+		}
+	},
+	{
+		"id": "herbalism",
+		"school": "nature",
+		"require": "lore",
+		"need": "plantsource",
+		"buy": {
+			"research": 25
+		},
+		"run": {
+			"stamina": 0.25
+		},
+		"result": {
+			"sp": 0.01
+		},
+		"mod": {
+			"research.max": 2,
+			"herbs.max": 2
+		}
+	},
+	{
+		"id": "weaving",
+		"need": "weavesource",
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"crafting.max": 0.2,
+			"crafting.rate": "0.1+1%"
+		}
+	},
+	{
+		"id": "languages",
+		"school": "lore",
+		"require": "lore",
+		"desc": "Books and scrolls are written in many obscure languages. Learn as many as possible.",
+		"verb": "linguisticizing",
+		"buy": {
+			"research": 10
+		},
+		"run": {
+			"stamina": 0.2
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"research.rate": 0.05,
+			"research.max": 5,
+			"lore.rate": 0.1
+		}
+	},
+	{
+		"id": "history",
+		"name": "world lore",
+		"require": "g.languages>=6",
+		"desc": "The knowledge of what has come before reveals what is yet possible.",
+		"verb": "historicizing",
+		"run": {
+			"stamina": 0.2
+		},
+		"effect": {
+			"research": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 15,
+			"arcana.max": 0.1,
+			"s_travel.max": 0.1,
+			"languages.rate": "1%"
+		}
+	},
+	{
+		"id": "anatomy",
+		"require": "g.neophyte>0&&g.lore>=6",
+		"school": [
+			"nature",
+			"shadow",
+			"light"
+		],
+		"desc": "The study of physical form.",
+		"level": 2,
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 1,
+			"hp.max": 1,
+			"hp.rate": 0.1
+		}
+	},
+	{
+		"id": "vivification",
+		"require": "g.tier4>0&&g.anatomy>0&&g.spiritlore>=5",
+		"desc": "",
+		"level": 3,
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"sp": 0.01
+		},
+		"mod": {
+			"stamina.rate": 0.1,
+			"anatomy.rate": "2%"
+		}
+	},
+	{
+		"id": "dissection",
+		"need": "g.anatomy>=3",
+		"school": "shadow",
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1,
+			"bones": 1
+		},
+		"mod": {
+			"research.max": 5
+		}
+	},
+	{
+		"id": "embalming",
+		"require": "g.dissection>=3",
+		"school": "shadow",
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 1,
+			"shadow.rate": 0.01
+		}
+	},
+	{
+		"id": "summoning",
+		"require": "g.tier1>0&&g.conjuration>=5",
+		"school": "arcane",
+		"level": 4,
+		"buy": {
+			"sp": 2
+		},
+		"run": {
+			"stamina": 0.7
+		},
+		"mod": {
+			"allies.max": 1,
+			"research.max": 5,
+			"minions.max": 0.5
+		}
+	},
+	{
+		"id": "bloodlore",
+		"name": "blood magic",
+		"school": "blood",
+		"require": "(g.bloodmage+g.thanophage+g.alchemist)>0",
+		"level": 5,
+		"buy": {
+			"sp": 3
+		},
+		"run": {
+			"stamina": 1,
+			"hp": 1
+		},
+		"mod": {
+			"anatomy.rate": "1%",
+			"hp.max": 10,
+			"hp.rate": 0.1
+		}
+	},
+	{
+		"id": "bladelore",
+		"name": "swordplay",
+		"desc": "Incorporate martial weapons into your magic.",
+		"require": "g.spellblade>0||g.battlemage>0||g.dreadlord>0",
+		"need": "armssource",
+		"level": 3,
+		"buy": {
+			"sp": 2
+		},
+		"run": {
+			"stamina": 0.6
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"player.bonuses.slash": 1,
+			"player.bonuses.pierce": 1,
+			"player.hits.slash": 1,
+			"player.hits.pierce": 1
+		}
+	},
+	{
+		"id": "divination",
+		"desc": "The art of foretelling",
+		"require": "g.spiritlore>=6||g.mysticism>=5",
+		"need": "spiritsource",
+		"school": "spirit",
+		"run": {
+			"stamina": 0.4
+		},
+		"effect": {
+			"arcana": 0.001
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"research.max": 1,
+			"spirit.rate": 0.01
+		}
+	},
+	{
+		"id": "lightlore",
+		"tags": "t_school",
+		"name": "lumenology",
+		"school": "light",
+		"level": 2,
+		"desc": "Study of pure light",
+		"need": "lightsource",
+		"run": {
+			"stamina": 0.4
+		},
+		"mod": {
+			"research.max": 1,
+			"light.max": 1,
+			"light.rate": 0.01
+		},
+		"flavor": "The light fantastic"
+	},
+	{
+		"id": "shadowlore",
+		"name": "umbramancy",
+		"tags": "t_school",
+		"level": 2,
+		"require": "g.dissection>=3||g.evil>0",
+		"school": "shadow",
+		"need": "shadowsource",
+		"run": {
+			"stamina": 0.5
+		},
+		"mod": {
+			"research.max": 1,
+			"shadow.max": 1,
+			"shadow.rate": 0.01
+		}
+	},
+	{
+		"id": "spiritlore",
+		"tags": "t_school",
+		"name": "spirit communion",
+		"level": 2,
+		"desc": "Seeing the unseen",
+		"require": "g.lore>=6",
+		"need": "spiritsource",
+		"school": "spirit",
+		"run": {
+			"stamina": 0.4
+		},
+		"mod": {
+			"research.max": 1,
+			"spirit.max": 1,
+			"spirit.rate": 0.01
+		}
+	},
+	{
+		"id": "firelore",
+		"tags": "t_school,elemental",
+		"name": "pyromancy",
+		"level": 2,
+		"desc": "The investigation of fire",
+		"need": "firesource",
+		"run": {
+			"stamina": 0.4,
+			"hp": 0.2
+		},
+		"mod": {
+			"research.max": 1,
+			"fire.max": 1,
+			"fire.rate": 0.01
+		},
+		"flavor": "Dry is good and wind is better"
+	},
+	{
+		"id": "earthlore",
+		"name": "geomancy",
+		"tags": "t_school,elemental",
+		"level": 2,
+		"need": "earthsource",
+		"run": {
+			"stamina": 0.4
+		},
+		"mod": {
+			"research.max": 1,
+			"earth": {
+				"max": 1,
+				"rate": 0.01
+			}
+		}
+	},
+	{
+		"id": "waterlore",
+		"name": "aquamancy",
+		"desc": "The study of water",
+		"verb": "studying water",
+		"tags": "elemental,t_school",
+		"level": 2,
+		"need": "watersource",
+		"run": {
+			"stamina": 0.4
+		},
+		"mod": {
+			"research.max": 1,
+			"water": {
+				"max": 1,
+				"rate": 0.01
+			}
+		}
+	},
+	{
+		"id": "airlore",
+		"name": "aeromancy",
+		"desc": "The study of air",
+		"verb": "studying air",
+		"tags": "elemental,t_school",
+		"level": 2,
+		"need": "airsource",
+		"run": {
+			"stamina": 0.3
+		},
+		"mod": {
+			"research.max": 1,
+			"air": {
+				"max": 1,
+				"rate": 0.01
+			}
+		}
+	},
+	{
+		"id": "naturelore",
+		"name": "nature studies",
+		"verb": "observing nature",
+		"tags": "t_school",
+		"level": 2,
+		"require": "g.herbalism>=3",
+		"run": {
+			"stamina": 0.4
+		},
+		"mod": {
+			"research.max": 1,
+			"nature": {
+				"max": 1,
+				"rate": 0.01
+			}
+		}
+	},
+	{
+		"id": "wizlore",
+		"name": "wizard Lore",
+		"require": "(g.mage+g.highmage+g.wizard+g.wizard2+g.wizard3)>=2",
+		"school": "arcane",
+		"desc": "Many ask 'how?' Few think to ask, 'why?'",
+		"level": 5,
+		"run": {
+			"stamina": 1,
+			"research": 50,
+			"arcana": 0.5
+		},
+		"mod": {
+			"lore.rate": "5%",
+			"mana.rate": "3%",
+			"research.rate": "2%",
+			"arcana.rate": "1%"
+		}
+	},
+	{
+		"id": "firelore2",
+		"name": "fire mastery",
+		"desc": "A mastery of fire",
+		"level": 10,
+		"require": "g.firelore>=10",
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"fire": 0.5
+		},
+		"mod": {
+			"firerune.max": 2,
+			"fire.max": 1,
+			"fire.rate": "1%",
+			"player.bonuses.fire": 1,
+			"player.hits.fire": 1
+		},
+		"flavor": "Dry is good and wind is better"
+	},
+	{
+		"id": "waterlore2",
+		"name": "water mastery",
+		"desc": "A mastery of water",
+		"require": "g.waterlore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"water": 0.5
+		},
+		"mod": {
+			"waterrune.max": 2,
+			"water.max": 1,
+			"water.rate": "1%",
+			"player.bonuses.water": 1,
+			"player.hits.water": 1
+		}
+	},
+	{
+		"id": "airlore2",
+		"name": "air mastery",
+		"desc": "A mastery of air",
+		"require": "g.airlore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"air": 0.5
+		},
+		"mod": {
+			"airrune.max": 2,
+			"air.max": 1,
+			"air.rate": "1%",
+			"player.bonuses.air": 1,
+			"player.hits.air": 1
+		}
+	},
+	{
+		"id": "hammerlore",
+		"name": "hammer proficiency",
+		"desc": "The anvil or the skull, it makes no difference.",
+		"require": "g.geomancer>0||g.earthshaker>0||g.titan>0",
+		"need": "armssource",
+		"level": 3,
+		"buy": {
+			"sp": 2
+		},
+		"run": {
+			"stamina": 0.6
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"player.bonuses.blunt": 1,
+			"player.hits.blunt": 1
+		}
+	},
+	{
+		"id": "geosculpting",
+		"desc": "Bend the earth to your will.",
+		"require": "g.geomancer>0||g.earthshaker>0",
+		"level": 3,
+		"buy": {
+			"sp": 2
+		},
+		"run": {
+			"stamina": 0.6
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"player.defense": 1,
+			"player.dodge": -1,
+			"earthspire.mod.space.max": 1
+		}
+	},
+	{
+		"id": "earthlore2",
+		"name": "earth mastery",
+		"desc": "A mastery of earth",
+		"require": "g.earthlore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"earth": 0.5
+		},
+		"mod": {
+			"earthrune.max": 2,
+			"earth.max": 1,
+			"earth.rate": "1%",
+			"player.bonuses.earth": 1,
+			"player.hits.earth": 1
+		}
+	},
+	{
+		"id": "shadowlore2",
+		"name": "shadow mastery",
+		"desc": "A mastery of shadow",
+		"require": "g.shadowlore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"shadow": 0.5
+		},
+		"mod": {
+			"shadow.max": 1,
+			"shadow.rate": "1%",
+			"player.bonuses.shadow": 1,
+			"player.hits.shadow": 1
+		}
+	},
+	{
+		"id": "lightlore2",
+		"name": "light mastery",
+		"desc": "A mastery of light",
+		"require": "g.lightlore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"light": 0.5
+		},
+		"mod": {
+			"light.max": 1,
+			"light.rate": "1%",
+			"player.bonuses.light": 1,
+			"player.hits.light": 1
+		}
+	},
+	{
+		"id": "spiritlore2",
+		"name": "spirit mastery",
+		"desc": "A mastery of spirit",
+		"require": "g.spiritlore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"souls": 10
+		},
+		"run": {
+			"stamina": 1,
+			"spirit": 0.5
+		},
+		"mod": {
+			"spirit.max": 1,
+			"spirit.rate": "1%",
+			"player.bonuses.spirit": 1,
+			"player.hits.spirit": 1
+		}
+	},
+	{
+		"id": "manalore2",
+		"name": "arcane mastery",
+		"desc": "A mastery of pure magic",
+		"require": "g.lore>=20",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"mana": 0.5
+		},
+		"mod": {
+			"mana.max": 1,
+			"mana.rate": "1%",
+			"player.bonuses.mana": 1,
+			"player.hits.mana": 1
+		}
+	},
+	{
+		"id": "naturelore2",
+		"name": "nature mastery",
+		"desc": "A mastery of nature",
+		"require": "g.naturelore>=10",
+		"level": 10,
+		"buy": {
+			"arcana": 1,
+			"sp": 5,
+			"tomes": 30,
+			"runestones": 10
+		},
+		"run": {
+			"stamina": 1,
+			"nature": 0.5
+		},
+		"mod": {
+			"nature.max": 1,
+			"nature.rate": "1%",
+			"player.bonuses.nature": 1,
+			"player.hits.nature": 1
+		}
+	},
+	{
+		"id": "demonology",
+		"require": "tier1",
+		"level": 4,
+		"buy": {
+			"sp": 2,
+			"arcana": 1
+		},
+		"run": {
+			"stamina": 0.4,
+			"hp": 1
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"arcana.max": 0.1,
+			"lore.rate": 0.2,
+			"research.max": 3
+		}
+	},
+	{
+		"id": "reanimation",
+		"require": "g.evil>0&&g.embalming>=3",
+		"school": [
+			"shadow"
+		],
+		"run": {
+			"stamina": 0.5,
+			"shadow": 0.1
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"shadow.rate": 0.01,
+			"allies.max": 0.2,
+			"necromancy.rate": "1%"
+		}
+	},
+	{
+		"id": "necromancy",
+		"require": "g.evil>0&&g.reanimation>=7&&g.souls.max>3",
+		"school": "shadow",
+		"desc": "Forbidden death magic.",
+		"buy": {
+			"sp": 3
+		},
+		"run": {
+			"stamina": 0.4,
+			"shadow": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"reanimation.rate": "2%",
+			"shadow.rate": 0.01
+		}
+	},
+	{
+		"id": "potions",
+		"require": "g.crafting>=3&&g.alchemy>=2",
+		"need": [
+			"workspace",
+			"potsource"
+		],
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"alchemy.rate": "1%",
+			"research.max": 5
+		}
+	},
+	{
+		"id": "enchanting",
+		"require": "g.tier1>0&&g.lore>=14",
+		"desc": "Imbue mundane gems and items with magical properties.",
+		"run": {
+			"stamina": 0.4,
+			"research": 1
+		},
+		"mod": {
+			"charms.rate": "1%",
+			"enchantslots.max": 1
+		},
+		"result": {
+			"sp": 0.05,
+			"arcana": 0.1
+		}
+	},
+	{
+		"id": "alchemy",
+		"school": "elemental",
+		"require": "g.tier0>0&&g.herbalism>=4",
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1,
+			"research": 5
+		},
+		"mod": {
+			"potions.rate": "1%",
+			"research.max": 5
+		}
+	},
+	{
+		"id": "mysticism",
+		"require": "g.lore>=8",
+		"desc": "The ability to sense the flow and flux of arcane energies.",
+		"buy": {
+			"arcana": 1
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"mod": {
+			"mana.max": 0.5,
+			"arcana.rate": 0.001,
+			"prismatic.rate": 0.02
+		}
+	},
+	{
+		"id": "s_travel",
+		"name": "travel",
+		"level": 2,
+		"require": "(g.languages+g.history)>=12",
+		"desc": "Travel offers a growing wizard new avenues of research and new sources of research.",
+		"run": {
+			"stamina": 0.5
+		},
+		"mod": {
+			"dist": "5%"
+		}
+	},
+	{
+		"id": "planeslore",
+		"name": "planes lore",
+		"require": "g.astronomy>=5&&g.tier1>0",
+		"level": 6,
+		"desc": "Farther than the stars and closer than your fingertips",
+		"buy": {
+			"sp": 2,
+			"arcana": 5
+		},
+		"run": {
+			"stamina": 0.7,
+			"research": 1,
+			"mana": 0.1
+		},
+		"mod": {
+			"dist": "1%",
+			"arcana.max": 1,
+			"research.max": 1
+		},
+		"flavor": "There is no safe distance"
+	},
+	{
+		"id": "astrallore",
+		"name": "astral communion",
+		"require": "g.planeslore>=25&&g.tier5>0",
+		"desc": "Anyone can see the stars. Few can read them.",
+		"level": 10,
+		"buy": {
+			"sp": 10,
+			"arcana": 1
+		},
+		"run": {
+			"stamina": 1,
+			"research": 10,
+			"arcana": 5
+		},
+		"mod": {
+			"sindel.rate": 0.0001,
+			"sindel.max": 0.4
+		}
+	},
+	{
+		"id": "voidlore",
+		"name": "abyss gazing",
+		"require": "g.planeslore>=10&&g.tier5>0",
+		"desc": "The absence of all things",
+		"level": 10,
+		"buy": {
+			"sp": 5,
+			"arcana": 5
+		},
+		"run": {
+			"stamina": 0.7,
+			"research": 5,
+			"arcana": 0.1
+		},
+		"mod": {
+			"space.max": "2%",
+			"dist": "1%",
+			"research.max": 1
+		},
+		"flavor": "What could go wrong?"
+	},
+	{
+		"id": "chronomancy",
+		"require": "tier3",
+		"need": "timesource",
+		"tags": "t_school",
+		"level": 9,
+		"desc": "There must be a way...",
+		"buy": {
+			"sp": 5
+		},
+		"run": {
+			"stamina": 0.3,
+			"research": 1,
+			"mana": 1
+		},
+		"mod": {
+			"tempus.max": 1,
+			"tempus.rate": 0.001
+		},
+		"flavor": "Too much to do, so little time."
+	},
+	{
+		"id": "scrying",
+		"require": "g.divination>5",
+		"run": {
+			"stamina": 0.5
+		},
+		"effect": {
+			"arcana": 0.001
+		},
+		"mod": {
+			"mana.max": 0.2,
+			"research.max": 1,
+			"dist": "1%",
+			"arcana.max": 0.2
+		}
+	}
+]

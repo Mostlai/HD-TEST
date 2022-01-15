@@ -1,0 +1,451 @@
+{
+	"module": "extramats",
+	"data": {
+		"weapons": [
+		],
+		"enchants": [
+			{
+				"id": "en_wandgold",
+				"name": "golden wand",
+				"adj": "%i of gold",
+				"verb": "infusing wand",
+				"only": "wand",
+				"desc": "Infuse a wand with gold-seeking properties.",
+				"require": "g.enchanting>=3",
+				"level": 1,
+				"buy": {
+					"arcana": 1,
+					"research": 100
+				},
+				"length": 30,
+				"cost": {
+					"gold": 100,
+					"mana": 5
+				},
+				"alter": {
+					"mod.gold.rate": 0.2
+				}
+			},
+			{
+				"id": "en_wandmana",
+				"name": "arcane wand",
+				"adj": "%i of mana",
+				"verb": "infusing wand",
+				"only": "wand",
+				"desc": "Infuse a wand with arcane powers.",
+				"require": "g.enchanting>=3",
+				"level": 1,
+				"buy": {
+					"arcana": 1,
+					"research": 100
+				},
+				"length": 30,
+				"cost": {
+					"codices": 10,
+					"mana": 5
+				},
+				"alter": {
+					"mod.mana.rate": 0.2
+				}
+			},
+			{
+				"id": "en_wandrepel",
+				"name": "repel wand",
+				"adj": "%i of repel",
+				"verb": "infusing wand",
+				"only": "wand",
+				"desc": "Infuse a wand with repellant force.",
+				"require": "g.enchanting>=3",
+				"level": 1,
+				"buy": {
+					"arcana": 1,
+					"research": 100
+				},
+				"length": 30,
+				"cost": {
+					"gold": 100,
+					"hp": 20
+				},
+				"alter": {
+					"mod.player.resist.blunt": 2,
+					"mod.player.resist.pierce": 2,
+					"mod.player.resist.slash": 2
+				}
+			},
+			{
+				"id": "en_rodminerals",
+				"name": "rod of minerals",
+				"adj": "%i of minerals",
+				"verb": "infusing rod",
+				"only": "rod",
+				"desc": "Infuse a rod with a mineral-seeking enchantment.",
+				"require": "g.enchanting>=5",
+				"level": 3,
+				"buy": {
+					"tomes": 2,
+					"research": 500
+				},
+				"length": 30,
+				"cost": {
+					"gems": 20,
+					"mana": 10
+				},
+				"alter": {
+					"mod.gems.rate": 0.1
+				}
+			},
+			{
+				"id": "en_rodshroud",
+				"name": "rod of shrouding",
+				"adj": "%i of shrouding",
+				"verb": "infusing rod",
+				"only": "rod",
+				"desc": "Infuse a rod with an elemental shroud.",
+				"require": "g.enchanting>=5",
+				"level": 3,
+				"buy": {
+					"tomes": 2,
+					"research": 500
+				},
+				"length": 30,
+				"cost": {
+					"element": 5,
+					"prismaticgems": 1
+				},
+				"alter": {
+					"mod.player.resist.fire": 2,
+					"mod.player.resist.air": 2,
+					"mod.player.resist.water": 2,
+					"mod.player.resist.earth": 2
+				}
+			},
+			{
+				"id": "en_rodamplification",
+				"name": "rod of amplification",
+				"adj": "%i of amplification",
+				"verb": "infusing rod",
+				"only": "rod",
+				"desc": "Infuse a rod to amplify your arcane spells.",
+				"require": "g.enchanting>=5",
+				"level": 3,
+				"buy": {
+					"tomes": 2,
+					"research": 500
+				},
+				"length": 30,
+				"cost": {
+					"mana": 15,
+					"managem": 5
+				},
+				"alter": {
+					"mod.player.bonuses.mana": "3%"
+				}
+			},
+			{
+				"id": "en_greatstafffireballs",
+				"name": "staff of fireballs",
+				"adj": "%i of fireballs",
+				"verb": "imbuing staff",
+				"only": "greatstaff",
+				"desc": "Cause your staff to shoot fireballs at enemies.",
+				"require": "g.enchanting>=7",
+				"level": 8,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"fire": 15,
+					"firegem": 50
+				},
+				"alter": {
+					"attack.kind": "fire",
+					"attack.damage": 1,
+					"attack.bonus": 15
+				}
+			},
+			{
+				"id": "en_greatstaffregen",
+				"name": "staff of elements",
+				"adj": "%i of elements",
+				"verb": "imbuing staff",
+				"only": "greatstaff",
+				"desc": "Cause your staff to restore elemental energies.",
+				"require": "g.enchanting>=7",
+				"level": 6,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"element": 15,
+					"prismaticgems": 50
+				},
+				"alter": {
+					"mod.element.rate": 0.3
+				}
+			},
+			{
+				"id": "en_greatstaffspell",
+				"name": "staff of spells",
+				"adj": "%i of spells",
+				"verb": "imbuing staff",
+				"only": "greatstaff",
+				"desc": "Cause your staff to become a vessel for spells.",
+				"require": "g.enchanting>=7",
+				"level": 6,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"mana": 15,
+					"managem": 50
+				},
+				"alter": {
+					"mod.spelllist.max": 5
+				}
+			},
+			{
+				"id": "en_greatstaffrestoration",
+				"name": "staff of restoration",
+				"adj": "%i of restoration",
+				"verb": "imbuing staff",
+				"only": "greatstaff",
+				"desc": "Cause your staff to restore health to yourself and your allies.",
+				"need": "g.evil<1",
+				"require": "g.enchanting>=777",
+				"level": 8,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"light": 10,
+					"lightgem": 50
+				},
+				"alter": {
+					"attack.action.targets": "ally",
+					"attack.action.result.hp.min": 10,
+					"attack.action.result.hp.max": 15
+				}
+			},
+			{
+				"id": "en_focusclarity",
+				"name": "focus of clarity",
+				"adj": "%i of clarity",
+				"verb": "calibrating focus",
+				"only": "weap_orb",
+				"desc": "Your focus provides a clear head and clearer view.",
+				"require": "g.enchanting>=9",
+				"level": 7,
+				"buy": {
+					"runestones": 25,
+					"research": 10000
+				},
+				"length": 30,
+				"cost": {
+					"prismaticgems": 25,
+					"tempus": 10
+				},
+				"alter": {
+					"mod.stress.rate": -0.1,
+					"mod.stress.max": 5
+				}
+			},
+			{
+				"id": "en_focusingenuity",
+				"name": "focus of ingenuity",
+				"adj": "%i of ingenuity",
+				"verb": "calibrating focus",
+				"only": "weap_orb",
+				"desc": "Your focus provides an insight into the workings of the world.",
+				"require": "g.enchanting>=9",
+				"level": 7,
+				"buy": {
+					"runestones": 25,
+					"research": 10000
+				},
+				"length": 30,
+				"cost": {
+					"prismaticgems": 25,
+					"tempus": 10
+				},
+				"alter": {
+					"mod.focus.result.runner.exp": "50%",
+					"mod.focus.cost.mana": "100%"
+				}
+			},
+			{
+				"id": "en_focusarcane",
+				"name": "focus of the arcane",
+				"adj": "%i of the arcane",
+				"verb": "calibrating focus",
+				"only": "weap_orb",
+				"desc": "Your focus is a source of mana.",
+				"require": "g.enchanting>=9",
+				"level": 7,
+				"buy": {
+					"runestones": 25,
+					"research": 10000
+				},
+				"length": 30,
+				"cost": {
+					"managem": 100,
+					"runestones": 10,
+					"tempus": 10
+				},
+				"alter": {
+					"mod.mana.rate": 1
+				}
+			},
+			{
+				"id": "en_focusstellar",
+				"name": "focus of the stars",
+				"adj": "%i of the stars",
+				"verb": "calibrating focus",
+				"only": "weap_orb",
+				"desc": "Your focus is attuned to the stars.",
+				"require": "g.enchanting>=9&&g.astralseer>0",
+				"level": 7,
+				"buy": {
+					"runestones": 25,
+					"research": 10000
+				},
+				"length": 30,
+				"cost": {
+					"managem": 100,
+					"sindel": 1,
+					"tempus": 10
+				},
+				"alter": {
+					"mod.sindel.rate": 0.0005
+				}
+			},
+			{
+				"id": "en_fetishcurses",
+				"name": "fetish of curses",
+				"adj": "%i of curses",
+				"verb": "dedicating fetish",
+				"only": "fetish",
+				"desc": "Your fetish tortures those who stand in your path.",
+				"require": "g.enchanting>=7",
+				"level": 8,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"spirit": 15,
+					"spiritgem": 50
+				},
+				"alter": {
+					"attack.kind": "spirit",
+					"attack.damage": 1,
+					"attack.bonus": 15
+				}
+			},
+			{
+				"id": "en_fetishprotection",
+				"name": "fetish of protection",
+				"adj": "%i of protection",
+				"verb": "dedicating fetish",
+				"only": "fetish",
+				"desc": "No metal may touch the one protected by the spirits.",
+				"require": "g.enchanting>=7",
+				"level": 6,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"spirit": 15,
+					"spiritgem": 50
+				},
+				"alter": {
+					"mod.player.resist.blunt": 5,
+					"mod.player.resist.pierce": 5,
+					"mod.player.resist.slash": 5
+				}
+			},
+			{
+				"id": "en_fetishsouls",
+				"name": "fetish of souls",
+				"adj": "%i of souls",
+				"verb": "dedicating fetish",
+				"only": "fetish",
+				"desc": "Many souls are imprisoned within this vessel. You will add even more.",
+				"require": "g.enchanting>=7",
+				"level": 6,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"spirit": 15,
+					"spiritgem": 50
+				},
+				"alter": {
+					"mod.trapsoul.result.souls.max": 0.25
+				}
+			},
+			{
+				"id": "en_fetishshadows",
+				"name": "fetish of shadows",
+				"adj": "%i of shadows",
+				"verb": "dedicating fetish",
+				"only": "fetish",
+				"need": "g.evil>0",
+				"desc": "Shadowy tendrils radiate from this macabre curio.",
+				"require": "g.enchanting>=7",
+				"level": 6,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"shadow": 15,
+					"shadowgem": 50
+				},
+				"alter": {
+					"mod.lifedrain.attack.dot.damage.min": "15%",
+					"mod.lifedrain.attack.dot.damage.max": "15%",
+					"mod.blast.attack.dot.damage.min": "15%",
+					"mod.blast.attack.dot.damage.max": "15%"
+				}
+			},
+			{
+				"id": "en_fetishspurring",
+				"name": "fetish of spurring",
+				"adj": "%i of spurring",
+				"verb": "dedicating fetish",
+				"only": "fetish",
+				"desc": "Your fetish spurs your allies into action.",
+				"require": "g.enchanting>=7",
+				"level": 8,
+				"buy": {
+					"tomes": 15,
+					"research": 1000
+				},
+				"length": 30,
+				"cost": {
+					"spirit": 15,
+					"spiritgem": 50
+				},
+				"alter": {
+					"attack.dot.targets": "ally",
+					"attack.dot.mod.dmg.min": "20%",
+					"attack.dot.mod.dmg.max": "25%"
+				}
+			}
+		]
+	}
+}

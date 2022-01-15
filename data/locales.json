@@ -1,0 +1,443 @@
+[
+	{
+		"id": "zero_cave",
+		"name": "结晶矿场",
+		"level": 5,
+		"length": 20,
+		"locked": false,
+		"desc": "一处富含零结晶的矿场",
+		"run": {
+			"time": -0.1,
+			"tili": 0.2,
+			"stamina": 0.2
+		},
+		"result": {
+			"ganwu": 1
+		},
+		"loot": {
+			"money": "0~1"
+		},
+		"encs": [
+			"enc_cave_1",
+			"enc_cave_2",
+			"enc_cave_3",
+			"enc_cave_4",
+			"enc_cave_5"
+		]
+	},
+	{
+		"id": "cold_3",
+		"name": "结冻地穴",
+		"level": 9,
+		"length": 35,
+		"sym": "❄️",
+		"require": "g.cold_2>0",
+		"desc": "一处极度寒冷的地穴",
+		"run": {
+			"time": -0.3,
+			"hp": 0.1,
+			"tili": 0.2,
+			"stamina": 0.2
+		},
+		"result": {
+			"sj_met": 0.05,
+			"ganwu": 10
+		},
+		"loot": {
+			"money": "5~7"
+		},
+		"encs": [
+			"enc_cold_1",
+			"enc_cold_2",
+			"enc_cold_3",
+			"enc_cold_4"
+		]
+	},
+	{
+		"id": "cold_4",
+		"name": "冰冻深层",
+		"level": 9,
+		"length": 20,
+		"sym": "❄️",
+		"require": "g.cold_3>0",
+		"desc": "地穴深处,这里有丰富的冰冻核心可以开采",
+		"run": {
+			"time": -0.3,
+			"tili": 0.2,
+			"stamina": 0.2
+		},
+		"result": {
+			"title": "冰霜行者",
+			"ganwu": 10
+		},
+		"loot": {
+			"cold_core": "3~6",
+			"money": "7~8"
+		},
+		"encs": [
+			"enc_cold_1",
+			"enc_cold_2",
+			"enc_cold_3",
+			"enc_cold_4",
+			"enc_cold_5"
+		]
+	},
+	{
+		"id": "mustylibrary",
+		"name": "musty library",
+		"level": 1,
+		"length": 15,
+		"sym": "📖",
+		"require": "evt_helper",
+		"desc": "A good apprentice spends all their free time in the library. After chores, of course.",
+		"run": {
+			"stamina": 0.2
+		},
+		"result": {
+			"arcana": 0.1,
+			"research": 10
+		},
+		"loot": {
+			"scrolls": "1~4"
+		},
+		"encs": [
+			"enc_bookworm",
+			"enc_tapestry",
+			"enc_primer1",
+			"enc_chest1",
+			"enc_primer1",
+			"enc_workbook1"
+		]
+	},
+	{
+		"id": "loc_spring",
+		"name": "lillit's spring",
+		"level": 2,
+		"length": 20,
+		"require": "mustylibrary",
+		"desc": "Tradition tells of a spring with enchanted waters. Investigations might prove revealing.",
+		"run": {
+			"stamina": 0.2
+		},
+		"result": {
+			"arcana": 0.1,
+			"research": 10
+		},
+		"loot": {
+			"herbs": "2~5",
+			"lillitscord": "5%"
+		},
+		"encs": [
+			"manatree",
+			"enc_heather",
+			"mysticwater",
+			"manatree",
+			"hiddencache",
+			"starrysky1"
+		]
+	},
+	{
+		"id": "pidwigcove",
+		"name": "pidwig's cove",
+		"level": 9,
+		"require": "g.history>=5&&g.eryleyot>0",
+		"length": 25,
+		"desc": "The half-goblin Pidwig has sailed the waters around his bay for hundreds of years. In that time he has collected a myriad of interesting artifacts.",
+		"run": {
+			"stamina": 0.3
+		},
+		"result": {
+			"arcana": 0.1
+		},
+		"loot": {
+			"gold": "20~30",
+			"gems": "4~10"
+		},
+		"encs": [
+			"enc_chest3",
+			"pidwigstars",
+			"enc_pidwig",
+			"murkywater",
+			"pidwigtreasure",
+			"enc_chest1",
+			"sombersunset",
+			"starrysky1"
+		]
+	},
+	{
+		"id": "rithel",
+		"level": 14,
+		"desc": "This tiny outpost in the center of thangmor outlasted even the pillars",
+		"require": "g.evil<=0&&g.history>=7&&g.loc_treffil>0",
+		"run": {
+			"stamina": 0.33
+		},
+		"result": {
+			"arcana": 0.1,
+			"research": 10
+		},
+		"loot": {
+			"scrolls": "1~4"
+		},
+		"encs": [
+			"enc_chest2",
+			"enc_gnome",
+			"enc_primer2",
+			"enc_hettie",
+			"enc_delki",
+			"brightvista"
+		]
+	},
+	{
+		"id": "ruinedcrypt",
+		"name": "ruined crypt",
+		"level": 4,
+		"length": 30,
+		"require": "tier0",
+		"desc": "An ancient crypt of crumbling stone.",
+		"run": {
+			"stamina": 0.35
+		},
+		"result": {
+			"arcana": 0.15,
+			"research": 20
+		},
+		"loot": {
+			"scrolls": "2~4"
+		},
+		"encs": [
+			"enc_tapestry",
+			"enc_mummy",
+			"sarcophagus",
+			"enc_rats",
+			"strangebones",
+			"enc_embalm1",
+			"enc_chest2",
+			"eeriemoans",
+			"puppet_broken"
+		]
+	},
+	{
+		"id": "hallofmirrors",
+		"level": 12,
+		"require": "g.scrying>=999",
+		"length": 50,
+		"sym": "📖",
+		"desc": "",
+		"run": {
+			"stamina": 0.4
+		},
+		"result": {
+			"arcana": 0.1,
+			"research": 10
+		},
+		"loot": {
+			"scrolls": "1~4"
+		},
+		"encs": [
+			"enc_tapestry",
+			"enc_chest1",
+			"enc_mirror1",
+			"enc_mirror2",
+			"enc_futuremirror",
+			"enc_rageemirror",
+			"enc_mirrorhall",
+			"enc_voidmirror",
+			"enc_pastmirror",
+			"enc_farmirror",
+			"enc_watermirror"
+		]
+	},
+	{
+		"id": "fazbitshop",
+		"name": "fazbit's workshop",
+		"level": 9,
+		"length": 50,
+		"sym": "📖",
+		"require": "(g.alchemy+g.scrying)>=17",
+		"desc": "You could spend a century in Fazbit's lost workshop and not exhaust its creations.",
+		"loot": {
+			"tomes": "2~3",
+			"gems": "3~5",
+			"airgem": "50%",
+			"firegem": "50%",
+			"fazbitfixate": true
+		},
+		"encs": [
+			"enc_alchemy",
+			"enc_chest1",
+			"enc_chest2",
+			"enc_furnace",
+			"enc_workbook1",
+			"enc_alchemy",
+			"enc_workbook2",
+			"puppet_fazbitservants"
+		]
+	},
+	{
+		"id": "genezereth",
+		"level": 15,
+		"require": "g.history>=7",
+		"length": 100,
+		"sym": "📖",
+		"desc": "An ancient library at the bridge spanning Markhul's gap.",
+		"flavor": "Third of the Four Weirs of Dhrune.",
+		"result": {
+			"title": "Historian"
+		},
+		"run": {
+			"stamina": 0.4
+		},
+		"loot": {
+			"tomes": "3~5",
+			"markhulcodex": true
+		},
+		"encs": [
+			"enc_tapestry",
+			"enc_tome",
+			"enc_chest1",
+			"enc_gap",
+			"enc_statue2",
+			"enc_history",
+			"enc_primer1",
+			"puppet_scrapmachina",
+			"puppet_crystal"
+		]
+	},
+	{
+		"id": "loc_orrem",
+		"name": "sands of orrem",
+		"require": "g.history>=7&&g.scrying>=5",
+		"start": {
+			"name": "Cities of Orrem",
+			"desc": "A vision in a crystal orb reveals to you the ruins of the lost cities of Orrem."
+		},
+		"desc": "Only a small trading post marks the boundary of the lost cities of Orrem. Weathered masonry jutting from the sands beyond bespeak monuments of unimaginable proportions.",
+		"length": 400,
+		"level": 19,
+		"run": {
+			"stamina": 4
+		},
+		"result": {
+			"title": "Nomad",
+			"fame": 1
+		},
+		"loot": {
+			"jazidscompass": "5%"
+		},
+		"encs": [
+			"enc_aeonclock",
+			"enc_caravan",
+			"enc_oasis",
+			"orrem_rains",
+			"enc_madwinds",
+			"enc_orrem_cave",
+			"enc_sandstorm",
+			"enc_mirage",
+			"enc_statue4",
+			"strangebones",
+			"enc_statue2",
+			"starrysky1",
+			"enc_chest3",
+			"enc_orremtrade",
+			"puppet_scrapmachina",
+			"puppet_broken"
+		]
+	},
+	{
+		"id": "loc_ettinmoors",
+		"name": "ettinmoors",
+		"require": "g.player.level>=9999"
+	},
+	{
+		"id": "loc_menagerie",
+		"name": "the lost menagerie",
+		"level": 23,
+		"require": "g.tier5>0&&g.magicbeasts>=5",
+		"length": 200,
+		"desc": "Beneath the tallest idrasil a great menagerie thrives beneath a second sky.",
+		"run": {
+			"stamina": 3
+		},
+		"mod": {
+			"magicbeasts.max": "?1"
+		},
+		"effect": {
+			"magicbeasts.exp": 1
+		},
+		"result": {
+			"title": "Wild Compiler"
+		},
+		"loot": {
+			"gems": "5~10",
+			"herbs": "10~20"
+		},
+		"encs": [
+			"e_agolith",
+			"e_balmuth",
+			"e_barghest",
+			"e_bestiary1",
+			"e_bestiary2",
+			"e_big_scale",
+			"e_cockatrice",
+			"e_flithy",
+			"e_gryffon",
+			"e_hydra",
+			"e_phoenix",
+			"e_pogler",
+			"e_snakemass",
+			"e_moss_portal",
+			"e_spidermass",
+			"e_trumple",
+			"e_wyvern"
+		],
+		"flavor": "Its creator and purpose are unknown to history. Perhaps all creatures exist within."
+	},
+	{
+		"id": "loc_tenwick",
+		"name": "peregrination",
+		"level": 19,
+		"require": "g.s_travel>=5&&g.a_travel>=100",
+		"desc": "Tenwick's trail runs a circuit about the notable areas of Dhrune. On foot it takes the better part of a year to complete.",
+		"length": 10000,
+		"run": {
+			"stamina": 2
+		},
+		"result": {
+			"title": "Dhrunic Wayfarer"
+		},
+		"loot": {
+			"tenwickstick": 1
+		},
+		"encs": [
+			"brightvista",
+			"e_pogler",
+			"e_agolith",
+			"enc_battle1",
+			"enc_blackcat",
+			"enc_chest4",
+			"enc_delki",
+			"enc_statue2",
+			"enc_statue4",
+			"enc_gap",
+			"e_bloodgrass",
+			"enc_gibber",
+			"enc_gnome",
+			"enc_mtpass",
+			"enc_oldstone",
+			"enc_sandstorm",
+			"enc_sindel",
+			"enc_tenwick",
+			"enc_wyrd",
+			"hauntedglade",
+			"foggydale",
+			"hiddencache",
+			"manatree",
+			"murkywater",
+			"mysticwater",
+			"sombersunset",
+			"starrysky1",
+			"strangebones"
+		]
+	}
+]

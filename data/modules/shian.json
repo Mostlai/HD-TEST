@@ -1,0 +1,474 @@
+{
+	"module": "shian",
+	"author": "evil tyrant",
+	"data": {
+		"events": [
+			{
+				"id": "evt_breakthrough0",
+				"name": "breakthrough",
+				"desc": "A breakthrough in your understanding of spirits! It seems so clear now",
+				"require": "g.spirit.max>19&&g.shian>0",
+				"mod": {
+					"spiritlore.max": 1
+				}
+			},
+			{
+				"id": "evt_breakthrough1",
+				"name": "breakthrough",
+				"desc": "A breakthrough in your understanding of spirits! It seems so clear now",
+				"require": "g.tier5>0&&g.evt_breakthrough0>0",
+				"mod": {
+					"breakthrough.max": 1
+				}
+			},
+			{
+				"id": "evt_breakthrough2",
+				"name": "breakthrough",
+				"desc": "A breakthrough in your understanding of spirits! It seems so clear now",
+				"require": "g.tier6>0&&g.evt_breakthrough1>0",
+				"mod": {
+					"breakthrough.max": 1
+				}
+			},
+			{
+				"id": "evt_sworduse",
+				"name": "mysterious arts",
+				"desc": "Swords fly through the sky, your mastery has improved",
+				"require": "g.tier5>0&&g.sworduse>0",
+				"mod": {
+					"sworduse.max": 1
+				}
+			},
+			{
+				"id": "evt_sworduse2",
+				"name": "mysterious arts",
+				"desc": "Swords fly through the sky, your mastery has improved",
+				"require": "g.tier6>0&&g.evt_sworduse>0",
+				"mod": {
+					"sworduse.max": 1
+				}
+			},
+			{
+				"id": "evt_hole",
+				"name": "public commotion",
+				"desc": "A large spire has risen closeby, quite a few are testing their luck, you better hurry if you want to be ahead",
+				"require": [
+					"mtgorborung",
+					"tier3"
+				]
+			},
+			{
+				"id": "evt_hole2",
+				"name": "the first one",
+				"desc": "You're the first one to the top, you find some books unlike many you've seen",
+				"require": "g.tier3>0&&g.unstablespire>0&&g.tier4==0"
+			},
+			{
+				"id": "evt_hole3",
+				"name": "the top",
+				"desc": "You've reached the top, but it seems others have already taken what was here",
+				"require": "g.tier4>0&&g.unstablespire&&g.evt_hole2<0"
+			}
+		],
+		"tasks": [
+			{
+				"id": "gathersouls",
+				"name": "ghost catcher",
+				"require": "g.soulflag2>0",
+				"desc": "Bind the dead that haunt the world.",
+				"length": 180,
+				"cost": {
+					"spiritgem": 5
+				},
+				"result": {
+					"souls.max": 5,
+					"souls": 20
+				}
+			},
+			{
+				"id": "mkcave",
+				"name": "Dig out a bigger cave",
+				"require": "(g.earthlore+g.spiritlore)>20&&g.shian>0",
+				"desc": "Make a underground home where the magic is strong and spirits are plentiful",
+				"length": 1800,
+				"max": 1,
+				"cost": {
+					"herbs": 50
+				},
+				"run": {
+					"stamina": 5,
+					"earth": 3,
+					"mana": 1,
+					"spirit": 1
+				},
+				"mod": {
+					"cave.mod.minions.max": 8,
+					"cave.mod.space.max": 475,
+					"cave.mod.research.rate": 1.5,
+					"cave.mod.mana.rate": 0.2,
+					"cave.mod.spirit.rate": 0.5,
+					"cave.mod.spiritlore.rate": 150
+				},
+				"flavor": "This will take a while..."
+			},
+			{
+				"id": "mkpagoda",
+				"name": "Make a Beautiful Home",
+				"require": "g.mkcave>0&&g.tier6>0&&g.shian>0",
+				"desc": "Make a home where you can improve your mastery of the mysterious sword arts and spirits are plentiful",
+				"length": 1800,
+				"max": 1,
+				"run": {
+					"gold": 100,
+					"stamina": 1,
+					"earth": 1,
+					"mana": 1,
+					"fire": 1,
+					"air": 1,
+					"spirit": 1
+				},
+				"flavor": "This will take a while..."
+			},
+			{
+				"id": "soulflag",
+				"name": "craft soulflag",
+				"require": "g.spiritlore>12&&g.shian>0",
+				"desc": "So many souls around, there has to be a way to keep them out of your way",
+				"length": 100,
+				"max": 1,
+				"run": {
+					"research": 50,
+					"souls": 1
+				},
+				"mod": {
+					"souls.max": 5,
+					"souls.rate": 0.01
+				}
+			},
+			{
+				"id": "soulflag2",
+				"name": "improve soulflag",
+				"require": "g.soulflag>0&&g.shian>0",
+				"desc": "There is room for more souls",
+				"length": 900,
+				"max": 1,
+				"run": {
+					"research": 50,
+					"souls": 1
+				},
+				"mod": {
+					"souls.max": 15,
+					"souls.rate": 0.02,
+					"spiritart.attack.damage.max": 3,
+					"spiritart.attack.damage.min": 3,
+					"spiritart.attack.tohit": 3
+				}
+			},
+			{
+				"id": "soulflag3",
+				"name": "complete soulflag",
+				"require": "g.soulflag2>0&&g.shian>0",
+				"desc": "Containing ten thousand souls, this is a powerful tool ",
+				"length": 9000,
+				"max": 1,
+				"run": {
+					"research": 50,
+					"souls": 1
+				},
+				"mod": {
+					"souls.max": 45,
+					"souls.rate": 0.03
+				},
+				"loot": {
+					"itemsoulflag": 1
+				}
+			},
+			{
+				"id": "soulflagreacquire",
+				"name": "re-weave soulflag",
+				"require": "g.soulflag3>0&&g.shian>0",
+				"desc": "Even if it's been reduced to scraps, it can be restored",
+				"length": 60,
+				"run": {
+					"stamina": 3,
+					"souls": 1
+				},
+				"loot": {
+					"itemsoulflag": 1
+				}
+			}
+		],
+		"homes": [
+			{
+				"id": "shianpagoda",
+				"name": "elegant pagoda",
+				"desc": "A peaceful structure where you can devote yourself fully to your arts.",
+				"require": "g.mkpagoda>0",
+				"mod": {
+					"minions.max": 10,
+					"space.max": 550,
+					"sworduse.max": 1,
+					"breakthrough.max": 1,
+					"spirit.rate": 0.3,
+					"herbs.max": 5
+				}
+			}
+		],
+		"upgrades": [
+			{
+				"id": "sworduse",
+				"name": "mysterious sword arts",
+				"desc": "The spire has yielded strange and interesting weapons; perhaps you can find a use for them.",
+				"require": "shian",
+				"max": 1,
+				"cost": {
+					"gold": 3000,
+					"research": 2500,
+					"mana": 10
+				},
+				"mod": {
+					"swordart.attack.damage.max": 2,
+					"swordart.attack.damage.min": 2,
+					"swordart.attack.tohit": 2
+				}
+			},
+			{
+				"id": "breakthrough",
+				"desc": "A breakthrough in your spiritual meditations.",
+				"require": "evt_breakthrough0",
+				"max": 1,
+				"cost": {
+					"spirit": 15
+				},
+				"mod": {
+					"spiritart.attack.damage.max": 2,
+					"spiritart.attack.damage.min": 2,
+					"spiritart.attack.tohit": 1,
+					"soulart.attack.dot.damage.max": 1,
+					"soulart.attack.dot.damage.min": 1
+				}
+			},
+			{
+				"id": "fastsoul",
+				"name": "refinement techniques",
+				"desc": "Methods for making flags among other things, won't make it cheaper though",
+				"require": "g.tier5>0&&g.soulflag2>0",
+				"mod": {
+					"soulflag3.length": "-50%",
+					"soulflag3.run.souls": 1
+				}
+			}
+		],
+		"spells": [
+			{
+				"id": "throw_swords",
+				"name": "lost sword art: flying swords",
+				"school": "blade",
+				"require": "sworduse",
+				"level": 11,
+				"tags": "swordart",
+				"buy": {
+					"research": 1000,
+					"codices": 10,
+					"spiritgem": 10
+				},
+				"cost": {
+					"mana": 10
+				},
+				"attack": {
+					"targets": "enemies",
+					"damage": "20~30",
+					"kind": "slash",
+					"tohit": 10
+				},
+				"result": [
+					"magicblade",
+					"magicblade",
+					"magicblade"
+				]
+			},
+			{
+				"id": "giantkilling",
+				"name": "lost sword art: giant slayer",
+				"school": "blade",
+				"require": "g.sworduse>1",
+				"level": 12,
+				"tags": "swordart",
+				"buy": {
+					"research": 1000,
+					"codices": 10,
+					"spiritgem": 10
+				},
+				"cost": {
+					"gems": 1,
+					"mana": 12
+				},
+				"attack": {
+					"damage": "35~65",
+					"kind": "slash",
+					"tohit": 10,
+					"dot": {
+						"duration": 10,
+						"mod": {
+							"self.defense": -10
+						}
+					}
+				}
+			},
+			{
+				"id": "soulstrike",
+				"name": "spirit art: soulstrike",
+				"school": "spirit",
+				"require": "g.shian>0&&g.soulflag>0",
+				"level": 6,
+				"tags": "spiritart",
+				"buy": {
+					"research": 1000,
+					"codices": 10,
+					"spiritgem": 10
+				},
+				"cost": {
+					"souls": 1,
+					"spirit": 1
+				},
+				"attack": {
+					"damage": "20~29",
+					"kind": "spirit",
+					"tohit": 15
+				}
+			},
+			{
+				"id": "soullure",
+				"name": "soul card: soul lure",
+				"school": "spirit",
+				"require": "g.shian>0&&g.soulflag2>0",
+				"level": 10,
+				"tags": "soulart",
+				"desc": "Lure the souls of enemies from out their mortal bodies",
+				"buy": {
+					"research": 1000,
+					"codices": 10,
+					"spiritgem": 20
+				},
+				"cost": {
+					"spirit": 10
+				},
+				"attack": {
+					"tohit": 20,
+					"targets": "enemies",
+					"dot": {
+						"id": "soullure",
+						"kind": "spirit",
+						"duration": 10,
+						"damage": "10~15"
+					}
+				}
+			},
+			{
+				"id": "soulriver",
+				"name": "spirit art: soul river",
+				"school": "spirit",
+				"require": "g.shian>0&&g.soulflag3>0",
+				"level": 15,
+				"tags": "spiritart",
+				"buy": {
+					"research": 1000,
+					"codices": 10,
+					"spiritgem": 10
+				},
+				"cost": {
+					"souls": 15,
+					"spirit": 5
+				},
+				"attack": {
+					"damage": "80~110",
+					"kind": "spirit",
+					"tohit": 25
+				}
+			}
+		],
+		"classes": [
+			{
+				"id": "shian",
+				"name": "shian anchorite",
+				"desc": "An ancient magic from beyond the sea, combining spirit and blade.",
+				"secret": true,
+				"tags": "t_tier4",
+				"require": "g.tier3>0&&g.unstablespire>0",
+				"cost": {
+					"research": 25000,
+					"arcana": 25,
+					"tomes": 100,
+					"ichor": 2
+				},
+				"result": {
+					"sp": 2
+				},
+				"mod": {
+					"tier4": true,
+					"spiritlore.max": 3,
+					"bladelore": true
+				},
+				"flavor": "Contemplation of the small as well as great."
+			}
+		],
+		"rares": [
+			{
+				"id": "itemsoulflag",
+				"name": "soulflag",
+				"desc": "Ten thousand souls muffled in its fabric.",
+				"type": "weapon",
+				"unique": true,
+				"attack": {
+					"kind": "spirit",
+					"damage": "60~70"
+				},
+				"alter": {
+					"mod": {
+						"spirit.max": 10,
+						"souls.rate": 0.5,
+						"spiritart.attack.damage.max": 5,
+						"spiritart.attack.damage.min": 5,
+						"spiritart.attack.tohit": 5
+					}
+				},
+				"hands": 2,
+				"kind": "flag",
+				"tags": "flag",
+				"level": 15,
+				"enchants": 15,
+				"sell": {
+					"souls": 1
+				}
+			}
+		],
+		"dungeons": [
+			{
+				"id": "unstablespire",
+				"name": "the unstable spire",
+				"desc": "A large spire which rose from the ground. It looks like it might collapse any day now",
+				"require": "evt_hole",
+				"level": 15,
+				"dist": 50,
+				"run": {
+					"stamina": 2
+				},
+				"length": 10000,
+				"result": {
+					"fame": 1,
+					"gems": "10~20",
+					"gold": "100~200"
+				},
+				"biome": [
+					"cave",
+					"mountain"
+				],
+				"spawns": {
+					"level": "4~15",
+					"range": 2
+				},
+				"flavor": "some things are left to time"
+			}
+		]
+	}
+}

@@ -1,0 +1,359 @@
+{
+	"module": "patrons",
+	"sym": "⭐",
+	"data": {
+		"furniture": [
+			{
+				"id": "nathanielshelter",
+				"name": "nathaniel's sanctuary",
+				"require": "g.tier3>0&&g.good>0",
+				"desc": "A sanctuary for orphans and paupers.",
+				"tags": "patron",
+				"cost": {
+					"gold": 100
+				},
+				"mod": {
+					"space": 5,
+					"gold.rate": -0.2,
+					"virtue.rate": 0.0001,
+					"light.rate": 0.1,
+					"fame.rate": 0.00005
+								 
+				},
+				"flavor": "Nathaniel insisted magic be used for the benefit of the unfortunate."
+			},
+			{
+				"id": "baneanvil",
+				"name": "bloodbane's anvil",
+				"require": "g.crafting>=14",
+				"need": "workshop",
+				"desc": "Great spells are often forged on iron.",
+				"tags": "patron",
+				"cost": {
+					"research": 10000,
+					"tomes": 10
+				},
+				"mod": {
+					"space": 5,
+					"spellcraft.max": 2,
+					"spellcraft.rate": "5%",
+					"enchanting.max": 2
+				},
+				"flavor": "Forsaking war and violence, Bloodbane devoted himself to crafting new forms of magic."
+			}
+		],
+		"homes": [
+			{
+				"id": "wildcamp",
+				"name": "wild's encampment",
+				"desc": "Deep in Delkin Wood, Master Wild kept his fabled camp.",
+				"require": "(g.warden+g.druid+g.fey+g.kell)>0&&g.tier2>0",
+				"tags": "outdoors,plantsource,t_pets,patron",
+				"cost": {
+					"gold": 300,
+					"naturegem": 20,
+					"herbs": 50,
+					"research": 1000
+				},
+				"mod": {
+					"space.max": 40,
+					"lore.rate": -0.1,
+					"research.rate": -0.2,
+					"naturelore2.max": 1,
+					"airlore.max": 1,
+					"waterlore.max": 1,
+					"naturelore.max": 2,
+					"naturelore.rate": "5%",
+					"animals.max": 1,
+					"animals.rate": 0.1
+				}
+			}
+		],
+		"spells": [
+			{
+				"id": "phrenesis_heal1",
+				"level": 4,
+				"name": "phrenesis' healing circle",
+				"desc": "",
+				"school": "light",
+				"require": "g.lightlore>=7",
+				"buy": {
+					"research": 1000,
+					"codices": 25
+				},
+				"cost": {
+					"light": 1
+				},
+				"action": {
+					"targets": "allies",
+					"result": {
+						"hp": 15
+					}
+				}
+			},
+			{
+				"id": "phrenesis_heal2",
+				"level": 10,
+				"name": "phrenesis' healing wave",
+				"desc": "",
+				"school": "light",
+				"require": "g.lightlore>=20",
+				"buy": {
+					"research": 1000,
+					"codices": 25
+				},
+				"cost": {
+					"light": 3
+				},
+				"action": {
+					"targets": "allies",
+					"result": {
+						"hp": 35
+					}
+				}
+			},
+			{
+				"id": "cyrilsling",
+				"name": "cyril's celestial sling",
+				"level": 7,
+				"school": "chaos",
+				"require": "g.tier5>0&&g.chaos.max>=3&&g.lore>999",
+				"desc": "Free a star and unleash the fury of the heavens on your foe. Hopefully your star won't turn on you...",
+				"buy": {
+					"research": 7777,
+					"runestones": 7,
+					"firerune": 7,
+					"waterrune": 7,
+					"airrune": 7,
+					"earthrune": 7
+				},
+				"cost": {
+					"chaos": 3,
+					"sindel": 1
+				},
+				"effect": [
+					{
+						"%": 7
+					}
+				],
+				"flavor": "If you're already star-crossed, why not make a few stars cross as well?"
+			},
+			{
+				"id": "kannadance",
+				"level": 7,
+				"name": "kanna's dervish dance",
+				"tags": "patron",
+				"cd": 120,
+				"school": "bladelore",
+				"require": "spellblade",
+				"desc": "Kanna's dance was a strenuous one for a mage, and a deadly one to her enemies.",
+				"buy": {
+					"research": 500,
+					"tomes": 1,
+					"airgem": 10
+				},
+				"cost": {
+					"air": 8
+				},
+				"dot": {
+					"duration": 60,
+					"mod": {
+						"stamina.max": 50,
+						"stamina.rate": -1,
+						"self": { 
+							"dodge": 15,
+							"tohit": 10,
+							"damage": 5
+						}
+					}
+				},
+				"result": {
+					"stamina": 50
+				},
+				"flavor": "she danced with the devil in the pale moonlight, blades gleaming and blurring like a single streak of silver"
+			}
+		],
+		"encounters": [
+			{
+				"id": "agetablet1",
+				"name": "ancient tablet",
+				"desc": "A tablet on a dais displays a glowing list of names.",
+				"flavor": "Chazza, Jiopaba, Kamianya, Alyx, Man of Smoke",
+				"effect": {}
+			},
+			{
+				"id": "agetablet2",
+				"name": "weathered tablet",
+				"desc": "A weathered tablet with a faded list of names.",
+				"flavor": "Chazza, Jiopaba, Kamianya, Alyx, Man of Smoke",
+				"effect": {}
+			},
+			{
+				"id": "enc_cyril",
+				"name": "view stars with cyril",
+				"desc": "",
+				"effect": {
+					"rage": "1~5",
+					"weary": "2~5",
+					"research": 1
+				},
+				"result": {}
+			},
+			{
+				"id": "enc_kanna",
+				"name": "Study under Kanna",
+				"desc": "A fox-girl delightedly teaches you some practical ways to use your weapon more effectively",
+				"effect": {
+					"bf": "0~2",
+					"weary": "2~5",
+					"rage": "2~5",
+					"bladelore.exp": 3,
+					"enchanting.exp": 3
+				},
+				"result": {
+					"bladelore.max": 0.001
+				}
+			},
+			{
+				"id": "enc_jeremy",
+				"name": "jeremi",
+				"desc": "Nothing is known about this mage.",
+				"effect": {
+					"rage": "1~5",
+					"weary": "2~5",
+					"research": 1
+				},
+				"result": {}
+			},
+			{
+				"id": "enc_phrenesis",
+				"name": "phrenesis",
+				"desc": "Phrenesis was forever preoccupied with the cycles of death and rebirth.",
+				"effect": {
+					"stress": -0.1,
+					"hp": -4
+				}
+			},
+			{
+				"id": "enc_sinae",
+				"name": "sinae",
+				"desc": "",
+				"effect": {
+					"rage": "1~5",
+					"weary": "2~5",
+					"research": 1
+				}
+			},
+			{
+				"id": "enc_stags",
+				"name": "stags",
+				"desc": "Nothing is known about the enigmatic mage.",
+				"effect": {
+					"rage": "1~5",
+					"weary": "2~5",
+					"research": 1
+				},
+				"result": {}
+			},
+			{
+				"id": "enc_tainted",
+				"name": "Tainted, Archon of the Void",
+				"desc": "A violent echo still wanders the halls it never walked",
+				"effect": {
+					"madness": "2~4",
+					"unease": "2~4",
+					"tempus": -1,
+					"chronomancy.exp": 1,
+					"voidlore.exp": 1
+				},
+				"loot": {
+					"voidrune": "1%",
+					"voidgem": "1%",
+					"timerune": "1%",
+					"timegem": "1%"
+				},
+				"flavor": "Did that actually happen?"
+			},
+			{
+				"id": "enc_kaidi",
+				"name": "kaidi",
+				"desc": "",
+				"effect": {},
+				"flavor": ""
+			},
+			{
+				"id": "enc_tjoker",
+				"name": "a joker",
+				"desc": "A crafty expression suggests trouble.",
+				"effect": {
+					"rage": "1~5",
+					"bf": "2~5",
+					"trickery.exp": 2,
+					"player.exp": 1
+				}
+			},
+			{
+				"id": "enc_vondrey",
+				"name": "vondrey",
+				"desc": "The mage does not appear inclined to speak.",
+				"effect": {
+					"bf": "1~5",
+					"rage": "1~5",
+					"weary": "2~5",
+					"concentrate.exp": 1,
+					"composure.exp": 1
+				}
+			},
+			{
+				"id": "enc_mrwild",
+				"name": "master wild",
+				"desc": "A mage of the wilds makes a perplexing teacher.",
+				"effect": {
+					"madness": "1~5",
+					"weary": "2~5",
+					"naturelore.exp": 2,
+					"animals.exp": 2
+				}
+			},
+			{
+				"id": "enc_mrreaper",
+				"name": "mister reaper",
+				"desc": "A grim name for an otherwise respectable mage.",
+				"effect": {
+					"madness": "1~5",
+					"bf": "2~5",
+					"history.exp": 2,
+					"shadowlore.exp": 2
+				}
+			}
+		],
+		"locales": [
+			{
+				"id": "loc_ageshall",
+				"name": "hall of ages",
+				"desc": "The lost Hall of Ages was a gathering place of great and powerful patron mages.",
+				"require": "g.tier3>0",
+				"title": "Mark of Ages",
+				"length": 100,
+				"mod": {
+					"history.max": "?1"
+				},
+				"encs": [
+					"enc_kaidi",
+					"enc_cyril",
+					"enc_jeremy",
+					"enc_kanna",
+					"enc_phrenesis",
+					"enc_sinae",
+					"enc_stags",
+					"enc_tainted",
+					"enc_tjoker",
+					"enc_vondrey",
+					"enc_mrreaper",
+					"enc_mrwild"
+				],
+				"flavor": "the knowledge within may be beyond price."
+			}
+		]
+	}
+}

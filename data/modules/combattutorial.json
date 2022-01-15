@@ -1,0 +1,343 @@
+{
+	"module": "combat_tutorial",
+	"sym": "⚔️",
+	"data": {
+		"dungeons": [
+			{
+				"id": "traininggrounds",
+				"name": "附近山林",
+				"title": "冒险者",
+				"run": {
+					"time": -0.04
+				},
+				"level": 1,
+				"distance": 1,
+				"length": 20,
+				"locked": false,
+				"boss": {
+					"1": "robber",
+					"2": "jackals"
+				},
+				"spawns": [
+					"jackals"
+				]
+			},
+			{
+				"id": "nearwasteland",
+				"name": "荒地",
+				"title": "拾荒者",
+				"run": {
+					"time": -0.05
+				},
+				"level": 1,
+				"distance": 1,
+				"length": 15,
+				"locked": false,
+				"boss": {
+					"1": "robber",
+					"2": "tramp",
+					"3": "wasteland_walker"
+				},
+				"result": {
+					"zero_crystal": "0~1"
+				},
+				"spawns": [
+					"jackals"
+				]
+			},
+			{
+				"id": "far_mountant",
+				"name": "远山",
+				"title": "山行者",
+				"run": {
+					"time": -0.07
+				},
+				"level": 3,
+				"distance": 1,
+				"length": 10,
+				"locked": false,
+				"boss": {
+					"1": "robber",
+					"2": "tramp",
+					"3": "monkey",
+					"4": "tiger"
+				},
+				"result": {
+					"zero_crystal": "1~3",
+					"snp_data": "0~3"
+				},
+				"spawns": [
+					"robber"
+				]
+			},
+			{
+				"id": "far_mountant",
+				"name": "远山",
+				"title": "山行者",
+				"run": {
+					"time": -0.07
+				},
+				"level": 10,
+				"distance": 1,
+				"length": 10,
+				"locked": false,
+				"boss": {
+					"1": "robber",
+					"2": "tramp",
+					"3": "monkey",
+					"4": "tiger"
+				},
+				"result": {
+					"zero_crystal": "1~3",
+					"snp_data": "0~3"
+				},
+				"spawns": [
+					"robber"
+				]
+			},
+			{
+				"id": "cold_1",
+				"name": "寒冬边缘",
+				"title": "冷风",
+				"run": {
+					"time": -0.1
+				},
+				"level": 8,
+				"length": 30,
+				"require": "evt_cold",
+				"boss": {
+					"1": "ice_1",
+					"2": "ice_2"
+				},
+				"result": {
+					"zero_crystal": "0~1",
+					"snp_data": "1~2"
+				},
+				"spawns": [
+					"ice_1"
+				]
+			},
+			{
+				"id": "cold_2",
+				"name": "冻土",
+				"title": "冷雨",
+				"run": {
+					"time": -0.17
+				},
+				"level": 8,
+				"length": 30,
+				"require": "g.cold_1>0",
+				"boss": {
+					"1": "ice_1",
+					"2": "ice_2",
+					"3": "ice_3"
+				},
+				"result": {
+					"zero_crystal": "0~1",
+					"snp_data": "1~2"
+				},
+				"spawns": [
+					"ice_1"
+				]
+			},
+			{
+				"id": "zhanchang",
+				"name": "小型战场",
+				"title": "亡魂",
+				"run": {
+					"time": -0.17
+				},
+				"level": 6,
+				"length": 35,
+				"require": "g.lingti_xue>=1",
+				"boss": {
+					"1": "youhun_1",
+					"2": "youhun_2",
+					"3": "youhun_3"
+				},
+				"result": {
+					"dirty_lingti": "0~1",
+					"paper": "5~6",
+					"money": "1~3"
+				},
+				"spawns": [
+					"ice_1"
+				]
+			}
+		],
+		"monsters": [
+			{
+				"id": "youhun_1",
+				"name": "幽魂",
+				"level": 7,
+				"speed": 3,
+				"hp": 24,
+				"attack": {
+					"name": "嚎叫",
+					"dmg": "4~7",
+					"type": "slashing"
+				},
+				"loot": {"money":1}
+			},
+			{
+				"id": "youhun_2",
+				"name": "愤怒亡魂",
+				"level": 7,
+				"speed": 3,
+				"hp": 30,
+				"attack": {
+					"name": "嚎叫",
+					"dmg": "6~7",
+					"type": "slashing"
+				},
+				"loot": {"money":1, "dirty_lingti":0.3}
+			},
+			{
+				"id": "youhun_3",
+				"name": "不安亡灵",
+				"level": 7,
+				"speed": 3,
+				"hp": 35,
+				"attack": {
+					"name": "嚎叫",
+					"dmg": "6~7",
+					"type": "slashing"
+				},
+				"loot": {"money":1, "dirty_lingti":0.3}
+			},
+			{
+				"id": "ice_1",
+				"name": "冰精",
+				"level": 6,
+				"speed": 2,
+				"hp": 30,
+				"attack": {
+					"name": "冰冻",
+					"dmg": "3~7",
+					"type": "slashing"
+				},
+				"loot": {"money":2}
+			},
+			{
+				"id": "ice_2",
+				"name": "雪地行者",
+				"level": 6,
+				"speed": 3,
+				"hp": 10,
+				"attack": {
+					"name": "冲撞",
+					"dmg": "8~9",
+					"type": "slashing"
+				},
+				"loot": {"money":1}
+			},
+			{
+				"id": "ice_3",
+				"name": "雪牛",
+				"level": 6,
+				"speed": 3,
+				"hp": 10,
+				"attack": {
+					"name": "冲撞",
+					"dmg": "8~9",
+					"type": "slashing"
+				},
+				"loot": {"money":3}
+			},
+			{
+				"id": "monkey",
+				"name": "猿猴",
+				"level": 0,
+				"speed": -5,
+				"hp": 8,
+				"attack": {
+					"name": "抓挠",
+					"dmg": "0~5",
+					"type": "slashing"
+				},
+				"loot": {"money":1}
+			},
+			{
+				"id": "tiger",
+				"name": "猛虎",
+				"level": 0,
+				"speed": -7,
+				"hp": 15,
+				"attack": {
+					"name": "爪击",
+					"dmg": "1~5",
+					"type": "slashing"
+				},
+				"loot": {"money":1}
+			},
+			{
+				"id": "jingguai",
+				"name": "精怪",
+				"level": 0,
+				"speed": -5,
+				"hp": 20,
+				"attack": {
+					"name": "爪击",
+					"dmg": "1~5",
+					"type": "heli"
+				},
+				"loot": {"zero_crystal":1,"snp_data":1}
+			},
+			{
+				"id": "tramp",
+				"name": "流浪汉",
+				"desc": "一个四处漂泊的人",
+				"level": 0,
+				"speed": -10,
+				"hp": 15,
+				"attack": {
+					"name": "刺击",
+					"dmg": "0~4",
+					"type": "slashing"
+				},
+				"loot": {"money":1}
+			},
+			{
+				"id": "wasteland_walker",
+				"name": "荒地流浪者",
+				"desc": "一个四处漂泊的人",
+				"level": 0,
+				"speed": -6,
+				"hp": 9,
+				"attack": {
+					"name": "猛击",
+					"dmg": "1~2",
+					"type": "slashing"
+				},
+				"loot": {"money":3,"zero_crystal":1}
+			},
+			{
+				"id": "robber",
+				"name": "强盗",
+				"desc": "强盗",
+				"level": 0,
+				"speed": -10,
+				"hp": 15,
+				"attack": {
+					"name": "刺击",
+					"dmg": "0~3",
+					"type": "slashing"
+				},
+				"loot": {"money":1.7}
+			},
+			{
+				"id": "jackals",
+				"name": "豺狼",
+				"desc": "凶恶的野兽",
+				"level": 0,
+				"speed": -10,
+				"hp": 5,
+				"attack": {
+					"name": "爪击",
+					"dmg": "0~1",
+					"type": "slashing"
+				}
+			}
+		]
+	}
+}

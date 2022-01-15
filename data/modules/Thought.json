@@ -1,0 +1,1376 @@
+{
+	    "module": "Thought",
+		"data":{
+		"classes": [
+		{
+		"id": "minister",
+		"name": "牧师",
+		"desc": "加入宗教，传播信仰",
+		"actname": "成为牧师",
+		"actdesc": "所谓科学...",
+		"require": "g.money>5",
+		"warn": true,
+		"disable": ["businessman","farmer","businessman_1","farmer_1"],
+		"log": {
+			"name": "简单入教",
+			"desc": "付出了一笔费用后，主教对你进行了一个简单的入教仪式"
+		},
+		"cost": {
+			"money": 10
+		},
+		"result": {
+			"time": 7,
+			"ganwu.max": 2,
+			"ganwu.rate": 0.01
+    }
+	},
+	{
+		"id": "minister_2",
+		"name": "主教",
+		"desc": "开拓未知，带来革命...",
+		"actname": "成为主教",
+		"actdesc": "思想...",
+		"require": "g.minister>=1&&g.sixiang_1>=1&&g.ganwu.max>=20",
+		"warn": true,
+		"disable": ["minister","missionary_1","meditation_1"],
+		"log": {
+			"name": "洗身更衣",
+			"desc": "经过一月的准备仪式，现在你已经荣升主教，每天有固定工资"
+		},
+		"cost": {
+			"time": -30,
+			"ganwu": 5
+		},
+		"result": {
+			"ganwu.max": 5,
+			"ganwu.rate": 0.2,
+			"money.rate": 0.3
+		}
+    },
+	{
+		"id": "minister_3",
+		"name": "教皇",
+		"desc": "开辟新教",
+		"actname": "成为教皇",
+		"actdesc": "思想不朽！",
+		"require": ["g.minister_2>=1","g.sixiang_2>=1","g.ganwu.max>=50","g.jiaotu_1>=5"],
+		"warn": true,
+		"disable": ["minister_2","meditation_2", "missionary_2"],
+		"log": {
+			"name": "开辟新教",
+			"desc": "开辟自己的教派"
+		},
+		"cost": {
+			"time": -90,
+			"money": 60,
+			"ganwu": 40
+		},
+		"result": {
+			"ganwu.max": 15,
+			"ganwu.rate": 1,
+			"money.rate": 1,
+			"jiaotu_1.max": 5
+	}
+}
+		],
+		"skills": [
+		{
+		"id": "jichu_luoji",
+		"name": "基础逻辑学",
+		"require": "g.ganwu>=5",
+		"desc": "在毫不相干的思维中整理",
+		"buy": {
+			"ganwu": 3
+		},
+		"effect": {
+			"time": 0.5
+		},
+		"run": {
+			"stamina": 0.55
+		},
+		"result": {
+			"sp": 0.5,
+			"ganwu.max": 1,
+			"ganwu.rate": 0.05
+		}
+		},
+		{
+		"id": "jinjie_luoji",
+		"name": "进阶逻辑学",
+		"require": "g.jichu_luoji>=3&&g.ganwu.max>=8",
+		"desc": "构建新的思想理论模型，完整化思维碎片",
+		"level": 1,
+		"buy": {
+			"ganwu": 8
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"stamina": 0.8
+		},
+		"result": {
+			"sp": 0.25,
+			"ganwu.max": 2,
+			"ganwu.rate": 0.2
+		}
+	    },
+		{
+		"id": "siwei_1",
+		"name": "思维力学说",
+		"require": "g.sixiang_1>=1",
+		"desc": "感受世界，影响世界",
+		"buy": {
+			"ganwu": 8
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"stamina": 0.8
+		},
+		"result": {
+			"sp": 0.25
+		},
+		"mod": {
+			"ganwu.max": 0.5,
+			"ganwu.rate": 0.1,
+			"stamina.rate":0.1 
+			}
+		},
+		{
+			"id": "zhengzhi_1",
+			"name": "信仰政治学Ⅰ",
+			"require": "g.minister_3>=1",
+			"desc": "用信仰绑定群体",
+			"buy": {
+				"ganwu": 30,
+				"books": 2
+			},
+			"effect": {
+				"time": 2
+			},
+			"run": {
+				"stamina": 1
+			},
+			"result": {
+				"sp": 0.5,
+				"jiaotu_1.max": 1,
+				"jiaotu_2.max": 0.2
+			}
+		},
+		{
+		"id": "xunhuan_1",
+		"name": "循环:探究万物意义",
+		"require": "g.gyl.max>=1",
+		"desc": "无限意义，无限自我",
+		"level":-3,
+		"buy": {
+			"ganwu": 15
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"stamina.max": 0.5,
+			"stamina.rate": 0.05,
+			"sp": 0.05,
+			"xunhuan_1.max": 1
+		}
+			},
+			{
+		"id": "xunhuan_2",
+		"name": "循环:知识结构优化",
+		"require": "g.reading>=3&&g.jinjie_luoji>=3",
+		"desc": "优化知识结构来提升效率",
+		"level":-3,
+		"buy": {
+			"ganwu": 25,
+			"books": 2
+		},
+		"effect": {
+			"time": 1.5
+		},
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"sp": 0.05,
+			"ganwu.rate": 0.05,
+			"xunhuan_2.max": 1
+			}
+		}
+	],
+	"tasks": [
+		{
+		"id": "missionary_1",
+		"name": "传教",
+		"desc": "向世人传播科学的重要性，顺便收点费用",
+		"verb": "传教中",
+		"require": "g.minister>=1",
+		"length": 10,
+		"cost": {
+			"time": -1
+		},
+		"run": {
+			"time": -0.1,
+			"tili": 0.1,
+			"stamina": 0.1
+		},
+		"result": {
+			"ganwu": 0.5,
+			"money": 0.2
+		}
+		},
+		{
+		"id": "meditation_1",
+		"name": "冥想",
+		"desc": "静心 思考",
+		"verb": "冥想中",
+		"require": "g.minister>=1&&g.ganwu.max>=8",
+		"length": 20,
+		"run": {
+			"time": -0.5
+		},
+		"effect": {
+			"tili": 0.1,
+			"stamina": 0.3,
+			"gyl": 0.1
+		},
+		"result": {
+			"ganwu": 0.5,
+			"ganwu.max": 0.01,
+			"gyl": 0.5
+		}
+		},
+		{
+			"id": "missionary_2",
+			"name": "教义演说",
+			"desc": "在教堂进行公开演讲",
+			"verb": "演讲中",
+			"require": "g.minister_2>=1",
+			"length": 15,
+			"cost": {
+				"time": -1
+			},
+			"run": {
+				"time": -0.2,
+				"tili": 0.1,
+				"stamina": 0.3
+			},
+			"result": {
+				"ganwu": 2.5,
+				"money": 0.3,
+				"jiaotu_1": 0.25
+		}
+	},
+	{
+		"id": "meditation_2",
+		"name": "深度冥想",
+		"desc": "心如止水",
+		"verb": "冥想中",
+		"require": "g.minister_2>=1",
+		"length": 20,
+		"run": {
+			"time": -0.8
+		},
+		"effect": {
+			"tili": 0.2,
+			"stamina": 1.5,
+			"gyl": 0.3
+		},
+		"result": {
+			"ganwu": 1.5,
+			"ganwu.max": 0.05,
+			"gyl": 0.2
+	}
+	},
+	{
+		"id": "meditation_3",
+		"name": "心如止水",
+		"desc": "心如一湖",
+		"verb": "冥想中",
+		"require": "g.minister_3>=1",
+		"length": 20,
+		"run": {
+			"time": -0.01
+		},
+		"effect": {
+			"tili": 0.4,
+			"stamina": 5,
+			"gyl": 0.5
+		},
+		"result": {
+			"ganwu": 5,
+			"ganwu.max": 0.1,
+			"gyl": 0.2
+	}
+	},
+	{
+        "id": "missionary_3",
+		"name": "教化信徒",
+		"desc": "在教堂里向信徒传授",
+		"verb": "传授中",
+		"require": "g.minister_3>=1",
+		"length": 15,
+		"cost": {
+			"time": -1
+			},
+		"run": {
+			"time": -0.2,
+			"tili": 0.1,
+			"stamina": 0.5,
+            "ganwu": 0.2   
+			},
+		"result": {
+			"ganwu": 3,
+			"jiaotu_1": 0.5,
+			"jiaotu_2": 0.2
+		}
+	},
+	{
+		"id": "jianzao_1",
+		"name": "建造：中心巨型教堂（地基)",
+		"desc": "建造中心巨型教堂，是教会的象征，同时也是一个社会奇观",
+		"verb": "建造中",
+		"require": "g.minister_3>=1",
+		"disable": "jianzao_1",
+		"length": 150,
+		"cost": {
+			"time": -10,
+			"money": 200
+			},
+		"run": {
+			"time": -2,
+			"tili": 0.2,
+			"stamina": 1,
+            "ganwu": 1
+			},
+		"result":{
+			"hide_jianzao_1": 1
+		}
+	},
+	{
+		"id": "jianzao_2",
+		"name": "建造：中心巨型教堂（结构)",
+		"desc": "建造中心巨型教堂，是教会的象征，同时也是一个社会奇观",
+		"verb": "建造中",
+		"require": "g.hide_jianzao_1>=1",
+		"disable": "jianzao_2",
+		"length": 200,
+		"cost": {
+			"time": -10,
+			"money": 180
+			},
+		"run": {
+			"time": -2,
+			"stamina": 1,
+            "ganwu": 1
+			},
+		"result":{
+			"hide_jianzao_2": 1
+		}
+	},
+	{
+        "id": "jianzao_3",
+		"name": "建造：中心巨型教堂（装饰)",
+		"desc": "建造中心巨型教堂，是教会的象征，同时也是一个社会奇观",
+		"verb": "建造中",
+		"require": "g.hide_jianzao_2>=1",
+		"disable": "jianzao_3",
+		"length": 250,
+		"cost": {
+			"time": -20,
+			"money": 300
+			},
+		"run": {
+			"time": -2.5,
+			"stamina": 2,
+            "ganwu": 2
+			},
+		"result":{
+			"hide_jianzao_3": 1
+		}
+	},
+	{
+		"id": "focus_2",
+		"name": "整理",
+		"desc": "整理思维碎片，组建知识",
+		"require": ["g.reading>=2","g.jinjie_luoji>=1","g.heli.max<=1"],
+		"disable": "focus",
+		"every": {
+			"15": {
+				"result.runner.exp": "0.05:15"
+			}
+		},
+		"cost": {
+			"ganwu": 0.2,
+			"stamina": 0.2
+		},
+		"result": {
+			"runner.exp": 0.3,
+			"sp": 0.001
+		}
+	}
+	],
+    "upgrades": [
+		{
+		"id": "sixiang_1",
+		"name": "理论：思维之外",
+		"desc": "心胜于物,思维不朽",
+		"max": 1,
+		"require": "g.jinjie_luoji>=2",
+		"cost": {
+			"ganwu": 12
+		},
+		"mod": {
+			"ganwu.max": 10,
+			"gyl.rate": 0.05
+		}
+		},
+		{
+			"id": "sixiang_2",
+			"name": "实践：发散根源",
+			"desc": "根源的作用不止于此",
+			"max": 1,
+			"require": "g.tanjiu_2>=1&&g.sixiang_1>=1",
+			"cost": {
+				"gyl": 4,
+				"sp": 3
+			},
+			"mod": {
+				"speed": 3
+			},
+			"result":{
+				"hide_gyl_baope_1": 1
+			}
+		},
+		{
+			"id": "sixiang_3",
+			"name": "野望：根源之在",
+			"desc": "根源绝不是这么一个简简单单的存在，它的背后一定有着更深的奥秘",
+			"max": 1,
+			"require": "g.tanjiu_1>=1&&g.sixiang_2>=1",
+			"cost": {
+				"gyl": 10,
+				"sp": 5,
+				"books":4
+			}
+		},
+		{
+			"id": "sixiang_4",
+			"name": "野望：合一",
+			"desc": "根源所具有的性质已经表明了，我们可以借助根源的力量更上一层",
+			"max": 1,
+			"require": "g.sixiang_3>=1",
+			"cost": {
+				"gyl": 10,
+				"sp": 10,
+				"books":4
+			}
+		},
+		{
+			"id": "qianneng_1",
+			"name": "潜能开发Ⅰ",
+			"desc": "发掘自身的力量",
+			"max": 1,
+			"require": "gyl",
+			"cost": {
+				"ganwu": 15
+			},
+			"mod": {
+				"ganwu.max": 5,
+				"gyl.rate": 0.05,
+				"gyl.max": 1,
+				"stamina.max": 1
+			}	
+		},
+		{
+			"id": "qianneng_2",
+			"name": "潜能开发Ⅱ",
+			"desc": "更多...",
+			"max": 1,
+			"disable": "qianneng_1",
+			"require": "g.qianneng_1>=1&&g.ganwu.max>=22",
+			"cost": {
+				"ganwu": 22
+			},
+			"mod": {
+				"ganwu.max": 15,
+				"gyl.rate": 0.2,
+				"gyl.max": 3,
+				"stamina.max": 3.8	
+		}
+	},
+	{
+		
+		"id": "qianneng_3",
+		"name": "潜能开发Ⅲ",
+		"desc": "澎湃...",
+		"max": 1,
+		"disable": "qianneng_2",
+		"require": "g.qianneng_2>=1&&g.sixiang_2>=1",
+		"cost": {
+			"ganwu": 30
+		},
+		"mod": {
+			"ganwu.max": 20,
+			"gyl.rate": 0.4,
+			"gyl.max": 4,
+			"stamina.max": 5	
+	}
+	},
+	{
+		"id": "tanjiu_1",
+		"name": "理论探究Ⅰ",
+		"desc": "探寻物的关系",
+		"max": 1,
+		"require": "g.jinjie_luoji>=1&&g.gyl&&g.heli.max<=1",
+		"cost": {
+			"ganwu": 15
+		},
+		"mod":{
+			"stamina.rate": 0.1,
+			"gyl.max": 1
+		}
+	},
+	{
+		"id": "tanjiu_2",
+		"name": "理论探究Ⅱ",
+		"desc": "根源并不能解释所有现象，还有其他的能量在影响世界",
+		"max": 1,
+		"require": "g.tanjiu_1>=1&&g.jinjie_luoji>=3&&g.heli.max<=1",
+		"disable": "tanjiu_1",
+		"cost": {
+			"ganwu": 25,
+			"money": 30
+		},
+		"mod":{
+			"stamina.max": 3,
+			"stamina.rate": 0.2,
+			"gyl.max": 2,
+			"gyl.rate": 0.2
+		}
+	},
+	{
+		"id": "tanjiu_3",
+		"name": "理论探究Ⅲ",
+		"desc": "我发现了一种新的能量，称之为合理，但是我无法应用它，需要研究它与根源的关系",
+		"max": 1,
+		"warn":true,
+		"require": ["g.tanjiu_2>=1","g.heli.max<=1","g.gyl.max>=3","g.ganwu.max>=35"],
+		"disable": "tanjiu_2",
+		"cost": {
+			"ganwu": 35,
+			"money": 60,
+			"time": 60
+		},
+		"mod":{
+			"stamina.max": 6,
+			"stamina.rate": 0.6,
+			"gyl.max": 4,
+			"gyl.rate": 0.3
+	}
+	},
+	{
+		"id": "jianzao_huge_jiaotang",
+		"name": "中心巨型教堂（完工）",
+		"desc": "我们的教堂终于完工了，现在该举行剪彩仪式了",
+		"max": 1,
+		"require": ["g.hide_jianzao_3>=1"],
+		"cost": {
+			"time": 1
+		},
+		"mod":{
+			"jiaotu_1.max": 100,
+			"jiaotu_2.max": 20
+	}
+}
+	],
+	"resources": [
+		{
+		"id": "gyl",
+		"tags": "Bar",
+		"desc": "根源之力，思想之力",
+		"unit": false,
+		"color": "#6495ED",
+		"require": "g.sixiang_1>=1&&g.siwei_1>=3",
+		"name": "根源",
+		"max": 1
+		},
+		{
+		"id": "jiaotu_1",
+		"name": "牧师教徒",
+		"desc": "你的追随者",
+		"group": "修行",
+		"tags": "",
+		"require": "g.minister_2>=1",
+		"max": 5,
+		"mod":{
+			"money.rate": 0.01,
+			"ganwu.rate": 0.01,
+			"ganwu.max": 0.1
+		}
+		},
+		{
+		"id": "jiaotu_2",
+		"name": "主教教徒",
+		"desc": "你的追随者",
+		"group": "修行",
+		"tags": "",
+		"require": "g.minister_3>=1",
+		"max": 2,
+		"mod":{
+			"money.rate": 0.1,
+			"ganwu.rate": 0.1,
+			"ganwu.max": 3
+		}
+		},
+		{
+		"id": "hide_jianzao_1",
+		"name": "中心巨型教堂（地基）",
+		"desc": "中心巨型教堂（地基）",
+		"hide": true,
+		"group": "货币",
+		"tags": "",
+		"require": "g.minister_3>=1",
+		"max": 1
+		},
+	    {
+		"id": "hide_jianzao_2",
+		"name": "中心巨型教堂（结构）",
+		"desc": "中心巨型教堂（结构）",
+		"hide": true,
+		"group": "货币",
+		"tags": "",
+		"max": 1
+	},
+	{
+		"id": "hide_jianzao_3",
+		"name": "中心巨型教堂（装饰）",
+		"desc": "中心巨型教堂（装饰）",
+		"hide": true,
+		"group": "货币",
+		"tags": "",
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_baope_1",
+		"name": "根源爆破Ⅰ",
+		"desc": "根源爆破Ⅰ",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"mod":{
+			"gyl_baopo_1": true
+		},
+		"max": 1
+	},
+	{
+        
+		"id": "hide_gyl_baope_2",
+		"name": "根源爆破Ⅱ",
+		"desc": "根源爆破Ⅱ",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"mod":{
+			"gyl_baopo_2": true
+		},
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_yingxiang_1",
+		"name": "思维影响Ⅰ",
+		"desc": "思维影响Ⅰ",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"mod":{
+			"gyl_yingxiang_1": true
+		},
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_tisheng_1",
+		"name": "思维提升Ⅰ",
+		"desc": "思维提升Ⅰ",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"mod":{
+			"gyl_tisheng_1": true
+		},
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_xiulian_jichu_1",
+		"name": "根源性",
+		"desc": "根源性",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_xiulian_jichu_2",
+		"name": "可再生性",
+		"desc": "可再生性",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_xiulian_jichu_3",
+		"name": "发散性",
+		"desc": "发散性",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"max": 1
+	},
+	{
+		"id": "hide_gyl_xiulian_teshu_1",
+		"name": "压缩具象性",
+		"desc": "压缩具象性",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"max": 1
+	}
+	],
+	"spells":[
+		{
+		"id": "gyl_baopo_1",
+		"name": "根源爆破Ⅰ",
+		"level": 1,
+		"school": "攻击",
+		"require": "g.hide_gyl_baope_1.value>=1",
+		"desc": "用根源爆破对手的思维",
+		"buy": {
+			"ganwu": 10,
+			"gyl": 1,
+			"sp": 1
+		},
+		"flavor": "破碎吧",
+		"cost": {
+			"gyl": 4
+		},
+		"attack": {
+			"damage": "0.1~10"
+		}
+	},
+	{
+		"id": "gyl_baopo_2",
+		"name": "根源爆破Ⅱ",
+		"level": 2,
+		"school": "攻击",
+		"desc": "用根源指向性的爆破对手的思维，造成伤害",
+		"flavor": "粉碎吧",
+		"buy": {
+			"ganwu": 25,
+			"gyl": 3,
+			"sp": 2
+		},
+		"cost": {
+			"gyl": 3
+		},
+		"attack": {
+			"targets":"enemies",
+			"damage": "5~15"
+		}
+	},
+	{
+		"id": "gyl_yingxiang_1",
+		"name": "思维影响Ⅰ",
+		"level": 1,
+		"school": "效果",
+		"require": "g.hide_gyl_yingxiang_1.value>=1",
+		"desc": "发散根源，影响对手的行动",
+		"buy": {
+			"ganwu": 15,
+			"sp": 1
+		},
+		"flavor": "混乱吧",
+		"cost": {
+			"gyl": 3
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"duration": 20,
+				"mod": {
+					"self.speed": -4
+				}
+	}
+}
+	},
+	{
+		"id": "gyl_tisheng_1",
+		"name": "思维提升Ⅰ",
+		"level": 1,
+		"school": "效果",
+		"require": "g.hide_gyl_yingxiang_1.value>=1",
+		"desc": "将根源应用在思维方面，可以提高行动速度与精准",
+		"buy": {
+			"ganwu": 15,
+			"sp": 1
+		},
+		"flavor": "思维提升",
+		"cost": {
+			"gyl": 4
+		},
+			"dot": {
+				"duration": 10,
+				"mod": {
+					"player.tohit": 3,
+					"player.speed":3
+			}
+		}
+	}
+	],
+	"market":
+	[
+		{
+		"id": "market_sell_zero_crystal",
+		"name": "出售零结晶",
+		"desc": "出售多余的零结晶换钱",
+		"require": "g.market_un>0&&g.zero_crystal.max>=1",
+		"cost": {
+			"zero_crystal": 1
+		},
+		"result": {
+			"money": 6
+		}
+		},
+		{
+			"id": "market_buy_zero_crystal",
+			"name": "购买零结晶",
+			"desc": "购买零结晶以备不时之需",
+			"require": "g.market_un>0&&g.zero_crystal.max>=1",
+			"cost": {
+				"money": 30
+			},
+			"result": {
+				"zero_crystal": 1
+			}
+		},
+		{
+			"id": "market_sell_books",
+			"name": "出售书籍",
+			"desc": "这些知识是多余的",
+			"require": "g.market_un>0&&g.books.max>=1",
+			"cost": {
+				"books": 1
+			},
+			"result": {
+				"money": 1
+		}
+	}
+	],
+	"dungeons":
+	[
+		{
+			    "id": "Thought_1",
+				"sym": "🧠",
+				"name": "思境Ⅰ",
+				"desc":"走的路程越多，噩梦越多，你需要打破这个思境",
+				"require": "g.sixiang_2>=1",
+				"run": {
+					"time": -0.001,
+					"ganwu": -0.01,
+					"stamina": -0.01
+				},
+                "level":-1,
+				"distance": 1,
+				"length": 5,
+				"boss": {
+					"1": "shade"
+				},
+				"spawns": [
+					"shade"
+				],
+				"result":{
+					"gyl.rate": 0.1
+				},
+				"disable": "Thought_1"
+		},
+		{
+			    "id": "ancient_Laboratory",
+				"sym": "⚔️",
+				"name": "古代实验室(小型）",
+				"desc":"一个已经废弃的古代实验室，也许里面藏着好东西",
+				"run": {
+					"time": -1
+				},
+                "level":5,
+				"distance": 1,
+				"length": 10,
+				"boss": {
+					"10": "robot_3"
+				},
+				"spawns": [
+					"robot_1",
+					"robot_2"
+				],
+				"result":{
+					"exe_paper": 1,
+					"paper": 2,
+					"zero_crystal": 1,
+					"snp_data": 1
+				}
+		},
+		{
+			"id": "ancient_Laboratory_2",
+				"sym": "⚔️💀",
+				"name": "古代实验室(中型）",
+				"desc":"一个已经废弃的中型实验室，里面传来轰隆隆的响声",
+				"run": {
+					"time": -1
+				},
+                "level":5,
+				"distance": 1,
+				"length": 15,
+				"boss": {
+					"15": "robot_7"
+				},
+				"spawns": [
+					"robot_4",
+					"robot_5",
+					"robot_6"
+				],
+				"result":{
+					"exe_paper": 3,
+					"paper": 10,
+					"zero_crystal": 2,
+					"snp_data": 3,
+					"money": "30~60"
+				}
+		}
+	],
+	"monsters":
+	[
+		{
+		"id": "shade",
+		"name":"阴影",
+		"desc":"过去毫无意义，这是你的报应",
+		"level": 1,
+		"kind": "beast",
+		"flavor": "暗影",
+		"hp": "1~10",
+		"defense": 2,
+		"attack": {
+			"name": "侵扰",
+			"kind": "squiggly",
+			"dmg": "1~5"
+		}
+		},
+		{
+		"id": "robot_1",
+		"name":"破旧的防卫机器人（钻头）",
+		"desc":"看起来很破旧了，不过它手部高速转动的钻头证明了它的危险",
+		"level": 5,
+		"kind": "机器",
+		"flavor": "滋滋滋...滋滋滋",
+		"hp": "20",
+		"speed": -3,
+		"defense": 4,
+		"attack": {
+			"name": "刺击",
+			"kind": "刺",
+			"dmg": "3~6"
+		},
+		"loot":
+		{
+			"cu_iron": 1
+		}
+		},
+		{
+		"id": "robot_2",
+		"name":"破旧的防卫机器人（蒸汽炮）",
+		"desc":"看起来很破旧了，不过它手部隆隆作响的蒸汽炮证明了它的危险",
+		"level": 5,
+		"kind": "机器",
+		"flavor": "Intruder detected....perform cleanup task...",
+		"hp": "15",
+		"speed": -2,
+		"defense": 4,
+		"attack": {
+			"name": "射击",
+			"kind": "子弹",
+			"dmg": "5~10"
+		},
+		"loot":{
+			"cu_copper": 1
+		}
+		},
+		{
+		"id": "robot_3",
+		"name":"落灰的防卫机器人（铁拳）",
+		"desc":"有一段时间的防卫机器人，蒙了一层灰，但是其蒸汽铁拳不可小觑",
+		"level": 5,
+		"kind": "机器",
+		"flavor": "隆隆隆...",
+		"hp": "35",
+		"speed": 3,
+		"defense": 6,
+		"attack": {
+			"name": "蒸汽打击",
+			"kind": "钝",
+			"dmg": "8~15"
+		},
+		"loot":{
+			"cu_copper":1,
+			"cu_iron":1,
+			"zero_crystal":1
+		}
+		},
+		{
+		"id": "robot_4",
+		"name":"蒙灰的防卫机器人（钻锯）",
+		"desc":"蒙了一层灰，但是手里的家伙正在向你砍来",
+		"level": 10,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "40",
+		"speed": 2,
+		"defense": 6,
+		"attack":[ {
+			"name": "刺击",
+			"kind": "刺",
+			"dmg": "3~6"
+			},
+			{
+			"name": "砍击",
+			"kind": "切",
+			"dmg": "3~6"
+			}
+		],
+		"loot":
+		{
+			"cu_iron": 3,
+			"zero_crystal": 1,
+			"cu_copper": 2
+		}
+		},
+		{
+		"id": "robot_5",
+		"name":"蒙灰的防卫机器人（故障的电磁炮）",
+		"desc":"蒙了一层灰，但是手里的电磁炮可不是闹着玩的，即使看上去好像出故障了",
+		"level": 10,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "35",
+		"speed": 2,
+		"defense": 6,
+		"attack":[ {
+			"name": "哑火",
+			"kind": "无",
+			"dmg": "0"
+			},
+			{
+			"name": "射击",
+			"kind": "子弹",
+			"dmg": "15~25"
+			}
+		],
+		"loot":
+		{
+			"cu_iron": 3,
+			"zero_crystal": 1,
+			"cu_copper": 2
+		}
+		},
+		{
+		"id": "robot_6",
+		"name":"蒙灰的防卫机器人（故障的电击枪）",
+		"desc":"蒙了一层灰，但是手里的电击枪可不是闹着玩的，即使看上去好像出故障了",
+		"level": 10,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "40",
+		"speed": 2,
+		"defense": 6,
+		"attack":[{
+			"name": "失灵",
+			"kind": "无",
+			"dmg": "0"
+			},
+			{
+			"targets": "enemies",
+			"name": "电击",
+			"kind": "电",
+			"dmg": "5~10",
+			"dot":{
+				"duration":10,
+				"mod":{
+					"speed":-10,
+					"defense":-2,
+					"dodge": -2
+				}
+			}
+			}
+		],
+		"loot":
+		{
+			"cu_iron": 3,
+			"zero_crystal": 1,
+			"cu_copper": 2
+		}
+		},
+		{
+				"id": "robot_7",
+				"name":"蒙灰的实验机器人（大块头）（故障）",
+				"desc":"即使蒙了一层灰，这家伙的块头可不是盖的，但是它似乎并不友好",
+				"level": 10,
+				"kind": "机器",
+				"flavor": "Experimental unit 1 started, detected intruders and began to clean up",
+				"hp": "80",
+				"speed": 4,
+				"defense": 8,
+				"attack":[ {
+					"name": "重击",
+					"kind": "钝",
+					"tohit": 5,
+					"dmg": "10"
+					},
+					{
+					"name": "泰山压顶",
+					"tohit": 3,
+					"kind": "钝",
+					"dmg": "20~25"
+					},
+					{
+					"targets":"self",
+					"name": "短路",
+					"kind": "无",
+					"dmg": "10",
+					"dot":{
+						"duration":10,
+						"mod":{
+							"speed":-10,
+							"dodge":-10
+						}
+					}
+					},
+					{
+						"targets":"enemies",
+						"name": "旋转旋风",
+						"tohit": 7,
+						"kind": "钝",
+						"dmg": "10~15",
+						"dot":{
+							"duration":5,
+							"mod"
+							:{
+								"self.speed":-20,
+								"dodge":-20
+							}
+						}
+					}
+				],
+				"loot":
+				{
+					"zero_crystal": 4,
+					"iron_copper":3,
+					"exp": 50
+				}
+		}
+	],
+	"locales":
+	[
+		{
+		"id": "gas_goldcave_1",
+		"name": "被污染的黄金矿洞",
+		"level": 1,
+		"length": 10,
+		"sym": "🚩",
+		"locked":false,
+		"desc": "有毒的矿井，但下面是黄金“人为财死，鸟为食亡”",
+		"run": {
+			"hp": 0.5,
+			"time":-0.5
+		},
+		"encs": [
+			"enc_gasgoldcave_boom",
+			"enc_gasgoldcave_yiwai",
+			"enc_gasgoldcave_gas",
+			"enc_gasgoldcave_fall",
+			"enc_gasgoldcave_rocks",
+			"enc_gasgoldcave_enemies",
+			"enc_gasgoldcave_huge_rock",
+			"enc_gasgoldcave_help",
+			"enc_gasgoldcave_gggggas",
+			"none"
+		],
+		"result": {
+			"money": "5~25"
+		}
+		}
+	],
+	"encounters":
+	[
+		{
+		"id": "enc_gasgoldcave_boom",
+		"name": "金矿爆炸",
+		"desc": "囸，是哪个龟孙在这埋的炸药",
+		"result": {
+			"hp": -5
+		}
+		},
+		{
+		"id": "enc_gasgoldcave_yiwai",
+		"name": "意外收获",
+		"desc": "是一大块金矿！",
+		"result": {
+			"money": 3
+		}
+		},
+		{
+		"id": "enc_gasgoldcave_gas",
+		"name": "有毒气体",
+		"desc": "咳咳咳咳咳咳....",
+		"effect": {
+			"hp": -0.5 
+		}
+		},
+		{
+		"id": "enc_gasgoldcave_fall",
+		"name": "石块坠落",
+		"desc": "被砸得眼冒金星",
+		"result": {
+			"hp": -1,
+			"stamina":-3 
+		}
+		},
+		{
+		"id": "enc_gasgoldcave_huge_rock",
+		"name": "巨型岩石",
+		"desc": "绕路吧",
+		"effect":{
+			"time": 2
+		}
+	    },
+		{
+		"id": "enc_gasgoldcave_rocks",
+		"name": "岩石堵路",
+		"desc": "挖开它",
+		"effect": {
+			"time": 2,
+			"tili": -0.8 
+		}
+		},
+		{
+		"id": "enc_gasgoldcave_help",
+		"name": "遗留的补给",
+		"desc": "还有汽水",
+		"effect": {
+			"hp": 1.5,
+			"tili": 0.8,
+			"stamina":0.3 
+		}
+	},
+	{
+		"id": "enc_gasgoldcave_gggggas",
+		"name": "浓密毒气",
+		"desc": "xwx",
+		"effect": {
+			"hp": -2 
+	}
+}
+	],
+	"homes":
+	[
+		{
+			
+		"id": "jiaotang_home",
+		"name": "教堂大房间",
+		"desc": "你的杰作中一个中等大的房间",
+		"require": "g.jianzao_huge_jiaotang>=1",
+		"cost": {
+			"time": 1
+		},
+		"mod": {
+			"space.max": 40
+		}
+		}
+	],
+	"xiulian":
+	[
+		{
+		"id": "xiulian_gyl_jichu_1",
+		"name": "根源性(基础性质研究)",
+		"desc": "根源有许多基本性质，其最主要一点就是他的根源性，人人皆有根源",
+		"tags": "基础性质研究",
+		"require": "g.gyl",
+		"max": 2,
+		"cost":{
+          "ganwu": 30
+		},
+		"result": {
+			"gyl.rate":-0.05,
+			"hide_gyl_xiulian_jichu_1": 1
+		}
+		},
+		{
+			"id": "xiulian_gyl_jichu_2",
+			"name": "可再生性(基础性质研究)",
+			"desc": "即使一个人被抽走所有根源，只要他的意识，或者说思想还在，他的根源就能再生",
+			"tags": "基础性质研究",
+			"require": "g.sixiang_1>=1&&g.gyl>=3",
+			"max": 2,
+			"cost": {
+					"ganwu": 30,
+					"books": 2
+				},
+			"result": {
+				"gyl.rate":-0.05,
+				"gyl.max":-1,
+				"hide_gyl_xiulian_jichu_2": 1
+				}
+		},
+		{
+			"id": "xiulian_gyl_jichu_3",
+			"name": "发散性(基础性质研究)",
+			"desc": "根源是可以向外发散的，如果不是有意进行，一般都很微弱，影响不到任何普遍事物，但我们可以利用这个特性开发新的法术",
+			"tags": "基础性质研究",
+			"require": "g.sixiang_2>=1&&g.gyl.max>=6",
+			"max": 2,
+			"cost": {
+				"ganwu": 30,
+				"books": 2
+				},
+			"result": {
+				"gyl.rate":-0.05,
+				"gyl.max":-1,
+				"hide_gyl_yingxiang_1":1,
+				"hide_gyl_tisheng_1":1,
+				"hide_gyl_xiulian_jichu_3": 1
+		}
+		},
+		{
+			"id": "xiulian_gyl_teshu_1",
+			"name": "压缩具象性(特殊性质研究)",
+			"desc": "根源被压缩后，变得更有指向性，内涵的威力得到了极大的提升，可以根据这一点开发出毁灭性的法术",
+			"tags": "特殊性质研究",
+            "require":["g.hide_gyl_xiulian_jichu_1>=1","g.hide_gyl_xiulian_jichu_2>=1","g.hide_gyl_xiulian_jichu_3>=1"],
+			"max":2,
+			"cost": {
+				"ganwu": 50,
+				"books": 4,
+				"stamina":5
+				},
+			"result": {
+				"gyl.rate":-0.05,
+				"gyl.max":-1,
+				"hide_gyl_baope_2": 1,
+				"hide_gyl_xiulian_teshu_1": 1
+		}
+	}
+	]
+}
+}

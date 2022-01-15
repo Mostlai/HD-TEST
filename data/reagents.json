@@ -1,0 +1,129 @@
+[
+	{
+		"id": "nettle",
+		"name": "stinging nettle",
+		"tags": "herb,reagent",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "sulphur",
+		"desc": "Principle of fire.",
+		"max": 10
+	},
+	{
+		"id": "mercury",
+		"desc": "Principle of metal.",
+		"max": 10
+	},
+	{
+		"id": "icethorn",
+		"tags": "herb,reagent",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "nightshade",
+		"tags": "herb,reagent,poison",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "blackrot",
+		"tags": "herb,reagent",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "kingsfoil",
+		"name": "king's foil",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "belladonna",
+		"tags": "herb,reagent,poison",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "grimwort",
+		"desc": "A morbid plant that only blooms in crypts and graveyards.",
+		"flavor": ""
+	},
+	{
+		"id": "manabell",
+		"desc": "Mages search the ponds by ley-lines for its faintly glowing bulbs.",
+		"flavor": ""
+	},
+	{
+		"id": "foxfire",
+		"desc": "Found at night in deep forests, glowing on the roots and trunks of trees.",
+		"flavor": ""
+	},
+	{
+		"id": "milkweed",
+		"tags": "herb,reagent,poison",
+		"desc": ""
+	},
+	{
+		"id": "vikaroot",
+		"name": "vika root",
+		"desc": "Its roots drive so deep that none have found their source.",
+		"flavor": "Druids claim all vika root are a single great plant, rooted at the world's center."
+	},
+	{
+		"id": "bloodgrass",
+		"name": "blood grass",
+		"desc": "Blood drawn from its sharp blades are all the sustenance it requires."
+	},
+	{
+		"id": "firethistle",
+		"name": "fire thistle",
+		"tags": "herb,reagent",
+		"desc": "",
+		"flavor": "It burns"
+	},
+	{
+		"id": "goldfel",
+		"name": "goldfel",
+		"tags": "herb,reagent",
+		"desc": "",
+		"flavor": ""
+	},
+	{
+		"id": "marigold",
+		"tags": "herb,reagent",
+		"desc": "A bright and cheerful spring bloom."
+	},
+	{
+		"id": "lavender",
+		"tags": "herb,reagent",
+		"desc": "",
+		"flavor": "No one actually knows what lavender does."
+	},
+	{
+		"id": "oleander",
+		"tags": "herb,reagent,poison",
+		"desc": "Such a delicate bloom for such deadly poison.",
+		"flavor": ""
+	},
+	{
+		"id": "crocodiletears",
+		"name": "crocodile tears",
+		"tags": "reagent",
+		"desc": "Tears without remorse"
+	},
+	{
+		"id": "eyeofnewt",
+		"tags": "reagent",
+		"name": "eye of newt"
+	},
+	{
+		"id": "dragonscale",
+		"tags": "reagent",
+		"name": "dragon scales",
+		"desc": "Plucked from a living dragon.",
+		"flavor": "The plucker might not still be living."
+	}
+]

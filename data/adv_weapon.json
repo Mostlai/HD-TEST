@@ -1,0 +1,22 @@
+[
+	{
+		"id": "adv_w_sj1",
+		"name": "反材料工具工作台",
+		"desc": "小型的定制化武器,可以快速破除敌军的防御,一般用于小规模战争",
+		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
+		"val": 0,
+		"max": 2,
+		"cost": {
+			"money": 100,
+			"iron_copper":3,
+			"sj_met": 1,
+			"zero_crystal": 1,
+			"cu_iron": 4,
+			"human_power": 5
+		},
+		"result":{
+			"r_adv_w_sj1.max": -1,
+			"r_adv_w_sj1.rate": -0.005
+		}
+	}
+]

@@ -1,0 +1,239 @@
+{
+	"module": "hall",
+	"sym": "🏰",
+	"data": {
+		"events": [
+			{
+				"id": "evt_hall",
+				"name": "Wizard's Hall",
+				"desc": "Across the aeons wizards gather in hidden halls to exchange lore and augment their powers."
+			}
+		],
+		"tasks": [
+			{
+				"id": "retire",
+				"warn": true,
+				"require": "g.planeslore>=999",
+				"desc": "",
+				"cost": {},
+				"flavor": ""
+			}
+		],
+		"upgrades": [
+			{
+				"id": "greatwing",
+				"name": "great wing",
+				"max": 3,
+				"desc": "A new wing of the Great Hall where Wizards can lodge in comfort.",
+				"require": "g.expandhall>=1",
+				"cost": {
+					"gold": 10000,
+					"schematic": 3,
+					"void": 3,
+					"prestige": 10
+				},
+				"mod": {
+					"expandhall.max": 1
+				}
+			},
+			{
+				"id": "starchamber",
+				"name": "star chamber",
+				"require": "tier6",
+				"max": 3,
+				"desc": "An expansive chamber for viewing the heavens.",
+				"cost": {
+					"sindel": 3,
+					"prestige": 10,
+					"dreams": 3
+				},
+				"mod": {
+					"fame.rate": 0.000034,
+					"sindel.rate": "10%"
+				}
+			},
+			{
+				"id": "expandhall",
+				"name": "expanded halls",
+				"require": "tier5",
+				"max": 3,
+				"cost": {
+					"prestige": 50
+				},
+				"mod": {
+					"hallSize": 1
+				}
+			},
+			{
+				"id": "spellspire",
+				"max": 3,
+				"require": "tier6",
+				"desc": "A conduit for magic energy.",
+				"cost": {
+					"prestige": 15
+				},
+				"mod": {
+					"spellcraft.max": "20%"
+				}
+			},
+			{
+				"id": "dreamchamber",
+				"name": "dream chamber",
+				"desc": "In some time and place, even dreams were once real.",
+				"require": "tier5",
+				"max": 1,
+				"cost": {
+					"prestige": 40
+				},
+				"mod": {
+					"dreams.rate": 0.0001,
+					"dreams.max": 5
+				}
+			},
+			{
+				"id": "puppet_enhancedlabs",
+				"name": "enhanced laboratories",
+				"desc": "Mechanical assistants and automated delivery systems.",
+				"require": "g.mechamancer>0",
+				"max": 5,
+				"cost": {
+					"prestige": 80,
+					"automatas": 20,
+					"machinae": 20
+				},
+				"mod": {
+					"potions.max": 0.4,
+					"alchemy.max": 0.4
+				}
+			},
+			{
+				"id": "titan_foundations",
+				"name": "stabilized foundations",
+				"desc": "A procedure to prevent earthquakes from affecting member's buildings.",
+				"require": "g.titan>0",
+				"max": 3,
+				"cost": {
+					"prestige": 120,
+					"mythicanvil": 1
+				},
+				"mod": {
+					"space.max": 2
+				}
+			},
+			{
+				"id": "magicstables",
+				"name": "magic stables",
+				"desc": "Dedicated stabling for the hall's mounts. Useful for discerning those with aptitude for magic.",
+				"require": "tier5",
+				"max": 4,
+				"cost": {
+					"prestige": 30
+				},
+				"mod": {
+					"animals.max": 1,
+					"animals.rate": 1,
+					"cleanstables.result.gold": 0.05,
+					"chores.result.gold": 0.1,
+					"errands.effect.gold": 0.15
+				}
+			},
+			{
+				"id": "arcanacollectors",
+				"name": "arcana collectors",
+				"desc": "Specialized facilities for newer mages to practice arcana absorption.",
+				"require": "tier5",
+				"max": 4,
+				"cost": {
+					"prestige": 30
+				},
+				"mod": {
+					"arcana.rate": 0.0005
+				}
+			},
+			{
+				"id": "classrooms",
+				"name": "classrooms",
+				"desc": "Dedicated classrooms for efficient study and transfer of knowledge.",
+				"require": "tier5",
+				"max": 5,
+				"cost": {
+					"prestige": 30
+				},
+				"mod": {
+					"study.effect.research": 0.15,
+					"scrolls.mod.research.rate": 0.0005
+				}
+			},
+			{
+				"id": "timewell",
+				"require": "tier6",
+				"desc": "A deep pool of time incarnate.",
+				"max": 1,
+				"cost": {
+					"prestige": 75
+				},
+				"mod": {
+					"runner.max": 1
+				}
+			},
+			{
+				"id": "ritualchamber",
+				"name": "ritual chamber",
+				"require": "g.ritualist>0&&g.tier6>0",
+				"desc": "A warded room deep within the hall, dedicated to carrying out rituals in safety.",
+				"max": 1,
+				"cost": {
+					"prestige": 30
+				},
+				"mod": {
+					"ritualism.max": 2,
+					"ritualnotes.max": 12,
+					"ritualward.max": 7
+				}
+			}
+		],
+		"stats": [
+			{
+				"id": "hallSize",
+				"locked": false,
+				"val": 3
+			},
+			{
+				"id": "hallPoints",
+				"name": "prestige",
+				"alias": "points",
+				"hide": true,
+				"locked": false,
+				"val": 0,
+				"mod": {
+					"prestige": 1
+				}
+			},
+			{
+				"id": "prestige",
+				"name": "hall prestige",
+				"require": "evt_hall",
+				"val": 0,
+				"locked": false,
+				"mod": {
+					"skill.rate": "0.1%",
+					"stress.max": "0.1%"
+				}
+			}
+		],
+		"classes": [
+			{
+				"id": "pillarfire",
+				"name": "pillar of flame",
+				"desc": "",
+				"max": 1,
+				"tags": "t_tier7",
+				"require": "g.planeslore>=999",
+				"cost": {},
+				"mod": {
+					"tier7": true
+				}
+			}
+		]
+	}
+}

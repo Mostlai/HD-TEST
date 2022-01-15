@@ -1,0 +1,1359 @@
+{
+	"module": "halloween",
+	"sym": "🎃",
+	"data": {
+		"upgrades": [
+			{
+				"name": "Zombie Aspect",
+				"id": "asp_zombie",
+				"desc": "The restless souls wander around, wrecking havoc wherever they are",
+				"require": "g.hal_aspect2>0&&g.anatomy>=5",
+				"warn": true,
+				"lock": [
+					"asp_ghost",
+					"asp_ghoul",
+					"asp_goblin",
+					"asp_satyr",
+					"asp_drake"
+				],
+				"cost": {
+					"hp": 25,
+					"bodies": 3
+				},
+				"mod": {
+					"stamina.max": 5,
+					"stamina.rate": 1.5,
+					"rest.effect.stamina.rate": "-100%",
+					"naturecamp.effect.stamina.rate": "-100%",
+					"eatchildren.effect.stamina.rate": "-100%",
+					"timesiphon.effect.stamina.rate": "-100%",
+					"indulge.effect.stamina.rate": "-100%",
+					"slumber.effect.stamina.rate": "-100%",
+					"chant.effect.stamina.rate": "-100%"
+				},
+				"result": {
+					"anatomy.max": 3,
+					"reanimation.max": 3
+				}
+			},
+			{
+				"id": "asp_ghost",
+				"name": "Ghost Aspect",
+				"desc": "Incorporal creatures using magic to fulfill their needs",
+				"require": "g.hal_aspect2>0&&g.hauntedmanor>1",
+				"warn": true,
+				"lock": [
+					"asp_zombie",
+					"asp_ghoul",
+					"asp_goblin",
+					"asp_satyr",
+					"asp_drake"
+				],
+				"cost": {
+					"spiritgem": 5
+				},
+				"mod": {
+					"prismatic.rate": 1,
+					"player.resist.blunt": 30,
+					"player.resist.slash": 30,
+					"player.resist.pierce": 30
+				},
+				"result": {
+					"spiritlore.max": 3,
+					"airlore.max": 3
+				}
+			},
+			{
+				"id": "asp_ghoul",
+				"name": "Ghoul Aspect",
+				"desc": "A undead hunter who preys in the night",
+				"require": "g.hal_aspect2>0&&g.player.defense>=15",
+				"warn": true,
+				"lock": [
+					"asp_zombie",
+					"asp_ghost",
+					"asp_goblin",
+					"asp_satyr",
+					"asp_drake"
+				],
+				"cost": {
+					"bloodgem": 5
+				},
+				"mod": {
+					"hp.max": 20,
+					"hp.rate": 5
+				},
+				"result": {
+					"demonology.max": 3,
+					"necromancy.max": 3
+				}
+			},
+			{
+				"id": "asp_goblin",
+				"name": "Goblin Aspect",
+				"desc": "Their greed for gold and all things shiny is legendary",
+				"require": "g.hal_aspect2>0&&g.gold>=100",
+				"warn": true,
+				"lock": [
+					"asp_zombie",
+					"asp_ghost",
+					"asp_ghoul",
+					"asp_satyr",
+					"asp_drake"
+				],
+				"cost": {
+					"gold": 500,
+					"gems": 20
+				},
+				"mod": {
+					"gold.max": "20%",
+					"gold.rate": 1,
+					"gems.max": "25%",
+					"gems.rate": 0.1
+				},
+				"result": {
+					"trickery.max": 3,
+					"languages.max": 3
+				}
+			},
+			{
+				"id": "asp_satyr",
+				"name": "Satyr Aspect",
+				"desc": "Dancing under the moonlight, and missleading wanderers",
+				"require": "g.hal_aspect2>0&&g.trickery>5&&g.nature>10",
+				"warn": true,
+				"lock": [
+					"asp_zombie",
+					"asp_ghost",
+					"asp_ghoul",
+					"asp_goblin",
+					"asp_drake"
+				],
+				"cost": {
+					"naturegem": 5,
+					"chaosgem": 5
+				},
+				"mod": {
+					"res_treat.rate": 0.1,
+					"eat_treat.result.hp.min": "-10",
+					"eat_treat.result.hp.max": "20",
+					"eat_treat.result.stamina.min": "-10",
+					"eat_treat.result.stamina.max": "20"
+				},
+				"result": {
+					"naturelore.max": 3,
+					"trickery.max": 3
+				}
+			},
+			{
+				"id": "asp_drake",
+				"name": "Drake Aspect",
+				"desc": "Ancient flying monstrosities",
+				"require": "g.hal_aspect2>0&&g.mtgorborung>1",
+				"warn": true,
+				"lock": [
+					"asp_ghost",
+					"asp_zombie",
+					"asp_ghoul",
+					"asp_satyr",
+					"asp_goblin"
+				],
+				"cost": {
+					"airrune": 3,
+					"firerune": 3
+				},
+				"mod": {
+					"dist": "30%",
+					"air.rate": 2,
+					"player.resist.air": "20%",
+					"fire.rate": 2,
+					"player.resist.fire": "20%"
+				},
+				"result": {
+					"firelore.max": 3,
+					"airlore.max": 3
+				}
+			},
+			{
+				"id": "hal_charger",
+				"name": "hallow charger",
+				"desc": "A pitch dark horse in fumes of smoke",
+				"tags": "steed",
+				"slot": "mount",
+				"require": "g.headless_ride>0",
+				"costs": {
+					"res_apple": 10
+				},
+				"mod": {
+					"dist": 250,
+					"player.resist.shadow": 5
+				}
+			},
+			{
+				"id": "hal_carriage",
+				"name": "pumpkin carriage",
+				"desc": "A spacious and relaxing way to travel",
+				"flavor": "Arrive at the ball in style",
+				"require": "g.pumpkins.max>=50",
+				"slot": "mount",
+				"buy": {
+					"research": 500,
+					"herbs": 50,
+					"pumpkins": 75,
+					"cobwebs": 10,
+					"pumpseeds": 30
+				},
+				"mod": {
+					"dist": 50,
+					"inv.max": 3,
+					"herbs.rate": 0.1,
+					"weary.rate": -0.1,
+					"unease.rate": -0.1
+				}
+			},
+			{
+				"id": "hal_broomstick",
+				"name": "hallow broomstick",
+				"desc": "Touching the broom you hear the sound of cackling in the distance.",
+				"flavor": "Hestia doesn't use this one... Probably.",
+				"slot": "mount",
+				"mod": {
+					"dist": 100,
+					"spirit.rate": 0.5,
+					"rage.rate": -0.2,
+					"player.resist.spirit": 4
+				}
+			},
+			{
+				"id": "pumpsack",
+				"name": "seed sack",
+				"require": "g.pumpseeds>=10",
+				"max": 3,
+				"cost": {
+					"gold": 500
+				},
+				"mod": {
+					"pumpseeds.max": 10
+				},
+				"flavor": "You need to have a word with the sack-maker's guild."
+			}
+		],
+		"tasks": [
+			{
+				"id": "hal_rite",
+				"name": "reveler's rite",
+				"require": "g.hal_bloodmanor>0",
+				"desc": "Once a year under the harvest moon, devotees of Queen Nymie split their souls to doubly enjoy her dark revels.",
+				"length": 30,
+				"repeat": false,
+				"cost": {
+					"res_nymiescharm": 1,
+					"cobwebs": 10,
+					"jacklantern": 7,
+					"gems": 50
+				},
+				"mod": {
+					"runner.max": 1
+				}
+			},
+			{
+				"id": "applebob",
+				"name": "apple bobbing",
+				"require": "evt_hal_imp",
+				"desc": "The imp at the barrel promises some of the apples are really magic gems.",
+				"cost": {
+					"gold": 1
+				},
+				"loot": {
+					"res_apple": "40%",
+					"watergem": "0.1%",
+					"runestones": "0.01%"
+				}
+			},
+			{
+				"id": "filchpump",
+				"name": "filch pumpkins",
+				"require": "apprentice",
+				"length": 10,
+				"fill": "pumpkins",
+				"desc": "Steal pumpkins from nearby homes",
+				"run": {
+					"stamina": 0.5
+				},
+				"effect": {
+					"trickery.exp": 1,
+					"player.exp": 0.1
+				},
+				"result": {
+					"pumpkins": 1
+				}
+			},
+			{
+				"id": "mk_jacklant",
+				"name": "carve lantern",
+				"require": "pumpkins",
+				"length": 15,
+				"fill": [
+					"jacklantern",
+					"pumpseeds"
+				],
+				"cost": {
+					"pumpkins": 1
+				},
+				"run": {
+					"stamina": 0.3
+				},
+				"effect": {
+					"player.exp": 0.2
+				},
+				"result": {
+					"pumpseeds": 3,
+					"jacklantern": 1
+				}
+			},
+			{
+				"id": "smashpump",
+				"name": "smash pumpkin",
+				"require": "pumpkins",
+				"cost": {
+					"pumpkins": 1
+				},
+				"result": {
+					"pumpseeds": 3
+				}
+			},
+			{
+				"id": "tricktreat",
+				"name": "trick & treat",
+				"require": "trickery",
+				"desc": "Threaten homes with magical trickery if they don't give you loot.",
+				"length": 20,
+				"perpetual": true,
+				"run": {
+					"stamina": 0.4
+				},
+				"effect": {
+					"trickery.exp": 1
+				},
+				"loot": {
+					"res_treat": 1,
+					"pumpseeds": "0~2",
+					"gold": "0~5",
+					"gems": "1%",
+					"pumpkins": "20%"
+				}
+			}
+		],
+		"events": [
+			{
+				"id": "headless_ride",
+				"name": "Headless riders ride",
+				"desc": "A dark horse clad in smoke, now yours for the taking. just feed it some apples"
+			},
+			{
+				"id": "hal_suspicion",
+				"name": "Strange Village",
+				"desc": "The outsider has a point, somethings wrong here"
+			},
+			{
+				"id": "evt_hallomar",
+				"require": "evt_helper",
+				"name": "hallomar festivities",
+				"desc": "As the harvest ends and the days go dark, the Hallomar hosts its autumnal festivities. A visit may prove fruitful in your research."
+			},
+			{
+				"id": "evt_hoofs",
+				"name": "hoofprints",
+				"desc": "Hoofprints in the muddy ground lead from the graveyard to Hollow bridge in the far distance."
+			},
+			{
+				"id": "evt_hal_imp",
+				"name": "a strange imp",
+				"desc": "Outside the fields, an imp at a water barrel offers you a chance at magic riches, for a small fee."
+			},
+			{
+				"id": "evt_hal_hestia_done",
+				"name": "purple amulet",
+				"desc": "As you leave her cottage Hestia presses a small amulet into your hand."
+			}
+		],
+		"locales": [
+			{
+				"id": "hal_aspect",
+				"name": "Investigate Hallomar",
+				"desc": "Some people just vanish in thin air, and pop up unexpectedly",
+				"require": "hal_suspicion",
+				"length": 20,
+				"level": 3,
+				"run": {
+					"stamina": 0.5,
+					"res_apple": 0.1
+				},
+				"result": {
+					"res_treat.max": 10,
+					"res_apple.max": 10
+				},
+				"encs": [
+					"hal_age",
+					"hal_oldman",
+					"hal_fox",
+					"hal_grumpy",
+					"hal_missing"
+				]
+			},
+			{
+				"id": "loc_hal_hestia",
+				"name": "hestia's cottage",
+				"desc": "Deep in Thangmor forest, the great witch Hestia keeps a small, secluded cabin. On rare occasions she even takes visitors.",
+				"level": 13,
+				"dist": 50,
+				"length": 50,
+				"require": "loc_hal_pumpkin",
+				"result": {
+					"evt_hal_hestia_done": true
+				},
+				"loot": [
+					{
+						"jacklantern": 1,
+						"hestiabrew": 1,
+						"hal_broomstick": "5%",
+						"cobwebs": 3
+					},
+					{
+						"id": "hal_amulet",
+						"name": "hestia's charm",
+						"desc": "Hestia's amulet throbs with a dull purple light.",
+						"unique": true,
+						"save": true,
+						"type": "armor",
+						"armor": 2,
+						"slot": "neck",
+						"mod": {
+							"player.resist.necrotic": 20
+						}
+					}
+				],
+				"encs": [
+					"enc_blackcat",
+					"enc_hestia",
+					"enc_hal_hest_talk",
+					"enc_hest_ward",
+					"enc_cauldron",
+					"enc_chest2"
+				]
+			},
+			{
+				"id": "loc_hal_pumpkin",
+				"name": "hallomar",
+				"level": 0,
+				"length": 100,
+				"desc": "Nestled in the fog of the midlands, the village of Hallomar holds a yearly celebration in its pumpkin patch.",
+				"require": "evt_hallomar",
+				"run": {
+					"stamina": 0.2
+				},
+				"result": {
+					"title": "harvest reveller",
+					"pumpkins": "1~3",
+					"cobwebs": 1
+				},
+				"loot": {
+					"gold": "10~25",
+					"gems": "2~5",
+					"jacklantern": 1
+				},
+				"encs": [
+					"hal_stranger",
+					"en_pumppatch",
+					"hauntedglade",
+					"en_pumppatch",
+					"en_pumppatch",
+					"en_pumppatch",
+					"foggydale",
+					"enc_chest1",
+					"hiddencache",
+					"starrysky1"
+				],
+				"flavor": "Just don't wander too far from the village."
+			}
+		],
+		"encounters": [
+			{
+				"id": "hal_oldman",
+				"name": "Old Harold",
+				"desc": "He keeps ranting about a wolf he saw in the granary",
+				"effect": {
+					"bf": 1,
+					"weary": 0.5
+				},
+				"result": {
+					"languages.max": 0.001
+				}
+			},
+			{
+				"id": "hal_fox",
+				"name": "Fox",
+				"desc": "A fox lurks at a corner. As you round it you see the fox at the next corner. You chase",
+				"effect": {
+					"unease": 0.5
+				},
+				"result": {
+					"stamina": -0.5,
+					"animals.max": 0.001
+				}
+			},
+			{
+				"id": "hal_grumpy",
+				"name": "Grumpy Granny",
+				"desc": "She appears from nowhere at every curse word, demanding you wash your mouth with soap",
+				"effect": {
+					"unease": "-1~2",
+					"gold": -0.1
+				},
+				"result": {
+					"virtue": 1
+				}
+			},
+			{
+				"id": "hal_stranger",
+				"name": "Outsider",
+				"desc": "A man stands just outside the village, visibly shaken. As you approach him, he warns you that something strange is going on in Hallomar.",
+				"effect": {
+					"madness": "0~2"
+				},
+				"result": {
+					"history.max": 0.001,
+					"hal_suspicion": "10%"
+				}
+			},
+			{
+				"id": "hal_missing",
+				"name": "Hank is Missing",
+				"desc": "Everyone claims they just saw him, but you can't find him at all",
+				"effect": {
+					"weary": "-1~2"
+				}
+			},
+			{
+				"id": "hal_age",
+				"name": "Berta",
+				"desc": "Overnight, she had aged 30 years. By the next day, she was back to her youthful self.",
+				"effect": {
+					"bf": "0~2",
+					"madness": "0~2"
+				},
+				"result": {
+					"anatomy.max": 0.001
+				}
+			},
+			{
+				"id": "enc_hal_hest_talk",
+				"name": "talk to hestia",
+				"desc": "Hestia is busy concocting a special pumpkin brew.",
+				"effect": {
+					"bf": "0~2",
+					"weary": "0~2",
+					"potions.exp": 1,
+					"crafting.max": 0.01
+				},
+				"loot": {
+					"pumpcider": 1
+				},
+				"result": {
+					"pumpcider": true
+				}
+			},
+			{
+				"id": "en_pumppatch",
+				"name": "pumpkin patch",
+				"desc": "In Hallomar's autumn fields grow some of the largest pumpkins to be found.",
+				"effect": {
+					"weary": "1~2",
+					"rage": "1~2",
+					"herbalism.exp": 1,
+					"spiritlore.exp": 1,
+					"spiritlore.max": 0.003
+				},
+				"loot": {
+					"evt_hal_imp": "15%",
+					"cobwebs": "0~2",
+					"pumpkins": 1
+				}
+			}
+		],
+		"furniture": [
+			{
+				"id": "jackward",
+				"name": "warding lanterns",
+				"require": "halloporch",
+				"max": 50,
+				"cost": {
+					"jacklantern": 5,
+					"cobwebs": 5,
+					"research": 100
+				},
+				"mod": {
+					"player.resist.spirit": 0.1,
+					"player.resist.shadow": 0.1,
+					"player.resist.necrotic": 1
+				}
+			},
+			{
+				"id": "halloporch",
+				"name": "lighted porch",
+				"desc": "A porch lit by candles in the gloom.",
+				"require": "g.tier0>0",
+				"max": 1,
+				"cost": {
+					"gold": 10,
+					"research": 50,
+					"pumpkins": 5,
+					"jacklantern": 3
+				},
+				"mod": {
+					"cobwebs.rate": 0.005,
+					"pumpkins.max": "50%",
+					"jacklantern.max": "100%",
+					"cobwebs.max": "100%"
+				},
+				"flavor": "Clear a porch for seasonal activities"
+			},
+			{
+				"id": "f_pumppatch",
+				"name": "pumpkin patch",
+				"tags": "plantsource,naturesource,spiritsource",
+				"desc": "A furrowed plot for growing pumpkins",
+				"require": "tier0",
+				"max": 5,
+				"cost": {
+					"herbs": 10,
+					"pumpseeds": 10
+				},
+				"mod": {
+					"herbs.max": 5,
+					"herbalism.rate": 0.1,
+					"herbalism.max": 0.2,
+					"herbs.rate": 0.1,
+					"jacklantern.max": 1,
+					"cobwebs.rate": 0.01,
+					"pumpkins.max": 10,
+					"pumpkins.rate": 0.005
+				}
+			}
+		],
+		"resources": [
+			{
+				"id": "res_apple",
+				"name": "apple",
+				"level": 1,
+				"max": 50
+			},
+			{
+				"id": "res_treat",
+				"name": "treat",
+				"level": 1,
+				"desc": "Local confections may have unpredictable effects",
+				"max": 100
+			},
+			{
+				"id": "res_nymiescharm",
+				"name": "Nymies Charm",
+				"desc": "A useless trinket at first, but holds magic powers. But nothing you can equip!",
+				"max": 1
+			},
+			{
+				"id": "pumpkins",
+				"desc": "Plump round gourds of the season.",
+				"max": 5,
+				"mod": {
+					"nature.rate": 0.05,
+					"earth.rate": 0.05
+				}
+			},
+			{
+				"id": "pumpseeds",
+				"name": "pumpkin seeds",
+				"mod": {},
+				"max": 10
+			},
+			{
+				"id": "jacklantern",
+				"name": "jack o' lantern",
+				"max": 3,
+				"mod": {
+					"light.rate": 0.1,
+					"fire.rate": 0.1
+				}
+			},
+			{
+				"id": "cobwebs",
+				"max": 5,
+				"mod": {
+					"shadow.rate": 0.1,
+					"air.rate": 0.1
+				}
+			}
+		],
+		"dungeons": [
+			{
+				"id": "hal_aspect2",
+				"name": "ruined house",
+				"desc": "the origin of hallowmeres disturbances",
+				"level": 15,
+				"length": 20,
+				"dist": 50,
+				"require": "hal_aspect",
+				"run": {
+					"stamina": 0.4
+				},
+				"log": {
+					"name": "Laboratory",
+					"desc": "You find the shapeshifters equipment and you think you could make use of it yourself"
+				},
+				"boss": {
+					"16": "hal_ratminion",
+					"17": "hal_foxshape",
+					"18": "hal_wolfshape",
+					"19": "hal_hank",
+					"20": "hal_shapechange"
+				},
+				"spawns": [
+					[
+						"wolf",
+						"wolf"
+					],
+					[
+						"nec_zombie",
+						"nec_zombie",
+						"nec_zombie"
+					],
+					[
+						"evilpriest",
+						"evilpriest"
+					],
+					"ghost",
+					[
+						"hal_wight",
+						"hal_wight"
+					],
+					[
+						"undeadcrow",
+						"nec_ghast",
+						"nec_ghast"
+					],
+					[
+						"greaterzombie",
+						"greaterzombie"
+					]
+				]
+			},
+			{
+				"id": "hal_bloodmanor",
+				"name": "blood manor",
+				"desc": "Asleep for a century, the orange lights of the Blood Manor glow once more on Grimpen Hill.",
+				"level": 17,
+				"length": 30,
+				"dist": 100,
+				"require": "hal_bridge",
+				"run": {
+					"stamina": 0.4,
+					"hp": 0.1
+				},
+				"boss": "hal_baroness",
+				"spawns": [
+					[
+						"undeadcrow",
+						"nec_ghast",
+						"nec_ghast"
+					],
+					[
+						"nec_zombie",
+						"nec_zombie",
+						"nec_zombie"
+					],
+					"nec_ghoul",
+					"nec_ghast",
+					[
+						"wolf",
+						"wolf"
+					],
+					"ghost",
+					[
+						"hal_wight",
+						"hal_wight"
+					],
+					[
+						"evilpriest",
+						"evilpriest"
+					],
+					[
+						"greaterzombie",
+						"greaterzombie"
+					],
+					"nec_ghost",
+					[
+						"nec_skeleton",
+						"nec_skeleton",
+						"nec_ghoul"
+					]
+				]
+			},
+			{
+				"id": "hal_bridge",
+				"name": "hallow bridge",
+				"desc": "The bridge from Hollomar to the grimpen wood isn't safe this time of year.",
+				"level": 14,
+				"dist": 10,
+				"length": 3,
+				"require": "evt_hoofs",
+				"result": {},
+				"boss": "hal_headless",
+				"loot": {
+					"headless_ride": "15%"
+				},
+				"spawns": [
+					[
+						"hal_wight",
+						"hal_wight"
+					],
+					[
+						"nec_ghost",
+						"nec_ghost",
+						"nec_ghost"
+					]
+				]
+			},
+			{
+				"id": "hal_graveyard",
+				"name": "graveyard",
+				"desc": "The graveyard beside Hallomar is nearly abandoned now. Low murmurs and eerie croakings haunt the autumn nights.",
+				"level": 3,
+				"length": 20,
+				"require": "loc_hal_pumpkin",
+				"run": {
+					"stamina": 0.3
+				},
+				"result": {
+					"pumpkin": "1~2",
+					"title": "hallowed defender",
+					"evt_hoofs": true
+				},
+				"loot": [
+					"cobwebs",
+					"bdagg"
+				],
+				"log": {
+					"name": "graves silenced",
+					"desc": "The graveyard is once more at rest. For now."
+				},
+				"boss": "m_pumpkin",
+				"spawns": [
+					[
+						"undeadcrow",
+						"undeadcrow",
+						"undeadcrow"
+					],
+					"nec_zombie",
+					"nec_ghoul",
+					"nec_ghast",
+					"nec_ghost",
+					"nec_skeleton"
+				]
+			}
+		],
+		"potions": [
+			{
+				"id": "pumpcider",
+				"name": "pumpkin cider",
+				"level": 1,
+				"save": true,
+				"cost": {
+					"cobwebs": 1,
+					"pumpseeds": 10,
+					"res_apple": 10
+				},
+				"use": {
+					"dot": {
+						"duration": 45,
+						"effect": {
+							"bf": -1,
+							"rage": -1,
+							"unease": -1,
+							"weary": -1
+						}
+					}
+				},
+				"flavor": "What are the cobwebs for?!"
+			},
+			{
+				"id": "bubblebrew",
+				"name": "bubbling brew",
+				"level": 1,
+				"require": "pumpseeds",
+				"cost": {
+					"cobwebs": 1,
+					"pumpseeds": 5,
+					"herbs": 5
+				},
+				"use": {
+					"hp": 50,
+					"stamina": 20
+				},
+				"flavor": "Looks terrible, tastes worse."
+			}
+		],
+		"spells": [
+			{
+				"id": "pumpbomb",
+				"name": "pumpkin bomb",
+				"level": 3,
+				"buy": {
+					"jacklantern": 1,
+					"research": 100
+				},
+				"cost": {
+					"pumpkins": 1
+				},
+				"attack": {
+					"damage": "5~20",
+					"kind": "spooky"
+				}
+			},
+			{
+				"id": "eat_apple",
+				"name": "eating a apple",
+				"desc": "healty are you",
+				"require": "g.res_apple>10",
+				"unlock": {
+					"res_apple": 10
+				},
+				"cost": {
+					"res_apple": 1
+				},
+				"at": {
+					"10": {
+						"result.hp.max": 5,
+						"result.stamina.max": 5
+					},
+					"30": {
+						"result.hp.max": 5,
+						"result.stamina.max": 5
+					},
+					"100": {
+						"result.nature": 5
+					}
+				},
+				"result": {
+					"hp": "0~10",
+					"stamina": "0~10"
+				}
+			},
+			{
+				"id": "eat_treat",
+				"name": "eating a treat",
+				"level": 1,
+				"desc": "Local confections may have unpredictable effects",
+				"require": "g.res_treat>10",
+				"buy": {
+					"res_treat": 1
+				},
+				"cost": {
+					"res_treat": 1
+				},
+				"at": {
+					"10": {
+						"result.hp.max": 5,
+						"result.stamina.max": 5,
+						"result.mana.max": 5
+					},
+					"30": {
+						"result.hp.max": 5,
+						"result.stamina.max": 5,
+						"result.mana.max": 5
+					},
+					"100": {
+						"result.hp.min": 5,
+						"result.stamina.min": 5,
+						"result.mana.min": 5
+					}
+				},
+				"result": {
+					"hp": "-10~10",
+					"stamina": "-10~10",
+					"mana": "-10~10"
+				}
+			}
+		],
+		"monsters": [
+			{
+				"id": "hal_baroness",
+				"name": "bloody baroness",
+				"level": 18,
+				"kind": "human",
+				"desc": "A devotee of the immortal Night Queen, the bloody baroness extends her own life with harvests of blood.",
+				"hp": 1000,
+				"defense": 20,
+				"loot": {
+					"res_nymiescharm": 1
+				},
+				"attack": [
+					{
+						"name": "hideous laughter",
+						"kind": "madness",
+						"targets": "enemies",
+						"dmg": "10~15"
+					},
+					{
+						"name": "life drain",
+						"kind": "necrotic",
+						"dmg": "20~35",
+						"leech": 0.1
+					}
+				]
+			},
+			{
+				"id": "hal_headless",
+				"name": "headless rider",
+				"level": 14,
+				"kind": "undead",
+				"desc": "He rides across the Hollow bridge at night, to claim the heads of the living.",
+				"hp": 500,
+				"defense": 20,
+				"attack": [
+					{
+						"name": "flaming pumpkin",
+						"kind": "fire",
+						"dmg": "1~3",
+						"dot": {
+							"name": "burning",
+							"kind": "fire",
+							"dmg": "1~2",
+							"duration": 5
+						}
+					},
+					{
+						"name": "vorpal blade",
+						"kind": "slash",
+						"dmg": "4~10"
+					}
+				],
+				"loot": [
+					"vorpal",
+					"jacklantern"
+				]
+			},
+			{
+				"id": "hal_ratminion",
+				"name": "rat minion",
+				"level": 5,
+				"kind": "beast",
+				"desc": "the ugly monster keeps ratting out its master",
+				"hp": 30,
+				"defense": 4,
+				"tohit": 6,
+				"attack": {
+					"name": "details",
+					"kind": "psychic",
+					"dmg": "1~3",
+					"log": {
+						"%": "10%",
+						"desc": "He describes the monstrous experiments by his master in detail"
+					}
+				},
+				"loot": {
+					"bloodgem": "10%"
+				}
+			},
+			{
+				"id": "hal_foxshape",
+				"name": "furious fox",
+				"level": 10,
+				"kind": "beast",
+				"desc": "it attacks frenziedly",
+				"hp": 50,
+				"defense": 10,
+				"tohit": 20,
+				"attack": {
+					"name": "scratch",
+					"kind": "slashing",
+					"dmg": "5~10"
+				},
+				"loot": {
+					"naturegem": "10%",
+					"tome": "10%"
+				}
+			},
+			{
+				"id": "hal_wolfshape",
+				"name": "man-eating wolf",
+				"level": 14,
+				"kind": "beast",
+				"desc": "when the fox finally scampered off, this beast appeared",
+				"hp": 70,
+				"defense": 15,
+				"tohit": 20,
+				"attack": {
+					"name": "bite",
+					"kind": "piercing",
+					"dmg": "8~12",
+					"dot": {
+						"name": "bleed",
+						"duration": 5,
+						"kind": "piercing",
+						"dmg": "2~5"
+					}
+				},
+				"loot": {
+					"skull": "10%",
+					"bloodgem": 1
+				}
+			},
+			{
+				"id": "hal_hank",
+				"name": "hank",
+				"level": 16,
+				"kind": "human",
+				"desc": "so this is where he was- He approached you after the wolf was scared off",
+				"hp": 120,
+				"defense": 20,
+				"tohit": 25,
+				"attack": {
+					"name": "axe",
+					"kind": "slashing",
+					"dmg": "7~15",
+					"log": {
+						"%": "10%",
+						"desc": "I will remove you from the property!"
+					}
+				},
+				"loot": {
+					"gold": 10,
+					"gems": "2~4"
+				}
+			},
+			{
+				"id": "hal_shapechange",
+				"name": "???",
+				"level": 16,
+				"kind": "human",
+				"desc": "After you blow the shapechanger's cover, he rapidly switches shape",
+				"hp": 200,
+				"defense": 25,
+				"tohit": 30,
+				"attack": [
+					{
+						"name": "hank",
+						"kind": "slashing",
+						"dmg": "7~15",
+						"log": {
+							"%": "10%",
+							"desc": "This isn't your place to be!"
+						}
+					},
+					{
+						"name": "wolf",
+						"kind": "piercing",
+						"dmg": "8~12",
+						"log": {
+							"%": "10%",
+							"desc": "My teeth are big, so I can eat you!"
+						},
+						"dot": {
+							"name": "bleed",
+							"duration": 5,
+							"kind": "piercing",
+							"dmg": "2~5"
+						}
+					},
+					{
+						"name": "fox",
+						"kind": "slashing",
+						"dmg": "5~10",
+						"log": {
+							"%": "10%",
+							"desc": "Won't you join my collection?"
+						}
+					}
+				],
+				"loot": {
+					"chaosrune": "10%",
+					"chaosgem": "2~4"
+				}
+			},
+			{
+				"id": "hal_wight",
+				"name": "frost wight",
+				"level": 5,
+				"kind": "undead",
+				"desc": "The unwholesome creature leaves a trail of frost along the grass",
+				"hp": 15,
+				"defense": 4,
+				"tohit": 6,
+				"attack": {
+					"name": "frosty touch",
+					"kind": "necrotic",
+					"dmg": "1~3",
+					"leech": 1
+				},
+				"loot": {
+					"pumpkin": "10%"
+				}
+			},
+			{
+				"id": "nec_zombie",
+				"name": "necrotic zombie",
+				"level": 4,
+				"kind": "undead",
+				"desc": "A vicious zombie in a tattered dress.",
+				"hp": 17,
+				"defense": 3,
+				"speed": 1,
+				"attack": {
+					"name": "slam",
+					"kind": "necrotic",
+					"dmg": "8~12"
+				},
+				"loot": {
+					"pumpkins": "10%"
+				},
+				"flavor": "Elena looking better than ever."
+			},
+			{
+				"id": "nec_ghost",
+				"name": "necrotic ghost",
+				"level": 2,
+				"kind": "undead",
+				"desc": "No one's seen the Miller since he died last year...",
+				"hp": 4,
+				"speed": 4,
+				"defense": 8,
+				"attack": {
+					"name": "chilling touch",
+					"kind": "necrotic",
+					"dmg": "4~8"
+				},
+				"loot": {
+					"pumpkins": "10%"
+				},
+				"flavor": "Now they only half see him."
+			},
+			{
+				"id": "nec_ghoul",
+				"name": "necrotic ghoul",
+				"level": 3,
+				"kind": "undead",
+				"hp": 15,
+				"defense": 2,
+				"attack": {
+					"name": "infectious bite",
+					"kind": "necrotic",
+					"dmg": "4~8",
+					"dot": {
+						"name": "disease",
+						"duration": 5,
+						"kind": "necrotic",
+						"dmg": "1~2"
+					}
+				},
+				"loot": {
+					"pumpkins": "10%"
+				}
+			},
+			{
+				"id": "nec_ghast",
+				"name": "necrotic ghast",
+				"level": 4,
+				"kind": "undead",
+				"desc": "Farmer John looks angry",
+				"hp": 15,
+				"defense": 3,
+				"attack": {
+					"name": "infectious bite",
+					"kind": "necrotic",
+					"dmg": "5~10",
+					"dot": {
+						"name": "disease",
+						"duration": 5,
+						"kind": "necrotic",
+						"dmg": "1.5~3"
+					}
+				},
+				"loot": {
+					"pumpkins": "10%"
+				}
+			},
+			{
+				"id": "m_pumpkin",
+				"name": "ravenous pumpkin",
+				"level": 5,
+				"kind": "undead",
+				"desc": "A monstrous red jack o' lantern with evil glowing eyes.",
+				"hp": 100,
+				"defense": 4,
+				"attack": {
+					"name": "seed storm",
+					"kind": "necrotic",
+					"targets": "enemies",
+					"dmg": "8~15"
+				},
+				"loot": {
+					"jacklantern": "50%",
+					"pumpkins": 2
+				}
+			},
+			{
+				"id": "nec_skeleton",
+				"name": "necrotic skeleton",
+				"level": 2,
+				"kind": "undead",
+				"desc": "The bones are mostly clean",
+				"hp": 7,
+				"defense": 4,
+				"attack": {
+					"tohit": 5,
+					"name": "impalement",
+					"kind": "necrotic",
+					"dmg": "1~3"
+				},
+				"loot": {
+					"pumpkins": "10%"
+				}
+			}
+		],
+		"items": [
+			{
+				"id": "nymiescharm",
+				"name": "nymie's charm",
+				"desc": "A small figurine of a black cat.",
+				"level": 20,
+				"stack": false,
+				"save": true,
+				"unique": true
+			},
+			{
+				"id": "hal_apple",
+				"name": "apple",
+				"level": 1,
+				"save": true,
+				"stack": true,
+				"use": {
+					"hp": "0~10",
+					"stamina": "0~10"
+				}
+			},
+			{
+				"id": "hal_treat",
+				"name": "treat",
+				"level": 1,
+				"save": true,
+				"stack": true,
+				"desc": "Local confections may have unpredictable effects",
+				"use": {
+					"hp": "-10~20",
+					"stamina": "-10~20",
+					"mana": "-10~20"
+				}
+			}
+		]
+	}
+}

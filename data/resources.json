@@ -1,0 +1,1179 @@
+[
+	{
+		"id": "money",
+		"name": "钱币",
+		"desc": "钱币",
+		"group": "货币",
+		"locked": false,
+		"max": 10
+	},
+	{
+		"id": "death",
+		"name": "死寂之刻",
+		"desc": "寂静...",
+		"group": "死亡",
+		"require": "g.death>0",
+		"max": 1,
+		"mod": {
+			"stamina.rate": -2000,
+			"tili.rate": -2000,
+			"hp.rate": -2000
+		}
+	},
+	{
+		"id": "ganwu",
+		"name": "感悟",
+		"desc": "瞬然所得",
+		"group": "修行",
+		"tags": "",
+		"require": "g.ganwu>0",
+		"max": 3
+	},
+	{
+		"id": "lg",
+		"name": "灵光",
+		"desc": "感悟的结晶",
+		"group": "修行",
+		"tags": "",
+		"require": "g.ganwu>=60",
+		"max": 5
+	},
+	{
+		"id": "books",
+		"name": "书籍",
+		"desc": "知识的载体",
+		"group": "知识",
+		"tags": "",
+		"require": "g.ganwu>0",
+		"max": 3
+	},
+	{
+		"id": "paper",
+		"name": "稿纸",
+		"desc": "空白的稿纸,给你发挥无限的想象",
+		"group": "知识",
+		"tags": "",
+		"require": "g.reading>0",
+		"max": 10
+	},
+	{
+		"id": "exe_paper",
+		"name": "经验记录",
+		"desc": "记录那一刻的感悟",
+		"group": "知识",
+		"tags": "",
+		"require": "g.reading>0",
+		"max": 3
+	},
+	{
+		"id": "zero_crystal",
+		"name": "零结晶",
+		"desc": "一种光滑的奇异的结晶体",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.reading>0",
+		"max": 3
+	},
+	{
+		"id": "cu_iron",
+		"name": "铁板",
+		"desc": "最普通的金属",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=1",
+		"max": 10
+	},
+	{
+		"id": "cu_copper",
+		"name": "铜板",
+		"desc": "高导电率",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=4",
+		"max": 10
+	},
+	{
+		"id": "iron_copper",
+		"name": "合成金属F-C",
+		"desc": "第一代合金,硬度和导电率良好",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_1>=1",
+		"max": 5
+	},
+	{
+		"id": "sj_met",
+		"name": "神经材料",
+		"desc": "将神识附着在FC合金上,达到更优良的金属性能",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_2>=1",
+		"max": 5
+	},
+	{
+		"id": "tian",
+		"name": "钛板",
+		"desc": "具有金属光泽,有延展性,密度小,容易加工",
+		"group": "金属",
+		"tags": "",
+		"require": "g.land_wa>=3 &&g.metal_1>=8",
+		"max": 5
+	},
+	{
+		"id": "frs",
+		"name": "废热水",
+		"desc": "高污染的流体,不可直接倾倒在自然环境中",
+		"group": "流体",
+		"tags": "",
+		"require": "g.frs>=1",
+		"max": 10,
+		"mod": {
+			"stamina.rate": -0.01,
+			"tili.rate": -0.01,
+			"hp.rate": -0.01
+		}
+	},
+	{
+		"id": "jls",
+		"name": "晶流水",
+		"desc": "低温流体,有着优良的散热性,是用途广泛的一种流体",
+		"group": "流体",
+		"tags": "",
+		"require": "g.liu_yy>=3 &&g.cold_core>=1",
+		"max": 1
+	},
+	{
+		"id": "cold_core",
+		"name": "冰冻核心",
+		"desc": "一块寒冷的晶体,从极寒之地获得,广泛应用于低温生产工作",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.cold_core>=1",
+		"max": 12
+	},
+	{
+		"id": "dirty_core",
+		"name": "污浊核心",
+		"desc": "一块凝结了高能污浊的晶体,由于有着外壳保护,所以不会对自身造成伤害",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.dirty_core>=1",
+		"max": 0
+	},
+	{
+		"id": "snp_data",
+		"name": "测绘资料",
+		"desc": "对自然结构的测绘资料,对于研究很有帮助",
+		"group": "知识",
+		"tags": "",
+		"require": "g.Knowledge_integration_1>=1&&g.Knowledge_class_1>=1",
+		"mod": {
+			"ganwu.max": 0.5,
+			"ganwu.rate": 0.02
+		},
+		"max": 5
+	},
+	{
+		"id": "star_map",
+		"name": "粗糙天文记录",
+		"desc": "对天文学的研究笔记",
+		"group": "知识",
+		"tags": "",
+		"require": "g.xiulian_astro_zhuji_2>=1",
+		"mod": {
+			"ganwu.max": 1.1
+		},
+		"max": 5
+	},
+	{
+		"id": "super_mind",
+		"name": "超识",
+		"desc": "集群思维",
+		"group": "知识",
+		"tags": "",
+		"locked": true,
+		"mod": {
+			"ganwu.max": 2
+		},
+		"max": 5
+	},
+	{
+		"id": "r_adv_w_sj1",
+		"name": "反材料工具",
+		"desc": "小型的定制化武器,可以快速破除敌军的防御,一般用于小规模战争",
+		"group": "武器",
+		"tags": "",
+		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
+		"mod": {
+			"f_power.max": 5
+		},
+		"max": 2
+	},
+	{
+		"id": "dirty_lingti",
+		"name": "纯浊灵体",
+		"desc": "纯净灵体,但表达了污浊核心的反相性质",
+		"group": "灵体",
+		"tags": "",
+		"require": "g.xiulian_bio_dirty_1>=1 &&g.lingti_xue>=1",
+		"max": 2
+	},
+	{
+		"id": "xiulian_heli_1",
+		"name": "初步认识合理之理",
+		"desc": "初步认识合理之理",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jizhun_1",
+		"name": "基准探讨",
+		"desc": "基准探讨",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_fangyuan_1",
+		"name": "寻找规矩",
+		"desc": "寻找规矩",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_1",
+		"name": "悠久呼吸",
+		"desc": "悠久呼吸",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_li_1_controll",
+		"name": "初步流控制",
+		"desc": "初步流控制",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_li_1_soild",
+		"name": "合理实质化",
+		"desc": "合理实质化",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_li_1_esc",
+		"name": "合理外放",
+		"desc": "合理外放",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"heli_missile": true
+		}
+	},
+	{
+		"id": "xiulian_ld_body_1",
+		"name": "初等身体改造",
+		"desc": "初等身体改造",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_body_2",
+		"name": "超然形式I",
+		"desc": "超然形式I",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_body_3",
+		"name": "超然形式II",
+		"desc": "超然形式I",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_dw_guancha",
+		"name": "双波生命实验",
+		"desc": "双波生命实验",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_astro_zhuji_1",
+		"name": "大气假说",
+		"desc": "大气假说",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_astro_zhuji_1_1",
+		"name": "磁场假说",
+		"desc": "磁场假说",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_1",
+		"name": "FC切割实验",
+		"desc": "FC切割实验",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_astro_zhuji_2",
+		"name": "天体轨迹",
+		"desc": "天体轨迹",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_astro_zhuji_3",
+		"name": "混沌揭示",
+		"desc": "混沌揭示",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_eye_zhuji_1",
+		"name": "外置扩展眼镜",
+		"desc": "外置扩展眼镜",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_change_metal_1",
+		"name": "固液变化",
+		"desc": "固液变化",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_change_metal_2",
+		"name": "固气变化",
+		"desc": "固气变化",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_change_metal_3",
+		"name": "三态转化",
+		"desc": "三态转化",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_1",
+		"name": "合金工艺",
+		"desc": "合金工艺",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_2",
+		"name": "神经物质",
+		"desc": "神经物质",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_zhuji_1",
+		"name": "筑基前置-I",
+		"desc": "筑基前置-I",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_zhuji_2",
+		"name": "筑基零重",
+		"desc": "筑基零重",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_x_info_1",
+		"name": "无线通讯",
+		"desc": "无线通讯",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_cold",
+		"name": "极寒环境适应",
+		"desc": "极寒环境适应",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_panpa",
+		"name": "攀登技巧",
+		"desc": "攀登技巧",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_change_res",
+		"name": "低温研究",
+		"desc": "低温研究",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_eye_adv_astro",
+		"name": "进阶天文观测",
+		"desc": "进阶天文观测",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_info_cold_1",
+		"name": "低温传播实验",
+		"desc": "低温传播实验",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_cold_1",
+		"name": "低温导电实验",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_cold_1",
+		"name": "低温材料性质",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_bio_cold_1",
+		"name": "低温生物样本",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_bio_dirty_1",
+		"name": "污浊研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_death_1",
+		"name": "死谜",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "tapestries",
+		"name": "tapestries",
+		"desc": "History, lore, and even spells, may be woven in their threads.",
+		"max": 3,
+		"mod": {
+			"research.max": 5
+		}
+	},
+	{
+		"id": "runestones",
+		"name": "rune stones",
+		"group": "runes",
+		"desc": "Runes carved on pieces of stone.",
+		"tags": "t_runes",
+		"max": 10,
+		"mod": {
+			"research.max": "1%",
+			"runelore.rate": 0.1,
+			"runelore.max": 0.03
+		},
+		"flavor": ""
+	},
+	{
+		"id": "firerune",
+		"name": "flame runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune etched with lines of fire",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "waterrune",
+		"name": "water runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune lined in flowing water",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "spiritrune",
+		"name": "spirit runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "A Runestone carved in bone; it seems to whisper.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "airrune",
+		"name": "air runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune etched with solid air",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "earthrune",
+		"name": "earth runes",
+		"tags": "t_runes,elementalrunes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune ingrained with moonstone",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "lightrune",
+		"name": "light runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "Rune ingrained with sparkling diamond",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "shadowrune",
+		"name": "shadow runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "Black upon black, only a trained eye can distinguish the tiniest difference in the shades of black.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "manarune",
+		"name": "mana runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "The surging energy of this rune can be felt even by the least talented of mages.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "naturerune",
+		"name": "nature runes",
+		"tags": "t_runes,primaticrunes",
+		"group": "runes",
+		"desc": "Formed out of a complicated tangle of stems and leaves.",
+		"max": 10,
+		"mod": {
+			"research.max": 10
+		},
+		"flavor": ""
+	},
+	{
+		"id": "chaosrune",
+		"name": "chaos runes",
+		"tags": "primordialrunes",
+		"group": "runes",
+		"desc": "Unmistakably a rune, even if it's impossible to tell quite what it looks like.",
+		"max": 10,
+		"mod": {
+			"chaos.max": 1
+		},
+		"flavor": "You can do anything!"
+	},
+	{
+		"id": "timerune",
+		"name": "time runes",
+		"tags": "primordialrunes",
+		"group": "runes",
+		"desc": "Time flows along the grooves of the rune",
+		"mod": {
+			"tempus.rate": 0.001,
+			"bf.rate": 0.01
+		},
+		"max": 3,
+		"flavor": "It's not easy to look at."
+	},
+	{
+		"id": "bodies",
+		"group": "necromancy",
+		"desc": "Bodies for necromantic magic",
+		"max": 1,
+		"mod": {
+			"dissection.rate": 0.01,
+			"embalming.rate": 0.01
+		}
+	},
+	{
+		"id": "bones",
+		"group": "necromancy",
+		"desc": "Human Bones",
+		"max": 10
+	},
+	{
+		"id": "skulls",
+		"group": "necromancy",
+		"desc": "Human Skull",
+		"max": 5
+	},
+	{
+		"id": "bonedust",
+		"name": "bone dust",
+		"group": "necromancy",
+		"desc": "The dust of human bones.",
+		"max": 10
+	},
+	{
+		"id": "souls",
+		"group": "necromancy",
+		"desc": "Imprisoned souls of living creatures.",
+		"max": 1,
+		"mod": {
+			"shadow.rate": 0.001,
+			"spirit.rate": 0.001,
+			"spiritlore.rate": 0.01
+		},
+		"flavor": "Is it wrong?"
+	},
+	{
+		"id": "schematic",
+		"name": "schematics",
+		"desc": "Schematic of Thurn the Artificer",
+		"max": 3,
+		"mod": {
+			"crafting.max": 0.1,
+			"crafting.rate": "5%"
+		}
+	},
+	{
+		"id": "codices",
+		"name": "codices",
+		"group": "books",
+		"desc": "Codex of arcane lore",
+		"max": 10,
+		"mod": {
+			"research.rate": 0.07,
+			"research.max": 5,
+			"lore.rate": 0.1
+		}
+	},
+	{
+		"id": "tomes",
+		"name": "tomes",
+		"group": "books",
+		"desc": "A hefty tome of knowledge.",
+		"max": 5,
+		"mod": {
+			"research.max": 7,
+			"arcana.rate": 0.001,
+			"lore.rate": 0.1,
+			"lore.max": 0.1
+		}
+	},
+	{
+		"id": "gems",
+		"name": "gemstones",
+		"group": "gems",
+		"desc": "Various fine gemstones.",
+		"max": 5
+	},
+	{
+		"id": "managem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "arcane gem",
+		"desc": "Gem infused with arcane energy.",
+		"max": 2
+	},
+	{
+		"id": "firegem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "fire gem",
+		"desc": "Gem imbued with the essence of fire.",
+		"max": 2
+	},
+	{
+		"id": "watergem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "water gem",
+		"desc": "Gem imbued with the essence of water.",
+		"max": 2
+	},
+	{
+		"id": "naturegem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "nature gem",
+		"desc": "Physical essence of life.",
+		"max": 2,
+		"flavor": "The force from the beginning"
+	},
+	{
+		"id": "earthgem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "earth gem",
+		"desc": "Gem imbued with the essence of earth.",
+		"max": 2
+	},
+	{
+		"id": "airgem",
+		"tags": "magicgems,prismaticgems,elementalgems",
+		"group": "gems",
+		"name": "air gem",
+		"desc": "Gem imbued with the essence of air.",
+		"max": 2
+	},
+	{
+		"id": "shadowgem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "shadow gem",
+		"desc": "Gem imbued with the essence of darkness.",
+		"max": 2
+	},
+	{
+		"id": "lightgem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "light gem",
+		"desc": "Gem imbued with the essence of light.",
+		"max": 2
+	},
+	{
+		"id": "spiritgem",
+		"tags": "magicgems,prismaticgems",
+		"group": "gems",
+		"name": "spirit gem",
+		"desc": "Gem imbued with raw spirit.",
+		"max": 2
+	},
+	{
+		"id": "bloodgem",
+		"tags": "magicgems",
+		"group": "gems",
+		"name": "blood gem",
+		"desc": "A little magic and a lot of blood",
+		"max": 2,
+		"mod": {
+			"hp.max": 1
+		}
+	},
+	{
+		"id": "timegem",
+		"name": "time gem",
+		"tags": "magicgems,primordialgems",
+		"group": "gems",
+		"desc": "Crafted from gems which do not yet exist.",
+		"mod": {
+			"gems.rate": -0.005,
+			"tempus.rate": 0.01
+		},
+		"max": 3
+	},
+	{
+		"id": "voidgem",
+		"name": "void gem",
+		"tags": "magicgems,primordialgems",
+		"group": "gems",
+		"desc": "The space where a gem once was.",
+		"mod": {
+			"player.resist.void": 1
+		},
+		"max": 3,
+		"flavor": "There was a GEM here.  It's gone now"
+	},
+	{
+		"id": "chaosgem",
+		"name": "chaos gem",
+		"tags": "magicgems,primordialgems",
+		"group": "gems",
+		"desc": "Every time you look at it, it looks different.",
+		"mod": {
+			"chaos.rate": 0.01
+		},
+		"max": 3,
+		"flavor": "Chaos,chaos!"
+	},
+	{
+		"id": "ichor",
+		"tags": "reagent",
+		"desc": "The blood of gods.",
+		"flavor": "The secret courtesy that courses like ichor",
+		"max": 5
+	},
+	{
+		"id": "sindel",
+		"name": "star shard",
+		"desc": "A glowing cinder of the stars.",
+		"flavor": "The pillars broke; the stars fell screaming from the sky",
+		"max": 3,
+		"mod": {
+			"light.rate": 0.1,
+			"player.resist.shadow": 1
+		}
+	},
+	{
+		"id": "dreams",
+		"desc": "We are such stuff as dreams are made of. And our little life is rounded with a sleep.",
+		"max": 3,
+		"mod": {
+			"weary.rate": -0.1,
+			"arcana.rate": "1%"
+		},
+		"flavor": "In your wildest..."
+	},
+	{
+		"id": "herbs",
+		"group": "reagent",
+		"desc": "Special plants for potions and alchemy.",
+		"max": 10
+	},
+	{
+		"id": "potionessence",
+		"name": "potion base",
+		"group": "reagent",
+		"desc": "Basic essence for creating advanced potions.",
+		"flavor": "Smells faintly of milk.",
+		"max": 3
+	},
+	{
+		"id": "space",
+		"name": "地板空间",
+		"desc": "Space Available",
+		"hide": true,
+		"reverse": true,
+		"max": 0
+	},
+	{
+		"id": "time",
+		"desc": "",
+		"flavor": "餐玉驻年龄，吞霞反容颜",
+		"hide": true,
+		"name": "时间",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "alculation",
+		"desc": "计算力",
+		"flavor": "计算力",
+		"hide": true,
+		"name": "算力",
+		"val":1,
+		"max": 1
+	},
+	{
+		"id": "f_power",
+		"desc": "战斗评级",
+		"flavor": "战斗评级",
+		"hide": true,
+		"name": "战斗评级",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "f_area",
+		"desc": "领土面积",
+		"flavor": "领土面积",
+		"hide": true,
+		"name": "领土面积",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "human_power",
+		"desc": "人力",
+		"flavor": "人力",
+		"hide": true,
+		"name": "人力",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "age",
+		"desc": "",
+		"flavor": "餐玉驻年龄，吞霞反容颜",
+		"hide": true,
+		"name": "寿命",
+		"val":21900,
+		"max": 21900
+	},
+	{
+		"id": "tili",
+		"tags": "Bar",
+		"desc": "",
+		"flavor": "行动所用",
+		"unit": false,
+		"name": "体力",
+		"val":10,
+		"color": "#29d61d",
+		"locked": false,
+		"max": 10
+	},
+	{
+		"id": "shenshi",
+		"tags": "Bar,prismatic",
+		"desc": "脑中奥秘",
+		"unit": false,
+		"color": "#9400D3",
+		"require": "g.shenshi_1>=4",
+		"name": "神识",
+		"max": 1
+	},
+	{
+		"id": "heli",
+		"tags": "Bar,prismatic",
+		"desc": "合乎天地道理的力量",
+		"unit": false,
+		"color": "#ffeb00",
+		"require": "touch_daoli",
+		"name": "合理",
+		"max": 3
+	},
+	{
+		"id": "chaos",
+		"tags": "Bar,prismatic",
+		"desc": "无序的,不合理的",
+		"unit": false,
+		"color": "#808080",
+		"require": "g.xiulian_astro_zhuji_3>=1",
+		"name": "混沌",
+		"max": 3
+	},
+	{
+		"id": "elect",
+		"tags": "Bar,prismatic",
+		"desc": "致命能量",
+		"unit": false,
+		"color": "#00BFFF",
+		"require": "g.energ_1>=1",
+		"name": "电能",
+		"max": 1
+	},
+	{
+		"id": "mana",
+		"tags": "manas,prismatic",
+		"desc": "Raw magical energy",
+		"unit": false,
+		"require": "lore",
+		"name": "mana",
+		"max": 5
+	},
+	{
+		"id": "fire",
+		"require": "firelore",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"desc": "Fire Mana",
+		"max": 0
+	},
+	{
+		"id": "air",
+		"require": "airlore",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"desc": "Air Mana",
+		"max": 0
+	},
+	{
+		"id": "earth",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"require": "earthlore",
+		"desc": "Earth Mana",
+		"max": 0
+	},
+	{
+		"id": "water",
+		"unit": false,
+		"tags": "manas,element,prismatic",
+		"desc": "Water Mana",
+		"require": "waterlore",
+		"max": 0
+	},
+	{
+		"id": "nature",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"require": "naturelore",
+		"desc": "Nature Mana",
+		"max": 0
+	},
+	{
+		"id": "shadow",
+		"name": "shadow",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"require": "shadowlore",
+		"desc": "Shadow mana",
+		"max": 0
+	},
+	{
+		"id": "light",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"require": "lightlore",
+		"desc": "Light mana",
+		"max": 0
+	},
+	{
+		"id": "spirit",
+		"tags": "manas,prismatic",
+		"unit": false,
+		"desc": "Spirit mana",
+		"require": "spiritlore",
+		"max": 0
+	},
+	{
+		"id": "tempus",
+		"require": "chronomancy",
+		"tags": "manas,primordial",
+		"unit": false,
+		"desc": "Time incarnate. If only...",
+		"max": 0
+	},
+	{
+		"id": "void",
+		"tags": "manas,primordial",
+		"unit": false,
+		"desc": "Nothingness. No current use.",
+		"flavor": "",
+		"max": 0
+	}
+]

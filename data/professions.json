@@ -1,0 +1,15 @@
+[
+	{
+		"id": "jeweler",
+		"mod": {
+			"gold.rate": "1+10%"
+		}
+	},
+	{
+		"id": "sage",
+		"desc": "use oracular powers to answer the questions of supplicants",
+		"mod": {
+			"gold.rate": "0.8+10%"
+		}
+	}
+]

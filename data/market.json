@@ -1,0 +1,136 @@
+[
+	{
+		"id": "market_shortsword",
+		"name": "短剑",
+		"desc": "一把好用的短剑",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 10
+		},
+		"loot": {
+			"shortsword": "100%"
+		}
+	},
+	{
+		"id": "market_handaxe",
+		"name": "手斧",
+		"desc": "一把好用的手斧",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 10
+		},
+		"loot": {
+			"handaxe": "100%"
+		}
+	},
+	{
+		"id": "market_gloves",
+		"name": "皮手套",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 5
+		},
+		"loot": {
+			"gloves": "100%"
+		}
+	},
+	{
+		"id": "market_boots",
+		"name": "布鞋",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 3
+		},
+		"loot": {
+			"boots": "100%"
+		}
+	},
+	{
+		"id": "market_hat",
+		"name": "小帽子",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 3
+		},
+		"loot": {
+			"hat": "100%"
+		}
+	},
+	{
+		"id": "market_jerkin",
+		"name": "坎肩",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 7
+		},
+		"loot": {
+			"jerkin": "100%"
+		}
+	},
+	{
+		"id": "market_pants",
+		"name": "皮裤",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 5
+		},
+		"loot": {
+			"pants": "100%"
+		}
+	},
+	{
+		"id": "market_fch",
+		"name": "云翼头盔",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 3
+		},
+		"loot": {
+			"fc_helmet": "100%"
+		}
+	},
+	{
+		"id": "market_fca",
+		"name": "云翼护甲",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 4
+		},
+		"loot": {
+			"fc_armor": "100%"
+		}
+	},
+	{
+		"id": "market_fcs",
+		"name": "云翼护腿",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 3
+		},
+		"loot": {
+			"fc_shins": "100%"
+		}
+	},
+	{
+		"id": "market_fcf",
+		"name": "云翼战靴",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 2
+		},
+		"loot": {
+			"fc_foot": "100%"
+		}
+	},
+	{
+		"id": "market_sj_sword_1",
+		"name": "神识流剑",
+		"require": "g.sj_met>=5 &&g.metal_app>=5",
+		"cost": {
+			"sj_met": 5
+		},
+		"loot": {
+			"sj_sword_1": "100%"
+		}
+	}
+]

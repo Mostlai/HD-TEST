@@ -1,0 +1,97 @@
+{
+	"module": "legacy",
+	"data": {
+		"dungeons": [
+			{
+				"id": "xoth",
+				"name": "xoth"
+			}
+		],
+		"monsters": [
+			{
+				"id": "shoggoth",
+				"name": "shoggoth",
+				"desc": "",
+				"biome": "ice",
+				"level": 27
+			},
+			{
+				"id": "nyarlathotep",
+				"name": "nyarlathotep",
+				"desc": "",
+				"biome": "air",
+				"level": 30
+			},
+			{
+				"id": "hastur",
+				"name": "hastur",
+				"desc": "",
+				"biome": "air",
+				"level": 30
+			},
+			{
+				"id": "abholos",
+				"name": "abholos",
+				"desc": "A grey mass of pustulous malevolence. (Devourer in the Mist)",
+				"biome": "air",
+				"level": 30
+			},
+			{
+				"id": "alala",
+				"name": "alala",
+				"desc": "Entity of living sound.",
+				"biome": "air",
+				"level": 30
+			},
+			{
+				"id": "ghatanothoa",
+				"name": "ghatanothoa",
+				"desc": "",
+				"biome": "seas",
+				"level": 30
+			},
+			{
+				"id": "golgoroth",
+				"name": "gol-goroth the forgotten",
+				"desc": "",
+				"biome": "air",
+				"level": 30
+			},
+			{
+				"id": "idhyaa",
+				"name": "idh-yaa the worm",
+				"desc": "First bride of Cthulhu",
+				"biome": "earth",
+				"level": 30
+			},
+			{
+				"id": "ythogtha",
+				"name": "ythogtha",
+				"desc": "",
+				"biome": "seas",
+				"level": 30
+			},
+			{
+				"id": "zothommog",
+				"name": "zoth-ommog",
+				"desc": "Third son of cthulhu with a razor fanged, reptilian head.",
+				"biome": "seas",
+				"level": 30
+			},
+			{
+				"id": "yogsothoth",
+				"name": "yog-sothoth",
+				"desc": "",
+				"biome": "voids",
+				"level": 90
+			},
+			{
+				"id": "azathoth",
+				"name": "azathoth",
+				"desc": "The blind idiot god at the center of infinity.",
+				"biome": "voids",
+				"level": 100
+			}
+		]
+	}
+}

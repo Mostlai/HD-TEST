@@ -1,0 +1,33 @@
+[
+	{
+		"id": "ankh"
+	},
+	{
+		"id": "cloak",
+		"mod": {
+			"defense": 1
+		}
+	},
+	{
+		"id": "ring1",
+		"mod": {
+			"defense": 1
+		}
+	},
+	{
+		"id": "belt1",
+		"mod": {
+			"pouch.max": 2,
+			"purse.max": 1
+		},
+		"slot": "waist"
+	},
+	{
+	},
+	{
+	},
+	{
+	},
+	{
+	}
+]
