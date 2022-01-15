@@ -595,7 +595,7 @@
 		"name":"微波科学",
 		"desc":"对不可见的微波展开应用分析",
 		"level": 3,
-		"need": "g.xiulian_ld_dw_guancha>=1 && g.rlt_guancha>=8 && g.energ_high_1>=8 && slight",
+		"need": "g.xiulian_ld_dw_guancha>=1 && g.rlt_guancha>=8 && g.energ_high_1>=8",
 		"buy": {
 			"books": 4
 		},
