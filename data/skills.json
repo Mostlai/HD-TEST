@@ -348,6 +348,7 @@
 		},
 		"mod": {
 			"lg.max": 0.3,
+			"super_mind.rate": 0.005,
 			"shenshi.max": 0.5
 		}
 	},
