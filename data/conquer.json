@@ -34,29 +34,5 @@
 			"alculation.rate": -0.2,
 			"human_power.max": -20 
 		}
-	},
-	{
-		"id": "conquer_2",
-		"name": "中型城市",
-		"desc": "XXXXXXX",
-		"r_power": 75,
-		"power": 75,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.02,
-		"power_rate": 0.02,
-		"area": 15,
-		"max": 0,
-		"val": 0,
-		"require": "g.shenshi_3>=3",
-		"scost": {
-			"money": 10
-		},
-		"acost": {
-			"money": 5 
-		},
-		"result":{
-			"human_power.max": -10
-		}
 	}
 ]

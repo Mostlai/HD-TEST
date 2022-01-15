@@ -367,26 +367,6 @@
 		}
 	},
 	{
-		"id": "bio_astro_upd",
-		"name": "超压升级",
-		"desc": "进一步研究生命的极端生存",
-		"max": 1,
-		"require": "g.biology_ast_1>=5",
-		"cost": {
-			"super_mind": 5,
-			"money": 300,
-			"tian": 10,
-			"zero_crystal": 12,
-			"snp_data": 10,
-			"exe_paper": 14,
-			"books": 5,
-			"ganwu": 250
-		},
-		"mod": {
-			"biology_ast_1.max":5 
-		}
-	},
-	{
 		"id": "dirc_lunch",
 		"name": "定向发射",
 		"desc": "实现能量的定向发射",

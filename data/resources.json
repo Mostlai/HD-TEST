@@ -75,6 +75,18 @@
 		"max": 3
 	},
 	{
+		"id": "life_crystal",
+		"name": "活性结晶",
+		"desc": "低温下生物结晶",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.life_crystal>0",
+		"mod": {
+			"zero_crystal.rate": 0.1
+		},
+		"max": 6
+	},
+	{
 		"id": "cu_iron",
 		"name": "铁板",
 		"desc": "最普通的金属",
@@ -184,6 +196,18 @@
 			"ganwu.max": 1.1
 		},
 		"max": 5
+	},
+	{
+		"id": "star_map_1",
+		"name": "天文记录",
+		"desc": "低温降噪环境的观测记录",
+		"group": "知识",
+		"tags": "",
+		"require": "g.star_map_1>0",
+		"mod": {
+			"ganwu.max": 3
+		},
+		"max": 6
 	},
 	{
 		"id": "super_mind",
@@ -564,6 +588,76 @@
 	{
 		"id": "xiulian_death_1",
 		"name": "死谜",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_death_2",
+		"name": "流彩梦境",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_chaos_ld_1",
+		"name": "混沌集合",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_dx_1",
+		"name": "合理之表",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_dx_2",
+		"name": "灵虚合理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_math_jihe_1",
+		"name": "几何原理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_math_kj_1",
+		"name": "非实空间坐标",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_math_fc_1",
+		"name": "灵虚幂次方程",
 		"desc": "",
 		"hide": true,
 		"group": "修行",

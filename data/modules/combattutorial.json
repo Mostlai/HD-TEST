@@ -190,7 +190,7 @@
 					"dmg": "6~7",
 					"type": "slashing"
 				},
-				"loot": {"money":1, "dirty_lingti":0.3}
+				"loot": {"money":1, "dirty_lingti":0.2}
 			},
 			{
 				"id": "youhun_3",
@@ -203,7 +203,7 @@
 					"dmg": "6~7",
 					"type": "slashing"
 				},
-				"loot": {"money":1, "dirty_lingti":0.3}
+				"loot": {"money":1, "dirty_lingti":0.2}
 			},
 			{
 				"id": "ice_1",

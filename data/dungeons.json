@@ -543,57 +543,6 @@
 		]
 	},
 	{
-		"id": "charredkeep",
-		"name": "Charred Keep",
-		"desc": "Its smouldering ruins once more begin to burn.",
-		"level": 18,
-		"run": {
-			"stamina": 3
-		},
-		"length": 100,
-		"result": {
-			"title": "Lock Slayer",
-			"gold": "300~500",
-			"ichor": 3
-		},
-		"boss": {"100":[
-			"reddragon",
-			"karnivex",
-			"reddragon"
-		]},
-		"spawns": [
-			"mithrilgolem",
-			[
-				"bloodgolem",
-				"bloodgolem"
-			],
-			[
-				"magicmirror",
-				"magicmirror"
-			],
-			"maturereddragon",
-			[
-				"manticore",
-				"manticore"
-			],
-			"reddragon",
-			"demon",
-			"jazid",
-			[
-				"greendragon",
-				"greendragon"
-			],
-			"balrog",
-			"ancientvampire",
-			[
-				"masterswordsman",
-				"masterswordsman",
-				"masterswordsman"
-			]
-		],
-		"flavor": "Burned black by its own denizens"
-	},
-	{
 		"id": "belowgorborung",
 		"name": "Below Mt Gorborung",
 		"desc": "They say the roots of the mountain extend deeper than its heights.",

@@ -331,6 +331,49 @@
 		}
 	},
 	{
+		"id": "ld_tilihuifu",
+		"name": "体力恢复(生命构造)",
+		"desc": "运用神识改良身体机能",
+		"tags": "生命构造",
+		"require": "g.super_mind>=4",
+		"max": 2,
+		"cost": {
+			"money": 220,
+			"ganwu": 150,
+			"star_map": 40,
+			"tili": 10,
+			"super_mind": 5,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"tili.max": -1,
+			"tili.rate": -0.6
+		}
+	},
+	{
+		"id": "ld_tilihuifu2",
+		"name": "体力恢复II(生命构造)",
+		"desc": "运用神识改良身体机能",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_dw_guancha>=1",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 150,
+			"star_map": 40,
+			"tili": 11,
+			"star_map": 55,
+			"super_mind": 5,
+			"r_adv_w_sj1": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"tili.rate": -1
+		}
+	},
+	{
 		"id": "astro_zhuji_1",
 		"name": "大气假说(通天阶梯)",
 		"desc": "通过不断地实验与观察,你猜想你所在的大地是一个被气体包裹着的球体",
@@ -712,6 +755,7 @@
 		"require": "g.xiulian_change_res>=1 && g.jls>=5 && g.astronomy_1>=5",
 		"max": 2,
 		"cost": {
+			"lg": 7,
 			"money": 300,
 			"ganwu": 140,
 			"heli": 2,
@@ -739,6 +783,7 @@
 		"require": "g.xiulian_change_res>=1 && g.jls>=10 && g.mc_guancha>=5",
 		"max": 2,
 		"cost": {
+			"lg": 7,
 			"money": 300,
 			"ganwu": 140,
 			"heli": 2,
@@ -766,6 +811,7 @@
 		"require": "g.xiulian_change_res>=1",
 		"max": 2,
 		"cost": {
+			"lg": 7,
 			"money": 300,
 			"ganwu": 150,
 			"heli": 2,
@@ -794,6 +840,7 @@
 		"require": "g.xiulian_change_res>=1 && g.metal_app>=6 && g.building_1>=5 &&g.jls>=10",
 		"max": 2,
 		"cost": {
+			"lg": 7,
 			"money": 300,
 			"ganwu": 150,
 			"cu_iron": 20,
@@ -825,6 +872,7 @@
 		"require": "g.xiulian_change_res>=1 && g.biology_ast_1>=10 && g.bio_metal_1>=5 &&g.jls>=10",
 		"max": 2,
 		"cost": {
+			"lg": 11,
 			"money": 300,
 			"ganwu": 150,
 			"sj_met": 5,
@@ -855,6 +903,7 @@
 		"require": "g.dirty_core>=3 && g.xiulian_bio_cold_1>=1",
 		"max": 2,
 		"cost": {
+			"lg": 11,
 			"money": 300,
 			"ganwu": 160,
 			"sj_met": 2,
@@ -865,10 +914,9 @@
 			"human_power": 40,
 			"alculation": 10,
 			"books": 5,
-			"zero_crystal": 12,
+			"zero_crystal": 19,
 			"snp_data": 10,
 			"paper": 40,
-			"books": 5,
 			"jls": 20,
 			"exe_paper": 12
 		},
@@ -886,6 +934,7 @@
 		"require": "g.shenshi_1>=10",
 		"max": 2,
 		"cost": {
+			"lg":11,
 			"money": 300,
 			"ganwu": 160,
 			"sj_met": 2,
@@ -893,15 +942,245 @@
 			"human_power": 20,
 			"alculation": 10,
 			"books": 5,
-			"zero_crystal": 8,
+			"zero_crystal": 19,
 			"snp_data": 10,
 			"paper": 40,
-			"books": 3,
 			"exe_paper": 10
 		},
 		"result": {
 			"time": 100,
 			"xiulian_death_1" : 1
+		}
+	},
+	{
+		"id": "death_2",
+		"name": "流彩梦境(死亡)",
+		"desc": "流光溢彩的梦,令人沉醉的梦,你越来越能听到梦境的呼唤",
+		"tags": "死亡",
+		"require": "g.dream_death>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 2,
+			"money": 300,
+			"ganwu": 160,
+			"sj_met": 5,
+			"heli": 2,
+			"alculation": 40,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 10,
+			"paper": 40,
+			"star_map": 65,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 1,
+			"xiulian_death_2" : 1
+		}
+	},
+	{
+		"id": "chaos_ld_1",
+		"name": "混沌集合(流动)",
+		"desc": "在纯浊影响下,混沌表达了一定规律的数理逻辑",
+		"tags": "流动",
+		"require": "g.dirty_lingti>=5 && g.chaos_up>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 20,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"chaos": 2,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 60,
+			"books": 5,
+			"zero_crystal": 27,
+			"snp_data": 12,
+			"star_map": 65,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 182,
+			"frs": 19,
+			"xiulian_chaos_ld_1" : 1
+		}
+	},
+	{
+		"id": "heli_dx_1",
+		"name": "合理之表(导向)",
+		"desc": "合理在纯浊的状态下,呈现高度逻辑化的形式",
+		"tags": "导向",
+		"require": "g.xiulian_chaos_ld_1>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 20,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"heli": 2,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"star_map": 60,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 91,
+			"frs": 19,
+			"xiulian_heli_dx_1" : 1
+		}
+	},
+	{
+		"id": "heli_dx_2",
+		"name": "灵虚合理(导向)",
+		"desc": "灵体开发的数学进一步指导了合理的用途",
+		"tags": "导向",
+		"require": "g.fanshe_math>=4 && g.energ_shenshi>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"jls": 30,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"heli": 10,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 35,
+			"snp_data": 12,
+			"star_map": 60,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 77,
+			"frs": 29,
+			"xiulian_heli_dx_2" : 1
+		}
+	},
+	{
+		"id": "math_jihe_1",
+		"name": "几何原理(几何)",
+		"desc": "初步构想物体的几何形式",
+		"tags": "几何",
+		"require": "g.space_mind>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"sj_met": 10,
+			"heli": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 27,
+			"snp_data": 12,
+			"star_map": 65,
+			"paper": 40,
+			"books": 5,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 100,
+			"frs": 29,
+			"xiulian_math_jihe_1" : 1
+		}
+	},
+	{
+		"id": "math_kj_1",
+		"name": "非实空间坐标(空间系)",
+		"desc": "灵体所表达的非实空间占用",
+		"tags": "空间系",
+		"require": "g.space_mind>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"sj_met": 10,
+			"heli": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"books": 5,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 100,
+			"frs": 29,
+			"xiulian_math_kj_1" : 1
+		}
+	},
+	{
+		"id": "math_fc_1",
+		"name": "灵虚幂次方程(空间系)",
+		"desc": "普通的幂次方程无法计算灵体",
+		"tags": "空间系",
+		"require": "g.space_mind>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"sj_met": 10,
+			"heli": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"books": 5,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 100,
+			"frs": 29,
+			"xiulian_math_fc_1" : 1
 		}
 	}
 ]

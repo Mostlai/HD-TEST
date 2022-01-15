@@ -270,6 +270,61 @@
 		}
 	},
 	{
+		"id": "write_starmap_2",
+		"name": "天文观测",
+		"desc": "在低温望远镜下进行更细微的观测",
+		"verb": "观测中",
+		"require": "g.star_map_1>0",
+		"need": "Telescope",
+		"length": 8,
+		"fill": [
+			"star_map_1"
+		],
+		"cost": {
+			"star_map": 10,
+			"jls": 2,
+			"ganwu": 20
+		},
+		"run": {
+			"time": -2,
+			"jls":0.2,
+			"tili": 0.3,
+			"stamina": 0.2
+		},
+		"result": {
+			"star_map_1": 1
+		}
+	},
+	{
+		"id": "huoxi_hc",
+		"name": "活性合成",
+		"desc": "在低温下对零结晶进行加工",
+		"verb": "合成中",
+		"require": "g.life_crystal>0",
+		"need": "ColdBio",
+		"length": 8,
+		"fill": [
+			"life_crystal"
+		],
+		"cost": {
+			"zero_crystal": 10,
+			"sj_met":1,
+			"jls": 2,
+			"ganwu": 20
+		},
+		"run": {
+			"time": -2,
+			"jls":0.2,
+			"sj_met":0.1,
+			"hp":0.1,
+			"tili": 0.3,
+			"stamina": 0.2
+		},
+		"result": {
+			"life_crystal": 1.2
+		}
+	},
+	{
 		"id": "rest",
 		"tags": "t_rest",
 		"name": "歇息",
@@ -332,8 +387,8 @@
 		"require": "heli",
 		"need": "g.runner.hasType('skill')",
 		"every": {
-			"25": {
-				"result.runner.exp": "0.02:25"
+			"30": {
+				"result.runner.exp": "0.01:30"
 			}
 		},
 		"cost": {
@@ -412,6 +467,8 @@
 		"length": 30,
 		"cost": {
 			"elect": 5,
+			"star_map": 30,
+			"zero_crystal": 3,
 			"heli": 7
 		},
 		"run": {
@@ -425,12 +482,57 @@
 		}
 	},
 	{
+		"id": "hjgz",
+		"name": "环境改造",
+		"desc": "神观的运用使你对环境的控制和利用有了新的理解",
+		"verb": "改造中",
+		"require": "g.energ_shenshi>=5 && g.shenshi_4>=5",
+		"max": 1,
+		"length": 30,
+		"cost": {
+			"money": 400,
+			"super_mind": 6,
+			"sj_met": 10,
+			"star_map": 65,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"zero_crystal": 10
+		},
+		"run": {
+			"money": 0.5,
+			"time": -0.5,
+			"tili": 0.2
+		},
+		"result": {
+			"space.max": -10
+		}
+	},
+	{
+		"id": "huanjweihu",
+		"name": "环境维护",
+		"desc": "对周围环境进行治理",
+		"verb": "",
+		"require": "g.hjgz>=1",
+		"cost": {
+			"heli": 2,
+			"chaos": 2,
+			"elect": 4,
+			"tili": 0.7,
+			"stamina": 0.8
+		},
+		"result": {
+			"time": 1,
+			"money": 1,
+			"ganwu": 0.5
+		}
+	},
+	{
 		"id": "quchu_frs",
 		"name": "驱除废热",
 		"desc": "手动消耗生命力和混沌净化废热水",
 		"verb": "",
 		"require": "g.frs>0",
-		"fill": "books",
 		"cost": {
 			"frs": 2,
 			"chaos": 5,
