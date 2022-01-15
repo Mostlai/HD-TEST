@@ -853,7 +853,7 @@
 			"desc": "购买零结晶以备不时之需",
 			"require": "g.market_un>0&&g.zero_crystal.max>=1",
 			"cost": {
-				"money": 30
+				"money": 50
 			},
 			"result": {
 				"zero_crystal": 1
@@ -946,9 +946,37 @@
 				"result":{
 					"exe_paper": 3,
 					"paper": 10,
-					"zero_crystal": 2,
 					"snp_data": 3,
 					"money": "30~60"
+				}
+		},
+		{
+			"id": "ancient_Laboratory_3",
+				"sym": "⚔️💀",
+				"name": "古代实验室(大型）",
+				"desc":"一个已经废弃的大型实验室，据说之前是为了某位勇者而建，嗯箱子狂勇者",
+				"run": {
+					"time": -1
+				},
+                "level":5,
+				"distance": 1,
+				"length": 20,
+				"boss": {
+					"5": "robot_11",
+					"10": "robot_11",
+					"15": "robot_11"
+				},
+				"spawns": [
+					"robot_8",
+					"robot_9",
+					"robot_10"
+				],
+				"result":{
+					"exe_paper": 5,
+					"paper": 20,
+					"zero_crystal": 1,
+					"snp_data": 5,
+					"money": "40~80"
 				}
 		}
 	],
@@ -1053,7 +1081,7 @@
 		"loot":
 		{
 			"cu_iron": 3,
-			"zero_crystal": 1,
+			"zero_crystal": "10%",
 			"cu_copper": 2
 		}
 		},
@@ -1081,7 +1109,7 @@
 		"loot":
 		{
 			"cu_iron": 3,
-			"zero_crystal": 1,
+			"zero_crystal": "10%",
 			"cu_copper": 2
 		}
 		},
@@ -1118,7 +1146,7 @@
 		"loot":
 		{
 			"cu_iron": 3,
-			"zero_crystal": 1,
+			"zero_crystal": "10%",
 			"cu_copper": 2
 		}
 		},
@@ -1175,10 +1203,181 @@
 				],
 				"loot":
 				{
-					"zero_crystal": 4,
+					"zero_crystal": 1,
 					"iron_copper":3,
 					"exp": 50
 				}
+		},
+		{
+		"id": "robot_8",
+		"name":"崭新的防卫机器人（链锯）",
+		"desc":"崭新的防卫机器人,极其危险",
+		"level": 20,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "80",
+		"dodge":8,
+		"speed": 4,
+		"defense": 8,
+		"attack":[ {
+			"targets":"enemies",
+			"name": "刺击",
+			"kind": "刺",
+			"dmg": "10~15",
+			"dot":{
+				"duration":15,
+				"mod":{
+                 "hp.rate": -1
+				}
+			}
+			},
+			{
+			"targets":"enemies",
+			"name": "砍击",
+			"kind": "切",
+			"dmg": "10~15",
+			"dot":{
+				"duration":15,
+				"mod":{
+                 "hp.rate": -1
+				}
+			}
+		}
+		],
+		"loot":
+		{
+			"cu_iron": 3,
+			"zero_crystal": "10%",
+			"cu_copper": 2
+		}
+		},
+		{
+		"id": "robot_9",
+		"name":"崭新的防卫机器人（电磁炮）",
+		"desc":"崭新的机器人,但是手里的电磁炮可不是闹着玩的",
+		"level": 20,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "75",
+		"dodge":8,
+		"speed": 4,
+		"defense": 8,
+		"attack":[
+			{
+			"name": "射击",
+			"kind": "子弹",
+			"dmg": "25~30"
+			}
+		],
+		"loot":
+		{
+			"cu_iron": 3,
+			"zero_crystal": "10%",
+			"cu_copper": 2
+		}
+		},
+		{
+		"id": "robot_10",
+		"name":"崭新的防卫机器人（电击枪）",
+		"desc":"崭新的机器人，但是手里的电击枪可不是闹着玩的",
+		"level": 20,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "80",
+		"dodge":8,
+		"speed": 4,
+		"defense": 8,
+		"attack":[
+			{
+			"targets": "enemies",
+			"name": "强烈电击",
+			"kind": "电",
+			"dmg": "10~20",
+			"dot":{
+				"duration":20,
+				"mod":{
+					"speed":-20,
+					"defense":-4,
+					"dodge": -5
+				}
+			}
+			}
+		],
+		"loot":
+		{
+			"cu_iron": 3,
+			"zero_crystal": "10%",
+			"cu_copper": 2
+		}
+		},
+		{
+		"id": "robot_11",
+		"name":"崭新的实验机器人（巨无霸）",
+		"desc":"赶紧跑吧，块头太大了",
+		"level": 25,
+		"kind": "机器",
+		"flavor": "W A R N... W A R N...",
+		"hp": "200",
+		"dodge":8,
+		"speed": 5,
+		"defense": 12,
+		"attack":[
+			{
+			"targets":"enemies",
+			"name": "火炮射击",
+			"kind": "子弹",
+			"dmg": "30~40",
+			"dot":{
+				"duration":15,
+				"mod":{
+					"dodge":-5,
+					"defense":-4,
+					"hp":-5,
+					"speed":-10
+				}
+			}
+			},
+			{
+				"name": "泰坦冲击",
+				"tohit": 4,
+				"kind": "钝",
+				"dmg": "45"
+				},
+				{
+				"targets":"enemies",
+				"name": "连锁闪电",
+				"kind": "电",
+				"dmg": "10~20",
+				"dot":{
+					"duration":20,
+					"mod":{
+						"speed":-25,
+						"dodge":-25
+					}
+				}
+				},
+				{
+					"targets":"enemies",
+					"name": "神经毒气",
+					"tohit": 8,
+					"kind": "毒",
+					"dmg": "1",
+					"dot":{
+						"duration":60,
+						"mod"
+						:{
+							"speed":-20,
+							"dodge":-20,
+							"hp.rate":-1.8
+						}
+					}
+				}
+		],
+		"loot":
+		{
+			"zero_crystal": 1,
+			"iron_copper":3
+		}
 		}
 	],
 	"locales":
