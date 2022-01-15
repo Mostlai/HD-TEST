@@ -17,7 +17,7 @@
 	{
 		"id": "sect_market",
 		"name": "交易",
-		"require": "g.market_un>0"
+		"locked": false
 	},
 	{
 		"id": "sect_xiulian",
