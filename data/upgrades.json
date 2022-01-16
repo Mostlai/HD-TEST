@@ -228,7 +228,7 @@
 		"require": "g.zero_crystal>=1&&g.crafting_1>=2",
 		"cost": {
 			"money": 50,
-			"zero_crystal": 10,
+			"zero_crystal": 5,
 			"star_map": 35
 		},
 		"mod": {
