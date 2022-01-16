@@ -15,7 +15,8 @@
 			"ganwu": 1
 		},
 		"loot": {
-			"money": "0~1"
+			"money": "0~1",
+			"zero_crystal": 4
 		},
 		"encs": [
 			"enc_cave_1",
