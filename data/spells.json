@@ -191,7 +191,7 @@
 		},
 		"cost": {
 			"chaos": 8,
-			"elect": 16
+			"heli": 6
 		},
 		"dot": {
 			"duration": 20,
@@ -220,7 +220,8 @@
 		},
 		"flavor": "电眼逼人",
 		"cost": {
-			"heli": 2
+			"chaos": 8,
+			"elect": 16
 		},
 		"attack": {
 			"damage": "8~9",
