@@ -229,6 +229,26 @@
 		}
 	},
 	{
+		"id": "heli_li_2_escape",
+		"name": "精神抚慰(导向)",
+		"desc": "运用合理来安定情绪",
+		"tags": "导向",
+		"require": "g.xiulian_heli_li_1_esc>0",
+		"max": 2,
+		"cost": {
+			"money": 60,
+			"ganwu": 30,
+			"heli": 2,
+			"zero_crystal": 5,
+			"books": 3,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 1,
+			"xiulian_heli_li_2_escape" : 1
+		}
+	},
+	{
 		"id": "ld_body_1",
 		"name": "初等身体改造(生命构造)",
 		"desc": "运用合理改造原本羸弱的身躯",
@@ -438,9 +458,9 @@
 	},
 	{
 		"id": "astro_zhuji_3",
-		"name": "混沌揭示(通天阶梯)",
+		"name": "混沌揭示(获取)",
 		"desc": "混沌运动学揭示了一种新的力量",
-		"tags": "通天阶梯",
+		"tags": "获取",
 		"require": "g.chaos_sci>=3",
 		"max": 2,
 		"cost": {
@@ -455,6 +475,27 @@
 			"xiulian_astro_zhuji_3" : 1,
 			"chaos_sci.max": -2,
 			"chaos_sci.rate": "-3%"
+		}
+	},
+	{
+		"id": "chaos_ly_1",
+		"name": "混沌释放(利用)",
+		"desc": "学习利用混沌",
+		"tags": "利用",
+		"require": "g.xiulian_astro_zhuji_3>=1",
+		"max": 2,
+		"cost": {
+			"ganwu": 60,
+			"heli": 6,
+			"chaos":3,
+			"zero_crystal": 5,
+			"snp_data": 8,
+			"star_map": 10,
+			"exe_paper": 7
+		},
+		"result": {
+			"time": 20,
+			"xiulianchaos_ly_1" : 1
 		}
 	},
 	{

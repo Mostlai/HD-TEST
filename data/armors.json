@@ -61,6 +61,66 @@
 		"level": 2
 	},
 	{
+		"id": "xsp",
+		"name": "修士袍",
+		"armor": 5,
+		"slot": "chest",
+		"enchants": 2,
+		"level": 10,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 2
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "xsl",
+		"name": "修士履",
+		"armor": 4,
+		"slot": "feet",
+		"enchants": 2,
+		"cost": 10,
+		"level": 10,
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 1
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "xsg",
+		"name": "修士冠",
+		"armor": 5,
+		"slot": "head",
+		"enchants": 2,
+		"cost": 10,
+		"level": 10,
+		"alter": {
+			"mod": {
+				"self.resist.heli": 2
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "xsyd",
+		"name": "修士鞶带",
+		"armor": 4,
+		"slot": "waist",
+		"enchants": 1,
+		"cost": 10,
+		"level": 9,
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 2
+			}
+		},
+		"only": "sjmet"
+	},
+	{
 		"id": "jerkin",
 		"name": "坎肩",
 		"armor": 2,

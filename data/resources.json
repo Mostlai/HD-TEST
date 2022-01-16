@@ -312,7 +312,21 @@
 		"locked":false,
 		"max": 1,
 		"mod":{
-			"heli_missile": true
+			"heli_missile": true,
+			"guihuafa": true
+		}
+	},
+	{
+		"id": "xiulian_heli_li_2_escape",
+		"name": "精神抚慰",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"jsfw": true
 		}
 	},
 	{
@@ -593,7 +607,10 @@
 		"group": "修行",
 		"tags": "",
 		"locked":false,
-		"max": 1
+		"max": 1,
+		"mod":{
+			"dhf": true
+		}
 	},
 	{
 		"id": "xiulian_death_2",
@@ -616,6 +633,19 @@
 		"max": 1
 	},
 	{
+		"id": "xiulian_chaos_ly_1",
+		"name": "混沌释放",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"hundun_missile": true
+		}
+	},
+	{
 		"id": "xiulian_heli_dx_1",
 		"name": "合理之表",
 		"desc": "",
@@ -623,7 +653,10 @@
 		"group": "修行",
 		"tags": "",
 		"locked":false,
-		"max": 1
+		"max": 1,
+		"mod":{
+			"flbl": true
+		}
 	},
 	{
 		"id": "xiulian_heli_dx_2",

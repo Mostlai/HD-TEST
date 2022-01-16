@@ -141,6 +141,7 @@
 		"require": "g.zero_crystal>=1&&g.crafting_1>=2&&g.speed>=1",
 		"cost": {
 			"money": 50,
+			"star_map": 25,
 			"zero_crystal": 2
 		},
 		"mod": {
@@ -157,6 +158,7 @@
 			"ganwu": 10,
 			"snp_data": 1,
 			"money": 20,
+			"star_map": 26,
 			"zero_crystal": 4
 		},
 		"mod": {
@@ -173,6 +175,8 @@
 			"lg": 1,
 			"snp_data": 4,
 			"money": 50,
+			"zero_crystal": 10,
+			"star_map": 45,
 			"ganwu": 40,
 			"shenshi": 1
 		},
@@ -190,7 +194,9 @@
 		"cost": {
 			"lg": 5,
 			"snp_data": 8,
-			"ganwu": 80,
+			"zero_crystal": 10,
+			"star_map": 45,
+			"ganwu": 100,
 			"shenshi": 1
 		},
 		"mod": {
@@ -205,7 +211,9 @@
 		"require": "g.shenshi_2>=3",
 		"cost": {
 			"lg": 2,
-			"ganwu": 80,
+			"ganwu": 140,
+			"zero_crystal": 10,
+			"star_map": 45,
 			"shenshi": 1
 		},
 		"mod": {
@@ -220,7 +228,8 @@
 		"require": "g.zero_crystal>=1&&g.crafting_1>=2",
 		"cost": {
 			"money": 50,
-			"zero_crystal": 2
+			"zero_crystal": 10,
+			"star_map": 35
 		},
 		"mod": {
 			"zero_crystal.max": 5
@@ -234,7 +243,9 @@
 		"require": "g.reading>=3",
 		"cost": {
 			"money": 30,
-			"exe_paper": 1
+			"zero_crystal": 5,
+			"star_map": 25,
+			"exe_paper": 4
 		},
 		"mod": {
 			"Knowledge_class_1": true
@@ -247,7 +258,9 @@
 		"max": 1,
 		"require": "g.biology_ast_1>=2 && g.chaos_sci>=2",
 		"cost": {
-			"exe_paper": 1
+			"zero_crystal": 4,
+			"star_map": 45,
+			"exe_paper": 7
 		},
 		"mod": {
 			"money.rate": 0.3
@@ -261,6 +274,7 @@
 		"require": "g.biology_ast_1>=1 && g.ult_guancha>=2",
 		"cost": {
 			"zero_crystal": 7,
+			"star_map": 45,
 			"money": 100
 		},
 		"mod": {
@@ -275,6 +289,8 @@
 		"require": "g.iron_copper>=5",
 		"cost": {
 			"iron_copper": 5,
+			"zero_crystal": 10,
+			"star_map": 30,
 			"money": 100
 		},
 		"mod": {
@@ -290,7 +306,8 @@
 		"require": "g.energ_1>=1",
 		"cost": {
 			"iron_copper": 10,
-			"zero_crystal": 7,
+			"zero_crystal": 10,
+			"star_map": 45,
 			"money": 100
 		},
 		"mod": {
@@ -306,7 +323,8 @@
 		"cost": {
 			"heli": 9,
 			"iron_copper": 8,
-			"zero_crystal": 3,
+			"zero_crystal": 10,
+			"star_map": 45,
 			"money": 140
 		},
 		"mod": {
@@ -322,9 +340,12 @@
 		"require": "g.zhuji_qianzhi_2>=1",
 		"cost": {
 			"chaos": 3,
+			"zero_crystal": 10,
+			"star_map": 45,
 			"elect": 20
 		},
 		"mod": {
+			"hundun_missile_2": true,
 			"chaos.max": 5,
 			"chaos.rate": 0.4
 		}
@@ -351,7 +372,11 @@
 		"require": "g.super_mind>=1",
 		"cost": {
 			"super_mind": 5,
-			"ganwu": 100
+			"star_map": 55,
+			"money": 300,
+			"lg": 8,
+			"star_map": 50,
+			"ganwu": 200
 		},
 		"mod": {
 			"energ_1.max": 2,
@@ -367,6 +392,28 @@
 		}
 	},
 	{
+		"id": "bio_astro_upd",
+		"name": "超压升级",
+		"desc": "进一步研究生命的极端生存",
+		"max": 1,
+		"require": "g.biology_ast_1>=5",
+		"cost": {
+			"lg": 7,
+			"super_mind": 5,
+			"money": 300,
+			"tian": 10,
+			"zero_crystal": 17,
+			"snp_data": 10,
+			"exe_paper": 14,
+			"star_map": 55,
+			"books": 5,
+			"ganwu": 250
+		},
+		"mod": {
+			"biology_ast_1.max":5 
+		}
+	},
+	{
 		"id": "dirc_lunch",
 		"name": "定向发射",
 		"desc": "实现能量的定向发射",
@@ -376,6 +423,7 @@
 			"super_mind": 2,
 			"elect": 30,
 			"paper": 30,
+			"zero_crystal": 16,
 			"exe_paper": 10,
 			"ganwu": 100
 		},
@@ -389,13 +437,15 @@
 		"desc": "研究安全处理这种高污染的流体",
 		"max": 1,
 		"cost": {
+			"lg": 8,
 			"jls": 30,
 			"super_mind": 5,
 			"elect": 30,
 			"heli": 1,
 			"shenshi": 1,
 			"hp": 20,
-			"zero_crystal":12,
+			"star_map": 55,
+			"zero_crystal":18,
 			"paper": 30,
 			"exe_paper": 10,
 			"ganwu": 100
@@ -412,6 +462,7 @@
 		"desc": "废热水或许还有其他作用...",
 		"max": 1,
 		"cost": {
+			"lg": 8,
 			"jls": 30,
 			"super_mind": 6,
 			"elect": 15,
@@ -419,6 +470,7 @@
 			"chaos": 5,
 			"shenshi": 1,
 			"hp": 20,
+			"star_map": 55,
 			"r_adv_w_sj1": 2,
 			"zero_crystal":12,
 			"paper": 30,
@@ -440,6 +492,7 @@
 		"slot": "mount",
 		"tags": "steed",
 		"buy": {
+			"lg": 7,
 			"money": 180,
 			"super_mind":2,
 			"elect": 30,
@@ -447,6 +500,7 @@
 			"cu_iron": 20,
 			"cu_copper": 15,
 			"sj_met": 5,
+			"star_map": 50,
 			"tian": 5,
 			"human_power": 10
 		},
@@ -460,9 +514,10 @@
 		"desc": "污浊之力与植物混合能提高生命力",
 		"max": 1,
 		"cost": {
+			"lg": 8,
 			"jls": 30,
 			"cold_core": 5,
-			"dirty_core": 3,
+			"dirty_core": 10,
 			"super_mind": 2,
 			"heli": 1,
 			"chaos": 5,
@@ -470,6 +525,7 @@
 			"r_adv_w_sj1": 2,
 			"zero_crystal":12,
 			"paper": 30,
+			"star_map": 65,
 			"exe_paper": 10,
 			"ganwu": 130
 		},
@@ -477,6 +533,111 @@
 			"frs": 19,
 			"hp.max": 10,
 			"hp.rate": 0.1
+		}
+	},
+	{
+		"id": "dream_death",
+		"name": "梦死界",
+		"desc": "在一个深夜，一个寂静的深夜",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"money": 250,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"super_mind": 5,
+			"heli": 1,
+			"chaos": 5,
+			"zero_crystal":12,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 150
+		},
+		"mod":{
+			"frs": 29,
+			"hp.max": -2,
+			"hp.rate": -0.1
+		}
+	},
+	{
+		"id": "space_mind",
+		"name": "空间思考",
+		"desc": "混沌和合理表达的形式让你对空间概念产生了思索",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"money": 400,
+			"alculation": 20,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"r_adv_w_sj1": 2,
+			"super_mind": 5,
+			"heli": 1,
+			"chaos": 5,
+			"zero_crystal":20,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16,
+			"ganwu": 200
+		},
+		"mod":{
+			"frs": 29
+		}
+	},
+	{
+		"id": "lfkjcc",
+		"name": "灵反空间存储",
+		"desc": "非实体空间进行高容量存储",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"money": 100,
+			"super_mind": 5,
+			"alculation": 30,
+			"dirty_lingti": 10,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"super_mind": 5,
+			"zero_crystal":20,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16,
+			"ganwu": 200
+		},
+		"mod":{
+			"frs":29,
+			"zero_crystal.max": 10,
+			"sj_met.max": 10
+		}
+	},
+	{
+		"id": "huanjgl",
+		"name": "环境管理",
+		"desc": "高效的对环境进行管理",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 20,
+			"money": 300,
+			"super_mind": 5,
+			"alculation": 30,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"super_mind": 5,
+			"zero_crystal":15,
+			"sj_met": 8,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16,
+			"ganwu": 200
+		},
+		"mod":{
+			"frs":19,
+			"space.max": -10
 		}
 	},
 	{
@@ -1538,26 +1699,6 @@
 		},
 		"mod": {
 			"player.resist.water": 15
-		}
-	},
-	{
-		"id": "earthsign",
-		"name": "earth sign",
-		"require": "g.earthaffinity>0&&g.earth>14",
-		"lock": [
-			"watersign",
-			"airsign",
-			"firesign"
-		],
-		"warn": true,
-		"desc": "Born under the celestial sign of earth",
-		"cost": {
-			"research": 5000,
-			"earthgem": 15,
-			"tomes": 5
-		},
-		"mod": {
-			"player.resist.earth": 15
 		}
 	},
 	{

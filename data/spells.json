@@ -68,9 +68,164 @@
 		"attack": {
 			"damage": "3~5",
 			"dot": {
-				"kind": "mana",
+				"kind": "heli",
 				"duration": 10,
 				"damage": 0.7
+			}
+		}
+	},
+	{
+		"id": "hundun_missile",
+		"name": "混沌飞弹",
+		"tag":"低能级",
+		"level": 2,
+		"locked":true,
+		"school": "混沌",
+		"desc": "将混沌转化为纯粹的能量形式并发射出去",
+		"buy": {
+			"ganwu": 5,
+			"chaos": 3,
+			"books":1,
+			"exe_paper": 2,
+			"zero_crystal":2
+		},
+		"flavor": "低能级....",
+		"cost": {
+			"chaos": 2
+		},
+		"attack": {
+			"damage": "6~8"
+		}
+	},
+	{
+		"id": "guihuafa",
+		"name": "归化法",
+		"desc": "利用合理来强固防御",
+		"school": "合理",
+		"locked":true,
+		"level": 2,
+		"buy": {
+			"ganwu": 22,
+			"zero_crystal": 6,
+			"heli": 3,
+			"books":1
+		},
+		"cost": {
+			"heli": 3
+		},
+		"dot": {
+			"duration": 5,
+			"mod": {
+				"self.defense": 6
+			}
+		}
+	},
+	{
+		"id": "flbl",
+		"name": "反理壁垒",
+		"desc": "加强对合理和混沌的抗性",
+		"school": "附魔",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"ganwu": 200,
+			"money": 300,
+			"zero_crystal": 12,
+			"heli": 3,
+			"chaos":3,
+			"books":1
+		},
+		"cost": {
+			"heli": 4,
+			"chaos": 4
+		},
+		"dot": {
+			"duration": 10,
+			"mod": {
+				"self.resist.chaos": 10,
+				"self.resist.heli": 7
+			}
+		}
+	},
+	{
+		"id": "dhf",
+		"name": "大化法",
+		"desc": "降低敌人对合理的抗性",
+		"school": "附魔",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"ganwu": 200,
+			"money": 100,
+			"zero_crystal": 12,
+			"heli": 3,
+			"chaos":3,
+			"elect": 20,
+			"books":1
+		},
+		"cost": {
+			"heli": 5,
+			"chaos": 5,
+			"shenshi": 1
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "heli",
+				"duration": 100,
+				"self.resist.heli": -12
+			}
+		}
+	},
+	{
+		"id": "jsfw",
+		"name": "归综妙法(导向)",
+		"level": 2,
+		"school": "合理",
+		"locked":true,
+		"desc": "平息躁动",
+		"buy": {
+			"ganwu": 70,
+			"star_map": 30,
+			"zero_crystal": 5
+		},
+		"cost": {
+			"heli": 3
+		},
+		"dot": {
+			"duration": 20,
+			"effect": {
+				"bf": -0.1,
+				"rage": -0.1,
+				"madness": -0.1
+			}
+		}
+	},
+	{
+		"id": "hundun_missile_2",
+		"name": "高能混沌打击",
+		"tag":"低能级",
+		"level": 1,
+		"locked":true,
+		"school": "混沌",
+		"desc": "混合混沌和电流进行远程投射",
+		"buy": {
+			"ganwu": 90,
+			"exe_paper": 3,
+			"star_map": 30,
+			"paper": 20,
+			"zero_crystal":6
+		},
+		"flavor": "电眼逼人",
+		"cost": {
+			"heli": 2
+		},
+		"attack": {
+			"damage": "8~9",
+			"dot": {
+				"kind": "chaos",
+				"duration": 3,
+				"damage": 1.2
 			}
 		}
 	},

@@ -132,5 +132,57 @@
 		"loot": {
 			"sj_sword_1": "100%"
 		}
+	},
+	{
+		"id": "market_xsp",
+		"name": "修士袍",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 120,
+			"zero_crystal": 5,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsp": "100%"
+		}
+	},
+	{
+		"id": "market_xsl",
+		"name": "修士履",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 100,
+			"zero_crystal": 3,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsl": "100%"
+		}
+	},
+	{
+		"id": "market_xsg",
+		"name": "修士冠",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 120,
+			"zero_crystal": 5,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsg": "100%"
+		}
+	},
+	{
+		"id": "market_xsyd",
+		"name": "修士鞶带",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 100,
+			"zero_crystal": 3,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsyd": "100%"
+		}
 	}
 ]
