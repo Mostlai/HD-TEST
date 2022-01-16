@@ -460,6 +460,7 @@
 		"id": "frs_nj",
 		"name": "废热凝结",
 		"desc": "废热水或许还有其他作用...",
+		"require": "g.frs_pro>=1",
 		"max": 1,
 		"cost": {
 			"lg": 8,
@@ -512,6 +513,7 @@
 		"id": "dirty_jinji",
 		"name": "污痕荆棘",
 		"desc": "污浊之力与植物混合能提高生命力",
+		"require": "g.biology_ast_1>=10 && g.xiulian_bio_dirty_1>=1",
 		"max": 1,
 		"cost": {
 			"lg": 8,
@@ -539,6 +541,7 @@
 		"id": "dream_death",
 		"name": "梦死界",
 		"desc": "在一个深夜，一个寂静的深夜",
+		"require": "g.dream_1>=10 && g.lingti_xue>=10",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -565,6 +568,7 @@
 		"id": "space_mind",
 		"name": "空间思考",
 		"desc": "混沌和合理表达的形式让你对空间概念产生了思索",
+		"require": "g.xiulian_heli_dx_1>=1 && g.xiulian_chaos_ld_1>=1",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -591,6 +595,7 @@
 		"id": "lfkjcc",
 		"name": "灵反空间存储",
 		"desc": "非实体空间进行高容量存储",
+		"require": "g.space_mind>=1 && g.energ_shenshi>=5",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -618,6 +623,7 @@
 		"id": "huanjgl",
 		"name": "环境管理",
 		"desc": "高效的对环境进行管理",
+		"require": "g.hjgz>=1",
 		"max": 1,
 		"cost": {
 			"lg": 11,
