@@ -434,6 +434,7 @@
 		"id": "frs_pro",
 		"name": "废热处理",
 		"desc": "研究安全处理这种高污染的流体",
+		"require": "g.jls>0",
 		"max": 1,
 		"cost": {
 			"lg": 8,
