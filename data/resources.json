@@ -72,7 +72,7 @@
 		"group": "结晶",
 		"tags": "",
 		"require": "g.reading>0",
-		"max": 3
+		"max": 5
 	},
 	{
 		"id": "life_crystal",
