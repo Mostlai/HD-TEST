@@ -240,11 +240,10 @@
 		"name": "城镇学校",
 		"desc": "一个人自己钻研总是较难的,你觉得进入当地的学校学习知识是个好主意",
 		"max": 1,
-		"require": "g.reading>=3",
+		"require": "g.reading>=1",
 		"cost": {
 			"money": 30,
 			"zero_crystal": 5,
-			"star_map": 25,
 			"exe_paper": 4
 		},
 		"mod": {
