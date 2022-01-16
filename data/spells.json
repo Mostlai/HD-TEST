@@ -179,7 +179,7 @@
 	},
 	{
 		"id": "jsfw",
-		"name": "归综妙法(导向)",
+		"name": "归综妙法",
 		"level": 2,
 		"school": "合理",
 		"locked":true,
@@ -190,7 +190,8 @@
 			"zero_crystal": 5
 		},
 		"cost": {
-			"heli": 3
+			"chaos": 8,
+			"elect": 16
 		},
 		"dot": {
 			"duration": 20,
