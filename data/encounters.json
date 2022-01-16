@@ -6,6 +6,8 @@
 		"effect": {
 			"hp": "1~2",
 			"stamina": "0~1",
+			"weary": "-1~0",
+			"unease": "-1~0",
 			"tili": "0~1"
 		},
 		"result": {
