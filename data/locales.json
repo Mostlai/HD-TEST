@@ -12,11 +12,12 @@
 			"stamina": 0.2
 		},
 		"result": {
-			"ganwu": 1
+			"ganwu": 1,
+			"zero_crystal": 4
 		},
 		"loot": {
 			"money": "0~1",
-			"zero_crystal": 4
+			"zero_crystal": 1
 		},
 		"encs": [
 			"enc_cave_1",
