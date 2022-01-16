@@ -229,7 +229,7 @@
 		"cost": {
 			"money": 50,
 			"zero_crystal": 5,
-			"star_map": 35
+			"star_map": 10
 		},
 		"mod": {
 			"zero_crystal.max": 5
