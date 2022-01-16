@@ -195,10 +195,10 @@
 		"dot": {
 			"duration": 20,
 			"effect": {
-				"bf": -0.5,
-				"rage": -0.5,
-				"weary": -0.5,
-				"madness": -0.5
+				"bf": -0.3,
+				"rage": -0.3,
+				"weary": -0.3,
+				"madness": -0.3
 			}
 		}
 	},
