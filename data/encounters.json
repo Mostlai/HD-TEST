@@ -17,7 +17,7 @@
 		"name": "爆炸",
 		"desc": "突如其来的爆炸",
 		"effect": {
-			"weary": "1~2"
+			"weary": "0~1"
 		},
 		"result": {
 			"hp": -5
@@ -28,7 +28,7 @@
 		"name": "大爆炸",
 		"desc": "突如其来的爆炸",
 		"effect": {
-			"weary": "1~2"
+			"weary": "0~1"
 		},
 		"result": {
 			"hp": -6
@@ -51,7 +51,7 @@
 		"desc": "努力干活",
 		"effect": {
 			"weary": "0~1",
-			"zero_crystal": "0~0.2"
+			"zero_crystal": "0~0.4"
 		},
 		"result": {
 			"zero_crystal": 4
