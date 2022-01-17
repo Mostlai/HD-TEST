@@ -534,11 +534,12 @@
 		"verb": "",
 		"require": "g.frs>0",
 		"cost": {
-			"frs": 2,
+			"frs": 10,
 			"chaos": 5,
 			"hp": 2
 		},
 		"result": {
+			"dirty_core": 1,
 			"time": 1,
 			"jls": 2
 		}
