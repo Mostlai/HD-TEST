@@ -29,9 +29,7 @@
 		"name": "新的锻炼方式",
 		"require": "g.xiulian_ld_body_1>=1&&g.freight",
 		"desc": "随着对身体素质的开发,你找到对体能训练的新方式",
-		"result": {
-			"freight": false
-		}
+		"disable":["freight"]
 	},
 	{
 		"id": "evt_chaos",
@@ -41,6 +39,28 @@
 		"result": {
 			"chaos_enchant_1": true
 		}
+	},
+	{
+		"id": "evt_jihun",
+		"name": "真魂",
+		"require": "g.xiulian_zhuji_2>=1",
+		"desc": "筑基的境界可以点燃真魂,但同时会导致衰败,足量的真魂可以抑制衰败",
+		"result": {
+			"shuaibai":true,
+			"jihun":true
+		}
+	},
+	{
+		"id": "evt_cold",
+		"name": "极寒之地",
+		"require": "g.xiulian_ld_cold>=1 &&g.xiulian_ld_panpa>=1 && g.ganwu_skill>=3",
+		"desc": "你清醒的头脑和强健的身体足以探索这片区域"
+	},
+	{
+		"id": "evt_hq",
+		"name": "底层梦境",
+		"require": "g.active_huangquan>=1",
+		"desc": "现在你可以前往最底层的梦境了"
 	},
 	{
 		"id": "evt_scroll",

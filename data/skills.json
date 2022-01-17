@@ -223,6 +223,7 @@
 			"sp": 0.3
 		},
 		"mod": {
+			"ganwu.max": 1,
 			"star_map.max": 5,
 			"star_map.rate": 0.04
 		}
@@ -249,6 +250,133 @@
 			"hp.max": 0.3,
 			"tili.max":0.1,
 			"stamina.max":0.1
+		}
+	},
+	{
+		"id": "dream_1",
+		"name":"梦境学",
+		"desc":"深夜的思绪.....",
+		"buy": {
+			"lg": 1
+		},
+		"require": "g.lg>=1",
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"result": {
+			"sp": 0.04
+		},
+		"mod": {
+			"ganwu.max": 1.5,
+			"lg.max": 0.1,
+			"lg.rate":0.01
+		}
+	},
+	{
+		"id": "shenshi_1",
+		"name":"神识学",
+		"desc":"神识是大脑中的一个不可见存在，研究神识将进一步开发大脑",
+		"level": 2,
+		"buy": {
+			"lg": 1
+		},
+		"require": "g.dream_1>=4",
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.3
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"lg.max": 0.1,
+			"shenshi.rate": 0.01
+		}
+	},
+	{
+		"id": "shenshi_2",
+		"name":"群体思维学",
+		"desc":"通过进一步研究生物学和神识学,你认为生物与生物之间存在某种联系",
+		"level": 2,
+		"buy": {
+			"ganwu": 90,
+			"lg": 1
+		},
+		"require": "g.biology_1>=10 && g.shenshi_1>=10 && g.dream_1>=4",
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"ganwu.max": 1,
+			"lg.max": 0.3
+		}
+	},
+	{
+		"id": "shenshi_3",
+		"name":"群体政治学",
+		"desc":"进一步研究群体之间的政治倾向和心理状态",
+		"level": 2,
+		"buy": {
+			"ganwu": 120,
+			"lg": 1
+		},
+		"require": "g.shenshi_2>=5",
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"lg.max": 0.3,
+			"super_mind.rate": 0.005,
+			"shenshi.max": 0.5
+		}
+	},
+	{
+		"id": "shenshi_4",
+		"name":"基础管理学",
+		"desc":"研究如何处理好人力分配",
+		"buy": {
+			"ganwu": 120,
+			"lg": 4
+		},
+		"require": "g.shenshi_3>=3",
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 1
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"ganwu.max": 2,
+			"human_power.max": 10,
+			"human_power.rate": 0.1,
+			"conquer_1.max": 1,
+			"conquer_2.max": 0.5
 		}
 	},
 	{
@@ -300,7 +428,7 @@
 		"id": "metal_app",
 		"name":"材料应用学",
 		"desc":"运用材料的艺术",
-		"need": "g.cu_iron>=7",
+		"require": "g.cu_iron>=7",
 		"buy": {
 			"books": 1
 		},
@@ -313,6 +441,25 @@
 		},
 		"result": {
 			"sp": 1
+		}
+	},
+	{
+		"id": "building_1",
+		"name":"基础建筑学",
+		"desc":"建造更为复杂的结构",
+		"need": "g.metal_app>=5",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.5
+		},
+		"effect": {
+			"time": 0.6
+		},
+		"result": {
+			"metal_app.max": 0.5
 		}
 	},
 	{
@@ -391,6 +538,318 @@
 			"elect.max": 2,
 			"elect.rate": 1,
 			"sp": 2
+		}
+	},
+	{
+		"id": "weapon_1",
+		"name":"杀伤武器学",
+		"desc":"研究高效的杀灭生命",
+		"level": 3,
+		"need": "g.energ_high_1>=2 && g.shenshi_3>=5 && g.metal_app>=5",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 0.6,
+			"stamina": 0.4
+		},
+		"effect": {
+			"time": 3
+		},
+		"result": {
+			"alculation.max": 2,
+			"alculation.rate": 1,
+			"human_power.max":1,
+			"metal_app.max": 1,
+			"shenshi_3.max": 1,
+			"f_power": 4
+		}
+	},
+	{
+		"id": "rlt_guancha",
+		"name":"红外科学",
+		"desc":"对不可见的红外线展开应用分析",
+		"level": 2,
+		"require": "g.ult_guancha>=8 && g.energ_1>=8 && g.astronomy_1>=8",
+		"buy": {
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"astronomy.rate": "1%",
+			"astronomy_1.rate": "1%",
+			"ganwu.max": 6
+		}
+	},
+	{
+		"id": "mc_guancha",
+		"name":"微波科学",
+		"desc":"对不可见的微波展开应用分析",
+		"level": 3,
+		"need": "g.xiulian_ld_dw_guancha>=1 && g.rlt_guancha>=8 && g.energ_high_1>=8",
+		"buy": {
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"astronomy.rate": "1%",
+			"astronomy_1.rate": "1%",
+			"ganwu.max": 6
+		}
+	},
+	{
+		"id": "energ_shenshi",
+		"name":"电导神观学",
+		"desc":"对神识进行电力分析",
+		"level": 3,
+		"require": "g.shenshi_1>=10 && g.Knowledge_integration_1>=8 && g.energ_1>=7",
+		"buy": {
+			"super_mind": 4,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.3,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 0.7
+		},
+		"result": {
+			"sp": 0.3
+		},
+		"mod": {
+			"elect.max": 1,
+			"super_mind.max": 0.2
+		}
+	},
+	{
+		"id": "info_switch_1",
+		"name":"近距通讯学",
+		"desc":"研究如何有效的在两地交换信息",
+		"level": 5,
+		"need": "g.metal_app>=5 && g.astronomy>=10 && g.energ_1>=8 &&g.building_1>=5 &&g.xiulian_x_info_1>=1",
+		"buy": {
+			"super_mind": 5,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.4,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"dist": 5,
+			"super_mind.max": 0.2,
+			"super_mind.rate": 0.01
+		}
+	},
+	{
+		"id": "land_kantan",
+		"name":"地质勘探学",
+		"desc":"找出深埋地底的宝藏",
+		"level": 2,
+		"need": "g.Knowledge_integration_1>=8 && g.Knowledge_class_1>=10 && g.metal_app>=6 &&g.astronomy>=10",
+		"buy": {
+			"super_mind": 5,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"super_mind.max": 0.5
+		}
+	},
+	{
+		"id": "land_wa",
+		"name":"地层开采学",
+		"desc":"学习如何挖掘地下资源",
+		"level": 2,
+		"need": "g.land_kantan>=3 && g.energ_1>=10 &&g.human_power>=10",
+		"buy": {
+			"human_power": 10,
+			"super_mind": 2,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"super_mind.max": 0.01
+		}
+	},
+	{
+		"id": "liu_yy",
+		"name":"流体应用学",
+		"desc":"学习应用流体",
+		"level": 2,
+		"need": "g.energ_1>=10 && g.metal_app>=5 &&g.building_1>=5",
+		"buy": {
+			"super_mind": 2,
+			"books": 4
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.3
+		},
+		"effect": {
+			"time": 1.9
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"human_power.max": 1.5
+		}
+	},
+	{
+		"id": "lingti_xue",
+		"name": "灵体学",
+		"need": "Fdeath",
+		"level": 6,
+		"desc": "灵魂,神秘的灵魂",
+		"buy": {
+			"books": 5
+		},
+		"effect": {
+			"time": 0.5
+		},
+		"run": {
+			"ganwu": 0.5,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ganwu.rate": 0.01
+		}
+	},
+	{
+		"id": "huanjing_xue",
+		"name": "环境学",
+		"require": "g.huanjweihu>=50 && g.huanjgl>=1 &&g.building_1>=5",
+		"level": 5,
+		"desc": "随着技术的进步,环境的治理变得尤为重要",
+		"buy": {
+			"lg":10,
+			"star_map": 40,
+			"zero_crystal": 4,
+			"paper": 30,
+			"books": 5
+		},
+		"effect": {
+			"time": 0.7
+		},
+		"run": {
+			"ganwu": 0.5,
+			"tili": 0.8,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"building_1.max":1,
+			"space.max": 3
+		}
+	},
+	{
+		"id": "fanshe_math",
+		"name": "反射性数学",
+		"require": "g.xiulian_math_fc_1>=1 && g.xiulian_math_kj_1>=1 && g.xiulian_math_jihe_1>=1",
+		"level": 7,
+		"desc": "与普通数学不同的是,全新的数学模型将有效解释超凡存在",
+		"buy": {
+			"money": 400,
+			"super_mind": 5,
+			"alculation": 40,
+			"dirty_lingti": 10,
+			"books": 5
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"ganwu": 0.8,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"super_mind.max": 1,
+			"super_mind.rate": 0.005,
+			"dirty_lingti.max": 0.5
+		}
+	},
+	{
+		"id": "fanshe_building",
+		"name": "反射建筑学",
+		"require": "g.fanshe_math>=2 && g.building_1>=8 && g.huanjing_xue>=8",
+		"level": 5,
+		"desc": "根据反射数学和环境工程来建造更为复杂的建筑",
+		"buy": {
+			"money": 470,
+			"super_mind": 5,
+			"alculation": 40,
+			"human_power": 50,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"star_map": 60,
+			"dirty_lingti": 10,
+			"books": 5
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"ganwu": 0.8,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"super_mind.rate": 0.005,
+			"space.max": 4
 		}
 	},
 	{

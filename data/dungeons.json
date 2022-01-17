@@ -1,5 +1,42 @@
 [
 	{
+		"id": "under_dreaam",
+		"name": "底层梦境",
+		"desc": "梦境的深处,实界的边缘,这里的时间流速更快,环境更危险",
+		"require": "evt_hq",
+		"title": "悟梦者",
+		"level": 1,
+		"length": 50,
+		"run": {
+			"back_dream": 0.1,
+			"hp": 0.9,
+			"stamina": 2,
+			"tili": 2,
+			"time": -0.8
+		},
+		"result": {
+			"snp_data": "2~7",
+			"zero_crystal": "2~7"
+		},
+		"boss": "dreamloot",
+		"spawns": [
+			[
+				"smz",
+				"smz"
+			],
+			[
+				"smz",
+				"smz",
+				"noshadow"
+			],
+			"balckwu",
+			[
+				"noshadow",
+				"balckwu"
+			]
+		]
+	},
+	{
 		"id": "sunnyfield",
 		"name": "Sunny Field",
 		"level": 1,
@@ -540,225 +577,6 @@
 			"earthelemental",
 			"airelemental",
 			"lightningelemental"
-		]
-	},
-	{
-		"id": "veldransstorehouse",
-		"name": "Veldran's Storehouse",
-		"desc": "Veldran never did manage to carve a kingdom from the wreck of Bodias' reign. But he did accrue a sizeable hoard.",
-		"level": 9,
-		"run": {
-			"stamina": 2
-		},
-		"length": 60,
-		"result": {
-			"gems": "3~5",
-			"gold": "80~150"
-		},
-		"spawns": [
-			[
-				"claygolem",
-				"claygolem",
-				"claygolem"
-			],
-			"hobgoblin",
-			"doppelganger",
-			"masterswordsman",
-			"irongolem",
-			"quasit",
-			[
-				"slime",
-				"slime",
-				"slime",
-				"slime"
-			],
-			[
-				"stonegolem",
-				"stonegolem"
-			],
-			"banditlord",
-			"magicmirror",
-			"woodgolem"
-		]
-	},
-	{
-		"id": "desillagrotto",
-		"name": "Desilla's Grotto",
-		"desc": "In all the world, the most enjoyable place to die.",
-		"locked":true,
-		"level": 15,
-		"run": {
-			"stamina": 2.5
-		},
-		"length": 75,
-		"result": {
-			"gems": "3~5",
-			"gold": "50~100",
-			"ichor": 1
-		},
-		"boss": "desillaconcubine",
-		"spawns": [
-			"masterswordsman",
-			[
-				"magicblade",
-				"magicblade"
-			],
-			[
-				"magicmirror",
-				"magicmirror"
-			],
-			"unicorn",
-			[
-				"pegasus",
-				"pegasus"
-			],
-			"quasit",
-			[
-				"stalker",
-				"willowisp"
-			],
-			[
-				"elf",
-				"elf",
-				"elf"
-			],
-			"incubus",
-			[
-				"imp",
-				"imp",
-				"imp"
-			],
-			"succubus"
-		],
-		"flavor": "Desilla was known as much for her entertainments as her ruthlessness."
-	},
-	{
-		"id": "charredkeep",
-		"name": "Charred Keep",
-		"desc": "Its smouldering ruins once more begin to burn.",
-		"level": 18,
-		"run": {
-			"stamina": 3
-		},
-		"length": 100,
-		"result": {
-			"title": "Lock Slayer",
-			"gold": "300~500",
-			"ichor": 3
-		},
-		"boss": {"100":[
-			"reddragon",
-			"karnivex",
-			"reddragon"
-		]},
-		"spawns": [
-			"mithrilgolem",
-			[
-				"bloodgolem",
-				"bloodgolem"
-			],
-			[
-				"magicmirror",
-				"magicmirror"
-			],
-			"maturereddragon",
-			[
-				"manticore",
-				"manticore"
-			],
-			"reddragon",
-			"demon",
-			"jazid",
-			[
-				"greendragon",
-				"greendragon"
-			],
-			"balrog",
-			"ancientvampire",
-			[
-				"masterswordsman",
-				"masterswordsman",
-				"masterswordsman"
-			]
-		],
-		"flavor": "Burned black by its own denizens"
-	},
-	{
-		"id": "belowgorborung",
-		"name": "Below Mt Gorborung",
-		"desc": "They say the roots of the mountain extend deeper than its heights.",
-		"level": 25,
-		"length": 100,
-		"locked": true,
-		"dist": 1200,
-		"run": {
-			"stamina": 3
-		},
-		"result": {
-			"title": "Lightless",
-			"earthgem": 5,
-			"gems": 10,
-			"tomes": 2
-		},
-		"boss": {
-			"50": "cthulhu",
-			"100": "gorborung"
-		},
-		"spawns": [
-			[
-				"stonegolem",
-				"stonegolem"
-			],
-			[
-				"magmaelemental",
-				"magmaelemental"
-			],
-			[
-				"earthelemental",
-				"earthelemental",
-				"earthelemental"
-			],
-			[
-				"dwarp",
-				"dwarp"
-			],
-			[
-				"callodiper",
-				"callodiper",
-				"callodiper"
-			],
-			[
-				"cavetroll",
-				"cavetroll"
-			],
-			[
-				"skellord",
-				"skellord"
-			],
-			[
-				"wyvern",
-				"wyvern"
-			],
-			"behemoth",
-			[
-				"trow",
-				"trow"
-			],
-			"reddragon",
-			"balrog",
-			"jazid",
-			"m_lichlord",
-			[
-				"shade",
-				"shade"
-			],
-			"beholder",
-			[
-				"ogre",
-				"ogre",
-				"ogre"
-			],
-			"cavetroll"
 		]
 	},
 	{

@@ -20,13 +20,108 @@
 		"cost": {
 			"money": 100,
 			"zero_crystal": 3,
-			"snp_data": 4,
+			"snp_data": 6,
 			"paper": 20
 		},
 		"mod": {
 			"snp_data.rate":0.01,
 			"space.max": 25
 		}
+	},
+	{
+		"id": "small_rehouse",
+		"name": "小型研究所",
+		"desc": "运用基础建筑学建造的房屋",
+		"require": "g.building_1>=3",
+		"cost": {
+			"money": 180,
+			"cu_iron": 10,
+			"cu_copper":10,
+			"snp_data": 5,
+			"zero_crystal": 8,
+			"iron_copper": 5,
+			"paper": 40
+		},
+		"mod": {
+			"money.max": 30,
+			"ganwu.rate":0.01,
+			"space.max": 40
+		}
+	},
+	{
+		"id": "small_rehouse",
+		"name": "小型研究所",
+		"desc": "运用基础建筑学建造的房屋",
+		"require": "g.building_1>=3",
+		"cost": {
+			"money": 180,
+			"cu_iron": 10,
+			"cu_copper":10,
+			"snp_data": 5,
+			"zero_crystal": 8,
+			"iron_copper": 5,
+			"paper": 40
+		},
+		"mod": {
+			"money.max": 30,
+			"ganwu.rate":0.01,
+			"space.max": 40
+		}
+	},
+	{
+		"id": "bfjiao",
+		"name": "冰封窖",
+		"desc": "极寒的居所",
+		"require": "g.building_1>=5 && g.cold_core>=10",
+		"cost": {
+			"money": 320,
+			"cold_core": 11,
+			"jls": 30,
+			"snp_data": 10,
+			"zero_crystal": 16,
+			"iron_copper": 10,
+			"paper": 40
+		},
+		"mod": {
+			"money.max": 50,
+			"space.max": 50,
+			"frs.rate": -0.9
+		}
+	},
+	{
+		"id": "feishita",
+		"name": "非实塔",
+		"desc": "反射建筑学的研究成果,部分运用了非实空间",
+		"require": "g.fanshe_building>=1 && g.xiulian_heli_dx_2>=1",
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 540,
+			"ganwu": 290,
+			"sj_met": 10,
+			"heli": 12,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 60,
+			"iron_copper": 10,
+			"books": 9,
+			"zero_crystal": 37,
+			"snp_data": 12,
+			"star_map": 65,
+			"paper": 50,
+			"exe_paper": 12
+		},
+		"mod": {
+			"money.max": 100,
+			"space.max": 100,
+			"snp_data.rate":0.01,
+			"super_mind.rate": 0.01,
+			"ganwu.rate":0.02
+		},
+		"flavor": "似梦幻泡影"
 	},
 	{
 		"id": "earthspire",

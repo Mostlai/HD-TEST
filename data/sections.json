@@ -50,6 +50,11 @@
 		"require": "g.market_un>0"
 	},
 	{
+		"id": "sect_conquer",
+		"name": "征服",
+		"require": "g.shenshi_3>=3"
+	},
+	{
 		"id": "sect_bestiary",
 		"name": "bestiary",
 		"require": "g.bestiary>0||g.lore>=11"

@@ -128,9 +128,30 @@
 			"tili": 0.2
 		},
 		"result": {
-			"metal_1.exp": 20,
+			"metal_1.exp": 2,
 			"metal_app.exp": 2,
 			"iron_copper": 6
+		}
+	},
+	{
+		"id": "sj_met_get_1",
+		"name": "合成神经材料",
+		"desc": "催动合理和混沌加工出神经材料",
+		"verb": "",
+		"require": "g.xiulian_struct_2>=1 && g.iron_copper>=1 && g.chaos_sci>=5",
+		"length": 10,
+		"cost": {
+			"iron_copper": 6,
+			"shenshi": 2
+		},
+		"run": {
+			"time": -0.5,
+			"tili": 0.2
+		},
+		"result": {
+			"metal_app.exp": 2,
+			"shenshi_1": 1,
+			"sj_met": 2
 		}
 	},
 	{
@@ -249,6 +270,61 @@
 		}
 	},
 	{
+		"id": "write_starmap_2",
+		"name": "天文观测",
+		"desc": "在低温望远镜下进行更细微的观测",
+		"verb": "观测中",
+		"require": "g.Telescope>=1",
+		"need": "Telescope",
+		"length": 8,
+		"fill": [
+			"star_map_1"
+		],
+		"cost": {
+			"star_map": 10,
+			"jls": 2,
+			"ganwu": 20
+		},
+		"run": {
+			"time": -2,
+			"jls":0.2,
+			"tili": 0.3,
+			"stamina": 0.2
+		},
+		"result": {
+			"star_map_1": 1
+		}
+	},
+	{
+		"id": "huoxi_hc",
+		"name": "活性合成",
+		"desc": "在低温下对零结晶进行加工",
+		"verb": "合成中",
+		"require": "g.ColdBio>=1",
+		"need": "ColdBio",
+		"length": 8,
+		"fill": [
+			"life_crystal"
+		],
+		"cost": {
+			"zero_crystal": 10,
+			"sj_met":1,
+			"jls": 2,
+			"ganwu": 20
+		},
+		"run": {
+			"time": -2,
+			"jls":0.2,
+			"sj_met":0.1,
+			"hp":0.1,
+			"tili": 0.3,
+			"stamina": 0.2
+		},
+		"result": {
+			"life_crystal": 1.2
+		}
+	},
+	{
 		"id": "rest",
 		"tags": "t_rest",
 		"name": "歇息",
@@ -289,7 +365,8 @@
 			"tili",
 			"prismatic",
 			"stamina",
-			"hp"
+			"hp",
+			"stress"
 		],
 		"effect": {
 			"prismatic": {
@@ -299,7 +376,8 @@
 			"time": 1.7,
 			"tili": 10,
 			"stamina": 1,
-			"hp": 2
+			"hp": 2,
+			"stress": -1
 		}
 	},
 	{
@@ -309,8 +387,8 @@
 		"require": "heli",
 		"need": "g.runner.hasType('skill')",
 		"every": {
-			"25": {
-				"result.runner.exp": "0.02:25"
+			"30": {
+				"result.runner.exp": "0.01:30"
 			}
 		},
 		"cost": {
@@ -389,6 +467,8 @@
 		"length": 30,
 		"cost": {
 			"elect": 5,
+			"star_map": 30,
+			"zero_crystal": 3,
 			"heli": 7
 		},
 		"run": {
@@ -399,6 +479,167 @@
 		"result": {
 			"heli.max": 5,
 			"elect.rate": 2
+		}
+	},
+	{
+		"id": "hjgz",
+		"name": "环境改造",
+		"desc": "神观的运用使你对环境的控制和利用有了新的理解",
+		"verb": "改造中",
+		"require": "g.energ_shenshi>=5 && g.shenshi_4>=5",
+		"max": 1,
+		"length": 30,
+		"cost": {
+			"money": 400,
+			"super_mind": 6,
+			"sj_met": 10,
+			"star_map": 65,
+			"alculation": 50,
+			"human_power": 50,
+			"zero_crystal": 10
+		},
+		"run": {
+			"money": 0.5,
+			"time": -0.5,
+			"tili": 0.2
+		},
+		"result": {
+			"space.max": 10
+		}
+	},
+	{
+		"id": "yndm",
+		"name": "如此大梦",
+		"desc": "沉醉梦境,堕入梦境",
+		"verb": "流光",
+		"require": "g.dream_death>=1",
+		"max": 1,
+		"length": 50,
+		"cost": {
+			"money": 500,
+			"ganwu": 350,
+			"super_mind": 5,
+			"sj_met": 10,
+			"star_map": 65,
+			"alculation": 50,
+			"human_power": 50,
+			"zero_crystal": 10
+		},
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"age.max": 1200,
+			"age": 1200
+		}
+	},
+	{
+		"id": "fumeng",
+		"name": "浮梦",
+		"desc": "漂浮于梦境,寻觅其精华",
+		"verb": "寻觅中",
+		"require": "g.yndm>=1",
+		"max": 1,
+		"length": 25,
+		"cost": {
+			"money": 100,
+			"ganwu": 150,
+			"super_mind": 9,
+			"star_map": 50,
+			"alculation": 60,
+			"zero_crystal": 2
+		},
+		"run": {
+			"time": -2
+		},
+		"result": {
+			"back_dream": 1
+		}
+	},
+	{
+		"id": "underground_1",
+		"name": "地下空间",
+		"desc": "挖掘地下来扩展可建造面积",
+		"verb": "挖掘中",
+		"require": "g.stand_jiagong>=1",
+		"max": 1,
+		"length": 20,
+		"cost": {
+			"money": 670,
+			"ganwu": 350,
+			"super_mind": 5,
+			"sj_met": 10,
+			"star_map": 65,
+			"alculation": 50,
+			"human_power": 220,
+			"cold_core": 14,
+			"dirty_core":10,
+			"dirty_lingti":10,
+			"zero_crystal": 20
+		},
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"space.max": 20
+		}
+	},
+	{
+		"id": "tian_craft",
+		"name": "钛板制作",
+		"desc": "标准化加工提供了高效制作钛板的途径,",
+		"verb": "制作中",
+		"require": "g.stand_jiagong>=1",
+		"length": 12,
+		"cost": {
+			"money": 80,
+			"ganwu": 60,
+			"star_map": 10,
+			"alculation": 20,
+			"human_power": 10,
+			"zero_crystal": 1
+		},
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"tian": 3
+		}
+	},
+	{
+		"id": "huanjweihu",
+		"name": "环境维护",
+		"desc": "对周围环境进行治理",
+		"verb": "",
+		"require": "g.hjgz>=1",
+		"cost": {
+			"heli": 2,
+			"chaos": 2,
+			"elect": 4,
+			"tili": 0.7,
+			"stamina": 0.8
+		},
+		"result": {
+			"time": 1,
+			"money": 1,
+			"ganwu": 0.5
+		}
+	},
+	{
+		"id": "quchu_frs",
+		"name": "驱除废热",
+		"desc": "手动消耗生命力和混沌净化废热水",
+		"verb": "",
+		"require": "g.frs>0",
+		"cost": {
+			"frs": 10,
+			"chaos": 5,
+			"hp": 2
+		},
+		"result": {
+			"dirty_core": 0.5,
+			"time": 1,
+			"jls": 2
 		}
 	},
 	{

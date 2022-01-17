@@ -22,6 +22,43 @@
 		}
 	},
 	{
+		"id": "jihun_1",
+		"name": "基魂震荡(路径)",
+		"desc": "初步激发出基魂之能",
+		"tags": "路径",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"jihun" :1,
+			"lg": 11,
+			"sp": 25,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 41,
+			"money": 700,
+			"ganwu": 390,
+			"sj_met": 10,
+			"iron_copper":20,
+			"heli": 45,
+			"chaos": 35,
+			"elect":30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"paper": 50,
+			"star_map": 70,
+			"books": 10,
+			"exe_paper": 20
+		},
+		"result": {
+			"time": 30,
+			"xiulian_jihun_1" : 1
+		}
+	},
+	{
 		"id": "jizhun_1",
 		"name": "基准探讨(立足)",
 		"desc": "筑基的第一步,首先要探讨何谓基准,基准决定了后续修行路途中的标准,这个过程中你需要一些称之为零结晶的资源,或许附近的地点有一些",
@@ -43,6 +80,78 @@
 			"heli.max": -0.5,
 			"heli.rate": -0.01,
 			"xiulian_jizhun_1": 1
+		}
+	},
+	{
+		"id": "jizhun_2",
+		"name": "现实基准(立足)",
+		"desc": "建立对现实世界的基准",
+		"tags": "立足",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"sp": 25,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 41,
+			"money": 700,
+			"ganwu": 390,
+			"sj_met": 10,
+			"iron_copper":20,
+			"heli": 45,
+			"chaos": 35,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"paper": 50,
+			"star_map": 70,
+			"books": 10,
+			"exe_paper": 20
+		},
+		"result": {
+			"time": 100,
+			"frs": 20,
+			"xiulian_jizhun_2" : 1
+		}
+	},
+	{
+		"id": "jizhun_3",
+		"name": "现实基向(立足)",
+		"desc": "建立对现实世界的基向",
+		"tags": "立足",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"sp": 25,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 20,
+			"jls": 41,
+			"money": 700,
+			"ganwu": 390,
+			"sj_met": 10,
+			"iron_copper":20,
+			"heli": 45,
+			"chaos": 35,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"paper": 50,
+			"star_map": 70,
+			"books": 10,
+			"exe_paper": 20
+		},
+		"result": {
+			"time": 100,
+			"frs": 20,
+			"xiulian_jizhun_3" : 1
 		}
 	},
 	{
@@ -118,6 +227,57 @@
 		}
 	},
 	{
+		"id": "life_shenshi_1",
+		"name": "神识命理(永生之望)",
+		"desc": "通过神识来激活脑部潜能",
+		"tags": "永生之望",
+		"require": "g.shenshi_1>=6",
+		"max": 2,
+		"buy": {
+			"lg":1,
+			"books": 3
+		},
+		"cost": {
+			"ganwu": 90,
+			"heli": 3,
+			"chaos": 1
+		},
+		"result": {
+			"time": 10,
+			"age.max": -3650,
+			"age": -3650
+		}
+	},
+	{
+		"id": "life_cold_1",
+		"name": "凝结呼吸(永生之望)",
+		"desc": "低温下的缓慢呼吸",
+		"tags": "永生之望",
+		"require": "g.jls>=10",
+		"max": 2,
+		"buy": {
+			"lg":1,
+			"cold_core": 10,
+			"paper": 20,
+			"hp": 20,
+			"books": 3
+		},
+		"cost": {
+			"ganwu": 120,
+			"cold_core": 10,
+			"zero_crystal": 8,
+			"jls": 20,
+			"heli": 3,
+			"chaos": 1
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"age.max": -3650,
+			"age": -3650
+		}
+	},
+	{
 		"id": "heli_li_1_controll",
 		"name": "初步流控制(导向)",
 		"desc": "初步学会自动地获取合理并对其拥有更好的控制能力",
@@ -178,6 +338,26 @@
 		}
 	},
 	{
+		"id": "heli_li_2_escape",
+		"name": "精神抚慰(导向)",
+		"desc": "运用合理来安定情绪",
+		"tags": "导向",
+		"require": "g.xiulian_heli_li_1_esc>0",
+		"max": 2,
+		"cost": {
+			"money": 60,
+			"ganwu": 30,
+			"heli": 2,
+			"zero_crystal": 5,
+			"books": 3,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 1,
+			"xiulian_heli_li_2_escape" : 1
+		}
+	},
+	{
 		"id": "ld_body_1",
 		"name": "初等身体改造(生命构造)",
 		"desc": "运用合理改造原本羸弱的身躯",
@@ -223,6 +403,106 @@
 		}
 	},
 	{
+		"id": "ld_body_3",
+		"name": "超然形式II(生命构造)",
+		"desc": "蜕变的每一步",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_body_2>=1&&g.jls>=1",
+		"max": 2,
+		"cost": {
+			"money": 180,
+			"cold_core": 10,
+			"jls": 20,
+			"r_adv_w_sj1":1,
+			"tili": 15,
+			"elect": 20,
+			"paper": 40,
+			"ganwu": 130,
+			"heli": 2,
+			"zero_crystal": 8,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 20,
+			"xiulian_ld_body_3" : 1,
+			"frs": 18,
+			"hp.max": -3,
+			"tili.max": -3,
+			"tili.rate": -0.1,
+			"stamina.max": -2,
+			"stamina.rate": -0.06
+		}
+	},
+	{
+		"id": "ld_dw_guancha",
+		"name": "双波生命实验(生命构造)",
+		"desc": "研究生命在两种波下的表现",
+		"tags": "生命构造",
+		"require": "g.biology_ast_1>=10&&g.rlt_guancha>=5",
+		"max": 2,
+		"cost": {
+			"money": 170,
+			"ganwu": 150,
+			"heli": 10,
+			"elect": 20,
+			"chaos": 5,
+			"star_map": 30,
+			"super_mind": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"xiulian_ld_dw_guancha" : 1,
+			"rlt_guancha.max": -5,
+			"hp.max": -10,
+			"tili.max": -1,
+			"tili.rate": -0.1
+		}
+	},
+	{
+		"id": "ld_tilihuifu",
+		"name": "体力恢复(生命构造)",
+		"desc": "运用神识改良身体机能",
+		"tags": "生命构造",
+		"require": "g.super_mind>=4",
+		"max": 2,
+		"cost": {
+			"money": 220,
+			"ganwu": 150,
+			"star_map": 40,
+			"tili": 10,
+			"super_mind": 5,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"tili.max": -1,
+			"tili.rate": -0.6
+		}
+	},
+	{
+		"id": "ld_tilihuifu2",
+		"name": "体力恢复II(生命构造)",
+		"desc": "运用神识改良身体机能",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_dw_guancha>=1",
+		"max": 2,
+		"cost": {
+			"money": 300,
+			"ganwu": 150,
+			"star_map": 40,
+			"tili": 11,
+			"star_map": 55,
+			"super_mind": 5,
+			"r_adv_w_sj1": 2,
+			"exe_paper": 3
+		},
+		"result": {
+			"time": 30,
+			"tili.rate": -1
+		}
+	},
+	{
 		"id": "astro_zhuji_1",
 		"name": "大气假说(通天阶梯)",
 		"desc": "通过不断地实验与观察,你猜想你所在的大地是一个被气体包裹着的球体",
@@ -252,7 +532,7 @@
 		"max": 2,
 		"cost": {
 			"money": 50,
-			"ganwu": 30,
+			"ganwu": 50,
 			"heli": 2,
 			"snp_data": 3,
 			"exe_paper": 3
@@ -272,7 +552,7 @@
 		"require": "g.xiulian_astro_zhuji_1>=1",
 		"max": 2,
 		"cost": {
-			"ganwu": 20,
+			"ganwu": 50,
 			"heli": 6,
 			"snp_data": 8,
 			"exe_paper": 7
@@ -287,13 +567,13 @@
 	},
 	{
 		"id": "astro_zhuji_3",
-		"name": "混沌揭示(通天阶梯)",
+		"name": "混沌揭示(获取)",
 		"desc": "混沌运动学揭示了一种新的力量",
-		"tags": "通天阶梯",
+		"tags": "获取",
 		"require": "g.chaos_sci>=3",
 		"max": 2,
 		"cost": {
-			"ganwu": 30,
+			"ganwu": 50,
 			"heli": 6,
 			"snp_data": 8,
 			"star_map": 5,
@@ -307,6 +587,27 @@
 		}
 	},
 	{
+		"id": "chaos_ly_1",
+		"name": "混沌释放(利用)",
+		"desc": "学习利用混沌",
+		"tags": "利用",
+		"require": "g.xiulian_astro_zhuji_3>=1",
+		"max": 2,
+		"cost": {
+			"ganwu": 60,
+			"heli": 6,
+			"chaos":3,
+			"zero_crystal": 5,
+			"snp_data": 8,
+			"star_map": 10,
+			"exe_paper": 7
+		},
+		"result": {
+			"time": 20,
+			"xiulianchaos_ly_1" : 1
+		}
+	},
+	{
 		"id": "eye_zhuji_1",
 		"name": "外置扩展眼镜(观测之术)",
 		"desc": "你意识到还有很多看不见的光,这种开创性的随身镜片可以帮助你看到其中的一部分",
@@ -315,7 +616,7 @@
 		"max": 2,
 		"cost": {
 			"money": 50,
-			"ganwu": 40,
+			"ganwu": 70,
 			"heli": 2,
 			"books": 3,
 			"zero_crystal": 3,
@@ -365,7 +666,7 @@
 		"max": 2,
 		"cost": {
 			"books": 3,
-			"zero_crystal": 3,
+			"zero_crystal": 5,
 			"paper": 10,
 			"exe_paper": 3,
 			"cu_iron": 5
@@ -384,7 +685,7 @@
 		"max": 2,
 		"cost": {
 			"books": 1,
-			"zero_crystal": 1,
+			"zero_crystal": 5,
 			"paper": 10,
 			"exe_paper": 3,
 			"cu_iron": 1
@@ -403,6 +704,10 @@
 		"max": 2,
 		"cost": {
 			"books": 1,
+			"cu_iron": 5,
+			"cu_copper": 5,
+			"ganwu": 100,
+			"zero_crystal": 5,
 			"exe_paper": 1
 		},
 		"result": {
@@ -418,8 +723,12 @@
 		"require": "g.xiulian_change_metal_3>=1",
 		"max": 2,
 		"cost": {
-			"books": 1,
-			"exe_paper": 1
+			"books": 4,
+			"paper": 20,
+			"exe_paper": 1,
+			"cu_iron": 5,
+			"cu_copper": 5,
+			"zero_crystal": 5
 		},
 		"result": {
 			"time": 3,
@@ -427,7 +736,29 @@
 		}
 	},
 	{
-		"id": "energ_1",
+		"id": "struct_2",
+		"name": "神经物质(物体结构)",
+		"desc": "让金属具有思维....",
+		"tags": "物体结构",
+		"require": "g.shenshi_1>=6 && g.metal_app>=5",
+		"max": 2,
+		"cost": {
+			"books": 4,
+			"paper": 30,
+			"lg": 5,
+			"ganwu": 110,
+			"zero_crystal": 10,
+			"books": 3
+		},
+		"result": {
+			"time": 3,
+			"metal_app.max": -5,
+			"shenshi_1.max": -2,
+			"xiulian_struct_2" : 1
+		}
+	},
+	{
+		"id": "x_energ_1",
 		"name": "FC切割实验(能量物理)",
 		"desc": "将FC合金铸成特定形状后对磁感线进行切割",
 		"tags": "能量物理",
@@ -436,6 +767,8 @@
 		"cost": {
 			"books": 5,
 			"exe_paper": 5,
+			"zero_crystal": 10,
+			"paper": 20,
 			"iron_copper": 10
 		},
 		"result": {
@@ -446,18 +779,18 @@
 	{
 		"id": "zhuji_2",
 		"name": "筑基零重(初入筑基)",
-		"desc": "在结合天体,生物,材料,能量后,混沌与合理交织,电能被你带入世间,你的博学,力量和功业足以让你迈入这个层次,这是生命层次的飞跃",
+		"desc": "在结合天体,生物,材料,能量后,混沌与合理交织,电能被你带入世间,神识成就思维之光,你的博学,力量和功业足以让你迈入这个层次,这是生命层次的飞跃",
 		"tags": "初入筑基",
 		"require": "g.chaos_up>=1 && g.xiulian_zhuji_1>=1 && g.zhuji_qianzhi_2>=1",
 		"max": 2,
 		"cost": {
-			"ganwu":100,
+			"shenshi": 1,
+			"ganwu":150,
 			"heli": 5,
 			"elect": 20,
 			"chaos": 5
 		},
 		"result": {
-			"title": "筑基修士",
 			"time": 365,
 			"heli.max": -30,
 			"chaos.max": -30,
@@ -470,6 +803,560 @@
 			"tili.max": -10,
 			"tili.rate": -1,
 			"xiulian_zhuji_2" : 1
+		}
+	},
+	{
+		"id": "x_info_1",
+		"name": "无线通讯(信息海)",
+		"desc": "研究无线传播信息",
+		"tags": "信息海",
+		"require": "g.mc_guancha>=10 && g.dirc_lunch>=1",
+		"max": 2,
+		"cost": {
+			"ganwu": 140,
+			"money": 130,
+			"elect": 30,
+			"paper": 40,
+			"exe_paper": 20,
+			"zero_crystal":15,
+			"alculation": 10,
+			"super_mind": 5,
+			"iron_copper": 5,
+			"star_map": 10
+		},
+		"result": {
+			"xiulian_x_info_1" : 1
+		}
+	},
+	{
+		"id": "ld_cold",
+		"name": "极寒环境适应(生命构造)",
+		"desc": "学习在极寒环境下生存",
+		"tags": "生命构造",
+		"require": "g.xiulian_ld_dw_guancha>=1",
+		"max": 2,
+		"cost": {
+			"money": 130,
+			"paper": 30,
+			"exe_paper": 15,
+			"zero_crystal":15,
+			"super_mind": 1,
+			"sj_met": 5,
+			"star_map": 13
+		},
+		"result": {
+			"xiulian_ld_cold" : 1
+		}
+	},
+	{
+		"id": "ld_panpa",
+		"name": "攀登技巧(生命构造)",
+		"desc": "学习在险峻地形行走,看上去以后会有用",
+		"tags": "生命构造",
+		"require": "g.biology_ast_1>=5",
+		"max": 2,
+		"cost": {
+			"tili": 15,
+			"stamina": 11,
+			"heli": 1,
+			"chaos": 1,
+			"money": 130,
+			"exe_paper": 15,
+			"zero_crystal":15,
+			"super_mind": 5,
+			"sj_met": 5,
+			"star_map": 20
+		},
+		"result": {
+			"xiulian_ld_panpa" : 1
+		}
+	},
+	{
+		"id": "change_res",
+		"name": "低温研究(形态变化)",
+		"desc": "在低温环境下研究能有效降低热运动带来的干扰",
+		"tags": "形态变化",
+		"require": "g.jls>=1",
+		"max": 2,
+		"cost": {
+			"heli": 1,
+			"chaos": 1,
+			"ganwu": 120,
+			"money": 130,
+			"human_power": 30,
+			"exe_paper": 30,
+			"zero_crystal":15,
+			"super_mind": 2,
+			"sj_met": 5,
+			"cold_core": 10,
+			"jls": 20,
+			"star_map": 20
+		},
+		"result": {
+			"frs": 15,
+			"xiulian_change_res" : 1
+		}
+	},
+	{
+		"id": "eye_adv_astro",
+		"name": "进阶天文观测(观测之术)",
+		"desc": "粗糙的天文记录的作用已经不如以往了",
+		"tags": "观测之术",
+		"require": "g.xiulian_change_res>=1 && g.jls>=5 && g.astronomy_1>=5",
+		"max": 2,
+		"cost": {
+			"lg": 7,
+			"money": 300,
+			"ganwu": 140,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"xiulian_eye_adv_astro" : 1
+		}
+	},
+	{
+		"id": "info_cold_1",
+		"name": "低温传播实验(信息海)",
+		"desc": "研究在低温环境下信息的传播速度",
+		"tags": "信息海",
+		"require": "g.xiulian_change_res>=1 && g.jls>=10 && g.mc_guancha>=5",
+		"max": 2,
+		"cost": {
+			"lg": 7,
+			"money": 300,
+			"ganwu": 140,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"xiulian_info_cold_1" : 1
+		}
+	},
+	{
+		"id": "energ_cold_1",
+		"name": "低温导电实验(能量物理)",
+		"desc": "研究在低温环境下的材料电导率变化",
+		"tags": "能量物理",
+		"require": "g.xiulian_change_res>=1",
+		"max": 2,
+		"cost": {
+			"lg": 7,
+			"money": 300,
+			"ganwu": 150,
+			"heli": 2,
+			"elect":30,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 10,
+			"frs": 19,
+			"xiulian_energ_cold_1" : 1
+		}
+	},
+	{
+		"id": "struct_cold_1",
+		"name": "低温材料性质(物体结构)",
+		"desc": "研究在低温环境下的各种材料的物理性质",
+		"tags": "物体结构",
+		"require": "g.xiulian_change_res>=1 && g.metal_app>=6 && g.building_1>=5 &&g.jls>=10",
+		"max": 2,
+		"cost": {
+			"lg": 7,
+			"money": 300,
+			"ganwu": 150,
+			"cu_iron": 20,
+			"cu_copper": 20,
+			"iron_copper": 10,
+			"tian": 10,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 10,
+			"snp_data": 10,
+			"paper": 40,
+			"cold_core": 10,
+			"jls": 20,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 30,
+			"frs": 19,
+			"xiulian_struct_cold_1" : 1
+		}
+	},
+	{
+		"id": "bio_cold_1",
+		"name": "低温生物样本(生命构造)",
+		"desc": "低温环境的生命形式研究",
+		"tags": "生命构造",
+		"require": "g.xiulian_change_res>=1 && g.biology_ast_1>=10 && g.bio_metal_1>=5 &&g.jls>=10",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"money": 300,
+			"ganwu": 150,
+			"sj_met": 5,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"tian": 10,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 12,
+			"snp_data": 10,
+			"paper": 40,
+			"jls": 20,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 30,
+			"frs": 19,
+			"xiulian_bio_cold_1" : 1
+		}
+	},
+	{
+		"id": "bio_dirty_1",
+		"name": "污浊研究(生命构造)",
+		"desc": "混沌而危险的污浊核心中蕴含着神秘的力量",
+		"tags": "生命构造",
+		"require": "g.dirty_core>=3 && g.xiulian_bio_cold_1>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"money": 300,
+			"ganwu": 160,
+			"sj_met": 2,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"tian": 10,
+			"heli": 2,
+			"human_power": 40,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 19,
+			"snp_data": 10,
+			"paper": 40,
+			"jls": 20,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 60,
+			"frs": 19,
+			"xiulian_bio_dirty_1" : 1
+		}
+	},
+	{
+		"id": "death_1",
+		"name": "死谜(死亡)",
+		"desc": "人人惧怕死亡,死亡不该被惧怕",
+		"tags": "死亡",
+		"require": "g.shenshi_1>=10",
+		"max": 2,
+		"cost": {
+			"lg":11,
+			"money": 300,
+			"ganwu": 160,
+			"sj_met": 2,
+			"heli": 2,
+			"human_power": 20,
+			"alculation": 10,
+			"books": 5,
+			"zero_crystal": 19,
+			"snp_data": 10,
+			"paper": 40,
+			"exe_paper": 10
+		},
+		"result": {
+			"time": 100,
+			"xiulian_death_1" : 1
+		}
+	},
+	{
+		"id": "death_2",
+		"name": "流彩梦境(死亡)",
+		"desc": "流光溢彩的梦,令人沉醉的梦,你越来越能听到梦境的呼唤",
+		"tags": "死亡",
+		"require": "g.dream_death>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 2,
+			"money": 300,
+			"ganwu": 160,
+			"sj_met": 5,
+			"heli": 2,
+			"alculation": 40,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 10,
+			"paper": 40,
+			"star_map": 65,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 1,
+			"xiulian_death_2" : 1
+		}
+	},
+	{
+		"id": "death_3",
+		"name": "死界流转(死亡)",
+		"desc": "大梦苏醒,你窥探到死后的世界",
+		"tags": "死亡",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"money": 500,
+			"ganwu": 380,
+			"sj_met": 5,
+			"heli": 30,
+			"chaos": 30,
+			"alculation": 40,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 10,
+			"paper": 40,
+			"star_map": 65,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 120,
+			"xiulian_death_3" : 1
+		}
+	},
+	{
+		"id": "chaos_ld_1",
+		"name": "混沌集合(流动)",
+		"desc": "在纯浊影响下,混沌表达了一定规律的数理逻辑",
+		"tags": "流动",
+		"require": "g.dirty_lingti>=5 && g.chaos_up>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 20,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"chaos": 2,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 60,
+			"books": 5,
+			"zero_crystal": 27,
+			"snp_data": 12,
+			"star_map": 65,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 182,
+			"frs": 19,
+			"xiulian_chaos_ld_1" : 1
+		}
+	},
+	{
+		"id": "heli_dx_1",
+		"name": "合理之表(导向)",
+		"desc": "合理在纯浊的状态下,呈现高度逻辑化的形式",
+		"tags": "导向",
+		"require": "g.xiulian_chaos_ld_1>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 20,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"heli": 2,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"star_map": 60,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 91,
+			"frs": 19,
+			"xiulian_heli_dx_1" : 1
+		}
+	},
+	{
+		"id": "heli_dx_2",
+		"name": "灵虚合理(导向)",
+		"desc": "灵体开发的数学进一步指导了合理的用途",
+		"tags": "导向",
+		"require": "g.fanshe_math>=4 && g.energ_shenshi>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"jls": 30,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"heli": 10,
+			"tian": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 35,
+			"snp_data": 12,
+			"star_map": 60,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 77,
+			"frs": 29,
+			"xiulian_heli_dx_2" : 1
+		}
+	},
+	{
+		"id": "math_jihe_1",
+		"name": "几何原理(几何)",
+		"desc": "初步构想物体的几何形式",
+		"tags": "几何",
+		"require": "g.space_mind>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"sj_met": 10,
+			"heli": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 27,
+			"snp_data": 12,
+			"star_map": 65,
+			"paper": 40,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 100,
+			"frs": 29,
+			"xiulian_math_jihe_1" : 1
+		}
+	},
+	{
+		"id": "math_kj_1",
+		"name": "非实空间坐标(空间系)",
+		"desc": "灵体所表达的非实空间占用",
+		"tags": "空间系",
+		"require": "g.space_mind>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"sj_met": 10,
+			"heli": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 100,
+			"frs": 29,
+			"xiulian_math_kj_1" : 1
+		}
+	},
+	{
+		"id": "math_fc_1",
+		"name": "灵虚幂次方程(空间系)",
+		"desc": "普通的幂次方程无法计算灵体",
+		"tags": "空间系",
+		"require": "g.space_mind>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"sj_met": 10,
+			"heli": 10,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 50,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 100,
+			"frs": 29,
+			"xiulian_math_fc_1" : 1
 		}
 	}
 ]

@@ -20,6 +20,8 @@
 		"sections",
 		"potions",
 		"market",
+		"adv_weapon",
+		"conquer",
 		"xiulian",
 		"encounters",
 		"locales",
@@ -38,6 +40,7 @@
 		"extramats",
 		"extraaction",
 		"winter",
-		"legacy"
+		"legacy",
+		"Thought"
 	]
 }

@@ -57,6 +57,25 @@
 		"level": 1
 	},
 	{
+		"id": "sj_sword_1",
+		"name": "神识流剑",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"name": "神念冲击",
+			"kind": "slash",
+			"damage": "6~8"
+		},
+		"alter": {
+			"mod": {
+				"self.defense": 1,
+				"f_power": 8
+			}
+		},
+		"cost": 30,
+		"level": 4
+	},
+	{
 		"id": "staff",
 		"attack": {
 			"kind": "blunt",

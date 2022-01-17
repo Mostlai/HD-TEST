@@ -1,5 +1,21 @@
 [
 	{
+		"id": "sjmet",
+		"name": "灰暗",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"exclude": "weapon,ring,amulet",
+		"alter": {
+			"attack.tohit": 0.1,
+			"armor": 1,
+			"mod": {
+				"self.resist.chaos": 2
+			}
+		}
+	},
+	{
 		"id": "silk",
 		"kind": "cloth",
 		"weight": 0,

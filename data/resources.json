@@ -8,6 +8,14 @@
 		"max": 10
 	},
 	{
+		"id": "back_dream",
+		"name": "归梦",
+		"desc": "非实的存在,游离在虚幻中",
+		"group": "货币",
+		"require": "g.yndm>=1",
+		"max": 10
+	},
+	{
 		"id": "death",
 		"name": "死寂之刻",
 		"desc": "寂静...",
@@ -18,6 +26,35 @@
 			"stamina.rate": -2000,
 			"tili.rate": -2000,
 			"hp.rate": -2000
+		}
+	},
+	{
+		"id": "shuaibai",
+		"name": "衰败",
+		"desc": "熵的增加",
+		"group": "死亡",
+		"locked": true,
+		"max": 1,
+		"mod": {
+			"stamina.rate": -2,
+			"tili.rate": -2,
+			"hp.rate": -2,
+			"time.rtae": 0.6,
+			"heli.rate": -3,
+			"chaos.rate": -3,
+			"shenshi.rate": -3
+		}
+	},
+	{
+		"id": "jihun",
+		"name": "基魂",
+		"desc": "筑基所凝聚的真魂",
+		"group": "真魂",
+		"locked": true,
+		"max": 1,
+		"mod": {
+			"shuaibai.rate": -1,
+			"hp.rate": 0.2
 		}
 	},
 	{
@@ -72,7 +109,19 @@
 		"group": "结晶",
 		"tags": "",
 		"require": "g.reading>0",
-		"max": 3
+		"max": 5
+	},
+	{
+		"id": "life_crystal",
+		"name": "活性结晶",
+		"desc": "低温下生物结晶",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.life_crystal>0",
+		"mod": {
+			"zero_crystal.rate": 0.1
+		},
+		"max": 6
 	},
 	{
 		"id": "cu_iron",
@@ -102,6 +151,65 @@
 		"max": 5
 	},
 	{
+		"id": "sj_met",
+		"name": "神经材料",
+		"desc": "将神识附着在FC合金上,达到更优良的金属性能",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_2>=1",
+		"max": 5
+	},
+	{
+		"id": "tian",
+		"name": "钛板",
+		"desc": "具有金属光泽,有延展性,密度小,容易加工",
+		"group": "金属",
+		"tags": "",
+		"require": "g.land_wa>=3 &&g.metal_1>=8",
+		"max": 5
+	},
+	{
+		"id": "frs",
+		"name": "废热水",
+		"desc": "高污染的流体,不可直接倾倒在自然环境中",
+		"group": "流体",
+		"tags": "",
+		"require": "g.frs>=1",
+		"max": 10,
+		"mod": {
+			"stamina.rate": -0.01,
+			"tili.rate": -0.01,
+			"hp.rate": -0.01
+		}
+	},
+	{
+		"id": "jls",
+		"name": "晶流水",
+		"desc": "低温流体,有着优良的散热性,是用途广泛的一种流体",
+		"group": "流体",
+		"tags": "",
+		"require": "g.liu_yy>=3 &&g.cold_core>=1",
+		"max": 1
+	},
+	{
+		"id": "cold_core",
+		"name": "冰冻核心",
+		"desc": "一块寒冷的晶体,从极寒之地获得,广泛应用于低温生产工作",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.cold_core>=1",
+		"max": 12
+	},
+	{
+		"id": "dirty_core",
+		"name": "污浊核心",
+		"desc": "一块凝结了高能污浊的晶体,由于有着外壳保护,所以不会对自身造成伤害",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.dirty_core>=1",
+		"max": 0
+	},
+	{
 		"id": "snp_data",
 		"name": "测绘资料",
 		"desc": "对自然结构的测绘资料,对于研究很有帮助",
@@ -122,9 +230,66 @@
 		"tags": "",
 		"require": "g.xiulian_astro_zhuji_2>=1",
 		"mod": {
+			"ganwu.max": 1.1
+		},
+		"max": 5
+	},
+	{
+		"id": "star_map_1",
+		"name": "天文记录",
+		"desc": "低温降噪环境的观测记录",
+		"group": "知识",
+		"tags": "",
+		"require": "g.star_map_1>0",
+		"mod": {
+			"ganwu.max": 3
+		},
+		"max": 6
+	},
+	{
+		"id": "super_mind",
+		"name": "超识",
+		"desc": "集群思维",
+		"group": "知识",
+		"tags": "",
+		"locked": true,
+		"mod": {
 			"ganwu.max": 2
 		},
 		"max": 5
+	},
+	{
+		"id": "r_adv_w_sj1",
+		"name": "反材料工具",
+		"desc": "小型的定制化武器,可以快速破除敌军的防御,一般用于小规模战争",
+		"group": "武器",
+		"tags": "",
+		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
+		"mod": {
+			"f_power.max": 5
+		},
+		"max": 2
+	},
+	{
+		"id": "r_adv_w_sj2",
+		"name": "污浊武器",
+		"desc": "以污浊核心为主体的武器,具有大杀伤效果",
+		"group": "武器",
+		"tags": "",
+		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
+		"mod": {
+			"f_power.max": 10
+		},
+		"max": 2
+	},
+	{
+		"id": "dirty_lingti",
+		"name": "纯浊灵体",
+		"desc": "纯净灵体,但表达了污浊核心的反相性质",
+		"group": "灵体",
+		"tags": "",
+		"require": "g.xiulian_bio_dirty_1>=1 &&g.lingti_xue>=1",
+		"max": 2
 	},
 	{
 		"id": "xiulian_heli_1",
@@ -133,8 +298,21 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
+	},
+	{
+		"id": "xiulian_jihun1",
+		"name": "基魂震荡",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"jihun.max":0.5
+		}
 	},
 	{
 		"id": "xiulian_jizhun_1",
@@ -143,7 +321,27 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jizhun_2",
+		"name": "现实基准",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jizhun_3",
+		"name": "现实基向",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -153,7 +351,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -163,7 +361,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -173,7 +371,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -183,7 +381,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -193,8 +391,25 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
-		"max": 1
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"heli_missile": true,
+			"guihuafa": true
+		}
+	},
+	{
+		"id": "xiulian_heli_li_2_escape",
+		"name": "精神抚慰",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"jsfw": true
+		}
 	},
 	{
 		"id": "xiulian_ld_body_1",
@@ -203,7 +418,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -213,7 +428,27 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_body_3",
+		"name": "超然形式II",
+		"desc": "超然形式I",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_dw_guancha",
+		"name": "双波生命实验",
+		"desc": "双波生命实验",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -223,7 +458,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -233,7 +468,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -243,7 +478,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -253,7 +488,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -263,7 +498,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -273,7 +508,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -283,7 +518,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -293,7 +528,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -303,7 +538,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -313,7 +548,17 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_2",
+		"name": "神经物质",
+		"desc": "神经物质",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -323,7 +568,7 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -333,7 +578,220 @@
 		"hide": true,
 		"group": "修行",
 		"tags": "",
-		"locked":true,
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"shuaibai.rate": 0.3,
+			"jihun.rate": 0.2
+		}
+	},
+	{
+		"id": "xiulian_x_info_1",
+		"name": "无线通讯",
+		"desc": "无线通讯",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_cold",
+		"name": "极寒环境适应",
+		"desc": "极寒环境适应",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_ld_panpa",
+		"name": "攀登技巧",
+		"desc": "攀登技巧",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_change_res",
+		"name": "低温研究",
+		"desc": "低温研究",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_eye_adv_astro",
+		"name": "进阶天文观测",
+		"desc": "进阶天文观测",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_info_cold_1",
+		"name": "低温传播实验",
+		"desc": "低温传播实验",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_cold_1",
+		"name": "低温导电实验",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_cold_1",
+		"name": "低温材料性质",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_bio_cold_1",
+		"name": "低温生物样本",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_bio_dirty_1",
+		"name": "污浊研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_death_1",
+		"name": "死谜",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"dhf": true
+		}
+	},
+	{
+		"id": "xiulian_death_2",
+		"name": "流彩梦境",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_death_3",
+		"name": "死界流转",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_chaos_ld_1",
+		"name": "混沌集合",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_chaos_ly_1",
+		"name": "混沌释放",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"hundun_missile": true
+		}
+	},
+	{
+		"id": "xiulian_heli_dx_1",
+		"name": "合理之表",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"flbl": true
+		}
+	},
+	{
+		"id": "xiulian_heli_dx_2",
+		"name": "灵虚合理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_math_jihe_1",
+		"name": "几何原理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_math_kj_1",
+		"name": "非实空间坐标",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_math_fc_1",
+		"name": "灵虚幂次方程",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
 		"max": 1
 	},
 	{
@@ -755,6 +1213,42 @@
 		"max": 100000000000000000000000000000
 	},
 	{
+		"id": "alculation",
+		"desc": "计算力",
+		"flavor": "计算力",
+		"hide": true,
+		"name": "算力",
+		"val":1,
+		"max": 1
+	},
+	{
+		"id": "f_power",
+		"desc": "战斗评级",
+		"flavor": "战斗评级",
+		"hide": true,
+		"name": "战斗评级",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "f_area",
+		"desc": "领土面积",
+		"flavor": "领土面积",
+		"hide": true,
+		"name": "领土面积",
+		"val":1,
+		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "human_power",
+		"desc": "人力",
+		"flavor": "人力",
+		"hide": true,
+		"name": "人力",
+		"val":0,
+		"max": 1
+	},
+	{
 		"id": "age",
 		"desc": "",
 		"flavor": "餐玉驻年龄，吞霞反容颜",
@@ -774,6 +1268,16 @@
 		"color": "#29d61d",
 		"locked": false,
 		"max": 10
+	},
+	{
+		"id": "shenshi",
+		"tags": "Bar,prismatic",
+		"desc": "脑中奥秘",
+		"unit": false,
+		"color": "#9400D3",
+		"require": "g.shenshi_1>=4",
+		"name": "神识",
+		"max": 1
 	},
 	{
 		"id": "heli",
