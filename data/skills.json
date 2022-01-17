@@ -849,7 +849,7 @@
 		},
 		"mod": {
 			"super_mind.rate": 0.005,
-			"space.max": -3
+			"space.max": 4
 		}
 	},
 	{
