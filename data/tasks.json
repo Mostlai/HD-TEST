@@ -274,7 +274,7 @@
 		"name": "天文观测",
 		"desc": "在低温望远镜下进行更细微的观测",
 		"verb": "观测中",
-		"require": "g.star_map_1>0",
+		"require": "g.Telescope>=1",
 		"need": "Telescope",
 		"length": 8,
 		"fill": [
@@ -300,7 +300,7 @@
 		"name": "活性合成",
 		"desc": "在低温下对零结晶进行加工",
 		"verb": "合成中",
-		"require": "g.life_crystal>0",
+		"require": "g.ColdBio>=1",
 		"need": "ColdBio",
 		"length": 8,
 		"fill": [
