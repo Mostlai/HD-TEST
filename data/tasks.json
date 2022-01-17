@@ -539,7 +539,7 @@
 			"hp": 2
 		},
 		"result": {
-			"dirty_core": 1,
+			"dirty_core": 0.5,
 			"time": 1,
 			"jls": 2
 		}
