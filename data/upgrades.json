@@ -439,6 +439,7 @@
 		"cost": {
 			"lg": 8,
 			"jls": 30,
+			"frs":40,
 			"super_mind": 5,
 			"elect": 30,
 			"heli": 1,
