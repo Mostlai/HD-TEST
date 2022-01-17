@@ -119,6 +119,9 @@
 		"verb": "",
 		"require": "g.xiulian_struct_1>=1",
 		"length": 3,
+		"fill": [
+			"iron_copper"
+		],
 		"cost": {
 			"cu_iron": 6,
 			"cu_copper": 9
@@ -140,6 +143,9 @@
 		"verb": "",
 		"require": "g.xiulian_struct_2>=1 && g.iron_copper>=1 && g.chaos_sci>=5",
 		"length": 10,
+		"fill": [
+			"sj_met"
+		],
 		"cost": {
 			"iron_copper": 6,
 			"shenshi": 2
@@ -541,6 +547,9 @@
 		"require": "g.yndm>=1",
 		"max": 1,
 		"length": 25,
+		"fill": [
+			"back_dream"
+		],
 		"cost": {
 			"money": 100,
 			"ganwu": 150,
@@ -591,6 +600,9 @@
 		"verb": "制作中",
 		"require": "g.stand_jiagong>=1",
 		"length": 12,
+		"fill": [
+			"tian"
+		],
 		"cost": {
 			"money": 80,
 			"ganwu": 60,
