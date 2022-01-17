@@ -486,11 +486,12 @@
 			"frs.rate": -0.4
 		}
 	},
-	{
+		{
 		"id": "frs_ld",
 		"name": "废热驱除",
 		"desc": "永久消耗一批顽固废热水,注意这将消耗精力上限和电能速率以及气血上限",
 		"require": "g.frs>=50",
+		"need": "g.frs>=50",
 		"max": 1,
 		"cost": {
 			"lg": 8,
@@ -522,11 +523,11 @@
 		"name": "废热屏蔽",
 		"desc": "永久消耗一批顽固废热水,注意这将消耗精力上限和电能速率以及气血上限",
 		"require": "g.frs>=60",
+		"need": "g.frs>=60",
 		"max": 5,
 		"cost": {
 			"lg": 8,
 			"jls": 30,
-			"frs":60,
 			"super_mind": 8,
 			"cold_core": 20,
 			"elect": 15,
