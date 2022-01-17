@@ -518,6 +518,38 @@
 		}
 	},
 	{
+		"id": "frs_ld2",
+		"name": "废热屏蔽",
+		"desc": "永久消耗一批顽固废热水,注意这将消耗精力上限和电能速率以及气血上限",
+		"require": "g.frs>=60",
+		"max": 5,
+		"cost": {
+			"lg": 8,
+			"jls": 30,
+			"frs":60,
+			"super_mind": 8,
+			"cold_core": 20,
+			"elect": 15,
+			"heli": 1,
+			"chaos": 5,
+			"shenshi": 1,
+			"hp": 20,
+			"star_map": 55,
+			"r_adv_w_sj1": 2,
+			"zero_crystal":12,
+			"paper": 30,
+			"exe_paper": 10,
+			"ganwu": 100
+		},
+		"mod":{
+			"frs": -60,
+			"stamina.max": -0.2,
+			"hp.max":-0.6,
+			"elect.rate": -0.8,
+			"frs.rate": -0.1
+		}
+	},
+	{
 		"id": "aofa_drive",
 		"name": "奥法驱动",
 		"desc": "利用合理和电能进行高效驱动",
