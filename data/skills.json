@@ -620,7 +620,7 @@
 		"name":"电导神观学",
 		"desc":"对神识进行电力分析",
 		"level": 3,
-		"require": "g.shenshi_1>=10 && g.Knowledge_integration_1>=8 && g.energ_1>=8",
+		"require": "g.shenshi_1>=10 && g.Knowledge_integration_1>=8 && g.energ_1>=7",
 		"buy": {
 			"super_mind": 4,
 			"books": 4
