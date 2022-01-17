@@ -709,7 +709,7 @@
 		},
 		"mod":{
 			"frs":19,
-			"space.max": -10
+			"space.max": 10
 		}
 	},
 	{
