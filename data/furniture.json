@@ -390,7 +390,7 @@
 			"elect.rate": -1,
 			"jls.rate": 0.2,
 			"frs.rate": 0.1,
-			"cold_core.rate": -0.01,
+			"cold_core.rate": -0.005,
 			"space": 5
 		}
 	},
