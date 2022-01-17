@@ -228,8 +228,8 @@
 		"require": "g.zero_crystal>=1&&g.crafting_1>=2",
 		"cost": {
 			"money": 50,
-			"zero_crystal": 5,
-			"star_map": 10
+			"zero_crystal": 10,
+			"star_map": 35
 		},
 		"mod": {
 			"zero_crystal.max": 5
@@ -240,10 +240,11 @@
 		"name": "城镇学校",
 		"desc": "一个人自己钻研总是较难的,你觉得进入当地的学校学习知识是个好主意",
 		"max": 1,
-		"require": "g.reading>=1",
+		"require": "g.reading>=3",
 		"cost": {
 			"money": 30,
 			"zero_crystal": 5,
+			"star_map": 25,
 			"exe_paper": 4
 		},
 		"mod": {
@@ -434,12 +435,10 @@
 		"id": "frs_pro",
 		"name": "废热处理",
 		"desc": "研究安全处理这种高污染的流体",
-		"require": "g.jls>0",
 		"max": 1,
 		"cost": {
 			"lg": 8,
 			"jls": 30,
-			"frs":40,
 			"super_mind": 5,
 			"elect": 30,
 			"heli": 1,
@@ -461,7 +460,6 @@
 		"id": "frs_nj",
 		"name": "废热凝结",
 		"desc": "废热水或许还有其他作用...",
-		"require": "g.frs_pro>=1",
 		"max": 1,
 		"cost": {
 			"lg": 8,
@@ -484,70 +482,6 @@
 			"dirty_core": 1,
 			"dirty_core.rate": 0.01,
 			"frs.rate": -0.4
-		}
-	},
-		{
-		"id": "frs_ld",
-		"name": "废热驱除",
-		"desc": "永久消耗一批顽固废热水,注意这将消耗精力上限和电能速率以及气血上限",
-		"require": "g.frs>=50",
-		"need": "g.frs>=50",
-		"max": 1,
-		"cost": {
-			"lg": 8,
-			"jls": 30,
-			"super_mind": 8,
-			"cold_core": 20,
-			"elect": 15,
-			"heli": 1,
-			"chaos": 5,
-			"shenshi": 1,
-			"hp": 20,
-			"star_map": 55,
-			"r_adv_w_sj1": 2,
-			"zero_crystal":12,
-			"paper": 30,
-			"exe_paper": 10,
-			"ganwu": 100
-		},
-		"mod":{
-			"frs": -30,
-			"stamina.max": -1,
-			"hp.max":-2,
-			"elect.rate": -1,
-			"frs.rate": -0.4
-		}
-	},
-	{
-		"id": "frs_ld2",
-		"name": "废热屏蔽",
-		"desc": "永久消耗一批顽固废热水,注意这将消耗精力上限和电能速率以及气血上限",
-		"require": "g.frs>=60",
-		"need": "g.frs>=60",
-		"max": 5,
-		"cost": {
-			"lg": 8,
-			"jls": 30,
-			"super_mind": 8,
-			"cold_core": 20,
-			"elect": 15,
-			"heli": 1,
-			"chaos": 5,
-			"shenshi": 1,
-			"hp": 20,
-			"star_map": 55,
-			"r_adv_w_sj1": 2,
-			"zero_crystal":12,
-			"paper": 30,
-			"exe_paper": 10,
-			"ganwu": 100
-		},
-		"mod":{
-			"frs": -60,
-			"stamina.max": -0.2,
-			"hp.max":-0.6,
-			"elect.rate": -0.8,
-			"frs.rate": -0.1
 		}
 	},
 	{
@@ -578,7 +512,6 @@
 		"id": "dirty_jinji",
 		"name": "污痕荆棘",
 		"desc": "污浊之力与植物混合能提高生命力",
-		"require": "g.biology_ast_1>=10 && g.xiulian_bio_dirty_1>=1",
 		"max": 1,
 		"cost": {
 			"lg": 8,
@@ -606,7 +539,6 @@
 		"id": "dream_death",
 		"name": "梦死界",
 		"desc": "在一个深夜，一个寂静的深夜",
-		"require": "g.dream_1>=8 && g.lingti_xue>=10",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -624,7 +556,6 @@
 			"ganwu": 150
 		},
 		"mod":{
-			"dream_1.max": 2,
 			"frs": 29,
 			"hp.max": -2,
 			"hp.rate": -0.1
@@ -634,7 +565,6 @@
 		"id": "space_mind",
 		"name": "空间思考",
 		"desc": "混沌和合理表达的形式让你对空间概念产生了思索",
-		"require": "g.xiulian_heli_dx_1>=1 && g.xiulian_chaos_ld_1>=1",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -661,7 +591,6 @@
 		"id": "lfkjcc",
 		"name": "灵反空间存储",
 		"desc": "非实体空间进行高容量存储",
-		"require": "g.space_mind>=1 && g.energ_shenshi>=5",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -689,7 +618,6 @@
 		"id": "huanjgl",
 		"name": "环境管理",
 		"desc": "高效的对环境进行管理",
-		"require": "g.hjgz>=1",
 		"max": 1,
 		"cost": {
 			"lg": 11,
@@ -709,7 +637,7 @@
 		},
 		"mod":{
 			"frs":19,
-			"space.max": 10
+			"space.max": -10
 		}
 	},
 	{

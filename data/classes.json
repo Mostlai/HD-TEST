@@ -101,6 +101,30 @@
 		}
 	},
 	{
+		"id": "xuezhe",
+		"name": "学者",
+		"desc": "渊博",
+		"actname": "学无止境",
+		"actdesc": "学无止境",
+		"require": "g.fanshe_math>=1",
+		"warn": false,
+		"cost": {
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"super_mind": 9,
+			"snp_data": 21
+		},
+		"result": {
+			"zero_crystal.rate": 0.05,
+			"ganwu.rate": 0.01,
+			"exe_paper.rate": 0.01
+		}
+	},
+	{
 		"id": "falconer",
 		"tags": "t_job",
 		"actdesc": "Tend your master's owls and falcons.",

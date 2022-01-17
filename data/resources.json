@@ -8,6 +8,14 @@
 		"max": 10
 	},
 	{
+		"id": "back_dream",
+		"name": "归梦",
+		"desc": "非实的存在,游离在虚幻中",
+		"group": "货币",
+		"require": "g.yndm>=1",
+		"max": 10
+	},
+	{
 		"id": "death",
 		"name": "死寂之刻",
 		"desc": "寂静...",
@@ -18,6 +26,35 @@
 			"stamina.rate": -2000,
 			"tili.rate": -2000,
 			"hp.rate": -2000
+		}
+	},
+	{
+		"id": "shuaibai",
+		"name": "衰败",
+		"desc": "熵的增加",
+		"group": "死亡",
+		"locked": true,
+		"max": 1,
+		"mod": {
+			"stamina.rate": -2,
+			"tili.rate": -2,
+			"hp.rate": -2,
+			"time.rtae": 0.6,
+			"heli.rate": -3,
+			"chaos.rate": -3,
+			"shenshi.rate": -3
+		}
+	},
+	{
+		"id": "jihun",
+		"name": "基魂",
+		"desc": "筑基所凝聚的真魂",
+		"group": "真魂",
+		"locked": true,
+		"max": 1,
+		"mod": {
+			"shuaibai.rate": -1,
+			"hp.rate": 0.2
 		}
 	},
 	{
@@ -234,6 +271,18 @@
 		"max": 2
 	},
 	{
+		"id": "r_adv_w_sj2",
+		"name": "污浊武器",
+		"desc": "以污浊核心为主体的武器,具有大杀伤效果",
+		"group": "武器",
+		"tags": "",
+		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
+		"mod": {
+			"f_power.max": 10
+		},
+		"max": 2
+	},
+	{
 		"id": "dirty_lingti",
 		"name": "纯浊灵体",
 		"desc": "纯净灵体,但表达了污浊核心的反相性质",
@@ -253,9 +302,42 @@
 		"max": 1
 	},
 	{
+		"id": "xiulian_jihun1",
+		"name": "基魂震荡",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"jihun.max":0.5
+		}
+	},
+	{
 		"id": "xiulian_jizhun_1",
 		"name": "基准探讨",
 		"desc": "基准探讨",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jizhun_2",
+		"name": "现实基准",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jizhun_3",
+		"name": "现实基向",
+		"desc": "",
 		"hide": true,
 		"group": "修行",
 		"tags": "",
@@ -497,7 +579,11 @@
 		"group": "修行",
 		"tags": "",
 		"locked":false,
-		"max": 1
+		"max": 1,
+		"mod":{
+			"shuaibai.rate": 0.3,
+			"jihun.rate": 0.2
+		}
 	},
 	{
 		"id": "xiulian_x_info_1",
@@ -615,6 +701,16 @@
 	{
 		"id": "xiulian_death_2",
 		"name": "流彩梦境",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_death_3",
+		"name": "死界流转",
 		"desc": "",
 		"hide": true,
 		"group": "修行",

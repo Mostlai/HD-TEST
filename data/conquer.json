@@ -34,5 +34,46 @@
 			"alculation.rate": -0.2,
 			"human_power.max": -20 
 		}
+	},
+	{
+		"id": "conquer_3",
+		"name": "中型城镇",
+		"desc": "一个发展一般的城镇，防御不弱",
+		"r_power": 80,
+		"power": 80,
+		"r_shentou": 1,
+		"shentou": 1,
+		"shentou_rate": 0.01,
+		"power_rate": 0.01,
+		"area": 2,
+		"max": 3,
+		"val": 0,
+		"require": "g.human_power>=190",
+		"scost": {
+			"money": 100,
+			"star_map": 30,
+			"iron_copper": 2,
+			"zero_crystal":2
+		},
+		"acost": {
+			"money": 670,
+			"ganwu": 370,
+			"iron_copper": 20,
+			"sj_met":10,
+			"tian":10,
+			"cold_core":16,
+			"zero_crystal":20,
+			"r_adv_w_sj1": 4,
+			"human_power": 200,
+			"alculation": 70
+		},
+		"result":{
+			"super_mind": 1,
+			"f_power": 10,
+			"space.max": -10,
+			"alculation.max": -10,
+			"alculation.rate": -0.2,
+			"human_power.max": -25 
+		}
 	}
 ]

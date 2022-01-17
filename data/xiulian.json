@@ -22,6 +22,43 @@
 		}
 	},
 	{
+		"id": "jihun_1",
+		"name": "基魂震荡(路径)",
+		"desc": "初步激发出基魂之能",
+		"tags": "路径",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"jihun" :1,
+			"lg": 11,
+			"sp": 25,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 41,
+			"money": 700,
+			"ganwu": 390,
+			"sj_met": 10,
+			"iron_copper":20,
+			"heli": 45,
+			"chaos": 35,
+			"elect":30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"paper": 50,
+			"star_map": 70,
+			"books": 10,
+			"exe_paper": 20
+		},
+		"result": {
+			"time": 30,
+			"xiulian_jihun_1" : 1
+		}
+	},
+	{
 		"id": "jizhun_1",
 		"name": "基准探讨(立足)",
 		"desc": "筑基的第一步,首先要探讨何谓基准,基准决定了后续修行路途中的标准,这个过程中你需要一些称之为零结晶的资源,或许附近的地点有一些",
@@ -43,6 +80,78 @@
 			"heli.max": -0.5,
 			"heli.rate": -0.01,
 			"xiulian_jizhun_1": 1
+		}
+	},
+	{
+		"id": "jizhun_2",
+		"name": "现实基准(立足)",
+		"desc": "建立对现实世界的基准",
+		"tags": "立足",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"sp": 25,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 41,
+			"money": 700,
+			"ganwu": 390,
+			"sj_met": 10,
+			"iron_copper":20,
+			"heli": 45,
+			"chaos": 35,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"paper": 50,
+			"star_map": 70,
+			"books": 10,
+			"exe_paper": 20
+		},
+		"result": {
+			"time": 100,
+			"frs": 20,
+			"xiulian_jizhun_2" : 1
+		}
+	},
+	{
+		"id": "jizhun_3",
+		"name": "现实基向(立足)",
+		"desc": "建立对现实世界的基向",
+		"tags": "立足",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"sp": 25,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 20,
+			"jls": 41,
+			"money": 700,
+			"ganwu": 390,
+			"sj_met": 10,
+			"iron_copper":20,
+			"heli": 45,
+			"chaos": 35,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"zero_crystal": 25,
+			"snp_data": 12,
+			"paper": 50,
+			"star_map": 70,
+			"books": 10,
+			"exe_paper": 20
+		},
+		"result": {
+			"time": 100,
+			"frs": 20,
+			"xiulian_jizhun_3" : 1
 		}
 	},
 	{
@@ -1022,6 +1131,35 @@
 		}
 	},
 	{
+		"id": "death_3",
+		"name": "死界流转(死亡)",
+		"desc": "大梦苏醒,你窥探到死后的世界",
+		"tags": "死亡",
+		"require": "g.yndm>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"money": 500,
+			"ganwu": 380,
+			"sj_met": 5,
+			"heli": 30,
+			"chaos": 30,
+			"alculation": 40,
+			"books": 5,
+			"zero_crystal": 20,
+			"snp_data": 10,
+			"paper": 40,
+			"star_map": 65,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"result": {
+			"time": 120,
+			"xiulian_death_3" : 1
+		}
+	},
+	{
 		"id": "chaos_ld_1",
 		"name": "混沌集合(流动)",
 		"desc": "在纯浊影响下,混沌表达了一定规律的数理逻辑",
@@ -1147,7 +1285,6 @@
 			"snp_data": 12,
 			"star_map": 65,
 			"paper": 40,
-			"books": 5,
 			"exe_paper": 12
 		},
 		"result": {
@@ -1181,7 +1318,6 @@
 			"snp_data": 12,
 			"paper": 40,
 			"star_map": 60,
-			"books": 5,
 			"exe_paper": 12
 		},
 		"result": {
@@ -1215,7 +1351,6 @@
 			"snp_data": 12,
 			"paper": 40,
 			"star_map": 60,
-			"books": 5,
 			"exe_paper": 12
 		},
 		"result": {

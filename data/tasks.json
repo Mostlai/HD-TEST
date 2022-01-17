@@ -274,7 +274,7 @@
 		"name": "天文观测",
 		"desc": "在低温望远镜下进行更细微的观测",
 		"verb": "观测中",
-		"require": "g.Telescope>=1",
+		"require": "g.star_map_1>0",
 		"need": "Telescope",
 		"length": 8,
 		"fill": [
@@ -300,7 +300,7 @@
 		"name": "活性合成",
 		"desc": "在低温下对零结晶进行加工",
 		"verb": "合成中",
-		"require": "g.ColdBio>=1",
+		"require": "g.life_crystal>0",
 		"need": "ColdBio",
 		"length": 8,
 		"fill": [
@@ -505,7 +505,7 @@
 			"tili": 0.2
 		},
 		"result": {
-			"space.max": 10
+			"space.max": -10
 		}
 	},
 	{
@@ -534,12 +534,11 @@
 		"verb": "",
 		"require": "g.frs>0",
 		"cost": {
-			"frs": 10,
+			"frs": 2,
 			"chaos": 5,
 			"hp": 2
 		},
 		"result": {
-			"dirty_core": 0.5,
 			"time": 1,
 			"jls": 2
 		}

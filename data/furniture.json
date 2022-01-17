@@ -631,6 +631,107 @@
 		}
 	},
 	{
+		"id": "ltxb",
+		"name": "灵体信标",
+		"desc": "灵体主导的地面发射信标,用于在非实界建立地面航标,此建筑需要接通20V级电源",
+		"tags": "spirit_beacon",
+		"max":1,
+		"require": "g.info_switch_1>=3&&g.stand_chejian>=1",
+		"need": "TENTYV",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 22,
+			"dirty_core": 10,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 700
+		},
+		"mod": {
+			"elect.rate": -2,
+			"space": 5
+		}
+	},
+	{
+		"id": "ltwdq",
+		"name": "灵体稳定器",
+		"desc": "用于稳固灵体信标中的灵体",
+		"tags": "spirit_stable",
+		"max":1,
+		"require": "g.info_switch_1>=3&&g.stand_chejian>=1",
+		"need": "spirit_beacon",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 22,
+			"dirty_core": 10,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"cu_iron":30,
+			"cu_copper":30,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 700
+		},
+		"mod": {
+			"elect.rate": -2,
+			"space": 15
+		}
+	},
+	{
+		"id": "huangquan_well",
+		"name": "黄泉稳流井",
+		"desc": "一个能引导你稳定前往非实界的稳流结构",
+		"tags": "hq_well",
+		"max":1,
+		"require": "g.huangquandy>=1&&g.xiulian_jizhun_2>=1&&g.xiulian_jizhun_3>=1&&g.xiulian_jihun1>=1",
+		"need": "spirit_stable",
+		"repeat": true,
+		"cost": {
+			"money": 700,
+			"jihun": 1,
+			"dirty_lingti": 10,
+			"cold_core": 22,
+			"dirty_core": 10,
+			"life_crystal": 5,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 85,
+			"human_power": 250,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"cu_iron":30,
+			"cu_copper":30,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10
+		},
+		"mod": {
+			"hp.max": -20,
+			"elect.max": -10,
+			"elect.rate": -2,
+			"space": 4
+		}
+	},
+	{
 		"id": "ornatechest",
 		"name": "ornate chest",
 		"desc": "Treasure chest.",

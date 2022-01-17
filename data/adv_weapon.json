@@ -18,5 +18,35 @@
 			"r_adv_w_sj1.max": -1,
 			"r_adv_w_sj1.rate": -0.005
 		}
+	},
+	{
+		"id": "adv_w_sj2",
+		"name": "污浊车间",
+		"desc": "以污浊核心为主体的武器,具有大杀伤效果",
+		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
+		"val": 0,
+		"max": 1,
+		"cost": {
+			"money": 500,
+			"ganwu": 300,
+			"super_mind": 5,
+			"shenshi": 8,
+			"iron_copper":20,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core":10,
+			"tian":10,
+			"human_power": 230,
+			"alculation": 80,
+			"sj_met": 10,
+			"zero_crystal": 20,
+			"cu_iron": 30,
+			"cu_copper":30,
+			"human_power": 5
+		},
+		"result":{
+			"r_adv_w_sj2.max": -0.5,
+			"r_adv_w_sj2.rate": -0.005
+		}
 	}
 ]

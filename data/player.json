@@ -2,7 +2,7 @@
 	{
 		"id": "hp",
 		"name": "气血",
-		"desc": "Wizard life-force",
+		"desc": "基本的生命力,鲜活的血液",
 		"val": 5,
 		"max": 5,
 		"unit": false,
@@ -44,8 +44,8 @@
 	},
 	{
 		"id": "dist",
-		"name": "distance",
-		"desc": "Maximum travel distance.",
+		"name": "距离",
+		"desc": "旅行的最大距离",
 		"val": 10,
 		"stat": true,
 		"locked": false
@@ -58,8 +58,8 @@
 	},
 	{
 		"id": "sp",
-		"name": "skill points",
-		"desc": "Spend to unlock new skills",
+		"name": "技能点",
+		"desc": "用于解锁某些技能",
 		"stat": true,
 		"val": 0,
 		"locked": false

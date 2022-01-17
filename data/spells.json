@@ -111,12 +111,35 @@
 			"books":1
 		},
 		"cost": {
-			"heli": 3
+			"heli": 6
 		},
 		"dot": {
 			"duration": 5,
 			"mod": {
 				"self.defense": 6
+			}
+		}
+	},
+	{
+		"id": "cure_1",
+		"name": "治愈",
+		"desc": "治疗自己的伤势",
+		"school": "合理",
+		"locked":true,
+		"level": 4,
+		"buy": {
+			"ganwu": 22,
+			"zero_crystal": 6,
+			"heli": 3,
+			"books":1
+		},
+		"cost": {
+			"heli": 6
+		},
+		"dot": {
+			"duration": 5,
+			"effect": {
+				"hp": 2
 			}
 		}
 	},
@@ -136,8 +159,8 @@
 			"books":1
 		},
 		"cost": {
-			"heli": 4,
-			"chaos": 4
+			"heli": 12,
+			"chaos": 12
 		},
 		"dot": {
 			"duration": 10,
@@ -164,8 +187,8 @@
 			"books":1
 		},
 		"cost": {
-			"heli": 5,
-			"chaos": 5,
+			"heli": 10,
+			"chaos": 10,
 			"shenshi": 1
 		},
 		"attack": {
