@@ -266,7 +266,8 @@
 		"tags": "",
 		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
 		"mod": {
-			"f_power.max": 5
+			"f_power.max": 5,
+			"f_power":5
 		},
 		"max": 2
 	},
@@ -278,7 +279,8 @@
 		"tags": "",
 		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
 		"mod": {
-			"f_power.max": 10
+			"f_power.max": 10,
+			"f_power":10
 		},
 		"max": 2
 	},
