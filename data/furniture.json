@@ -732,6 +732,37 @@
 		}
 	},
 	{
+		"id": "elect_gen",
+		"name": "灵体线圈",
+		"desc": "借助灵体获取电能",
+		"tags": "",
+		"max":3,
+		"require": "g.stand_chejian>=1",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 5,
+			"dirty_core": 5,
+			"jls":30,
+			"zero_crystal": 25,
+			"super_mind": 6,
+			"alculation": 70,
+			"human_power": 200,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"cu_copper":30,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 500
+		},
+		"mod": {
+			"elect.rate": 3,
+			"space": 3
+		}
+	},
+	{
 		"id": "ornatechest",
 		"name": "ornate chest",
 		"desc": "Treasure chest.",
