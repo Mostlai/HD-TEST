@@ -700,7 +700,7 @@
 		"desc": "一个能引导你稳定前往非实界的稳流结构",
 		"tags": "hq_well",
 		"max":1,
-		"require": "g.huangquandy>=1&&g.xiulian_jizhun_2>=1&&g.xiulian_jizhun_3>=1&&g.xiulian_jihun1>=1",
+		"require": "g.huangquandy>=1&&g.xiulian_jizhun_2>=1&&g.xiulian_jizhun_3>=1&&g.xiulian_jihun_1>=1",
 		"need": "spirit_stable",
 		"repeat": true,
 		"cost": {
