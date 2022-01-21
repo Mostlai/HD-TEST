@@ -536,10 +536,10 @@
 			"zero_crystal": 10,
 			"paper": 30,
 			"tian": 10,
-			"sj_met":10,
-			"exe_paper": 10,
+			"sj_met":5,
+			"exe_paper": 30,
 			"alculation": 40,
-			"money": 300
+			"money": 350
 		},
 		"mod": {
 			"alculation.max": -20,
