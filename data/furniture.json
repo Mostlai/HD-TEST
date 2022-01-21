@@ -542,13 +542,15 @@
 			"money": 300
 		},
 		"mod": {
-			"alculation.max": -10,
+			"alculation.max": -20,
+			"human_power.max": -20,
+			"heli.max":2.5,
+			"chaos.max":2.5,
 			"heli.rate": 1,
 			"chaos.rate": 1,
-			"space": 15
+			"space": 6
 		}
 	},
-
 	{
 		"id": "diwen_rongqi",
 		"name": "低温容器",
