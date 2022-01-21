@@ -348,6 +348,8 @@
 		},
 		"mod": {
 			"lg.max": 0.3,
+			"human_power.max":1,
+			"human_power.rate": 0.1, 
 			"super_mind.rate": 0.005,
 			"shenshi.max": 0.5
 		}
@@ -375,7 +377,7 @@
 			"ganwu.max": 2,
 			"human_power.max": 10,
 			"human_power.rate": 0.1,
-			"conquer_1.max": 1,
+			"conquer_0.max": 1,
 			"conquer_3.max": 0.5
 		}
 	},

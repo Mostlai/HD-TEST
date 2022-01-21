@@ -1,6 +1,6 @@
 [
 	{
-		"id": "conquer_1",
+		"id": "conquer_0",
 		"name": "小城镇",
 		"desc": "一个人口较少的城镇，防御薄弱，但占地面积也少",
 		"r_power": 30,
@@ -12,7 +12,7 @@
 		"area": 1,
 		"max": 1,
 		"val": 0,
-		"require": "g.shenshi_3>=3",
+		"require": "g.human_power>=4",
 		"scost": {
 			"money": 20,
 			"zero_crystal":1

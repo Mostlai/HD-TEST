@@ -1,6 +1,6 @@
 [
 	{
-		"id": "adv_w_sj1",
+		"id": "adv_w_sj11",
 		"name": "反材料工具工作台",
 		"desc": "小型的定制化武器,可以快速破除敌军的防御,一般用于小规模战争",
 		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
@@ -20,7 +20,7 @@
 		}
 	},
 	{
-		"id": "adv_w_sj2",
+		"id": "adv_w_sj22",
 		"name": "污浊车间",
 		"desc": "以污浊核心为主体的武器,具有大杀伤效果",
 		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
