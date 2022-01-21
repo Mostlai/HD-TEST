@@ -63,6 +63,33 @@
 		"desc": "现在你可以前往最底层的梦境了"
 	},
 	{
+		"id": "evt_rlzy",
+		"name": "人力资源",
+		"require": "g.rlgl>=1",
+		"desc": "你对人力资源的调动分配有了更深的理解",
+		"result": {
+			"solid_1": true,
+			"solid_2": true
+		}
+	},
+	{
+		"id": "evt_zcx",
+		"name": "侦察员报告",
+		"require": "g.zcx>=1",
+		"desc": "派出的侦察员带了附近地形的报告"
+	},
+	{
+		"id": "evt_yqlife",
+		"name": "源泉力量",
+		"require": "g.yqlife>=4",
+		"desc": "使用源泉的力量",
+		"result": {
+			"prhss": true,
+			"frjxf": true,
+			"wmgxj": true
+		}
+	},
+	{
 		"id": "evt_scroll",
 		"name": "A tattered scroll",
 		"desc": "You buy a strange scroll from a travelling peddler. If you could only decipher the cryptic symbols."

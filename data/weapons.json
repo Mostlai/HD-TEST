@@ -76,6 +76,25 @@
 		"level": 4
 	},
 	{
+		"id": "ys_sword",
+		"name": "幽蚀之锋",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"name": "幽蚀",
+			"kind": "chaos",
+			"damage": "12~18"
+		},
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 10,
+				"f_power": 18
+			}
+		},
+		"cost": 30,
+		"level": 10
+	},
+	{
 		"id": "staff",
 		"attack": {
 			"kind": "blunt",

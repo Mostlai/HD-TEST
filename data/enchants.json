@@ -1,23 +1,57 @@
 [
 	{
-		"id": "en_armor1",
-		"name": "sturdy armor",
-		"verb": "infusing armor",
+		"id": "en_armor1_pl",
+		"name": "加固装甲",
+		"verb": "加固",
 		"only": "armor",
-		"desc": "Infuse an item with magical protection.",
-		"require": "g.enchanting>=3",
-		"level": 1,
+		"desc": "使用钛板和衰败核心进行加固",
+		"require": "g.mwxue>=1",
+		"level": 2,
 		"buy": {
-			"arcana": 1,
-			"research": 100
+			"lg": 9,
+			"money": 300,
+			"zero_crystal": 10,
+			"ganwu": 200
 		},
 		"length": 30,
 		"cost": {
-			"managem": 3,
-			"mana": 5
+			"zero_crystal": 10,
+			"heli": 30,
+			"tian":10,
+			"shuaibai_core":10,
+			"sj_met": 15,
+			"money": 300
 		},
 		"alter": {
-			"armor": 1
+			"armor": 2
+		}
+	},
+	{
+		"id": "en_elect_1",
+		"name": "小型伺服",
+		"verb": "S伺服",
+		"only": "armor",
+		"desc": "使用衰败核心和冷却核心对装甲进行加速调整",
+		"require": "g.mwxue>=1",
+		"level": 2,
+		"buy": {
+			"lg": 9,
+			"money": 300,
+			"zero_crystal": 10,
+			"ganwu": 200
+		},
+		"length": 30,
+		"cost": {
+			"zero_crystal": 10,
+			"heli": 30,
+			"tian":10,
+			"shuaibai_core":10,
+			"sj_met": 15,
+			"money": 300
+		},
+		"alter": {
+			"mod.elect.rate": -0.5,
+			"mod.speed": 1
 		}
 	},
 	{

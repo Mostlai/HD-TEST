@@ -10,8 +10,8 @@
 		"run": {
 			"back_dream": 0.1,
 			"hp": 0.9,
-			"stamina": 2,
-			"tili": 2,
+			"stamina": 0.9,
+			"tili": 0.9,
 			"time": -0.8
 		},
 		"result": {
@@ -33,6 +33,269 @@
 			[
 				"noshadow",
 				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "hq_1",
+		"name": "荒芜边境[黄泉]",
+		"desc": "不存在于现实的地点,或许这里可以破解永生之密。这里的时间流速更快,环境更危险",
+		"require": "g.under_dreaam>=1",
+		"level": 1,
+		"length": 25,
+		"run": {
+			"back_dream": 0.1,
+			"hp": 0.3,
+			"stamina": 1,
+			"tili": 1,
+			"time": -0.8
+		},
+		"result": {
+			"shuaibai_core": "1~3",
+			"snp_data": "3~7",
+			"zero_crystal": "3~7"
+		},
+		"boss": "death_ling",
+		"spawns": [
+			[
+				"death_ling",
+				"death_ling"
+			],
+			[
+				"smz",
+				"smz"
+			],
+			[
+				"smz",
+				"smz",
+				"noshadow"
+			],
+			"death_ling",
+			"balckwu",
+			[
+				"noshadow",
+				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "hq_2",
+		"name": "荒芜大河[黄泉]",
+		"desc": "不存在于现实的地点,或许这里可以破解永生之密。这里的时间流速更快,环境更危险",
+		"require": "g.under_dreaam>=1",
+		"level": 1,
+		"length": 15,
+		"run": {
+			"back_dream": 0.2,
+			"hp": 0.3,
+			"stamina": 1,
+			"tili": 1,
+			"time": -1
+		},
+		"result": {
+			"lxue": "2~3",
+			"snp_data": "1~3",
+			"zero_crystal": "1~5"
+		},
+		"boss": "river_wheel",
+		"spawns": [
+			[
+				"death_ling",
+				"river_ghost",
+				"river_ghost"
+			],
+			[
+				"smdeath_lingz",
+				"river_ghost",
+				"smz"
+			],
+			[
+				"death_ling",
+				"smz",
+				"noshadow"
+			],
+			"death_ling",
+			"river_ghost",
+			"balckwu",
+			[
+				"noshadow",
+				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "yysl",
+		"name": "月影森林",
+		"desc": "繁茂的森林,地表常年处于阴影之中。",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"yqlm": "3~7"
+		},
+		"boss": "tree_man",
+		"spawns": [
+			[
+				"xg",
+				"muling"
+			],
+			[
+				"yyx",
+				"small_tree_man"
+			],
+			"yyx",
+			"xg",
+			[
+				"muling",
+				"muling"
+			],
+			"small_tree_man"
+		]
+	},
+	{
+		"id": "jlss",
+		"name": "巨灵山",
+		"desc": "最巍峨的山脉，最纯正的金石之力",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"cbjs": "2~5"
+		},
+		"boss": "gold_man",
+		"spawns": [
+			[
+				"sy",
+				"sy"
+			],
+			[
+				"fjian",
+				"yanj"
+			],
+			"yanj",
+			"sy",
+			[
+				"sy",
+				"fjian"
+			]
+		]
+	},
+	{
+		"id": "dmhs",
+		"name": "地脉火山",
+		"desc": "喷发着岩浆,散发着恐怖的高温",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"yxls": "3~7"
+		},
+		"boss": "fire_bird",
+		"spawns": [
+			[
+				"fireb",
+				"huoj"
+			],
+			[
+				"fireb",
+				"huoj"
+			],
+			"hls",
+			"fireb",
+			[
+				"hls",
+				"huoj"
+			]
+		]
+	},
+	{
+		"id": "lzdh",
+		"name": "劳泽大湖",
+		"desc": "泥泞的沼泽,庞大的湖泊",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"wgys": "4~5"
+		},
+		"boss": "lake_wheel",
+		"spawns": [
+			[
+				"waterj",
+				"syu"
+			],
+			[
+				"syu",
+				"waterj"
+			],
+			"sls",
+			"syu",
+			[
+				"waterj",
+				"sls"
+			]
+		]
+	},
+	{
+		"id": "glpd",
+		"name": "古老盆地",
+		"desc": "存在几万年的古老盆地,有着纯粹的厚土之力",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"zdht": "5~6"
+		},
+		"boss": "tu_bird",
+		"spawns": [
+			[
+				"wggg",
+				"tuj"
+			],
+			[
+				"wggg",
+				"tls"
+			],
+			"tls",
+			"tuj",
+			[
+				"tuj",
+				"tls"
 			]
 		]
 	},

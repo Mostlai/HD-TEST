@@ -29,7 +29,7 @@
 	},
 	{
 		"id": "cold_3",
-		"name": "结冻地穴",
+		"name": "结冻地穴[冰冻核心前置]",
 		"level": 9,
 		"length": 35,
 		"sym": "❄️",
@@ -46,7 +46,8 @@
 			"ganwu": 10
 		},
 		"loot": {
-			"money": "5~7"
+			"money": "5~7",
+			"cold_core": 1
 		},
 		"encs": [
 			"enc_cold_1",
@@ -57,7 +58,7 @@
 	},
 	{
 		"id": "cold_4",
-		"name": "冰冻深层",
+		"name": "冰冻深层[冰冻核心]",
 		"level": 9,
 		"length": 20,
 		"sym": "❄️",

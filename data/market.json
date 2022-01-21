@@ -134,6 +134,22 @@
 		}
 	},
 	{
+		"id": "market_ys_sword",
+		"name": "幽蚀之锋",
+		"require": "g.fanshe_metal>=3",
+		"cost": {
+			"money": 320,
+			"zero_crystal": 10,
+			"sj_met": 8,
+			"shuaibai_core": 5,
+			"dirty_core": 5,
+			"tian": 6
+		},
+		"loot": {
+			"ys_sword": "100%"
+		}
+	},
+	{
 		"id": "market_xsp",
 		"name": "修士袍",
 		"require": "g.sj_met>=1 &&g.metal_app>=5",
@@ -183,6 +199,230 @@
 		},
 		"loot": {
 			"xsyd": "100%"
+		}
+	},
+	{
+		"id": "market_tianh",
+		"name": "钛合头盔[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_helmet": "100%"
+		}
+	},
+	{
+		"id": "market_tianc",
+		"name": "钛合装甲[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 20,
+			"shuaibai_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_chest": "100%"
+		}
+	},
+	{
+		"id": "market_tians",
+		"name": "钛合护腿[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_shins": "100%"
+		}
+	},
+	{
+		"id": "market_tianf",
+		"name": "钛合护足[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"zero_crystal": 20,
+			"money": 520,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 7,
+			"shuaibai_core": 3,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_foot": "100%"
+		}
+	},
+	{
+		"id": "market_tiane",
+		"name": "合理转化炉[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"heli": 30,
+			"zero_crystal": 30,
+			"dirty_core": 10,
+			"money": 700,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 20,
+			"shuaibai_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_core": "100%"
+		}
+	},
+	{
+		"id": "market_yqlp",
+		"name": "御气罗盘",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 50,
+			"heli": 30,
+			"zero_crystal": 20,
+			"dirty_core": 5,
+			"money": 300,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"yqlp": "100%"
+		}
+	},
+	{
+		"id": "market_cbxl",
+		"name": "纯白项链",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 30,
+			"heli": 30,
+			"zero_crystal": 7,
+			"dirty_core": 5,
+			"money": 100,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"cbxl": "100%"
+		}
+	},
+	{
+		"id": "market_cbbz",
+		"name": "纯白扳指",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 30,
+			"heli": 30,
+			"zero_crystal": 7,
+			"dirty_core": 5,
+			"money": 100,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"cbbz": "100%"
+		}
+	},
+	{
+		"id": "market_cbzw",
+		"name": "纯白之握",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 30,
+			"heli": 30,
+			"zero_crystal": 7,
+			"dirty_core": 5,
+			"money": 100,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"cbzw": "100%"
 		}
 	}
 ]

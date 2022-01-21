@@ -42,7 +42,7 @@
 			"zero_crystal": 20,
 			"cu_iron": 30,
 			"cu_copper":30,
-			"human_power": 5
+			"human_power": 50
 		},
 		"result":{
 			"r_adv_w_sj2.max": -0.5,

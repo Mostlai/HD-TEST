@@ -387,6 +387,35 @@
 		}
 	},
 	{
+		"id": "bdcm",
+		"tags": "t_rest",
+		"name": "百代长梦",
+		"slot": "rest",
+		"desc": "立即进入大梦状态来恢复自己",
+		"verb": "休养中",
+		"require": "g.yqlife>=3",
+		"owned": true,
+		"perpetual": true,
+		"fill": [
+			"tili",
+			"prismatic",
+			"stamina",
+			"hp",
+			"stress"
+		],
+		"effect": {
+			"prismatic": {
+				"skipLocked": true,
+				"value": 3
+			},
+			"time": 0.2,
+			"tili": 10,
+			"stamina": 2,
+			"hp": 3,
+			"stress": -2
+		}
+	},
+	{
 		"id": "focus",
 		"name": "专注",
 		"desc": "使用合理来加快学习的过程.",
@@ -492,7 +521,7 @@
 		"name": "环境改造",
 		"desc": "神观的运用使你对环境的控制和利用有了新的理解",
 		"verb": "改造中",
-		"require": "g.energ_shenshi>=5 && g.shenshi_4>=5",
+		"require": "g.energ_shenshi>=5 && g.shenshi_4>=5 && g.sj_met>=10",
 		"max": 1,
 		"length": 30,
 		"cost": {
@@ -562,6 +591,107 @@
 		},
 		"result": {
 			"back_dream": 1
+		}
+	},
+	{
+		"id": "lxmy",
+		"name": "灵血沐浴",
+		"desc": "用灵血来延长寿命",
+		"verb": "沐浴中",
+		"require": "g.fanshe_liuti>=2",
+		"max": 15,
+		"length": 10,
+		"cost": {
+			"lxue": 2,
+			"money": 300,
+			"ganwu": 350,
+			"super_mind": 5,
+			"sj_met": 1,
+			"star_map_1": 2,
+			"star_map": 40,
+			"zero_crystal": 5
+		},
+		"run": {
+			"time": -0.2
+		},
+		"result": {
+			"age": 1000,
+			"age.max": 1000
+		}
+	},
+	{
+		"id": "hdsc",
+		"name": "恒定生存",
+		"desc": "有很多生命在历史中消亡,你相信你不是其中的一个",
+		"verb": "路途中",
+		"require": "g.yqlife>=5",
+		"max": 60,
+		"length": 50,
+		"cost": {
+			"lxue": 6,
+			"money": 500,
+			"ganwu": 500,
+			"super_mind": 9,
+			"sj_met": 10,
+			"yqlm": 5,
+			"star_map_1": 5,
+			"life_crystal": 5,
+			"star_map": 40,
+			"zero_crystal": 40
+		},
+		"run": {
+			"time": -0.2
+		},
+		"result": {
+			"age": 500,
+			"age.max": 500
+		}
+	},
+	{
+		"id": "pbjs",
+		"name": "跑步健身",
+		"desc": "身体倍棒",
+		"verb": "健身中",
+		"require": "g.heli>=1",
+		"max": 50,
+		"length": 20,
+		"cost": {
+			"money": 10,
+			"ganwu": 3,
+			"heli": 4,
+			"tili": 7
+		},
+		"run": {
+			"time": -0.01,
+			"tili": 0.9
+		},
+		"result": {
+			"age.max": 185,
+			"age": 185
+		}
+	},
+	{
+		"id": "yltl",
+		"name": "医疗调理",
+		"desc": "使用先进的医疗技术来调养身体",
+		"verb": "调理中",
+		"require": "g.lnylx>=5",
+		"max": 50,
+		"length": 30,
+		"cost": {
+			"money": 300,
+			"ganwu": 200,
+			"heli": 20,
+			"tili": 20,
+			"zero_crystal": 5,
+			"star_map": 40
+		},
+		"run": {
+			"time": -0.01
+		},
+		"result": {
+			"age.max": 365,
+			"age": 365
 		}
 	},
 	{

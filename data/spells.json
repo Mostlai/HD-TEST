@@ -139,7 +139,7 @@
 		"dot": {
 			"duration": 5,
 			"effect": {
-				"hp": 2
+				"hp": 1
 			}
 		}
 	},
@@ -252,6 +252,144 @@
 				"kind": "chaos",
 				"duration": 3,
 				"damage": 1.2
+			}
+		}
+	},
+	{
+		"id": "solid_1",
+		"name": "召唤贴身侍卫",
+		"school": "人力",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"human_power": 60,
+			"money": 100
+		},
+		"cost": {
+			"human_power": 50,
+			"money":100,
+			"zero_crystal": 2
+		},
+		"result": "m_solid_1"
+	},
+	{
+		"id": "solid_2",
+		"name": "召唤士兵",
+		"school": "人力",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"human_power": 100,
+			"money": 200
+		},
+		"cost": {
+			"human_power": 50,
+			"money":150,
+			"zero_crystal": 4
+		},
+		"result": "m_solid_2"
+	},
+	{
+		"id": "wmgxj",
+		"name": "万木归心决[筑基]",
+		"school": "源泉",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 5
+		},
+		"attack": {
+			"damage": "16~22",
+			"dot": {
+				"kind": "wood",
+				"name": "万木[筑基]",
+				"duration": 10,
+				"damage": 5
+			}
+		}
+	},
+	{
+		"id": "frjxf",
+		"name": "浮日净心法[筑基]",
+		"level": 5,
+		"locked":true,
+		"school": "源泉",
+		"buy": {
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 10
+		},
+		"dot": {
+			"id": "frjxfb",
+			"name": "浮日净心",
+			"duration": 30,
+			"effect": {
+				"tili": 1,
+				"stamina": 0.6,
+				"bf": -0.4,
+				"rage": -0.4,
+				"weary": -0.4,
+				"madness": -0.4
+			}
+		}
+	},
+	{
+		"id": "prhss",
+		"name": "破落化伤术[筑基]",
+		"level": 5,
+		"locked":true,
+		"school": "源泉",
+		"buy": {
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 13
+		},
+		"dot": {
+			"id": "plhs",
+			"name": "破落化伤",
+			"duration": 10,
+			"effect": {
+				"hp": 5
+			}
+		}
+	},
+	{
+		"id": "ylzsf",
+		"name": "源灵障水法[筑基]",
+		"desc": "提高对木和水的抗性",
+		"level": 5,
+		"locked":true,
+		"school": "源泉",
+		"buy": {
+			"yqlm": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 4
+		},
+		"dot": {
+			"id": "ylzs",
+			"name": "源灵障水",
+			"duration": 10,
+			"effect": {
+				"self.resist.wood": 5,
+				"self.resist.water": 15
 			}
 		}
 	},

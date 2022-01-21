@@ -46,6 +46,17 @@
 		}
 	},
 	{
+		"id": "shuaibai_core",
+		"name": "衰败核心",
+		"desc": "凝结了虚幻,像寂静",
+		"group": "死亡",
+		"require": "g.huangquandy>=1",
+		"max": 15,
+		"mod": {
+			"hp.rate": 0.1
+		}
+	},
+	{
 		"id": "jihun",
 		"name": "基魂",
 		"desc": "筑基所凝聚的真魂",
@@ -192,6 +203,15 @@
 		"max": 1
 	},
 	{
+		"id": "lxue",
+		"name": "灵血",
+		"desc": "至纯的流体,芬芳的香气",
+		"group": "流体",
+		"tags": "",
+		"require": "g.huangquandy>=1",
+		"max": 20
+	},
+	{
 		"id": "cold_core",
 		"name": "冰冻核心",
 		"desc": "一块寒冷的晶体,从极寒之地获得,广泛应用于低温生产工作",
@@ -208,6 +228,71 @@
 		"tags": "",
 		"require": "g.dirty_core>=1",
 		"max": 0
+	},
+	{
+		"id": "yqlm",
+		"name": "源泉灵木",
+		"desc": "凝结了大量生命精华的木材",
+		"group": "精华",
+		"tags": "",
+		"require": "g.zcx>=1",
+		"max": 20,
+		"mod": {
+			"heli.rate": 0.05,
+			"chaos.rate": 0.05
+		}
+	},
+	{
+		"id": "cbjs",
+		"name": "纯白金石",
+		"desc": "纯白的石头,有着普通材料无法比拟的坚固",
+		"group": "精华",
+		"tags": "",
+		"require": "g.zcx>=1",
+		"max": 20,
+		"mod": {
+			"heli.rate": 0.05,
+			"chaos.rate": 0.05
+		}
+	},
+	{
+		"id": "yxls",
+		"name": "阳息烈石",
+		"desc": "总是散发出高温,杀灭周围的所有不净",
+		"group": "精华",
+		"tags": "",
+		"require": "g.zcx>=1",
+		"max": 20,
+		"mod": {
+			"heli.rate": 0.05,
+			"chaos.rate": 0.05
+		}
+	},
+	{
+		"id": "wgys",
+		"name": "无垢玉髓",
+		"desc": "无论怎么观察,你似乎都找不到一丝瑕疵",
+		"group": "精华",
+		"tags": "",
+		"max": 20,
+		"require": "g.zcx>=1",
+		"mod": {
+			"heli.rate": 0.05,
+			"chaos.rate": 0.05
+		}
+	},
+	{
+		"id": "zdht",
+		"name": "载德厚土",
+		"desc": "一团极为轻盈,但重物压在上面也不会变形的物质",
+		"group": "精华",
+		"tags": "",
+		"max": 20,
+		"require": "g.zcx>=1",
+		"mod": {
+			"heli.rate": 0.05,
+			"chaos.rate": 0.05
+		}
 	},
 	{
 		"id": "snp_data",
@@ -236,7 +321,7 @@
 	},
 	{
 		"id": "star_map_1",
-		"name": "天文记录",
+		"name": "虚灵星图",
 		"desc": "低温降噪环境的观测记录",
 		"group": "知识",
 		"tags": "",
@@ -397,7 +482,8 @@
 		"max": 1,
 		"mod":{
 			"heli_missile": true,
-			"guihuafa": true
+			"guihuafa": true,
+			"cure_1": true
 		}
 	},
 	{
@@ -789,6 +875,86 @@
 	{
 		"id": "xiulian_math_fc_1",
 		"name": "灵虚幂次方程",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_zhuji_lizhu_znss",
+		"name": "智能神识",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_struct_shenshi",
+		"name": "电传神机结构",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_struct_ss",
+		"name": "感应伺服结构",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_ys_1",
+		"name": "浓缩合理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_sw_smart_zj",
+		"name": "装甲智能化",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_core",
+		"name": "终端核心",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_mk",
+		"name": "铭刻工艺",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_zhuji_wuhuan",
+		"name": "五环进阶",
 		"desc": "",
 		"hide": true,
 		"group": "修行",

@@ -61,8 +61,8 @@
 	},
 	{
 		"id": "sect_enchant",
-		"name": "enchanting",
-		"require": "enchanting"
+		"name": "铭刻",
+		"require": "g.mwxue>=1"
 	},
 	{
 		"id": "sect_craft",
@@ -75,7 +75,7 @@
 	},
 	{
 		"id": "sect_minions",
-		"name": "minions",
-		"require": "g.minions>0"
+		"name": "随从",
+		"require": "g.shenshi_4>=999"
 	}
 ]

@@ -125,6 +125,56 @@
 		}
 	},
 	{
+		"id": "zhangguan",
+		"name": "长官",
+		"desc": "统帅者",
+		"actname": "统帅",
+		"warn": true,
+		"actdesc": "统帅",
+		"disable": "qsz",
+		"require": "g.human_power>=150",
+		"cost": {
+			"human_power": 150,
+			"money": 500,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"alculation":70,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"super_mind": 9,
+			"snp_data": 21
+		},
+		"result": {
+			"human_power.max": 50
+		}
+	},
+	{
+		"id": "qsz",
+		"name": "求索者",
+		"desc": "追求最庞大的计算能力",
+		"actname": "求索",
+		"warn": true,
+		"actdesc": "求索者",
+		"disable": "zhangguan",
+		"require": "g.alculation>=70",
+		"cost": {
+			"human_power": 150,
+			"money": 500,
+			"ganwu": 380,
+			"alculation":70,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"super_mind": 9,
+			"snp_data": 21
+		},
+		"result": {
+			"alculation.max": 30
+		}
+	},
+	{
 		"id": "falconer",
 		"tags": "t_job",
 		"actdesc": "Tend your master's owls and falcons.",

@@ -1328,9 +1328,9 @@
 	},
 	{
 		"id": "math_fc_1",
-		"name": "灵虚幂次方程(空间系)",
+		"name": "灵虚幂次方程(多元程式)",
 		"desc": "普通的幂次方程无法计算灵体",
-		"tags": "空间系",
+		"tags": "多元程式",
 		"require": "g.space_mind>=1",
 		"max": 2,
 		"cost": {
@@ -1357,6 +1357,261 @@
 			"time": 100,
 			"frs": 29,
 			"xiulian_math_fc_1" : 1
+		}
+	},
+	{
+		"id": "zhuji_lizhu_znss",
+		"name": "智能神识(立足)",
+		"desc": "研究让神识可以智能化控制行动姿态",
+		"tags": "立足",
+		"require": "g.energ_shenshi>=5",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 400,
+			"heli": 40,
+			"shenshi": 8,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map": 60
+		},
+		"result": {
+			"time": 33,
+			"shenshi.max": -2,
+			"shenshi.rate": -1,
+			"xiulian_zhuji_lizhu_znss" : 1
+		}
+	},
+	{
+		"id": "energ_struct_shenshi",
+		"name": "电传神机结构(思维)",
+		"desc": "智能化的神识如果应用到装甲上",
+		"tags": "思维",
+		"require": "g.xiulian_zhuji_lizhu_znss>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 600,
+			"ganwu": 400,
+			"heli": 40,
+			"shenshi": 8,
+			"sj_met": 15,
+			"tian": 10,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map": 60
+		},
+		"result": {
+			"time": 33,
+			"elect.rate": -2,
+			"xiulian_energ_struct_shenshi" : 1
+		}
+	},
+	{
+		"id": "energ_struct_ss",
+		"name": "感应伺服结构(能量物理)",
+		"desc": "自动感应身体运动形式并做出回应",
+		"tags": "能量物理",
+		"require": "g.xiulian_energ_struct_shenshi>=1 && g.wcjg>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"cold_core": 20,
+			"jls": 30,
+			"money": 500,
+			"ganwu": 400,
+			"heli": 40,
+			"shenshi": 8,
+			"sj_met": 15,
+			"tian": 10,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 4,
+			"star_map": 60
+		},
+		"result": {
+			"time": 33,
+			"xiulian_energ_struct_ss" : 1
+		}
+	},
+	{
+		"id": "heli_ys_1",
+		"name": "浓缩合理(压缩)",
+		"desc": "压缩合理,在最小的空间内获取最大的能量",
+		"tags": "压缩",
+		"require": "g.xiulian_energ_struct_ss>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 20,
+			"money": 320,
+			"ganwu": 180,
+			"sj_met": 5,
+			"heli": 40,
+			"chaos": 35,
+			"tian": 10,
+			"super_mind": 9,
+			"alculation": 90,
+			"snp_data": 12,
+			"star_map_1": 4
+		},
+		"result": {
+			"time": 91,
+			"xiulian_heli_ys_1" : 1
+		}
+	},
+	{
+		"id": "sw_smart_zj",
+		"name": "装甲智能化(思维)",
+		"desc": "将神识附着在装甲上",
+		"tags": "思维",
+		"require": "g.xiulian_energ_struct_ss>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"cold_core": 20,
+			"jls": 30,
+			"money": 500,
+			"ganwu": 400,
+			"heli": 40,
+			"shenshi": 8,
+			"sj_met": 15,
+			"tian": 10,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 4
+		},
+		"result": {
+			"time": 33,
+			"xiulian_sw_smart_zj" : 1
+		}
+	},
+	{
+		"id": "energ_core",
+		"name": "终端核心(能量物理)",
+		"desc": "研究如何建造一个能够存放大量能量的装置",
+		"tags": "能量物理",
+		"require": "g.xiulian_heli_ys_1>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"cold_core": 20,
+			"jls": 30,
+			"money": 500,
+			"ganwu": 400,
+			"elect": 40,
+			"shenshi": 8,
+			"sj_met": 15,
+			"tian": 10,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 4,
+			"star_map": 60
+		},
+		"result": {
+			"time": 33,
+			"xiulian_energ_core" : 1
+		}
+	},
+	{
+		"id": "struct_mk",
+		"name": "铭刻工艺(物体结构)",
+		"desc": "改造你的装甲",
+		"tags": "物体结构",
+		"require": "g.xiulian_sw_smart_zj>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"dirty_core": 10,
+			"money": 500,
+			"ganwu": 400,
+			"elect": 40,
+			"shenshi": 8,
+			"sj_met": 15,
+			"tian": 10,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 6,
+			"star_map": 60
+		},
+		"result": {
+			"time": 33,
+			"xiulian_struct_mk" : 1
+		}
+	},
+	{
+		"id": "zhuji_wuhuan",
+		"name": "五环进阶(方圆)",
+		"desc": "对五种截然不同属性的元素进行吸收",
+		"tags": "方圆",
+		"require": "g.yqlm>=1 && g.cbjs>=1 && g.yxls>=1 && g.wgys>=1 && g.zdht>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 700,
+			"money": 1600,
+			"ganwu": 400,
+			"yqlm": 15,
+			"cbjs": 15,
+			"yxls": 15,
+			"wgys": 15,
+			"zdht": 15,
+			"super_mind": 9,
+			"life_crystal": 6,
+			"alculation": 50,
+			"star_map_1": 15
+		},
+		"result": {
+			"time": 33,
+			"frs":39,
+			"heli.rate": -2,
+			"chaos.rate": -2,
+			"xiulian_zhuji_wuhuan" : 1
+		}
+	},
+	{
+		"id": "life_yqlt",
+		"name": "源泉灵体(永生之望)",
+		"desc": "将自己的躯体改造为源泉灵体",
+		"tags": "永生之望",
+		"require": "g.yqlife>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 200,
+			"exe_paper": 60,
+			"paper": 120,
+			"books": 20,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1300,
+			"ganwu": 400,
+			"yqlm": 20,
+			"zero_crystal": 60,
+			"tian": 10,
+			"sj_met": 15,
+			"life_crystal": 6,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"age.max": -14600,
+			"age": -14600
 		}
 	}
 ]

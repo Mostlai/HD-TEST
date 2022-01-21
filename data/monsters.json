@@ -1,5 +1,753 @@
 [
 	{
+		"id": "m_solid_1",
+		"tags": "soldiers_1",
+		"name": "侍卫",
+		"level": 10,
+		"kind": "人力",
+		"noproc": true,
+		"hp": 40,
+		"tohit": 10,
+		"defense": 7,
+		"attack": {
+			"name": "攻击",
+			"kind": "pierce",
+			"dmg": "10~20"
+		}
+	},
+	{
+		"id": "m_solid_2",
+		"tags": "soldiers_1",
+		"name": "士兵",
+		"level": 10,
+		"kind": "人力",
+		"noproc": true,
+		"hp": 55,
+		"tohit": 10,
+		"defense": 10,
+		"attack": {
+			"name": "攻击",
+			"kind": "pierce",
+			"dmg": "15~20"
+		}
+	},
+	{
+		"id": "smz",
+		"name": "黑色流体",
+		"level": 13,
+		"kind": "chaos",
+		"desc": "一团黑色的流体物质",
+		"hp": 20,
+		"tohit": 2,
+		"defense": 12,
+		"attack": {
+			"name": "包裹",
+			"kind": "chaos",
+			"dmg": "6~8"
+		}
+	},
+	{
+		"id": "noshadow",
+		"name": "无影者",
+		"level": 15,
+		"desc": "没有影子",
+		"kind": "chaos",
+		"hp": 38,
+		"tohit": 8,
+		"defense": 18,
+		"attack": {
+			"name": "尖叫",
+			"kind": "chaos",
+			"dmg": "5~8",
+			"dot": {
+				"kind": "chaos",
+				"name": "尖叫",
+				"dmg": "1~4",
+				"duration": 10
+			}
+		}
+	},
+	{
+		"id": "balckwu",
+		"name": "黑色浓雾",
+		"level": 15,
+		"desc": "",
+		"kind": "chaos",
+		"hp": 15,
+		"tohit": 8,
+		"defense": 3,
+		"attack": {
+			"name": "黑色浓雾",
+			"kind": "chaos",
+			"dmg": "9~9",
+			"dot": {
+				"kind": "chaos",
+				"name": "灼烧",
+				"dmg": "5~6",
+				"duration": 3
+			}
+		}
+	},
+	{
+		"id": "death_ling",
+		"name": "死灵",
+		"level": 16,
+		"desc": "",
+		"kind": "chaos",
+		"hp": 20,
+		"tohit": 3,
+		"defense": 6,
+		"attack": {
+			"name": "攻击",
+			"kind": "chaos",
+			"dmg": "7~12",
+			"dot": {
+				"kind": "chaos",
+				"name": "疼痛",
+				"dmg": "1~7",
+				"duration": 3
+			}
+		},
+		"loot": {
+			"shuaibai_core": 0.5
+		}
+	},
+	{
+		"id": "river_ghost",
+		"name": "水鬼",
+		"level": 13,
+		"desc": "",
+		"kind": "chaos",
+		"hp": 19,
+		"tohit": 3,
+		"defense": 8,
+		"attack": {
+			"name": "攻击",
+			"kind": "chaos",
+			"dmg": "5~7",
+			"dot": {
+				"kind": "chaos",
+				"name": "窒息",
+				"dmg": "1~2",
+				"duration": 10
+			}
+		},
+		"loot": {
+			"shuaibai_core": 0.1
+		}
+	},
+	{
+		"id": "muling",
+		"name": "木灵",
+		"level": 15,
+		"desc": "",
+		"kind": "wood",
+		"hp": 19,
+		"tohit": 3,
+		"defense": 8,
+		"attack": {
+			"name": "飞叶",
+			"kind": "wood",
+			"dmg": "12~19",
+			"dot": {
+				"kind": "wood",
+				"name": "流血",
+				"dmg": "6~9",
+				"duration": 10
+			}
+		},
+		"loot": {
+			"yqlm": 0.1
+		}
+	},
+	{
+		"id": "yyx",
+		"name": "阴暗飞虫",
+		"level": 15,
+		"desc": "",
+		"kind": "wood",
+		"hp": 30,
+		"tohit": 3,
+		"defense": 15,
+		"attack": {
+			"name": "刺击",
+			"kind": "wood",
+			"dmg": "16~17"
+		},
+		"loot": {
+			"yqlm": 0.1
+		}
+	},
+	{
+		"id": "xg",
+		"name": "小鬼",
+		"level": 15,
+		"desc": "",
+		"kind": "wood",
+		"hp": 22,
+		"tohit": 3,
+		"defense": 15,
+		"attack": {
+			"name": "抓挠",
+			"kind": "wood",
+			"dmg": "20~22"
+		},
+		"loot": {
+			"yqlm": 0.1
+		}
+	},
+	{
+		"id": "small_tree_man",
+		"name": "小树人",
+		"level": 15,
+		"kind": "wood",
+		"desc": "小型的树人",
+		"hp": 60,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "树木",
+				"kind": "wood",
+				"dmg": "14~16",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"zero_crystal": 2,
+			"lxue": 0.8,
+			"yqlm": 0.5
+		}
+	},
+	{
+		"id": "sy",
+		"name": "山猿",
+		"level": 15,
+		"desc": "",
+		"kind": "gold",
+		"hp": 30,
+		"tohit": 3,
+		"defense": 15,
+		"attack": {
+			"name": "抓挠",
+			"kind": "gold",
+			"dmg": "20~25"
+		},
+		"loot": {
+			"cbjs": 0.1
+		}
+	},
+	{
+		"id": "yanj",
+		"name": "岩精",
+		"level": 15,
+		"kind": "gold",
+		"desc": "",
+		"hp": 50,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "金石",
+				"kind": "gold",
+				"dmg": "15~18",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "huoj",
+		"name": "火精",
+		"level": 15,
+		"kind": "fire",
+		"desc": "",
+		"hp": 50,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "火焰",
+				"kind": "fire",
+				"dmg": "15~18",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "fireb",
+		"name": "炎雀",
+		"level": 15,
+		"kind": "fire",
+		"desc": "",
+		"hp": 40,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "火羽",
+				"kind": "fire",
+				"dmg": "12~19",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "hls",
+		"name": "火灵",
+		"level": 20,
+		"kind": "fire",
+		"desc": "",
+		"hp": 50,
+		"tohit": 10,
+		"defense": 10,
+		"attack": [
+			{
+				"name": "火焰",
+				"kind": "fire",
+				"dmg": "20~22",
+				"targets": "enemies"
+			},
+			{
+				"name": "高温",
+				"kind": "fire",
+				"dmg": "20~22",
+				"dot": {
+					"kind": "fire",
+					"name": "高温",
+					"dmg": "3~6",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"yxls": 0.7
+		}
+	},
+	{
+		"id": "syu",
+		"name": "大鱼",
+		"level": 15,
+		"kind": "water",
+		"desc": "",
+		"hp": 40,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "拍击",
+				"kind": "water",
+				"dmg": "12~19",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "waterj",
+		"name": "水精",
+		"level": 15,
+		"kind": "water",
+		"desc": "",
+		"hp": 40,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "浪花",
+				"kind": "water",
+				"dmg": "15~17",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "wggg",
+		"name": "移动石块",
+		"level": 15,
+		"kind": "land",
+		"desc": "",
+		"hp": 40,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "重击",
+				"kind": "land",
+				"dmg": "12~19",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "tuj",
+		"name": "土精",
+		"level": 15,
+		"kind": "land",
+		"desc": "",
+		"hp": 40,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "土壤",
+				"kind": "land",
+				"dmg": "15~17",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 0.2
+		}
+	},
+	{
+		"id": "sls",
+		"name": "水灵",
+		"level": 20,
+		"kind": "water",
+		"desc": "",
+		"hp": 60,
+		"tohit": 10,
+		"defense": 10,
+		"attack": [
+			{
+				"name": "水流",
+				"kind": "water",
+				"dmg": "18~20",
+				"targets": "enemies"
+			},
+			{
+				"name": "大水",
+				"kind": "water",
+				"dmg": "20~22",
+				"dot": {
+					"kind": "water",
+					"name": "窒息",
+					"dmg": "6~7",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"wgys": 0.7
+		}
+	},
+	{
+		"id": "tls",
+		"name": "地灵龟",
+		"level": 20,
+		"kind": "land",
+		"desc": "",
+		"hp": 70,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "壳击",
+				"kind": "land",
+				"dmg": "10~12",
+				"targets": "enemies"
+			},
+			{
+				"name": "喷吐",
+				"kind": "land",
+				"dmg": "10~12",
+				"dot": {
+					"kind": "land",
+					"name": "窒息",
+					"dmg": "10~12",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"zdht": 0.7
+		}
+	},
+	{
+		"id": "fjian",
+		"name": "飞剑",
+		"level": 20,
+		"kind": "gold",
+		"desc": "",
+		"hp": 50,
+		"tohit": 10,
+		"defense": 10,
+		"attack": [
+			{
+				"name": "飞剑",
+				"kind": "gold",
+				"dmg": "20~22",
+				"targets": "enemies"
+			},
+			{
+				"name": "流利剑雨",
+				"kind": "gold",
+				"dmg": "20~22",
+				"dot": {
+					"kind": "gold",
+					"name": "划伤",
+					"dmg": "3~6",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"cbjs": 0.7
+		}
+	},
+	{
+		"id": "tree_man",
+		"name": "沉寂树人[筑基]",
+		"level": 20,
+		"kind": "wood",
+		"desc": "巨大的树人,颤抖的大地",
+		"hp": 200,
+		"tohit": 10,
+		"defense": 40,
+		"attack": [
+			{
+				"name": "树木",
+				"kind": "wood",
+				"dmg": "20~22",
+				"targets": "enemies"
+			},
+			{
+				"name": "百年木",
+				"kind": "wood",
+				"dmg": "22~29",
+				"dot": {
+					"kind": "wood",
+					"name": "震撼",
+					"dmg": "6~9",
+					"duration": 5
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 4,
+			"lxue": 5,
+			"yqlm": 5
+		}
+	},
+	{
+		"id": "gold_man",
+		"name": "金石傀儡[筑基]",
+		"level": 20,
+		"kind": "gold",
+		"desc": "神秘的庞大傀儡,没人知道是谁建造的",
+		"hp": 160,
+		"tohit": 10,
+		"defense": 40,
+		"attack": [
+			{
+				"name": "猛砸",
+				"kind": "gold",
+				"dmg": "20~22",
+				"targets": "enemies"
+			},
+			{
+				"name": "锐利之意",
+				"kind": "gold",
+				"dmg": "0~1",
+				"dot": {
+					"kind": "gold",
+					"name": "锐利伤痕",
+					"dmg": "10~20",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 10,
+			"cbjs": 6
+		}
+	},
+	{
+		"id": "fire_bird",
+		"name": "火羽鸟[筑基]",
+		"level": 17,
+		"kind": "fire",
+		"desc": "浑身散发着火焰的危险鸟类",
+		"hp": 100,
+		"tohit": 10,
+		"defense": 28,
+		"attack": [
+			{
+				"name": "灼烧",
+				"kind": "fire",
+				"dmg": "22~26",
+				"targets": "enemies"
+			},
+			{
+				"name": "黄炎",
+				"kind": "fire",
+				"dmg": "7~39",
+				"dot": {
+					"kind": "fire",
+					"name": "炎",
+					"dmg": "10~10",
+					"duration": 20
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 10,
+			"lxue": 2,
+			"snp_data": 9,
+			"yxls": 6
+		}
+	},
+	{
+		"id": "tu_bird",
+		"name": "古老岩雀[筑基]",
+		"level": 17,
+		"kind": "land",
+		"desc": "有着坚硬无比的羽毛",
+		"hp": 200,
+		"tohit": 10,
+		"defense": 25,
+		"attack": [
+			{
+				"name": "土壤掩埋",
+				"kind": "land",
+				"dmg": "20~22",
+				"targets": "enemies"
+			},
+			{
+				"name": "厚土",
+				"kind": "land",
+				"dmg": "22~29",
+				"dot": {
+					"kind": "land",
+					"name": "窒息",
+					"dmg": "2~13",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 10,
+			"lxue": 2,
+			"snp_data": 9,
+			"zdht": 6
+		}
+	},
+	{
+		"id": "lake_wheel",
+		"name": "洪泽巨鱼[筑基]",
+		"level": 17,
+		"kind": "chaos",
+		"desc": "大泽中的大鱼",
+		"hp": 150,
+		"tohit": 10,
+		"defense": 25,
+		"attack": [
+			{
+				"name": "压迫",
+				"kind": "water",
+				"dmg": "12~12",
+				"targets": "enemies"
+			},
+			{
+				"name": "洪泽水流",
+				"kind": "water",
+				"dmg": "10~20",
+				"dot": {
+					"kind": "water",
+					"name": "窒息",
+					"dmg": "1~2",
+					"duration": 20
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 10,
+			"lxue": 2,
+			"snp_data": 9,
+			"wgys": 6
+		}
+	},
+	{
+		"id": "river_wheel",
+		"name": "荒芜鲸[筑基]",
+		"level": 17,
+		"kind": "chaos",
+		"desc": "庞大的鱼,生活在荒芜大河中",
+		"hp": 100,
+		"tohit": 10,
+		"defense": 25,
+		"attack": [
+			{
+				"name": "压迫",
+				"kind": "chaos",
+				"dmg": "12~12",
+				"targets": "enemies"
+			},
+			{
+				"name": "荒芜水流",
+				"kind": "chaos",
+				"dmg": "10~20",
+				"dot": {
+					"kind": "chaos",
+					"name": "窒息",
+					"dmg": "1~2",
+					"duration": 20
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 10,
+			"lxue": 9,
+			"snp_data": 9,
+			"back_dream": 3
+		}
+	},
+	{
+		"id": "dreamloot",
+		"name": "归梦者",
+		"level": 15,
+		"kind": "chaos",
+		"desc": "从底层梦境返回现实的神秘人",
+		"hp": 55,
+		"tohit": 10,
+		"defense": 29,
+		"attack": [
+			{
+				"name": "合理飞弹",
+				"kind": "heli",
+				"dmg": "5~12",
+				"targets": "enemies"
+			},
+			{
+				"name": "混沌飞弹",
+				"kind": "chaos",
+				"dmg": "10~20"
+			}
+		],
+		"loot": {
+			"zero_crystal": 5,
+			"snp_data": 10,
+			"back_dream": 2
+		}
+	},
+	{
 		"id": "newt",
 		"level": 0.2,
 		"kind": "beast",

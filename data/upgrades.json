@@ -513,7 +513,7 @@
 			"frs": -30,
 			"stamina.max": -1,
 			"hp.max":-2,
-			"elect.rate": -1,
+			"elect.rate": -0.2,
 			"frs.rate": -0.4
 		}
 	},
@@ -523,7 +523,7 @@
 		"desc": "永久消耗一批顽固废热水,注意这将消耗精力上限和电能速率以及气血上限",
 		"require": "g.frs>=60",
 		"need": "g.frs>=60",
-		"max": 5,
+		"max": 10,
 		"cost": {
 			"lg": 8,
 			"jls": 30,
@@ -571,6 +571,190 @@
 		},
 		"mod": {
 			"dist": 50
+		}
+	},
+	{
+		"id": "rlgl",
+		"name": "人力资源管理",
+		"desc": "对人力资源进行管理分配",
+		"require": "g.shenshi_4>=5",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"money": 200,
+			"super_mind":5,
+			"sj_met": 5,
+			"zero_crystal":12,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130,
+			"human_power": 30
+		},
+		"mod": {
+			"human_power.max": 20
+		}
+	},
+	{
+		"id": "zcx",
+		"name": "侦察学说",
+		"desc": "安排人力对野外地形进行侦察",
+		"require": "g.small_broadcast>=1",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"human_power":200,
+			"alculation":70,
+			"money": 600,
+			"super_mind":9,
+			"sj_met": 10,
+			"zero_crystal":20,
+			"cold_core":10,
+			"dirty_core":10,
+			"dirty_lingti": 10,
+			"r_adv_w_sj2": 1,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130
+		},
+		"mod": {
+			"dist": 10
+		}
+	},
+	{
+		"id": "lmtsz",
+		"name": "灵木探索者",
+		"desc": "对月影森林进行进一步的开发",
+		"require": "g.yqlm>=5",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"human_power":200,
+			"alculation":70,
+			"money": 600,
+			"super_mind":9,
+			"yqlm": 10,
+			"zero_crystal":30,
+			"cold_core":20,
+			"dirty_core":10,
+			"dirty_lingti": 20,
+			"r_adv_w_sj2": 1,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130
+		},
+		"mod": {
+			"conquer_4.max": 4
+		}
+	},
+	{
+		"id": "cbtsz",
+		"name": "纯白探索者",
+		"desc": "对巨灵山进行进一步的开发",
+		"require": "g.cbjs>=5",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"human_power":200,
+			"alculation":70,
+			"money": 600,
+			"super_mind":9,
+			"cbjs": 10,
+			"zero_crystal":30,
+			"cold_core":20,
+			"dirty_core":10,
+			"dirty_lingti": 20,
+			"r_adv_w_sj2": 1,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130
+		},
+		"mod": {
+			"conquer_5.max": 4
+		}
+	},
+	{
+		"id": "lztsz",
+		"name": "大泽探索者",
+		"desc": "对劳泽大湖进行进一步的开发",
+		"require": "g.wgys>=5",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"human_power":200,
+			"alculation":70,
+			"money": 600,
+			"super_mind":9,
+			"wgys": 10,
+			"zero_crystal":30,
+			"cold_core":20,
+			"dirty_core":10,
+			"dirty_lingti": 20,
+			"r_adv_w_sj2": 1,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130
+		},
+		"mod": {
+			"conquer_6.max": 4
+		}
+	},
+	{
+		"id": "yytsz",
+		"name": "阳炎探索者",
+		"desc": "对地脉火山进行进一步的开发",
+		"require": "g.yxls>=5",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"human_power":200,
+			"alculation":70,
+			"money": 600,
+			"super_mind":9,
+			"yxls": 10,
+			"zero_crystal":30,
+			"cold_core":20,
+			"dirty_core":10,
+			"dirty_lingti": 20,
+			"r_adv_w_sj2": 1,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130
+		},
+		"mod": {
+			"conquer_7.max": 4
+		}
+	},
+	{
+		"id": "pdtsz",
+		"name": "盆地探索者",
+		"desc": "对古老盆地进行进一步的开发",
+		"require": "g.zdht>=5",
+		"max": 1,
+		"cost": {
+			"lg": 7,
+			"human_power":200,
+			"alculation":70,
+			"money": 600,
+			"super_mind":9,
+			"zdht": 10,
+			"zero_crystal":30,
+			"cold_core":20,
+			"dirty_core":10,
+			"dirty_lingti": 20,
+			"r_adv_w_sj2": 1,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 130
+		},
+		"mod": {
+			"conquer_8.max": 4
 		}
 	},
 	{
@@ -860,7 +1044,7 @@
 			"human_power": 210,
 			"cold_core": 10,
 			"dirty_core": 10,
-			"dirty_lingti": 10,
+			"dirty_lingti": 14,
 			"super_mind": 5,
 			"tian": 10,
 			"zero_crystal":20,
@@ -887,6 +1071,358 @@
 		"max": 1,
 		"cost": {
 			"heli": 1
+		}
+	},
+	{
+		"id": "lnfyl",
+		"name": "灵能反应炉",
+		"desc": "使用衰败核心对污浊核心进行反应,使用冷冻核心进行冷却。这能稳定的产生合理与电能。",
+		"require": "g.fanshe_metal>=3 && g.energ_high_1>=10",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 700,
+			"ganwu": 450,
+			"super_mind": 9,
+			"human_power": 210,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"shuaibai_core": 6,
+			"super_mind": 9,
+			"tian": 10,
+			"zero_crystal":20,
+			"life_crystal": 4,
+			"sj_met": 10,
+			"star_map": 70,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16
+		},
+		"mod":{
+			"heli.rate":1,
+			"elect.rate": 10
+		}
+	},
+	{
+		"id": "wcjg",
+		"name": "无尘加工",
+		"desc": "使用灵血进行超净加工",
+		"require": "g.fanshe_liuti>=4",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"ganwu": 450,
+			"super_mind": 9,
+			"human_power": 210,
+			"cold_core": 10,
+			"lxue": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"life_crystal": 4,
+			"star_map": 70,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16
+		},
+		"mod":{
+			"hp.rate":0.2
+		}
+	},
+	{
+		"id": "sjkzl",
+		"name": "神机控制论",
+		"desc": "这是一种新型技术,利用全新的材料打造的战争机器",
+		"require": "g.fanshe_metal>=5 && g.xiulian_sw_smart_zj>=1 && g.xiulian_energ_core>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 700,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 210,
+			"cold_core": 10,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"life_crystal": 4,
+			"star_map": 70,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		}
+	},
+	{
+		"id": "zjxs",
+		"name": "筑基修士",
+		"tags": "",
+		"slot": "honorific",
+		"desc": "",
+		"require": "g.jihun>=1",
+		"buy": {
+			"lg": 12,
+			"jihun":1,
+			"money": 400,
+			"ganwu": 200,
+			"zero_crystal": 20,
+			"super_mind": 5,
+			"tian": 5,
+			"sj_met": 5,
+			"paper": 100,
+			"books": 20,
+			"exe_paper": 50
+		},
+		"mod":{
+			"hp.rate":0.1,
+			"heli.rate": 0.3,
+			"shenshi.rate": 0.3
+		}
+	},
+	{
+		"id": "gdjs",
+		"name": "广渡居士",
+		"tags": "t1,wood",
+		"slot": "honorific",
+		"desc": "渡己渡人。自未得渡而渡人者，又自渡生死苦海，而又渡人。",
+		"require": "g.yqlife>=5",
+		"buy": {
+			"lg": 12,
+			"jihun":1,
+			"jls": 40,
+			"money": 1000,
+			"ganwu": 500,
+			"yqlm": 25,
+			"alculation": 100,
+			"human_power": 700,
+			"cold_core": 30,
+			"lxue": 10,
+			"zero_crystal": 70,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 5,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"paper": 100,
+			"books": 20,
+			"exe_paper": 50
+		},
+		"mod":{
+			"hp.rate":0.5,
+			"heli.rate": 1,
+			"chaos.rate": 1,
+			"self.resist.wood": 15
+		}
+	},
+	{
+		"id": "hjjz",
+		"name": "黄金贵人",
+		"tags": "t1,gold",
+		"slot": "honorific",
+		"desc": "溺爱黄金,心之苦酸",
+		"require": "g.jjclx>=5",
+		"buy": {
+			"lg": 12,
+			"jihun":1,
+			"jls": 40,
+			"money": 1200,
+			"ganwu": 500,
+			"cbjs": 25,
+			"alculation": 100,
+			"human_power": 700,
+			"cold_core": 30,
+			"lxue": 10,
+			"zero_crystal": 70,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 5,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"paper": 100,
+			"books": 20,
+			"exe_paper": 50
+		},
+		"mod":{
+			"money.rate":1,
+			"heli.rate": 1,
+			"self.resist.gold": 15
+		}
+	},
+	{
+		"id": "bzjz",
+		"name": "败火居者",
+		"tags": "t1,fire",
+		"slot": "honorific",
+		"desc": "(火中做自己)",
+		"require": "g.gwwlx>=5",
+		"buy": {
+			"lg": 12,
+			"jihun":1,
+			"jls": 40,
+			"money": 1000,
+			"ganwu": 500,
+			"yxls": 25,
+			"alculation": 100,
+			"human_power": 700,
+			"cold_core": 30,
+			"lxue": 10,
+			"zero_crystal": 70,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 5,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"paper": 100,
+			"books": 20,
+			"exe_paper": 50
+		},
+		"mod":{
+			"hp.rate":1.5,
+			"heli.rate": 0.7,
+			"self.resist.fire": 15
+		}
+	},
+	{
+		"id": "htbyxz",
+		"name": "洪涛奔涌行者",
+		"tags": "t1,water",
+		"slot": "honorific",
+		"desc": "浪中逐电",
+		"require": "g.jsnlx>=5",
+		"buy": {
+			"lg": 12,
+			"jihun":1,
+			"jls": 40,
+			"money": 1000,
+			"ganwu": 500,
+			"wgys": 25,
+			"alculation": 100,
+			"human_power": 700,
+			"cold_core": 30,
+			"lxue": 10,
+			"zero_crystal": 70,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 5,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"paper": 100,
+			"books": 20,
+			"exe_paper": 50
+		},
+		"mod":{
+			"hp.rate":0.2,
+			"elect.rate": 2,
+			"self.resist.water": 15
+		}
+	},
+	{
+		"id": "htsr",
+		"name": "厚土散人",
+		"tags": "t1,land",
+		"slot": "honorific",
+		"desc": "沉重",
+		"require": "g.htgcx>=5",
+		"buy": {
+			"lg": 12,
+			"jihun":1,
+			"jls": 40,
+			"money": 1000,
+			"ganwu": 500,
+			"zdht": 25,
+			"alculation": 100,
+			"human_power": 700,
+			"cold_core": 30,
+			"lxue": 10,
+			"zero_crystal": 70,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 5,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"paper": 100,
+			"books": 20,
+			"exe_paper": 50
+		},
+		"mod":{
+			"hp.rate":0.5,
+			"self.defense": 10,
+			"stress.max": 7,
+			"self.resist.land": 15
+		}
+	},
+	{
+		"id": "base_shenji",
+		"name": "空置神机",
+		"tags": "base",
+		"slot": "core",
+		"desc": "白板化神机,利用内置的衰败核心长期供能,只提供少许帮助。允许安装BASE级装甲",
+		"require": "g.sjkzl>=5",
+		"buy": {
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"ganwu": 300,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 210,
+			"cold_core": 10,
+			"lxue": 5,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 5,
+			"sj_met": 15,
+			"star_map": 70,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"mod":{
+			"hp.rate":0.2,
+			"dist": 10,
+			"heli.max": -1,
+			"shenshi.max": -1
+		}
+	},
+	{
+		"id": "hl_shenji",
+		"name": "混理神机",
+		"tags": "AL,base",
+		"slot": "core",
+		"warn": true,
+		"desc": "AL级神机,内置一台微型灵能反应炉,消耗自身的合理与混沌。允许安装AL级及其以下装甲",
+		"require": "g.sjkzl>=5 && g.lnfyl",
+		"buy": {
+			"lg": 11,
+			"jls": 40,
+			"money": 700,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 210,
+			"cold_core": 20,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"life_crystal": 4,
+			"star_map_1": 5,
+			"books": 9
+		},
+		"mod":{
+			"hp.rate":0.5,
+			"self.resist.chaos": 10,
+			"self.resist.heli": 10,
+			"dist": 10,
+			"heli.max": -5,
+			"heli.rate": -0.5,
+			"chaos.max": -5,
+			"chaos.rate": -0.5,
+			"shenshi.max": -2
 		}
 	},
 	{

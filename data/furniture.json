@@ -332,10 +332,223 @@
 			"elect.rate": -0.2,
 			"tian.max":5,
 			"tian.rate": 0.01,
-			"huaman_power.max": -2,
+			"human_power.max": -2,
 			"space": 12
 		}
 	},
+	{
+		"id": "ldlxw_1",
+		"name": "劳动力募集小屋1",
+		"desc": "募集劳动力",
+		"tags": "",
+		"require": "g.rlgl>=1",
+		"max": 5,
+		"repeat": true,
+		"cost": {
+			"human_power": 10,
+			"iron_copper": 5,
+			"cu_iron": 30,
+			"cu_copper": 30,
+			"zero_crystal": 5,
+			"paper": 30,
+			"exe_paper": 10,
+			"money": 200
+		},
+		"mod": {
+			"human_power.max": 15,
+			"space": 7
+		}
+	},
+	{
+		"id": "ldlxw_2",
+		"name": "劳动力募集小屋2",
+		"desc": "募集劳动力",
+		"tags": "",
+		"require": "g.rlgl>=1 && g.human_power>=100",
+		"max": 4,
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"iron_copper": 10,
+			"cu_iron": 30,
+			"super_mind": 6,
+			"cu_copper": 30,
+			"tian": 10,
+			"zero_crystal": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"money": 300
+		},
+		"mod": {
+			"human_power.max": 25,
+			"space": 10
+		}
+	},
+	{
+		"id": "ldlxw_3",
+		"name": "劳动力募集小屋3",
+		"desc": "募集劳动力",
+		"tags": "",
+		"require": "g.rlgl>=1 && g.human_power>=200",
+		"max": 3,
+		"repeat": true,
+		"cost": {
+			"human_power": 150,
+			"iron_copper": 10,
+			"super_mind": 8,
+			"tian": 10,
+			"zero_crystal": 10,
+			"cold_core": 5,
+			"dirty_core": 5,
+			"paper": 30,
+			"exe_paper": 10,
+			"money": 400
+		},
+		"mod": {
+			"human_power.max": 50,
+			"space": 15
+		}
+	},
+	{
+		"id": "swcl_1",
+		"name": "事务处理点1",
+		"desc": "使用人力帮助处理事务",
+		"tags": "",
+		"require": "g.rlgl>=1",
+		"max": 5,
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"iron_copper": 10,
+			"zero_crystal": 5,
+			"paper": 30,
+			"exe_paper": 10,
+			"alculation": 10,
+			"money": 200
+		},
+		"mod": {
+			"human_power.max": -5,
+			"alculation.max": 10,
+			"space": 10
+		}
+	},
+	{
+		"id": "swcl_2",
+		"name": "事务处理点2",
+		"desc": "使用人力帮助处理事务",
+		"tags": "",
+		"require": "g.rlgl>=1 && g.alculation>=50",
+		"max": 3,
+		"repeat": true,
+		"cost": {
+			"human_power": 100,
+			"iron_copper": 10,
+			"super_mind": 8,
+			"zero_crystal": 10,
+			"paper": 30,
+			"tian": 10,
+			"dirty_core": 10,
+			"exe_paper": 10,
+			"alculation": 40,
+			"money": 300
+		},
+		"mod": {
+			"human_power.max": -15,
+			"alculation.max": 30,
+			"space": 10
+		}
+	},
+	{
+		"id": "small_yiliao",
+		"name": "小型医疗站",
+		"desc": "安排人力来治愈自己的伤口",
+		"tags": "",
+		"require": "g.rlgl>=1 && g.lnylx>=2",
+		"max": 2,
+		"repeat": true,
+		"cost": {
+			"human_power": 100,
+			"iron_copper": 10,
+			"super_mind": 8,
+			"zero_crystal": 10,
+			"paper": 30,
+			"tian": 10,
+			"sj_met":10,
+			"dirty_core": 10,
+			"dirty_lingti":10,
+			"exe_paper": 10,
+			"alculation": 40,
+			"money": 300
+		},
+		"mod": {
+			"human_power.max": -20,
+			"hp.rate": 0.7,
+			"space": 10
+		}
+	},
+	{
+		"id": "xxcls",
+		"name": "信息处理所",
+		"desc": "消耗人力和计算力来处理更多的知识",
+		"tags": "",
+		"require": "g.rlgl>=1",
+		"max": 2,
+		"repeat": true,
+		"cost": {
+			"human_power": 100,
+			"iron_copper": 10,
+			"super_mind": 8,
+			"zero_crystal": 10,
+			"paper": 30,
+			"tian": 10,
+			"sj_met":10,
+			"dirty_core": 10,
+			"dirty_lingti":10,
+			"exe_paper": 10,
+			"alculation": 40,
+			"money": 500
+		},
+		"mod": {
+			"ganwu.max": 50,
+			"books.max": 5,
+			"paper.max": 20,
+			"exe_paper.max": 15,
+			"star_map.max": 10,
+			"star_map_1.max": 3,
+			"snp_data.max": 10,
+			"alculation.max": -10,
+			"human_power.max": -20,
+			"space": 25
+		}
+	},
+	{
+		"id": "small_jlz",
+		"name": "聚灵仪",
+		"desc": "消耗计算力来更快的凝聚能量",
+		"tags": "",
+		"require": "g.rlgl>=1",
+		"max": 5,
+		"repeat": true,
+		"cost": {
+			"human_power": 100,
+			"iron_copper": 10,
+			"super_mind": 8,
+			"zero_crystal": 10,
+			"paper": 30,
+			"tian": 10,
+			"sj_met":10,
+			"exe_paper": 10,
+			"alculation": 40,
+			"money": 300
+		},
+		"mod": {
+			"alculation.max": -10,
+			"heli.rate": 1,
+			"chaos.rate": 1,
+			"space": 15
+		}
+	},
+
 	{
 		"id": "diwen_rongqi",
 		"name": "低温容器",
@@ -351,6 +564,7 @@
 			"paper": 40,
 			"exe_paper": 10,
 			"sj_met": 5,
+			"snp_data": 10,
 			"tian": 10,
 			"cold_core": 4,
 			"money": 340
@@ -380,6 +594,7 @@
 			"cu_copper": 20,
 			"paper": 40,
 			"exe_paper": 10,
+			"snp_data": 10,
 			"sj_met": 5,
 			"tian": 10,
 			"cold_core": 15,
@@ -392,6 +607,216 @@
 			"frs.rate": 0.1,
 			"cold_core.rate": -0.005,
 			"space": 5
+		}
+	},
+	{
+		"id": "bnfzscd",
+		"name": "保暖服装生产点",
+		"desc": "生产可以在极寒下保暖的服装",
+		"tags": "warm_clothe",
+		"need": "",
+		"require": "g.cold_core>=1 && g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"super_mind": 5,
+			"zero_crystal": 13,
+			"iron_copper": 10,
+			"paper": 30,
+			"snp_data": 10,
+			"exe_paper": 10,
+			"sj_met": 8,
+			"tian": 4,
+			"cold_core": 2,
+			"money": 200
+		},
+		"mod": {
+			"human_power.max": -5,
+			"human_power.rate": 0.1,
+			"space": 10
+		}
+	},
+	{
+		"id": "small_fram",
+		"name": "小型农场",
+		"desc": "生产粮食来加快人力恢复",
+		"tags": "",
+		"max": 5,
+		"require": "g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"zero_crystal": 10,
+			"iron_copper": 10,
+			"snp_data": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 200
+		},
+		"mod": {
+			"human_power.max": -5,
+			"human_power.rate": 1,
+			"space": 8
+		}
+	},
+	{
+		"id": "small_cow",
+		"name": "小型牧场",
+		"desc": "花费人力经营一个小型牧场来获取钱币",
+		"tags": "",
+		"max": 5,
+		"require": "g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"zero_crystal": 10,
+			"iron_copper": 10,
+			"snp_data": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 200
+		},
+		"mod": {
+			"human_power.max": -15,
+			"money.rate": 0.4,
+			"space":8
+		}
+	},
+	{
+		"id": "ysclz",
+		"name": "远山测量站",
+		"desc": "在远山建立一个测量站并安排人员定期获取测绘资料",
+		"tags": "",
+		"max": 5,
+		"require": "g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"zero_crystal": 10,
+			"snp_data": 10,
+			"super_mind": 5,
+			"iron_copper": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 200
+		},
+		"mod": {
+			"human_power.max": -15,
+			"snp_data.rate": 0.5,
+			"space": 15
+		}
+	},
+	{
+		"id": "sjsxy",
+		"name": "书籍筛选员",
+		"desc": "安排人力对大量书籍进行筛选并购买",
+		"tags": "",
+		"max": 5,
+		"require": "g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"zero_crystal": 10,
+			"books": 5,
+			"super_mind": 5,
+			"iron_copper": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 100
+		},
+		"mod": {
+			"human_power.max": -10,
+			"books.rate": 0.4,
+			"money.rate": -0.1,
+			"space": 10
+		}
+	},
+	{
+		"id": "bcgmy",
+		"name": "板材购买员",
+		"desc": "安排人力采购优质板材",
+		"tags": "",
+		"max": 5,
+		"require": "g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"zero_crystal": 10,
+			"books": 5,
+			"cu_iron":10,
+			"super_mind": 5,
+			"cu_copper": 10,
+			"iron_copper": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 300
+		},
+		"mod": {
+			"human_power.max": -15,
+			"cu_iron.rate": 0.5,
+			"cu_copper.rate": 0.5,
+			"money.rate": -0.3,
+			"space": 5
+		}
+	},
+	{
+		"id": "mbxlc",
+		"name": "民兵训练场",
+		"desc": "划分出一部分人力来训练成民兵",
+		"tags": "",
+		"max": 2,
+		"require": "g.rlgl>=1 && g.r_adv_w_sj1>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 70,
+			"zero_crystal": 10,
+			"books": 5,
+			"super_mind": 5,
+			"iron_copper": 10,
+			"r_adv_w_sj1": 4,
+			"tian": 10,
+			"sj_met": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 300
+		},
+		"mod": {
+			"human_power.max": -20,
+			"f_power": 15,
+			"money.rate": -0.2,
+			"space": 15
+		}
+	},
+	{
+		"id": "bdhxbjd",
+		"name": "冰冻核心补给点",
+		"desc": "花费人力前往冰冻核心矿点挖取核心,这个建筑需要一个保暖服装生产点",
+		"tags": "",
+		"need": "warm_clothe",
+		"require": "g.cold_core>=1 && g.rlgl>=1",
+		"repeat": true,
+		"cost": {
+			"human_power": 50,
+			"zero_crystal": 15,
+			"iron_copper": 10,
+			"super_mind": 6,
+			"paper": 40,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"tian": 10,
+			"cold_core": 5,
+			"money": 450
+		},
+		"mod": {
+			"human_power.max": -30,
+			"cold_core.rate": 0.01,
+			"space": 15
 		}
 	},
 	{
@@ -516,7 +941,7 @@
 	{
 		"id": "twenty_sorce",
 		"name": "20V配电器",
-		"desc": "能稳定提供20V级电能",
+		"desc": "能稳定提供20V级电源",
 		"tags": "TENTYV",
 		"require": "g.fanshe_building>=2&&g.fanshe_math>=4&&g.xiulian_energ_cold_1>=1",
 		"repeat": true,
@@ -631,6 +1056,38 @@
 		}
 	},
 	{
+		"id": "small_gbz",
+		"name": "小型广播站",
+		"desc": "一个小型的广播站,用于在两地交换信息。此建筑需要接通20V级电源",
+		"tags": "small_broadcast",
+		"max":1,
+		"require": "g.info_switch_1>=4",
+		"need": "TENTYV",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 240,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 700
+		},
+		"mod": {
+			"dist": 100,
+			"elect.rate": -0.3,
+			"space": 20
+		}
+	},
+	{
 		"id": "ltxb",
 		"name": "灵体信标",
 		"desc": "灵体主导的地面发射信标,用于在非实界建立地面航标,此建筑需要接通20V级电源",
@@ -700,7 +1157,7 @@
 		"desc": "一个能引导你稳定前往非实界的稳流结构",
 		"tags": "hq_well",
 		"max":1,
-		"require": "g.huangquandy>=1&&g.xiulian_jizhun_2>=1&&g.xiulian_jizhun_3>=1&&g.xiulian_jihun_1>=1",
+		"require": "g.huangquandy>=1 && g.xiulian_jizhun_2>=1 && g.xiulian_jizhun_3>=1 && g.xiulian_jihun_1>=1",
 		"need": "spirit_stable",
 		"repeat": true,
 		"cost": {

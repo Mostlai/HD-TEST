@@ -139,6 +139,190 @@
 		"only": "natural,leather,cloth"
 	},
 	{
+		"id": "tian_core",
+		"name": "合理转化炉[BASE]",
+		"desc": "初代微型化合理转化炉,使用合理催动内置线圈进行发电",
+		"equneed":"g.base>=1",
+		"armor": 0,
+		"slot": "trinket",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"heli.rate": -1,
+				"shenshi.max": -1,
+				"elect.max": 10,
+				"elect.rate": 3
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "tian_helmet",
+		"name": "钛合头盔[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"equneed":"g.base>=1",
+		"armor": 6,
+		"slot": "head",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -0.5
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "tian_chest",
+		"name": "钛合装甲[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"equneed":"g.base>=1",
+		"armor": 12,
+		"slot": "chest",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 10,
+				"self.resist.wood": 10,
+				"self.resist.fire": 10,
+				"self.resist.land": 10,
+				"self.resist.gold": 10,
+				"self.resist.water": 10,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "tian_shins",
+		"name": "钛合护腿[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"equneed":"g.base>=1",
+		"armor": 8,
+		"slot": "shins",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -0.6
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "tian_foot",
+		"name": "钛合护足[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"equneed":"g.base>=1",
+		"armor": 5,
+		"slot": "feet",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 4,
+				"self.resist.wood": 3,
+				"self.resist.fire": 3,
+				"self.resist.land": 3,
+				"self.resist.gold": 3,
+				"self.resist.water": 3,
+				"shenshi.max": -1,
+				"elect.max": -1,
+				"elect.rate": -0.4
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "yqlp",
+		"name": "御气罗盘",
+		"desc": "能帮助使用者速度更快",
+		"armor": 2,
+		"slot": "back",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.speed": 2
+			}
+		}
+	},
+	{
+		"id": "cbxl",
+		"name": "纯白项链",
+		"desc": "提高对金的抗性",
+		"armor": 2,
+		"slot": "neck",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.resist.gold": 3
+			}
+		}
+	},
+	{
+		"id": "cbbz",
+		"name": "纯白扳指",
+		"desc": "提高对金的抗性",
+		"armor": 2,
+		"slot": "ring",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.resist.gold": 2
+			}
+		}
+	},
+	{
+		"id": "cbzw",
+		"name": "纯白之握",
+		"desc": "提高对金的抗性",
+		"armor": 5,
+		"slot": "hands",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.resist.gold": 2
+			}
+		}
+	},
+	{
 		"id": "padded armor",
 		"armor": 3,
 		"slot": "chest",
