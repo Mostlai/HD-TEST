@@ -628,7 +628,7 @@
 		"max": 60,
 		"length": 50,
 		"cost": {
-			"lxue": 6,
+			"lxue": 2,
 			"money": 500,
 			"ganwu": 500,
 			"super_mind": 9,
@@ -643,8 +643,8 @@
 			"time": -0.2
 		},
 		"result": {
-			"age": 500,
-			"age.max": 500
+			"age": 800,
+			"age.max": 800
 		}
 	},
 	{
