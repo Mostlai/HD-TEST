@@ -1178,7 +1178,7 @@
 			"exe_paper": 50
 		},
 		"mod":{
-			"hp.rate":0.1,
+			"hp.rate":0.5,
 			"heli.rate": 0.3,
 			"shenshi.rate": 0.3
 		}
