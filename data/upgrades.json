@@ -1416,7 +1416,7 @@
 		"tags": "base",
 		"slot": "core",
 		"desc": "白板化神机,利用内置的衰败核心长期供能,只提供少许帮助。允许安装BASE级装甲",
-		"require": "g.sjkzl>=5",
+		"require": "g.sjkzl>=1",
 		"buy": {
 			"lg": 11,
 			"jls": 40,
@@ -1450,7 +1450,7 @@
 		"slot": "core",
 		"warn": true,
 		"desc": "AL级神机,内置一台微型灵能反应炉,消耗自身的合理与混沌。允许安装AL级及其以下装甲",
-		"require": "g.sjkzl>=5 && g.lnfyl",
+		"require": "g.sjkzl>=1 && g.lnfyl",
 		"buy": {
 			"lg": 11,
 			"jls": 40,
