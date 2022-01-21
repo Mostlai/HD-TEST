@@ -1132,6 +1132,61 @@
 		}
 	},
 	{
+		"id": "gmkz",
+		"name": "清明之梦",
+		"desc": "在梦境中保持清醒",
+		"require": "g.back_dream>=5",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 700,
+			"ganwu": 450,
+			"super_mind": 9,
+			"human_power": 210,
+			"life_crystale": 3,
+			"zero_crystal": 20,
+			"cold_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 70,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16
+		},
+		"mod":{
+			"back_dream.max":10
+		}
+	},
+	{
+		"id": "njzm",
+		"name": "凝结之梦",
+		"desc": "偷窥别人的梦境",
+		"require": "g.gmkz>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 700,
+			"ganwu": 450,
+			"back_dream":10,
+			"super_mind": 9,
+			"human_power": 210,
+			"life_crystale": 3,
+			"zero_crystal": 20,
+			"cold_core": 20,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 70,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16
+		},
+		"mod":{
+			"back_dream.rate":0.1
+		}
+	},
+	{
 		"id": "sjkzl",
 		"name": "神机控制论",
 		"desc": "这是一种新型技术,利用全新的材料打造的战争机器",
