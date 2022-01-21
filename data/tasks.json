@@ -632,10 +632,10 @@
 			"money": 500,
 			"ganwu": 500,
 			"super_mind": 9,
-			"sj_met": 10,
+			"sj_met": 6,
 			"yqlm": 5,
 			"star_map_1": 5,
-			"life_crystal": 5,
+			"life_crystal": 2,
 			"star_map": 40,
 			"zero_crystal": 40
 		},
