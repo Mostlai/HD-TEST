@@ -387,7 +387,7 @@
 			"id": "ylzs",
 			"name": "源灵障水",
 			"duration": 10,
-			"effect": {
+			"mod": {
 				"self.resist.wood": 5,
 				"self.resist.water": 15
 			}
