@@ -347,7 +347,7 @@
 			"sp": 1
 		},
 		"mod": {
-			"lg.max": 0.3,
+			"lg.max": 0.8,
 			"human_power.max":1,
 			"human_power.rate": 0.1, 
 			"super_mind.rate": 0.005,
