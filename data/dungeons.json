@@ -124,6 +124,46 @@
 		]
 	},
 	{
+		"id": "hq_mo_1",
+		"name": "无光平原[魔导]",
+		"desc": "无法看见光明。这里的时间流速更快,环境更危险",
+		"require": "g.evt_modao>=1",
+		"level": 1,
+		"length": 30,
+		"run": {
+			"back_dream": 0.2,
+			"hp": 1,
+			"shuaibai": -0.1,
+			"tili": 1,
+			"time": -3
+		},
+		"result": {
+			"lxue": "0~3",
+			"shuaibai_core": "0~3",
+			"nolight_core": "1~3"
+		},
+		"boss": "huian_fashi",
+		"spawns": [
+			[
+				"noshadow",
+				"noshadow",
+				"noshadow",
+				"noshadow",
+				"noshadow"
+			],
+			[
+				"haojiaozhe",
+				"haojiaozhe",
+				"haojiaozhe"
+			],
+			[
+				"bujiezhe",
+				"haojiaozhe",
+				"noshadow"
+			]
+		]
+	},
+	{
 		"id": "yysl",
 		"name": "月影森林",
 		"desc": "繁茂的森林,地表常年处于阴影之中。",
@@ -296,6 +336,56 @@
 			[
 				"tuj",
 				"tls"
+			]
+		]
+	},
+	{
+		"id": "zhujijie",
+		"name": "筑基劫[五环-普通]",
+		"sym": "☯⚡",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-命玄】前置",
+		"require": "evt_zjztj",
+		"title": "应劫者",
+		"max": 1,
+		"dist":1,
+		"level": 30,
+		"length": 5,
+		"run": {
+			"time": -10
+		},
+		"result": {
+			"zhuji_tianjie_1": 1
+		},
+		"boss": "shuijie_1",
+		"spawns": [
+			"mujie_1",
+			"huojie_1",
+			"tujie_1",
+			"jinjie_1"
+		]
+	},
+	{
+		"id": "wuguangjie_1",
+		"name": "无光深渊[混沌-普通]",
+		"sym": "☯⚡",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-落日】前置",
+		"require": "evt_wgsy",
+		"title": "应劫者",
+		"max": 1,
+		"dist":1,
+		"level": 30,
+		"length": 2,
+		"run": {
+			"time": -10
+		},
+		"result": {
+			"zhuji_tianjie_2": 1
+		},
+		"boss": "luor",
+		"spawns": [
+			[
+				"wuxiangmo",
+				"wuxiangling"
 			]
 		]
 	},

@@ -34,7 +34,7 @@
 	{
 		"id": "evt_chaos",
 		"name": "混沌",
-		"require": "g.chaos",
+		"require": "g.chaos>=1",
 		"desc": "混沌让原本可预测的事实变为不可预测,这是一张全新的危险的力量",
 		"result": {
 			"chaos_enchant_1": true
@@ -63,6 +63,12 @@
 		"desc": "现在你可以前往最底层的梦境了"
 	},
 	{
+		"id": "evt_modao",
+		"name": "魔导之地",
+		"require": "g.xiulian_modaozhiyin>=1 && g.dream_death_mo && g.spirit_light>=1 && g.spirit_mo>=1",
+		"desc": "前往未知之地"
+	},
+	{
 		"id": "evt_rlzy",
 		"name": "人力资源",
 		"require": "g.rlgl>=1",
@@ -86,8 +92,119 @@
 		"result": {
 			"prhss": true,
 			"frjxf": true,
-			"wmgxj": true
+			"wmgxj": true,
+			"ylzsf": true
 		}
+	},
+	{
+		"id": "evt_zsll",
+		"name": "真水力量",
+		"require": "g.jsnlx>=4",
+		"desc": "使用真水的力量",
+		"result": {
+			"zsbhf": true,
+			"ljzj": true
+		}
+	},
+	{
+		"id": "evt_rjll",
+		"name": "锐金力量",
+		"require": "g.jjclx>=4",
+		"desc": "使用锐金的力量",
+		"result": {
+			"cjpk": true,
+			"rjzy": true,
+			"hjbms": true
+		}
+	},
+	{
+		"id": "evt_zhll",
+		"name": "真火力量",
+		"require": "g.gwwlx>=4",
+		"desc": "使用真火的力量",
+		"result": {
+			"zhyjf": true
+		}
+	},
+	{
+		"id": "evt_htll",
+		"name": "厚土力量",
+		"require": "g.htgcx>=4",
+		"desc": "使用厚土的力量",
+		"result": {
+			"htymj": true,
+			"kss": true
+		}
+	},
+	{
+		"id": "evt_yszl",
+		"name": "源灵障水法",
+		"require": "g.yqlife>=4",
+		"desc": "使用源泉的力量",
+		"result": {
+			"ylzsf": true
+		}
+	},
+	{
+		"id": "evt_mfaxue",
+		"name": "混沌秘法",
+		"require": "g.mima_xue>=3",
+		"desc": "使用混沌的力量",
+		"result": {
+			"lsszy": true,
+			"wchys": true,
+			"xclyt": true,
+			"ngjyw": true
+		}
+	},
+	{
+		"id": "evt_wgmf",
+		"name": "无光秘法",
+		"require": "g.nolight_mishu>=2",
+		"desc": "使用无光的力量",
+		"result": {
+			"bdjgk": true,
+			"dmrg": true
+		}
+	},
+	{
+		"id": "evt_hqsy",
+		"name": "死骨复苏",
+		"require": "g.xiulian_eye_huangquan>=1",
+		"desc": "将黄泉的灵体引导到现实",
+		"result": {
+			"sgfszj": true
+		}
+	},
+	{
+		"id": "evt_jjjg",
+		"name": "进阶材料获取",
+		"require": "g.jjclx>=4",
+		"desc": "进阶的基础金属加工",
+		"disable":[
+			"iron_get_1",
+			"copper_get_1",
+			"FC_get_1",
+			"sj_met_get_1"
+		],
+		"result": {
+			"iron_get_1": true,
+			"copper_get_2": true,
+			"FC_get_2": true,
+			"sj_met_get_2": true
+		}
+	},
+	{
+		"id": "evt_zjztj",
+		"name": "筑基劫",
+		"require": "g.wuhuanxuezhe>=1",
+		"desc": "领悟五环之力后,你开始感受到天劫即将降临"
+	},
+	{
+		"id": "evt_wgsy",
+		"name": "无光劫",
+		"require": "g.wuguangxuezhe>=1",
+		"desc": "无光之劫将至...."
 	},
 	{
 		"id": "evt_scroll",
@@ -354,24 +471,6 @@
 		"mod": {
 			"shadowlore.max": 1,
 			"shadowlore.rate": 0.2
-		}
-	},
-	{
-		"id": "evil",
-		"name": "vile",
-		"desc": "Freed of pitiful notions of right, and morality, the dark arts lie open before you.",
-		"require": "g.evilamt>500",
-		"disable": [
-			"light",
-			"good",
-			"lightlore"
-		],
-		"mod": {
-			"shadow.max": 1,
-			"shadowlore": {
-				"max": 1,
-				"rate": 0.1
-			}
 		}
 	}
 ]

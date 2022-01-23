@@ -582,7 +582,7 @@
 	{
 		"id": "sj_lnx",
 		"name": "神经冷凝箱",
-		"desc": "让普通水在冰冻核心作用下转化为晶流水,这个装置需求一个稳定的电能供给才能修建",
+		"desc": "让普通水在冰冻核心作用下转化为晶流水,这个装置需求一个稳定的电能供给才能修建【稳定能输送机】",
 		"tags": "",
 		"need": "TENV",
 		"require": "g.cold_core>=1",
@@ -824,7 +824,7 @@
 	{
 		"id": "small_zlk",
 		"name": "小型蒸馏口",
-		"desc": "缓慢净化废热水,这个装置需求一个稳定的电能供给才能修建",
+		"desc": "缓慢净化废热水,这个装置需求一个稳定的电能供给才能修建【稳定能输送机】",
 		"tags": "",
 		"need": "TENV",
 		"require": "g.frs>=1",
@@ -850,7 +850,7 @@
 	{
 		"id": "death_fatan",
 		"name": "向死法坛",
-		"desc": "将高能混沌导引到一点来研究死亡,建造此装置对健康有害....这个装置需求一个稳定的电能供给才能修建",
+		"desc": "将高能混沌导引到一点来研究死亡,建造此装置对健康有害....这个装置需求一个稳定的电能供给才能修建【稳定能输送机】",
 		"tags": "Fdeath",
 		"need": "TENV",
 		"max": 1,
@@ -880,7 +880,7 @@
 	{
 		"id": "liuguangboli",
 		"name": "流光玻璃瓶",
-		"desc": "摄人心魄的玻璃瓶,存放着不得安息的灵体....这个装置需求一个稳定的电能供给才能修建",
+		"desc": "摄人心魄的玻璃瓶,存放着不得安息的灵体....这个装置需求一个稳定的电能供给才能修建【稳定能输送机】",
 		"tags": "",
 		"need": "TENV",
 		"max": 2,
@@ -913,7 +913,7 @@
 	{
 		"id": "huanjyanjiu",
 		"name": "环境研究台",
-		"desc": "更为高效的研究环境工程....这个装置需求一个稳定的电能供给才能修建",
+		"desc": "更为高效的研究环境工程....这个装置需求一个稳定的电能供给才能修建【稳定能输送机】",
 		"tags": "",
 		"need": "TENV",
 		"max": 1,
@@ -966,6 +966,31 @@
 			"elect.max":-1,
 			"elect.rate": -0.7,
 			"space": 10
+		}
+	},
+	{
+		"id": "enchanttable_pl",
+		"name": "铭刻工作台",
+		"tags": "workspace,enchantsource",
+		"desc": "提供用于铭刻的工具和区域,此建筑需要接通20V级电源",
+		"need": "TENTYV",
+		"require": "g.mwxue>=1",
+		"cost": {
+			"cold_core": 10,
+			"dirty_core": 5,
+			"jls":30,
+			"zero_crystal": 30,
+			"super_mind": 15,
+			"alculation": 50,
+			"human_power": 150,
+			"iron_copper": 10,
+			"exe_paper": 30,
+			"money": 500
+		},
+		"mod": {
+			"mwxue.max": 1,
+			"mwxue.rate": 0.2,
+			"space": 5
 		}
 	},
 	{
@@ -1087,6 +1112,96 @@
 			"dist": 100,
 			"elect.rate": -0.3,
 			"space": 20
+		}
+	},
+	{
+		"id": "ltzy",
+		"name": "灵体指引",
+		"desc": "灵体指引方向",
+		"tags": "spirit_mo",
+		"max":1,
+		"require": "g.wuhenlingtixue>=5",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 22,
+			"dirty_core": 20,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 500
+		},
+		"mod": {
+			"chaos.max": 2,
+			"space": 5
+		}
+	},
+	{
+		"id": "ltzy",
+		"name": "灵体指引",
+		"desc": "灵体指引方向",
+		"tags": "spirit_mo",
+		"max":1,
+		"require": "g.wuhenlingtixue>=5",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 22,
+			"dirty_core": 20,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 500
+		},
+		"mod": {
+			"chaos.max": 2,
+			"space": 5
+		}
+	},
+	{
+		"id": "ltdengta",
+		"name": "灵体灯塔",
+		"desc": "灵体指引方向",
+		"tags": "spirit_light",
+		"max":1,
+		"require": "g.wuhenlingtixue>=5",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 10,
+			"cold_core": 22,
+			"dirty_core": 20,
+			"jls":40,
+			"zero_crystal": 30,
+			"super_mind": 9,
+			"alculation": 70,
+			"human_power": 200,
+			"paper": 40,
+			"snp_data": 12,
+			"tian": 10,
+			"iron_copper": 20,
+			"exe_paper": 10,
+			"sj_met": 10,
+			"money": 500
+		},
+		"mod": {
+			"chaos.max": 2,
+			"space": 5
 		}
 	},
 	{
@@ -1219,6 +1334,175 @@
 		"mod": {
 			"elect.rate": 3,
 			"space": 3
+		}
+	},
+	{
+		"id": "cbclbwg",
+		"name": "材料包网格",
+		"desc": "派遣专人管理并大量存储材料包",
+		"tags": "",
+		"max":5,
+		"require": "g.xiulian_struct_cailiaozuhe>=1",
+		"repeat": true,
+		"cost": {
+			"cbclb": 5,
+			"cold_core": 20,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 20,
+			"alculation": 70,
+			"human_power": 100,
+			"paper": 40,
+			"tian": 10,
+			"exe_paper": 30,
+			"money": 600
+		},
+		"mod": {
+			"cbclb.max": 10,
+			"cbclb.rate": 0.005,
+			"human_power.max": -20,
+			"space": 5
+		}
+	},
+	{
+		"id": "hjcx",
+		"name": "合金产线",
+		"desc": "自动化的融合铁板和铜板,此建筑需要接通20V级电源",
+		"tags": "",
+		"require": "g.xiulian_struct_gaowensl>=1",
+		"need": "TENTYV",
+		"repeat": true,
+		"cost": {
+			"lg": 11,
+			"jls":60,
+			"cu_iron":30,
+			"cu_copper": 30,
+			"human_power": 700,
+			"star_map": 100,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 10,
+			"cold_core": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"mod": {
+			"cu_iron.rate": -0.3,
+			"cu_copper.rate": -0.4,
+			"iron_copper.rate": 0.4,
+			"elect.rate": -0.5,
+			"space": 5
+		}
+	},
+	{
+		"id": "dlcc",
+		"name": "电缆仓储",
+		"desc": "派遣专人对电缆进行管理",
+		"tags": "",
+		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
+		"repeat": true,
+		"cost": {
+			"lg": 11,
+			"jls":60,
+			"human_power": 700,
+			"star_map": 100,
+			"money": 1200,
+			"ganwu": 700,
+			"cbclb": 10,
+			"cold_core": 20,
+			"life_crystal": 3,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"mod": {
+			"yjdl.rate": 0.01,
+			"yjdl.max": 10,
+			"space": 5
+		}
+	},
+	{
+		"id": "hot_lab",
+		"name": "高温实验室",
+		"desc": "一个配备了热阻绝和高效冷却的实验室,此建筑需要接通20V级电源",
+		"tags": "hotlab",
+		"require": "g.xiulian_struct_gaowensl>=1&&g.xiulian_struct_gaowenpb>=1",
+		"need": "TENTYV",
+		"repeat": true,
+		"cost": {
+			"lg": 11,
+			"jls":60,
+			"human_power": 850,
+			"star_map": 120,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 25,
+			"cold_core": 35,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"mod": {
+			"ganwu.rate": -1,
+			"elect.rate": -2,
+			"space": 15
+		}
+	},
+	{
+		"id": "rpbrq",
+		"name": "热屏蔽容器",
+		"desc": "存放危险的高温流",
+		"tags": "",
+		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
+		"repeat": true,
+		"cost": {
+			"lg": 11,
+			"jls":60,
+			"human_power": 500,
+			"star_map": 120,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 25,
+			"cold_core": 35,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"life_crystal": 5
+		},
+		"mod": {
+			"gwl.max": 10,
+			"gwl.rate": 0.01,
+			"space": 3
+		}
+	},
+	{
+		"id": "hqsjz",
+		"name": "黄泉收集站",
+		"desc": "在黄泉建造一个收集站来获取黄泉资源",
+		"tags": "",
+		"require": "g.xiulian_eye_huangquan>=1",
+		"repeat": true,
+		"cost": {
+			"lg": 11,
+			"jls":60,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"dirty_lingti": 20,
+			"human_power": 850,
+			"star_map": 100,
+			"money": 1200,
+			"ganwu": 700,
+			"cbclb": 10,
+			"cold_core": 20,
+			"life_crystal": 3,
+			"super_mind": 30,
+			"alculation": 400
+		},
+		"mod": {
+			"lxue.rate": 0.01,
+			"shuaibai_core.rate": 0.01,
+			"space": 10
 		}
 	},
 	{
@@ -1757,25 +2041,6 @@
 			"magicbeasts.rate": 0.4,
 			"animals.rate": "15%",
 			"space": 20
-		}
-	},
-	{
-		"id": "ossuary",
-		"desc": "Receptacle for bones.",
-		"tags": "shadowsource,spiritsource",
-		"require": "evil",
-		"max": 4,
-		"cost": {
-			"gold": 300,
-			"bones": 5
-		},
-		"mod": {
-			"bonedust.max": 10,
-			"bones.max": 20,
-			"shadowlore.max": 1,
-			"spiritlore.max": 1,
-			"spiritlore.rate": 0.3,
-			"space": 1
 		}
 	},
 	{

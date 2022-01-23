@@ -581,6 +581,8 @@
 		},
 		"result": {
 			"time": 100,
+			"chaos.max": -3,
+			"chaos.rate": -0.1,
 			"xiulian_astro_zhuji_3" : 1,
 			"chaos_sci.max": -2,
 			"chaos_sci.rate": "-3%"
@@ -792,16 +794,16 @@
 		},
 		"result": {
 			"time": 365,
-			"heli.max": -30,
-			"chaos.max": -30,
-			"heli.rate": -2,
-			"chaos.rate": -2,
+			"heli.max": -20,
+			"chaos.max": -20,
+			"heli.rate": -1,
+			"chaos.rate": -1,
 			"age.max": -7300,
 			"age": -7300,
-			"hp.max": -10,
-			"stamina.max": -7,
-			"tili.max": -10,
-			"tili.rate": -1,
+			"hp.max": -5,
+			"stamina.max": -3,
+			"tili.max": -7,
+			"tili.rate": -0.7,
 			"xiulian_zhuji_2" : 1
 		}
 	},
@@ -1364,7 +1366,7 @@
 		"name": "智能神识(立足)",
 		"desc": "研究让神识可以智能化控制行动姿态",
 		"tags": "立足",
-		"require": "g.energ_shenshi>=5",
+		"require": "g.energ_shenshi>=5 && g.dirty_core>=10",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1555,7 +1557,7 @@
 		"name": "五环进阶(方圆)",
 		"desc": "对五种截然不同属性的元素进行吸收",
 		"tags": "方圆",
-		"require": "g.yqlm>=1 && g.cbjs>=1 && g.yxls>=1 && g.wgys>=1 && g.zdht>=1",
+		"require": "g.evil<=0 && g.yqlm>=1 && g.cbjs>=1 && g.yxls>=1 && g.wgys>=1 && g.zdht>=1",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1586,7 +1588,7 @@
 		"name": "源泉灵体(永生之望)",
 		"desc": "将自己的躯体改造为源泉灵体",
 		"tags": "永生之望",
-		"require": "g.yqlife>=1",
+		"require": "g.yqlife>=1 && g.evil<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1615,35 +1617,772 @@
 		}
 	},
 	{
-		"id": "jizhun_fl",
-		"name": "风灵(路径)",
-		"desc": "如风一般[30岁前完成了筑基]",
-		"tags": "路径",
-		"require": "g.time<=10950 && g.xiulian_zhuji_2>=1",
+		"id": "life_htzt",
+		"name": "厚土真体(永生之望)",
+		"desc": "将自己的躯体改造为厚土真体",
+		"tags": "永生之望",
+		"require": "g.htgcx>=4 && g.evil<=0",
 		"max": 2,
 		"cost": {
-			"heli":1
+			"lg": 11,
+			"jls":40,
+			"human_power": 200,
+			"exe_paper": 60,
+			"paper": 120,
+			"books": 20,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1300,
+			"ganwu": 400,
+			"zdht": 20,
+			"zero_crystal": 60,
+			"tian": 10,
+			"sj_met": 15,
+			"life_crystal": 6,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 10
 		},
 		"result": {
-			"age.max":-10950,
-			"age":-10950,
-			"heli.max": -2,
-			"heli.rate": -0.5
+			"frs": 39,
+			"age.max": -29200,
+			"age": -29200
 		}
 	},
 	{
-		"id": "jizhun_luyuan",
-		"name": "路远(路径)",
-		"desc": "昼夜[60=90岁前完成了筑基]",
-		"tags": "路径",
-		"require": "g.time>=21900 && g.time<=32850 && g.xiulian_zhuji_2>=1",
+		"id": "life_qhft",
+		"name": "祛火法体(永生之望)",
+		"desc": "将自己的躯体改造为祛火法体",
+		"tags": "永生之望",
+		"require": "g.gwwlx>=4 && g.evil<=0",
 		"max": 2,
 		"cost": {
-			"heli":1
+			"lg": 11,
+			"jls":40,
+			"human_power": 200,
+			"exe_paper": 60,
+			"paper": 120,
+			"books": 20,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1300,
+			"ganwu": 400,
+			"yxls": 20,
+			"zero_crystal": 60,
+			"tian": 10,
+			"sj_met": 15,
+			"life_crystal": 6,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 10
 		},
 		"result": {
-			"age.max":-18250,
-			"age":-18250
+			"frs": 39,
+			"age.max": -29200,
+			"age": -29200
+		}
+	},
+	{
+		"id": "life_hdhp",
+		"name": "海德魂魄(永生之望)",
+		"desc": "将自己的魂体改造成海德魂魄",
+		"tags": "永生之望",
+		"require": "g.jsnlx>=4 && g.evil<=0",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 200,
+			"exe_paper": 60,
+			"paper": 120,
+			"books": 20,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1300,
+			"ganwu": 400,
+			"wgys": 20,
+			"zero_crystal": 60,
+			"tian": 10,
+			"sj_met": 15,
+			"life_crystal": 6,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"age.max": -29200,
+			"age": -29200
+		}
+	},
+	{
+		"id": "life_yjzn",
+		"name": "玉金之能(永生之望)",
+		"desc": "掌握玉金之坚韧",
+		"tags": "永生之望",
+		"require": "g.jjclx>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 200,
+			"exe_paper": 60,
+			"paper": 120,
+			"books": 20,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1300,
+			"ganwu": 400,
+			"cbjs": 20,
+			"zero_crystal": 60,
+			"tian": 10,
+			"sj_met": 15,
+			"life_crystal": 6,
+			"super_mind": 9,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"age.max": -29200,
+			"age": -29200
+		}
+	},
+	{
+		"id": "energ_xtcd",
+		"name": "虚体传导(能量物理)",
+		"desc": "将能量从现实发送到非实界",
+		"tags": "能量物理",
+		"require": "g.jsnlx>=3",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 500,
+			"exe_paper": 60,
+			"paper": 120,
+			"lxue": 5,
+			"books": 20,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1000,
+			"ganwu": 700,
+			"wgys": 20,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"life_crystal": 6,
+			"super_mind": 30,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"xiulian_energ_xtcd":1
+		}
+	},
+	{
+		"id": "energ_gxdn",
+		"name": "高效导能(能量物理)",
+		"desc": "更加高效的能量传递",
+		"tags": "能量物理",
+		"require": "g.jsnlx>=3",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 500,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 5,
+			"books": 30,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1200,
+			"ganwu": 700,
+			"wgys": 20,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"xiulian_energ_gxdn":1
+		}
+	},
+	{
+		"id": "energ_gnsb",
+		"name": "高能识别(能量物理)",
+		"desc": "在高能级中识别出有效的信息",
+		"tags": "能量物理",
+		"require": "g.jsnlx>=3",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 500,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 5,
+			"books": 30,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1200,
+			"ganwu": 700,
+			"wgys": 20,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"xiulian_energ_gnsb":1
+		}
+	},
+	{
+		"id": "struct_fenxi",
+		"name": "材料分析应用(形态变化)",
+		"desc": "在多种材料中分析多种应用",
+		"tags": "形态变化",
+		"require": "g.jjclx>=3",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 500,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 5,
+			"books": 30,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1200,
+			"ganwu": 700,
+			"cbjs": 10,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"lg.max": -5,
+			"xiulian_struct_fenxi":1
+		}
+	},
+	{
+		"id": "struct_pubian",
+		"name": "材料普遍性分析(形态变化)",
+		"desc": "分析多种材料的普遍性质",
+		"tags": "形态变化",
+		"require": "g.jjclx>=3",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 500,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 5,
+			"books": 30,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1200,
+			"ganwu": 700,
+			"cbjs": 10,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"result": {
+			"frs": 39,
+			"tian.max": -10,
+			"sj_met.max": -10,
+			"iron_copper.max":-10,
+			"xiulian_struct_fenxi":1
+		}
+	},
+	{
+		"id": "struct_cailiaozuhe",
+		"name": "材料组合(物体结构)",
+		"desc": "将多种基本材料打包起来",
+		"tags": "物体结构",
+		"require": "g.xiulian_struct_fenxi>=1 && g.xiulian_struct_fenxi>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"human_power": 700,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 10,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1200,
+			"ganwu": 700,
+			"cbjs": 20,
+			"zero_crystal": 60,
+			"sj_met": 20,
+			"cu_copper":30,
+			"cu_iron": 30,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 15
+		},
+		"result": {
+			"xiulian_struct_cailiaozuhe":1
+		}
+	},
+	{
+		"id": "struct_gaowenshiy",
+		"name": "高温适应(物体结构)",
+		"desc": "适应高温环境",
+		"tags": "物体结构",
+		"require": "g.gwwlx>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":60,
+			"human_power": 700,
+			"exe_paper": 60,
+			"paper": 120,
+			"lxue": 10,
+			"star_map": 120,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 15
+		},
+		"result": {
+			"frs":59,
+			"xiulian_struct_gaowenshiy":1
+		}
+	},
+	{
+		"id": "struct_gaowenfh",
+		"name": "高温防化(生命构造)",
+		"desc": "高温环境下会产生大量不可利用的危害混沌,研究此项阻绝高温带来的危害混沌",
+		"tags": "生命构造",
+		"require": "g.xiulian_struct_gaowenshiy>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":20,
+			"human_power": 700,
+			"lxue": 10,
+			"star_map": 120,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 25,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 15
+		},
+		"result": {
+			"frs":19,
+			"xiulian_struct_gaowenfh":1
+		}
+	},
+	{
+		"id": "struct_gaowenpb",
+		"name": "高温屏蔽(物体结构)",
+		"desc": "将高温环境于普通环境分离开来",
+		"tags": "物体结构",
+		"require": "g.gwwlx>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"shuaibai_core": 5,
+			"human_power": 700,
+			"exe_paper": 60,
+			"paper": 120,
+			"star_map": 120,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"result": {
+			"frs":29,
+			"xiulian_struct_gaowenpb":1
+		}
+	},
+	{
+		"id": "struct_gaowensl",
+		"name": "高温环境散热(物体结构)",
+		"desc": "快速对高温环境进行冷却处理",
+		"tags": "物体结构",
+		"require": "g.gwwlx>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"shuaibai_core": 5,
+			"human_power": 700,
+			"money": 1200,
+			"ganwu": 700,
+			"yxls": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"result": {
+			"frs":29,
+			"xiulian_struct_gaowensl":1
+		}
+	},
+	{
+		"id": "siwei_qtswyj",
+		"name": "群体思维研究(思维)",
+		"desc": "进一步研究群体之间的思维",
+		"tags": "思维",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1200,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"result": {
+			"frs":29,
+			"xiulian_siwei_qtswyj":1
+		}
+	},
+	{
+		"id": "eye_huangquan",
+		"name": "黄泉视野(观测之术)",
+		"desc": "扩展在黄泉的观测范围",
+		"tags": "观测之术",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"human_power": 700,
+			"money": 1200,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"result": {
+			"frs":29,
+			"xiulian_eye_huangquan":1
+		}
+	},
+	{
+		"id": "hunpoyanjiu",
+		"name": "魂魄研究(生命构造)",
+		"desc": "研究人体魂魄",
+		"tags": "生命构造",
+		"require": "g.evil>50 && g.dirty_lingti>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 2,
+			"money": 500,
+			"ganwu": 100,
+			"zero_crystal": 10,
+			"star_map": 20,
+			"paper": 30,
+			"exe_paper": 12
+		},
+		"result": {
+			"chaos.max": -5,
+			"xiulian_hunpoyanjiu":1
+		}
+	},
+	{
+		"id": "hundunpohuai",
+		"name": "混沌破坏(流动)",
+		"desc": "利用混沌达成破坏目的",
+		"tags": "流动",
+		"require": "g.xiulian_hunpoyanjiu>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"chaos": 10,
+			"dirty_lingti": 10,
+			"money": 500,
+			"ganwu": 100,
+			"zero_crystal": 10,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"star_map": 20,
+			"paper": 30,
+			"exe_paper": 12
+		},
+		"result": {
+			"xiulian_hundunpohuai":1
+		}
+	},
+	{
+		"id": "shehunyantao",
+		"name": "摄魂研讨(生命构造)",
+		"desc": "尝试摄取他人的魂魄来延长寿命",
+		"tags": "生命构造",
+		"require": "g.xiulian_hunpoyanjiu>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"chaos": 10,
+			"dirty_lingti": 10,
+			"money": 500,
+			"ganwu": 100,
+			"zero_crystal": 10,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"star_map": 20,
+			"paper": 30,
+			"exe_paper": 12
+		},
+		"result": {
+			"xiulian_shehunyantao":1
+		}
+	},
+	{
+		"id": "life_hundunhunpo",
+		"name": "混沌魂魄(永生之望)",
+		"desc": "将自己的魂体改造成混沌魂魄",
+		"tags": "永生之望",
+		"require": "g.xiulian_hundunpohuai>=1 && g.shehun_1>=10",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"exe_paper": 10,
+			"paper": 50,
+			"books": 3,
+			"star_map": 50,
+			"snp_data": 20,
+			"money": 600,
+			"ganwu": 100,
+			"zero_crystal": 30,
+			"tian": 10,
+			"sj_met": 15,
+			"super_mind": 4
+		},
+		"result": {
+			"xiulian_life_hundunhunpo":1,
+			"frs": 39,
+			"age.max": -19200,
+			"age": -19200
+		}
+	},
+	{
+		"id": "life_llyhf",
+		"name": "落日移魂法(永生之望)",
+		"desc": "将生命力转换为寿命",
+		"tags": "永生之望",
+		"require": "g.xiulian_hundunpohuai>=1 && g.shehun_1>=10",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"exe_paper": 10,
+			"paper": 50,
+			"books": 3,
+			"star_map": 50,
+			"snp_data": 20,
+			"money": 500,
+			"cold_core": 10,
+			"dirty_lingti":10,
+			"dirty_core":20,
+			"ganwu": 100,
+			"zero_crystal": 30,
+			"tian": 10,
+			"sj_met": 15,
+			"super_mind": 4
+		},
+		"result": {
+			"xiulian_life_llyhf":1,
+			"frs": 39,
+			"age.max": -12200,
+			"age": -12200
+		}
+	},
+	{
+		"id": "modaozhiyin",
+		"name": "魔导指引(观测之术)",
+		"desc": "衰败的源泉",
+		"tags": "观测之术",
+		"require": "g.shuabai_xue>=5",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"exe_paper": 10,
+			"paper": 50,
+			"books": 3,
+			"star_map": 50,
+			"snp_data": 20,
+			"money": 500,
+			"cold_core": 10,
+			"dirty_lingti":15,
+			"dirty_core":30,
+			"ganwu": 100,
+			"zero_crystal": 30,
+			"tian": 10,
+			"sj_met": 15,
+			"super_mind": 4
+		},
+		"result": {
+			"xiulian_modaozhiyin":1,
+			"frs": 39
+		}
+	},
+	{
+		"id": "wuguangguance",
+		"name": "无光观测(观测之术)",
+		"desc": "观测世界的阴暗",
+		"tags": "观测之术",
+		"require": "g.nolight_core>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"exe_paper": 10,
+			"paper": 50,
+			"books": 3,
+			"star_map": 50,
+			"snp_data": 20,
+			"money": 500,
+			"nolight_core":10,
+			"cold_core": 10,
+			"dirty_lingti":15,
+			"dirty_core":30,
+			"ganwu": 100,
+			"zero_crystal": 30,
+			"tian": 10,
+			"sj_met": 15,
+			"super_mind": 4
+		},
+		"result": {
+			"xiulian_wuguangguance":1,
+			"frs": 39
+		}
+	},
+	{
+		"id": "life_yeyan",
+		"name": "夜魇(生命构造)",
+		"desc": "夜魇,深夜恶梦",
+		"tags": "生命构造",
+		"require": "g.nolight_core>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"exe_paper": 10,
+			"paper": 50,
+			"books": 3,
+			"star_map": 50,
+			"snp_data": 20,
+			"money": 500,
+			"nolight_core":10,
+			"cold_core": 10,
+			"dirty_lingti":15,
+			"dirty_core":30,
+			"ganwu": 100,
+			"zero_crystal": 30,
+			"tian": 10,
+			"sj_met": 15,
+			"super_mind": 4
+		},
+		"result": {
+			"xiulian_life_yeyan":1,
+			"frs": 39
+		}
+	},
+	{
+		"id": "wuguangzhihuan",
+		"name": "无光之环(通天阶梯)",
+		"desc": "凝聚无光之环",
+		"tags": "通天阶梯",
+		"require": "g.nolight_mishu>=2  && g.evil>=0",
+		"max": 2,
+		"cost": {
+			"money": 1000,
+			"lg": 11,
+			"jls":50,
+			"exe_paper": 10,
+			"paper": 50,
+			"books": 3,
+			"star_map": 50,
+			"snp_data": 20,
+			"money": 500,
+			"nolight_core":10,
+			"cold_core": 10,
+			"dirty_lingti":15,
+			"dirty_core":30,
+			"ganwu": 500,
+			"zero_crystal": 30,
+			"tian": 10,
+			"sj_met": 15,
+			"super_mind": 4
+		},
+		"result": {
+			"xiulian_wuguangzhihuan":1,
+			"frs": 49,
+			"age.max": -36500,
+			"age": -36500
+		}
+	},
+	{
+		"id": "zhuji_wuhuan_1",
+		"name": "五环之理(通天阶梯)",
+		"desc": "领悟五环",
+		"tags": "通天阶梯",
+		"require": "g.xiulian_zhuji_wuhuan>=1 && g.evil<=0",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 700,
+			"money": 1600,
+			"ganwu": 400,
+			"yqlm": 25,
+			"cbjs": 25,
+			"yxls": 25,
+			"wgys": 25,
+			"zdht": 25,
+			"super_mind": 35,
+			"life_crystal": 6,
+			"alculation": 50,
+			"star_map_1": 15
+		},
+		"result": {
+			"time": 33,
+			"frs":39,
+			"age.max": -12200,
+			"age": -12200,
+			"xiulian_zhuji_wuhuan_1" : 1
 		}
 	}
 ]

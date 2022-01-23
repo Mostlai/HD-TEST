@@ -115,6 +115,57 @@
 		}
 	},
 	{
+		"id": "enc_modao_1",
+		"name": "无光启示",
+		"desc": "奇怪的感觉",
+		"effect": {
+			"bf": "-1~2",
+			"madness": "1~3",
+			"nolight_mishu.exp": 50
+		},
+		"loot": {
+			"nolight_core": "1~2"
+		}
+	},
+	{
+		"id": "enc_modao_2",
+		"name": "无光幻影",
+		"desc": "奇怪的感觉",
+		"effect": {
+			"bf": "-1~2",
+			"madness": "1~3",
+			"nolight_mishu.exp": 10
+		},
+		"loot": {
+			"nolight_core": "0~1"
+		}
+	},
+	{
+		"id": "enc_modao_3",
+		"name": "无光噩梦",
+		"desc": "失魂落魄",
+		"effect": {
+			"bf": "-1~2",
+			"madness": "1~3"
+		},
+		"result": {
+			"hp": -10
+		}
+	},
+	{
+		"id": "enc_modao_4",
+		"name": "无光夺魂",
+		"desc": "失魂落魄",
+		"effect": {
+			"bf": "-1~2",
+			"madness": "1~3"
+		},
+		"result": {
+			"chaos": -20,
+			"heli": -20
+		}
+	},
+	{
 		"id": "enc_primer1",
 		"name": "magical primer",
 		"desc": "An introduction to magical theory.",

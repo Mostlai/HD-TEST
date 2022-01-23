@@ -570,6 +570,7 @@
 	{
 		"id": "lnylx",
 		"name":"灵能医疗学",
+		"level": 5,
 		"desc":"运用超凡能量进行医疗",
 		"buy": {
 			"ganwu": 320,
@@ -968,7 +969,7 @@
 		"id": "yqlife",
 		"name": "源泉生命学",
 		"require": "g.yqlm>=5 && g.biology_ast_1>=10",
-		"level": 9,
+		"level": 15,
 		"desc": "探索最神秘的生命",
 		"buy": {
 			"money": 600,
@@ -999,7 +1000,7 @@
 		"id": "jjclx",
 		"name": "进阶材料学",
 		"require": "g.cbjs>=5 && g.metal_app>=15",
-		"level": 9,
+		"level": 15,
 		"desc": "最为优良的材料",
 		"buy": {
 			"money": 600,
@@ -1029,7 +1030,7 @@
 		"id": "gwwlx",
 		"name": "高温物理学",
 		"require": "g.yxls>=5 && g.astronomy_1>=15",
-		"level": 9,
+		"level": 15,
 		"desc": "极端高温下的物理",
 		"buy": {
 			"money": 600,
@@ -1059,7 +1060,7 @@
 		"id": "jsnlx",
 		"name": "晶髓能量学",
 		"require": "g.yxls>=5 && g.energ_1>=10",
-		"level": 9,
+		"level": 15,
 		"desc": "晶髓材料下,电能损耗显著下降",
 		"buy": {
 			"money": 600,
@@ -1090,7 +1091,7 @@
 		"id": "htgcx",
 		"name": "厚土工程学",
 		"require": "g.zdht>=5 && g.building_1>=12",
-		"level": 9,
+		"level": 15,
 		"desc": "奇异材质使得建筑工艺有了更丰富的设计理念",
 		"buy": {
 			"money": 600,
@@ -1115,6 +1116,204 @@
 			"zdht.max": 2,
 			"space.max":5,
 			"super_mind.max": 1
+		}
+	},
+	{
+		"id": "mimouxue",
+		"name": "密谋学",
+		"require": "g.evil>=50 && g.shenshi_4>=3",
+		"level": 7,
+		"desc": "秘密的涌动",
+		"buy": {
+			"money": 200,
+			"ganwu": 130,
+			"super_mind": 5
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"ganwu": 0.3,
+			"tili": 0.5
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"super_mind.max": 1
+		}
+	},
+	{
+		"id": "wuzhuojieshi",
+		"name": "污浊揭示学",
+		"require": "g.evil>=50 && g.xiulian_bio_dirty_1>=1",
+		"level": 7,
+		"desc": "揭示污浊中的精华",
+		"buy": {
+			"ganwu": 130,
+			"super_mind": 5,
+			"dirty_core": 5
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"dirty_core": 0.1,
+			"ganwu": 0.3,
+			"tili": 0.5
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"dirty_core.max": 1
+		}
+	},
+	{
+		"id": "wuhenlingtixue",
+		"name": "污痕灵体学",
+		"require": "g.evil>=50 && g.xiulian_bio_dirty_1>=1",
+		"level": 7,
+		"desc": "研究灵体",
+		"buy": {
+			"ganwu": 130,
+			"super_mind": 5,
+			"dirty_lingti": 5
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"dirty_lingti": 0.5,
+			"ganwu": 0.3,
+			"tili": 0.5
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"dirty_core.max": 1
+		}
+	},
+	{
+		"id": "shuabai_xue",
+		"name": "衰败学",
+		"require": "g.wuguangkexue>=1 && g.shuaibai_core>=1",
+		"level": 9,
+		"desc": "探索衰败之秘密",
+		"buy": {
+			"ganwu": 130,
+			"super_mind": 5,
+			"dirty_core": 30,
+			"shuaibai_core": 5
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"shuaibai_core": 0.5,
+			"ganwu": 0.3,
+			"tili": 0.5
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"shuabai.rate": 0.1,
+			"shuaibai_core.max": 1
+		}
+	},
+	{
+		"id": "mima_xue",
+		"name": "秘法学",
+		"require": "g.wuguangkexue>=1 && g.wuhenlingtixue>=5 && g.wuzhuojieshi>=5",
+		"level": 9,
+		"desc": "阴暗法术",
+		"buy": {
+			"ganwu": 130,
+			"super_mind": 5,
+			"dirty_core": 30
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"dirty_core": 0.5,
+			"ganwu": 0.3,
+			"tili": 0.5
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"chaos.max": 1
+		}
+	},
+	{
+		"id": "nolight_mishu",
+		"name": "无光秘术学",
+		"require": "g.xiulian_wuguangguance>=1 && g.xiulian_life_yeyan>=1",
+		"level": 20,
+		"desc": "无光秘术,自己研究极为困难,需要借助特殊方式研究",
+		"buy": {
+			"ganwu": 130,
+			"super_mind": 5,
+			"nolight_core": 10
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"nolight_core": 0.5,
+			"ganwu": 0.3,
+			"tili": 1
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"chaos.max": 1
+		}
+	},
+	{
+		"id": "nolight_mike",
+		"name": "无光秘刻",
+		"require": "g.nolight_mishu>=1 && g.sjkzl>=1",
+		"level": 9,
+		"desc": "落日神机",
+		"buy": {
+			"ganwu": 130,
+			"super_mind": 30,
+			"dirty_lingti": 30,
+			"nolight_core": 10
+		},
+		"effect": {
+			"time": 1,
+			"evil": 0.1
+		},
+		"run": {
+			"nolight_core": 0.5,
+			"ganwu": 0.3,
+			"tili": 1
+		},
+		"result": {
+			"evil": 3,
+			"sp": 0.1
+		},
+		"mod": {
+			"chaos.max": 1
 		}
 	},
 	{
@@ -1555,23 +1754,6 @@
 			"light.rate": 0.01
 		},
 		"flavor": "The light fantastic"
-	},
-	{
-		"id": "shadowlore",
-		"name": "umbramancy",
-		"tags": "t_school",
-		"level": 2,
-		"require": "g.dissection>=3||g.evil>0",
-		"school": "shadow",
-		"need": "shadowsource",
-		"run": {
-			"stamina": 0.5
-		},
-		"mod": {
-			"research.max": 1,
-			"shadow.max": 1,
-			"shadow.rate": 0.01
-		}
 	},
 	{
 		"id": "spiritlore",

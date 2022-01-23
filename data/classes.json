@@ -78,6 +78,7 @@
 		},
 		"result": {
 			"spelllist.max": 1,
+			"heli.max":3,
 			"heli_enchant_1": true,
 			"heli": true
 		}
@@ -172,6 +173,73 @@
 		},
 		"result": {
 			"alculation.max": 30
+		}
+	},
+	{
+		"id": "wuhuanxuezhe",
+		"name": "五环学者",
+		"desc": "五环下的求知者",
+		"actname": "五环学者",
+		"actdesc": "五环下的求知者",
+		"disable": [
+			"wuguangxuezhe",
+			"murder_pl",
+			"huibang",
+			"xueyuantouqie",
+			"nolight_mishu",
+			"nolight_core"
+		],
+		"require": "g.xiulian_zhuji_wuhuan_1>=1",
+		"warn": true,
+		"cost": {
+			"yqlm": 25,
+			"cbjs": 25,
+			"yxls": 25,
+			"wgys": 25,
+			"zdht": 25,
+			"super_mind": 35,
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"snp_data": 21,
+			"money": 1600
+		},
+		"result": {
+			"zero_crystal.rate": 0.05,
+			"ganwu.rate": 1,
+			"exe_paper.rate": 0.1
+		}
+	},
+	{
+		"id": "wuguangxuezhe",
+		"name": "落日学者",
+		"desc": "深夜下的求知者",
+		"actname": "落日学者",
+		"actdesc": "深夜下的求知者",
+		"disable": "wuhuanxuezhe",
+		"require": "g.xiulian_wuguangzhihuan>=1",
+		"warn": true,
+		"cost": {
+			"nolight_core": 10,
+			"dirty_core": 30,
+			"dirty_lingti": 20,
+			"super_mind": 35,
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"snp_data": 21,
+			"money": 1600
+		},
+		"result": {
+			"zero_crystal.rate": 0.05,
+			"ganwu.rate": 1,
+			"exe_paper.rate": 0.1
 		}
 	},
 	{

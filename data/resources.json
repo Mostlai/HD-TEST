@@ -180,6 +180,24 @@
 		"max": 5
 	},
 	{
+		"id": "cbclb",
+		"name": "纯白材料包",
+		"desc": "多种金属打包而来的材料学基础包",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_cailiaozuhe>=1",
+		"max": 10
+	},
+	{
+		"id": "yjdl",
+		"name": "亚极电缆",
+		"desc": "亚极电缆是一种利用了黄泉技术的高传导率电缆",
+		"group": "金属",
+		"tags": "",
+		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
+		"max": 10
+	},
+	{
 		"id": "frs",
 		"name": "废热水",
 		"desc": "高污染的流体,不可直接倾倒在自然环境中",
@@ -200,6 +218,15 @@
 		"group": "流体",
 		"tags": "",
 		"require": "g.liu_yy>=3 &&g.cold_core>=1",
+		"max": 1
+	},
+	{
+		"id": "gwl",
+		"name": "高温流",
+		"desc": "极度高温的流体",
+		"group": "流体",
+		"tags": "",
+		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
 		"max": 1
 	},
 	{
@@ -230,6 +257,15 @@
 		"max": 0
 	},
 	{
+		"id": "nolight_core",
+		"name": "无光核心",
+		"desc": "折射不出一点光芒",
+		"group": "结晶",
+		"tags": "",
+		"require": "g.xiulian_modaozhiyin>=1 && g.dream_death_mo && g.spirit_light>=1 && g.spirit_mo>=1",
+		"max": 10
+	},
+	{
 		"id": "yqlm",
 		"name": "源泉灵木",
 		"desc": "凝结了大量生命精华的木材",
@@ -238,8 +274,8 @@
 		"require": "g.zcx>=1",
 		"max": 20,
 		"mod": {
-			"heli.rate": 0.05,
-			"chaos.rate": 0.05
+			"heli.rate": 0.03,
+			"chaos.rate": 0.03
 		}
 	},
 	{
@@ -251,8 +287,8 @@
 		"require": "g.zcx>=1",
 		"max": 20,
 		"mod": {
-			"heli.rate": 0.05,
-			"chaos.rate": 0.05
+			"heli.rate": 0.01,
+			"chaos.rate": 0.01
 		}
 	},
 	{
@@ -264,8 +300,8 @@
 		"require": "g.zcx>=1",
 		"max": 20,
 		"mod": {
-			"heli.rate": 0.05,
-			"chaos.rate": 0.05
+			"heli.rate": 0.02,
+			"chaos.rate": 0.02
 		}
 	},
 	{
@@ -277,8 +313,8 @@
 		"max": 20,
 		"require": "g.zcx>=1",
 		"mod": {
-			"heli.rate": 0.05,
-			"chaos.rate": 0.05
+			"heli.rate": 0.02,
+			"chaos.rate": 0.02
 		}
 	},
 	{
@@ -290,8 +326,8 @@
 		"max": 20,
 		"require": "g.zcx>=1",
 		"mod": {
-			"heli.rate": 0.05,
-			"chaos.rate": 0.05
+			"heli.rate": 0.01,
+			"chaos.rate": 0.01
 		}
 	},
 	{
@@ -377,6 +413,26 @@
 		"tags": "",
 		"require": "g.xiulian_bio_dirty_1>=1 &&g.lingti_xue>=1",
 		"max": 2
+	},
+	{
+		"id": "zhuji_tianjie_1",
+		"name": "命玄-真魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "zhuji_tianjie_2",
+		"name": "命玄-落日",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
 	},
 	{
 		"id": "xiulian_heli_1",
@@ -963,6 +1019,242 @@
 		"max": 1
 	},
 	{
+		"id": "xiulian_energ_xtcd",
+		"name": "虚体传导",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_gxdn",
+		"name": "高效导能",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_energ_gxsb",
+		"name": "高能识别",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_fenxi",
+		"name": "材料分析应用",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_pubian",
+		"name": "材料普遍性分析",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_cailiaozuhe",
+		"name": "材料组合",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_gaowenshiy",
+		"name": "高温适应",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_gaowenfh",
+		"name": "高温防化",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_gaowenpb",
+		"name": "高温屏蔽",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_struct_gaowensl",
+		"name": "高温环境散热",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_siwei_qtswyj",
+		"name": "群体思维研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_eye_huangquan",
+		"name": "黄泉视野",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_hunpoyanjiu",
+		"name": "魂魄研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_hundunpohuai",
+		"name": "混沌破坏",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_shehunyantao",
+		"name": "摄魂研讨",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_hundunhunpo",
+		"name": "混沌魂魄",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_llyhf",
+		"name": "落日移魂法",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"hp.max": -4
+		}
+	},
+	{
+		"id": "xiulian_modaozhiyin",
+		"name": "魔导指引",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"hp.max": -4
+		}
+	},
+	{
+		"id": "xiulian_wuguangguance",
+		"name": "无光观测",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"hp.max": -4
+		}
+	},
+	{
+		"id": "xiulian_life_yeyan",
+		"name": "夜魇",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"hp.max": -4
+		}
+	},
+	{
+		"id": "xiulian_wuguangzhihuan",
+		"name": "无光之环",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1,
+		"mod":{
+			"shuaibai.rate": -0.5,
+			"hp.max": -4
+		}
+	},
+	{
+		"id": "xiulian_zhuji_wuhuan_1",
+		"name": "五环之理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",
@@ -1267,6 +1559,15 @@
 		"max": 2
 	},
 	{
+		"id": "scrolls",
+		"name": "卷轴",
+		"desc": "卷轴",
+		"group": "卷轴",
+		"tags": "",
+		"locked":true,
+		"max": 20
+	},
+	{
 		"id": "spiritgem",
 		"tags": "magicgems,prismaticgems",
 		"group": "gems",
@@ -1382,10 +1683,9 @@
 	},
 	{
 		"id": "alculation",
-		"desc": "计算力",
-		"flavor": "计算力",
+		"desc": "计算力的多少决定了你的建造水准和施法水平",
 		"hide": true,
-		"name": "算力",
+		"name": "计算力",
 		"val":1,
 		"max": 1
 	},
@@ -1409,8 +1709,7 @@
 	},
 	{
 		"id": "human_power",
-		"desc": "人力",
-		"flavor": "人力",
+		"desc": "能指挥的劳动力",
 		"hide": true,
 		"name": "人力",
 		"val":0,
@@ -1453,9 +1752,10 @@
 		"desc": "合乎天地道理的力量",
 		"unit": false,
 		"color": "#ffeb00",
-		"require": "touch_daoli",
+		"require": "g.touch_daoli",
 		"name": "合理",
-		"max": 3
+		"val": 0,
+		"max": 0
 	},
 	{
 		"id": "chaos",
@@ -1465,7 +1765,8 @@
 		"color": "#808080",
 		"require": "g.xiulian_astro_zhuji_3>=1",
 		"name": "混沌",
-		"max": 3
+		"val": 0,
+		"max": 0
 	},
 	{
 		"id": "elect",
@@ -1475,6 +1776,7 @@
 		"color": "#00BFFF",
 		"require": "g.energ_1>=1",
 		"name": "电能",
+		"val": 0,
 		"max": 1
 	},
 	{

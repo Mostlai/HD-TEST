@@ -99,6 +99,21 @@
 		}
 	},
 	{
+		"id": "iron_get_2",
+		"name": "铁板加工",
+		"desc": "在纯白金石辅助下获取铁板",
+		"verb": "",
+		"require": "g.jjclx>=4",
+		"cost": {
+			"money": 1,
+			"tili": 2
+		},
+		"result": {
+			"cu_iron": 4,
+			"time": 0.1
+		}
+	},
+	{
 		"id": "copper_get_1",
 		"name": "购买铜板",
 		"desc": "你难以找到铜矿,所以你只能买加工好的",
@@ -109,6 +124,21 @@
 		},
 		"result": {
 			"cu_copper": 2,
+			"time": 0.1
+		}
+	},
+	{
+		"id": "copper_get_2",
+		"name": "铜板加工",
+		"desc": "在纯白金石辅助下获取铜板",
+		"verb": "",
+		"require": "g.jjclx>=4",
+		"cost": {
+			"money": 1,
+			"tili": 2
+		},
+		"result": {
+			"cu_copper": 4,
 			"time": 0.1
 		}
 	},
@@ -137,10 +167,32 @@
 		}
 	},
 	{
+		"id": "FC_get_2",
+		"name": "FC融合",
+		"desc": "更有效率的融合铁板和铜板",
+		"verb": "",
+		"require": "g.jjclx>=1",
+		"length": 1,
+		"fill": [
+			"iron_copper"
+		],
+		"cost": {
+			"cu_iron": 2,
+			"cu_copper": 3
+		},
+		"run": {
+			"time": -0.1,
+			"tili": 0.9
+		},
+		"result": {
+			"iron_copper": 4
+		}
+	},
+	{
 		"id": "sj_met_get_1",
 		"name": "合成神经材料",
 		"desc": "催动合理和混沌加工出神经材料",
-		"verb": "",
+		"verb": "合成中",
 		"require": "g.xiulian_struct_2>=1 && g.iron_copper>=1 && g.chaos_sci>=5",
 		"length": 10,
 		"fill": [
@@ -156,8 +208,125 @@
 		},
 		"result": {
 			"metal_app.exp": 2,
-			"shenshi_1": 1,
+			"shenshi_1.exp": 1,
 			"sj_met": 2
+		}
+	},
+	{
+		"id": "sj_met_get_2",
+		"name": "神经加工",
+		"desc": "更有效率的合成神经材料",
+		"verb": "加工中",
+		"require": "g.jjclx>=4",
+		"length": 3,
+		"fill": [
+			"sj_met"
+		],
+		"cost": {
+			"iron_copper": 2,
+			"shenshi": 2
+		},
+		"run": {
+			"time": -0.1,
+			"tili": 1
+		},
+		"result": {
+			"sj_met": 4
+		}
+	},
+	{
+		"id": "cbclb_get_1",
+		"name": "纯白材料打包",
+		"desc": "加工纯白材料包",
+		"verb": "加工中",
+		"require": "g.xiulian_struct_cailiaozuhe>=1",
+		"length": 10,
+		"fill": [
+			"cbclb"
+		],
+		"cost": {
+			"cu_iron": 3,
+			"cu_copper":2,
+			"iron_copper": 2,
+			"tian":5,
+			"sj_met":1,
+			"shenshi": 2
+		},
+		"run": {
+			"time": -0.2,
+			"tili": 2
+		},
+		"result": {
+			"cbclb": 5
+		}
+	},
+	{
+		"id": "cbclb_jieli",
+		"name": "材料解离",
+		"desc": "解离纯白材料包并获取一定的金钱",
+		"verb": "解离中",
+		"require": "g.cbclb>=1",
+		"length": 15,
+		"fill": [
+			"iron_copper",
+			"tian",
+			"money"
+		],
+		"cost": {
+			"cbclb": 1
+		},
+		"run": {
+			"time": -0.2,
+			"tili": 2
+		},
+		"result": {
+			"iron_copper": 1,
+			"tian":3,
+			"money": 30
+		}
+	},
+	{
+		"id": "cbclrr",
+		"name": "纯白熔融",
+		"desc": "熔融纯白材料包来制取高温流",
+		"verb": "熔融中",
+		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
+		"length": 5,
+		"fill": [
+			"gwl"
+		],
+		"cost": {
+			"cbclb": 2,
+			"jls": 3
+		},
+		"run": {
+			"time": -0.1,
+			"tili": 3
+		},
+		"result": {
+			"gwl": 5,
+			"frs": 2
+		}
+	},
+	{
+		"id": "ydly",
+		"name": "余电利用",
+		"desc": "利用过剩的电力赚取钱币",
+		"verb": "售卖中",
+		"require": "g.xiulian_energ_xtcd>=1",
+		"length": 3,
+		"fill": [
+			"money"
+		],
+		"cost": {
+			"elect": 30
+		},
+		"run": {
+			"time": -0.1,
+			"tili": 1
+		},
+		"result": {
+			"money": 20
 		}
 	},
 	{
@@ -287,13 +456,13 @@
 			"star_map_1"
 		],
 		"cost": {
-			"star_map": 10,
-			"jls": 2,
-			"ganwu": 20
+			"star_map": 17,
+			"jls": 10,
+			"ganwu": 50
 		},
 		"run": {
-			"time": -2,
-			"jls":0.2,
+			"time": -0.9,
+			"jls":0.9,
 			"tili": 0.3,
 			"stamina": 0.2
 		},
@@ -343,14 +512,9 @@
 		"fill": [
 			"tili",
 			"hp",
-			"prismatic",
 			"stress"
 		],
 		"effect": {
-			"prismatic": {
-				"skipLocked": true,
-				"value": 0.5
-			},
 			"time": 0.1,
 			"tili": 1,
 			"hp": 1,
@@ -387,6 +551,35 @@
 		}
 	},
 	{
+		"id": "yingchang",
+		"tags": "t_rest",
+		"name": "吟唱",
+		"slot": "rest",
+		"desc": "吟唱古老的乐曲",
+		"verb": "吟唱中",
+		"require": "g.wuhenlingtixue>=5",
+		"owned": true,
+		"perpetual": true,
+		"fill": [
+			"tili",
+			"prismatic",
+			"stamina",
+			"hp",
+			"stress"
+		],
+		"effect": {
+			"prismatic": {
+				"skipLocked": true,
+				"value": 3
+			},
+			"time": 0.5,
+			"tili": 6,
+			"stamina": 2,
+			"hp": 4.5,
+			"stress": -1
+		}
+	},
+	{
 		"id": "bdcm",
 		"tags": "t_rest",
 		"name": "百代长梦",
@@ -411,7 +604,7 @@
 			"time": 0.2,
 			"tili": 10,
 			"stamina": 2,
-			"hp": 3,
+			"hp": 6,
 			"stress": -2
 		}
 	},
@@ -648,6 +841,32 @@
 		}
 	},
 	{
+		"id": "shehun_1",
+		"name": "摄魂",
+		"desc": "摄取魂魄",
+		"verb": "摄魂中",
+		"require": "g.xiulian_shehunyantao>=1",
+		"max": 25,
+		"length": 50,
+		"cost": {
+			"money": 300,
+			"ganwu": 300,
+			"sj_met": 6,
+			"star_map": 40,
+			"zero_crystal": 6,
+			"dirty_lingti": 1,
+			"dirty_core": 5
+		},
+		"run": {
+			"time": -0.2
+		},
+		"result": {
+			"evilamt": 5,
+			"age": 730,
+			"age.max": 730
+		}
+	},
+	{
 		"id": "pbjs",
 		"name": "跑步健身",
 		"desc": "身体倍棒",
@@ -781,6 +1000,132 @@
 			"dirty_core": 0.5,
 			"time": 1,
 			"jls": 2
+		}
+	},
+	{
+		"id": "cxdnsy",
+		"name": "长线导能实验",
+		"desc": "进行长距离的低损导能实验。【实验需要进行10次】,",
+		"verb": "实验中",
+		"max": 30,
+		"require": "g.xiulian_energ_xtcd>=1",
+		"length": 20,
+		"cost": {
+			"elect": 20,
+			"ganwu": 100,
+			"alculation": 200,
+			"human_power": 100,
+			"zero_crystal": 1
+		},
+		"run": {
+			"time": -1,
+			"elect": -7
+		},
+		"result": {
+			"ganwu": 5,
+			"jsnlx.max": 0.1,
+			"jsnlx.exp": 20
+		}
+	},
+	{
+		"id": "yjdlzz",
+		"name": "电缆制作",
+		"desc": "制作亚极电缆,",
+		"verb": "制作中",
+		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
+		"length": 20,
+		"cost": {
+			"cold_core": 0.5,
+			"cbclb": 5,
+			"gwl":1,
+			"ganwu": 100,
+			"alculation": 20,
+			"human_power": 20,
+			"zero_crystal": 1
+		},
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"jsnlx.max": 0.1,
+			"jsnlx.exp": 20
+		}
+	},
+	{
+		"id": "murder_pl",
+		"name": "谋杀",
+		"desc": "长期的运货让你心生愤恨,杀人不是来钱更快吗",
+		"verb": "谋杀中",
+		"require": "g.freight>=50",
+		"length": 3,
+		"cost": {
+			"tili": 3
+		},
+		"run": {
+			"time": -0.5,
+			"tili": 0.3
+		},
+		"result": {
+			"money": 6,
+			"evilamt": 0.5
+		}
+	},
+	{
+		"id": "huibang",
+		"name": "毁谤",
+		"desc": "毁谤他人的名誉",
+		"verb": "",
+		"require": "g.evil>10",
+		"cost": {
+			"tili": 2,
+			"stamina": 0.4
+		},
+		"result": {
+			"time": 0.2,
+			"ganwu": 5,
+			"evilamt": 0.5
+		}
+	},
+	{
+		"id": "xueyuantouqie",
+		"name": "窃密",
+		"desc": "窃取禁忌之密",
+		"verb": "",
+		"require": "g.evil>50 && g.chaos>=2",
+		"need": "g.runner.hasType('skill')",
+		"every": {
+			"50": {
+				"result.runner.exp": "0.02:25"
+			}
+		},
+		"cost": {
+			"ganwu": 0.1,
+			"chaos": 0.2
+		},
+		"result": {
+			"runner.exp": 0.6,
+			"evilamt": 0.1
+		}
+	},
+	{
+		"id": "spirit_ningju",
+		"name": "魂体凝聚",
+		"desc": "用生灵凝聚魂体",
+		"verb": "凝聚中",
+		"require": "g.wuguangkexue>=1",
+		"length": 5,
+		"cost": {
+			"human_power": 20,
+			"tili": 3,
+			"chaos": 2
+		},
+		"run": {
+			"time": -0.5,
+			"tili": 0.3
+		},
+		"result": {
+			"dirty_lingti": 2,
+			"evilamt": 2
 		}
 	},
 	{

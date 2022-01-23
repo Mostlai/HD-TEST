@@ -25,7 +25,6 @@
 			{
 				"id": "nearwasteland",
 				"name": "荒地",
-				"title": "拾荒者",
 				"run": {
 					"time": -0.05
 				},
@@ -98,7 +97,6 @@
 			{
 				"id": "cold_1",
 				"name": "寒冬边缘[冰冻核心前置]",
-				"title": "冷风",
 				"run": {
 					"time": -0.1
 				},
@@ -120,7 +118,6 @@
 			{
 				"id": "cold_2",
 				"name": "冻土[冰冻核心前置]",
-				"title": "冷雨",
 				"run": {
 					"time": -0.17
 				},
@@ -143,7 +140,6 @@
 			{
 				"id": "zhanchang",
 				"name": "小型战场",
-				"title": "亡魂",
 				"run": {
 					"time": -0.17
 				},

@@ -184,6 +184,27 @@
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
+		"id": "wuyuewang",
+		"name": "无月望[AL]",
+		"desc": "无光技术打造的AL级头盔",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "head",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.chaos": 6,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "tian_chest",
 		"name": "钛合装甲[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -207,6 +228,27 @@
 			}
 		},
 		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "wuyuejing",
+		"name": "无月镜[AL]",
+		"desc": "无光技术打造的AL级护甲",
+		"equneed":"g.AL>=1",
+		"armor": 15,
+		"slot": "chest",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 10,
+				"self.resist.chaos": 12,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -2
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
 	},
 	{
 		"id": "tian_shins",
@@ -234,6 +276,27 @@
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
+		"id": "wuyul",
+		"name": "无月之旅[AL]",
+		"desc": "无光技术打造的AL级护腿",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "shins",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.chaos": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "tian_foot",
 		"name": "钛合护足[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -257,6 +320,27 @@
 			}
 		},
 		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "wuyuwo",
+		"name": "无月之握[AL]",
+		"desc": "无光技术打造的AL级护手",
+		"equneed":"g.AL>=1",
+		"armor": 6,
+		"slot": "hands",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 4,
+				"self.resist.chaos": 5,
+				"shenshi.max": -1,
+				"elect.max": -1,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
 	},
 	{
 		"id": "yqlp",

@@ -16,6 +16,54 @@
 		}
 	},
 	{
+		"id": "chubai",
+		"name": "纯白",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 0.1
+		}
+	},
+	{
+		"id": "yangxi",
+		"name": "阳息",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 0.1
+		}
+	},
+	{
+		"id": "liushui",
+		"name": "流水",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 0.1
+		}
+	},
+	{
+		"id": "rumo",
+		"name": "入魔",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 0.1
+		}
+	},
+	{
 		"id": "silk",
 		"kind": "cloth",
 		"weight": 0,

@@ -86,6 +86,34 @@
 		]
 	},
 	{
+		"id": "modao_loc_1",
+		"name": "无光山脉[魔导]",
+		"level": 20,
+		"length": 20,
+		"dist":1,
+		"require": "g.hq_mo_1>=1",
+		"desc": "你只感觉到这座山很大",
+		"run": {
+			"back_dream": 0.01,
+			"time": -0.3,
+			"tili": 0.2,
+			"stamina": 0.2
+		},
+		"result": {
+			"ganwu": 10
+		},
+		"loot": {
+			"nolight_core": "2~3",
+			"money": "10~20"
+		},
+		"encs": [
+			"enc_modao_1",
+			"enc_modao_2",
+			"enc_modao_3",
+			"enc_modao_4"
+		]
+	},
+	{
 		"id": "mustylibrary",
 		"name": "musty library",
 		"level": 1,

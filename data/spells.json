@@ -196,7 +196,9 @@
 			"dot": {
 				"kind": "heli",
 				"duration": 100,
-				"self.resist.heli": -12
+				"mod": {
+					"self.resist.heli": -12
+				}
 			}
 		}
 	},
@@ -296,6 +298,7 @@
 		"locked":true,
 		"level": 5,
 		"buy": {
+			"sp": 2,
 			"yqlm": 15,
 			"ganwu": 500,
 			"life_crystal": 5,
@@ -306,6 +309,7 @@
 		},
 		"attack": {
 			"damage": "16~22",
+			"kind": "wood",
 			"dot": {
 				"kind": "wood",
 				"name": "万木[筑基]",
@@ -321,6 +325,7 @@
 		"locked":true,
 		"school": "源泉",
 		"buy": {
+			"sp": 2,
 			"yqlm": 15,
 			"ganwu": 500,
 			"life_crystal": 5,
@@ -350,6 +355,7 @@
 		"locked":true,
 		"school": "源泉",
 		"buy": {
+			"sp": 2,
 			"yqlm": 15,
 			"ganwu": 500,
 			"life_crystal": 5,
@@ -363,33 +369,487 @@
 			"name": "破落化伤",
 			"duration": 10,
 			"effect": {
-				"hp": 5
+				"hp": 10
 			}
 		}
 	},
 	{
 		"id": "ylzsf",
-		"name": "源灵障水法[筑基]",
-		"desc": "提高对木和水的抗性",
+		"name": "源灵障土法[筑基]",
+		"desc": "提高对木和土的抗性",
 		"level": 5,
 		"locked":true,
 		"school": "源泉",
 		"buy": {
+			"sp": 2,
 			"yqlm": 15,
 			"ganwu": 500,
 			"life_crystal": 5,
 			"money": 800
 		},
 		"cost": {
-			"heli": 4
+			"heli": 15
 		},
 		"dot": {
 			"id": "ylzs",
-			"name": "源灵障水",
-			"duration": 10,
+			"name": "源灵障土",
+			"duration": 20,
 			"mod": {
 				"self.resist.wood": 5,
-				"self.resist.water": 15
+				"self.resist.land": 10
+			}
+		}
+	},
+	{
+		"id": "zsbhf",
+		"name": "真水避火法[筑基]",
+		"desc": "提高对水和火的抗性",
+		"level": 5,
+		"locked":true,
+		"school": "真水",
+		"buy": {
+			"sp": 2,
+			"wgys": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "zsbh",
+			"name": "真水避火",
+			"duration": 20,
+			"mod": {
+				"self.resist.water": 5,
+				"self.resist.fire": 10
+			}
+		}
+	},
+	{
+		"id": "ljzj",
+		"name": "雷诀[筑基]",
+		"school": "真水",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"wgys": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"elect": 30
+		},
+		"attack": {
+			"damage": "39~42",
+			"kind": "water",
+			"dot": {
+				"kind": "water",
+				"name": "雷诀[筑基]",
+				"duration": 1,
+				"damage": 10
+			}
+		}
+	},
+	{
+		"id": "cjpk",
+		"name": "长金破空[筑基]",
+		"desc": "勤加练习,越战越强",
+		"school": "锐金",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"cbjs": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"chaos": 6
+		},
+		"at": {
+			"30": {
+				"attack.damage.max": 5
+			},
+			"60": {
+				"attack.damage.max": 10
+			},
+			"65": {
+				"attack.damage.max": 10
+			},
+			"70": {
+				"attack.damage.max": 5
+			},
+			"75": {
+				"attack.damage.min": 2
+			},
+			"300": {
+				"attack.damage.max": 5,
+				"attack.damage.min": 5,
+				"attack.tohit": 4
+			}
+		},
+		"attack": {
+			"damage": "3~5",
+			"tohit": 8,
+			"kind": "gold"
+		}
+	},
+	{
+		"id": "rjzy",
+		"name": "锐金之意[筑基]",
+		"desc": "大幅度降低敌人对金的抗性",
+		"school": "锐金",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"cbjs": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 10,
+			"chaos": 10,
+			"shenshi": 2
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "gold",
+				"duration": 10,
+				"mod": {
+					"self.resist.gold": -50
+				}
+			}
+		}
+	},
+	{
+		"id": "hjbms",
+		"name": "化金败木术[筑基]",
+		"desc": "提高对金和木的抗性",
+		"level": 5,
+		"locked":true,
+		"school": "锐金",
+		"buy": {
+			"sp": 2,
+			"wgys": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "hjbm",
+			"name": "化金败木",
+			"duration": 20,
+			"mod": {
+				"self.resist.gold": 5,
+				"self.resist.wood": 10
+			}
+		}
+	},
+	{
+		"id": "yyj",
+		"name": "炎炎诀[筑基]",
+		"school": "真火",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"yxls": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 6
+		},
+		"attack": {
+			"damage": "18~20",
+			"kind": "fire",
+			"dot": {
+				"kind": "fire",
+				"name": "炎炎诀[筑基]",
+				"duration": 3,
+				"damage": 10
+			}
+		}
+	},
+	{
+		"id": "zhyjf",
+		"name": "真火掩金法[筑基]",
+		"desc": "提高对火和金的抗性",
+		"level": 5,
+		"locked":true,
+		"school": "真火",
+		"buy": {
+			"sp": 2,
+			"yxls": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "zhyj",
+			"name": "真火掩金",
+			"duration": 20,
+			"mod": {
+				"self.resist.fire": 5,
+				"self.resist.gold": 10
+			}
+		}
+	},
+	{
+		"id": "htymj",
+		"name": "厚土抑水诀[筑基]",
+		"desc": "提高对土和水的抗性",
+		"level": 5,
+		"locked":true,
+		"school": "厚土",
+		"buy": {
+			"sp": 2,
+			"zdht": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"dot": {
+			"id": "gtym",
+			"name": "厚土抑水",
+			"duration": 20,
+			"mod": {
+				"self.resist.land": 5,
+				"self.resist.water": 10
+			}
+		}
+	},
+	{
+		"id": "kss",
+		"name": "困兽术[筑基]",
+		"desc": "降低敌人的速度",
+		"school": "厚土",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"zdht": 15,
+			"ganwu": 500,
+			"life_crystal": 5,
+			"money": 800
+		},
+		"cost": {
+			"heli": 15
+		},
+		"attack": {
+			"damage": "10~20",
+			"targets": "enemies",
+			"kind": "land",
+			"dot": {
+				"duration": 30,
+				"dmg": "5~9",
+				"mod": {
+					"self.speed": -5
+				}
+			}
+		}
+	},
+	{
+		"id": "sgfszj",
+		"name": "死骨复苏[筑基]",
+		"desc": "从黄泉引导【四位】【黄泉灵体】帮助你作战",
+		"school": "源泉",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"human_power": 100,
+			"yqlm": 10,
+			"zero_crystal": 20,
+			"money": 1000
+		},
+		"cost": {
+			"heli": 20,
+			"chaos": 10,
+			"shenshi": 3
+		},
+		"result": [
+			"hqsl_1",
+			"hqsl_1",
+			"hqsl_1",
+			"hqsl_1"
+		]
+	},
+	{
+		"id": "ngjyw",
+		"name": "凝界歌于我",
+		"desc": "提高防御和速度",
+		"school": "混沌",
+		"locked":true,
+		"level": 4,
+		"buy": {
+			"ganwu": 200,
+			"money": 300,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"duration": 10,
+			"mod": {
+				"self.resist.chaos": 20,
+				"self.resist.heli": -10,
+				"self.speed": 5,
+				"self.defense": 10
+			}
+		}
+	},
+	{
+		"id": "xclyt",
+		"name": "星辰落于天",
+		"school": "混沌",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"damage": "18~20",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "落天",
+				"duration": 300,
+				"damage": 2
+			}
+		}
+	},
+	{
+		"id": "bdjgk",
+		"name": "百代皆过客[筑基]",
+		"school": "混沌",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"damage": "30~35",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "过客",
+				"duration": 300,
+				"damage": 5
+			}
+		}
+	},
+	{
+		"id": "dmrg",
+		"name": "大梦如歌[筑基]",
+		"desc": "恢复自己",
+		"school": "混沌",
+		"locked":true,
+		"level": 6,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"id": "dmrgbf",
+			"name": "大梦如歌",
+			"duration": 20,
+			"effect": {
+				"hp": 20
+			}
+		}
+	},
+	{
+		"id": "wchys",
+		"name": "万草荒于沙",
+		"desc": "大幅度降低敌人对混沌和木的抗性",
+		"school": "混沌",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"targets": "enemies",
+			"dot": {
+				"kind": "chaos",
+				"duration": 10,
+				"mod": {
+					"self.resist.chaos": -35,
+					"self.resist.wood": -10
+				}
+			}
+		}
+	},
+	{
+		"id": "lsszy",
+		"name": "流水送昼夜",
+		"desc": "恢复自己",
+		"school": "混沌",
+		"locked":true,
+		"level": 6,
+		"buy": {
+			"sp": 2,
+			"ganwu": 100,
+			"dirty_core": 25,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"id": "lsszybf",
+			"name": "流水送昼夜",
+			"duration": 20,
+			"effect": {
+				"tili": 2,
+				"stamina": 0.6,
+				"bf": -0.5,
+				"rage": -0.5,
+				"weary": -0.5,
+				"madness": -0.5
 			}
 		}
 	},

@@ -32,6 +32,24 @@
 		}
 	},
 	{
+		"id": "hqsl_1",
+		"name": "黄泉灵体[木伤-木抗25%]",
+		"level": 10,
+		"kind": "wood",
+		"noproc": true,
+		"hp": 40,
+		"tohit": 21,
+		"defense": 30,
+		"attack": {
+			"name": "嚎叫",
+			"kind": "wood",
+			"dmg": "10~14"
+		},
+		"resist": {
+			"wood": 25
+		}
+	},
+	{
 		"id": "smz",
 		"name": "黑色流体",
 		"level": 13,
@@ -110,6 +128,89 @@
 		},
 		"loot": {
 			"shuaibai_core": 0.5
+		}
+	},
+	{
+		"id": "haojiaozhe",
+		"name": "嚎叫者",
+		"level": 16,
+		"desc": "",
+		"kind": "chaos",
+		"hp": 50,
+		"tohit": 3,
+		"defense": 15,
+		"attack": {
+			"name": "攻击",
+			"kind": "chaos",
+			"dmg": "7~12",
+			"dot": {
+				"kind": "chaos",
+				"name": "疼痛",
+				"dmg": "1~7",
+				"duration": 3
+			}
+		},
+		"loot": {
+			"shuaibai_core": 0.5
+		}
+	},
+	{
+		"id": "bujiezhe",
+		"name": "不洁粘液",
+		"level": 16,
+		"desc": "",
+		"kind": "chaos",
+		"hp": 60,
+		"tohit": 3,
+		"defense": 20,
+		"attack": {
+			"name": "攻击",
+			"kind": "chaos",
+			"dmg": "10~12",
+			"dot": {
+				"kind": "chaos",
+				"name": "疼痛",
+				"dmg": "1~7",
+				"duration": 3
+			}
+		},
+		"loot": {
+			"shuaibai_core": 0.5
+		}
+	},
+	{
+		"id": "huian_fashi",
+		"name": "晦暗法师[筑基]",
+		"level": 20,
+		"kind": "chaos",
+		"desc": "像你一样的人",
+		"hp": 150,
+		"tohit": 10,
+		"defense": 50,
+		"attack": [
+			{
+				"name": "无光",
+				"kind": "chaos",
+				"dmg": "20~25",
+				"targets": "enemies"
+			},
+			{
+				"name": "无光",
+				"kind": "chaos",
+				"dmg": "20~25",
+				"dot": {
+					"kind": "chaos",
+					"name": "无光",
+					"dmg": "7~15",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"zero_crystal": 10,
+			"lxue": 5,
+			"shuaibai_core": 5,
+			"nolight_core": 3
 		}
 	},
 	{
@@ -544,6 +645,325 @@
 			"zero_crystal": 4,
 			"lxue": 5,
 			"yqlm": 5
+		}
+	},
+	{
+		"id": "mujie_1",
+		"name": "木劫[筑基-弱金]",
+		"level": 20,
+		"kind": "wood",
+		"desc": "源泉",
+		"hp": 1700,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "源泉震撼",
+				"kind": "wood",
+				"dmg": "100~160",
+				"targets": "enemies"
+			},
+			{
+				"name": "千年木",
+				"kind": "wood",
+				"dmg": "0~1",
+				"dot": {
+					"kind": "wood",
+					"name": "千年震慑",
+					"dmg": "14~17",
+					"duration": 60
+				}
+			}
+		],
+		"loot": {
+			"lxue": 5,
+			"yqlm": 25
+		},
+		"resist": {
+			"wood": 50,
+			"gold": -20
+		}
+	},
+	{
+		"id": "huojie_1",
+		"name": "火劫[筑基-弱水]",
+		"level": 20,
+		"kind": "fire",
+		"desc": "真火",
+		"hp": 1300,
+		"tohit": 16,
+		"defense": 14,
+		"attack": [
+			{
+				"name": "真火震撼",
+				"kind": "fire",
+				"dmg": "120~160",
+				"targets": "enemies"
+			},
+			{
+				"name": "无端火",
+				"kind": "fire",
+				"dmg": "0~1",
+				"dot": {
+					"kind": "fire",
+					"name": "夕阳",
+					"dmg": "6~20",
+					"duration": 120
+				}
+			}
+		],
+		"loot": {
+			"lxue": 5,
+			"yxls": 25
+		},
+		"resist": {
+			"fire": 50,
+			"water": -20
+		}
+	},
+	{
+		"id": "tujie_1",
+		"name": "土劫[筑基-弱木]",
+		"level": 20,
+		"kind": "land",
+		"desc": "厚土",
+		"hp": 2500,
+		"tohit": 20,
+		"defense": 50,
+		"attack": [
+			{
+				"name": "厚土震撼",
+				"kind": "land",
+				"dmg": "55~101",
+				"targets": "enemies"
+			},
+			{
+				"name": "地隙",
+				"kind": "land",
+				"dmg": "0~1",
+				"dot": {
+					"kind": "land",
+					"name": "地隙",
+					"dmg": "2~11",
+					"duration": 50,
+					"mod":{
+						"defense":-15
+					}
+				}
+			}
+		],
+		"loot": {
+			"lxue": 5,
+			"zdht": 25
+		},
+		"resist": {
+			"land": 50,
+			"wood": -20
+		}
+	},
+	{
+		"id": "jinjie_1",
+		"name": "金劫[筑基-弱火]",
+		"level": 20,
+		"kind": "gold",
+		"desc": "锐金",
+		"hp": 1000,
+		"tohit": 50,
+		"defense": 0,
+		"attack": [
+			{
+				"name": "极意之金",
+				"kind": "gold",
+				"dmg": "220~251",
+				"targets": "enemies"
+			},
+			{
+				"name": "长金破空",
+				"kind": "gold",
+				"dmg": "100~120",
+				"dot": {
+					"kind": "gold",
+					"name": "长金破空",
+					"dmg": "20~21",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"lxue": 5,
+			"cbjs": 25
+		},
+		"resist": {
+			"gold": 50,
+			"fire": -20
+		}
+	},
+	{
+		"id": "shuijie_1",
+		"name": "水劫[筑基-弱土]",
+		"level": 20,
+		"kind": "water",
+		"desc": "真水",
+		"hp": 2500,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "汪洋",
+				"kind": "water",
+				"dmg": "60~71",
+				"targets": "enemies"
+			},
+			{
+				"name": "无边之海",
+				"kind": "water",
+				"dmg": "30~41",
+				"dot": {
+					"kind": "water",
+					"name": "无边海",
+					"dmg": "10~12",
+					"duration": 70,
+					"mod":{
+						"speed":-2,
+						"defense":-5,
+						"dodge": -10
+					}
+				}
+			}
+		],
+		"loot": {
+			"lxue": 5,
+			"wgys": 25
+		},
+		"resist": {
+			"water": 50,
+			"land": -20
+		}
+	},
+	{
+		"id": "wuxiangmo",
+		"name": "无相真魔[筑基]",
+		"level": 20,
+		"kind": "chaos",
+		"desc": "混沌表示",
+		"hp": 3000,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "无始",
+				"kind": "chaos",
+				"dmg": "40~50",
+				"targets": "enemies"
+			},
+			{
+				"name": "无终",
+				"kind": "chaos",
+				"dmg": "0~1",
+				"dot": {
+					"kind": "chaos",
+					"name": "无终",
+					"dmg": "19~22",
+					"duration": 60
+				}
+			}
+		],
+		"resist": {
+			"chaos": 10,
+			"heli": -20
+		}
+	},
+	{
+		"id": "wuxiangling",
+		"name": "无相真灵[筑基]",
+		"level": 20,
+		"kind": "heli",
+		"desc": "合理表示",
+		"hp": 3000,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "至始",
+				"kind": "heli",
+				"dmg": "40~50",
+				"targets": "enemies"
+			},
+			{
+				"name": "至终",
+				"kind": "heli",
+				"dmg": "0~1",
+				"dot": {
+					"kind": "heli",
+					"name": "至终",
+					"dmg": "19~22",
+					"duration": 60
+				}
+			}
+		],
+		"resist": {
+			"heli": 10,
+			"chaos": -50
+		}
+	},
+	{
+		"id": "luor",
+		"name": "落日[筑基]",
+		"level": 20,
+		"kind": "sun",
+		"desc": "他是落日",
+		"hp": 8000,
+		"tohit": 10,
+		"defense": 20,
+		"attack": [
+			{
+				"name": "至始",
+				"kind": "heli",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "heli",
+					"name": "至始",
+					"dmg": "3~5",
+					"duration": 60
+				}
+			},
+			{
+				"name": "至终",
+				"kind": "heli",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "heli",
+					"name": "至终",
+					"dmg": "5~7",
+					"duration": 60
+				}
+			},
+			{
+				"name": "无始",
+				"kind": "chaos",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "chaos",
+					"name": "无始",
+					"dmg": "3~5",
+					"duration": 60
+				}
+			},
+			{
+				"name": "无终",
+				"kind": "chaos",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "chaos",
+					"name": "无终",
+					"dmg": "5~7",
+					"duration": 60
+				}
+			}
+		],
+		"resist": {
+			"heli": 20,
+			"chaos": 20
 		}
 	},
 	{

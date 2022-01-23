@@ -95,6 +95,162 @@
 		"level": 10
 	},
 	{
+		"id": "suiguchangdao",
+		"name": "碎骨长刀",
+		"desc":"散发着不安的气息",
+		"slot": "hands",
+		"material": "rumo",
+		"enchants": 2,
+		"attack": {
+			"name": "长斩",
+			"kind": "chaos",
+			"damage": "16~18",
+			"dot": {
+				"duration": 20,
+				"dmg": "1~3",
+				"name": "碎骨",
+				"kind": "chaos"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 10,
+				"f_power": 18
+			}
+		},
+		"cost": 30,
+		"level": 10
+	},
+	{
+		"id": "wuyuemijian",
+		"name": "无月秘剑[AL]",
+		"desc": "无光技术打造的大剑",
+		"equneed":"g.AL>=1",
+		"slot": "hands",
+		"material": "rumo",
+		"enchants": 2,
+		"attack": {
+			"name": "黯淡无月",
+			"kind": "chaos",
+			"damage": "27~30",
+			"dot": {
+				"duration": 20,
+				"dmg": "5~6",
+				"name": "无月",
+				"kind": "chaos"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 5,
+				"self.resist.heli": 5,
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 30,
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "base_zd",
+		"name": "紫电[BASE]",
+		"desc": "附着高能电流的巨大直剑",
+		"equneed":"g.base>=1",
+		"slot": "hands",
+		"material": "chubai",
+		"enchants": 2,
+		"attack": {
+			"name": "电闪",
+			"kind": "water",
+			"damage": "20~25",
+			"dot": {
+				"duration": 20,
+				"dmg": "1~3",
+				"name": "麻痹",
+				"kind": "water"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.wood": 1,
+				"self.resist.fire": 1,
+				"self.resist.land": 1,
+				"self.resist.gold": 1,
+				"self.resist.water": 1,
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 30,
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "base_rndd",
+		"name": "热能电刀[BASE]",
+		"desc": "赤红刀刃",
+		"equneed":"g.base>=1",
+		"slot": "hands",
+		"material": "yangxi",
+		"enchants": 2,
+		"attack": {
+			"name": "红莲",
+			"kind": "fire",
+			"damage": "20~25",
+			"dot": {
+				"duration": 20,
+				"dmg": "1~3",
+				"name": "灼烧",
+				"kind": "fire"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.wood": 1,
+				"self.resist.fire": 1,
+				"self.resist.land": 1,
+				"self.resist.gold": 1,
+				"self.resist.water": 1,
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 30,
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "base_feijian",
+		"name": "飞剑[BASE]",
+		"desc": "行云流水",
+		"equneed":"g.base>=1",
+		"slot": "hands",
+		"material": "liushui",
+		"enchants": 2,
+		"attack": {
+			"name": "飞刺",
+			"kind": "water",
+			"damage": "20~25",
+			"dot": {
+				"duration": 2,
+				"dmg": "3~7",
+				"name": "飞剑",
+				"kind": "water"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.wood": 1,
+				"self.resist.fire": 1,
+				"self.resist.land": 1,
+				"self.resist.gold": 1,
+				"self.resist.water": 1,
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 30,
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
 		"id": "staff",
 		"attack": {
 			"kind": "blunt",
