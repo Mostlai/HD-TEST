@@ -1613,5 +1613,37 @@
 			"age.max": -29200,
 			"age": -29200
 		}
+	},
+	{
+		"id": "jizhun_fl",
+		"name": "风灵(路径)",
+		"desc": "如风一般[30岁前完成了筑基]",
+		"tags": "路径",
+		"require": "g.time<=10950 && g.xiulian_zhuji_2>=1",
+		"max": 2,
+		"cost": {
+			"heli":1
+		},
+		"xiulianresult": {
+			"age.max":-10950,
+			"age":-10950,
+			"heli.max": -2,
+			"heli.rate": -0.5
+		}
+	},
+	{
+		"id": "jizhun_luyuan",
+		"name": "路远(路径)",
+		"desc": "昼夜[60=90岁前完成了筑基]",
+		"tags": "路径",
+		"require": "g.time>=21900 && g.time<=32850 && g.xiulian_zhuji_2>=1",
+		"max": 2,
+		"cost": {
+			"heli":1
+		},
+		"xiulianresult": {
+			"age.max":-18250,
+			"age":-18250
+		}
 	}
 ]
