@@ -1624,7 +1624,7 @@
 		"cost": {
 			"heli":1
 		},
-		"xiulianresult": {
+		"result": {
 			"age.max":-10950,
 			"age":-10950,
 			"heli.max": -2,
@@ -1641,7 +1641,7 @@
 		"cost": {
 			"heli":1
 		},
-		"xiulianresult": {
+		"result": {
 			"age.max":-18250,
 			"age":-18250
 		}
