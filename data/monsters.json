@@ -32,6 +32,62 @@
 		}
 	},
 	{
+		"id": "m_solid_3",
+		"tags": "soldiers_1",
+		"name": "披甲士兵",
+		"level": 10,
+		"kind": "人力",
+		"noproc": true,
+		"hp": 55,
+		"tohit": 10,
+		"defense": 20,
+		"attack": {
+			"name": "攻击",
+			"kind": "pierce",
+			"dmg": "15~20"
+		}
+	},
+	{
+		"id": "m_solid_4",
+		"tags": "soldiers_1",
+		"name": "重装士兵",
+		"level": 10,
+		"kind": "人力",
+		"noproc": true,
+		"hp": 55,
+		"tohit": 10,
+		"defense": 30,
+		"attack": {
+			"name": "攻击",
+			"kind": "pierce",
+			"dmg": "20~25"
+		}
+	},
+	{
+		"id": "xiantianzhuji",
+		"name": "先天生命[筑基]",
+		"level": 25,
+		"desc": "",
+		"kind": "heli",
+		"hp": 70,
+		"tohit": 16,
+		"defense": 31,
+		"attack": {
+			"name": "攻击",
+			"kind": "heli",
+			"dmg": "18~19",
+			"dot": {
+				"kind": "heli",
+				"name": "疼痛",
+				"dmg": "5~7",
+				"duration": 3
+			}
+		},
+		"loot": {
+			"shenglingshi": 0.1
+		}
+	},
+	{
 		"id": "hqsl_1",
 		"name": "黄泉灵体[木伤-木抗25%]",
 		"level": 10,
@@ -904,6 +960,77 @@
 		"resist": {
 			"heli": 10,
 			"chaos": -50
+		}
+	},
+	{
+		"id": "zhenyang",
+		"name": "真阳[筑基]",
+		"level": 20,
+		"kind": "sun",
+		"desc": "他是真阳",
+		"hp": 8000,
+		"tohit": 10,
+		"defense": 30,
+		"attack": [
+			{
+				"name": "真水",
+				"kind": "water",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "water",
+					"name": "真水",
+					"dmg": "3~5",
+					"duration": 60
+				}
+			},
+			{
+				"name": "真火",
+				"kind": "fire",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "fire",
+					"name": "真火",
+					"dmg": "5~7",
+					"duration": 60
+				}
+			},
+			{
+				"name": "锐金",
+				"kind": "gold",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "gold",
+					"name": "锐金",
+					"dmg": "5~7",
+					"duration": 60
+				}
+			},
+			{
+				"name": "源泉",
+				"kind": "wood",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "wood",
+					"name": "源泉",
+					"dmg": "5~7",
+					"duration": 60
+				}
+			},
+			{
+				"name": "厚土",
+				"kind": "land",
+				"dmg": "30~35",
+				"dot": {
+					"kind": "land",
+					"name": "厚土",
+					"dmg": "5~7",
+					"duration": 60
+				}
+			}
+		],
+		"resist": {
+			"heli": 20,
+			"chaos": 20
 		}
 	},
 	{

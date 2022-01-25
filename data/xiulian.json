@@ -15,7 +15,7 @@
 			"books": 1,
 			"exe_paper": 2
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 13,
 			"heli.rate": -0.01,
 			"xiulian_heli_1": 1
@@ -53,7 +53,7 @@
 			"books": 10,
 			"exe_paper": 20
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"xiulian_jihun_1" : 1
 		}
@@ -75,7 +75,7 @@
 			"books": 1,
 			"exe_paper": 2
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"heli.max": -0.5,
 			"heli.rate": -0.01,
@@ -112,7 +112,7 @@
 			"books": 10,
 			"exe_paper": 20
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"frs": 20,
 			"xiulian_jizhun_2" : 1
@@ -148,7 +148,7 @@
 			"books": 10,
 			"exe_paper": 20
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"frs": 20,
 			"xiulian_jizhun_3" : 1
@@ -173,7 +173,7 @@
 			"exe_paper": 2,
 			"snp_data":2
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"heli.max": -1,
 			"heli.rate": -0.01,
@@ -196,7 +196,7 @@
 			"books": 1,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"xiulian_life_1" : 1,
 			"age": -1825,
@@ -220,7 +220,7 @@
 			"books": 1,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"age": -2825,
 			"age.max": -2825
@@ -242,7 +242,7 @@
 			"heli": 3,
 			"chaos": 1
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"age.max": -3650,
 			"age": -3650
@@ -270,7 +270,7 @@
 			"heli": 3,
 			"chaos": 1
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"frs": 19,
 			"age.max": -3650,
@@ -289,7 +289,7 @@
 			"heli": 2,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 7,
 			"xiulian_heli_li_1_controll" : 1,
 			"heli.rate": -0.1
@@ -308,7 +308,7 @@
 			"heli": 2,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"xiulian_heli_li_1_soild" : 1,
 			"heli.max": -1,
@@ -329,7 +329,7 @@
 			"zero_crystal": 2,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 12,
 			"xiulian_heli_li_1_esc" : 1,
 			"heli_missile": true,
@@ -352,7 +352,7 @@
 			"books": 3,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 1,
 			"xiulian_heli_li_2_escape" : 1
 		}
@@ -370,7 +370,7 @@
 			"heli": 2,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 3,
 			"xiulian_ld_body_1" : 1,
 			"stamina.max": -1,
@@ -392,7 +392,7 @@
 			"zero_crystal": 3,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"xiulian_ld_body_2" : 1,
 			"hp.max": -1,
@@ -422,7 +422,7 @@
 			"zero_crystal": 8,
 			"exe_paper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 20,
 			"xiulian_ld_body_3" : 1,
 			"frs": 18,
@@ -450,7 +450,7 @@
 			"super_mind": 2,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"xiulian_ld_dw_guancha" : 1,
 			"rlt_guancha.max": -5,
@@ -474,7 +474,7 @@
 			"super_mind": 5,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"tili.max": -1,
 			"tili.rate": -0.6
@@ -497,7 +497,7 @@
 			"r_adv_w_sj1": 2,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"tili.rate": -1
 		}
@@ -516,7 +516,7 @@
 			"snp_data": 3,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 6,
 			"xiulian_astro_zhuji_1" : 1,
 			"astronomy.max": -2,
@@ -537,7 +537,7 @@
 			"snp_data": 3,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 6,
 			"xiulian_astro_zhuji_1_1" : 1,
 			"astronomy.max": -1,
@@ -557,7 +557,7 @@
 			"snp_data": 8,
 			"exe_paper": 7
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 50,
 			"xiulian_astro_zhuji_2" : 1,
 			"astronomy.max": -2,
@@ -579,7 +579,7 @@
 			"star_map": 5,
 			"exe_paper": 7
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"chaos.max": -3,
 			"chaos.rate": -0.1,
@@ -604,7 +604,7 @@
 			"star_map": 10,
 			"exe_paper": 7
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 20,
 			"xiulianchaos_ly_1" : 1
 		}
@@ -626,7 +626,7 @@
 			"paper": 10,
 			"exe_paper": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"xiulian_eye_zhuji_1" : 1,
 			"heli.max": -2,
@@ -650,7 +650,7 @@
 			"paper": 25,
 			"exe_paper": 6
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"xiulian_zhuji_1":1,
 			"heli.max": -3,
@@ -673,7 +673,7 @@
 			"exe_paper": 3,
 			"cu_iron": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 3,
 			"xiulian_change_metal_1" : 1
 		}
@@ -692,7 +692,7 @@
 			"exe_paper": 3,
 			"cu_iron": 1
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 3,
 			"xiulian_change_metal_2" : 1
 		}
@@ -712,7 +712,7 @@
 			"zero_crystal": 5,
 			"exe_paper": 1
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 3,
 			"xiulian_change_metal_3" : 1
 		}
@@ -732,7 +732,7 @@
 			"cu_copper": 5,
 			"zero_crystal": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 3,
 			"xiulian_struct_1" : 1
 		}
@@ -752,7 +752,7 @@
 			"zero_crystal": 10,
 			"books": 3
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 3,
 			"metal_app.max": -5,
 			"shenshi_1.max": -2,
@@ -773,7 +773,7 @@
 			"paper": 20,
 			"iron_copper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 4,
 			"xiulian_energ_1" : 1
 		}
@@ -792,7 +792,7 @@
 			"elect": 20,
 			"chaos": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 365,
 			"heli.max": -20,
 			"chaos.max": -20,
@@ -826,7 +826,7 @@
 			"iron_copper": 5,
 			"star_map": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_x_info_1" : 1
 		}
 	},
@@ -846,7 +846,7 @@
 			"sj_met": 5,
 			"star_map": 13
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_ld_cold" : 1
 		}
 	},
@@ -869,7 +869,7 @@
 			"sj_met": 5,
 			"star_map": 20
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_ld_panpa" : 1
 		}
 	},
@@ -894,7 +894,7 @@
 			"jls": 20,
 			"star_map": 20
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 15,
 			"xiulian_change_res" : 1
 		}
@@ -921,7 +921,7 @@
 			"jls": 20,
 			"exe_paper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"frs": 19,
 			"xiulian_eye_adv_astro" : 1
@@ -949,7 +949,7 @@
 			"jls": 20,
 			"exe_paper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"frs": 19,
 			"xiulian_info_cold_1" : 1
@@ -978,7 +978,7 @@
 			"jls": 20,
 			"exe_paper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 10,
 			"frs": 19,
 			"xiulian_energ_cold_1" : 1
@@ -1010,7 +1010,7 @@
 			"jls": 20,
 			"exe_paper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"frs": 19,
 			"xiulian_struct_cold_1" : 1
@@ -1041,7 +1041,7 @@
 			"jls": 20,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 30,
 			"frs": 19,
 			"xiulian_bio_cold_1" : 1
@@ -1072,7 +1072,7 @@
 			"jls": 20,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 60,
 			"frs": 19,
 			"xiulian_bio_dirty_1" : 1
@@ -1099,7 +1099,7 @@
 			"paper": 40,
 			"exe_paper": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"xiulian_death_1" : 1
 		}
@@ -1127,7 +1127,7 @@
 			"star_map": 60,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 1,
 			"xiulian_death_2" : 1
 		}
@@ -1156,7 +1156,7 @@
 			"star_map": 60,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 120,
 			"xiulian_death_3" : 1
 		}
@@ -1189,7 +1189,7 @@
 			"paper": 40,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 182,
 			"frs": 19,
 			"xiulian_chaos_ld_1" : 1
@@ -1223,7 +1223,7 @@
 			"paper": 40,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 91,
 			"frs": 19,
 			"xiulian_heli_dx_1" : 1
@@ -1256,7 +1256,7 @@
 			"paper": 40,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 77,
 			"frs": 29,
 			"xiulian_heli_dx_2" : 1
@@ -1289,7 +1289,7 @@
 			"paper": 40,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"frs": 29,
 			"xiulian_math_jihe_1" : 1
@@ -1322,7 +1322,7 @@
 			"star_map": 60,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"frs": 29,
 			"xiulian_math_kj_1" : 1
@@ -1355,7 +1355,7 @@
 			"star_map": 60,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 100,
 			"frs": 29,
 			"xiulian_math_fc_1" : 1
@@ -1381,7 +1381,7 @@
 			"alculation": 50,
 			"star_map": 60
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"shenshi.max": -2,
 			"shenshi.rate": -1,
@@ -1410,7 +1410,7 @@
 			"alculation": 50,
 			"star_map": 60
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"elect.rate": -2,
 			"xiulian_energ_struct_shenshi" : 1
@@ -1438,7 +1438,7 @@
 			"star_map_1": 4,
 			"star_map": 60
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"xiulian_energ_struct_ss" : 1
 		}
@@ -1467,7 +1467,7 @@
 			"snp_data": 12,
 			"star_map_1": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 91,
 			"xiulian_heli_ys_1" : 1
 		}
@@ -1493,7 +1493,7 @@
 			"alculation": 50,
 			"star_map_1": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"xiulian_sw_smart_zj" : 1
 		}
@@ -1520,7 +1520,7 @@
 			"star_map_1": 4,
 			"star_map": 60
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"xiulian_energ_core" : 1
 		}
@@ -1547,7 +1547,7 @@
 			"star_map_1": 6,
 			"star_map": 60
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"xiulian_struct_mk" : 1
 		}
@@ -1557,7 +1557,7 @@
 		"name": "五环进阶(方圆)",
 		"desc": "对五种截然不同属性的元素进行吸收",
 		"tags": "方圆",
-		"require": "g.evil<=0 && g.yqlm>=1 && g.cbjs>=1 && g.yxls>=1 && g.wgys>=1 && g.zdht>=1",
+		"require": "g.evilamt<=0 && g.yqlm>=1 && g.cbjs>=1 && g.yxls>=1 && g.wgys>=1 && g.zdht>=1",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1575,7 +1575,7 @@
 			"alculation": 50,
 			"star_map_1": 15
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"frs":39,
 			"heli.rate": -2,
@@ -1588,7 +1588,7 @@
 		"name": "源泉灵体(永生之望)",
 		"desc": "将自己的躯体改造为源泉灵体",
 		"tags": "永生之望",
-		"require": "g.yqlife>=1 && g.evil<=0",
+		"require": "g.yqlife>=1 && g.evilamt<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1610,7 +1610,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"age.max": -29200,
 			"age": -29200
@@ -1621,7 +1621,7 @@
 		"name": "厚土真体(永生之望)",
 		"desc": "将自己的躯体改造为厚土真体",
 		"tags": "永生之望",
-		"require": "g.htgcx>=4 && g.evil<=0",
+		"require": "g.htgcx>=4 && g.evilamt<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1643,7 +1643,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"age.max": -29200,
 			"age": -29200
@@ -1654,7 +1654,7 @@
 		"name": "祛火法体(永生之望)",
 		"desc": "将自己的躯体改造为祛火法体",
 		"tags": "永生之望",
-		"require": "g.gwwlx>=4 && g.evil<=0",
+		"require": "g.gwwlx>=4 && g.evilamt<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1676,7 +1676,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"age.max": -29200,
 			"age": -29200
@@ -1687,7 +1687,7 @@
 		"name": "海德魂魄(永生之望)",
 		"desc": "将自己的魂体改造成海德魂魄",
 		"tags": "永生之望",
-		"require": "g.jsnlx>=4 && g.evil<=0",
+		"require": "g.jsnlx>=4 && g.evilamt<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1709,7 +1709,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"age.max": -29200,
 			"age": -29200
@@ -1720,7 +1720,7 @@
 		"name": "玉金之能(永生之望)",
 		"desc": "掌握玉金之坚韧",
 		"tags": "永生之望",
-		"require": "g.jjclx>=4",
+		"require": "g.jjclx>=4 && g.evilamt<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -1742,7 +1742,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"age.max": -29200,
 			"age": -29200
@@ -1775,7 +1775,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"xiulian_energ_xtcd":1
 		}
@@ -1806,7 +1806,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"xiulian_energ_gxdn":1
 		}
@@ -1837,7 +1837,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"xiulian_energ_gnsb":1
 		}
@@ -1868,7 +1868,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"lg.max": -5,
 			"xiulian_struct_fenxi":1
@@ -1900,7 +1900,7 @@
 			"alculation": 50,
 			"star_map_1": 10
 		},
-		"result": {
+		"xiulianresult": {
 			"frs": 39,
 			"tian.max": -10,
 			"sj_met.max": -10,
@@ -1934,7 +1934,7 @@
 			"alculation": 100,
 			"star_map_1": 15
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_struct_cailiaozuhe":1
 		}
 	},
@@ -1961,7 +1961,7 @@
 			"alculation": 100,
 			"star_map_1": 15
 		},
-		"result": {
+		"xiulianresult": {
 			"frs":59,
 			"xiulian_struct_gaowenshiy":1
 		}
@@ -1987,7 +1987,7 @@
 			"alculation": 100,
 			"star_map_1": 15
 		},
-		"result": {
+		"xiulianresult": {
 			"frs":19,
 			"xiulian_struct_gaowenfh":1
 		}
@@ -2015,7 +2015,7 @@
 			"alculation": 100,
 			"star_map_1": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"frs":29,
 			"xiulian_struct_gaowenpb":1
 		}
@@ -2041,7 +2041,7 @@
 			"alculation": 100,
 			"star_map_1": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"frs":29,
 			"xiulian_struct_gaowensl":1
 		}
@@ -2066,9 +2066,116 @@
 			"alculation": 100,
 			"star_map_1": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"frs":29,
 			"xiulian_siwei_qtswyj":1
+		}
+	},
+	{
+		"id": "siwei_gljz",
+		"name": "管理机制(思维)",
+		"desc": "管理人力",
+		"tags": "思维",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1200,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_siwei_gljz":1
+		}
+	},
+	{
+		"id": "siwei_qdsx",
+		"name": "气定神闲(思维)",
+		"desc": "增加压力上限",
+		"tags": "思维",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 20,
+			"jls":50,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"human_power": 700,
+			"money": 1200,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"frs":29,
+			"stress.max": -5
+		}
+	},
+	{
+		"id": "xxh_mtcb",
+		"name": "媒体传播(信息海)",
+		"desc": "借助微波技术传播大众信息",
+		"tags": "信息海",
+		"require": "g.xiulian_siwei_qtswyj>=1",
+		"max": 2,
+		"cost": {
+			"lg": 20,
+			"jls":50,
+			"lxue": 10,
+			"money": 1700,
+			"elect": 30,
+			"shuaibai_core": 10,
+			"human_power": 900,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_xxh_mtcb":1
+		}
+	},
+	{
+		"id": "xxh_hjl",
+		"name": "黄金路(信息海)",
+		"desc": "媒体传播发现了更多的财富来源",
+		"tags": "信息海",
+		"require": "g.xiulian_xxh_mtcb>=1",
+		"max": 2,
+		"cost": {
+			"lg": 20,
+			"jls":50,
+			"lxue": 10,
+			"money": 1500,
+			"shuaibai_core": 10,
+			"human_power": 900,
+			"ganwu": 700,
+			"yqlm": 20,
+			"cbjs": 10,
+			"zdht": 10,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 450,
+			"star_map_1": 15,
+			"life_crystal": 2
+		},
+		"xiulianresult": {
+			"frs":29,
+			"money.rate": -1
 		}
 	},
 	{
@@ -2092,7 +2199,7 @@
 			"alculation": 100,
 			"star_map_1": 5
 		},
-		"result": {
+		"xiulianresult": {
 			"frs":29,
 			"xiulian_eye_huangquan":1
 		}
@@ -2102,7 +2209,7 @@
 		"name": "魂魄研究(生命构造)",
 		"desc": "研究人体魂魄",
 		"tags": "生命构造",
-		"require": "g.evil>50 && g.dirty_lingti>=1",
+		"require": "g.evilamt>50 && g.dirty_lingti>=1",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -2114,7 +2221,7 @@
 			"paper": 30,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"chaos.max": -5,
 			"xiulian_hunpoyanjiu":1
 		}
@@ -2139,7 +2246,7 @@
 			"paper": 30,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_hundunpohuai":1
 		}
 	},
@@ -2163,7 +2270,7 @@
 			"paper": 30,
 			"exe_paper": 12
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_shehunyantao":1
 		}
 	},
@@ -2189,7 +2296,7 @@
 			"sj_met": 15,
 			"super_mind": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_life_hundunhunpo":1,
 			"frs": 39,
 			"age.max": -19200,
@@ -2221,7 +2328,7 @@
 			"sj_met": 15,
 			"super_mind": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_life_llyhf":1,
 			"frs": 39,
 			"age.max": -12200,
@@ -2253,7 +2360,7 @@
 			"sj_met": 15,
 			"super_mind": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_modaozhiyin":1,
 			"frs": 39
 		}
@@ -2284,7 +2391,7 @@
 			"sj_met": 15,
 			"super_mind": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_wuguangguance":1,
 			"frs": 39
 		}
@@ -2315,7 +2422,7 @@
 			"sj_met": 15,
 			"super_mind": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_life_yeyan":1,
 			"frs": 39
 		}
@@ -2325,7 +2432,7 @@
 		"name": "无光之环(通天阶梯)",
 		"desc": "凝聚无光之环",
 		"tags": "通天阶梯",
-		"require": "g.nolight_mishu>=2  && g.evil>=0",
+		"require": "g.nolight_mishu>=2  && g.evilamt>=0",
 		"max": 2,
 		"cost": {
 			"money": 1000,
@@ -2347,7 +2454,7 @@
 			"sj_met": 15,
 			"super_mind": 4
 		},
-		"result": {
+		"xiulianresult": {
 			"xiulian_wuguangzhihuan":1,
 			"frs": 49,
 			"age.max": -36500,
@@ -2359,7 +2466,7 @@
 		"name": "五环之理(通天阶梯)",
 		"desc": "领悟五环",
 		"tags": "通天阶梯",
-		"require": "g.xiulian_zhuji_wuhuan>=1 && g.evil<=0",
+		"require": "g.xiulian_zhuji_wuhuan>=1 && g.evilamt<=0",
 		"max": 2,
 		"cost": {
 			"lg": 11,
@@ -2377,12 +2484,155 @@
 			"alculation": 50,
 			"star_map_1": 15
 		},
-		"result": {
+		"xiulianresult": {
 			"time": 33,
 			"frs":39,
 			"age.max": -12200,
 			"age": -12200,
 			"xiulian_zhuji_wuhuan_1" : 1
+		}
+	},
+	{
+		"id": "zhuji_benyuan_2",
+		"name": "本源之理(通天阶梯)",
+		"desc": "领悟本源",
+		"tags": "通天阶梯",
+		"require": "g.obelisk>=20 && g.evilamt<=0",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":40,
+			"human_power": 700,
+			"money": 1600,
+			"ganwu": 400,
+			"yqlm": 30,
+			"cbjs": 30,
+			"yxls": 30,
+			"wgys": 30,
+			"zdht": 30,
+			"cbclb": 10,
+			"gwl": 10,
+			"yjdl": 10,
+			"super_mind": 35,
+			"alculation": 50
+		},
+		"xiulianresult": {
+			"time": 33,
+			"frs":39,
+			"age.max": -42200,
+			"age": -42200,
+			"xiulian_zhuji_wuhuan_2" : 1
+		}
+	},
+	{
+		"id": "jihe_fuzajianzhu",
+		"name": "复杂建筑构造(几何)",
+		"desc": "构造复杂建筑",
+		"tags": "几何",
+		"require": "g.htgcx>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"zdht": 20,
+			"shuaibai_core": 5,
+			"human_power": 700,
+			"money": 700,
+			"ganwu": 700,
+			"zero_crystal": 30,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 5,
+			"life_crystal": 3
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_jihe_fuzajianzhu":1
+		}
+	},
+	{
+		"id": "jihe_fansheliut",
+		"name": "反射性物质流通(几何)",
+		"desc": "",
+		"tags": "几何",
+		"require": "g.htgcx>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"zdht": 20,
+			"shuaibai_core": 10,
+			"human_power": 700,
+			"money": 500,
+			"ganwu": 400,
+			"zero_crystal": 30,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 2,
+			"life_crystal": 1
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_jihe_fansheliut":1
+		}
+	},
+	{
+		"id": "siwei_bzhpx",
+		"name": "标准化培训(思维)",
+		"desc": "对人力进行标准化思维培训",
+		"tags": "思维",
+		"require": "g.htgcx>=4 && g.siwei_qtswyj",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"zdht": 20,
+			"yqlm": 10,
+			"shuaibai_core": 10,
+			"human_power": 700,
+			"money": 1000,
+			"ganwu": 500,
+			"zero_crystal": 30,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 2,
+			"life_crystal": 1
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_siwei_bzhpx":1
+		}
+	},
+	{
+		"id": "jizhun_fl",
+		"name": "风灵(路径)",
+		"desc": "如风一般[30岁前完成了筑基]",
+		"tags": "路径",
+		"require": "g.time<=10950 && g.xiulian_zhuji_2>=1",
+		"max": 2,
+		"cost": {
+			"heli":1
+		},
+		"xiulianresult": {
+			"age.max":-10950,
+			"age":-10950,
+			"heli.max": -2,
+			"heli.rate": -0.5
+		}
+	},
+	{
+		"id": "jizhun_luyuan",
+		"name": "路远(路径)",
+		"desc": "昼夜[60-90岁前完成了筑基]",
+		"tags": "路径",
+		"require": "g.time>=21900 && g.time<=32850 && g.xiulian_zhuji_2>=1",
+		"max": 2,
+		"cost": {
+			"heli":1
+		},
+		"xiulianresult": {
+			"age.max":-18250,
+			"age":-18250
 		}
 	}
 ]

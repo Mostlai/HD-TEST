@@ -1510,7 +1510,7 @@
 		"cost":{
           "ganwu": 30
 		},
-		"result": {
+		"xiulianresult": {
 			"gyl.rate":-0.05,
 			"hide_gyl_xiulian_jichu_1": 1
 		}
@@ -1526,7 +1526,7 @@
 					"ganwu": 30,
 					"books": 2
 				},
-			"result": {
+			"xiulianresult": {
 				"gyl.rate":-0.05,
 				"gyl.max":-1,
 				"hide_gyl_xiulian_jichu_2": 1
@@ -1543,7 +1543,7 @@
 				"ganwu": 30,
 				"books": 2
 				},
-			"result": {
+			"xiulianresult": {
 				"gyl.rate":-0.05,
 				"gyl.max":-1,
 				"hide_gyl_yingxiang_1":1,
@@ -1563,7 +1563,7 @@
 				"books": 4,
 				"stamina":5
 				},
-			"result": {
+			"xiulianresult": {
 				"gyl.rate":-0.05,
 				"gyl.max":-1,
 				"hide_gyl_baope_2": 1,

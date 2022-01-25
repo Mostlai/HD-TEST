@@ -340,10 +340,52 @@
 		]
 	},
 	{
+		"id": "zxzc",
+		"name": "中型战场",
+		"desc": "曾经发生战争",
+		"require": "evt_zxzc",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"zero_crystal": 7,
+			"lxue": 5
+		},
+		"boss": "xiantianzhuji",
+		"spawns": [
+			[
+				"m_solid_2",
+				"m_solid_2",
+				"m_solid_2"
+			],
+			[
+				"m_solid_2",
+				"m_solid_3"
+			],
+			[
+				"xiantianzhuji",
+				"m_solid_4"
+			],
+			"xiantianzhuji",
+			"m_solid_3",
+			"m_solid_4",
+			[
+				"m_solid_3",
+				"m_solid_4"
+			]
+		]
+	},
+	{
 		"id": "zhujijie",
-		"name": "筑基劫[五环-普通]",
+		"name": "五环之劫[五环-普通]",
 		"sym": "☯⚡",
-		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-命玄】前置",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-命玄】前置。【如果通关了则无法进入[本源劫]】",
 		"require": "evt_zjztj",
 		"title": "应劫者",
 		"max": 1,
@@ -362,6 +404,43 @@
 			"huojie_1",
 			"tujie_1",
 			"jinjie_1"
+		]
+	},
+	{
+		"id": "zhujijie_1",
+		"name": "本源之劫[五环-困难]",
+		"sym": "☯⚡",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-破道】前置",
+		"require": "evt_benyuanjie",
+		"title": "破劫者",
+		"max": 1,
+		"dist":1,
+		"level": 30,
+		"length": 4,
+		"run": {
+			"time": -10
+		},
+		"result": {
+			"zhuji_tianjie_3": 1
+		},
+		"boss": "zhenyang",
+		"spawns": [
+			[
+				"wuxiangmo",
+				"wuxiangling"
+			],
+			[
+				"mujie_1",
+				"huojie_1"
+			],
+			[
+				"tujie_1",
+				"jinjie_1"
+			],
+			[
+				"huojie_1",
+				"shuijie_1"
+			]
 		]
 	},
 	{

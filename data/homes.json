@@ -124,6 +124,94 @@
 		"flavor": "似梦幻泡影"
 	},
 	{
+		"id": "wuguangjieta",
+		"name": "无光界塔",
+		"desc": "高耸的尖塔,无光技术",
+		"require": "g.nolight_mishu>=1",
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"cold_core": 20,
+			"jls": 30,
+			"money": 1200,
+			"ganwu": 590,
+			"sj_met": 10,
+			"heli": 12,
+			"tian": 10,
+			"super_mind": 20,
+			"alculation": 300,
+			"human_power": 500,
+			"zero_crystal": 37,
+			"nolight_core": 10,
+			"shuaibai_core": 10,
+			"paper": 50,
+			"exe_paper": 12
+		},
+		"mod": {
+			"money.max": 100,
+			"space.max": 130,
+			"shuaibai_core.rate":0.01,
+			"nolight_core.rate": 0.01
+		}
+	},
+	{
+		"id": "jielouge",
+		"name": "界楼阁",
+		"desc": "五步一楼,十步一阁",
+		"require": "g.design_sand>=1 && g.design_core>=1",
+		"cost": {
+			"lg": 30,
+			"dirty_lingti": 10,
+			"cold_core": 20,
+			"money": 1700,
+			"ganwu": 590,
+			"sj_met": 10,
+			"heli": 12,
+			"tian": 10,
+			"super_mind": 20,
+			"alculation": 400,
+			"human_power": 900,
+			"zero_crystal": 37,
+			"shuaibai_core": 10,
+			"paper": 50,
+			"exe_paper": 12
+		},
+		"mod": {
+			"money.max": 100,
+			"space.max": 140,
+			"exe_paper.rate":0.6,
+			"dirty_lingti.rate": 0.2
+		}
+	},
+	{
+		"id": "huangquanju",
+		"name": "黄泉居",
+		"desc": "居于黄泉",
+		"require": "g.design_sand>=1 && g.design_core>=1",
+		"cost": {
+			"lg": 30,
+			"dirty_lingti": 10,
+			"cold_core": 20,
+			"money": 1700,
+			"ganwu": 590,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"super_mind": 20,
+			"alculation": 400,
+			"human_power": 900,
+			"zero_crystal": 37,
+			"shuaibai_core": 10,
+			"paper": 50,
+			"exe_paper": 12
+		},
+		"mod": {
+			"money.max": 100,
+			"space.max": 140,
+			"lxue.rate":0.07,
+			"shuaibai_core.rate": 0.06
+		}
+	},
+	{
 		"id": "earthspire",
 		"name": "earthen spire",
 		"desc": "An impervious spire of metal and stone.",

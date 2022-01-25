@@ -716,7 +716,7 @@
 		"desc": "秘法启示",
 		"require": "g.wuguangkexue>=1",
 		"slot": "mount",
-		"tags": "steed",
+		"tags": "",
 		"buy": {
 			"lg": 7,
 			"money": 180,
@@ -734,6 +734,112 @@
 			"hp.max": 5,
 			"chaos.rate": 0.3,
 			"shuaibai.rate": 0.05
+		}
+	},
+	{
+		"id": "yuanquanlinglu",
+		"name": "源泉灵鹿",
+		"desc": "一只小鹿",
+		"require": "g.yqlife>=4",
+		"slot": "mount",
+		"tags": "",
+		"buy": {
+			"lg": 12,
+			"money": 600,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"cold_core":20,
+			"yqlm": 10,
+			"sj_met": 5,
+			"star_map_1": 10,
+			"tian": 5,
+			"human_power": 500
+		},
+		"mod": {
+			"dist": 70,
+			"hp.max": 5,
+			"heli.rate": 0.3,
+			"shuaibai.rate": -0.05
+		}
+	},
+	{
+		"id": "wugoulinggui",
+		"name": "无垢灵龟",
+		"desc": "晶莹,长生",
+		"require": "g.htgcx>=4 && g.jsnlx>=4",
+		"slot": "mount",
+		"tags": "",
+		"buy": {
+			"lg": 12,
+			"money": 1200,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"cold_core":20,
+			"zdht": 20,
+			"wgys": 30,
+			"sj_met": 15,
+			"star_map_1": 10,
+			"tian": 10,
+			"human_power": 700
+		},
+		"mod": {
+			"dist": 65,
+			"age.max": 21900,
+			"age": 21900,
+			"self.speed": -3,
+			"hp.max": -5,
+			"shuaibai.rate": -0.1
+		}
+	},
+	{
+		"id": "mingyu",
+		"name": "冥鱼",
+		"desc": "若隐若现",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.xiulian_jihe_fansheliut>=1",
+		"slot": "mount",
+		"tags": "",
+		"buy": {
+			"lg": 12,
+			"money": 1200,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"cold_core":20,
+			"zdht": 30,
+			"sj_met": 15,
+			"star_map_1": 10,
+			"tian": 10,
+			"human_power": 700
+		},
+		"mod": {
+			"dist": 65,
+			"space.max": 50,
+			"hp.rate": -1,
+			"hp.max": -10,
+			"shuaibai.rate": 0.1
+		}
+	},
+	{
+		"id": "btzh",
+		"name": "败体转魂",
+		"desc": "转换体力为寿命",
+		"require": "g.xiulian_jihe_fansheliut>=1",
+		"warn": true,
+		"max": 4,
+		"cost": {
+			"lg": 12,
+			"money": 500,
+			"super_mind":30,
+			"shuaibai_core":2,
+			"cold_core":20,
+			"zdht": 30,
+			"sj_met": 15,
+			"tian": 10,
+			"human_power": 700
+		},
+		"mod": {
+			"tili.max": -3,
+			"age.max": 14600,
+			"age": 14600
 		}
 	},
 	{
@@ -756,6 +862,54 @@
 		},
 		"mod": {
 			"human_power.max": 20
+		}
+	},
+	{
+		"id": "sskz_1",
+		"name": "神识扩展",
+		"desc": "扩展神识上限",
+		"require": "g.xiulian_siwei_qtswyj>=1",
+		"max": 1,
+		"cost": {
+			"lg": 12,
+			"money": 600,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"cold_core":20,
+			"yqlm": 20,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"tian": 10,
+			"human_power": 700
+		},
+		"mod": {
+			"shenshi.max": 3
+		}
+	},
+	{
+		"id": "lgkz_1",
+		"name": "灵光拓展",
+		"desc": "扩展灵光上限",
+		"require": "g.xiulian_siwei_gljz>=1",
+		"max": 1,
+		"cost": {
+			"lg": 12,
+			"money": 600,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"cold_core":20,
+			"yqlm": 20,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"tian": 10,
+			"human_power": 500
+		},
+		"mod": {
+			"lg.max": 10
 		}
 	},
 	{
@@ -968,7 +1122,7 @@
 			"ganwu": 130
 		},
 		"mod":{
-			"evil": 20,
+			"evilamt": 20,
 			"frs": 29,
 			"mimouxue.max": 5,
 			"hp.rate": 0.1
@@ -994,7 +1148,7 @@
 			"ganwu": 130
 		},
 		"mod":{
-			"evil": 30,
+			"evilamt": 30,
 			"frs": 49,
 			"dirty_core.max": 10,
 			"hp.rate": 0.1
@@ -1223,6 +1377,61 @@
 		}
 	},
 	{
+		"id": "dixiashikuozhan",
+		"name": "地下室扩展",
+		"desc": "拓展地下室",
+		"require": "g.htgcx>=3",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"money": 1200,
+			"super_mind": 20,
+			"alculation": 400,
+			"human_power": 700,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"super_mind": 5,
+			"zero_crystal":15,
+			"sj_met": 15,
+			"paper": 100,
+			"books": 14,
+			"exe_paper": 16,
+			"ganwu": 300
+		},
+		"mod":{
+			"frs":19,
+			"space.max": 30
+		}
+	},
+	{
+		"id": "pingyuankaifa",
+		"name": "平原开发",
+		"desc": "开发一块平原",
+		"require": "g.design_sand>=1 && g.design_core>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"money": 1500,
+			"super_mind": 20,
+			"alculation": 400,
+			"human_power": 700,
+			"cold_core": 20,
+			"super_mind": 20,
+			"zero_crystal":35,
+			"sj_met": 15,
+			"paper": 100,
+			"books": 14,
+			"exe_paper": 16,
+			"ganwu": 300
+		},
+		"mod":{
+			"frs":39,
+			"space.max": 50
+		}
+	},
+	{
 		"id": "fclkz",
 		"name": "反材料扩展",
 		"desc": "更有效的存储反材料工具",
@@ -1402,6 +1611,33 @@
 		}
 	},
 	{
+		"id": "jyzlsj",
+		"name": "经验转录",
+		"desc": "将感悟转化为经验记录",
+		"require": "g.fanshe_liuti>=3",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"ganwu": 450,
+			"super_mind": 9,
+			"human_power": 210,
+			"cold_core": 10,
+			"lxue": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"life_crystal": 4,
+			"star_map": 70,
+			"paper": 40,
+			"books": 6,
+			"exe_paper": 16
+		},
+		"mod":{
+			"exe_paper.rate":0.6
+		}
+	},
+	{
 		"id": "qmzm",
 		"name": "清明之梦",
 		"desc": "在梦境中保持清醒",
@@ -1532,7 +1768,7 @@
 			"exe_paper": 50
 		},
 		"mod":{
-			"evil": 25,
+			"evilamt": 25,
 			"hp.rate":0.5,
 			"heli.max": -10,
 			"chaos.max": 5,
@@ -1546,7 +1782,7 @@
 		"tags": "t1,wood",
 		"slot": "honorific",
 		"desc": "渡己渡人。自未得渡而渡人者，又自渡生死苦海，而又渡人。",
-		"require": "g.evil<=0&&g.yqlife>=5",
+		"require": "g.evilamt<=0&&g.yqlife>=5",
 		"buy": {
 			"lg": 12,
 			"jihun":1,
@@ -1582,7 +1818,7 @@
 		"tags": "t1,gold",
 		"slot": "honorific",
 		"desc": "溺爱黄金,心之苦酸",
-		"require": "g.evil<=0&&g.jjclx>=5",
+		"require": "g.evilamt<=0&&g.jjclx>=5",
 		"buy": {
 			"lg": 12,
 			"jihun":1,
@@ -1617,7 +1853,7 @@
 		"tags": "t1,fire",
 		"slot": "honorific",
 		"desc": "(火中做自己)",
-		"require": "g.evil<=0&&g.gwwlx>=5",
+		"require": "g.evilamt<=0&&g.gwwlx>=5",
 		"buy": {
 			"lg": 12,
 			"jihun":1,
@@ -1652,7 +1888,7 @@
 		"tags": "t1,water",
 		"slot": "honorific",
 		"desc": "浪中逐电",
-		"require": "g.evil<=0&&g.jsnlx>=5",
+		"require": "g.evilamt<=0&&g.jsnlx>=5",
 		"buy": {
 			"lg": 12,
 			"jihun":1,
@@ -1687,7 +1923,7 @@
 		"tags": "t1,land",
 		"slot": "honorific",
 		"desc": "沉重",
-		"require": "g.evil<=0&&g.htgcx>=5",
+		"require": "g.evilamt<=0&&g.htgcx>=5",
 		"buy": {
 			"lg": 12,
 			"jihun":1,
@@ -1861,6 +2097,39 @@
 			"chaos.max": -5,
 			"chaos.rate": -0.5,
 			"shenshi.max": -2
+		}
+	},
+	{
+		"id": "glzd",
+		"name": "官僚制度",
+		"desc": "授予官位和俸禄来管理辖地",
+		"warn": true,
+		"require": "g.shehuixue>=4",
+		"max": 1,
+		"cost": {
+			"lg": 20,
+			"jls":50,
+			"human_power": 900,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 5,
+			"books": 30,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1800,
+			"ganwu": 770,
+			"yqlm": 20,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"alculation": 50,
+			"star_map_1": 10
+		},
+		"mod":{
+			"frs": 29,
+			"money.rate": -1,
+			"conquer_0.max": 10,
+			"conquer_3.max": 3
 		}
 	},
 	{

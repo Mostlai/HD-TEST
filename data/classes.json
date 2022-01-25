@@ -183,6 +183,7 @@
 		"actdesc": "五环下的求知者",
 		"disable": [
 			"wuguangxuezhe",
+			"benyuanxuezhe",
 			"murder_pl",
 			"huibang",
 			"xueyuantouqie",
@@ -214,12 +215,51 @@
 		}
 	},
 	{
+		"id": "benyuanxuezhe",
+		"name": "本源学者",
+		"desc": "本源下的求知者",
+		"actname": "本源学者",
+		"actdesc": "本源下的求知者",
+		"disable": [
+			"wuguangxuezhe",
+			"wuhuanxuezhe",
+			"murder_pl",
+			"huibang",
+			"xueyuantouqie",
+			"nolight_mishu",
+			"nolight_core"
+		],
+		"require": "g.xiulian_zhuji_wuhuan_2>=1",
+		"warn": true,
+		"cost": {
+			"yjdl": 10,
+			"gwl": 10,
+			"super_mind": 35,
+			"books": 9,
+			"ganwu": 380,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"zero_crystal": 20,
+			"snp_data": 21,
+			"money": 1600
+		},
+		"result": {
+			"zero_crystal.rate": 0.1,
+			"ganwu.rate": 2,
+			"exe_paper.rate": 0.1
+		}
+	},
+	{
 		"id": "wuguangxuezhe",
 		"name": "落日学者",
 		"desc": "深夜下的求知者",
 		"actname": "落日学者",
 		"actdesc": "深夜下的求知者",
-		"disable": "wuhuanxuezhe",
+		"disable": [
+			"wuhuanxuezhe",
+			"benyuanxuezhe"
+		],
 		"require": "g.xiulian_wuguangzhihuan>=1",
 		"warn": true,
 		"cost": {

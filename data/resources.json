@@ -331,6 +331,19 @@
 		}
 	},
 	{
+		"id": "shenglingshi",
+		"name": "生灵石",
+		"desc": "大规模战争留下的神秘物质",
+		"group": "精华",
+		"tags": "",
+		"max": 20,
+		"require": "g.shenglingshi>=1",
+		"mod": {
+			"f_power.max": 10,
+			"f_power":10
+		}
+	},
+	{
 		"id": "snp_data",
 		"name": "测绘资料",
 		"desc": "对自然结构的测绘资料,对于研究很有帮助",
@@ -425,8 +438,18 @@
 		"max": 1
 	},
 	{
+		"id": "zhuji_tianjie_3",
+		"name": "命玄-破道",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
 		"id": "zhuji_tianjie_2",
-		"name": "命玄-落日",
+		"name": "落日-真魂",
 		"desc": "",
 		"hide": true,
 		"group": "修行",
@@ -1129,6 +1152,26 @@
 		"max": 1
 	},
 	{
+		"id": "xiulian_siwei_gljz",
+		"name": "管理机制",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_xxh_mtcb",
+		"name": "媒体传播",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
 		"id": "xiulian_eye_huangquan",
 		"name": "黄泉视野",
 		"desc": "",
@@ -1247,6 +1290,46 @@
 	{
 		"id": "xiulian_zhuji_wuhuan_1",
 		"name": "五环之理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_zhuji_wuhuan_2",
+		"name": "本源之理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jihe_fuzajianzhu",
+		"name": "复杂建筑构造",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jihe_fansheliut",
+		"name": "反射性物质流通",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_siwei_bzhpx",
+		"name": "标准化培训",
 		"desc": "",
 		"hide": true,
 		"group": "修行",
@@ -1697,6 +1780,25 @@
 		"name": "战斗评级",
 		"val":1,
 		"max": 100000000000000000000000000000
+	},
+	{
+		"id": "f_stress",
+		"desc": "战斗压迫指的是其他大型集团力量对你产生的压迫力",
+		"flavor": "钢铁是没有主人的",
+		"hide": true,
+		"locked":false,
+		"name": "战斗压迫",
+		"val":0,
+		"max": 10,
+		"mod":{
+			"shuaibai.rate": 0.1,
+			"self.resist.chaos": -2,
+			"self.resist.heli": -2,
+			"self.speed": -1,
+			"hp.max": -2,
+			"heli.max": -2,
+			"chaos.max": -2
+		}
 	},
 	{
 		"id": "f_area",

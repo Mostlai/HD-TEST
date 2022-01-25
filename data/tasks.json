@@ -914,6 +914,30 @@
 		}
 	},
 	{
+		"id": "xssls",
+		"name": "吸收生灵石",
+		"desc": "吸收生灵石中的能量",
+		"verb": "吸收",
+		"require": "g.shenglingshi>=1",
+		"max": 10,
+		"length": 30,
+		"cost": {
+			"money": 800,
+			"ganwu": 500,
+			"heli": 20,
+			"tili": 20,
+			"zero_crystal": 20,
+			"shenglingshi": 1
+		},
+		"run": {
+			"time": -0.01
+		},
+		"result": {
+			"age.max": 900,
+			"age": 900
+		}
+	},
+	{
 		"id": "underground_1",
 		"name": "地下空间",
 		"desc": "挖掘地下来扩展可建造面积",
@@ -969,7 +993,7 @@
 	{
 		"id": "huanjweihu",
 		"name": "环境维护",
-		"desc": "对周围环境进行治理",
+		"desc": "对周围环境进行治理[需要进行50次]",
 		"verb": "",
 		"require": "g.hjgz>=1",
 		"cost": {
@@ -1075,7 +1099,7 @@
 		"name": "毁谤",
 		"desc": "毁谤他人的名誉",
 		"verb": "",
-		"require": "g.evil>10",
+		"require": "g.evilamt>10",
 		"cost": {
 			"tili": 2,
 			"stamina": 0.4
@@ -1091,7 +1115,7 @@
 		"name": "窃密",
 		"desc": "窃取禁忌之密",
 		"verb": "",
-		"require": "g.evil>50 && g.chaos>=2",
+		"require": "g.evilamt>50 && g.chaos>=2",
 		"need": "g.runner.hasType('skill')",
 		"every": {
 			"50": {

@@ -205,6 +205,69 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "ninghuomianjiu",
+		"name": "凝火面具[AL]",
+		"desc": "燃烧之眼",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "head",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.fire": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "ninghuopijian",
+		"name": "凝火披肩[AL]",
+		"desc": "大火",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "back",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.fire": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "ninghuosuyao",
+		"name": "凝火束腰[AL]",
+		"desc": "大火",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "waist",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.fire": 4,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "tian_chest",
 		"name": "钛合装甲[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -251,6 +314,27 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "zidianjing",
+		"name": "紫电镜[AL]",
+		"desc": "奔腾如雷",
+		"equneed":"g.AL>=1",
+		"armor": 15,
+		"slot": "chest",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 10,
+				"self.resist.water": 12,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -2
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "tian_shins",
 		"name": "钛合护腿[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -289,6 +373,48 @@
 			"mod": {
 				"f_power": 7,
 				"self.resist.chaos": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "zidianta",
+		"name": "紫电踏[AL]",
+		"desc": "奔腾如雷",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "shins",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.water": 8,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "zidianci",
+		"name": "紫电刺[AL]",
+		"desc": "奔腾如雷",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "hands",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.water": 7,
 				"shenshi.max": -1,
 				"elect.max": -3,
 				"elect.rate": -1

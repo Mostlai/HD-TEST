@@ -152,6 +152,66 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "yanghuodadoa",
+		"name": "阳火大刀[AL]",
+		"desc": "炽热气息",
+		"equneed":"g.AL>=1",
+		"slot": "hands",
+		"material": "yangxi",
+		"enchants": 2,
+		"attack": {
+			"name": "阳火",
+			"kind": "fire",
+			"damage": "27~30",
+			"dot": {
+				"duration": 20,
+				"dmg": "5~6",
+				"name": "阳火",
+				"kind": "fire"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.fire": 5,
+				"self.resist.water": 5,
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 30,
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "zhenchanjian",
+		"name": "震颤剑[AL]",
+		"desc": "",
+		"equneed":"g.AL>=1",
+		"slot": "hands",
+		"material": "chubai",
+		"enchants": 2,
+		"attack": {
+			"name": "纯白打击",
+			"kind": "gold",
+			"damage": "24~27",
+			"dot": {
+				"duration": 20,
+				"dmg": "5~6",
+				"name": "纯白",
+				"kind": "gold"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.gold": 5,
+				"self.resist.wood": 5,
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 30,
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "base_zd",
 		"name": "紫电[BASE]",
 		"desc": "附着高能电流的巨大直剑",

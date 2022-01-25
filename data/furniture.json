@@ -543,11 +543,11 @@
 		},
 		"mod": {
 			"alculation.max": -20,
-			"human_power.max": -20,
-			"heli.max":2.5,
-			"chaos.max":2.5,
-			"heli.rate": 1,
-			"chaos.rate": 1,
+			"human_power.max": -50,
+			"heli.max":2,
+			"chaos.max":2,
+			"heli.rate": 0.5,
+			"chaos.rate": 0.5,
 			"space": 6
 		}
 	},
@@ -1337,6 +1337,385 @@
 		}
 	},
 	{
+		"id": "syxfc",
+		"name": "实验性方寸",
+		"desc": "神奇的结构,能扩展地板面积",
+		"tags": "",
+		"max":2,
+		"require": "g.htgcx>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 20,
+			"cbjs": 20,
+			"yqlm": 20,
+			"lg": 20,
+			"cold_core": 30,
+			"jls":50,
+			"zero_crystal": 50,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 20,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"space": -10
+		}
+	},
+	{
+		"id": "syxjz",
+		"name": "实验性芥子",
+		"desc": "神奇的结构,能扩展地板面积",
+		"tags": "",
+		"max":2,
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.xiulian_jihe_fansheliut>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 20,
+			"cbjs": 20,
+			"yqlm": 20,
+			"lg": 20,
+			"cold_core": 30,
+			"jls":50,
+			"zero_crystal": 50,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 20,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"space": -25
+		}
+	},
+	{
+		"id": "sjztsmall",
+		"name": "设计总台",
+		"desc": "工程设计的总工作台",
+		"tags": "design_core",
+		"max":2,
+		"require": "g.xiulian_jihe_fuzajianzhu>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 20,
+			"lg": 20,
+			"cold_core": 20,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 20,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"space": 10
+		}
+	},
+	{
+		"id": "lingtishahe",
+		"name": "灵体沙盒",
+		"desc": "灵体沙盒能帮助建造复杂建筑",
+		"tags": "design_sand",
+		"max":2,
+		"require": "g.xiulian_siwei_bzhpx>=1 && g.xiulian_jihe_fansheliut>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 20,
+			"lg": 20,
+			"cold_core": 20,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 20,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"space": 5
+		}
+	},
+	{
+		"id": "twenty_sorce",
+		"name": "20-10配电器",
+		"desc": "能稳定提供20V级电源和10V级电源",
+		"tags": "TENTYV,TENV",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 5,
+			"wgys": 10,
+			"dirty_lingti": 10,
+			"zero_crystal": 29,
+			"super_mind": 5,
+			"alculation": 50,
+			"human_power": 80,
+			"paper": 40,
+			"elect":30,
+			"snp_data": 12,
+			"tian": 10,
+			"iron_copper": 10,
+			"exe_paper": 10,
+			"sj_met": 9,
+			"money": 520
+		},
+		"mod": {
+			"elect.max":-2,
+			"elect.rate": -1,
+			"space": 10
+		}
+	},
+	{
+		"id": "zhuansifatan",
+		"name": "转死法坛",
+		"desc": "与向死法坛不同的是,这个装置尽力避免你走向死亡。当然这是有副作用的",
+		"tags": "",
+		"max":1,
+		"require": "g.xiulian_jihe_fuzajianzhu>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 30,
+			"lg": 20,
+			"cold_core": 20,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 20,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"hp.rate": 3,
+			"shuaibai.rate": 0.3,
+			"space": 2
+		}
+	},
+	{
+		"id": "lingxuefangjianbei",
+		"name": "灵血方尖碑",
+		"desc": "灵血方尖碑是为了延长寿命而修建的,他也属于一种方尖碑。当然这是有副作用的",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.xiulian_jihe_fuzajianzhu>=1",
+		"repeat": true,
+		"cost": {
+			"lxue": 10,
+			"zdht": 20,
+			"cbjs": 20,
+			"lg": 20,
+			"cold_core": 20,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 10,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"age.max": 14600,
+			"age": 14600,
+			"shuaibai.rate": 0.3,
+			"space": 1
+		}
+	},
+	{
+		"id": "zhanhuofangjianbei",
+		"name": "战火方尖碑",
+		"desc": "战火方尖碑显示了你的功绩,当然他也属于一种方尖碑。",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.shenglingshi>=1",
+		"repeat": true,
+		"cost": {
+			"shenglingshi": 1,
+			"yqlm": 5,
+			"lxue": 10,
+			"lg": 20,
+			"cold_core": 20,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"tian": 10,
+			"exe_paper": 30,
+			"money": 800
+		},
+		"mod": {
+			"f_power.max": 10,
+			"f_power":10,
+			"age.max": 14600,
+			"age": 14600,
+			"shuaibai.rate": -0.1,
+			"space": 1
+		}
+	},
+	{
+		"id": "chunbaiobelisk",
+		"name": "纯白方尖碑",
+		"desc": "纯白方尖碑指向坚硬的金属,当然他也属于一种方尖碑。",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.design_sand>=1 && g.design_core>=1 && g.cbclb>=1",
+		"repeat": true,
+		"cost": {
+			"cbclb": 20,
+			"lxue": 10,
+			"lg": 20,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"jls":50,
+			"zero_crystal": 20,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"self.defense": 2,
+			"shuaibai.rate": -0.1,
+			"space": 2
+		}
+	},
+	{
+		"id": "ciliuobelisk",
+		"name": "磁流方尖碑",
+		"desc": "磁流方尖碑产生大量的电能,当然他也属于一种方尖碑。",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.design_sand>=1 && g.design_core>=1 && g.yjdl>=1",
+		"repeat": true,
+		"cost": {
+			"yjdl": 10,
+			"cbclb": 20,
+			"lxue": 10,
+			"lg": 20,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"jls":50,
+			"zero_crystal": 15,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"elect.rate": 3,
+			"elect.max": 1,
+			"shuaibai.rate": -0.1,
+			"space": 2
+		}
+	},
+	{
+		"id": "cireobelisk",
+		"name": "炽热方尖碑",
+		"desc": "炽热方尖碑周围的十几米都高达几百度,当然他也属于一种方尖碑。",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.design_sand>=1 && g.design_core>=1 && g.gwl>=1",
+		"repeat": true,
+		"cost": {
+			"gwl": 10,
+			"cbclb": 20,
+			"lxue": 10,
+			"lg": 20,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"jls":50,
+			"zero_crystal": 15,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"exe_paper": 30,
+			"money": 1500
+		},
+		"mod": {
+			"age.max": 4600,
+			"age": 4600,
+			"shuaibai.rate": -0.1,
+			"space": 2
+		}
+	},
+	{
+		"id": "jiaoganobelisk",
+		"name": "交感方尖碑",
+		"desc": "交感方尖碑进一步扩展神识,当然他也属于一种方尖碑。",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.design_sand>=1 && g.design_core>=1 && g.xiulian_zhuji_lizhu_znss>=1",
+		"repeat": true,
+		"cost": {
+			"shenshi": 7,
+			"lg": 20,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"jls":50,
+			"zero_crystal": 10,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"exe_paper": 30,
+			"money": 700
+		},
+		"mod": {
+			"shenshi.max": 1,
+			"shuaibai.rate": -0.1,
+			"space": 2
+		}
+	},
+	{
+		"id": "jieziobelisk",
+		"name": "芥子方尖碑",
+		"desc": "芥子方尖碑是一种能扩展面积的结构,当然他也属于一种方尖碑。",
+		"tags": "obelisk",
+		"max":5,
+		"require": "g.design_sand>=1 && g.design_core>=1",
+		"repeat": true,
+		"cost": {
+			"zdht": 3,
+			"shenshi": 7,
+			"lg": 20,
+			"cold_core": 10,
+			"jls":50,
+			"zero_crystal": 10,
+			"super_mind": 30,
+			"alculation": 400,
+			"human_power": 800,
+			"paper": 100,
+			"exe_paper": 30,
+			"money": 700
+		},
+		"mod": {
+			"space": -2
+		}
+	},
+	{
 		"id": "cbclbwg",
 		"name": "材料包网格",
 		"desc": "派遣专人管理并大量存储材料包",
@@ -1503,6 +1882,31 @@
 			"lxue.rate": 0.01,
 			"shuaibai_core.rate": 0.01,
 			"space": 10
+		}
+	},
+	{
+		"id": "caliaocuncx",
+		"name": "材料存储箱",
+		"desc": "较大的金属箱子",
+		"tags": "",
+		"require": "g.xiulian_struct_fenxi>=1",
+		"repeat": true,
+		"cost": {
+			"cbjs": 2,
+			"cu_copper": 30,
+			"cu_iron": 30,
+			"iron_copper": 10,
+			"tian": 5,
+			"paper": 100,
+			"money": 500
+		},
+		"mod": {
+			"cu_iron.max": 30,
+			"cu_copper.max":30,
+			"iron_copper.max":10,
+			"sj_met": 5,
+			"tian": 10,
+			"space": 5
 		}
 	},
 	{

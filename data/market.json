@@ -269,6 +269,84 @@
 		}
 	},
 	{
+		"id": "market_nmhmj",
+		"name": "凝火面具[AL-头盔]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"lg": 11,
+			"gwl": 10,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"ninghuomianjiu": "100%"
+		}
+	},
+	{
+		"id": "market_nmpj",
+		"name": "凝火披肩[AL-背部]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"lg": 11,
+			"gwl": 10,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"ninghuopijian": "100%"
+		}
+	},
+	{
+		"id": "market_nmsy",
+		"name": "凝火束腰[AL-腰部]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"lg": 11,
+			"gwl": 10,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"ninghuosuyao": "100%"
+		}
+	},
+	{
 		"id": "market_tianc",
 		"name": "钛合装甲[BASE]",
 		"require": "g.sjkzl>=1",
@@ -319,6 +397,31 @@
 		},
 		"loot": {
 			"wuyuejing": "100%"
+		}
+	},
+	{
+		"id": "market_zidianj",
+		"name": "紫电明镜[AL-护甲]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
+		"cost": {
+			"lg": 11,
+			"yjdl": 10,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"zidianjing": "100%"
 		}
 	},
 	{
@@ -375,6 +478,31 @@
 		}
 	},
 	{
+		"id": "market_zidianta",
+		"name": "紫电踏[AL-护腿]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
+		"cost": {
+			"lg": 11,
+			"yjdl": 7,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 14
+		},
+		"loot": {
+			"zidianta": "100%"
+		}
+	},
+	{
 		"id": "market_tianf",
 		"name": "钛合护足[BASE]",
 		"require": "g.sjkzl>=1",
@@ -428,6 +556,32 @@
 		}
 	},
 	{
+		"id": "market_zdianci",
+		"name": "紫电刺[AL-护手]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
+		"cost": {
+			"yjdl": 10,
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"super_mind": 20,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"zidianci": "100%"
+		}
+	},
+	{
 		"id": "market_wuyuemijian",
 		"name": "无月秘剑[AL-武器]",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
@@ -452,6 +606,53 @@
 		},
 		"loot": {
 			"wuyuemijian": "100%"
+		}
+	},
+	{
+		"id": "market_yhdd",
+		"name": "阳火大刀[AL-武器]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"gwl": 10,
+			"cbclb": 2,
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 7,
+			"super_mind": 20,
+			"exe_paper": 16
+		},
+		"loot": {
+			"yanghuodadoa": "100%"
+		}
+	},
+	{
+		"id": "market_zhenchanjian",
+		"name": "震颤剑[AL-武器]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.cbclb>=1",
+		"cost": {
+			"cbclb": 10,
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 10,
+			"super_mind": 20,
+			"exe_paper": 16
+		},
+		"loot": {
+			"zhenchanjian": "100%"
 		}
 	},
 	{

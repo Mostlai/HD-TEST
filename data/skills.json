@@ -997,6 +997,37 @@
 		}
 	},
 	{
+		"id": "shehuixue",
+		"name": "社会学",
+		"require": "g.xiulian_siwei_gljz>=1",
+		"level": 10,
+		"desc": "社会科学",
+		"buy": {
+			"money": 1000,
+			"ganwu": 430,
+			"yqlm": 20,
+			"super_mind": 20,
+			"lxue": 10,
+			"star_map_1": 5
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"yqlm": 0.3,
+			"ganwu": 1,
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"shenshi_4.max": 0.5,
+			"conquer_0.max": 2,
+			"conquer_3.max": 1
+		}
+	},
+	{
 		"id": "jjclx",
 		"name": "进阶材料学",
 		"require": "g.cbjs>=5 && g.metal_app>=15",
@@ -1121,7 +1152,7 @@
 	{
 		"id": "mimouxue",
 		"name": "密谋学",
-		"require": "g.evil>=50 && g.shenshi_4>=3",
+		"require": "g.evilamt>=50 && g.shenshi_4>=3",
 		"level": 7,
 		"desc": "秘密的涌动",
 		"buy": {
@@ -1131,14 +1162,14 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"ganwu": 0.3,
 			"tili": 0.5
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {
@@ -1148,7 +1179,7 @@
 	{
 		"id": "wuzhuojieshi",
 		"name": "污浊揭示学",
-		"require": "g.evil>=50 && g.xiulian_bio_dirty_1>=1",
+		"require": "g.evilamt>=50 && g.xiulian_bio_dirty_1>=1",
 		"level": 7,
 		"desc": "揭示污浊中的精华",
 		"buy": {
@@ -1158,7 +1189,7 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"dirty_core": 0.1,
@@ -1166,7 +1197,7 @@
 			"tili": 0.5
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {
@@ -1176,7 +1207,7 @@
 	{
 		"id": "wuhenlingtixue",
 		"name": "污痕灵体学",
-		"require": "g.evil>=50 && g.xiulian_bio_dirty_1>=1",
+		"require": "g.evilamt>=50 && g.xiulian_bio_dirty_1>=1",
 		"level": 7,
 		"desc": "研究灵体",
 		"buy": {
@@ -1186,7 +1217,7 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"dirty_lingti": 0.5,
@@ -1194,7 +1225,7 @@
 			"tili": 0.5
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {
@@ -1215,7 +1246,7 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"shuaibai_core": 0.5,
@@ -1223,7 +1254,7 @@
 			"tili": 0.5
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {
@@ -1244,7 +1275,7 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"dirty_core": 0.5,
@@ -1252,7 +1283,7 @@
 			"tili": 0.5
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {
@@ -1272,7 +1303,7 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"nolight_core": 0.5,
@@ -1280,7 +1311,7 @@
 			"tili": 1
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {
@@ -1301,7 +1332,7 @@
 		},
 		"effect": {
 			"time": 1,
-			"evil": 0.1
+			"evilamt": 0.1
 		},
 		"run": {
 			"nolight_core": 0.5,
@@ -1309,7 +1340,7 @@
 			"tili": 1
 		},
 		"result": {
-			"evil": 3,
+			"evilamt": 3,
 			"sp": 0.1
 		},
 		"mod": {

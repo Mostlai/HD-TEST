@@ -37,7 +37,8 @@
 		"require": "g.chaos>=1",
 		"desc": "混沌让原本可预测的事实变为不可预测,这是一张全新的危险的力量",
 		"result": {
-			"chaos_enchant_1": true
+			"chaos_enchant_1": true,
+			"hundun_missile": true
 		}
 	},
 	{
@@ -83,6 +84,21 @@
 		"name": "侦察员报告",
 		"require": "g.zcx>=1",
 		"desc": "派出的侦察员带了附近地形的报告"
+	},
+	{
+		"id": "evt_ljzhb",
+		"name": "联军压境",
+		"require": "g.xiulian_siwei_qtswyj>=1",
+		"desc": "你的征服行为终将吸引围攻",
+		"result": {
+			"f_stress": 5
+		}
+	},
+	{
+		"id": "evt_zxzc",
+		"name": "中型战场",
+		"require": "g.shenglingshi>=1",
+		"desc": "大战过后"
 	},
 	{
 		"id": "evt_yqlife",
@@ -198,13 +214,31 @@
 		"id": "evt_zjztj",
 		"name": "筑基劫",
 		"require": "g.wuhuanxuezhe>=1",
-		"desc": "领悟五环之力后,你开始感受到天劫即将降临"
+		"desc": "领悟五环之力后,你开始感受到天劫即将降临",
+		"disable":[
+			"wuguangjie_1",
+			"zhujijie_1"
+		]
+	},
+	{
+		"id": "evt_benyuanjie",
+		"name": "本源劫",
+		"require": "g.benyuanxuezhe>=1",
+		"desc": "本源之劫将至....",
+		"disable":[
+			"wuguangjie_1",
+			"zhujijie"
+		]
 	},
 	{
 		"id": "evt_wgsy",
 		"name": "无光劫",
 		"require": "g.wuguangxuezhe>=1",
-		"desc": "无光之劫将至...."
+		"desc": "无光之劫将至....",
+		"disable":[
+			"zhujijie_1",
+			"zhujijie"
+		]
 	},
 	{
 		"id": "evt_scroll",
