@@ -1904,8 +1904,8 @@
 			"cu_iron.max": 30,
 			"cu_copper.max":30,
 			"iron_copper.max":10,
-			"sj_met": 5,
-			"tian": 10,
+			"sj_met.max": 5,
+			"tian.max": 10,
 			"space": 5
 		}
 	},
