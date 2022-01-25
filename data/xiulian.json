@@ -1905,7 +1905,7 @@
 			"tian.max": -10,
 			"sj_met.max": -10,
 			"iron_copper.max":-10,
-			"xiulian_struct_fenxi":1
+			"xiulian_struct_pubian":1
 		}
 	},
 	{
@@ -1913,7 +1913,7 @@
 		"name": "材料组合(物体结构)",
 		"desc": "将多种基本材料打包起来",
 		"tags": "物体结构",
-		"require": "g.xiulian_struct_fenxi>=1 && g.xiulian_struct_fenxi>=1",
+		"require": "g.xiulian_struct_fenxi>=1 && g.xiulian_struct_pubian>=1",
 		"max": 2,
 		"cost": {
 			"lg": 11,
