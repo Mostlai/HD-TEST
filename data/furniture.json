@@ -1560,8 +1560,6 @@
 		"mod": {
 			"f_power.max": 10,
 			"f_power":10,
-			"age.max": 14600,
-			"age": 14600,
 			"shuaibai.rate": -0.1,
 			"space": 1
 		}
@@ -1654,8 +1652,6 @@
 			"money": 1500
 		},
 		"mod": {
-			"age.max": 4600,
-			"age": 4600,
 			"shuaibai.rate": -0.1,
 			"space": 2
 		}
