@@ -1071,6 +1071,7 @@
 			"time": -1
 		},
 		"result": {
+			"yjdl": 1,
 			"jsnlx.max": 0.1,
 			"jsnlx.exp": 20
 		}
