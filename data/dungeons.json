@@ -393,7 +393,7 @@
 		"level": 30,
 		"length": 5,
 		"run": {
-			"time": -10
+			"time": -20
 		},
 		"result": {
 			"zhuji_tianjie_1": 1
@@ -418,7 +418,7 @@
 		"level": 30,
 		"length": 4,
 		"run": {
-			"time": -21
+			"time": -26
 		},
 		"result": {
 			"zhuji_tianjie_3": 1
@@ -455,7 +455,7 @@
 		"level": 30,
 		"length": 2,
 		"run": {
-			"time": -10
+			"time": -26
 		},
 		"result": {
 			"zhuji_tianjie_2": 1
