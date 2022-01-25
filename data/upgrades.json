@@ -2136,7 +2136,7 @@
 		"id": "ytjn",
 		"name": "原体聚能",
 		"desc": "在一个有限的空间内聚集最大的能量",
-		"require": "g.xiulian_energ_gxdn>=1 && g.xiulian_energ_gnsb>=1",
+		"require": "g.xiulian_energ_gxdn>=1 && g.xiulian_energ_gxsb>=1",
 		"max": 1,
 		"cost": {
 			"lg": 11,
