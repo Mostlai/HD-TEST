@@ -632,7 +632,7 @@
 		"id": "shuaibai_expand",
 		"name": "恶行易施",
 		"desc": "",
-		"require": "g.shuaibai_xue>=3",
+		"require": "g.shuabai_xue>=3",
 		"max": 1,
 		"cost": {
 			"money": 300,
@@ -651,10 +651,10 @@
 		},
 		"mod":{
 			"evil": 10,
-			"shuaibai.rate": 0.2,
+			"shuaibai.rate": 0.1,
 			"shuaibai.max":4,
-			"age.max":720,
-			"age":720
+			"age.max":2420,
+			"age":2420
 		}
 	},
 	{
