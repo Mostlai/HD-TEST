@@ -1258,7 +1258,7 @@
 			"sp": 0.1
 		},
 		"mod": {
-			"shuaibai.rate": 0.1,
+			"shuaibai.rate": 0.05,
 			"shuaibai_core.max": 1
 		}
 	},
