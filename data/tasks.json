@@ -919,7 +919,7 @@
 		"desc": "吸收生灵石中的能量",
 		"verb": "吸收",
 		"require": "g.shenglingshi>=1",
-		"max": 10,
+		"max": 30,
 		"length": 30,
 		"cost": {
 			"money": 800,
