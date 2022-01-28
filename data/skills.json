@@ -1327,7 +1327,7 @@
 		"buy": {
 			"ganwu": 130,
 			"super_mind": 30,
-			"dirty_lingti": 30,
+			"dirty_lingti": 20,
 			"nolight_core": 10
 		},
 		"effect": {
