@@ -2959,10 +2959,11 @@
 			"super_mind": 30,
 			"alculation": 1100,
 			"human_power": 1000,
-			"exe_paper": 120,
+			"exe_paper": 110,
 			"money": 2000
 		},
 		"mod": {
+			"exe_paper.max":10,
 			"heli.rate": -5,
 			"jihun.max": 1,
 			"jihun.rate": 0.1,
