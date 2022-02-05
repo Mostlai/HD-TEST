@@ -3055,6 +3055,47 @@
 		}
 	},
 	{
+		"id": "cishuakuoz",
+		"name": "磁刷扩展",
+		"desc": "扩容磁刷线圈",
+		"require": "g.meg_1>=1 && g.litishuxue>=2",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjdl": 20,
+			"cbclb": 30,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"cishuadianquan.max": 2
+		}
+	},
+	{
+		"id": "cishuakuoz_2",
+		"name": "磁刷扩展2",
+		"desc": "扩容磁刷线圈",
+		"require": "g.meg_1>=1 && g.litishuxue>=2",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 30,
+			"shenglingshi": 4,
+			"yjdl": 30,
+			"cbclb": 30,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"cishuadianquan.max": 3
+		}
+	},
+	{
 		"id": "ltpl",
 		"name": "灵体排列",
 		"desc": "通过对灵体进行有效的排列实现更快的计算",
