@@ -1,0 +1,545 @@
+[
+	{
+		"id": "ach_backpack_1",
+		"name": "打开背包",
+		"desc": "按E打开背包",
+		"target_item": "keyboard",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1
+		}
+	},
+	{
+		"id": "ach_money_1",
+		"name": "存钱罐",
+		"desc": "钱币达到300",
+		"target_item": "money",
+		"target_val": 300,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1,
+			"money.max": 20
+		}
+	},
+	{
+		"id": "ach_money_2",
+		"name": "小有财富",
+		"desc": "钱币达到2000",
+		"target_item": "money",
+		"target_val": 2000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1,
+			"money.max": 100
+		}
+	},
+	{
+		"id": "ach_time_1",
+		"name": "世纪之交",
+		"desc": "时间抵达100年",
+		"target_item": "time",
+		"target_val": 36500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"age.max": 4000,
+			"age": 4000
+		}
+	},
+	{
+		"id": "ach_time_2",
+		"name": "千年之交",
+		"desc": "时间抵达1000年",
+		"target_item": "time",
+		"target_val": 365000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"age.max": 10000,
+			"age": 10000
+		}
+	},
+	{
+		"id": "ach_time_3",
+		"name": "等到什么时候",
+		"desc": "时间抵达10000年",
+		"target_item": "time",
+		"target_val": 3650000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 2,
+			"age.max": 50000,
+			"age": 50000
+		}
+	},
+	{
+		"id": "ach_time_4",
+		"name": "修真40K",
+		"desc": "时间抵达40000年",
+		"target_item": "time",
+		"target_val": 14600000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 5,
+			"age.max": 100000,
+			"age": 100000
+		}
+	},
+	{
+		"id": "ach_ganwu_1",
+		"name": "灵感来了",
+		"desc": "感悟达到300",
+		"target_item": "ganwu",
+		"target_val": 300,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1,
+			"ganwu.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_ganwu_2",
+		"name": "通天河金鱼",
+		"desc": "感悟达到2000",
+		"target_item": "ganwu",
+		"target_val": 2000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"ganwu.rate": 1
+		}
+	},
+	{
+		"id": "ach_ganwu_3",
+		"name": "尤里卡",
+		"desc": "感悟达到5000",
+		"target_item": "ganwu",
+		"target_val": 5000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"ganwu.rate": 2
+		}
+	},
+	{
+		"id": "ach_youli_1",
+		"name": "景区游客",
+		"desc": "游历800次",
+		"target_item": "youli",
+		"target_val": 800,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.6,
+			"ganwu.rate": 1
+		},
+		"disable": ["youli"]
+	},
+	{
+		"id": "ach_tili_1",
+		"name": "运动员",
+		"desc": "体力训练500次",
+		"target_item": "freight_adv_1",
+		"target_val": 500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"tili.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_star_map_1",
+		"name": "望天",
+		"desc": "天文绘制500次",
+		"target_item": "write_starmap_1",
+		"target_val": 500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"star_map.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_star_map_2",
+		"name": "巡天",
+		"desc": "天文观测700次",
+		"target_item": "write_starmap_2",
+		"target_val": 700,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"star_map_1.rate": 0.3
+		}
+	},
+	{
+		"id": "ach_fumeng1_1",
+		"name": "梦中常客",
+		"desc": "浮梦500次",
+		"target_item": "fumeng1",
+		"target_val": 500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"back_dream.rate": 0.3
+		}
+	},
+	{
+		"id": "ach_muder_1",
+		"name": "杰夫",
+		"desc": "谋杀200次",
+		"target_item": "murder_pl",
+		"target_val": 200,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.2,
+			"hp.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_conquer_1",
+		"name": "我来",
+		"desc": "征服25个小城镇",
+		"target_item": "conquer_small",
+		"target_val": 25,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_conquer_2",
+		"name": "我又来",
+		"desc": "征服14个中型城镇",
+		"target_item": "conquer_mediun",
+		"target_val": 25,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_zl_1",
+		"name": "发号施令",
+		"desc": "激活10指令容量",
+		"target_item": "command_code",
+		"target_val": 10,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1,
+			"command_code.max": 3
+		}
+	},
+	{
+		"id": "ach_zl_2",
+		"name": "大计算",
+		"desc": "激活100指令容量",
+		"target_item": "command_code",
+		"target_val": 100,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 1,
+			"command_code.max": 20
+		}
+	},
+	{
+		"id": "ach_spell_2",
+		"name": "他要爆了",
+		"desc": "释放雷诀[筑基]500次",
+		"target_item": "ljzj",
+		"target_val": 500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"heli.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_offic_1",
+		"name": "上道了",
+		"desc": "成为巡检使",
+		"target_item": "off_xunjian",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5
+		}
+	},
+	{
+		"id": "ach_offic_2",
+		"name": "大理寺卿",
+		"desc": "成为大理寺卿",
+		"target_item": "off_dlsq",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 1
+		}
+	},
+	{
+		"id": "ach_offic_3",
+		"name": "平步青云",
+		"desc": "朝廷影响力大于3000",
+		"target_item": "off_influence",
+		"target_val": 3000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 1,
+			"off_influence.max": 100
+		}
+	},
+	{
+		"id": "ach_offic_4",
+		"name": "炙手可热",
+		"desc": "朝廷影响力大于5000",
+		"target_item": "off_influence",
+		"target_val": 5000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 1,
+			"off_influence.max": 100
+		}
+	},
+	{
+		"id": "ach_exchange_1",
+		"name": "三言两语",
+		"desc": "你看好这是你什么人",
+		"target_item": "exchange_code_5",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"element_water.rate": 0.0001
+		}
+	},
+	{
+		"id": "ach_exchange_2",
+		"name": "时间漫游指南",
+		"desc": "用特殊方法让时间倒退10年",
+		"target_item": "exchange_code_3",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"age.max": 3650,
+			"age": 3650
+		}
+	},
+	{
+		"id": "ach_exchange_3",
+		"name": "电报员",
+		"desc": "滴滴滴滴",
+		"target_item": "exchange_code_2",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"zero_crystal.rate": 0.01
+		}
+	},
+	{
+		"id": "ach_exchange_4",
+		"name": "老实人",
+		"desc": "默认的输入",
+		"target_item": "exchange_code_7",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"ganwu.rate": 0.88
+		}
+	},
+	{
+		"id": "ach_exchange_5",
+		"name": "真这么多次?",
+		"desc": "捡钱2022次",
+		"target_item": "exchange_code_6",
+		"target_val": 2022,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"money.rate": 0.2022
+		}
+	}
+]

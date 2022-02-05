@@ -1,0 +1,126 @@
+[
+	{
+		"id": "drug_resist",
+		"desc": "对各种药物的抗药性",
+		"hide": true,
+		"locked": false,
+		"name": "抗药性",
+		"color": "#6b6761",
+		"val":0,
+		"max": 5
+	},
+	{
+		"id": "ele_confusion",
+		"desc": "元素之间的混乱程度",
+		"hide": true,
+		"locked": false,
+		"name": "混乱度",
+		"color": "#a200f5",
+		"val":0,
+		"max": 5,
+		"mod":{
+			"self.defense": -5,
+			"hp.rate": -2,
+			"heli.rate": -2,
+			"chaos.rate": 2,
+			"time.rate": 1
+		}
+	},
+	{
+		"id": "ele_luanxie",
+		"desc": "极难驱除的元素",
+		"hide": true,
+		"locked": false,
+		"name": "乱邪",
+		"color": "#a200f5",
+		"val":0,
+		"max": 5,
+		"mod":{
+			"self.defense": -5,
+			"heli.rate": -1,
+			"chaos.rate": 1,
+			"time.rate": 0.3
+		}
+	},
+	{
+		"id": "element_wuhuan",
+		"desc": "五环凝结",
+		"hide": true,
+		"require": "g.xiulian_space_ysys>=1 && g.xiulian_space_yswd>=1 && g.xiulian_space_ysch>=1",
+		"name": "五环点",
+		"color": "#659cff",
+		"val":0,
+		"max": 1,
+		"mod":{
+			"ele_confusion.rate": 0.003,
+			"element_gold.rate": 0.001,
+			"element_wood.rate": 0.001,
+			"element_water.rate": 0.001,
+			"element_fire.rate": 0.001,
+			"element_land.rate": 0.001
+		}
+	},
+	{
+		"id": "element_luor",
+		"desc": "五环点扭曲而来的不稳定元素",
+		"hide": true,
+		"require": "g.xiulian_space_sbzq>=1 && g.xiulian_space_bwdbc>=1",
+		"name": "落日点",
+		"color": "#659cff",
+		"val":0,
+		"max": 1,
+		"mod":{
+			"ele_confusion.rate": 0.005
+		}
+	},
+	{
+		"id": "element_gold",
+		"desc": "锐金代表",
+		"hide": true,
+		"locked": false,
+		"name": "锐金",
+		"color": "#ffeb00",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "element_wood",
+		"desc": "源泉代表",
+		"hide": true,
+		"locked": false,
+		"name": "巨木",
+		"color": "#29d61d",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "element_water",
+		"desc": "真水代表",
+		"hide": true,
+		"locked": false,
+		"name": "洪水",
+		"color": "#00BFFF",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "element_fire",
+		"desc": "真火代表",
+		"hide": true,
+		"locked": false,
+		"name": "烈火",
+		"color": "#ac0404",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "element_land",
+		"desc": "厚土代表",
+		"hide": true,
+		"locked": false,
+		"name": "厚土",
+		"color": "#9c7402",
+		"val":0,
+		"max": 1
+	}
+]

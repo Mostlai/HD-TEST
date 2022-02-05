@@ -1,0 +1,61 @@
+[
+	{
+		"id": "cu_iron",
+		"name": "铁板",
+		"tags": "金属",
+		"desc": "最普通的金属",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=1",
+		"max": 10
+	},
+	{
+		"id": "cu_copper",
+		"name": "铜板",
+		"tags": "金属",
+		"desc": "高导电率",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=4",
+		"max": 10
+	},
+	{
+		"id": "iron_copper",
+		"name": "合成金属F-C",
+		"tags": "金属",
+		"desc": "第一代合金,硬度和导电率良好",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_1>=1",
+		"max": 5
+	},
+	{
+		"id": "sj_met",
+		"name": "神经材料",
+		"tags": "金属",
+		"desc": "将神识附着在FC合金上,达到更优良的金属性能",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_2>=1",
+		"max": 5
+	},
+	{
+		"id": "tian",
+		"name": "钛板",
+		"tags": "金属",
+		"desc": "具有金属光泽,有延展性,密度小,容易加工",
+		"group": "金属",
+		"tags": "",
+		"require": "g.land_wa>=3 &&g.metal_1>=8",
+		"max": 5
+	},
+	{
+		"id": "cbclb",
+		"name": "纯白材料包",
+		"desc": "多种金属打包而来的材料学基础包",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_cailiaozuhe>=1",
+		"max": 10
+	}
+]

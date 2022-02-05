@@ -1,0 +1,26 @@
+[
+	{
+		"id": "fypyj",
+		"name": "富养培养基",
+		"desc": "能够存储大量营养的培养基",
+		"tags": "",
+		"require": "g.xiulian_life_swpy>=1",
+		"max": 10
+	},
+	{
+		"id": "pyy",
+		"name": "培养液",
+		"desc": "基本的生物培养液",
+		"tags": "",
+		"require": "g.xiulian_life_swyz>=1",
+		"max": 10
+	},
+	{
+		"id": "yjswyb",
+		"name": "一阶生物样本",
+		"desc": "一阶生物样本，囊括了低温高温和高电流下的生物样本",
+		"tags": "",
+		"require": "g.dchjsm>=1 && g.gwfayu>=1 && g.dwswgz>=1",
+		"max": 10
+	}	
+]

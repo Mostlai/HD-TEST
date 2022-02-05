@@ -1,0 +1,1472 @@
+{
+	"module": "officialdom",
+	"sym": "👑",
+	"data": {
+		"homes":[		
+			{
+				"id": "off_jxxl",
+				"name": "小楼",
+				"desc": "",
+				"require": "g.off_zhixuan>=1",
+				"cost": {
+					"money": 300,
+					"snp_data": 10,
+					"zero_crystal": 15,
+					"paper": 40
+				},
+				"mod": {
+					"space.max": 55
+				}
+			},
+			{
+				"id": "off_dayuan",
+				"name": "大院",
+				"desc": "",
+				"require": "g.off_jishiz>=1",
+				"cost": {
+					"money": 600,
+					"snp_data": 10,
+					"zero_crystal": 15,
+					"paper": 40
+				},
+				"mod": {
+					"space.max": 75
+				}
+			},
+			{
+				"id": "off_yuguyuan",
+				"name": "玉谷园",
+				"desc": "",
+				"require": "g.off_dslssq>=1",
+				"cost": {
+					"off_influence":2500
+				},
+				"mod": {
+					"off_influence.max":-300,
+					"space.max": 120
+				}
+			}
+		],
+		"events": [
+			{
+				"id": "evt_offic_exit",
+				"require": "g.off_influence<=0",
+				"name": "隐退",
+				"desc": "显然,你的影响力已经不足以支持你继续从政了",
+				"disable":[
+					"off_work_1",
+					"off_tanwu_1",
+					"off_shanggong_1",
+					"off_lqfl",
+					"guodu_1",
+					"guodu_2",
+					"off_influence"
+				],
+				"result": {
+					"off_influence.rate": -2000
+				}
+			},
+			{
+				"id": "evt_excam_1",
+				"require": "g.off_excam>=1",
+				"name": "首都",
+				"desc": "你通过了学府考试,获得进入天澜国国都的机会"
+			},
+			{
+				"id": "evt_chaotang",
+				"require": "g.off_scwu>=1",
+				"name": "神传笏",
+				"desc": "神传笏可以让你进入朝堂议事"
+			}
+		],
+		"resources": [
+			{
+				"id": "off_hide_1",
+				"name": "官场入门卷",
+				"desc": "官位",
+				"hide": true,
+				"max": 1,
+				"group": "朝廷",
+				"flavor": "今朝谁指鹿为马?"
+			},
+			{
+				"id": "off_influence",
+				"name": "朝廷影响力",
+				"desc": "你在朝廷当中的影响力,归0会导致永久退出官场",
+				"max": 50,
+				"group": "朝廷",
+				"mod": {
+					"money.max": 0.01,
+					"off_influence.max": 0.001,
+					"money.rate": 0.001
+				},
+				"flavor": "今朝谁指鹿为马?"
+			}
+		],
+		"tasks": [
+			{
+				"id": "off_excam",
+				"name": "学府考试",
+				"desc": "检验知识",
+				"require": "g.ganwu>=100",
+				"verb": "考试中",
+				"max": 1,
+				"length": 1,
+				"cost": {
+					"ganwu": 100,
+					"money": 100
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				}
+			},
+			{
+				"id": "off_work_1",
+				"name": "公务工作",
+				"desc": "做好你的本职工作",
+				"require": "g.off_xunjian>=1",
+				"verb": "工作中",
+				"length": 40,
+				"cost": {
+					"ganwu": 1
+				},
+				"effect":{
+					"off_influence": 0.6
+				},
+				"run": {
+					"time": -0.1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result": {
+					"money": 10,
+					"ganwu": 20,
+					"off_influence": 5,
+					"off_influence.max": 0.5
+				}
+			},
+			{
+				"id": "off_tanwu_1",
+				"name": "贪污受贿",
+				"desc": "给予他人利益获取好处",
+				"require": "g.off_influence_2>=1",
+				"verb": "受贿中",
+				"length": 20,
+				"cost": {
+					"off_influence": 5
+				},
+				"run": {
+					"time": -0.1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result": {
+					"money": 30,
+					"ganwu": 20,
+					"off_influence": 2
+				}
+			},
+			{
+				"id": "off_shanggong_1",
+				"name": "上贡礼品",
+				"desc": "给你的上级送礼",
+				"require": "g.off_influence_1>=1",
+				"verb": "上贡中",
+				"length": 6,
+				"cost": {
+					"money": 100,
+					"zero_crystal": 10
+				},
+				"effect":{
+					"off_influence": 0.6
+				},
+				"run": {
+					"time": -0.1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result": {
+					"off_influence.max": 1
+				}
+			},
+			{
+				"id": "off_lqfl",
+				"name": "领取俸禄",
+				"desc": "领取朝廷发放的俸禄",
+				"require": "g.off_dcyds>=1",
+				"verb": "",
+				"cd": 120,
+				"cost": {
+					"off_influence": 10
+				},
+				"result": {
+					"money": 400,
+					"zero_crystal": 20
+				}
+			}
+		],
+		"upgrades": [
+			{
+				"id": "off_enter_1",
+				"name": "仕途",
+				"desc": "你的才华打动了这位神秘官员,他可以引荐你进入官场[准备好再选,朝廷影响力归0将会永久失去官场资格]",
+				"max":1,
+				"require": "g.off_hide_1>=1",
+				"warn": "true",
+				"cost": {
+					"off_hide_1":1,
+					"money": 150,
+					"ganwu": 100
+				},
+				"result":{
+					"off_influence": 50
+				},
+				"mod":{
+					"off_influence.rate": -0.7
+				}
+			},
+			{
+				"id": "off_influence_1",
+				"name": "影响力行动",
+				"desc": "随着你的影响力的扩大,你可以进行更多种类的行动",
+				"max":1,
+				"require": "g.off_influence>=60",
+				"warn": "true",
+				"cost": {
+					"off_influence":50,
+					"money": 250,
+					"ganwu": 100
+				},
+				"result":{
+					"off_influence.max": 5,
+					"money.max": 50
+				}
+			},
+			{
+				"id": "off_influence_touru",
+				"name": "身心投入",
+				"desc": "全身心投入到从政中",
+				"max":1,
+				"require": "g.off_influence_1>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":40,
+					"tili": 20,
+					"money": 150,
+					"zero_crystal": 10,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"tili.max": -5,
+					"stamina.max": -2,
+					"off_influence.rate": 0.3
+				}
+			},
+			{
+				"id": "off_zzyx",
+				"name": "政治影响",
+				"desc": "政治影响力",
+				"max":1,
+				"require": "g.off_influence>=100",
+				"cost": {
+					"off_influence":40,
+					"money": 150,
+					"zero_crystal": 10,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_influence.mod.off_influence.max": 0.005
+				}
+			},
+			{
+				"id": "off_gzyx",
+				"name": "工作影响",
+				"desc": "",
+				"max":1,
+				"require": "g.off_influence>=400",
+				"cost": {
+					"off_influence":300
+				},
+				"result":{
+					"off_influence": 100
+				},
+				"mod":{
+					"off_work_1.result.money": 10,
+					"off_work_1.result.off_influence": 5,
+					"off_work_1.result.off_influence.max": 2,
+					"off_influence.mod.off_influence.max": 0.005
+				}
+			},
+			{
+				"id": "off_gzxy",
+				"name": "工作效益",
+				"desc": "",
+				"max":1,
+				"require": "g.off_influence>=500",
+				"cost": {
+					"off_influence":300
+				},
+				"result":{
+					"off_influence": 100
+				},
+				"mod":{
+					"off_work_1.result.money": 10,
+					"off_work_1.result.off_influence": 1,
+					"off_work_1.result.off_influence.max": 5
+				}
+			},
+			{
+				"id": "off_gzjd",
+				"name": "工作焦点",
+				"desc": "",
+				"max":1,
+				"require": "g.off_influence>=100",
+				"cost": {
+					"off_influence":250
+				},
+				"mod":{
+					"off_work_1.length": -5
+				}
+			},
+			{
+				"id": "off_gzjd_2",
+				"name": "工作焦点[2]",
+				"desc": "",
+				"max":1,
+				"require": "g.off_influence>=500",
+				"cost": {
+					"off_influence":600
+				},
+				"mod":{
+					"off_work_1.length": -3
+				}
+			},
+			{
+				"id": "off_gzjd_3",
+				"name": "工作焦点[3]",
+				"desc": "",
+				"max":1,
+				"require": "g.off_influence>=800",
+				"cost": {
+					"off_influence":1000
+				},
+				"mod":{
+					"off_work_1.length": -2
+				}
+			},
+			{
+				"id": "off_xundaoshengji_1",
+				"name": "训导升级[工作]",
+				"desc": "将工作提升至训导级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_xundao>=1",
+				"cost": {
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_work_1.result.money": 4,
+					"off_work_1.result.off_influence": 2,
+					"off_work_1.result.off_influence.max": 0.3
+				}
+			},
+			{
+				"id": "off_xianchengshengji",
+				"name": "县丞升级[工作]",
+				"desc": "将工作提升至县丞级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_xiancheng>=1",
+				"cost": {
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_work_1.result.money": 10,
+					"off_work_1.result.off_influence": 2,
+					"off_work_1.result.off_influence.max": 0.3
+				}
+			},
+			{
+				"id": "off_zxsj",
+				"name": "知县升级[工作]",
+				"desc": "将工作提升至知县级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_zhixuan>=1",
+				"cost": {
+					"off_influence": 100,
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_work_1.result.money": 5,
+					"off_work_1.result.off_influence": 7,
+					"off_work_1.result.off_influence.max": 1
+				}
+			},
+			{
+				"id": "off_dssj",
+				"name": "都事升级[工作]",
+				"desc": "将工作提升至都事级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_dcyds>=1",
+				"cost": {
+					"off_influence": 500,
+					"tili": 20,
+					"human_power": 300,
+					"alculation": 100,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_work_1.result.money": 5,
+					"off_work_1.result.off_influence": 10,
+					"off_work_1.result.off_influence.max": 2
+				}
+			},
+			{
+				"id": "off_jjsj",
+				"name": "祭酒升级[工作]",
+				"desc": "将工作提升至祭酒级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_gzjjj>=1",
+				"cost": {
+					"off_influence": 1000,
+					"tili": 20,
+					"human_power": 300,
+					"alculation": 100,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_work_1.result.money": 10,
+					"off_work_1.result.off_influence": 20,
+					"off_work_1.result.off_influence.max": 2
+				}
+			},
+			{
+				"id": "off_xundaoshengji_2",
+				"name": "训导升级[上贡]",
+				"desc": "将上贡提升至训导级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_xundao>=1",
+				"cost": {
+					"off_influence": 10,
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_shanggong_1.cost.money": 70,
+					"off_shanggong_1.result.off_influence.max": 7
+				}
+			},
+			{
+				"id": "off_zxsj_sg",
+				"name": "知县升级[上贡]",
+				"desc": "将上贡提升至知县级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_zhixuan>=1",
+				"cost": {
+					"off_influence": 100,
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_shanggong_1.cost.money": 130,
+					"off_shanggong_1.result.off_influence.max": 10
+				}
+			},
+			{
+				"id": "off_dssj_sg",
+				"name": "都事升级[上贡]",
+				"desc": "将上贡提升至都事级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_dcyds>=1",
+				"cost": {
+					"off_influence": 500,
+					"tili": 20,
+					"money": 500,
+					"human_power": 300,
+					"alculation": 100,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_shanggong_1.cost.money": 150,
+					"off_shanggong_1.result.off_influence.max": 12
+				}
+			},
+			{
+				"id": "off_jjsj_sg",
+				"name": "祭酒升级[上贡]",
+				"desc": "将上贡提升至祭酒级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_gzjjj>=1",
+				"cost": {
+					"off_influence": 1000,
+					"tili": 20,
+					"money": 500,
+					"human_power": 300,
+					"alculation": 100,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_shanggong_1.cost.money": 160,
+					"off_shanggong_1.result.off_influence.max": 12
+				}
+			},
+			{
+				"id": "off_xundaoshengji_3",
+				"name": "训导升级[受贿]",
+				"desc": "将受贿提升至训导级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_xundao>=1",
+				"cost": {
+					"off_influence": 10,
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_tanwu_1.cost.off_influence": 45,
+					"off_tanwu_1.result.off_influence": 1,
+					"off_tanwu_1.result.money": 20
+				}
+			},
+			{
+				"id": "off_zxsj_sh",
+				"name": "知县升级[受贿]",
+				"desc": "将受贿提升至知县级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_zxsj>=1",
+				"cost": {
+					"off_influence": 100,
+					"tili": 20,
+					"money": 150,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_tanwu_1.cost.off_influence": 88,
+					"off_tanwu_1.result.off_influence": 1,
+					"off_tanwu_1.result.money": 33
+				}
+			},
+			{
+				"id": "off_dssj_sh",
+				"name": "都事升级[受贿]",
+				"desc": "将受贿提升至都事级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_dcyds>=1",
+				"cost": {
+					"off_influence": 500,
+					"tili": 20,
+					"money": 500,
+					"human_power": 300,
+					"alculation": 100,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_tanwu_1.cost.off_influence": 122,
+					"off_tanwu_1.result.off_influence": 1,
+					"off_tanwu_1.result.money": 44
+				}
+			},
+			{
+				"id": "off_jjsj_sh",
+				"name": "祭酒升级[受贿]",
+				"desc": "将受贿提升至祭酒级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_gzjjj>=1",
+				"cost": {
+					"off_influence": 1000,
+					"tili": 20,
+					"money": 500,
+					"human_power": 300,
+					"alculation": 100,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_tanwu_1.cost.off_influence": 135,
+					"off_tanwu_1.result.off_influence": 1,
+					"off_tanwu_1.result.money": 55
+				}
+			},
+			{
+				"id": "off_jjfl_1",
+				"name": "俸禄升级[祭酒]",
+				"desc": "将俸禄升级到祭酒级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_gzjjj>=1",
+				"cost": {
+					"off_influence": 1000,
+					"tili": 20,
+					"money": 1000,
+					"zero_crystal": 30,
+					"human_power": 300,
+					"alculation": 100,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_lqfl.result.money": 120,
+					"off_lqfl.result.zero_crystal": 7
+				}
+			},
+			{
+				"id": "off_spfl_1",
+				"name": "俸禄升级[三品]",
+				"desc": "将俸禄升级到三品级别",
+				"warn": "true",
+				"max":1,
+				"require": "g.off_dlsq>=1",
+				"cost": {
+					"off_influence": 2000,
+					"tili": 20,
+					"money": 1000,
+					"zero_crystal": 30,
+					"human_power": 300,
+					"alculation": 100,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_lqfl.result.money": 140,
+					"off_lqfl.result.zero_crystal": 5
+				}
+			},
+			{
+				"id": "off_influence_2",
+				"name": "隐藏游戏",
+				"desc": "那些看不见的地方",
+				"max":1,
+				"require": "g.off_influence>=60",
+				"warn": "true",
+				"cost": {
+					"off_influence":50,
+					"money": 250,
+					"ganwu": 100
+				},
+				"result":{
+					"money.max": 50
+				}
+			},
+			{
+				"id": "off_jpyj",
+				"name": "交朋结友",
+				"desc": "交接那些所谓的官场朋友",
+				"max":1,
+				"require": "g.off_influence_2>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":40,
+					"tili": 20,
+					"money": 150,
+					"zero_crystal": 10,
+					"ganwu": 130
+				},
+				"result":{
+					"off_influence": 10
+				},
+				"mod":{
+					"off_influence.max": -10,
+					"off_influence.rate": 0.2
+				}
+			},
+			{
+				"id": "off_dcjj",
+				"name": "都城进阶",
+				"desc": "进入国都",
+				"max":1,
+				"require": "g.off_influence>=400 && g.off_zhixuan>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":300,
+					"tili": 20,
+					"money": 150,
+					"alculation": 100,
+					"human_power": 300,
+					"zero_crystal": 10,
+					"ganwu": 130
+				},
+				"mod":{
+					"off_influence.max": 50,
+					"off_influence.rate": 0.2
+				}
+			},
+			{
+				"id": "off_pdhh",
+				"name": "品德考核",
+				"desc": "考核你的政治品德",
+				"max":1,
+				"require": "g.off_influence>=400 && g.off_zhixuan>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":300,
+					"tili": 20,
+					"money": 150,
+					"alculation": 100,
+					"human_power": 300,
+					"zero_crystal": 10,
+					"ganwu": 130
+				},
+				"mod":{
+					"off_influence.max": 50,
+					"off_influence.rate": 0.2
+				}
+			},
+			{
+				"id": "off_wqbw",
+				"name": "外戚爵位",
+				"desc": "获得爵位资格",
+				"max":1,
+				"require": "g.off_dcyds>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":500,
+					"tili": 20,
+					"money": 550,
+					"alculation": 100,
+					"human_power": 300,
+					"zero_crystal": 30,
+					"tian": 10,
+					"cold_core": 20,
+					"dirty_core": 10,
+					"ganwu": 300
+				}
+			},
+			{
+				"id": "off_xywu",
+				"name": "象牙笏",
+				"desc": "五品官员所持象牙笏",
+				"max":1,
+				"require": "g.off_jishiz>=1",
+				"warn": "true",
+				"cost": {
+					"money": 550,
+					"alculation": 100,
+					"human_power": 300,
+					"ganwu": 300
+				},
+				"mod":{
+					"command_code.max": 1
+				}
+			},
+			{
+				"id": "off_lyw",
+				"name": "零结笏",
+				"desc": "四品官员所持零结笏",
+				"max":1,
+				"require": "g.off_dslssq>=1",
+				"warn": "true",
+				"cost": {
+					"off_xywu": 1,
+					"zero_crystal": 40,
+					"money": 550,
+					"ganwu": 300
+				},
+				"mod":{
+					"command_code.max": 2
+				}
+			},
+			{
+				"id": "off_scwu",
+				"name": "神传笏",
+				"desc": "三品官员所持神传笏",
+				"max":1,
+				"require": "g.off_dlsq>=1",
+				"warn": "true",
+				"cost": {
+					"off_lyw": 1,
+					"sj_met": 5,
+					"money": 550,
+					"ganwu": 300
+				},
+				"mod":{
+					"command_code.max": 3
+				}
+			},
+			{
+				"id": "lcbo",
+				"name": "连城伯",
+				"tags": "",
+				"slot": "honorific",
+				"desc": "连城伯",
+				"require": "g.off_wqbw>=1",
+				"buy": {
+					"off_influence": 600,
+					"lg": 12,
+					"money": 600,
+					"ganwu": 100,
+					"alculation": 100,
+					"human_power": 300,
+					"cold_core": 30,
+					"zero_crystal": 30,
+					"super_mind": 5,
+					"tian": 10,
+					"sj_met": 15,
+					"paper": 100,
+					"books": 20,
+					"exe_paper": 50
+				},
+				"mod":{
+					"money.rate": 0.7,
+					"off_influence.rate": 0.1,
+					"off_influence.max": 10
+				}
+			},
+			{
+				"id": "fength",
+				"name": "枫亭侯",
+				"tags": "",
+				"slot": "honorific",
+				"desc": "枫亭侯",
+				"require": "g.off_dslssq>=1",
+				"buy": {
+					"money": 1000,
+					"off_influence": 1700,
+					"lg": 12,
+					"ganwu": 100,
+					"alculation": 100,
+					"human_power": 300,
+					"cold_core": 30,
+					"zero_crystal": 30,
+					"super_mind": 5,
+					"tian": 10,
+					"sj_met": 15,
+					"paper": 100,
+					"books": 20,
+					"exe_paper": 50
+				},
+				"mod":{
+					"off_rldt.max": 1,
+					"command_code.max": 2,
+					"money.rate": 0.7,
+					"off_influence.rate": 0.1,
+					"off_influence.max": 100
+				}
+			},
+			{
+				"id": "jiantinah",
+				"name": "监天侯",
+				"tags": "",
+				"slot": "honorific",
+				"desc": "监天侯",
+				"require": "g.off_dslssq>=1 && g.qsz>=1",
+				"buy": {
+					"money": 1000,
+					"off_influence": 1700,
+					"lg": 12,
+					"ganwu": 100,
+					"alculation": 500,
+					"cold_core": 30,
+					"zero_crystal": 30,
+					"super_mind": 5,
+					"tian": 10,
+					"sj_met": 15,
+					"paper": 100,
+					"books": 20,
+					"exe_paper": 50
+				},
+				"mod":{
+					"off_rldt.max": 1,
+					"command_code.max": 4,
+					"money.rate": 0.7,
+					"off_influence.rate": 0.1,
+					"off_influence.max": 100
+				}
+			},
+			{
+				"id": "fief_fth",
+				"slot": "fief",
+				"name": "枫亭",
+				"desc": "枫亭,你的封地",
+				"require": "g.fength>=1",
+				"buy": {
+					"off_influence": 1600,
+					"ganwu": 300,
+					"dirty_lingti": 20,
+					"cold_core": 20,
+					"money": 1000
+				},
+				"mod": {
+					"space.max": 100
+				}
+			},
+			{
+				"id": "fief_getai",
+				"slot": "fief",
+				"name": "歌台",
+				"desc": "歌台,你的封地",
+				"require": "g.jiantinah>=1",
+				"buy": {
+					"off_influence": 1600,
+					"ganwu": 300,
+					"dirty_lingti": 20,
+					"cold_core": 20,
+					"money": 1000
+				},
+				"mod": {
+					"space.max": 100
+				}
+			},
+			{
+				"id": "off_rldt",
+				"name": "人力调度",
+				"desc": "允许你有更多的人力",
+				"max":1,
+				"require": "g.off_dcyds>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":600,
+					"tili": 20,
+					"money": 550,
+					"alculation": 100,
+					"human_power": 300,
+					"tian": 10,
+					"cold_core": 20,
+					"dirty_core": 10,
+					"ganwu": 300
+				},
+				"mod":{
+					"alculation.max": 100,
+					"human_power.max": 100
+				}
+			},
+			{
+				"id": "off_wpzl",
+				"name": "五品指令",
+				"desc": "正五品官职的指令容量加成",
+				"max":1,
+				"require": "g.off_jishiz>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":1000,
+					"tili": 20,
+					"money": 550,
+					"alculation": 100,
+					"human_power": 300,
+					"zero_crystal": 30,
+					"tian": 10,
+					"cold_core": 20,
+					"dirty_core": 10,
+					"ganwu": 300
+				},
+				"mod":{
+					"command_code.max": 2
+				}
+			},
+			{
+				"id": "off_spzl",
+				"name": "四品指令",
+				"desc": "正四品官职的指令容量加成",
+				"max":1,
+				"require": "g.off_dslssq>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":2000,
+					"tili": 20,
+					"money": 550,
+					"alculation": 100,
+					"human_power": 300,
+					"zero_crystal": 30,
+					"tian": 10,
+					"cold_core": 20,
+					"dirty_core": 10,
+					"ganwu": 300
+				},
+				"mod":{
+					"age.max":3000,
+					"age":3000,
+					"command_code.max": 2
+				}
+			},
+			{
+				"id": "off_sanpzl",
+				"name": "三品指令",
+				"desc": "三品官职的指令容量加成",
+				"max":1,
+				"require": "g.off_dlsq>=1",
+				"warn": "true",
+				"cost": {
+					"off_influence":2000,
+					"tili": 20,
+					"money": 550,
+					"alculation": 100,
+					"human_power": 300,
+					"zero_crystal": 30,
+					"tian": 10,
+					"cold_core": 20,
+					"dirty_core": 10,
+					"ganwu": 300
+				},
+				"mod":{
+					"command_code.max": 3
+				}
+			}
+		],
+		"classes": [
+			{
+				"id": "off_xunjian",
+				"name": "巡检使",
+				"desc": "秩正九品",
+				"actname": "巡检使",
+				"actdesc": "秩正九品",
+				"require": "g.off_enter_1>=1",
+				"warn": false,
+				"log": {
+					"name": "巡检使",
+					"desc": "你成为了一名巡检使"
+				},
+				"cost": {
+					"money": 1
+				},
+				"result": {
+					"time": 30,
+					"money.rate": 0.2,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_xundao",
+				"name": "训导",
+				"desc": "秩从八品",
+				"actname": "训导",
+				"actdesc": "秩从八品",
+				"require": "g.off_xunjian>=1 && g.off_influence>=80",
+				"warn": false,
+				"log": {
+					"name": "训导",
+					"desc": "你成为了一名训导"
+				},
+				"cost": {
+					"off_influence": 30,
+					"money": 250
+				},
+				"result": {
+					"money.max": 50,
+					"time": 30,
+					"money.rate": 0.2,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_xiancheng",
+				"name": "县丞",
+				"desc": "秩正八品",
+				"actname": "县丞",
+				"actdesc": "秩正八品",
+				"require": "g.off_xundao>=1 && g.off_influence>=150",
+				"warn": false,
+				"log": {
+					"name": "县丞",
+					"desc": "你成为了一名县丞"
+				},
+				"cost": {
+					"off_influence": 50,
+					"money": 350
+				},
+				"result": {
+					"time": 30,
+					"money.rate": 0.2,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_zhixuan",
+				"name": "知县",
+				"desc": "秩正七品",
+				"actname": "知县",
+				"actdesc": "秩正七品",
+				"require": "g.off_xiancheng>=1 && g.off_influence>=250",
+				"warn": false,
+				"log": {
+					"name": "知县",
+					"desc": "你成为了一名知县"
+				},
+				"cost": {
+					"off_influence": 150,
+					"money": 350
+				},
+				"result": {
+					"time": 30,
+					"off_gzyx.max":1,
+					"money.rate": 0.2,
+					"off_influence.max": 10,
+					"off_influence.rate": -0.2
+				}
+			},
+			{
+				"id": "off_dcyds",
+				"name": "都察院都事",
+				"desc": "秩正六品",
+				"actname": "都察院都事",
+				"actdesc": "秩正六品",
+				"require": "g.off_dcjj>=1 && g.off_pdhh && g.off_influence>=550",
+				"warn": false,
+				"log": {
+					"name": "都察院都事",
+					"desc": "你成为了一名都察院都事"
+				},
+				"cost": {
+					"off_influence": 500,
+					"money": 500
+				},
+				"result": {
+					"time": 30,
+					"off_gzyx.max":1,
+					"money.max": 100,
+					"money.rate": 0.2,
+					"off_influence.max": 50,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_jishiz",
+				"name": "给事中[正五品]",
+				"desc": "秩正五品",
+				"actname": "给事中",
+				"actdesc": "秩正五品",
+				"require": "g.off_dcyds>=1 && g.off_influence>=900",
+				"warn": false,
+				"log": {
+					"name": "给事中",
+					"desc": "你成为了一名给事中"
+				},
+				"cost": {
+					"off_influence": 800,
+					"human_power": 400,
+					"zero_crystal": 40,
+					"money": 1000
+				},
+				"result": {
+					"time": 30,
+					"off_gzyx.max":1,
+					"money.max": 200,
+					"money.rate": 0.3,
+					"off_influence.max": 100,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_gzjjj",
+				"name": "国子监祭酒[从四品]",
+				"desc": "秩从四品",
+				"actname": "国子监祭酒",
+				"actdesc": "秩从四品",
+				"require": "g.off_jishiz>=1 && g.off_influence>=1500",
+				"warn": false,
+				"log": {
+					"name": "国子监祭酒",
+					"desc": "你成为了一名国子监祭酒"
+				},
+				"cost": {
+					"off_influence": 1400,
+					"human_power": 600,
+					"zero_crystal": 40,
+					"money": 1000
+				},
+				"result": {
+					"time": 30,
+					"off_gzyx.max":1,
+					"money.max": 200,
+					"money.rate": 0.3,
+					"off_influence.max": 200,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_dslssq",
+				"name": "大理寺少卿[正四品]",
+				"desc": "秩正四品",
+				"actname": "大理寺少卿",
+				"actdesc": "秩正四品",
+				"require": "g.off_gzjjj>=1 && g.off_influence>=2600",
+				"warn": false,
+				"log": {
+					"name": "大理寺少卿",
+					"desc": "你成为了一名大理寺少卿"
+				},
+				"cost": {
+					"off_influence": 2500,
+					"human_power": 600,
+					"zero_crystal": 40,
+					"money": 1500
+				},
+				"result": {
+					"time": 30,
+					"off_gzyx.max":1,
+					"money.max": 200,
+					"money.rate": 0.3,
+					"command_code.max": 3,
+					"off_influence.max": 200,
+					"off_influence.rate": 0.1
+				}
+			},
+			{
+				"id": "off_dlsq",
+				"name": "大理寺卿[从三品]",
+				"desc": "秩从三品",
+				"actname": "大理寺卿",
+				"actdesc": "秩从三品",
+				"require": "g.off_dslssq>=1 && g.off_influence>=4000",
+				"warn": false,
+				"log": {
+					"name": "大理寺卿",
+					"desc": "你成为了一名大理寺卿"
+				},
+				"cost": {
+					"off_influence": 3700,
+					"human_power": 600,
+					"zero_crystal": 40,
+					"money": 2000
+				},
+				"result": {
+					"time": 30,
+					"off_gzyx.max":1,
+					"money.max": 200,
+					"money.rate": 0.3,
+					"command_code.max": 3,
+					"off_influence.max": 200,
+					"off_influence.rate": 0.1
+				}
+			}
+		],
+		"furniture": [
+		],
+		"skills": [
+			{
+				"id": "off_wgzd",
+				"name": "为官之道",
+				"desc": "为官之道",
+				"level": 7,
+				"require": "g.off_influence>=100",
+				"buy": {
+					"off_influence": 50,
+					"money": 100
+				},
+				"mod": {
+					"alculation.rate": 1,
+					"skill.rate": 0.1,
+					"money.rate": 0.1,
+					"off_influence.rate": 0.05,
+					"off_influence.max": 5
+				}
+			}
+		],
+		"dungeons": [
+			
+		],
+		"monsters": [
+			
+		],
+		"locales": [
+			{
+				"id": "guodu_1",
+				"name": "天澜国国都",
+				"level": 1,
+				"length": 50,
+				"require": "g.evt_excam_1>=1",
+				"desc": "繁华,充满机遇",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"money": 10,
+					"ganwu": 5
+				},
+				"encs": [
+					"enc_guodu_1",
+					"enc_chaojia",
+					"enc_guangjie",
+					"enc_box_1",
+					"enc_rest"
+				]
+			},
+			{
+				"id": "guodu_2",
+				"name": "天澜国朝堂",
+				"level": 1,
+				"length": 20,
+				"require": "g.evt_chaotang>=1",
+				"desc": "天澜国政治中心",
+				"run": {
+					"tili":2,
+					"stamina": 0.4
+				},
+				"effect": {
+					"off_influence": 1,
+					"time": 0.2
+				},
+				"result": {
+					"off_influence": 100,
+					"off_influence.max": 10,
+					"money": 100,
+					"ganwu": 100
+				},
+				"encs": [
+					"enc_chaotang_1",
+					"enc_chaotang_2",
+					"enc_chaotang_3",
+					"enc_chaotang_4",
+					"enc_chaotang_5",
+					"enc_rest"
+				]
+			}
+		],
+		"encounters": [
+			{
+				"id": "enc_guodu_1",
+				"name": "陌生人",
+				"desc": "一位陌生人与你攀谈,所获甚多",
+				"effect": {
+					"bf": "1~2",
+					"unease": "1~2",
+					"ganwu":"2~3"
+				},
+				"result": {
+					"off_hide_1": "1.5%"
+				}
+			},
+			{
+				"id": "enc_chaotang_1",
+				"name": "官员",
+				"desc": "一位官员与你攀谈,所获甚多",
+				"effect": {
+					"bf": "1~2",
+					"unease": "1~2",
+					"off_influence":"0~1"
+				},
+				"result": {
+					"off_influence.max": 2
+				}
+			},
+			{
+				"id": "enc_chaotang_2",
+				"name": "宫廷闲逛",
+				"desc": "随处逛逛",
+				"effect": {
+					"bf": "1~2",
+					"unease": "1~2",
+					"off_influence":"0~1"
+				},
+				"result": {
+					"off_influence.max": 0.1
+				}
+			},
+			{
+				"id": "enc_chaotang_3",
+				"name": "恶语中伤",
+				"desc": "有人弹劾你",
+				"effect": {
+					"bf": "1~2",
+					"weary": "0~1",
+					"unease": "1~2"
+				},
+				"result": {
+					"off_influence": -50,
+					"off_influence.max": -2
+				}
+			},
+			{
+				"id": "enc_chaotang_4",
+				"name": "进谏",
+				"desc": "向皇帝提供谏言",
+				"effect": {
+					"weary": "0~1",
+					"unease": "0~1",
+					"ganwu": "-3~-4"
+				},
+				"result": {
+					"off_influence": 100,
+					"off_influence.max": 10
+				}
+			},
+			{
+				"id": "enc_chaotang_5",
+				"name": "御花园闲逛",
+				"desc": "随处逛逛",
+				"effect": {
+					"weary": "0~1",
+					"unease": "0~1"
+				},
+				"result": {
+					"zero_crystal": 10,
+					"off_influence": 10,
+					"off_influence.max": 1
+				}
+			}
+		]
+	}
+}

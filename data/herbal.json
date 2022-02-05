@@ -1,0 +1,527 @@
+[
+	{
+		"id": "qibaozi",
+		"name": "奇异孢子",
+		"desc": "混乱度较高",
+		"tags": "混乱1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#00BFFF",
+		"hide": false,
+		"require": "g.xiulian_jj_qybz>=1",
+		"val":0,
+		"max": 0,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"jls": 1,
+			"heli": 10,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 4,
+			"element_gold":2,
+			"element_wood":2,
+			"element_water": 2,
+			"element_fire": 2,
+			"element_land": 2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "shuiyinhua",
+		"name": "水银花",
+		"desc": "淡红褐色的花朵",
+		"tags": "洪水1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#00BFFF",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_water": 1.5,
+			"element_fire": -0.1,
+			"element_land": 0.3
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "qianniuhua",
+		"name": "牵牛花",
+		"desc": "一朵小花",
+		"tags": "洪水1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#00BFFF",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_water": 1.2,
+			"element_fire": -0.2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "diluhua",
+		"name": "滴露花",
+		"desc": "一朵小花",
+		"tags": "洪水1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#00BFFF",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_water": 1.6,
+			"element_fire": -0.4
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "shuiteng",
+		"name": "水藤",
+		"desc": "水藤",
+		"tags": "洪水1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#00BFFF",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_water": 1.3,
+			"element_fire": -0.1
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "yangluzhu",
+		"name": "阳露珠",
+		"desc": "阳露珠",
+		"tags": "洪水1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#00BFFF",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_water": 1,
+			"element_fire": 0.2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "citie",
+		"name": "赤铁",
+		"desc": "氧化物矿物",
+		"tags": "锐金1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#f1ea03",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.1,
+			"element_gold": 1.3,
+			"element_wood": -0.1
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "tieshi",
+		"name": "铁石",
+		"desc": "一块铁石",
+		"tags": "锐金1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#f1ea03",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.1,
+			"element_gold": 1.6,
+			"element_wood": -0.3,
+			"element_land": 0.1
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "kongjin",
+		"name": "空金",
+		"desc": "空金",
+		"tags": "锐金1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#f1ea03",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.4,
+			"element_gold": 1.6,
+			"element_fire": 0.4,
+			"element_wood": -0.4,
+			"element_land": 0.3
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "hongshan",
+		"name": "红杉",
+		"desc": "树皮灰色或灰褐色，纵裂粗糙",
+		"tags": "巨木1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#17c67d",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.5,
+			"element_wood": 1.2,
+			"element_fire": 0.2,
+			"element_land": -0.25
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "lvbai",
+		"name": "绿柏",
+		"desc": "柏树精华",
+		"tags": "巨木1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#17c67d",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.5,
+			"element_wood": 1.5,
+			"element_land": -0.2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "qingsong",
+		"name": "青松",
+		"desc": "青松精华",
+		"tags": "巨木1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#17c67d",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.1,
+			"element_wood": 1.2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "tusong",
+		"name": "土松",
+		"desc": "土松",
+		"tags": "巨木1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#17c67d",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3,
+			"elect": 3
+		},
+		"ele":{
+			"ele_confusion": 0.1,
+			"element_wood": 1.3,
+			"element_land": 0.6,
+			"element_fire": -0.4
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "huohua",
+		"name": "火花",
+		"desc": "一团小火花",
+		"tags": "烈火1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#ac0404",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.7,
+			"element_fire": 1.7,
+			"element_wood": -0.3
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "yanhuo",
+		"name": "岩火",
+		"desc": "一团岩火",
+		"tags": "烈火1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#ac0404",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.7,
+			"element_fire": 1.2,
+			"element_land": 0.3,
+			"element_wood": -0.3
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "huoshangteng",
+		"name": "火伤藤",
+		"desc": "火伤藤",
+		"tags": "烈火1级,药材1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#ac0404",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.7,
+			"element_fire": 1.7,
+			"element_land": 0.3,
+			"element_wood": -0.4
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "yankuai",
+		"name": "岩块",
+		"desc": "岩块",
+		"tags": "厚土1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.4,
+			"element_land": 1.7,
+			"element_gold": 0.4,
+			"element_water": -0.2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "huorang",
+		"name": "火壤",
+		"desc": "火壤",
+		"tags": "厚土1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.8,
+			"element_land": 1.6,
+			"element_fire": 0.3,
+			"element_wood": -0.2,
+			"element_water": -0.2
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "tujin",
+		"name": "土金",
+		"desc": "土金",
+		"tags": "厚土1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_land": 1.3,
+			"element_gold": 0.5,
+			"element_wood": -0.5
+		},
+		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "lingrang",
+		"name": "灵壤",
+		"desc": "灵壤",
+		"tags": "厚土1级,材料1级",
+		"equneed": "g.artifice_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.yaolixue>=1",
+		"val":0,
+		"max": 5,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"time": -1,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 0.3,
+			"element_land": 1.9,
+			"element_water": -0.5
+		},
+		"flavor": "需要1级炼化台"
+	}
+]
