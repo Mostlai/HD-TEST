@@ -566,7 +566,7 @@
 			"paper.max": 20,
 			"exe_paper.max": 15,
 			"star_map.max": 10,
-			"star_map_1.max": 3,
+			"star_map_1.max": 6,
 			"snp_data.max": 10,
 			"alculation.max": -10,
 			"human_power.max": -20,
