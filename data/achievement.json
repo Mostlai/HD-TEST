@@ -2,7 +2,7 @@
 	{
 		"id": "ach_backpack_1",
 		"name": "打开背包",
-		"desc": "按E打开背包",
+		"desc": "完成动作-按键帮助,按E打开背包",
 		"target_item": "keyboard",
 		"target_val": 1,
 		"hide": true,
@@ -314,7 +314,7 @@
 		"name": "我又来",
 		"desc": "征服14个中型城镇",
 		"target_item": "conquer_mediun",
-		"target_val": 25,
+		"target_val": 14,
 		"hide": true,
 		"locked": false,
 		"val":0,
