@@ -22,6 +22,29 @@
 		}
 	},
 	{
+		"id": "languages_pl",
+		"name": "语言学",
+		"require": "g.reading>=5",
+		"desc": "尽可能学习更多的知识",
+		"buy": {
+			"money": 10
+		},
+		"effect": {
+			"time": 0.8
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"skill.rate": 0.1,
+			"ganwu.rate": 0.05,
+			"ganwu.max": 5
+		}
+	},
+	{
 		"id": "crafting_1",
 		"name": "基础制造学",
 		"need": "work_space",
@@ -91,7 +114,7 @@
 	{
 		"id": "ganwu_skill",
 		"name": "清醒思维",
-		"need": "g.Knowledge_class_1&&g.Knowledge_integration_1",
+		"need": "g.Knowledge_class_1>=1&&g.Knowledge_integration_1",
 		"desc": "在繁杂思绪中保留灵感",
 		"buy": {
 			"books": 1
@@ -108,6 +131,23 @@
 		},
 		"mod": {
 			"ganwu.max": 2
+		}
+	},
+	{
+		"id": "composure_pl",
+		"name": "沉着",
+		"desc": "保持冷静",
+		"require": "g.ganwu_skill>=4",
+		"level": 3,
+		"effect": {
+			"time": 0.8
+		},
+		"run": {
+			"ganwu": 0.2,
+			"stamina": 0.5
+		},
+		"mod": {
+			"stress.rate": -0.1
 		}
 	},
 	{
@@ -377,8 +417,8 @@
 			"ganwu.max": 2,
 			"human_power.max": 10,
 			"human_power.rate": 0.1,
-			"conquer_0.max": 1,
-			"conquer_3.max": 0.5
+			"conquer_small.max": 1,
+			"conquer_mediun.max": 0.5
 		}
 	},
 	{
@@ -1023,8 +1063,8 @@
 		},
 		"mod": {
 			"shenshi_4.max": 0.5,
-			"conquer_0.max": 2,
-			"conquer_3.max": 1
+			"conquer_small.max": 2,
+			"conquer_mediun.max": 1
 		}
 	},
 	{
@@ -1327,7 +1367,7 @@
 		"buy": {
 			"ganwu": 130,
 			"super_mind": 30,
-			"dirty_lingti": 20,
+			"dirty_lingti": 10,
 			"nolight_core": 10
 		},
 		"effect": {
@@ -1345,6 +1385,467 @@
 		},
 		"mod": {
 			"chaos.max": 1
+		}
+	},
+	{
+		"id": "yaolixue",
+		"name": "药理学",
+		"require": "g.xiulian_str_clhianh>=1",
+		"level": 5,
+		"desc": "研究药理",
+		"buy": {
+			"ganwu": 430,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1400,
+			"star_map_1": 5
+		},
+		"effect": {
+			"time": 3
+		},
+		"run": {
+			"ganwu": 2,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"drug_resist.max": 1
+		}
+	},
+	{
+		"id": "yuansuxue",
+		"name": "元素学",
+		"require": "g.xiulian_str_clhianh>=1",
+		"level": 8,
+		"desc": "研究元素",
+		"buy": {
+			"ganwu": 430,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1400,
+			"star_map_1": 10
+		},
+		"effect": {
+			"time": 10
+		},
+		"run": {
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"ele_confusion.rate": -0.1,
+			"drug_resist.max": 0.5
+		}
+	},
+	{
+		"id": "jisuanshuxue",
+		"name": "计算数学",
+		"require": "g.alculation_1>=1",
+		"level": 9,
+		"desc": "数值计算方法",
+		"buy": {
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"heli.rate": 0.1,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "daishuxue",
+		"name": "代数学",
+		"require": "g.xiulian_fc_djdys>=1 && g.xiulian_fc_ppys>=1 && g.xiulian_fc_wzyfc>=1",
+		"level": 9,
+		"desc": "代数计算方法",
+		"need": "equation_1",
+		"buy": {
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"heli.rate": 0.1,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "shulitongji",
+		"name": "数理统计学",
+		"require": "g.xiulian_jh_xsgl>=1 && g.xiulian_jh_sjnh>=1",
+		"level": 9,
+		"desc": "统计科学",
+		"need": "statistics_1",
+		"buy": {
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"heli.rate": 0.1,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "litishuxue",
+		"name": "立体数学",
+		"require": "g.xiulian_space_xlff>=1 && g.xiulian_space_nhzbx>=1",
+		"level": 9,
+		"desc": "立体数学",
+		"need": "space_alculation_1",
+		"buy": {
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"heli.rate": 0.1,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "guishuxue",
+		"name": "诡术学",
+		"require": "g.xiulian_chaos_ld_1>=1",
+		"level": 6,
+		"desc": "混沌诡术",
+		"buy": {
+			"sp": 10,
+			"money": 300,
+			"ganwu": 200
+		},
+		"effect": {
+			"time": 2
+		},
+		"run": {
+			"chaos": 3,
+			"ganwu": 3
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "guifaxue",
+		"name": "诡法学",
+		"require": "g.xiulian_guishutonghua>=1 && g.xiulian_hundunguishu>=1",
+		"level": 6,
+		"desc": "诡秘",
+		"buy": {
+			"sp": 10,
+			"money": 300,
+			"ganwu": 200
+		},
+		"effect": {
+			"time": 2
+		},
+		"run": {
+			"chaos": 3,
+			"ganwu": 3
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"lingtibianxiezhe.max": 0.4,
+			"lingtiguaningzhe.max": 0.4,
+			"skill.rate": 1,
+			"money.rate": 0.1,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "niuquxue",
+		"name": "扭曲学",
+		"require": "g.element_luor>=1",
+		"level": 9,
+		"desc": "扭曲元素",
+		"buy": {
+			"element_luor": 10,
+			"element_wuhuan": 10,
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"alculation": 10,
+			"element_luor": 0.05,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"element_luor.rate": 0.001,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "niuquzhouyu",
+		"name": "扭曲咒语",
+		"require": "g.niuquxue>=3 && g.guifaxue>=5",
+		"level": 10,
+		"desc": "危险之物",
+		"buy": {
+			"element_luor": 10,
+			"element_wuhuan": 10,
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 10,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 15,
+			"yjswyb": 10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"alculation": 10,
+			"element_luor": 0.1,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"spelllist.max": 1,
+			"element_luor.rate": 0.001,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "tansuo",
+		"name": "世界探索",
+		"require": "g.xiulian_str_clhianh>=1",
+		"level": 12,
+		"desc": "对世界展开调查",
+		"buy": {
+			"life_crystal": 4,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 1400,
+			"star_map_1": 5
+		},
+		"effect": {
+			"time": 3
+		},
+		"run": {
+			"ganwu": 2,
+			"tili": 3
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"dist": "5%"
+		}
+	},
+	{
+		"id": "adv_read",
+		"name": "进阶语言学",
+		"level": 8,
+		"require": "g.xiulian_str_clhianh>=1",
+		"desc": "尽可能学习更多的知识",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 1400,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"skill.rate": 3
+		}
+	},
+	{
+		"id": "qingyi",
+		"name": "琴艺",
+		"level": 7,
+		"require": "g.music_1>=1",
+		"desc": "弹琴奏乐",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 1400,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"skill.rate": 2
+		}
+	},
+	{
+		"id": "huagong",
+		"name": "画工",
+		"level": 7,
+		"require": "g.paint_1>=1",
+		"desc": "挥洒颜料",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 1400,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"stress.rate": -0.06
+		}
+	},
+	{
+		"id": "shufa",
+		"name": "书法",
+		"level": 7,
+		"require": "g.book_1>=1",
+		"desc": "挥洒笔墨",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 1400,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"stress.max": 0.5,
+			"chaos.rate": 0.2,
+			"heli.rate": 0.2
+		}
+	},
+	{
+		"id": "qifa",
+		"name": "棋法",
+		"level": 7,
+		"require": "g.chess_1>=1",
+		"desc": "",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 1400,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"money.rate": 0.2,
+			"ganwu.rate": 0.2,
+			"star_map.rate": 0.08
 		}
 	},
 	{

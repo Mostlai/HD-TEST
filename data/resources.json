@@ -135,69 +135,6 @@
 		"max": 6
 	},
 	{
-		"id": "cu_iron",
-		"name": "铁板",
-		"desc": "最普通的金属",
-		"group": "金属",
-		"tags": "",
-		"require": "g.metal_1>=1",
-		"max": 10
-	},
-	{
-		"id": "cu_copper",
-		"name": "铜板",
-		"desc": "高导电率",
-		"group": "金属",
-		"tags": "",
-		"require": "g.metal_1>=4",
-		"max": 10
-	},
-	{
-		"id": "iron_copper",
-		"name": "合成金属F-C",
-		"desc": "第一代合金,硬度和导电率良好",
-		"group": "金属",
-		"tags": "",
-		"require": "g.xiulian_struct_1>=1",
-		"max": 5
-	},
-	{
-		"id": "sj_met",
-		"name": "神经材料",
-		"desc": "将神识附着在FC合金上,达到更优良的金属性能",
-		"group": "金属",
-		"tags": "",
-		"require": "g.xiulian_struct_2>=1",
-		"max": 5
-	},
-	{
-		"id": "tian",
-		"name": "钛板",
-		"desc": "具有金属光泽,有延展性,密度小,容易加工",
-		"group": "金属",
-		"tags": "",
-		"require": "g.land_wa>=3 &&g.metal_1>=8",
-		"max": 5
-	},
-	{
-		"id": "cbclb",
-		"name": "纯白材料包",
-		"desc": "多种金属打包而来的材料学基础包",
-		"group": "金属",
-		"tags": "",
-		"require": "g.xiulian_struct_cailiaozuhe>=1",
-		"max": 10
-	},
-	{
-		"id": "yjdl",
-		"name": "亚极电缆",
-		"desc": "亚极电缆是一种利用了黄泉技术的高传导率电缆",
-		"group": "金属",
-		"tags": "",
-		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
-		"max": 10
-	},
-	{
 		"id": "frs",
 		"name": "废热水",
 		"desc": "高污染的流体,不可直接倾倒在自然环境中",
@@ -227,6 +164,15 @@
 		"group": "流体",
 		"tags": "",
 		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
+		"max": 1
+	},
+	{
+		"id": "qiyiyeti",
+		"name": "奇异液体",
+		"desc": "具有扭曲性质的液体,能将五环点扭曲为落日点",
+		"group": "流体",
+		"tags": "",
+		"require": "g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
 		"max": 1
 	},
 	{
@@ -393,32 +339,6 @@
 		"max": 5
 	},
 	{
-		"id": "r_adv_w_sj1",
-		"name": "反材料工具",
-		"desc": "小型的定制化武器,可以快速破除敌军的防御,一般用于小规模战争",
-		"group": "武器",
-		"tags": "",
-		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
-		"mod": {
-			"f_power.max": 5,
-			"f_power":5
-		},
-		"max": 2
-	},
-	{
-		"id": "r_adv_w_sj2",
-		"name": "污浊武器",
-		"desc": "以污浊核心为主体的武器,具有大杀伤效果",
-		"group": "武器",
-		"tags": "",
-		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
-		"mod": {
-			"f_power.max": 10,
-			"f_power":10
-		},
-		"max": 2
-	},
-	{
 		"id": "dirty_lingti",
 		"name": "纯浊灵体",
 		"desc": "纯净灵体,但表达了污浊核心的反相性质",
@@ -451,6 +371,26 @@
 		"id": "zhuji_tianjie_2",
 		"name": "落日-真魂",
 		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_hide",
+		"name": "隐藏修炼",
+		"desc": "隐藏修炼",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "herbal_hide",
+		"name": "隐藏药材",
+		"desc": "隐藏药材",
 		"hide": true,
 		"group": "修行",
 		"tags": "",
@@ -1344,6 +1284,386 @@
 		"max": 1
 	},
 	{
+		"id": "xiulian_life_swjz",
+		"name": "生物机制",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_swpy",
+		"name": "生物培养",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_swyz",
+		"name": "生物育种",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_ph_1",
+		"name": "合理平衡",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_ys_2",
+		"name": "进阶合理压缩",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_heli_ys_3",
+		"name": "外部合理收缩",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_smfx",
+		"name": "生命分析",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_eye_yshyj",
+		"name": "元素化研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_ysgz",
+		"name": "元素构造",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_hlys",
+		"name": "混乱元素",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_whhcl",
+		"name": "混乱无害化处理",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_yspl",
+		"name": "元素排列",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_ylfx",
+		"name": "药理分析",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_str_clfj",
+		"name": "材料分解",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_str_clznfl",
+		"name": "材料智能分类",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_str_clhianh",
+		"name": "材料炼化",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_life_slylyj",
+		"name": "生灵药理研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_ysch",
+		"name": "元素缠合",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_yswd",
+		"name": "元素稳定",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_ysbwd",
+		"name": "不稳定元素",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_sbzq",
+		"name": "衰变周期",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_bwdbc",
+		"name": "不稳定保存",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_ysys",
+		"name": "元素衍生",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_xlff",
+		"name": "向量方法",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_space_nhzbx",
+		"name": "拟合坐标系",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_fc_wzyfc",
+		"name": "未知元方程计算",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_fc_ppys",
+		"name": "频谱运算",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_fc_djdys",
+		"name": "多交点计算",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jh_sjnh",
+		"name": "数据拟合",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jh_xsgl",
+		"name": "相似归类",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_fc_niuqushuxues",
+		"name": "扭曲数学",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_fc_niuquhanshu",
+		"name": "扭曲函数",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_shifangzhutai",
+		"name": "十方烛台",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_hundunguishu",
+		"name": "混沌诡术",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_guishutonghua",
+		"name": "诡术同化",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jj_qybz",
+		"name": "奇异孢子培育",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jj_jclr",
+		"name": "精纯落日",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_jj_jcwh",
+		"name": "精纯五环",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",
@@ -1762,6 +2082,99 @@
 		"max": 0
 	},
 	{
+		"id": "exchange_code_1",
+		"desc": "2022兑换码",
+		"info": "2022新年快乐,2022个钱币请收下!",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"money": 2022
+		}
+	},
+	{
+		"id": "exchange_code_2",
+		"desc": "十个零结晶兑换码",
+		"info": "十个零结晶!!!",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"zero_crystal": 10
+		}
+	},
+	{
+		"id": "exchange_code_3",
+		"desc": "时间倒退十年",
+		"info": "时间倒退十年,续下命哥们",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"time": -3650
+		}
+	},
+	{
+		"id": "exchange_code_4",
+		"desc": "获得一块钱(向天再借五百年)",
+		"info": "但是我只有一块钱",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"money": 1
+		}
+	},
+	{
+		"id": "exchange_code_5",
+		"desc": "我不到啊",
+		"info": "我不到啊",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"drop":{
+			"xwdsnzyd": "100%"
+		}
+	},
+	{
+		"id": "exchange_code_6",
+		"desc": "我在马路边捡到一块钱",
+		"info": "我在马路边捡到一块钱",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 2022,
+		"coderesult":{
+			"money": 1
+		}
+	},
+	{
+		"id": "exchange_code_7",
+		"desc": "输入",
+		"equneed": "g.ganwu>=300",
+		"info": "老实人....",
+		"needinfo": "你还不能兑换此兑换码[需要感悟大于300]",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"ganwu.rate": 1
+		}
+	},
+	{
 		"id": "time",
 		"desc": "",
 		"flavor": "餐玉驻年龄，吞霞反容颜",
@@ -1822,6 +2235,14 @@
 		"name": "人力",
 		"val":0,
 		"max": 1
+	},
+	{
+		"id": "command_code",
+		"desc": "指令容量",
+		"hide": true,
+		"name": "指令容量",
+		"val":0,
+		"max": 3
 	},
 	{
 		"id": "age",

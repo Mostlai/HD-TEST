@@ -1,5 +1,29 @@
 [
 	{
+		"id": "market_sell_zero_crystal",
+		"name": "出售零结晶",
+		"desc": "出售多余的零结晶换钱",
+		"require": "g.market_un>0&&g.zero_crystal>=1",
+		"cost": {
+			"zero_crystal": 1
+		},
+		"result": {
+			"money": 6
+		}
+	},
+	{
+		"id": "market_buy_zero_crystal",
+		"name": "购买零结晶",
+		"desc": "购买零结晶以备不时之需",
+		"require": "g.market_un>0&&g.zero_crystal>=1",
+		"cost": {
+			"money": 50
+		},
+		"result": {
+			"zero_crystal": 1
+		}
+	},
+	{
 		"id": "market_shortsword",
 		"name": "短剑",
 		"desc": "一把好用的短剑",

@@ -86,6 +86,183 @@
 		]
 	},
 	{
+		"id": "pingyuan_loc",
+		"name": "平原[天文记录]",
+		"level": 5,
+		"dist": 20,
+		"length": 20,
+		"require": "g.evt_pingyuan>=1",
+		"desc": "旷野",
+		"run": {
+			"time": -0.1,
+			"tili": 0.2
+		},
+		"result": {
+			"star_map": 7
+		},
+		"encs": [
+			"enc_rest",
+			"enc_walk",
+			"enc_star_map",
+			"enc_zero_c"
+		]
+	},
+	{
+		"id": "exe_smallcheng",
+		"name": "小城镇[城边矿山前置]",
+		"level": 5,
+		"dist": 20,
+		"length": 20,
+		"require": "g.evt_pingyuan>=1",
+		"desc": "热闹的城镇",
+		"run": {
+			"time": -0.01,
+			"tili": 0.2
+		},
+		"result": {
+			"ganwu": 20,
+			"money": 10
+		},
+		"encs": [
+			"enc_rest",
+			"enc_guangjie",
+			"enc_chaojia",
+			"enc_paper",
+			"enc_zero_c",
+			"enc_xiaotou"
+		]
+	},
+	{
+		"id": "exe_chengbiankuangshan",
+		"name": "城边矿山[铁石,赤铁]",
+		"level": 5,
+		"dist": 50,
+		"length": 30,
+		"require": "g.exe_smallcheng>=1 && g.evt_tansuo_1>=1",
+		"desc": "城镇边上的矿山",
+		"run": {
+			"time": -0.01,
+			"tili": 0.2
+		},
+		"result": {
+			"citie": 2,
+			"tieshi": 3
+		},
+		"encs": [
+			"enc_rest",
+			"enc_cave_4",
+			"enc_kuangshan_2",
+			"enc_kuangshan_1",
+			"enc_cave_3"
+		]
+	},
+	{
+		"id": "exe_jlssji",
+		"name": "巨灵山脊[铁石,空金,岩块]",
+		"level": 5,
+		"dist": 50,
+		"length": 30,
+		"require": "g.jlss>=1 && g.evt_tansuo_1>=1",
+		"desc": "巨灵山脊",
+		"run": {
+			"time": -1,
+			"tili": 2
+		},
+		"result": {
+			"citie": 2,
+			"kongjin": 1,
+			"yankuai": 2
+		},
+		"encs": [
+			"enc_rest",
+			"enc_yeshou_1",
+			"enc_yeshou_2",
+			"enc_kongjin_1",
+			"enc_yankuai_1",
+			"enc_kuangshan_1",
+			"enc_cave_3"
+		]
+	},
+	{
+		"id": "exe_jlssbei",
+		"name": "巨灵山背[土松,绿柏]",
+		"level": 5,
+		"dist": 50,
+		"length": 30,
+		"require": "g.jlss>=1 && g.evt_tansuo_1>=1",
+		"desc": "巨灵山背",
+		"run": {
+			"time": -1,
+			"tili": 2
+		},
+		"result": {
+			"tusong": 2,
+			"lvbai": 1
+		},
+		"encs": [
+			"enc_rest",
+			"enc_yeshou_1",
+			"enc_yeshou_2",
+			"enc_lvbai_1",
+			"enc_tusong_1",
+			"enc_kuangshan_1",
+			"enc_cave_3"
+		]
+	},
+	{
+		"id": "exe_huoquan",
+		"name": "火泉[火壤,火花]",
+		"level": 5,
+		"dist": 50,
+		"length": 30,
+		"require": "g.dmhs>=1 && g.evt_tansuo_1>=1",
+		"desc": "火泉",
+		"run": {
+			"time": -1,
+			"tili": 2
+		},
+		"result": {
+			"huorang": 2,
+			"huohua": 2
+		},
+		"encs": [
+			"enc_rest",
+			"enc_yanjiang_1",
+			"enc_yeshou_2",
+			"enc_huorang_1",
+			"enc_huohua_1",
+			"enc_kuangshan_1",
+			"enc_cave_3"
+		]
+	},
+	{
+		"id": "exe_huoquan",
+		"name": "大湖边[牵牛花,青松,水藤]",
+		"level": 5,
+		"dist": 50,
+		"length": 30,
+		"require": "g.lzdh>=1 && g.evt_tansuo_1>=1",
+		"desc": "大湖边",
+		"run": {
+			"time": -1,
+			"tili": 2
+		},
+		"result": {
+			"qianniuhua": 2,
+			"shuiteng": 2,
+			"qingsong": 1
+		},
+		"encs": [
+			"enc_rest",
+			"enc_yeshou_1",
+			"enc_yeshou_2",
+			"enc_qianniuhua_1",
+			"enc_shuiteng_1",
+			"enc_qingsong_1",
+			"enc_cave_1"
+		]
+	},
+	{
 		"id": "modao_loc_1",
 		"name": "无光山脉[魔导]",
 		"level": 20,
@@ -111,6 +288,36 @@
 			"enc_modao_2",
 			"enc_modao_3",
 			"enc_modao_4"
+		]
+	},
+	{
+		"id": "qiyi_1",
+		"name": "陷绝峡谷[奇异液体]",
+		"level": 20,
+		"length": 40,
+		"dist":250,
+		"require": "g.evt_tansuo_2>=1",
+		"desc": "如同被巨神斩开",
+		"run": {
+			"back_dream": 0.2,
+			"time": -1,
+			"tili": 1,
+			"stamina": 0.5
+		},
+		"result": {
+			"qiyiyeti": "2~3",
+			"ganwu": 10
+		},
+		"loot": {
+			"money": "10~20"
+		},
+		"encs": [
+			"enc_walk_1",
+			"enc_walk",
+			"enc_rest",
+			"enc_star_map",
+			"enc_qiyiyet",
+			"enc_box_1"
 		]
 	},
 	{

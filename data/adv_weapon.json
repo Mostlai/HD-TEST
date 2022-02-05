@@ -1,11 +1,15 @@
 [
 	{
-		"id": "adv_w_sj11",
-		"name": "⚔️反材料工具工作台",
+		"id": "r_adv_w_sj1",
+		"name": "⚔️反材料工具",
 		"desc": "小型的定制化武器,可以快速破除敌军的防御,一般用于小规模战争",
 		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
 		"val": 0,
 		"max": 2,
+		"mod": {
+			"f_power.max": 5,
+			"f_power":5
+		},
 		"cost": {
 			"money": 100,
 			"iron_copper":3,
@@ -13,40 +17,52 @@
 			"zero_crystal": 1,
 			"cu_iron": 4,
 			"human_power": 5
-		},
-		"result":{
-			"r_adv_w_sj1.max": -1,
-			"r_adv_w_sj1.rate": -0.005
 		}
 	},
 	{
-		"id": "adv_w_sj22",
-		"name": "⚔️污浊车间",
+		"id": "r_adv_w_sj2",
+		"name": "⚔️污浊武器",
 		"desc": "以污浊核心为主体的武器,具有大杀伤效果",
 		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
 		"val": 0,
 		"max": 1,
-		"cost": {
-			"money": 500,
-			"ganwu": 300,
-			"super_mind": 5,
-			"shenshi": 8,
-			"iron_copper":20,
-			"dirty_lingti": 10,
-			"dirty_core": 10,
-			"cold_core":10,
-			"tian":10,
-			"human_power": 230,
-			"alculation": 80,
-			"sj_met": 10,
-			"zero_crystal": 20,
-			"cu_iron": 30,
-			"cu_copper":30,
-			"human_power": 50
+		"mod": {
+			"f_power.max": 5,
+			"f_power":5
 		},
-		"result":{
-			"r_adv_w_sj2.max": -0.5,
-			"r_adv_w_sj2.rate": -0.005
+		"cost": {
+			"money": 100,
+			"iron_copper":20,
+			"dirty_core": 2,
+			"tian":10,
+			"human_power": 100,
+			"alculation": 80,
+			"sj_met": 2,
+			"zero_crystal": 10,
+			"human_power": 50
+		}
+	},
+	{
+		"id": "r_adv_w_sj3",
+		"name": "⚔️冷结武器",
+		"desc": "以冰冻核心为主体的武器,具有大杀伤效果",
+		"require":"g.weapon_1>=1 && g.cold_core>=10",
+		"val": 0,
+		"max": 4,
+		"mod": {
+			"f_power.max": 5,
+			"f_power":5
+		},
+		"cost": {
+			"money": 100,
+			"iron_copper":20,
+			"cold_core": 4,
+			"tian":2,
+			"human_power": 100,
+			"alculation": 80,
+			"sj_met": 2,
+			"zero_crystal": 10,
+			"human_power": 50
 		}
 	}
 ]

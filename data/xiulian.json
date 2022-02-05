@@ -17,7 +17,7 @@
 		},
 		"xiulianresult": {
 			"time": 13,
-			"heli.rate": -0.01,
+			"heli.rate": 0.01,
 			"xiulian_heli_1": 1
 		}
 	},
@@ -77,8 +77,8 @@
 		},
 		"xiulianresult": {
 			"time": 30,
-			"heli.max": -0.5,
-			"heli.rate": -0.01,
+			"heli.max": 0.5,
+			"heli.rate": 0.01,
 			"xiulian_jizhun_1": 1
 		}
 	},
@@ -175,8 +175,8 @@
 		},
 		"xiulianresult": {
 			"time": 30,
-			"heli.max": -1,
-			"heli.rate": -0.01,
+			"heli.max": 1,
+			"heli.rate": 0.01,
 			"xiulian_fangyuan_1": 1
 		}
 	},
@@ -199,8 +199,8 @@
 		"xiulianresult": {
 			"time": 10,
 			"xiulian_life_1" : 1,
-			"age": -1825,
-			"age.max": -1825
+			"age": 1825,
+			"age.max": 1825
 		}
 	},
 	{
@@ -222,8 +222,8 @@
 		},
 		"xiulianresult": {
 			"time": 10,
-			"age": -2825,
-			"age.max": -2825
+			"age": 2825,
+			"age.max": 2825
 		}
 	},
 	{
@@ -244,8 +244,8 @@
 		},
 		"xiulianresult": {
 			"time": 10,
-			"age.max": -3650,
-			"age": -3650
+			"age.max": 3650,
+			"age": 3650
 		}
 	},
 	{
@@ -273,8 +273,8 @@
 		"xiulianresult": {
 			"time": 10,
 			"frs": 19,
-			"age.max": -3650,
-			"age": -3650
+			"age.max": 3650,
+			"age": 3650
 		}
 	},
 	{
@@ -292,7 +292,7 @@
 		"xiulianresult": {
 			"time": 7,
 			"xiulian_heli_li_1_controll" : 1,
-			"heli.rate": -0.1
+			"heli.rate": 0.1
 		}
 	},
 	{
@@ -311,8 +311,8 @@
 		"xiulianresult": {
 			"time": 30,
 			"xiulian_heli_li_1_soild" : 1,
-			"heli.max": -1,
-			"heli.rate": -0.1
+			"heli.max": 1,
+			"heli.rate": 0.1
 		}
 	},
 	{
@@ -333,8 +333,8 @@
 			"time": 12,
 			"xiulian_heli_li_1_esc" : 1,
 			"heli_missile": true,
-			"heli.max": -1,
-			"heli.rate": -0.1
+			"heli.max": 1,
+			"heli.rate": 0.1
 		}
 	},
 	{
@@ -373,8 +373,8 @@
 		"xiulianresult": {
 			"time": 3,
 			"xiulian_ld_body_1" : 1,
-			"stamina.max": -1,
-			"stamina.rate": -0.05
+			"stamina.max": 1,
+			"stamina.rate": 0.05
 		}
 	},
 	{
@@ -395,11 +395,11 @@
 		"xiulianresult": {
 			"time": 10,
 			"xiulian_ld_body_2" : 1,
-			"hp.max": -1,
-			"tili.max": -1,
-			"tili.rate": -0.1,
-			"stamina.max": -0.3,
-			"stamina.rate": -0.06
+			"hp.max": 1,
+			"tili.max": 1,
+			"tili.rate": 0.1,
+			"stamina.max": 0.3,
+			"stamina.rate": 0.06
 		}
 	},
 	{
@@ -426,11 +426,11 @@
 			"time": 20,
 			"xiulian_ld_body_3" : 1,
 			"frs": 18,
-			"hp.max": -3,
-			"tili.max": -3,
-			"tili.rate": -0.1,
-			"stamina.max": -2,
-			"stamina.rate": -0.06
+			"hp.max":  3,
+			"tili.max":  3,
+			"tili.rate":  0.1,
+			"stamina.max":  2,
+			"stamina.rate":  0.06
 		}
 	},
 	{
@@ -453,10 +453,10 @@
 		"xiulianresult": {
 			"time": 30,
 			"xiulian_ld_dw_guancha" : 1,
-			"rlt_guancha.max": -5,
-			"hp.max": -10,
-			"tili.max": -1,
-			"tili.rate": -0.1
+			"rlt_guancha.max":  5,
+			"hp.max":  10,
+			"tili.max":  1,
+			"tili.rate":  0.1
 		}
 	},
 	{
@@ -476,8 +476,8 @@
 		},
 		"xiulianresult": {
 			"time": 30,
-			"tili.max": -1,
-			"tili.rate": -0.6
+			"tili.max":  1,
+			"tili.rate":  0.6
 		}
 	},
 	{
@@ -499,7 +499,7 @@
 		},
 		"xiulianresult": {
 			"time": 30,
-			"tili.rate": -1
+			"tili.rate":  1
 		}
 	},
 	{
@@ -519,8 +519,8 @@
 		"xiulianresult": {
 			"time": 6,
 			"xiulian_astro_zhuji_1" : 1,
-			"astronomy.max": -2,
-			"astronomy.rate": "-1%"
+			"astronomy.max":  2,
+			"astronomy.rate": "1%"
 		}
 	},
 	{
@@ -540,8 +540,8 @@
 		"xiulianresult": {
 			"time": 6,
 			"xiulian_astro_zhuji_1_1" : 1,
-			"astronomy.max": -1,
-			"astronomy.rate": "-1%"
+			"astronomy.max":  1,
+			"astronomy.rate": "1%"
 		}
 	},
 	{
@@ -560,9 +560,9 @@
 		"xiulianresult": {
 			"time": 50,
 			"xiulian_astro_zhuji_2" : 1,
-			"astronomy.max": -2,
-			"astronomy_1.max": -2,
-			"astronomy.rate": "-1%"
+			"astronomy.max":  2,
+			"astronomy_1.max":  2,
+			"astronomy.rate": "1%"
 		}
 	},
 	{
@@ -581,11 +581,11 @@
 		},
 		"xiulianresult": {
 			"time": 100,
-			"chaos.max": -3,
-			"chaos.rate": -0.1,
+			"chaos.max":  3,
+			"chaos.rate":  0.1,
 			"xiulian_astro_zhuji_3" : 1,
-			"chaos_sci.max": -2,
-			"chaos_sci.rate": "-3%"
+			"chaos_sci.max":  2,
+			"chaos_sci.rate": "3%"
 		}
 	},
 	{
@@ -629,9 +629,9 @@
 		"xiulianresult": {
 			"time": 30,
 			"xiulian_eye_zhuji_1" : 1,
-			"heli.max": -2,
-			"astronomy.max": -2,
-			"astronomy.rate": "-1%"
+			"heli.max":  2,
+			"astronomy.max":  2,
+			"astronomy.rate": "1%"
 		}
 	},
 	{
@@ -653,9 +653,9 @@
 		"xiulianresult": {
 			"time": 10,
 			"xiulian_zhuji_1":1,
-			"heli.max": -3,
-			"age.max": -5000,
-			"age": -5000
+			"heli.max":  3,
+			"age.max":  5000,
+			"age":  5000
 		},
 		"flavor": "飞跃"
 	},
@@ -754,8 +754,8 @@
 		},
 		"xiulianresult": {
 			"time": 3,
-			"metal_app.max": -5,
-			"shenshi_1.max": -2,
+			"metal_app.max":  5,
+			"shenshi_1.max":  2,
 			"xiulian_struct_2" : 1
 		}
 	},
@@ -794,16 +794,16 @@
 		},
 		"xiulianresult": {
 			"time": 365,
-			"heli.max": -20,
-			"chaos.max": -20,
-			"heli.rate": -1,
-			"chaos.rate": -1,
-			"age.max": -7300,
-			"age": -7300,
-			"hp.max": -5,
-			"stamina.max": -3,
-			"tili.max": -7,
-			"tili.rate": -0.7,
+			"heli.max":  20,
+			"chaos.max":  20,
+			"heli.rate":  1,
+			"chaos.rate":  1,
+			"age.max":  7300,
+			"age":  7300,
+			"hp.max":  5,
+			"stamina.max":  3,
+			"tili.max":  7,
+			"tili.rate":  0.7,
 			"xiulian_zhuji_2" : 1
 		}
 	},
@@ -1362,6 +1362,90 @@
 		}
 	},
 	{
+		"id": "shifangzhutai",
+		"name": "十方烛台(思维)",
+		"desc": "燃烧的灵魂",
+		"tags": "思维",
+		"require": "g.guishuxue>=10",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"lxue": 10,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"xiulianresult": {
+			"time": 365,
+			"frs": 29,
+			"xiulian_shifangzhutai" : 1
+		}
+	},
+	{
+		"id": "hundunguishu",
+		"name": "混沌诡术(思维)",
+		"desc": "难以琢磨",
+		"tags": "思维",
+		"require": "g.guishuxue>=10",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"lxue": 10,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"xiulianresult": {
+			"time": 365,
+			"frs": 29,
+			"xiulian_hundunguishu" : 1
+		}
+	},
+	{
+		"id": "guishutonghua",
+		"name": "诡术同化(思维)",
+		"desc": "",
+		"tags": "思维",
+		"require": "g.guishuxue>=10",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"dirty_lingti": 10,
+			"dirty_core": 10,
+			"cold_core": 10,
+			"jls": 30,
+			"money": 400,
+			"ganwu": 200,
+			"lxue": 10,
+			"zero_crystal": 20,
+			"snp_data": 12,
+			"paper": 40,
+			"star_map": 60,
+			"exe_paper": 12
+		},
+		"xiulianresult": {
+			"time": 365,
+			"frs": 29,
+			"xiulian_guishutonghua" : 1
+		}
+	},
+	{
 		"id": "zhuji_lizhu_znss",
 		"name": "智能神识(立足)",
 		"desc": "研究让神识可以智能化控制行动姿态",
@@ -1383,8 +1467,8 @@
 		},
 		"xiulianresult": {
 			"time": 33,
-			"shenshi.max": -2,
-			"shenshi.rate": -1,
+			"shenshi.max":  2,
+			"shenshi.rate":  1,
 			"xiulian_zhuji_lizhu_znss" : 1
 		}
 	},
@@ -1412,7 +1496,7 @@
 		},
 		"xiulianresult": {
 			"time": 33,
-			"elect.rate": -2,
+			"elect.rate":  2,
 			"xiulian_energ_struct_shenshi" : 1
 		}
 	},
@@ -1578,8 +1662,8 @@
 		"xiulianresult": {
 			"time": 33,
 			"frs":39,
-			"heli.rate": -2,
-			"chaos.rate": -2,
+			"heli.rate":  2,
+			"chaos.rate":  2,
 			"xiulian_zhuji_wuhuan" : 1
 		}
 	},
@@ -1612,8 +1696,8 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"age.max": -29200,
-			"age": -29200
+			"age.max":  29200,
+			"age":  29200
 		}
 	},
 	{
@@ -1645,8 +1729,8 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"age.max": -29200,
-			"age": -29200
+			"age.max":  29200,
+			"age":  29200
 		}
 	},
 	{
@@ -1678,8 +1762,8 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"age.max": -29200,
-			"age": -29200
+			"age.max":  29200,
+			"age":  29200
 		}
 	},
 	{
@@ -1711,8 +1795,8 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"age.max": -29200,
-			"age": -29200
+			"age.max":  29200,
+			"age":  29200
 		}
 	},
 	{
@@ -1744,8 +1828,8 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"age.max": -29200,
-			"age": -29200
+			"age.max":  29200,
+			"age":  29200
 		}
 	},
 	{
@@ -1870,7 +1954,7 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"lg.max": -5,
+			"lg.max":  5,
 			"xiulian_struct_fenxi":1
 		}
 	},
@@ -1902,9 +1986,9 @@
 		},
 		"xiulianresult": {
 			"frs": 39,
-			"tian.max": -10,
-			"sj_met.max": -10,
-			"iron_copper.max":-10,
+			"tian.max":  10,
+			"sj_met.max":  10,
+			"iron_copper.max": 10,
 			"xiulian_struct_pubian":1
 		}
 	},
@@ -2072,6 +2156,923 @@
 		}
 	},
 	{
+		"id": "life_swjz",
+		"name": "生物机制(生命构造)",
+		"desc": "研究生物的运行机制",
+		"tags": "生命构造",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_life_swjz":1
+		}
+	},
+	{
+		"id": "life_swpy",
+		"name": "生物培养(生命构造)",
+		"desc": "培养优秀生物",
+		"tags": "生命构造",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_life_swpy":1
+		}
+	},
+	{
+		"id": "life_smfx",
+		"name": "生命分析(生命构造)",
+		"desc": "对药生命进行分析",
+		"tags": "生命构造",
+		"require": "g.lnylx>=5 && g.yjswyb>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1800,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 15,
+			"life_crystal": 5,
+			"yjswyb": 7
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_smfx":1
+		}
+	},
+	{
+		"id": "eye_yshyj",
+		"name": "元素化研究(观测之术)",
+		"desc": "解构生命",
+		"tags": "观测之术",
+		"require": "g.xiulian_smfx>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1800,
+			"ganwu": 700,
+			"yqlm": 20,
+			"yjdl": 10,
+			"cbclb": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_eye_yshyj":1
+		}
+	},
+	{
+		"id": "space_ysgz",
+		"name": "元素构造(元素结构)",
+		"desc": "元素的基本构造",
+		"tags": "元素结构",
+		"require": "g.xiulian_smfx>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1800,
+			"ganwu": 700,
+			"yqlm": 20,
+			"yjdl": 10,
+			"cbclb": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"frs":29,
+			"money.rate":  0.1,
+			"xiulian_space_ysgz":1
+		}
+	},
+	{
+		"id": "space_hlys",
+		"name": "混乱元素(元素结构)",
+		"desc": "元素间的不对称会导致混乱",
+		"tags": "元素结构",
+		"require": "g.xiulian_space_ysgz>=1",
+		"max": 2,
+		"cost": {
+			"star_map_1": 10,
+			"yjswyb": 5,
+			"pyy": 10,
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1800,
+			"ganwu": 700,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_space_hlys":1
+		}
+	},
+	{
+		"id": "space_whhcl",
+		"name": "混乱无害化处理(元素工程)",
+		"desc": "学习净化混乱",
+		"tags": "元素工程",
+		"require": "g.xiulian_space_hlys>=1",
+		"max": 2,
+		"cost": {
+			"star_map_1": 10,
+			"yjswyb": 5,
+			"pyy": 10,
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1800,
+			"ganwu": 700,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_space_whhcl":1
+		}
+	},
+	{
+		"id": "space_yspl",
+		"name": "元素排列(元素排列)",
+		"desc": "元素在空间中的排列顺序",
+		"tags": "元素排列",
+		"require": "g.xiulian_smfx>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1800,
+			"ganwu": 700,
+			"yqlm": 20,
+			"yjdl": 10,
+			"cbclb": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"frs":29,
+			"ganwu.rate":  1,
+			"xiulian_space_yspl":1
+		}
+	},
+	{
+		"id": "life_swyz",
+		"name": "生物育种(生命构造)",
+		"desc": "保护幼小生命",
+		"tags": "生命构造",
+		"require": "g.yqlife>=4",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_life_swyz":1
+		}
+	},
+	{
+		"id": "life_ylfx",
+		"name": "药理分析(生命构造)",
+		"desc": "分析药材中的元素",
+		"tags": "生命构造",
+		"require": "g.yuansushiyan>=10",
+		"max": 2,
+		"cost": {
+			"yjswyb": 10,
+			"life_crystal":5,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 30,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"xiulian_life_ylfx":1
+		}
+	},
+	{
+		"id": "str_clfj",
+		"name": "材料分解(物体结构)",
+		"desc": "学习如何高效的分解材料为基本元素",
+		"tags": "物体结构",
+		"require": "g.yuansushiyan>=20",
+		"max": 2,
+		"cost": {
+			"yjswyb": 10,
+			"cbclb": 30,
+			"life_crystal":5,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 30,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"xiulian_str_clfj":1
+		}
+	},
+	{
+		"id": "str_clznfl",
+		"name": "材料智能分类(物体结构)",
+		"desc": "智能地将材料分解得到的元素解析开",
+		"tags": "物体结构",
+		"require": "g.yuansushiyan>=30",
+		"max": 2,
+		"cost": {
+			"yjswyb": 10,
+			"cbclb": 30,
+			"yjdl": 20,
+			"life_crystal":5,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 30,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"xiulian_str_clznfl":1
+		}
+	},
+	{
+		"id": "str_clhianh",
+		"name": "材料炼化(物体结构)",
+		"desc": "学会材料炼化",
+		"tags": "物体结构",
+		"require": "g.xiulian_str_clznfl>=1 && g.xiulian_str_clfj>=1 && g.xiulian_life_ylfx>=1",
+		"max": 2,
+		"cost": {
+			"yjswyb": 10,
+			"cbclb": 30,
+			"yjdl": 20,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 30,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"xiulian_str_clhianh":1
+		}
+	},
+	{
+		"id": "space_ysch",
+		"name": "元素缠合(元素反应)",
+		"desc": "试着将不同元素缠合在一起",
+		"tags": "元素反应",
+		"require": "g.yuansuxue>=3",
+		"max": 2,
+		"cost": {
+			"element_gold": 5,
+			"element_wood": 5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5,
+			"yjswyb": 10,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"xiulian_space_ysch":1
+		}
+	},
+	{
+		"id": "space_yswd",
+		"name": "元素稳定(元素结构)",
+		"desc": "稳定缠合元素",
+		"tags": "元素结构",
+		"require": "g.yuansuxue>=3",
+		"max": 2,
+		"cost": {
+			"element_gold": 5,
+			"element_wood": 5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5,
+			"yjswyb": 10,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 100
+		},
+		"xiulianresult": {
+			"xiulian_space_yswd":1
+		}
+	},
+	{
+		"id": "space_ysbwd",
+		"name": "不稳定元素(元素结构)",
+		"desc": "不稳定的衍生元素也有有着独特的性质",
+		"tags": "元素结构",
+		"require": "g.element_wuhuan>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 5,
+			"element_gold": 5,
+			"element_wood": 5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5,
+			"yjswyb": 10,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"xiulian_space_ysbwd":1
+		}
+	},
+	{
+		"id": "space_sbzq",
+		"name": "衰败周期(元素结构)",
+		"desc": "不稳定的元素会自然的衰败",
+		"tags": "元素结构",
+		"require": "g.xiulian_space_ysbwd>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"human_power": 700,
+			"money": 1900,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"xiulian_space_sbzq":1
+		}
+	},
+	{
+		"id": "space_bwdbc",
+		"name": "不稳定保存(元素工程)",
+		"desc": "保存不稳定元素",
+		"tags": "元素工程",
+		"require": "g.xiulian_space_ysbwd>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"human_power": 700,
+			"money": 1900,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"xiulian_space_bwdbc":1
+		}
+	},
+	{
+		"id": "space_ysys",
+		"name": "元素衍生(元素结构)",
+		"desc": "两种或多种元素的衍生物",
+		"tags": "元素结构",
+		"require": "g.yuansuxue>=3",
+		"max": 2,
+		"cost": {
+			"element_gold": 5,
+			"element_wood": 5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5,
+			"yjswyb": 10,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"xiulian_space_ysys":1
+		}
+	},
+	{
+		"id": "space_xlff",
+		"name": "向量方法(空间系)",
+		"desc": "引入向量概念",
+		"tags": "空间系",
+		"require": "g.space_alculation_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"litishuxue.rate": "5%",
+			"jisuanshuxue.rate": "1%",
+			"xiulian_space_xlff":1
+		}
+	},
+	{
+		"id": "space_nhzbx",
+		"name": "拟合坐标系(空间系)",
+		"desc": "拟合现实与黄泉的坐标",
+		"tags": "空间系",
+		"require": "g.space_alculation_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"litishuxue.rate": "5%",
+			"lxue.rate": 0.008,
+			"jisuanshuxue.rate": "1%",
+			"xiulian_space_nhzbx":1
+		}
+	},
+	{
+		"id": "fc_wzyfc",
+		"name": "未知元方程计算(多元程式)",
+		"desc": "对未知数量的多元方程进行计算",
+		"tags": "多元程式",
+		"require": "g.equation_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"daishuxue.rate": "2%",
+			"biology_1.rate": "5%",
+			"jisuanshuxue.rate": "2%",
+			"xiulian_fc_wzyfc":1
+		}
+	},
+	{
+		"id": "fc_ppys",
+		"name": "频谱运算(多元程式)",
+		"desc": "对具有震荡频谱性质的方程进行计算",
+		"tags": "多元程式",
+		"require": "g.equation_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"daishuxue.rate": "2%",
+			"astronomy_1.rate": "5%",
+			"jisuanshuxue.rate": "2%",
+			"xiulian_fc_ppys":1
+		}
+	},
+	{
+		"id": "fc_djdys",
+		"name": "多交点计算(多元程式)",
+		"desc": "对具有多变结果的方程进行计算",
+		"tags": "多元程式",
+		"require": "g.equation_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"daishuxue.rate": "2%",
+			"zero_crystal.rate": 0.01,
+			"jisuanshuxue.rate": "2%",
+			"xiulian_fc_djdys":1
+		}
+	},
+	{
+		"id": "fc_niuqushuxue",
+		"name": "扭曲数学(多元程式)",
+		"desc": "不稳定元素的数学构成",
+		"tags": "多元程式",
+		"require": "g.daishuxue>=3 && g.xiulian_space_ysbwd>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"element_wuhuan.max": 2,
+			"element_luor.max": 2,
+			"daishuxue.rate": "2%",
+			"xiulian_fc_niuqushuxues":1
+		}
+	},
+	{
+		"id": "jj_qybz",
+		"name": "奇异孢子培育(禁忌元素)",
+		"desc": "培育一种具有奇异性质的孢子",
+		"tags": "禁忌元素",
+		"require": "g.niuquxue>=3",
+		"max": 2,
+		"cost": {
+			"element_luor":2,
+			"qiyiyeti": 10,
+			"cbclb": 25,
+			"yjdl": 25,
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"age":-1000,
+			"age.max":-1000,
+			"tili.max": -5,
+			"qibaozi.max": 5,
+			"ele_luanxie": 1,
+			"xiulian_jj_qybz":1
+		}
+	},
+	{
+		"id": "jj_jclr",
+		"name": "精纯落日(禁忌元素)",
+		"desc": "落日升级",
+		"tags": "禁忌元素",
+		"require": "g.niuquxue>=4",
+		"max": 2,
+		"cost": {
+			"element_luor":10,
+			"cbclb": 25,
+			"yjdl": 25,
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"age":-500,
+			"age.max":-500,
+			"tili.max": -5,
+			"ele_luanxie": 1,
+			"xiulian_jj_jclr":1
+		}
+	},
+	{
+		"id": "jj_jclr",
+		"name": "精纯五环(元素工程)",
+		"desc": "",
+		"tags": "元素工程",
+		"require": "g.niuquxue>=5",
+		"max": 2,
+		"cost": {
+			"element_wuhuan":10,
+			"element_luor":10,
+			"cbclb": 25,
+			"yjdl": 25,
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"ele_luanxie": -0.1,
+			"xiulian_jj_jcwh":1
+		}
+	},
+	{
+		"id": "fc_niuquhanshu",
+		"name": "扭曲函数(多元程式)",
+		"desc": "不稳定元素的获取方式",
+		"tags": "多元程式",
+		"require": "g.daishuxue>=3 && g.xiulian_space_ysbwd>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"element_wuhuan": 10,
+			"element_gold": 5,
+			"element_wood": 5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5,
+			"yjswyb": 10,
+			"yjswyb": 10,
+			"lxue": 10,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"element_wuhuan.max": 2,
+			"daishuxue.rate": "2%",
+			"xiulian_fc_niuquhanshu":1
+		}
+	},
+	{
+		"id": "jh_sjnh",
+		"name": "数据拟合(几何)",
+		"desc": "对大量数据进行预测化计算",
+		"tags": "几何",
+		"require": "g.statistics_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"shulitongji.rate": "5%",
+			"alculation.rate": 2,
+			"jisuanshuxue.rate": "2%",
+			"xiulian_jh_sjnh":1
+		}
+	},
+	{
+		"id": "jh_xsgl",
+		"name": "相似归类(几何)",
+		"desc": "对有相似属性的数据分配数据簇",
+		"tags": "几何",
+		"require": "g.statistics_1>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"shulitongji.rate": "5%",
+			"alculation.rate": 5,
+			"jisuanshuxue.rate": "2%",
+			"xiulian_jh_xsgl":1
+		}
+	},
+	{
+		"id": "jh_jjwzgl",
+		"name": "结晶网状管理(几何)",
+		"desc": "",
+		"tags": "几何",
+		"require": "g.shulitongji>=3",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"zero_crystal.max": 10,
+			"life_crystal.max": 5
+		}
+	},
+	{
+		"id": "jh_ziliaotong",
+		"name": "资料统计(思维)",
+		"desc": "",
+		"tags": "思维",
+		"require": "g.shulitongji>=3",
+		"max": 2,
+		"cost": {
+			"cbclb": 25,
+			"yjdl": 25,
+			"life_crystal":5,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 5
+		},
+		"xiulianresult": {
+			"star_map_1.max": 5,
+			"star_map_1.rate": 0.1,
+			"snp_data.max":10,
+			"snp_data.rate":0.1
+		}
+	},
+	{
+		"id": "life_slylyj",
+		"name": "生灵药理研究(生命构造)",
+		"desc": "学习利用生灵石的力量",
+		"tags": "生命构造",
+		"require": "g.yaolixue>=3 && g.shenglingshi>=1",
+		"max": 2,
+		"cost": {
+			"yjswyb": 10,
+			"shenglingshi": 4,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cold_core": 30,
+			"dirty_core": 20,
+			"human_power": 700,
+			"money": 1500,
+			"ganwu": 700,
+			"yqlm": 30,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"xiulian_life_slylyj":1
+		}
+	},
+	{
 		"id": "siwei_gljz",
 		"name": "管理机制(思维)",
 		"desc": "管理人力",
@@ -2119,7 +3120,7 @@
 		},
 		"xiulianresult": {
 			"frs":29,
-			"stress.max": -5
+			"stress.max":  5
 		}
 	},
 	{
@@ -2175,7 +3176,7 @@
 		},
 		"xiulianresult": {
 			"frs":29,
-			"money.rate": -1
+			"money.rate":  1
 		}
 	},
 	{
@@ -2222,7 +3223,7 @@
 			"exe_paper": 12
 		},
 		"xiulianresult": {
-			"chaos.max": -5,
+			"chaos.max":  5,
 			"xiulian_hunpoyanjiu":1
 		}
 	},
@@ -2299,8 +3300,8 @@
 		"xiulianresult": {
 			"xiulian_life_hundunhunpo":1,
 			"frs": 39,
-			"age.max": -19200,
-			"age": -19200
+			"age.max":  19200,
+			"age":  19200
 		}
 	},
 	{
@@ -2331,8 +3332,8 @@
 		"xiulianresult": {
 			"xiulian_life_llyhf":1,
 			"frs": 39,
-			"age.max": -12200,
-			"age": -12200
+			"age.max":  12200,
+			"age":  12200
 		}
 	},
 	{
@@ -2457,8 +3458,8 @@
 		"xiulianresult": {
 			"xiulian_wuguangzhihuan":1,
 			"frs": 49,
-			"age.max": -36500,
-			"age": -36500
+			"age.max":  36500,
+			"age":  36500
 		}
 	},
 	{
@@ -2487,8 +3488,8 @@
 		"xiulianresult": {
 			"time": 33,
 			"frs":39,
-			"age.max": -12200,
-			"age": -12200,
+			"age.max":  12200,
+			"age":  12200,
 			"xiulian_zhuji_wuhuan_1" : 1
 		}
 	},
@@ -2519,8 +3520,8 @@
 		"xiulianresult": {
 			"time": 33,
 			"frs":39,
-			"age.max": -42200,
-			"age": -42200,
+			"age.max":  42200,
+			"age":  42200,
 			"xiulian_zhuji_wuhuan_2" : 1
 		}
 	},
@@ -2604,6 +3605,85 @@
 		}
 	},
 	{
+		"id": "heli_ph_1",
+		"name": "合理平衡(平衡)",
+		"desc": "平衡不均匀的合理分布",
+		"tags": "平衡",
+		"require": "g.heli_pump>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"yjdl": 25,
+			"cbclb": 30,
+			"shuaibai_core": 10,
+			"human_power": 1000,
+			"money": 1000,
+			"ganwu": 500,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 15,
+			"life_crystal": 3
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_heli_ph_1":1
+		}
+	},
+	{
+		"id": "heli_ys_2",
+		"name": "进阶合理压缩(压缩)",
+		"desc": "进一步压缩合理",
+		"tags": "压缩",
+		"require": "g.heli_pump>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"yjdl": 25,
+			"cbclb": 30,
+			"human_power": 1000,
+			"money": 1000,
+			"ganwu": 500,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 15,
+			"life_crystal": 3
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_heli_ys_2":1
+		}
+	},
+	{
+		"id": "heli_ys_3",
+		"name": "外部合理收缩(压缩)",
+		"desc": "进一步压缩合理",
+		"tags": "压缩",
+		"require": "g.heli_pump>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"jls":30,
+			"yjdl": 25,
+			"cbclb": 30,
+			"human_power": 1000,
+			"money": 1000,
+			"ganwu": 500,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 15,
+			"life_crystal": 3
+		},
+		"xiulianresult": {
+			"frs":29,
+			"xiulian_heli_ys_3":1
+		}
+	},
+	{
 		"id": "jizhun_fl",
 		"name": "风灵(路径)",
 		"desc": "如风一般[30岁前完成了筑基]",
@@ -2614,16 +3694,16 @@
 			"heli":1
 		},
 		"xiulianresult": {
-			"age.max":-10950,
-			"age":-10950,
-			"heli.max": -2,
-			"heli.rate": -0.5
+			"age.max": 10950,
+			"age": 10950,
+			"heli.max":  2,
+			"heli.rate":  0.5
 		}
 	},
 	{
 		"id": "jizhun_luyuan",
 		"name": "路远(路径)",
-		"desc": "昼夜[60-90岁前完成了筑基]",
+		"desc": "昼夜[60 90岁前完成了筑基]",
 		"tags": "路径",
 		"require": "g.time>=21900 && g.time<=32850 && g.xiulian_zhuji_2>=1",
 		"max": 2,
@@ -2631,8 +3711,8 @@
 			"heli":1
 		},
 		"xiulianresult": {
-			"age.max":-18250,
-			"age":-18250
+			"age.max": 18250,
+			"age": 18250
 		}
 	}
 ]

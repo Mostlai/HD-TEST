@@ -200,6 +200,44 @@
 		]
 	},
 	{
+		"id": "slsc",
+		"name": "森林深处[滴露花,灵壤,阳露珠]",
+		"desc": "繁茂的森林,地表常年处于阴影之中。",
+		"require": "g.yysl>=1 && g.evt_tansuo_1>=1",
+		"level": 20,
+		"dist": 250,
+		"length": 20,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"yqlm": 3,
+			"diluhua": 5,
+			"lingrang": "2~4",
+			"yangluzhu": 5
+		},
+		"boss": ["tree_man","tree_man"],
+		"spawns": [
+			[
+				"small_tree_man",
+				"small_tree_man"
+			],
+			[
+				"yyx",
+				"yyx"
+			],
+			"yyx",
+			"xg",
+			[
+				"muling",
+				"muling"
+			],
+			"small_tree_man"
+		]
+	},
+	{
 		"id": "jlss",
 		"name": "巨灵山",
 		"desc": "最巍峨的山脉，最纯正的金石之力",
@@ -262,6 +300,43 @@
 				"huoj"
 			],
 			"hls",
+			"fireb",
+			[
+				"hls",
+				"huoj"
+			]
+		]
+	},
+	{
+		"id": "hsby",
+		"name": "火山边缘[红衫,火伤藤]",
+		"desc": "喷发着岩浆,散发着恐怖的高温",
+		"require": "g.dmhs>=1 && g.evt_tansuo_1>=1",
+		"level": 20,
+		"dist": 200,
+		"length": 18,
+		"run": {
+			"stamina": 0.9,
+			"tili": 2,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"yxls": "1~3",
+			"hongshan": 4,
+			"huoshangteng": 5
+		},
+		"boss": "fire_bird",
+		"spawns": [
+			[
+				"fireb",
+				"fire_bird"
+			],
+			[
+				"fireb",
+				"huoj"
+			],
+			"fire_bird",
 			"fireb",
 			[
 				"hls",
@@ -340,6 +415,42 @@
 		]
 	},
 	{
+		"id": "pendizx",
+		"name": "盆地中心[土金,岩火,水银花]",
+		"desc": "存在几万年的古老盆地,有着纯粹的厚土之力",
+		"require": "g.glpd>=1 && g.evt_tansuo_1>=1",
+		"level": 20,
+		"dist": 250,
+		"length": 18,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -2
+		},
+		"result": {
+			"zdht": "5~6",
+			"tujin": 5,
+			"yanhuo": 4,
+			"shuiyinhua": 5
+		},
+		"boss": "tu_bird",
+		"spawns": [
+			[
+				"wggg",
+				"tu_bird"
+			],
+			[
+				"wggg",
+				"tls"
+			],
+			"tu_bird",
+			[
+				"tu_bird",
+				"tls"
+			]
+		]
+	},
+	{
 		"id": "zxzc",
 		"name": "中型战场",
 		"desc": "曾经发生战争",
@@ -361,8 +472,8 @@
 		"spawns": [
 			[
 				"m_solid_2",
-				"m_solid_2",
-				"m_solid_2"
+				"m_solid_4",
+				"m_solid_4"
 			],
 			[
 				"m_solid_2",
@@ -372,7 +483,11 @@
 				"xiantianzhuji",
 				"m_solid_4"
 			],
-			"xiantianzhuji",
+			[
+				"xiantianzhuji",
+				"m_solid_4",
+				"m_solid_4"
+			],
 			"m_solid_3",
 			"m_solid_4",
 			[

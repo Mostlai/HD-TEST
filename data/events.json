@@ -32,6 +32,12 @@
 		"disable":["freight"]
 	},
 	{
+		"id": "evt_pingyuan",
+		"name": "平原",
+		"require": "g.star_map>=1",
+		"desc": "附近有个平原,那里观察星星很不错"
+	},
+	{
 		"id": "evt_chaos",
 		"name": "混沌",
 		"require": "g.chaos>=1",
@@ -239,6 +245,18 @@
 			"zhujijie_1",
 			"zhujijie"
 		]
+	},
+	{
+		"id": "evt_tansuo_1",
+		"name": "探索成果",
+		"require": "g.tansuo>=1",
+		"desc": "你发现一些有趣的地点...."
+	},
+	{
+		"id": "evt_tansuo_2",
+		"name": "探索成果[扭曲]",
+		"require": "g.tansuo>=3 && g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
+		"desc": "你发现一些有趣的地点...."
 	},
 	{
 		"id": "evt_scroll",

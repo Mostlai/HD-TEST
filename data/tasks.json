@@ -1,5 +1,20 @@
 [
 	{
+		"id": "keyboard",
+		"name": "按键帮助",
+		"desc": "按E打开背包.",
+		"max": 1,
+		"verb": "",
+		"require": "g.hp>=1",
+		"cost": {
+			"tili": 0.5,
+			"stamina": 0.1
+		},
+		"result": {
+			"money": 1
+		}
+	},
+	{
 		"id": "clean",
 		"name": "扫地",
 		"desc": "给大户人家做仆役...",
@@ -50,6 +65,23 @@
 		"flavor": "强身健体"
 	},
 	{
+		"id": "guifadianj",
+		"name": "诡法点金",
+		"cd":1,
+		"desc": "使用诡法获取钱财",
+		"verb": "",
+		"require": "g.guifaxue>=1",
+		"cost": {
+			"tili": 6,
+			"chaos": 6,
+			"heli": 0.1
+		},
+		"result": {
+			"money": 10,
+			"time": 0.1
+		}
+	},
+	{
 		"id": "hpmax_1",
 		"name": "极端实验",
 		"desc": "探索极端环境,提高生命上限",
@@ -79,6 +111,59 @@
 			"money": 0.1,
 			"time": 2,
 			"ganwu": 0.05
+		}
+	},
+	{
+		"id": "buhuolt",
+		"name": "灵体捕获",
+		"desc": "捕获游荡的灵体",
+		"verb": "",
+		"require": "g.xiulian_jj_jclr>=1",
+		"cost": {
+			"tili": 10,
+			"hp": 10,
+			"stamina": 0.15
+		},
+		"result": {
+			"time": 10,
+			"dirty_lingti": 0.8
+		}
+	},
+	{
+		"id": "baiselingyao",
+		"name": "白色灵药",
+		"desc": "驱除1点乱邪,上限10次",
+		"max":10,
+		"verb": "",
+		"need":"g.ele_luanxie>=0",
+		"require": "g.xiulian_jj_jcwh>=1",
+		"cost": {
+			"money":1000,
+			"element_wuhuan":10,
+			"element_luor":4,
+			"qiyiyeti":2,
+			"zero_crystal":60,
+			"snp_data":60
+		},
+		"result": {
+			"time": 90,
+			"ele_luanxie": -1
+		}
+	},
+	{
+		"id": "quxiepaomo",
+		"name": "驱邪泡沫",
+		"desc": "驱除1点混乱度",
+		"verb": "",
+		"need":"g.ele_confusion>=0",
+		"require": "g.xiulian_jj_jcwh>=1",
+		"cost": {
+			"money":200,
+			"wgys":2
+		},
+		"result": {
+			"time": 4,
+			"ele_confusion": -1
 		}
 	},
 	{
@@ -461,7 +546,7 @@
 			"ganwu": 50
 		},
 		"run": {
-			"time": -0.9,
+			"time": -0.5,
 			"jls":0.9,
 			"tili": 0.3,
 			"stamina": 0.2
@@ -841,6 +926,61 @@
 		}
 	},
 	{
+		"id": "xuhuandeniandai",
+		"name": "虚幻的年代",
+		"desc": "编写时间",
+		"verb": "编写中",
+		"require": "g.guifaxue>=8",
+		"max": 100,
+		"length": 200,
+		"cost": {
+			"lxue": 5,
+			"money": 1000,
+			"ganwu": 500,
+			"super_mind": 20,
+			"cbclb":10,
+			"yjdl": 2,
+			"dirty_lingti": 20,
+			"star_map_1": 2,
+			"life_crystal": 2,
+			"zero_crystal": 40
+		},
+		"run": {
+			"time": -0.2
+		},
+		"result": {
+			"age": 1200,
+			"age.max": 1200
+		}
+	},
+	{
+		"id": "niuqucsd",
+		"name": "扭曲长生",
+		"desc": "使用扭曲延长寿命",
+		"verb": "扭曲",
+		"require": "g.qiyiyeti>=1",
+		"max": 50,
+		"length": 50,
+		"cost": {
+			"lxue": 5,
+			"shuaibai_core": 10,
+			"money": 1500,
+			"ganwu": 500,
+			"super_mind": 30,
+			"cbclb": 20,
+			"yjdl": 20,
+			"star_map_1": 5,
+			"qiyiyeti": 5
+		},
+		"run": {
+			"time": -0.2
+		},
+		"result": {
+			"age": 1600,
+			"age.max": 1600
+		}
+	},
+	{
 		"id": "shehun_1",
 		"name": "摄魂",
 		"desc": "摄取魂魄",
@@ -919,8 +1059,8 @@
 		"desc": "吸收生灵石中的能量",
 		"verb": "吸收",
 		"require": "g.shenglingshi>=1",
-		"max": 30,
-		"length": 30,
+		"max": 100,
+		"length": 90,
 		"cost": {
 			"money": 800,
 			"ganwu": 500,
@@ -1047,8 +1187,35 @@
 		},
 		"result": {
 			"ganwu": 5,
-			"jsnlx.max": 0.1,
+			"jsnlx.max": 0.001,
 			"jsnlx.exp": 20
+		}
+	},
+	{
+		"id": "yuansushiyan",
+		"name": "元素实验",
+		"desc": "对元素进行反复实验。【实验需要进行30次】,",
+		"verb": "实验中",
+		"max": 30,
+		"require": "g.element_distillation>=1 && g.xiulian_eye_yshyj>=1",
+		"length": 20,
+		"cost": {
+			"money": 200,
+			"elect": 10,
+			"ganwu": 300,
+			"yjswyb": 1,
+			"alculation": 500
+		},
+		"run": {
+			"time": -5,
+			"elect": -7
+		},
+		"result": {
+			"element_gold.max": 0.1,
+			"element_wood.max": 0.1,
+			"element_water.max": 0.1,
+			"element_fire.max": 0.1,
+			"element_land.max": 0.1
 		}
 	},
 	{
@@ -1061,19 +1228,343 @@
 		"cost": {
 			"cold_core": 0.5,
 			"cbclb": 5,
-			"gwl":1,
+			"gwl":3,
 			"ganwu": 100,
-			"alculation": 20,
-			"human_power": 20,
-			"zero_crystal": 1
+			"alculation": 60,
+			"human_power": 70,
+			"zero_crystal": 2
 		},
 		"run": {
 			"time": -1
 		},
 		"result": {
 			"yjdl": 1,
-			"jsnlx.max": 0.1,
+			"jsnlx.max": 0.001,
 			"jsnlx.exp": 20
+		}
+	},
+	{
+		"id": "sjclpx",
+		"name": "神经材料培训",
+		"desc": "获取神经材料指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 20,
+			"cbclb": 20,
+			"ganwu": 600,
+			"alculation": 200,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500,
+			"sj_met": 15
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "fcclpx",
+		"name": "FC培训",
+		"desc": "获取FC合金指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 20,
+			"cbclb": 20,
+			"ganwu": 600,
+			"alculation": 50,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500,
+			"iron_copper": 40
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "taibanpx",
+		"name": "钛板培训",
+		"desc": "获取钛板指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 20,
+			"dirty_lingti": 10,
+			"shuaibai_core": 10,
+			"cbclb": 20,
+			"ganwu": 600,
+			"alculation": 50,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500,
+			"tian": 10
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "pyjpx",
+		"name": "培养基培训",
+		"desc": "获取培养基指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1 && g.xiulian_life_swpy>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"shuaibai_core": 15,
+			"cbclb": 20,
+			"ganwu": 600,
+			"alculation": 50,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500,
+			"fypyj": 10
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "pyypx",
+		"name": "培养液培训",
+		"desc": "获取培养液指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1 && g.xiulian_life_swyz>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"shuaibai_core": 15,
+			"cbclb": 20,
+			"ganwu": 600,
+			"alculation": 50,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500,
+			"pyy": 10
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "cbclbpx",
+		"name": "纯白培训",
+		"desc": "获取纯白材料指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1 && g.cbclb>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"shuaibai_core": 15,
+			"cbclb": 30,
+			"ganwu": 600,
+			"alculation": 50,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "yjdlpx",
+		"name": "亚极培训",
+		"desc": "获取亚极电缆指令,",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xiulian_siwei_bzhpx>=1 && g.yjdl>=1",
+		"length": 100,
+		"cost": {
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"shuaibai_core": 15,
+			"cbclb": 20,
+			"ganwu": 600,
+			"alculation": 50,
+			"human_power": 900,
+			"zero_crystal": 40,
+			"money": 1500,
+			"yjdl": 20
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "pyjzz",
+		"name": "培养基制作",
+		"desc": "制作富养培养基,",
+		"verb": "制作中",
+		"max": 1,
+		"require": "g.xiulian_life_swpy>=1",
+		"length": 20,
+		"cost": {
+			"cold_core": 2,
+			"tian": 1,
+			"cbclb": 1,
+			"ganwu": 600,
+			"human_power": 100,
+			"zero_crystal": 3,
+			"money": 100
+		},
+		"run": {
+			"time": -10
+		},
+		"result": {
+			"fypyj": 5
+		}
+	},
+	{
+		"id": "pyyzz",
+		"name": "培养液调配",
+		"desc": "制作培养液,",
+		"verb": "调配中",
+		"max": 1,
+		"require": "g.xiulian_life_swyz>=1",
+		"length": 20,
+		"cost": {
+			"yqlm": 0.5,
+			"cbclb": 1,
+			"ganwu": 600,
+			"human_power": 100,
+			"zero_crystal": 1,
+			"money": 100
+		},
+		"run": {
+			"time": -10
+		},
+		"result": {
+			"pyy": 1
+		}
+	},
+	{
+		"id": "dwswgz",
+		"name": "低温生物观测",
+		"desc": "观测低温环境下的生物发育过程,",
+		"verb": "观测中",
+		"max": 1,
+		"require": "g.xiulian_life_swpy>=1 && g.xiulian_life_swjz>=1 && g.xiulian_life_swyz>=1",
+		"length": 50,
+		"cost": {
+			"pyy": 5,
+			"fypyj": 3,
+			"cold_core": 20,
+			"cbclb": 20,
+			"yjdl": 20,
+			"ganwu": 600,
+			"life_crystal": 3,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "gwfayu",
+		"name": "高温发育",
+		"desc": "观测高温环境下的生物发育过程,",
+		"verb": "观测中",
+		"max": 1,
+		"require": "g.dwswgz>=1 && g.hotlab>=1",
+		"length": 50,
+		"cost": {
+			"pyy": 5,
+			"fypyj": 3,
+			"gwl": 20,
+			"yjdl": 20,
+			"ganwu": 600,
+			"life_crystal": 3,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "dchjsm",
+		"name": "电磁环境生命",
+		"desc": "观测电磁环境下的生物发育过程,",
+		"verb": "观测中",
+		"max": 1,
+		"require": "g.dwswgz>=1",
+		"length": 50,
+		"cost": {
+			"pyy": 5,
+			"fypyj": 3,
+			"yjdl": 20,
+			"ganwu": 600,
+			"life_crystal": 3,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -10
+		}
+	},
+	{
+		"id": "yijiepeiyu",
+		"name": "一阶培育",
+		"desc": "培育一阶生物样本,",
+		"verb": "培育中",
+		"require": "g.dchjsm>=1 && g.gwfayu>=1 && g.dwswgz>=1",
+		"length": 20,
+		"cost": {
+			"pyy": 5,
+			"fypyj": 5,
+			"yjdl": 5,
+			"cbclb": 10,
+			"ganwu": 100,
+			"life_crystal": 0.5,
+			"human_power": 500,
+			"money": 200
+		},
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"yjswyb": 2
+		}
+	},
+	{
+		"id": "heli_xiulian",
+		"name": "合理修炼",
+		"desc": "长时间的修炼",
+		"verb": "修炼中",
+		"require": "g.xiulian_heli_ph_1>=1 && g.xiulian_heli_ys_2>=1 && g.xiulian_heli_ys_3>=1",
+		"length": 30,
+		"cost": {
+			"ganwu": 100,
+			"heli": 10
+		},
+		"run": {
+			"heli": 7,
+			"time": -20
+		},
+		"result": {
+			"player.exp": 35,
+			"heli.max": 0.001,
+			"heli.rate": 0.001
 		}
 	},
 	{
@@ -2290,20 +2781,6 @@
 		"fill": "scrolls",
 		"result": {
 			"scrolls": 1
-		}
-	},
-	{
-		"id": "bindcodex",
-		"name": "bind codex",
-		"require": "g.research.max>=30&&g.crafting>=2&&g.lore>=1",
-		"cost": {
-			"scrolls": 10,
-			"research": 20,
-			"mana": 3
-		},
-		"fill": "codices",
-		"result": {
-			"codices": 1
 		}
 	},
 	{

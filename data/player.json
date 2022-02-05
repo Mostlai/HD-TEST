@@ -10,7 +10,9 @@
 	},
 	{
 		"id": "level",
+		"name": "等级",
 		"val": 0,
+		"max": 39,
 		"unit": true,
 		"stat": true,
 		"locked": false,
@@ -57,6 +59,13 @@
 		"locked": false
 	},
 	{
+		"id": "ap",
+		"name": "里程点",
+		"val": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
 		"id": "sp",
 		"name": "技能点",
 		"desc": "用于解锁某些技能",
@@ -83,6 +92,7 @@
 	},
 	{
 		"id": "speed",
+		"name": "速度",
 		"desc": "Movement speed",
 		"val": 1,
 		"stat": true,

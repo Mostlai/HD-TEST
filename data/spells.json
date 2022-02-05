@@ -670,9 +670,10 @@
 	{
 		"id": "sgfszj",
 		"name": "死骨复苏[筑基]",
-		"desc": "从黄泉引导【四位】【黄泉灵体】帮助你作战",
+		"desc": "从黄泉引导【三位】【黄泉灵体】帮助你作战",
 		"school": "源泉",
 		"locked":true,
+		"cd": 10,
 		"level": 5,
 		"buy": {
 			"human_power": 100,
@@ -683,10 +684,10 @@
 		"cost": {
 			"heli": 20,
 			"chaos": 10,
-			"shenshi": 3
+			"shenshi": 3,
+			"human_power": 50
 		},
 		"result": [
-			"hqsl_1",
 			"hqsl_1",
 			"hqsl_1",
 			"hqsl_1"

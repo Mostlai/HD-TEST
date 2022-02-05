@@ -23,12 +23,19 @@
 		"adv_weapon",
 		"conquer",
 		"xiulian",
+		"humanr",
 		"encounters",
 		"locales",
 		"stressors",
 		"rares",
 		"reagents",
-		"properties"
+		"properties",
+		"element",
+		"herbal",
+		"achievement",
+		"metal",
+		"elect",
+		"bio"
 	],
 	"modules": [
 		"patrons",
@@ -41,6 +48,6 @@
 		"extraaction",
 		"winter",
 		"legacy",
-		"Thought"
+		"officialdom"
 	]
 }

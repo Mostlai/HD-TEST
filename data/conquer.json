@@ -1,22 +1,12 @@
 [
 	{
-		"id": "conquer_0",
+		"id": "conquer_small",
 		"name": "🏡小城镇",
 		"desc": "一个人口较少的城镇，防御薄弱，但占地面积也少",
-		"r_power": 30,
 		"power": 30,
-		"r_shentou": 1,
-		"shentou": 1,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 1,
 		"max": 1,
 		"val": 0,
 		"require": "g.human_power>=4",
-		"scost": {
-			"money": 20,
-			"zero_crystal":1
-		},
 		"acost": {
 			"money": 150,
 			"iron_copper": 10,
@@ -25,36 +15,26 @@
 			"human_power": 40,
 			"alculation": 10
 		},
+		"mod":{
+			"f_power": 5,
+			"space.max": 5,
+			"alculation.max": 10,
+			"alculation.rate": 0.2,
+			"human_power.max": 20 
+		},
 		"result":{
 			"super_mind": true,
-			"super_mind": 1,
-			"f_power": 5,
-			"space.max": -5,
-			"alculation.max": -10,
-			"alculation.rate": -0.2,
-			"human_power.max": -20 
+			"super_mind": 1
 		}
 	},
 	{
-		"id": "conquer_3",
+		"id": "conquer_mediun",
 		"name": "🏠中型城镇",
 		"desc": "一个发展一般的城镇，防御不弱",
-		"r_power": 100,
 		"power": 100,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 2,
 		"max": 3,
 		"val": 0,
 		"require": "g.human_power>=190",
-		"scost": {
-			"money": 100,
-			"star_map": 30,
-			"iron_copper": 2,
-			"zero_crystal":2
-		},
 		"acost": {
 			"money": 670,
 			"ganwu": 370,
@@ -67,34 +47,25 @@
 			"human_power": 180,
 			"alculation": 70
 		},
-		"result":{
-			"super_mind": 1,
+		"mod":{
 			"f_power": 10,
-			"space.max": -10,
-			"alculation.max": -10,
-			"alculation.rate": -0.2,
-			"human_power.max": -25 
+			"space.max": 10,
+			"alculation.max": 10,
+			"alculation.rate": 0.2,
+			"human_power.max": 25 
+		},
+		"result":{
+			"super_mind": 1
 		}
 	},
 	{
-		"id": "conquer_lianjun_1",
+		"id": "conquer_lianjun_zhihui",
 		"name": "🗡联军指挥部[1级]",
 		"desc": "1级联军的指挥中心,攻陷一座以减少【战斗压迫】",
-		"r_power": 500,
 		"power": 500,
-		"r_shentou": 10,
-		"shentou": 10,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 3,
 		"max": 5,
 		"val": 0,
 		"require": "g.xiulian_siwei_qtswyj>=1",
-		"scost": {
-			"money": 800,
-			"star_map_1": 2,
-			"star_map": 60
-		},
 		"acost": {
 			"f_stress": 1,
 			"money": 1800,
@@ -103,248 +74,160 @@
 			"dirty_lingti": 15,
 			"cold_core":25,
 			"lxue": 10,
-			"iron_copper": 20,
-			"sj_met":15,
-			"tian":10,
 			"zero_crystal":50,
-			"r_adv_w_sj1": 4,
-			"r_adv_w_sj2": 2,
 			"human_power": 800,
 			"alculation": 400
 		},
+		"mod":{
+			"f_power": 20,
+			"space.max": 30,
+			"alculation.max": 30,
+			"alculation.rate": 1,
+			"human_power.max": 50 
+		},
 		"result":{
 			"shenglingshi": true,
-			"shenglingshi": 1,
-			"f_power": 20,
-			"space.max": -30,
-			"alculation.max": -30,
-			"alculation.rate": -1,
-			"human_power.max": -50 
+			"shenglingshi": 1
 		}
 	},
 	{
-		"id": "conquer_4",
+		"id": "conquer_yysl",
 		"name": "⛺月影森林前哨基地",
 		"desc": "在月影森林建设一个基地",
-		"r_power": 190,
 		"power": 190,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 3,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
-		"scost": {
-			"yqlm": 1,
-			"money": 200,
-			"star_map_1": 1,
-			"star_map": 60
-		},
 		"acost": {
 			"yqlm": 15,
 			"money": 800,
 			"ganwu": 500,
-			"dirty_core":10,
-			"dirty_lingti": 15,
-			"cold_core":25,
-			"lxue": 5,
-			"iron_copper": 20,
-			"sj_met":10,
-			"tian":10,
-			"zero_crystal":50,
+			"r_adv_w_sj1": 4,
 			"r_adv_w_sj2": 2,
+			"r_adv_w_sj3": 2,
+			"zero_crystal":50,
 			"human_power": 250,
 			"alculation": 70
 		},
-		"result":{
+		"mod":{
 			"f_power": 15,
-			"space.max": -15,
-			"yqlm.rate": -0.1,
-			"alculation.max": -15,
-			"alculation.rate": -0.2,
-			"human_power.max": -30 
+			"space.max": 15,
+			"yqlm.rate": 0.1,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 30 
 		}
 	},
 	{
-		"id": "conquer_5",
+		"id": "conquer_jls",
 		"name": "🏔巨灵山守望点",
 		"desc": "在巨灵山建设一个守望点",
-		"r_power": 190,
 		"power": 190,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 3,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
-		"scost": {
-			"cbjs": 1,
-			"money": 200,
-			"star_map_1": 1,
-			"star_map": 60
-		},
 		"acost": {
 			"cbjs": 15,
 			"money": 800,
 			"ganwu": 500,
-			"dirty_core":10,
-			"dirty_lingti": 15,
-			"cold_core":25,
-			"lxue": 5,
-			"iron_copper": 20,
-			"sj_met":10,
-			"tian":10,
 			"zero_crystal":50,
+			"r_adv_w_sj1": 4,
 			"r_adv_w_sj2": 2,
+			"r_adv_w_sj3": 2,
 			"human_power": 250,
 			"alculation": 70
 		},
-		"result":{
+		"mod":{
 			"f_power": 15,
-			"space.max": -15,
-			"cbjs.rate": -0.1,
-			"alculation.max": -15,
-			"alculation.rate": -0.2,
-			"human_power.max": -30 
+			"space.max": 15,
+			"cbjs.rate": 0.1,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 30 
 		}
 	},
 	{
-		"id": "conquer_6",
+		"id": "conquer_lzdh",
 		"name": "🏞劳泽大湖测量中心",
 		"desc": "在劳泽大湖建设一个测量中心",
-		"r_power": 190,
 		"power": 190,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 3,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
-		"scost": {
-			"wgys": 1,
-			"money": 200,
-			"star_map_1": 1,
-			"star_map": 60
-		},
 		"acost": {
 			"wgys": 15,
 			"money": 800,
 			"ganwu": 500,
-			"dirty_core":10,
-			"dirty_lingti": 15,
-			"cold_core":25,
-			"lxue": 5,
-			"iron_copper": 20,
-			"sj_met":10,
-			"tian":10,
 			"zero_crystal":50,
+			"r_adv_w_sj1": 4,
 			"r_adv_w_sj2": 2,
+			"r_adv_w_sj3": 2,
 			"human_power": 250,
 			"alculation": 70
 		},
-		"result":{
+		"mod":{
 			"f_power": 15,
-			"space.max": -15,
-			"wgys.rate": -0.1,
-			"alculation.max": -15,
-			"alculation.rate": -0.2,
-			"human_power.max": -30 
+			"space.max": 15,
+			"wgys.rate": 0.1,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 30 
 		}
 	},
 	{
-		"id": "conquer_7",
+		"id": "conquer_dmhs",
 		"name": "🌋地脉火山研究站",
 		"desc": "在地脉火山建设一个研究站",
-		"r_power": 190,
 		"power": 190,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 3,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
-		"scost": {
-			"yxls": 1,
-			"money": 200,
-			"star_map_1": 1,
-			"star_map": 60
-		},
 		"acost": {
 			"yxls": 15,
 			"money": 800,
 			"ganwu": 500,
-			"dirty_core":10,
-			"dirty_lingti": 15,
-			"cold_core":25,
-			"lxue": 5,
-			"iron_copper": 20,
-			"sj_met":10,
-			"tian":10,
 			"zero_crystal":50,
+			"r_adv_w_sj1": 4,
 			"r_adv_w_sj2": 2,
+			"r_adv_w_sj3": 2,
 			"human_power": 250,
 			"alculation": 70
 		},
-		"result":{
+		"mod":{
 			"f_power": 15,
-			"space.max": -15,
-			"yxls.rate": -0.1,
-			"alculation.max": -15,
-			"alculation.rate": -0.2,
-			"human_power.max": -30 
+			"space.max": 15,
+			"yxls.rate": 0.1,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 30 
 		}
 	},
 	{
-		"id": "conquer_8",
+		"id": "conquer_glpd",
 		"name": "🗺古老盆地观测站",
 		"desc": "在古老盆地建设一个观测站",
-		"r_power": 190,
 		"power": 190,
-		"r_shentou": 2,
-		"shentou": 2,
-		"shentou_rate": 0.01,
-		"power_rate": 0.01,
-		"area": 3,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
-		"scost": {
-			"zdht": 1,
-			"money": 200,
-			"star_map_1": 1,
-			"star_map": 60
-		},
 		"acost": {
 			"zdht": 15,
 			"money": 800,
 			"ganwu": 500,
-			"dirty_core":10,
-			"dirty_lingti": 15,
-			"cold_core":25,
-			"lxue": 5,
-			"iron_copper": 20,
-			"sj_met":10,
-			"tian":10,
 			"zero_crystal":50,
+			"r_adv_w_sj1": 4,
 			"r_adv_w_sj2": 2,
+			"r_adv_w_sj3": 2,
 			"human_power": 250,
 			"alculation": 70
 		},
-		"result":{
+		"mod":{
 			"f_power": 15,
-			"space.max": -15,
-			"zdht.rate": -0.1,
-			"alculation.max": -15,
-			"alculation.rate": -0.2,
-			"human_power.max": -30 
+			"space.max": 15,
+			"zdht.rate": 0.1,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 30 
 		}
 	}
 ]

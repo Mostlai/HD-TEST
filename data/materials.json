@@ -16,6 +16,18 @@
 		}
 	},
 	{
+		"id": "huoguozhi",
+		"name": "好果汁",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 1,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 0.1
+		}
+	},
+	{
 		"id": "chubai",
 		"name": "纯白",
 		"kind": "cloth",

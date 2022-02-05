@@ -371,7 +371,6 @@
 		"require": "g.super_mind>=1",
 		"cost": {
 			"super_mind": 5,
-			"star_map": 55,
 			"money": 300,
 			"lg": 8,
 			"star_map": 50,
@@ -651,7 +650,7 @@
 		},
 		"mod":{
 			"evil": 10,
-			"shuaibai.rate": 0.1,
+			"shuaibai.rate": 0.2,
 			"shuaibai.max":4,
 			"age.max":2420,
 			"age":2420
@@ -732,6 +731,8 @@
 		"mod": {
 			"dist": 60,
 			"hp.max": 5,
+			"age.max": 15900,
+			"age": 15900,
 			"chaos.rate": 0.3,
 			"shuaibai.rate": 0.05
 		}
@@ -889,6 +890,54 @@
 		}
 	},
 	{
+		"id": "gxzl1",
+		"name": "高效指令",
+		"desc": "提高指令上限",
+		"require": "g.sskz_1>=1",
+		"max": 1,
+		"cost": {
+			"lg": 12,
+			"money": 600,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"cold_core":20,
+			"yqlm": 20,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"tian": 10,
+			"human_power": 700
+		},
+		"mod": {
+			"command_code.max": 2
+		}
+	},
+	{
+		"id": "gxzl2",
+		"name": "高效指令II",
+		"desc": "提高指令上限",
+		"require": "g.xiulian_xxh_mtcb>=1 && g.gxzl1>=1",
+		"max": 1,
+		"cost": {
+			"lg": 12,
+			"money": 1000,
+			"super_mind":30,
+			"dirty_lingti":10,
+			"dirty_core": 10,
+			"shuaibai_core": 10,
+			"cold_core":20,
+			"yqlm": 20,
+			"sj_met": 15,
+			"star_map_1": 15,
+			"tian": 10,
+			"human_power": 700
+		},
+		"mod": {
+			"command_code.max": 2
+		}
+	},
+	{
 		"id": "lgkz_1",
 		"name": "灵光拓展",
 		"desc": "扩展灵光上限",
@@ -963,7 +1012,7 @@
 			"ganwu": 130
 		},
 		"mod": {
-			"conquer_4.max": 4
+			"conquer_yysl.max": 4
 		}
 	},
 	{
@@ -990,7 +1039,7 @@
 			"ganwu": 130
 		},
 		"mod": {
-			"conquer_5.max": 4
+			"conquer_jls.max": 4
 		}
 	},
 	{
@@ -1017,7 +1066,7 @@
 			"ganwu": 130
 		},
 		"mod": {
-			"conquer_6.max": 4
+			"conquer_lzdh.max": 4
 		}
 	},
 	{
@@ -1044,7 +1093,7 @@
 			"ganwu": 130
 		},
 		"mod": {
-			"conquer_7.max": 4
+			"conquer_dmhs.max": 4
 		}
 	},
 	{
@@ -1071,7 +1120,7 @@
 			"ganwu": 130
 		},
 		"mod": {
-			"conquer_8.max": 4
+			"conquer_glpd.max": 4
 		}
 	},
 	{
@@ -1129,11 +1178,64 @@
 		}
 	},
 	{
+		"id": "luoresiwei",
+		"name": "落日思维",
+		"desc": "一切都将开场",
+		"max": 1,
+		"require": "g.luorezhexue>=3",
+		"cost": {
+			"money": 1000,
+			"lg": 8,
+			"jls": 30,
+			"cold_core": 5,
+			"dirty_core": 20,
+			"super_mind": 5,
+			"r_adv_w_sj1": 2,
+			"zero_crystal":12,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 330
+		},
+		"mod":{
+			"evilamt": 20,
+			"frs": 29,
+			"skill.rate": 4,
+			"hp.rate": 0.1
+		}
+	},
+	{
 		"id": "wuguangkexue",
 		"name": "无光科学",
 		"desc": "阳光之下",
 		"max": 1,
-		"require": "g.luorezhexue>=1",
+		"require": "g.luorezhexue>=3",
+		"cost": {
+			"money": 1000,
+			"lg": 8,
+			"jls": 50,
+			"cold_core": 5,
+			"dirty_core": 20,
+			"super_mind": 5,
+			"r_adv_w_sj1": 2,
+			"zero_crystal":12,
+			"paper": 30,
+			"star_map": 65,
+			"exe_paper": 10,
+			"ganwu": 330
+		},
+		"mod":{
+			"evilamt": 30,
+			"frs": 49,
+			"skill.rate": 2
+		}
+	},
+	{
+		"id": "wuguangmishu",
+		"name": "无光秘术",
+		"desc": "奥秘",
+		"max": 1,
+		"require": "g.wuguangkexue>=1",
 		"cost": {
 			"lg": 8,
 			"jls": 50,
@@ -1293,6 +1395,84 @@
 		}
 	},
 	{
+		"id": "xuhuandeditu",
+		"name": "虚幻的地图",
+		"desc": "",
+		"require": "g.guifaxue>=5",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"money": 700,
+			"alculation": 300,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti":20,
+			"super_mind": 5,
+			"zero_crystal":30,
+			"paper": 40,
+			"books": 10,
+			"exe_paper": 16,
+			"ganwu": 420
+		},
+		"mod":{
+			"guifaxue.max":1,
+			"dist": 30
+		}
+	},
+	{
+		"id": "xuhuandehaoyun",
+		"name": "虚幻的好运",
+		"desc": "",
+		"require": "g.guifaxue>=5",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"money": 700,
+			"alculation": 300,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti":20,
+			"super_mind": 5,
+			"zero_crystal":30,
+			"paper": 40,
+			"books": 10,
+			"exe_paper": 16,
+			"ganwu": 420
+		},
+		"mod":{
+			"guifaxue.max":1,
+			"luck": 3
+		}
+	},
+	{
+		"id": "xuhuandeweiqiang",
+		"name": "虚幻的好运",
+		"desc": "",
+		"require": "g.guifaxue>=5",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 30,
+			"money": 700,
+			"alculation": 300,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti":20,
+			"super_mind": 5,
+			"zero_crystal":30,
+			"paper": 40,
+			"books": 10,
+			"exe_paper": 16,
+			"ganwu": 420
+		},
+		"mod":{
+			"guifaxue.max":1,
+			"self.defense": 5
+		}
+	},
+	{
 		"id": "stand_chejian",
 		"name": "标准化车间",
 		"desc": "一个能标准化生产的小型工厂，附带了一个废热水净化器",
@@ -1374,6 +1554,67 @@
 		"mod":{
 			"frs":19,
 			"space.max": 10
+		}
+	},
+	{
+		"id": "diermaowu",
+		"name": "第二茅屋",
+		"desc": "第二间小茅屋",
+		"require": "g.money>=50",
+		"max": 1,
+		"cost": {
+			"money": 50,
+			"ganwu": 50
+		},
+		"mod":{
+			"space.max": 15
+		}
+	},
+	{
+		"id": "disanmaowu",
+		"name": "第三茅屋",
+		"desc": "第三间小茅屋",
+		"require": "g.money>=100",
+		"max": 1,
+		"cost": {
+			"diermaowu": 1,
+			"money": 100,
+			"ganwu": 100
+		},
+		"mod":{
+			"diermaowu.max": -1,
+			"space.max": 30
+		}
+	},
+	{
+		"id": "yanlukaifa",
+		"name": "沿路开发",
+		"desc": "开发门口的小路",
+		"require": "g.money>=150",
+		"max": 1,
+		"cost": {
+			"money": 150,
+			"ganwu": 150
+		},
+		"mod":{
+			"space.max": 15
+		}
+	},
+	{
+		"id": "disimaowu",
+		"name": "第四茅屋",
+		"desc": "第四间小茅屋",
+		"require": "g.money>=200",
+		"max": 1,
+		"cost": {
+			"disanmaowu": 1,
+			"money": 200,
+			"ganwu": 200
+		},
+		"mod":{
+			"disanmaowu.max": -1,
+			"diermaowu.max": -1,
+			"space.max": 45
 		}
 	},
 	{
@@ -1504,6 +1745,34 @@
 		},
 		"mod": {
 			"pursuits.max": 1
+		}
+	},
+	{
+		"id": "zhimeng",
+		"name": "织梦",
+		"desc": "梦境编织者",
+		"require": "g.back_dream>=10",
+		"max": 1,
+		"cost": {
+			"back_dream": 20,
+			"lg": 11,
+			"jihun":1,
+			"jls": 30,
+			"money": 1000,
+			"ganwu": 380,
+			"cold_core": 20,
+			"dirty_lingti": 14,
+			"super_mind": 5,
+			"tian": 10,
+			"zero_crystal":20,
+			"sj_met": 10,
+			"star_map": 70
+		},
+		"mod":{
+			"frs":29,
+			"skill.rate": 1.5,
+			"age.max": 365,
+			"age": 365
 		}
 	},
 	{
@@ -2100,6 +2369,290 @@
 		}
 	},
 	{
+		"id": "flont_1",
+		"slot": "front",
+		"name": "刻录石",
+		"desc": "记载现实坐标",
+		"require": "g.fanshe_building>=5",
+		"buy": {
+			"ganwu": 300,
+			"dirty_lingti": 20,
+			"cold_core": 20,
+			"shuaibai_core": 10,
+			"lxue": 10,
+			"money": 1000
+		},
+		"mod": {
+			"space.max": "3%"
+		}
+	},
+	{
+		"id": "flont_2",
+		"slot": "front",
+		"name": "航标",
+		"desc": "带你回到起点",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1",
+		"buy": {
+			"ganwu": 300,
+			"cbclb": 10,
+			"cold_core": 20,
+			"exe_paper": 30,
+			"paper": 70,
+			"zero_crystal": 40,
+			"sj_met": 15,
+			"super_mind": 30,
+			"money": 1300
+		},
+		"mod": {
+			"space.max": "5%",
+			"dist": 20
+		}
+	},
+	{
+		"id": "flont_wuhuan",
+		"slot": "front",
+		"name": "环形指针",
+		"desc": "指向未知",
+		"require": "g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
+		"buy": {
+			"element_wuhuan": 10,
+			"yxls": 20,
+			"wgys": 20,
+			"ganwu": 500,
+			"cbclb": 30,
+			"yjdl": 30,
+			"cold_core": 40,
+			"exe_paper": 60,
+			"paper": 120,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"money": 1500
+		},
+		"mod": {
+			"space.max": "5%",
+			"element_wuhuan.max": 2,
+			"ele_confusion.rate": -0.1,
+			"dist": 20
+		}
+	},
+	{
+		"id": "niuquyanhua_1",
+		"name": "扭曲演化",
+		"desc": "高效利用扭曲所用的资源",
+		"require": "g.element_luor>=1",
+		"max": 1,
+		"cost": {
+			"element_luor": 3,
+			"lg": 20,
+			"jls":50,
+			"alculation": 1000,
+			"human_power": 900,
+			"exe_paper": 60,
+			"paper": 120,
+			"shuaibai_core": 10,
+			"books": 30,
+			"star_map": 120,
+			"snp_data": 50,
+			"money": 1800,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"star_map_1": 10
+		},
+		"mod":{
+			"frs": 29,
+			"element_wuhuan_niuqu.cost.money": -300,
+			"element_wuhuan_niuqu.cost.life_crystal": -1,
+			"element_wuhuan_niuqu.cost.zero_crystal": -5,
+			"element_wuhuan_niuqu.cost.jls": -10,
+			"element_wuhuan_niuqu.cost.gwl": -5,
+			"element_wuhuan_niuqu.cost.cbclb": -2,
+			"element_wuhuan_niuqu.cost.element_wuhuan": -2,
+			"element_wuhuan_niuqu.cost.qiyiyeti": -2
+		}
+	},
+	{
+		"id": "niuqujinghua_1",
+		"name": "扭曲净化",
+		"desc": "减少五环扭曲产生的混乱度",
+		"require": "g.element_luor>=1",
+		"max": 3,
+		"cost": {
+			"element_luor": 3,
+			"lg": 20,
+			"jls":50,
+			"alculation": 500,
+			"human_power": 600,
+			"shuaibai_core": 10,
+			"books": 30,
+			"star_map": 80,
+			"snp_data": 50,
+			"money": 1300,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30
+		},
+		"mod":{
+			"frs": 29,
+			"element_wuhuan_niuqu.result.ele_confusion": -1
+		}
+	},
+	{
+		"id": "niuqujinghua_2",
+		"name": "扭曲纯化",
+		"desc": "减少五环扭曲产生的混乱度并增加产量",
+		"require": "g.element_luor>=1",
+		"max": 1,
+		"cost": {
+			"element_luor": 3,
+			"element_wuhuan": 10,
+			"lg": 20,
+			"jls":50,
+			"alculation": 1000,
+			"human_power": 1000,
+			"shuaibai_core": 10,
+			"books": 30,
+			"exe_paper": 30,
+			"star_map": 80,
+			"star_map_1": 15,
+			"snp_data": 50,
+			"money": 1800,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30
+		},
+		"mod":{
+			"frs": 29,
+			"element_wuhuan_niuqu.result.ele_confusion": -1.5,
+			"element_wuhuan_niuqu.result.element_luor": 1
+		}
+	},
+	{
+		"id": "qyslsj",
+		"name": "奇异生灵升级",
+		"desc": "奇异液体与生灵石产生反应",
+		"warn": true,
+		"require": "g.qiyiyeti>=1",
+		"max": 1,
+		"cost": {
+			"qiyiyeti": 10,
+			"shenglingshi": 5,
+			"lg": 20,
+			"jls":50,
+			"human_power": 900,
+			"exe_paper": 60,
+			"paper": 120,
+			"snp_data": 50,
+			"money": 1800,
+			"ganwu": 770,
+			"yqlm": 30,
+			"zdht": 30,
+			"zero_crystal": 60,
+			"sj_met": 15,
+			"super_mind": 30,
+			"alculation": 800,
+			"star_map_1": 10
+		},
+		"mod":{
+			"frs": 29,
+			"skill.rate": 2
+		}
+	},
+	{
+		"id": "mxuanyz",
+		"name": "命玄前奏",
+		"desc": "筑基-命玄境前置",
+		"require": "g.zhuji_tianjie_1>=1 && g.reflex_1>=1",
+		"max": 1,
+		"cost": {
+			"jihun": 2,
+			"zhuji_tianjie_1": 1,
+			"jls":50,
+			"gwl": 20,
+			"human_power": 1000,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cbclb": 30,
+			"yjdl": 30,
+			"money": 1800,
+			"ganwu": 770,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 15
+		},
+		"mod":{
+			"shuaibai.max": 4,
+			"jihun.max": 1,
+			"age.max":7000,
+			"age":7000,
+			"command_code.max": 2
+		}
+	},
+	{
+		"id": "podaozhim",
+		"name": "破道之梦",
+		"desc": "筑基-破道境前置",
+		"require": "g.zhuji_tianjie_3>=1 && g.reflex_1>=1",
+		"max": 1,
+		"cost": {
+			"jihun": 2,
+			"zhuji_tianjie_3": 1,
+			"jls":50,
+			"gwl": 20,
+			"human_power": 1000,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"cbclb": 30,
+			"yjdl": 30,
+			"money": 1800,
+			"ganwu": 770,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 15
+		},
+		"mod":{
+			"shuaibai.max": 4,
+			"jihun.max": 1,
+			"age.max":10000,
+			"age":10000,
+			"heli.rate": 1,
+			"command_code.max": 3
+		}
+	},
+	{
+		"id": "luoryuequ",
+		"name": "落日乐曲",
+		"desc": "筑基-落日境前置",
+		"require": "g.zhuji_tianjie_2>=1 && g.reflex_1>=1",
+		"max": 1,
+		"cost": {
+			"jihun": 2,
+			"zhuji_tianjie_2": 1,
+			"jls":50,
+			"gwl": 20,
+			"human_power": 1000,
+			"dirty_core": 20,
+			"dirty_lingti": 20,
+			"nolight_core": 10,
+			"cbclb": 30,
+			"yjdl": 30,
+			"money": 1800,
+			"ganwu": 770,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 15
+		},
+		"mod":{
+			"shuaibai.max": 4,
+			"jihun.max": 1,
+			"age.max":9000,
+			"age":9000,
+			"chaos.rate": 1,
+			"command_code.max": 3
+		}
+	},
+	{
 		"id": "glzd",
 		"name": "官僚制度",
 		"desc": "授予官位和俸禄来管理辖地",
@@ -2128,8 +2681,9 @@
 		"mod":{
 			"frs": 29,
 			"money.rate": -1,
-			"conquer_0.max": 10,
-			"conquer_3.max": 3
+			"conquer_small.max": 10,
+			"conquer_mediun.max": 3,
+			"command_code.max": 2
 		}
 	},
 	{
@@ -2226,6 +2780,507 @@
 		},
 		"mod":{
 			"elect.rate": 2
+		}
+	},
+	{
+		"id": "lhzl",
+		"name": "灵活指令",
+		"desc": "提高指令上限",
+		"require": "g.yjswyb>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 7,
+			"cbclb": 20,
+			"life_crystal": 4,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"command_code.max": 4
+		}
+	},
+	{
+		"id": "hxkz_1",
+		"name": "活性扩展",
+		"desc": "提高活性结晶上限",
+		"require": "g.yjswyb>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 7,
+			"zero_crystal": 50,
+			"life_crystal": 2,
+			"cbclb": 20,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"life_crystal.max": 4
+		}
+	},
+	{
+		"id": "xtsb_1",
+		"name": "星图识别",
+		"desc": "自动获取虚灵星图",
+		"require": "g.yjswyb>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 7,
+			"zero_crystal": 50,
+			"life_crystal": 5,
+			"star_map_1": 10,
+			"cbclb": 20,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"star_map_1.rate": 0.1
+		}
+	},
+	{
+		"id": "gljs_1",
+		"name": "福利建设",
+		"desc": "提高人力速率",
+		"require": "g.yjswyb>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 7,
+			"cbclb": 20,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1500
+		},
+		"mod":{
+			"human_power.rate": 6
+		}
+	},
+	{
+		"id": "ziwowend",
+		"name": "自我稳定",
+		"desc": "净化混乱度",
+		"require": "g.xiulian_space_whhcl>=1",
+		"max": 5,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 7,
+			"cbclb": 20,
+			"yjdl": 10,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1500
+		},
+		"mod":{
+			"ele_confusion.rate": -0.1
+		},
+		"result": {
+			"ele_confusion": 1
+		}
+	},
+	{
+		"id": "kangyaoshengji",
+		"name": "抗药升级",
+		"desc": "抗药升级",
+		"require": "g.yuansuxue>=2",
+		"max": 5,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 15,
+			"cbclb": 20,
+			"yjdl": 10,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1500
+		},
+		"mod":{
+			"drug_resist.max": 2,
+			"drug_resist.rate": -0.02
+		}
+	},
+	{
+		"id": "wuhuanyishuai",
+		"name": "五环抑衰",
+		"desc": "使用五环点抑制衰败",
+		"require": "g.element_wuhuan>=1",
+		"max": 5,
+		"cost": {
+			"element_wuhuan": 5,
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 15,
+			"cbclb": 20,
+			"yjdl": 10,
+			"shenglingshi": 1,
+			"life_crystal": 3,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1500
+		},
+		"mod":{
+			"shuaibai.max": 1,
+			"shuaibai.rate": -0.3
+		}
+	},
+	{
+		"id": "wuhuankuozhan",
+		"name": "五环扩展",
+		"desc": "扩展五环点的上限",
+		"require": "g.element_wuhuan>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 5,
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 15,
+			"cbclb": 20,
+			"yjdl": 10,
+			"shenglingshi": 1,
+			"life_crystal": 3,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1500
+		},
+		"mod":{
+			"element_wuhuan.max": 3
+		}
+	},
+	{
+		"id": "tansuozhe",
+		"name": "探索者",
+		"desc": "更远",
+		"require": "g.tansuo>=5",
+		"max": 5,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 15,
+			"element_gold": 3,
+			"element_wood": 3,
+			"element_water": 3,
+			"element_fire": 3,
+			"element_land": 3,
+			"ganwu": 500,
+			"money": 1500
+		},
+		"mod":{
+			"dist": 50,
+			"drug_resist.max": 2
+		}
+	},
+	{
+		"id": "hjxdtlz",
+		"name": "黄金乡的探路者",
+		"desc": "提高钱币速率",
+		"require": "g.yjswyb>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"super_mind": 25,
+			"yjswyb": 7,
+			"cbclb": 20,
+			"life_crystal": 4,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"money.rate": 1.8
+		}
+	},
+	{
+		"id": "mijipaixian",
+		"name": "密集排线",
+		"desc": "更加有效率的布线",
+		"require": "g.yjdl>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"gwl": 20,
+			"super_mind": 25,
+			"yjdl": 20,
+			"cbclb": 20,
+			"life_crystal": 4,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"elect.rate": 2
+		}
+	},
+	{
+		"id": "ltpl",
+		"name": "灵体排列",
+		"desc": "通过对灵体进行有效的排列实现更快的计算",
+		"require": "g.yjdl>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"alculation": 800,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti": 20,
+			"super_mind": 25,
+			"yjdl": 20,
+			"cbclb": 20,
+			"life_crystal": 4,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"alculation.max": 200
+		}
+	},
+	{
+		"id": "threesidecoin_pl",
+		"name": "三面硬币",
+		"desc": "运气归谁?",
+		"require": "g.guishuxue>=2",
+		"cost": {
+			"star_map": 30,
+			"ganwu": 200,
+			"money": 300,
+			"snp_data": 15,
+			"zero_crystal": 20,
+			"sj_met": 5
+		},
+		"mod": {
+			"luck": 1,
+			"guishuxue.max": 1,
+			"guishuxue.rate": 1
+		}
+	},
+	{
+		"id": "xifadai",
+		"name": "戏法袋",
+		"desc": "带来神奇的魔术",
+		"require": "g.guishuxue>=2",
+		"cost": {
+			"star_map": 30,
+			"ganwu": 200,
+			"money": 300,
+			"snp_data": 15,
+			"zero_crystal": 20,
+			"sj_met": 5,
+			"dirty_lingti": 2
+		},
+		"mod": {
+			"money.max": 50,
+			"money.rate": 0.1,
+			"guishuxue.max": 1
+		}
+	},
+	{
+		"id": "jiaozhaguiji",
+		"name": "狡诈诡计",
+		"desc": "猜猜看",
+		"require": "g.guishuxue>=4",
+		"cost": {
+			"ganwu": 300,
+			"money": 500,
+			"snp_data": 15,
+			"zero_crystal": 20,
+			"alculation": 300,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti": 10
+		},
+		"mod": {
+			"guishuxue.max": 1,
+			"guishuxue.rate": 1
+		}
+	},
+	{
+		"id": "hundnzhipai",
+		"name": "混沌纸牌",
+		"desc": "你有什么牌",
+		"require": "g.guishuxue>=5",
+		"cost": {
+			"chaos": 20,
+			"ganwu": 300,
+			"money": 500,
+			"snp_data": 15,
+			"zero_crystal": 20,
+			"alculation": 300,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti": 10
+		},
+		"mod": {
+			"guishuxue.max": 1,
+			"guishuxue.rate": 1
+		}
+	},
+	{
+		"id": "lingxizhiyan",
+		"name": "灵吸之言",
+		"desc": "吸收,言语",
+		"require": "g.guishuxue>=7",
+		"cost": {
+			"chaos": 20,
+			"ganwu": 300,
+			"money": 500,
+			"snp_data": 15,
+			"zero_crystal": 20,
+			"alculation": 300,
+			"cold_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti": 10
+		},
+		"mod": {
+			"heli.rate":1,
+			"chaos.rate":1,
+			"languages_pl.max": 3,
+			"guishuxue.max": 1
+		}
+	},
+	{
+		"id": "lingtibianxiezhe",
+		"name": "灵体编写者",
+		"desc": "帮助你编写经验记录",
+		"max": 1,
+		"require": "g.guifaxue>=3",
+		"cost": {
+			"chaos": 20,
+			"ganwu": 300,
+			"money": 700,
+			"snp_data": 15,
+			"star_map": 30,
+			"zero_crystal": 30,
+			"alculation": 600,
+			"cold_core": 30,
+			"dirty_core": 10,
+			"dirty_lingti": 20
+		},
+		"mod": {
+			"exe_paper.rate":0.2
+		}
+	},
+	{
+		"id": "lingtiguaningzhe",
+		"name": "灵体观星者",
+		"desc": "帮助你获取天文记录",
+		"max": 1,
+		"require": "g.guifaxue>=3",
+		"cost": {
+			"chaos": 20,
+			"ganwu": 300,
+			"money": 700,
+			"snp_data": 15,
+			"star_map": 30,
+			"zero_crystal": 30,
+			"alculation": 600,
+			"cold_core": 30,
+			"dirty_core": 10,
+			"dirty_lingti": 20
+		},
+		"mod": {
+			"star_map.rate":0.2
+		}
+	},
+	{
+		"id": "jianzhumianji",
+		"name": "建筑面积",
+		"desc": "",
+		"max": 20,
+		"require": "g.litishuxue>=3",
+		"cost": {
+			"ganwu": 300,
+			"money": 1500,
+			"snp_data": 15,
+			"star_map": 30,
+			"cbclb":30,
+			"zero_crystal": 30,
+			"alculation": 600,
+			"cold_core": 30
+		},
+		"mod": {
+			"space.max":"1%"
+		}
+	},
+	{
+		"id": "zhiliangkuorong",
+		"name": "指令扩容",
+		"desc": "",
+		"max": 2,
+		"require": "g.shulitongji>=3",
+		"cost": {
+			"ganwu": 300,
+			"money": 1500,
+			"snp_data": 15,
+			"star_map": 30,
+			"cbclb":30,
+			"zero_crystal": 50,
+			"alculation": 1000,
+			"cold_core": 30
+		},
+		"mod": {
+			"command_code.max":5
+		}
+	},
+	{
+		"id": "qxybwssj",
+		"name": "奇异孢子温室升级",
+		"desc": "",
+		"max": 1,
+		"require": "g.litishuxue>=3 && g.xiulian_jj_qybz>=1",
+		"cost": {
+			"qibaozi":5,
+			"ganwu": 300,
+			"money": 1500,
+			"snp_data": 60,
+			"cbclb":30,
+			"zero_crystal": 50,
+			"alculation": 1000,
+			"cold_core": 30
+		},
+		"mod": {
+			"qybzws.max":3
+		}
+	},
+	{
+		"id": "shuaibainizhuan",
+		"name": "衰败逆转",
+		"desc": "",
+		"max": 3,
+		"require": "g.xiulian_jj_jclr>=1",
+		"cost": {
+			"element_luor":4,
+			"element_wuhuan":10,
+			"ganwu": 300,
+			"money": 1500,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"alculation": 1000,
+			"cold_core": 30
+		},
+		"mod": {
+			"shuaibai.rate": -0.5,
+			"shuaibai.max":1
 		}
 	},
 	{
@@ -3459,23 +4514,6 @@
 		"mod": {
 			"light.max": 0.2,
 			"light.rate": 0.01
-		}
-	},
-	{
-		"id": "sombercandle",
-		"name": "somber candle",
-		"tags": "candle",
-		"desc": "Its faint light stirs the restless spirits.",
-		"repeat": true,
-		"max": 5,
-		"require": "g.spiritlore.max>=7",
-		"cost": {
-			"gold": 150,
-			"bonedust": 10
-		},
-		"mod": {
-			"spiritlore.max": 0.2,
-			"spirit.rate": 0.01
 		}
 	},
 	{

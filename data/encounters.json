@@ -15,6 +15,132 @@
 		}
 	},
 	{
+		"id": "enc_rest",
+		"name": "休息",
+		"desc": "稍微休息一下",
+		"effect": {
+			"hp": "1~2",
+			"stamina": "0~1",
+			"weary": "-1~0",
+			"unease": "-1~0",
+			"tili": "0~1"
+		},
+		"result": {
+			"ganwu": 0.1
+		}
+	},
+	{
+		"id": "enc_walk",
+		"name": "散步",
+		"desc": "在平原上散步",
+		"effect": {
+			"weary": "0~1"
+		}
+	},
+	{
+		"id": "enc_walk_1",
+		"name": "繁星",
+		"desc": "天空中点缀着繁星",
+		"effect": {
+			"weary": "0~1",
+			"ganwu": "8~10"
+		}
+	},
+	{
+		"id": "enc_guangjie",
+		"name": "逛街",
+		"desc": "随便看看",
+		"effect": {
+			"weary": "0~1"
+		},
+		"result": {
+			"ganwu": 2
+		}
+	},
+	{
+		"id": "enc_chaojia",
+		"name": "围观吵架",
+		"desc": "两个人当街对骂,你很好奇",
+		"effect": {
+			"weary": "0~1"
+		},
+		"result": {
+			"ganwu": 4
+		}
+	},
+	{
+		"id": "enc_paper",
+		"name": "购买稿纸",
+		"desc": "你发现一些很便宜的稿纸",
+		"effect": {
+			"weary": "0~1"
+		},
+		"result": {
+			"paper": 5
+		}
+	},
+	{
+		"id": "enc_xiaotou",
+		"name": "小偷",
+		"desc": "丢了一块钱",
+		"effect": {
+			"weary": "0~1"
+		},
+		"result": {
+			"money": -1
+		}
+	},
+	{
+		"id": "enc_zero_c",
+		"name": "散落的零结晶",
+		"desc": "谁扔在这的",
+		"effect": {
+			"weary": "0~1",
+			"unease": "0~1"
+		},
+		"result": {
+			"zero_crystal": 1.5
+		}
+	},
+	{
+		"id": "enc_star_map",
+		"name": "观察星星",
+		"desc": "看夜空",
+		"effect": {
+			"weary": "0~1",
+			"unease": "0~1"
+		},
+		"result": {
+			"star_map": 2
+		}
+	},
+	{
+		"id": "enc_qiyiyet",
+		"name": "奇异液体",
+		"desc": "收集一些奇异液体",
+		"effect": {
+			"weary": "2~3",
+			"unease": "1~2"
+		},
+		"result": {
+			"qiyiyeti": 0.8
+		}
+	},
+
+	{
+		"id": "enc_box_1",
+		"name": "遗落的箱子",
+		"desc": "打开看看",
+		"effect": {
+			"weary": "2~3",
+			"unease": "1~2"
+		},
+		"result": {
+			"money": 20,
+			"zero_crystal": 5
+		}
+	},
+	{
 		"id": "enc_cave_2",
 		"name": "爆炸",
 		"desc": "突如其来的爆炸",
@@ -34,6 +160,42 @@
 		},
 		"result": {
 			"hp": -6
+		}
+	},
+	{
+		"id": "enc_yanjiang_1",
+		"name": "岩浆",
+		"desc": "岩浆",
+		"effect": {
+			"weary": "0~1",
+			"bf": "-1~-2"
+		},
+		"result": {
+			"hp": -20
+		}
+	},
+	{
+		"id": "enc_yeshou_1",
+		"name": "妖兽",
+		"desc": "妖兽袭击",
+		"effect": {
+			"weary": "0~1",
+			"bf": "-1~-2"
+		},
+		"result": {
+			"hp": -20
+		}
+	},
+	{
+		"id": "enc_yeshou_2",
+		"name": "大妖兽",
+		"desc": "大妖兽袭击",
+		"effect": {
+			"weary": "0~1",
+			"bf": "-1~-2"
+		},
+		"result": {
+			"hp": -30
 		}
 	},
 	{
@@ -57,6 +219,138 @@
 		},
 		"result": {
 			"zero_crystal": 4
+		}
+	},
+	{
+		"id": "enc_kuangshan_1",
+		"name": "铁石",
+		"desc": "散落的铁石",
+		"effect": {
+			"weary": "0~1",
+			"unease": "1~2"
+		},
+		"result": {
+			"tieshi": 1
+		}
+	},
+	{
+		"id": "enc_kuangshan_2",
+		"name": "赤铁",
+		"desc": "散落的赤铁",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"citie": 1.2
+		}
+	},
+	{
+		"id": "enc_kongjin_1",
+		"name": "空金",
+		"desc": "挖掘空金",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"kongjin": 0.9
+		}
+	},
+	{
+		"id": "enc_yankuai_1",
+		"name": "岩块",
+		"desc": "挖掘岩块",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"yankuai": 1
+		}
+	},
+	{
+		"id": "enc_tusong_1",
+		"name": "土松",
+		"desc": "一颗土松",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"tusong": 1
+		}
+	},
+	{
+		"id": "enc_lvbai_1",
+		"name": "绿柏",
+		"desc": "一颗绿柏",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"lvbai": 0.5
+		}
+	},
+	{
+		"id": "enc_huohua_1",
+		"name": "火花",
+		"desc": "火花",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"huohua": 0.5
+		}
+	},
+	{
+		"id": "enc_huorang_1",
+		"name": "火壤",
+		"desc": "火壤",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"huorang": 0.5
+		}
+	},
+	{
+		"id": "enc_qianniuhua_1",
+		"name": "牵牛花",
+		"desc": "牵牛花",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"qianniuhua": 0.5
+		}
+	},
+	{
+		"id": "enc_qingsong_1",
+		"name": "青松",
+		"desc": "青松",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"qingsong": 0.5
+		}
+	},
+	{
+		"id": "enc_shuiteng_1",
+		"name": "水藤",
+		"desc": "水藤",
+		"effect": {
+			"weary": "1~2",
+			"unease": "1~2"
+		},
+		"result": {
+			"shuiteng": 0.5
 		}
 	},
 	{

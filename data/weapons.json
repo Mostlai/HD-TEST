@@ -2,6 +2,7 @@
 	{
 		"id": "szz",
 		"name": "熵骤增",
+		"color": "#FF4500",
 		"slot": "hands",
 		"enchants": 20,
 		"attack": {
@@ -23,6 +24,26 @@
 		},
 		"cost": 30,
 		"level": 100
+	},
+	{
+		"id": "xwdsnzyd",
+		"name": "玄武顿嗦那斩月刀",
+		"color": "#FF4500",
+		"desc": "你狗屁才艺",
+		"material": "huoguozhi",
+		"enchants": 10,
+		"attack": {
+			"kind": "玄武顿嗦那斩月刀",
+			"damage": "6~12"
+		},
+		"alter": {
+			"mod": {
+				"self.tohit": 1
+			}
+		},
+		"cost": 30,
+		"level": 100,
+		"flavor": "你没排面"
 	},
 	{
 		"id": "shortsword",
@@ -125,6 +146,7 @@
 		"id": "wuyuemijian",
 		"name": "无月秘剑[AL]",
 		"desc": "无光技术打造的大剑",
+		"color": "#2980B9",
 		"equneed":"g.AL>=1",
 		"slot": "hands",
 		"material": "rumo",
@@ -155,6 +177,7 @@
 		"id": "yanghuodadoa",
 		"name": "阳火大刀[AL]",
 		"desc": "炽热气息",
+		"color": "#2980B9",
 		"equneed":"g.AL>=1",
 		"slot": "hands",
 		"material": "yangxi",
@@ -184,6 +207,7 @@
 	{
 		"id": "zhenchanjian",
 		"name": "震颤剑[AL]",
+		"color": "#2980B9",
 		"desc": "",
 		"equneed":"g.AL>=1",
 		"slot": "hands",
@@ -215,6 +239,7 @@
 		"id": "base_zd",
 		"name": "紫电[BASE]",
 		"desc": "附着高能电流的巨大直剑",
+		"color": "#2ECC71",
 		"equneed":"g.base>=1",
 		"slot": "hands",
 		"material": "chubai",
@@ -248,6 +273,7 @@
 		"id": "base_rndd",
 		"name": "热能电刀[BASE]",
 		"desc": "赤红刀刃",
+		"color": "#2ECC71",
 		"equneed":"g.base>=1",
 		"slot": "hands",
 		"material": "yangxi",
@@ -281,6 +307,7 @@
 		"id": "base_feijian",
 		"name": "飞剑[BASE]",
 		"desc": "行云流水",
+		"color": "#2ECC71",
 		"equneed":"g.base>=1",
 		"slot": "hands",
 		"material": "liushui",

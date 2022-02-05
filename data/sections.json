@@ -65,17 +65,27 @@
 		"require": "g.mwxue>=1"
 	},
 	{
+		"id": "sect_hr",
+		"name": "人力",
+		"require": "g.rlgl>=1"
+	},
+	{
 		"id": "sect_craft",
 		"name": "crafting"
 	},
 	{
 		"id": "sect_potions",
-		"name": "potions",
-		"require": "g.potions>0"
+		"name": "元素",
+		"require": "g.yaolixue>=1"
 	},
 	{
 		"id": "sect_minions",
 		"name": "随从",
 		"require": "g.shenshi_4>=999"
+	},
+	{
+		"id": "sect_achievement",
+		"name": "成就",
+		"require": "g.hp>=1"
 	}
 ]
