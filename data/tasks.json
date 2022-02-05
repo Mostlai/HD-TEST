@@ -1407,11 +1407,10 @@
 		}
 	},
 	{
-		"id": "pyjzz",
+		"id": "pyjzz1",
 		"name": "培养基制作",
 		"desc": "制作富养培养基,",
 		"verb": "制作中",
-		"max": 1,
 		"require": "g.xiulian_life_swpy>=1",
 		"length": 20,
 		"cost": {
@@ -1431,11 +1430,10 @@
 		}
 	},
 	{
-		"id": "pyyzz",
+		"id": "pyyzz1",
 		"name": "培养液调配",
 		"desc": "制作培养液,",
 		"verb": "调配中",
-		"max": 1,
 		"require": "g.xiulian_life_swyz>=1",
 		"length": 20,
 		"cost": {
