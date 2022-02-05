@@ -2849,6 +2849,30 @@
 		}
 	},
 	{
+		"id": "wzkz_1",
+		"name": "污浊扩展",
+		"desc": "",
+		"require": "g.yjswyb>=1",
+		"max": 1,
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"dirty_core":10,
+			"super_mind": 25,
+			"yjswyb": 4,
+			"zero_crystal": 50,
+			"life_crystal": 5,
+			"star_map_1": 10,
+			"cbclb": 20,
+			"star_map_1": 10,
+			"ganwu": 500,
+			"money": 1800
+		},
+		"mod":{
+			"dirty_core.max": 10
+		}
+	},
+	{
 		"id": "gljs_1",
 		"name": "福利建设",
 		"desc": "提高人力速率",
