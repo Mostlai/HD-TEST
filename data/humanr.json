@@ -197,7 +197,7 @@
 		"id": "pyjzl",
 		"name": "培养基指令",
 		"desc": "派遣人力制作培养基",
-		"require": "g.pyypx>=1",
+		"require": "g.pyjpx>=1",
 		"max": 2,
 		"clevel": 2,
 		"need": "g.human_power>=300",
