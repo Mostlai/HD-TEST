@@ -98,7 +98,7 @@
 				"mod": {
 					"money.max": 0.01,
 					"off_influence.max": 0.001,
-					"money.rate": 0.001
+					"money.rate": 0.0005
 				},
 				"flavor": "今朝谁指鹿为马?"
 			}
