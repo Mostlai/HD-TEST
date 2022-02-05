@@ -1182,7 +1182,7 @@
 		"name": "落日思维",
 		"desc": "一切都将开场",
 		"max": 1,
-		"require": "g.luorezhexue>=3",
+		"require": "g.luorezhexue>=1",
 		"cost": {
 			"money": 1000,
 			"lg": 8,
@@ -1209,7 +1209,7 @@
 		"name": "无光科学",
 		"desc": "阳光之下",
 		"max": 1,
-		"require": "g.luorezhexue>=3",
+		"require": "g.luorezhexue>=1",
 		"cost": {
 			"money": 1000,
 			"lg": 8,
