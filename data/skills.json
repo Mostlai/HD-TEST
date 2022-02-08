@@ -151,6 +151,24 @@
 		}
 	},
 	{
+		"id": "stamina_skill",
+		"name": "精力保持",
+		"desc": "",
+		"require": "g.ganwu_skill>=4",
+		"level": 3,
+		"effect": {
+			"time": 0.8
+		},
+		"run": {
+			"ganwu": 0.2,
+			"tili": 0.2
+		},
+		"mod": {
+			"stamina.max": 0.5,
+			"stamina.rate": 0.1
+		}
+	},
+	{
 		"id": "horse_training",
 		"name": "驯马术",
 		"need": "g.Knowledge_integration_1>=1",
