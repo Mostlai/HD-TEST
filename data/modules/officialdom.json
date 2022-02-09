@@ -67,6 +67,20 @@
 				}
 			},
 			{
+				"id": "evt_offic_shangxian",
+				"require": "g.off_influence>=35000",
+				"name": "影响力上限",
+				"desc": "影响力达到上限",
+				"disable":[
+					"off_work_1",
+					"off_shanggong_1",
+					"guodu_2"
+				],
+				"result": {
+					"off_work_2": true
+				}
+			},
+			{
 				"id": "evt_excam_1",
 				"require": "g.off_excam>=1",
 				"name": "首都",
@@ -97,7 +111,6 @@
 				"group": "朝廷",
 				"mod": {
 					"money.max": 0.01,
-					"off_influence.max": 0.001,
 					"money.rate": 0.0005
 				},
 				"flavor": "今朝谁指鹿为马?"
@@ -145,6 +158,30 @@
 					"ganwu": 20,
 					"off_influence": 5,
 					"off_influence.max": 0.5
+				}
+			},
+			{
+				"id": "off_work_2",
+				"name": "公务工作",
+				"desc": "做好你的本职工作",
+				"require": "g.off_xunjian>=1",
+				"verb": "工作中",
+				"length": 30,
+				"cost": {
+					"ganwu": 1
+				},
+				"effect":{
+					"off_influence": 0.6
+				},
+				"run": {
+					"time": -0.1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result": {
+					"money": 160,
+					"ganwu": 50,
+					"off_influence": 100
 				}
 			},
 			{
@@ -283,7 +320,7 @@
 					"off_influence": 10
 				},
 				"mod":{
-					"off_influence.mod.off_influence.max": 0.005
+					"off_influence.max": 100
 				}
 			},
 			{
@@ -301,8 +338,7 @@
 				"mod":{
 					"off_work_1.result.money": 10,
 					"off_work_1.result.off_influence": 5,
-					"off_work_1.result.off_influence.max": 2,
-					"off_influence.mod.off_influence.max": 0.005
+					"off_work_1.result.off_influence.max": 2
 				}
 			},
 			{
