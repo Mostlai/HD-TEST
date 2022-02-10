@@ -77,7 +77,7 @@
 					"guodu_2"
 				],
 				"result": {
-					"off_work_2": true
+					"off_work_21": true
 				}
 			},
 			{
@@ -161,10 +161,10 @@
 				}
 			},
 			{
-				"id": "off_work_2",
+				"id": "off_work_21",
 				"name": "公务工作",
 				"desc": "做好你的本职工作",
-				"require": "g.off_xunjian>=1",
+				"require": "g.off_influence>=35000",
 				"verb": "工作中",
 				"length": 30,
 				"cost": {
