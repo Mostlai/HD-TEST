@@ -579,7 +579,7 @@
 		"desc": "消耗计算力来更快的凝聚能量",
 		"tags": "",
 		"require": "g.rlgl>=1",
-		"max": 5,
+		"max": 9,
 		"repeat": true,
 		"cost": {
 			"human_power": 100,
