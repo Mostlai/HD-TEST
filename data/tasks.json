@@ -2789,6 +2789,9 @@
 		"verb": "加工中",
 		"require": "g.signal>=1",
 		"length": 20,
+		"fill":[
+			"ljdy"
+		],
 		"cost": {
 			"yjdl": 20,
 			"cbclb": 5,
