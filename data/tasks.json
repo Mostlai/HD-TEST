@@ -1743,7 +1743,7 @@
 		},
 		"run": {
 			"ganwu": 2,
-			"time": -3
+			"time": -0.5
 		},
 		"result": {
 			"sp": 0.3
@@ -1763,7 +1763,7 @@
 		},
 		"run": {
 			"ganwu": 2,
-			"time": -3
+			"time": -0.5
 		}
 	},
 	{
@@ -1781,7 +1781,7 @@
 		},
 		"run": {
 			"ganwu": 2,
-			"time": -3
+			"time": -0.5
 		}
 	},
 	{
@@ -1815,7 +1815,7 @@
 		},
 		"run": {
 			"ganwu": 2,
-			"time": -3
+			"time": -0.5
 		},
 		"result": {
 			"sp": 0.3
@@ -1879,7 +1879,7 @@
 		},
 		"run": {
 			"ganwu": 2,
-			"time": -3
+			"time": -0.5
 		},
 		"result": {
 			"qingjia.max": 1,
@@ -1903,7 +1903,7 @@
 		},
 		"run": {
 			"ganwu": 2,
-			"time": -3
+			"time": -0.5
 		},
 		"result": {
 			"yanzhandu.rate": -0.05,
