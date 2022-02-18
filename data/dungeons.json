@@ -4,7 +4,6 @@
 		"name": "底层梦境[黄泉前置]",
 		"desc": "梦境的深处,实界的边缘,这里的时间流速更快,环境更危险",
 		"require": "evt_hq",
-		"title": "悟梦者",
 		"level": 1,
 		"length": 50,
 		"run": {
@@ -120,6 +119,48 @@
 			[
 				"noshadow",
 				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "hq_3",
+		"name": "黄泉瀚海[黄泉]",
+		"desc": "无际沙漠。这里的时间流速更快,环境更危险",
+		"require": "g.evt_huangquansc>=1",
+		"level": 25,
+		"dist": 500,
+		"length": 40,
+		"run": {
+			"back_dream": 0.4,
+			"hp": 1,
+			"stamina": 1,
+			"tili": 1,
+			"time": -2
+		},
+		"result": {
+			"hunti_core": "1~2",
+			"lxue": "3~7",
+			"shuaibai_core": "3~6",
+			"snp_data": "9~12",
+			"zero_crystal": "5~12"
+		},
+		"boss": "hanhai_juxiang",
+		"spawns": [
+			[
+				"hqsl_1",
+				"hqsl_1",
+				"hqsl_1",
+				"hqsl_1",
+				"hqsl_1"
+			],
+			[
+				"river_wheel",
+				"dreamloot",
+				"hanhai_youl"
+			],
+			[
+				"hanhai_youl",
+				"dreamloot"
 			]
 		]
 	},
@@ -497,6 +538,28 @@
 		]
 	},
 	{
+		"id": "yichongyuesheng_fuben",
+		"name": "基魂跃升",
+		"sym": "☯⚡",
+		"desc": "完成跃升获得【一重跃升】",
+		"require": "evt_zhujiyuesheng",
+		"max": 1,
+		"dist":1,
+		"level": 40,
+		"length": 3,
+		"run": {
+			"time": -20
+		},
+		"result": {
+			"yichongyuesheng": 1
+		},
+		"boss": "yueshengshike_1",
+		"spawns": [
+			"shengmen_1",
+			"simen_1"
+		]
+	},
+	{
 		"id": "zhujijie",
 		"name": "五环之劫[五环-普通]",
 		"sym": "☯⚡",
@@ -721,70 +784,6 @@
 			],
 			"bigstone",
 			"hawk"
-		]
-	},
-	{
-		"id": "ettinmarchcamp",
-		"name": "Ettinmarch Camp",
-		"desc": "The perilous wilds of the Ettinmarch are a cherished home to bands of merry rangers and virtuous druids.",
-		"require": "evt_rangers",
-		"title": "Forest Scourge",
-		"max": 1,
-		"level": 15,
-		"length": 200,
-		"run": {
-			"stamina": 2
-		},
-		"result": {
-			"herbs": "3~7",
-			"gems": "0~2"
-		},
-		"boss": {"200":[
-			"eledin",
-			"gildella"
-		]},
-		"spawns": [
-			[
-				"ranger",
-				"ranger"
-			],
-			[
-				"elf",
-				"elf",
-				"elf",
-				"elf"
-			],
-			"beserker",
-			[
-				"roc",
-				"m_druid",
-				"roc"
-			],
-			[
-				"ranger",
-				"gryffon"
-			],
-			[
-				"m_druid",
-				"m_druid"
-			],
-			"ent",
-			[
-				"bear",
-				"bear",
-				"bear",
-				"ranger"
-			],
-			"direbear",
-			"highranger",
-			[
-				"elf",
-				"highelf"
-			],
-			[
-				"slinger",
-				"direbear"
-			]
 		]
 	},
 	{

@@ -606,6 +606,29 @@
 		}
 	},
 	{
+		"id": "market_hongjijgfsq",
+		"name": "红极激光发射器[AL-护手]",
+		"require": "g.red_jgsys>=1",
+		"cost": {
+			"ljdy": 10,
+			"cbclb":30,
+			"yjdl": 60,
+			"jls": 100,
+			"money": 1700,
+			"ganwu": 1000,
+			"alculation": 700,
+			"human_power": 600,
+			"cold_core": 40,
+			"super_mind": 20,
+			"paper": 100,
+			"books": 30,
+			"exe_paper": 50
+		},
+		"loot": {
+			"hongjijgfsq": "100%"
+		}
+	},
+	{
 		"id": "market_wuyuemijian",
 		"name": "无月秘剑[AL-武器]",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",

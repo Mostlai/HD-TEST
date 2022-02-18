@@ -65,11 +65,6 @@
 		"require": "g.mwxue>=1"
 	},
 	{
-		"id": "sect_hr",
-		"name": "人力",
-		"require": "g.rlgl>=1"
-	},
-	{
 		"id": "sect_craft",
 		"name": "crafting"
 	},

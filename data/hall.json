@@ -1,6 +1,6 @@
 {
 	"module": "hall",
-	"sym": "🏰",
+	"sym": "☯",
 	"data": {
 		"events": [
 			{
@@ -17,6 +17,17 @@
 				"desc": "",
 				"cost": {},
 				"flavor": ""
+			}
+		],
+		"resources": [
+			{
+				"id": "hall_test",
+				"name": "测试",
+				"desc": "测试",
+				"group": "测试",
+				"hide": true,
+				"locked": true,
+				"max": 1
 			}
 		],
 		"upgrades": [
@@ -200,7 +211,7 @@
 			},
 			{
 				"id": "hallPoints",
-				"name": "prestige",
+				"name": "万物一",
 				"alias": "points",
 				"hide": true,
 				"locked": false,
@@ -211,7 +222,7 @@
 			},
 			{
 				"id": "prestige",
-				"name": "hall prestige",
+				"name": "万物一",
 				"require": "evt_hall",
 				"val": 0,
 				"locked": false,

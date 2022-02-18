@@ -1,0 +1,125 @@
+[
+	{
+		"id": "factory_ar_1",
+		"name": "中甲工厂",
+		"desc": "生产标准中甲",
+		"tags": "一级武器工厂",
+		"require":"g.r_adv_bzzj>=1",
+		"max": 2,
+		"mod": {
+			"space": 10,
+			"r_adv_bzzj.max": 2,
+			"r_adv_bzzj.rate":0.01
+		},
+		"cost": {
+			"money": 500,
+			"iron_copper":10,
+			"sj_met": 10,
+			"zero_crystal": 20,
+			"cu_iron": 15,
+			"human_power": 100
+		}
+	},
+	{
+		"id": "factory_ar_2",
+		"name": "重甲工厂",
+		"desc": "生产标准重甲",
+		"tags": "一级武器工厂",
+		"require":"g.r_adv_bzhj>=1",
+		"max": 2,
+		"mod": {
+			"space": 10,
+			"r_adv_bzzj.rate": -0.005,
+			"r_adv_bzhj.max": 2,
+			"r_adv_bzhj.rate":0.01
+		},
+		"cost": {
+			"r_adv_bzzj":5,
+			"r_adv_bzhj":3,
+			"money": 500,
+			"iron_copper":10,
+			"sj_met": 10,
+			"zero_crystal": 20,
+			"cu_iron": 15,
+			"human_power": 100
+		}
+	},
+	{
+		"id": "factory_1",
+		"name": "反材料工厂",
+		"desc": "生产反材料工具",
+		"tags": "一级武器工厂",
+		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
+		"max": 2,
+		"mod": {
+			"space": 10,
+			"r_adv_w_sj1.max": 2,
+			"r_adv_w_sj1.rate":0.01
+		},
+		"cost": {
+			"money": 100,
+			"iron_copper":3,
+			"sj_met": 1,
+			"zero_crystal": 1,
+			"cu_iron": 4,
+			"human_power": 5
+		}
+	},
+	{
+		"id": "factory_2",
+		"name": "污浊武器工厂",
+		"desc": "自动制作污浊武器",
+		"tags": "一级武器工厂",
+		"max": 2,
+		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
+		"repeat": true,
+		"cost": {
+			"sj_met": 10,
+			"human_power": 300,
+			"zero_crystal": 20,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"super_mind": 5,
+			"cu_copper": 10,
+			"iron_copper": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 500
+		},
+		"mod": {
+			"space": -10,
+			"r_adv_w_sj2.max": 2,
+			"r_adv_w_sj2.rate": 0.003,
+			"space": 15
+		}
+	},
+	{
+		"id": "factory_3",
+		"name": "冷结武器工厂",
+		"desc": "自动制作冷结武器",
+		"tags": "一级武器工厂",
+		"max": 2,
+		"require":"g.weapon_1>=1 && g.cold_core>=10",
+		"repeat": true,
+		"cost": {
+			"sj_met": 10,
+			"human_power": 300,
+			"zero_crystal": 20,
+			"books": 5,
+			"super_mind": 5,
+			"cold_core": 10,
+			"dirty_core": 10,
+			"iron_copper": 10,
+			"paper": 30,
+			"exe_paper": 10,
+			"star_map": 40,
+			"money": 500
+		},
+		"mod": {
+			"r_adv_w_sj3.max": 2,
+			"r_adv_w_sj3.rate": 0.003,
+			"space": 15
+		}
+	}
+]

@@ -283,6 +283,55 @@
 		}
 	},
 	{
+		"id": "chugui",
+		"name": "初归",
+		"desc": "重返内在潜力",
+		"actname": "初归",
+		"actdesc": "重返内在潜力",
+		"require": "g.xiulian_gcwuguan>=5",
+		"warn": true,
+		"cost": {
+			"neizaiqianli": 2,
+			"super_mind": 35,
+			"ganwu": 600,
+			"paper": 50,
+			"exe_paper": 20,
+			"star_map": 70,
+			"star_map_1": 15,
+			"zero_crystal": 70,
+			"life_crystal": 10,
+			"money": 1600
+		},
+		"result": {
+			"tili.max": 5,
+			"ganwu.rate": 2
+		}
+	},
+	{
+		"id": "guixuan",
+		"name": "归玄",
+		"desc": "无垢之体",
+		"actname": "归玄",
+		"actdesc": "无垢之体",
+		"require": "g.xiulian_body_gczf>=3",
+		"warn": true,
+		"cost": {
+			"baizhan": 10,
+			"hunti_core":9,
+			"canglan":9,
+			"huiguang":9,
+			"money": 1600
+		},
+		"result": {
+			"tili.max": 5,
+			"hp.max": 20,
+			"stamina.max": 5,
+			"tili.rate": 2,
+			"stamina.rate": 2,
+			"ganwu.rate": 3
+		}
+	},
+	{
 		"id": "falconer",
 		"tags": "t_job",
 		"actdesc": "Tend your master's owls and falcons.",

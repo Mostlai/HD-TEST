@@ -138,6 +138,7 @@
 			{
 				"id": "off_work_1",
 				"name": "公务工作",
+				"tags":"生产",
 				"desc": "做好你的本职工作",
 				"require": "g.off_xunjian>=1",
 				"verb": "工作中",
@@ -163,6 +164,7 @@
 			{
 				"id": "off_work_21",
 				"name": "公务工作",
+				"tags":"生产",
 				"desc": "做好你的本职工作",
 				"require": "g.off_influence>=35000",
 				"verb": "工作中",
@@ -187,6 +189,7 @@
 			{
 				"id": "off_tanwu_1",
 				"name": "贪污受贿",
+				"tags":"生产",
 				"desc": "给予他人利益获取好处",
 				"require": "g.off_influence_2>=1",
 				"verb": "受贿中",
@@ -208,6 +211,7 @@
 			{
 				"id": "off_shanggong_1",
 				"name": "上贡礼品",
+				"tags":"生产",
 				"desc": "给你的上级送礼",
 				"require": "g.off_influence_1>=1",
 				"verb": "上贡中",
@@ -1432,7 +1436,8 @@
 					"ganwu":"2~3"
 				},
 				"result": {
-					"off_hide_1": "1.2%"
+					"off_hide_1": "1.2%",
+					"off_hide_1": 0.02
 				}
 			},
 			{

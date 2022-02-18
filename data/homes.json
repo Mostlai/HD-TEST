@@ -49,26 +49,6 @@
 		}
 	},
 	{
-		"id": "small_rehouse",
-		"name": "小型研究所",
-		"desc": "运用基础建筑学建造的房屋",
-		"require": "g.building_1>=3",
-		"cost": {
-			"money": 180,
-			"cu_iron": 10,
-			"cu_copper":10,
-			"snp_data": 5,
-			"zero_crystal": 8,
-			"iron_copper": 5,
-			"paper": 40
-		},
-		"mod": {
-			"money.max": 30,
-			"ganwu.rate":0.01,
-			"space.max": 40
-		}
-	},
-	{
 		"id": "bfjiao",
 		"name": "冰封窖",
 		"desc": "极寒的居所",
@@ -209,6 +189,35 @@
 			"space.max": 140,
 			"lxue.rate":0.07,
 			"shuaibai_core.rate": 0.06
+		}
+	},
+	{
+		"id": "xueyuan",
+		"name": "学院",
+		"desc": "知识聚集之地",
+		"require": "g.zhishichuanbo>=1",
+		"cost": {
+			"lg": 30,
+			"jls": 150,
+			"cu_iron": 370,
+			"cu_copper": 370,
+			"money": 2300,
+			"ganwu": 1200,
+			"super_mind": 20,
+			"alculation": 400,
+			"human_power": 900,
+			"zero_crystal": 60,
+			"paper": 300,
+			"books":60,
+			"snp_data": 100,
+			"exe_paper": 100
+		},
+		"mod": {
+			"money.max": 600,
+			"space.max": 350,
+			"skill.rate": 30,
+			"ganwu.rate":3,
+			"ganwu.max": 100
 		}
 	},
 	{

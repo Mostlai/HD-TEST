@@ -1,0 +1,47 @@
+[
+	{
+		"id": "qingjia",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "轻甲",
+		"val":1,
+		"max": 1
+	},
+	{
+		"id": "zhongjia",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "中甲",
+		"val":1,
+		"max": 1
+	},
+	{
+		"id": "heavyjia",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "重甲",
+		"val":0,
+		"max": 0
+	},
+	{
+		"id": "wuzhuo",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "污浊",
+		"val":0,
+		"max": 0
+	},
+	{
+		"id": "bingdong",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "冰冻",
+		"val":0,
+		"max": 0
+	}
+]

@@ -484,6 +484,30 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "hongjijgfsq",
+		"name": "红极激光发射器[AL]",
+		"tags":"a_red_laser",
+		"desc": "搭载了逻辑单元的坚硬护手,并能够单独产生高能电容来发射激光",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 18,
+		"slot": "hands",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"laser_ene.rate": 0.5,
+				"laser_ene.max": 3,
+				"f_power": 25,
+				"shenshi.max": -1,
+				"elect.max": -1,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "yqlp",
 		"name": "御气罗盘",
 		"desc": "能帮助使用者速度更快",

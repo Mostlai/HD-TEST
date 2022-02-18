@@ -34,8 +34,9 @@
 		"herbal",
 		"achievement",
 		"metal",
-		"elect",
-		"bio"
+		"fight",
+		"bio",
+		"weapon_factory"
 	],
 	"modules": [
 		"patrons",

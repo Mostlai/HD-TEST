@@ -59,6 +59,54 @@
 		}
 	},
 	{
+		"id": "zhujikedufenxi",
+		"name": "筑基刻度分析(路径)",
+		"desc": "",
+		"tags": "路径",
+		"require": "g.xiulian_eye_ganzl>=1",
+		"max": 2,
+		"cost": {
+			"cbclb": 30,
+			"yjdl": 60,
+			"books":50,
+			"paper": 200,
+			"human_power": 700,
+			"money": 1700,
+			"ganwu": 700,
+			"alculation": 100,
+			"star_map_1": 20
+		},
+		"xiulianresult": {
+			"frs":39,
+			"xiulian_zhujikedufenxi":1
+		}
+	},
+	{
+		"id": "zhenyuandaolun",
+		"name": "真元导论(路径)",
+		"desc": "借助五环和落日探讨真元存在",
+		"tags": "路径",
+		"require": "g.xiulian_zhujikedufenxi>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 20,
+			"element_luor":10,
+			"cbclb": 30,
+			"yjdl": 60,
+			"books":50,
+			"paper": 200,
+			"human_power": 700,
+			"money": 1700,
+			"ganwu": 700,
+			"alculation": 100,
+			"star_map_1": 20
+		},
+		"xiulianresult": {
+			"frs":39,
+			"xiulian_zhenyuandaolun":1
+		}
+	},
+	{
 		"id": "jizhun_1",
 		"name": "基准探讨(立足)",
 		"desc": "筑基的第一步,首先要探讨何谓基准,基准决定了后续修行路途中的标准,这个过程中你需要一些称之为零结晶的资源,或许附近的地点有一些",
@@ -152,6 +200,30 @@
 			"time": 100,
 			"frs": 20,
 			"xiulian_jizhun_3" : 1
+		}
+	},
+	{
+		"id": "lizu_wxyh",
+		"name": "五行衍化(立足)",
+		"desc": "",
+		"tags": "立足",
+		"require": "g.mingxuan>=1",
+		"max": 2,
+		"cost": {
+			"lg": 11,
+			"element_luor": 10,
+			"element_wuhuan": 20,
+			"yjdl": 40,
+			"heli": 45,
+			"chaos": 35,
+			"super_mind": 20,
+			"alculation": 500,
+			"human_power": 1000
+		},
+		"xiulianresult": {
+			"time": 100,
+			"frs": 20,
+			"xiulian_lizu_wxyh" : 1
 		}
 	},
 	{
@@ -434,6 +506,98 @@
 		}
 	},
 	{
+		"id": "ld_body_4",
+		"name": "三级超然(生命构造)",
+		"desc": "蜕变的每一步",
+		"tags": "生命构造",
+		"require": "g.huiguangzy>=1",
+		"max": 2,
+		"cost": {
+			"huiguang": 9,
+			"huiguangzy": 1
+		},
+		"xiulianresult": {
+			"time": 365,
+			"hp.max":  3,
+			"tili.max":  3,
+			"tili.rate":  0.6,
+			"stamina.max":  2,
+			"stamina.rate":  0.4
+		}
+	},
+	{
+		"id": "ld_body_jygz",
+		"name": "甲乙归真(生命构造)",
+		"desc": "",
+		"tags": "生命构造",
+		"require": "g.hunti_core>=1",
+		"max": 2,
+		"cost": {
+			"baizhan":5,
+			"huiguang": 9,
+			"canglan":9,
+			"hunti_core":9,
+			"huiguangzy": 1
+		},
+		"xiulianresult": {
+			"xiulian_body_gczf": 1,
+			"time": 3650,
+			"hp.max": 5,
+			"tili.max": 3,
+			"tili.rate": 0.6,
+			"stamina.max": 2,
+			"stamina.rate": 0.4
+		}
+	},
+	{
+		"id": "ld_body_tygc",
+		"name": "天一归初(生命构造)",
+		"desc": "",
+		"tags": "生命构造",
+		"require": "g.hunti_core>=1",
+		"max": 2,
+		"cost": {
+			"baizhan":5,
+			"huiguang": 9,
+			"canglan":9,
+			"hunti_core":9,
+			"huiguangzy": 1
+		},
+		"xiulianresult": {
+			"xiulian_body_gczf": 1,
+			"time": 3650,
+			"hp.max": 5,
+			"tili.max": 3,
+			"tili.rate": 0.6,
+			"stamina.max": 2,
+			"stamina.rate": 0.4
+		}
+	},
+	{
+		"id": "ld_body_sxzl",
+		"name": "十象之力(生命构造)",
+		"desc": "",
+		"tags": "生命构造",
+		"require": "g.hunti_core>=1",
+		"max": 2,
+		"cost": {
+			"baizhan":5,
+			"huiguang": 9,
+			"canglan":9,
+			"hunti_core":9,
+			"huiguangzy": 1
+		},
+		"xiulianresult": {
+			"xiulian_body_gczf": 1,
+			"time": 3650,
+			"hp.max": 5,
+			"tili.max": 3,
+			"tili.rate": 0.6,
+			"stamina.max": 2,
+			"stamina.rate": 0.4
+		}
+	},
+	{
 		"id": "ld_dw_guancha",
 		"name": "双波生命实验(生命构造)",
 		"desc": "研究生命在两种波下的表现",
@@ -606,7 +770,7 @@
 		},
 		"xiulianresult": {
 			"time": 20,
-			"xiulianchaos_ly_1" : 1
+			"xiulian_chaos_ly_1" : 1
 		}
 	},
 	{
@@ -805,6 +969,36 @@
 			"tili.max":  7,
 			"tili.rate":  0.7,
 			"xiulian_zhuji_2" : 1
+		}
+	},
+	{
+		"id": "zhuji_2_1",
+		"name": "筑基一重(初入筑基)",
+		"desc": "进入筑基一重,[一重跃升]资源需要对副本进行探索获得",
+		"tags": "初入筑基",
+		"require": "g.jihunyuesheng>=1",
+		"max": 2,
+		"cost": {
+			"yichongyuesheng":1,
+			"jingdian": 10,
+			"yjswyb": 20,
+			"element_luor": 10,
+			"element_wuhuan": 20
+		},
+		"xiulianresult": {
+			"time": 3650,
+			"elect.rate": 3,
+			"heli.max": 10,
+			"chaos.max": 10,
+			"heli.rate": 2,
+			"chaos.rate": 2,
+			"age.max": 37300,
+			"age": 37300,
+			"hp.max": 10,
+			"stamina.max": 5,
+			"tili.max": 5,
+			"tili.rate": 1,
+			"xiulian_zhuji_2_1" : 1
 		}
 	},
 	{
@@ -1833,6 +2027,41 @@
 		}
 	},
 	{
+		"id": "life_jiaojzqu",
+		"name": "皎洁之躯(永生之望)",
+		"desc": "无暇",
+		"tags": "永生之望",
+		"require": "g.canglan>=1",
+		"max": 2,
+		"cost": {
+			"huiguangzy": 1,
+			"canglan": 9,
+			"huiguang": 9,
+			"tili": 30
+		},
+		"xiulianresult": {
+			"age.max":  36500,
+			"age":  36500
+		}
+	},
+	{
+		"id": "life_fczjing",
+		"name": "芳草之径(几何)",
+		"desc": "何处觅芳草",
+		"tags": "几何",
+		"require": "g.canglan>=1",
+		"max": 2,
+		"cost": {
+			"huiguangzy": 1,
+			"canglan": 9,
+			"huiguang": 9,
+			"tili": 30
+		},
+		"xiulianresult": {
+			"space.max":  200
+		}
+	},
+	{
 		"id": "energ_xtcd",
 		"name": "虚体传导(能量物理)",
 		"desc": "将能量从现实发送到非实界",
@@ -2233,6 +2462,136 @@
 		}
 	},
 	{
+		"id": "life_wjzth",
+		"name": "外坚之体会(生命构造)",
+		"desc": "发、毛、爪、齿、皮,外在之坚韧,体会感知坚韧之能",
+		"tags": "生命构造",
+		"require": "g.tongren>=1 && g.guichangmishu>=1",
+		"max": 2,
+		"cost": {
+			"jls":50,
+			"tili": 30,
+			"lxue": 10,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 60,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"time":3650,
+			"heli.max": 1,
+			"stamina.rate": 0.1,
+			"tili.rate": 0.1,
+			"xiulian_gcwuguan":1
+		}
+	},
+	{
+		"id": "life_jtzgc",
+		"name": "筋体之感触(生命构造)",
+		"desc": "肉、筋、骨、髓,身体运动之本",
+		"tags": "生命构造",
+		"require": "g.tongren>=1 && g.guichangmishu>=1",
+		"max": 2,
+		"cost": {
+			"jls":50,
+			"tili": 30,
+			"lxue": 10,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 60,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"time":3650,
+			"heli.max": 1,
+			"stamina.rate": 0.1,
+			"tili.rate": 0.1,
+			"xiulian_gcwuguan":1
+		}
+	},
+	{
+		"id": "life_smzbd",
+		"name": "生命之搏动(生命构造)",
+		"desc": "心、肝、肋膜、脾、肺,生命维持之能",
+		"tags": "生命构造",
+		"require": "g.tongren>=1 && g.guichangmishu>=1",
+		"max": 2,
+		"cost": {
+			"jls":50,
+			"tili": 30,
+			"lxue": 10,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 60,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"time":3650,
+			"heli.max": 1,
+			"stamina.rate": 0.1,
+			"tili.rate": 0.1,
+			"xiulian_gcwuguan":1
+		}
+	},
+	{
+		"id": "life_dlzzh",
+		"name": "大量之转换(生命构造)",
+		"desc": "肠、肠膜、胃中物、屎、脑,所谓体内大量物质流通",
+		"tags": "生命构造",
+		"require": "g.tongren>=1 && g.guichangmishu>=1",
+		"max": 2,
+		"cost": {
+			"jls":50,
+			"tili": 30,
+			"lxue": 10,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 60,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"time":3650,
+			"heli.max": 1,
+			"stamina.rate": 0.1,
+			"tili.rate": 0.1,
+			"xiulian_gcwuguan":1
+		}
+	},
+	{
+		"id": "life_wwzzl",
+		"name": "污物之周律(生命构造)",
+		"desc": "胆汁、痰、脓、血、汗、,体内污物顺应恒定吐纳之理",
+		"tags": "生命构造",
+		"require": "g.tongren>=1 && g.guichangmishu>=1",
+		"max": 2,
+		"cost": {
+			"jls":50,
+			"tili": 30,
+			"lxue": 10,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 60,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 10
+		},
+		"xiulianresult": {
+			"time":3650,
+			"heli.max": 1.5,
+			"stamina.rate": 0.1,
+			"tili.rate": 0.1,
+			"xiulian_gcwuguan":1
+		}
+	},
+	{
 		"id": "eye_yshyj",
 		"name": "元素化研究(观测之术)",
 		"desc": "解构生命",
@@ -2256,6 +2615,23 @@
 		"xiulianresult": {
 			"frs":29,
 			"xiulian_eye_yshyj":1
+		}
+	},
+	{
+		"id": "eye_canglanyan",
+		"name": "苍蓝眼(观测之术)",
+		"desc": "通晓世间七千七百物",
+		"tags": "观测之术",
+		"require": "g.neizailingxue>=1",
+		"max": 2,
+		"cost": {
+			"life_crystal": 10,
+			"yjdl": 50,
+			"canglan":9,
+			"huiguang":9
+		},
+		"xiulianresult": {
+			"xiulian_eye_canglanyan":1
 		}
 	},
 	{
@@ -2620,6 +2996,32 @@
 		}
 	},
 	{
+		"id": "space_yuansufuz",
+		"name": "元素辅助(元素工程)",
+		"desc": "借助元素进行研究",
+		"tags": "元素工程",
+		"require": "g.element_wuhuan>=1",
+		"max": 2,
+		"cost": {
+			"jls": 100,
+			"element_wuhuan": 10,
+			"yjswyb": 10,
+			"yjdl": 60,
+			"cbclb": 20,
+			"shenglingshi": 3,
+			"lxue": 10,
+			"human_power": 700,
+			"money": 1900,
+			"ganwu": 700,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"frs": 49,
+			"xiulian_space_yuansufuz":1
+		}
+	},
+	{
 		"id": "space_ysys",
 		"name": "元素衍生(元素结构)",
 		"desc": "两种或多种元素的衍生物",
@@ -2886,7 +3288,6 @@
 			"element_luor":10,
 			"cbclb": 25,
 			"yjdl": 25,
-			"element_wuhuan": 10,
 			"yjswyb": 10,
 			"lxue": 10,
 			"human_power": 1000,
@@ -2898,6 +3299,80 @@
 		"xiulianresult": {
 			"ele_luanxie": -0.1,
 			"xiulian_jj_jcwh":1
+		}
+	},
+	{
+		"id": "jj_jliugeshi",
+		"name": "晶流格式(元素物理)",
+		"desc": "研究如何高效获得晶流水",
+		"tags": "元素物理",
+		"require": "g.xiulian_zhenyuandaolun>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan":10,
+			"element_luor":10,
+			"cbclb": 25,
+			"yjdl": 50,
+			"jls":60,
+			"cold_core": 30,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 1000,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"xiulian_jj_jliugeshi":1
+		}
+	},
+	{
+		"id": "jj_hunluanges",
+		"name": "混乱格式(元素物理)",
+		"desc": "神识混乱化",
+		"tags": "元素物理",
+		"require": "g.bianxiejd>=1 && g.luoryuequ>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan":10,
+			"element_luor":10,
+			"nolight_core": 5,
+			"cbclb": 25,
+			"yjdl": 50,
+			"jls":60,
+			"cold_core": 30,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 1000,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"chaos.max":5,
+			"xiulian_jj_hunluanges":1
+		}
+	},
+	{
+		"id": "jj_benyuanges",
+		"name": "本源格式(元素物理)",
+		"desc": "神识本源化",
+		"tags": "元素物理",
+		"require": "g.bianxiejd>=1 && g.podaozhim>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan":10,
+			"element_luor":10,
+			"jingdian": 5,
+			"yjdl": 80,
+			"jls":60,
+			"human_power": 1000,
+			"money": 1500,
+			"ganwu": 1000,
+			"super_mind": 30,
+			"alculation": 1000
+		},
+		"xiulianresult": {
+			"heli.max":5,
+			"xiulian_jj_benyuanges":1
 		}
 	},
 	{
@@ -3180,6 +3655,35 @@
 		}
 	},
 	{
+		"id": "xxh_wbxf",
+		"name": "微波细分(信息海)",
+		"desc": "对微波进行详细的划分",
+		"tags": "信息海",
+		"require": "g.daishuxue>=5",
+		"max": 2,
+		"cost": {
+			"lg": 20,
+			"jls":50,
+			"lxue": 10,
+			"money": 1500,
+			"shuaibai_core": 10,
+			"human_power": 900,
+			"ganwu": 700,
+			"yqlm": 20,
+			"cbjs": 10,
+			"zdht": 10,
+			"zero_crystal": 40,
+			"super_mind": 30,
+			"alculation": 450,
+			"star_map_1": 15,
+			"life_crystal": 2
+		},
+		"xiulianresult": {
+			"frs":49,
+			"xiulian_xxh_wbxf":1
+		}
+	},
+	{
 		"id": "eye_huangquan",
 		"name": "黄泉视野(观测之术)",
 		"desc": "扩展在黄泉的观测范围",
@@ -3203,6 +3707,78 @@
 		"xiulianresult": {
 			"frs":29,
 			"xiulian_eye_huangquan":1
+		}
+	},
+	{
+		"id": "eye_weiguansj",
+		"name": "微观世界(观测之术)",
+		"desc": "",
+		"tags": "观测之术",
+		"require": "g.weiguankexue>=1",
+		"max": 2,
+		"cost": {
+			"ljdy": 15,
+			"yjdl": 60,
+			"jls":50,
+			"human_power": 700,
+			"money": 1700,
+			"ganwu": 700,
+			"yqlm": 20,
+			"zdht": 25,
+			"zero_crystal": 70,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 15
+		},
+		"xiulianresult": {
+			"frs":39,
+			"xiulian_eye_weiguansj":1
+		}
+	},
+	{
+		"id": "eye_weiguanlz",
+		"name": "微观粒子(观测之术)",
+		"desc": "",
+		"tags": "观测之术",
+		"require": "g.liziyunshi>=1",
+		"max": 2,
+		"cost": {
+			"ljdy": 15,
+			"cxxwjp":5,
+			"human_power": 700,
+			"money": 1700,
+			"ganwu": 700,
+			"zero_crystal": 70,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 20
+		},
+		"xiulianresult": {
+			"frs":39,
+			"xiulian_eye_weiguanlz":1
+		}
+	},
+	{
+		"id": "eye_ganzhilun",
+		"name": "感知论(观测之术)",
+		"desc": "",
+		"tags": "观测之术",
+		"require": "g.mxuanyz>=1 || g.podaozhim>=1 || g.luoryuequ>=1",
+		"max": 2,
+		"cost": {
+			"books":50,
+			"paper": 200,
+			"human_power": 700,
+			"money": 1700,
+			"ganwu": 700,
+			"zero_crystal": 70,
+			"super_mind": 30,
+			"alculation": 100,
+			"star_map_1": 20
+		},
+		"xiulianresult": {
+			"frs":39,
+			"xiulian_eye_ganzl":1
 		}
 	},
 	{

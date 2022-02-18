@@ -2,16 +2,28 @@
 	{
 		"id": "conquer_small",
 		"name": "🏡小城镇",
+		"tags":"1级",
 		"desc": "一个人口较少的城镇，防御薄弱，但占地面积也少",
 		"power": 30,
 		"max": 1,
 		"val": 0,
 		"require": "g.human_power>=4",
+		"buy":{
+			"money":100
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 11,
+			"zhuzhidu": 11,
+			"money": 150,
+			"conquer_small": 1
+		},
 		"acost": {
 			"money": 150,
-			"iron_copper": 10,
-			"zero_crystal":10,
-			"r_adv_w_sj1": 2,
+			"qingjia": 40,
+			"zhongjia":30,
 			"human_power": 40,
 			"alculation": 10
 		},
@@ -24,26 +36,37 @@
 		},
 		"result":{
 			"super_mind": true,
-			"super_mind": 1
+			"super_mind": 1,
+			"yanzhandu": 20
 		}
 	},
 	{
 		"id": "conquer_mediun",
 		"name": "🏠中型城镇",
+		"tags":"2级",
 		"desc": "一个发展一般的城镇，防御不弱",
 		"power": 100,
 		"max": 3,
 		"val": 0,
 		"require": "g.human_power>=190",
+		"buy":{
+			"money":600
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 11,
+			"zhuzhidu": 11,
+			"money": 500,
+			"conquer_mediun": 1
+		},
 		"acost": {
 			"money": 670,
 			"ganwu": 370,
-			"iron_copper": 20,
-			"sj_met":10,
-			"tian":10,
-			"cold_core":16,
-			"zero_crystal":20,
-			"r_adv_w_sj1": 4,
+			"qingjia": 40,
+			"zhongjia":30,
+			"bingdong": 50,
 			"human_power": 180,
 			"alculation": 70
 		},
@@ -55,26 +78,83 @@
 			"human_power.max": 25 
 		},
 		"result":{
-			"super_mind": 1
+			"yanzhandu": 27
+		}
+	},
+	{
+		"id": "conquer_dxczhen",
+		"name": "🏠大型城镇",
+		"tags":"5级",
+		"desc": "大型城镇",
+		"power": 700,
+		"max": 3,
+		"val": 0,
+		"require": "g.xiushizhihuibu>=1",
+		"buy":{
+			"life_crystal":5,
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 33,
+			"zhuzhidu": 33,
+			"money": 1500,
+			"conquer_dxczhen": 1
+		},
+		"acost": {
+			"money": 2000,
+			"ganwu": 1000,
+			"qingjia": 50,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"bingdong": 65,
+			"human_power": 1000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 30,
+			"space.max": 45,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 200 
+		},
+		"result":{
+			"yanzhandu": 44
 		}
 	},
 	{
 		"id": "conquer_lianjun_zhihui",
 		"name": "🗡联军指挥部[1级]",
+		"tags":"",
 		"desc": "1级联军的指挥中心,攻陷一座以减少【战斗压迫】",
 		"power": 500,
 		"max": 5,
 		"val": 0,
 		"require": "g.xiulian_siwei_qtswyj>=1",
+		"buy":{
+			"money":0
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 33,
+			"zhuzhidu": 33,
+			"money": 1400,
+			"human_power": 800,
+			"lxue": 5
+		},
 		"acost": {
 			"f_stress": 1,
 			"money": 1800,
 			"ganwu": 500,
-			"dirty_core":10,
-			"dirty_lingti": 15,
-			"cold_core":25,
-			"lxue": 10,
-			"zero_crystal":50,
+			"qingjia": 40,
+			"zhongjia":30,
+			"heavyjia": 30,
+			"wuzhuo": 50,
+			"bingdong": 50,
 			"human_power": 800,
 			"alculation": 400
 		},
@@ -87,147 +167,367 @@
 		},
 		"result":{
 			"shenglingshi": true,
-			"shenglingshi": 1
+			"shenglingshi": 1,
+			"yanzhandu": 33
+		}
+	},
+	{
+		"id": "conquer_xxyaosai",
+		"name": "🗡小型要塞",
+		"tags":"5级",
+		"desc": "一处小型要塞",
+		"power": 890,
+		"max": 1,
+		"val": 0,
+		"require": "g.yuancengtx>=1",
+		"buy":{
+			"life_crystal":5,
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 33,
+			"zhuzhidu": 33,
+			"money": 1500,
+			"conquer_xxyaosai": 1
+		},
+		"acost": {
+			"money": 2000,
+			"ganwu": 1000,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50,
+			"human_power": 1000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 30,
+			"space.max": 35,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 100 
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
+		"id": "conquer_xibupingyuan",
+		"name": "🛤西部平原",
+		"tags":"5级",
+		"desc": "西部平原",
+		"power": 590,
+		"max": 4,
+		"val": 0,
+		"require": "g.xiushizhihuibu>=1",
+		"buy":{
+			"life_crystal":5,
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 33,
+			"zhuzhidu": 33,
+			"money": 1500,
+			"conquer_xibupingyuan": 1
+		},
+		"acost": {
+			"money": 2000,
+			"ganwu": 1000,
+			"qingjia": 50,
+			"zhongjia":65,
+			"heavyjia": 65,
+			"wuzhuo": 65,
+			"bingdong": 65,
+			"human_power": 1000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 30,
+			"space.max": 35,
+			"alculation.max": 15,
+			"alculation.rate": 0.2,
+			"human_power.max": 150 
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
+		"id": "conquer_yijitusghug",
+		"name": "🛤遗迹图书馆",
+		"tags":"5级",
+		"desc": "遗迹图书馆",
+		"power": 950,
+		"max": 3,
+		"val": 0,
+		"require": "g.xiushizhihuibu>=1",
+		"buy":{
+			"jingdian":1,
+			"life_crystal":5,
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 33,
+			"zhuzhidu": 33,
+			"money": 1500,
+			"conquer_yijitusghug": 1
+		},
+		"acost": {
+			"money": 2000,
+			"ganwu": 1000,
+			"qingjia": 50,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 1000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 30,
+			"space.max": 35,
+			"ganwu.rate": 2,
+			"alculation.max": 60,
+			"alculation.rate": 0.2,
+			"human_power.max": 100 
+		},
+		"result":{
+			"yanzhandu": 44
 		}
 	},
 	{
 		"id": "conquer_yysl",
 		"name": "⛺月影森林前哨基地",
+		"tags":"5级",
 		"desc": "在月影森林建设一个基地",
 		"power": 190,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
+		"buy":{
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 22,
+			"zhuzhidu": 22,
+			"money": 500,
+			"conquer_yysl": 1
+		},
 		"acost": {
 			"yqlm": 15,
 			"money": 800,
 			"ganwu": 500,
-			"r_adv_w_sj1": 4,
-			"r_adv_w_sj2": 2,
-			"r_adv_w_sj3": 2,
-			"zero_crystal":50,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50,
 			"human_power": 250,
 			"alculation": 70
 		},
 		"mod":{
 			"f_power": 15,
-			"space.max": 15,
+			"space.max": 20,
 			"yqlm.rate": 0.1,
 			"alculation.max": 15,
 			"alculation.rate": 0.2,
 			"human_power.max": 30 
+		},
+		"result":{
+			"yanzhandu": 33
 		}
 	},
 	{
 		"id": "conquer_jls",
 		"name": "🏔巨灵山守望点",
+		"tags":"5级",
 		"desc": "在巨灵山建设一个守望点",
 		"power": 190,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
+		"buy":{
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 22,
+			"zhuzhidu": 22,
+			"money": 500,
+			"conquer_jls": 1
+		},
 		"acost": {
 			"cbjs": 15,
 			"money": 800,
 			"ganwu": 500,
-			"zero_crystal":50,
-			"r_adv_w_sj1": 4,
-			"r_adv_w_sj2": 2,
-			"r_adv_w_sj3": 2,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50,
 			"human_power": 250,
 			"alculation": 70
 		},
 		"mod":{
 			"f_power": 15,
-			"space.max": 15,
+			"space.max": 20,
 			"cbjs.rate": 0.1,
 			"alculation.max": 15,
 			"alculation.rate": 0.2,
 			"human_power.max": 30 
+		},
+		"result":{
+			"yanzhandu": 33
 		}
 	},
 	{
 		"id": "conquer_lzdh",
 		"name": "🏞劳泽大湖测量中心",
+		"tags":"5级",
 		"desc": "在劳泽大湖建设一个测量中心",
 		"power": 190,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
+		"buy":{
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 22,
+			"zhuzhidu": 22,
+			"money": 500,
+			"conquer_lzdh": 1
+		},
 		"acost": {
 			"wgys": 15,
 			"money": 800,
 			"ganwu": 500,
-			"zero_crystal":50,
-			"r_adv_w_sj1": 4,
-			"r_adv_w_sj2": 2,
-			"r_adv_w_sj3": 2,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50,
 			"human_power": 250,
 			"alculation": 70
 		},
 		"mod":{
 			"f_power": 15,
-			"space.max": 15,
+			"space.max": 20,
 			"wgys.rate": 0.1,
 			"alculation.max": 15,
 			"alculation.rate": 0.2,
 			"human_power.max": 30 
+		},
+		"result":{
+			"yanzhandu": 33
 		}
 	},
 	{
 		"id": "conquer_dmhs",
 		"name": "🌋地脉火山研究站",
+		"tags":"5级",
 		"desc": "在地脉火山建设一个研究站",
 		"power": 190,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
+		"buy":{
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 22,
+			"zhuzhidu": 22,
+			"money": 500,
+			"conquer_dmhs": 1
+		},
 		"acost": {
 			"yxls": 15,
 			"money": 800,
 			"ganwu": 500,
-			"zero_crystal":50,
-			"r_adv_w_sj1": 4,
-			"r_adv_w_sj2": 2,
-			"r_adv_w_sj3": 2,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50,
 			"human_power": 250,
 			"alculation": 70
 		},
 		"mod":{
 			"f_power": 15,
-			"space.max": 15,
+			"space.max": 20,
 			"yxls.rate": 0.1,
 			"alculation.max": 15,
 			"alculation.rate": 0.2,
 			"human_power.max": 30 
+		},
+		"result":{
+			"yanzhandu": 33
 		}
 	},
 	{
 		"id": "conquer_glpd",
 		"name": "🗺古老盆地观测站",
+		"tags":"5级",
 		"desc": "在古老盆地建设一个观测站",
 		"power": 190,
 		"max": 1,
 		"val": 0,
 		"require": "g.zcx>=1",
+		"buy":{
+			"money":1000
+		},
+		"cost":{
+			"heli": 100000000000000
+		},
+		"counterattack": {
+			"shiqi": 22,
+			"zhuzhidu": 22,
+			"money": 500,
+			"conquer_glpd": 1
+		},
 		"acost": {
 			"zdht": 15,
 			"money": 800,
 			"ganwu": 500,
-			"zero_crystal":50,
-			"r_adv_w_sj1": 4,
-			"r_adv_w_sj2": 2,
-			"r_adv_w_sj3": 2,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50,
 			"human_power": 250,
 			"alculation": 70
 		},
 		"mod":{
 			"f_power": 15,
-			"space.max": 15,
+			"space.max": 20,
 			"zdht.rate": 0.1,
 			"alculation.max": 15,
 			"alculation.rate": 0.2,
 			"human_power.max": 30 
+		},
+		"result":{
+			"yanzhandu": 33
 		}
 	}
 ]

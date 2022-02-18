@@ -190,6 +190,77 @@
 		}
 	},
 	{
+		"id": "evt_clxz",
+		"name": "苍蓝协奏",
+		"require": "g.canglanxiezou>=1",
+		"desc": "苍蓝之力",
+		"result": {
+			"lzgxs": true,
+			"cdfxs": true,
+			"yqwks": true
+		}
+	},
+	{
+		"id": "evt_hwxlmx",
+		"name": "化物行理",
+		"require": "g.xiulian_lizu_wxyh>=1",
+		"desc": "解锁化物行理",
+		"result": {
+			"hwxlmx": true
+		}
+	},
+	{
+		"id": "evt_luorspell",
+		"name": "落日法术",
+		"require": "g.luorxiushi>=1 && g.zlssx>=2",
+		"desc": "",
+		"result": {
+			"zylr": true,
+			"wywgll": true
+		}
+	},
+	{
+		"id": "evt_benyuanspell",
+		"name": "本源法术",
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
+		"desc": "",
+		"result": {
+			"yuanzhipod": true,
+			"xkzspd": true,
+			"ziranslpd": true
+		}
+	},
+	{
+		"id": "evt_zhujiyuesheng",
+		"name": "基魂跃升",
+		"require": "g.jihunyuesheng>=1",
+		"desc": ""
+	},
+	{
+		"id": "evt_redlaser",
+		"name": "红极激光",
+		"require": "g.red_jgsys>=1",
+		"desc": "解锁红极激光",
+		"result": {
+			"spell_red_laser": true
+		}
+	},
+	{
+		"id": "evt_redlaser_1",
+		"name": "血色万华流",
+		"require": "g.chaoshujujiao>=1",
+		"desc": "解锁红极激光",
+		"result": {
+			"spell_red_laser_jujiao": true
+		}
+	},
+	{
+		"id": "evt_huangquansc",
+		"name": "黄泉深处",
+		"require": "g.canglanchaoben>=1 && g.bafangwfs>=1 && g.flont_hqhhjz>=1",
+		"desc": "继续深入黄泉,这里更危险"
+	},
+	{
 		"id": "evt_hqsy",
 		"name": "死骨复苏",
 		"require": "g.xiulian_eye_huangquan>=1",

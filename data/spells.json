@@ -455,6 +455,59 @@
 		}
 	},
 	{
+		"id": "spell_red_laser",
+		"name": "红极激光",
+		"desc":"",
+		"school": "激光",
+		"need":"g.red_laser>=1",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"money": 5
+		},
+		"cost": {
+			"laser_ene":0.3,
+			"elect": 30
+		},
+		"attack": {
+			"damage": "62~67",
+			"kind": "fire",
+			"dot": {
+				"kind": "fire",
+				"name": "激光烧伤",
+				"duration": 5,
+				"damage": 16
+			}
+		}
+	},
+	{
+		"id": "spell_red_laser_jujiao",
+		"name": "血色万华流",
+		"desc":"超高能红极激光造成的毁灭性打击",
+		"school": "激光",
+		"need":"g.chaoshujujiao>=1",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"red_jgsys": 1
+		},
+		"cost": {
+			"laser_ene":4.5,
+			"elect": 30,
+			"money": 200
+		},
+		"attack": {
+			"damage": "190~243",
+			"kind": "fire",
+			"dot": {
+				"kind": "fire",
+				"name": "高能激光烧伤",
+				"duration": 40,
+				"damage": 34
+			}
+		}
+	},
+	{
 		"id": "cjpk",
 		"name": "长金破空[筑基]",
 		"desc": "勤加练习,越战越强",
@@ -797,6 +850,129 @@
 		}
 	},
 	{
+		"id": "wywgll",
+		"name": "午夜无归[落日]",
+		"desc": "恢复自己",
+		"school": "混沌",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"dot": {
+			"id": "wywgllf",
+			"name": "午夜无归",
+			"duration": 30,
+			"effect": {
+				"hp": 40
+			}
+		}
+	},
+	{
+		"id": "ziranslpd",
+		"name": "自然生灵[破道]",
+		"desc": "恢复自己",
+		"school": "合理",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"heli":30
+		},
+		"cost": {
+			"heli": 10
+		},
+		"dot": {
+			"id": "ziranslpd",
+			"name": "自然生灵",
+			"duration": 60,
+			"effect": {
+				"hp": 35
+			}
+		}
+	},
+	{
+		"id": "xkzspd",
+		"name": "星空震慑[破道]",
+		"school": "合理",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"heli":30
+		},
+		"cost": {
+			"heli": 10,
+			"chaos": 10,
+			"ganwu": 10
+		},
+		"attack": {
+			"damage": "71~75",
+			"kind": "heli"
+		}
+	},
+	{
+		"id": "yuanzhipod",
+		"name": "源知[破道]",
+		"desc": "大幅提高防御和感悟获取速度",
+		"school": "合理",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"ganwu": 200,
+			"money": 2000,
+			"heli":30,
+			"dirty_lingti": 20,
+			"dirty_core": 10,
+			"cold_core": 40
+		},
+		"cost": {
+			"heli": 10,
+			"ganwu": 50
+		},
+		"dot": {
+			"duration": 30,
+			"mod": {
+				"ganwu.rate": 5,
+				"self.defense": 30
+			}
+		}
+	},
+	{
+		"id": "zylr",
+		"name": "真夜[落日]",
+		"school": "混沌",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"sp": 2,
+			"ganwu": 1000,
+			"nolight_core": 10,
+			"chaos":30
+		},
+		"cost": {
+			"chaos": 10
+		},
+		"attack": {
+			"damage": "52~61",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "真夜",
+				"duration": 20,
+				"damage": 21
+			}
+		}
+	},
+	{
 		"id": "wchys",
 		"name": "万草荒于沙",
 		"desc": "大幅度降低敌人对混沌和木的抗性",
@@ -851,6 +1027,106 @@
 				"rage": -0.5,
 				"weary": -0.5,
 				"madness": -0.5
+			}
+		}
+	},
+	{
+		"id": "hwxlmx",
+		"name": "化物行理[命玄]",
+		"school": "合理",
+		"locked":true,
+		"level": 6,
+		"buy": {
+			"money": 100
+		},
+		"cost": {
+			"heli": 10,
+			"stamina": 1
+		},
+		"attack": {
+			"damage": "43~48",
+			"kind": "wuhuan",
+			"dot": {
+				"kind": "wuhuan",
+				"name": "化物行理[命玄]",
+				"duration": 10,
+				"damage": 7
+			}
+		}
+	},
+	{
+		"id": "yqwks",
+		"name": "云气望空式[初归]",
+		"school": "归藏",
+		"locked":true,
+		"level": 4,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3
+		},
+		"cost": {
+			"tili": 9,
+			"stamina": 9
+		},
+		"attack": {
+			"damage": "39~42",
+			"kind": "body",
+			"dot": {
+				"kind": "body",
+				"name": "云气望空式[初归]",
+				"duration": 1,
+				"damage": 14
+			}
+		}
+	},
+	{
+		"id": "cdfxs",
+		"name": "抽刀封隙式[初归]",
+		"school": "归藏",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3
+		},
+		"cost": {
+			"tili": 6,
+			"stamina": 10
+		},
+		"dot": {
+			"id": "cdfxbf",
+			"name": "抽刀封隙式",
+			"duration": 10,
+			"effect": {
+				"hp": 30
+			}
+		}
+	},
+	{
+		"id": "lzgxs",
+		"name": "浪子归乡式[初归]",
+		"desc": "短时间内提升大里躲闪和速度",
+		"school": "归藏",
+		"locked":true,
+		"level": 5,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 5,
+			"stamina": 25
+		},
+		"dot": {
+			"id": "lzgxsbf",
+			"name": "浪子归乡式",
+			"duration": 6,
+			"mod": {
+				"self": {
+					"dodge": 50,
+					"speed": 60
+				}
 			}
 		}
 	},

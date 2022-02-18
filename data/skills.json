@@ -526,7 +526,7 @@
 		"id": "bio_metal_1",
 		"name":"生命工程学",
 		"desc":"学会如何用新型材料保护生命",
-		"need": "g.iron_copper>=3 && g.metal_app>=4 && g.biology_1>=3",
+		"require": "g.iron_copper>=3 && g.metal_app>=4 && g.biology_1>=3",
 		"buy": {
 			"books": 2
 		},
@@ -626,6 +626,48 @@
 		}
 	},
 	{
+		"id": "jungongxue",
+		"name":"军工学",
+		"desc":"",
+		"level": 5,
+		"need": "g.weapon_1>=5 && g.bio_metal_1>=5",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 2,
+			"tili": 1
+		},
+		"effect": {
+			"time": 3
+		},
+		"result": {
+			"alculation.rate": 1,
+			"f_power": 5
+		}
+	},
+	{
+		"id": "zhanzhengrenli",
+		"name":"战争人力",
+		"desc":"",
+		"level": 6,
+		"need": "g.zsrlyj_1>=8",
+		"buy": {
+			"books": 3
+		},
+		"run": {
+			"ganwu": 2,
+			"tili": 1
+		},
+		"effect": {
+			"time": 3
+		},
+		"result": {
+			"zhuzhidu.rate": 0.01,
+			"shiqi.rate": 0.08
+		}
+	},
+	{
 		"id": "lnylx",
 		"name":"灵能医疗学",
 		"level": 5,
@@ -652,6 +694,35 @@
 			"ganwu.max": 10,
 			"hp.rate": 0.01,
 			"bio_metal_1.max": 1
+		}
+	},
+	{
+		"id": "shenglixue",
+		"name":"生理学",
+		"level": 7,
+		"desc":"研究生理",
+		"buy": {
+			"lxue": 20,
+			"ganwu": 500,
+			"money": 1000,
+			"life_crystal": 6,
+			"star_map_1": 10,
+			"dirty_lingti":10,
+			"lg": 4
+		},
+		"require": "g.lnylx>=5 && g.life_crystal>=1",
+		"run": {
+			"ganwu": 3,
+			"star_map_1": 0.01,
+			"life_crystal": 0.01,
+			"tili": 2
+		},
+		"effect": {
+			"time": 1
+		},
+		"mod": {
+			"ganwu.max": 10,
+			"hp.rate": 0.01
 		}
 	},
 	{
@@ -684,7 +755,7 @@
 		"name":"微波科学",
 		"desc":"对不可见的微波展开应用分析",
 		"level": 3,
-		"need": "g.xiulian_ld_dw_guancha>=1 && g.rlt_guancha>=8 && g.energ_high_1>=8",
+		"need": "g.xiulian_ld_dw_guancha>=1 && g.rlt_guancha>=8 && g.energ_high_1>=8 && g.slight>=1",
 		"buy": {
 			"books": 4
 		},
@@ -1001,6 +1072,71 @@
 		}
 	},
 	{
+		"id": "tixue",
+		"name": "体学",
+		"require": "g.huiguang>=1",
+		"level": 12,
+		"desc": "",
+		"buy": {
+			"huiguang": 5,
+			"money": 600,
+			"ganwu": 430,
+			"super_mind": 8,
+			"lxue": 10,
+			"star_map_1": 3,
+			"star_map": 60
+		},
+		"effect": {
+			"time": 1
+		},
+		"run": {
+			"huiguang": 0.01,
+			"ganwu": 4,
+			"tili": 2
+		},
+		"result": {
+			"sp": 0.1
+		},
+		"mod": {
+			"tili.max": 1,
+			"stamina.rate": 0.5,
+			"tili.rate": 0.5
+		}
+	},
+	{
+		"id": "adv_sci",
+		"name": "进阶科学",
+		"require": "g.gaonjmyj>=1 && g.xiulian_xxh_wbxf>=1 && g.yiqizhishiykz>=1 && g.xiulian_space_yuansufuz>=1",
+		"level": 13,
+		"desc": "",
+		"buy": {
+			"yjswyb": 10,
+			"yjdl": 70,
+			"cbclb": 30,
+			"money": 2000,
+			"ganwu": 930,
+			"super_mind": 50,
+			"lxue": 10,
+			"star_map_1": 15,
+			"star_map": 160
+		},
+		"effect": {
+			"time": 2
+		},
+		"run": {
+			"yjdl": 0.5,
+			"ganwu": 5,
+			"tili": 2
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"ganwu.max": 50,
+			"ganwu.rate": 1
+		}
+	},
+	{
 		"id": "mwxue",
 		"name":"铭文学",
 		"desc":"研究最高效的铭刻方式",
@@ -1148,7 +1284,7 @@
 	{
 		"id": "jsnlx",
 		"name": "晶髓能量学",
-		"require": "g.yxls>=5 && g.energ_1>=10",
+		"require": "g.wgys>=5 && g.energ_1>=10",
 		"level": 15,
 		"desc": "晶髓材料下,电能损耗显著下降",
 		"buy": {
@@ -1581,6 +1717,71 @@
 		"mod": {
 			"heli.rate": 0.1,
 			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "zlssx",
+		"name": "终论神识学",
+		"require": "g.yingmidianji>=1",
+		"level": 13,
+		"desc": "",
+		"buy": {
+			"jingdian":5,
+			"ganwu": 1000,
+			"super_mind": 30,
+			"dirty_lingti": 20,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 20
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"elect": 3
+		},
+		"result": {
+			"sp":1
+		},
+		"mod": {
+			"shenshi.rate": 0.1,
+			"shenshi.max": 0.7
+		}
+	},
+	{
+		"id": "yuanzirexue",
+		"name": "原子热学",
+		"require": "g.xiulian_eye_weiguanlz>=1",
+		"level": 15,
+		"desc": "原子热学,学习需要粒子云室",
+		"need": "liziyunshi",
+		"buy": {
+			"ljdy": 15,
+			"cxxwjp": 5,
+			"cishuadianquan":1,
+			"ganwu": 530,
+			"super_mind": 30,
+			"dirty_lingti": 20,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 20
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"elect": 3
+		},
+		"result": {
+			"sp":1
+		},
+		"mod": {
+			"elect.rate": 1,
+			"elect.max": 1
 		}
 	},
 	{

@@ -1,20 +1,5 @@
 [
 	{
-		"id": "keyboard",
-		"name": "按键帮助",
-		"desc": "按E打开背包.",
-		"max": 1,
-		"verb": "",
-		"require": "g.hp>=1",
-		"cost": {
-			"tili": 0.5,
-			"stamina": 0.1
-		},
-		"result": {
-			"money": 1
-		}
-	},
-	{
 		"id": "clean",
 		"name": "扫地",
 		"desc": "给大户人家做仆役...",
@@ -87,6 +72,7 @@
 		"desc": "探索极端环境,提高生命上限",
 		"verb": "",
 		"require": "g.biology_ast_1>=1",
+		"max": 5000,
 		"cost": {
 			"tili": 2,
 			"stamina": 0.4
@@ -96,6 +82,25 @@
 			"hp.max": 0.001
 		},
 		"flavor": "强身健体"
+	},
+	{
+		"id": "wjqixue",
+		"name": "无界气血",
+		"desc": "五千实验,五千升华",
+		"verb": "",
+		"require": "g.canglan>=1 && g.hpmax_1>=5000",
+		"max": 1,
+		"cost": {
+			"paper": 200,
+			"hp": 80,
+			"tili": 30,
+			"canglan": 9,
+			"stamina": 50
+		},
+		"result": {
+			"time": 365,
+			"hp.max":10.5
+		}
 	},
 	{
 		"id": "youli",
@@ -111,6 +116,68 @@
 			"money": 0.1,
 			"time": 2,
 			"ganwu": 0.05
+		}
+	},
+	{
+		"id": "huiguangninghua",
+		"name": "辉光凝华",
+		"desc": "梦中追逐日月之息",
+		"verb": "",
+		"fill": [
+			"huiguang"
+		],
+		"require": "g.yangzhoaganuw>=9 && g.zhenyeganwu>=9",
+		"cost": {
+			"tili": 10,
+			"back_dream": 2
+		},
+		"result": {
+			"huiguang": 0.3,
+			"time": 2
+		}
+	},
+	{
+		"id": "canglanninghua",
+		"name": "苍蓝凝华",
+		"desc": "五环的集结",
+		"verb": "",
+		"fill": [
+			"canglan"
+		],
+		"require": "g.tixue>=3",
+		"cost": {
+			"tili": 15,
+			"huiguang": 0.1
+		},
+		"result": {
+			"canglan": 0.2,
+			"time": 7
+		}
+	},
+	{
+		"id": "canglanxiezou",
+		"name": "苍蓝协奏",
+		"desc": "内在力量",
+		"verb": "",
+		"require": "g.canglan>=1",
+		"cost": {
+			"canglan": 9,
+			"huiguang": 9,
+			"lingxuekelu": 1
+		}
+	},
+	{
+		"id": "jinghuaqut",
+		"name": "净化躯体",
+		"desc": "祛除污物",
+		"verb": "",
+		"require": "g.huiguang>=1",
+		"cost": {
+			"tili": 13
+		},
+		"result": {
+			"frs": -5,
+			"dirty_core": 0.5
 		}
 	},
 	{
@@ -172,6 +239,9 @@
 		"desc": "熔炼买到的铁矿",
 		"verb": "",
 		"require": "g.metal_1>=1",
+		"fill":[
+			"cu_iron"
+		],
 		"cost": {
 			"money": 0.1,
 			"tili": 0.7,
@@ -189,6 +259,9 @@
 		"desc": "在纯白金石辅助下获取铁板",
 		"verb": "",
 		"require": "g.jjclx>=4",
+		"fill":[
+			"cu_iron"
+		],
 		"cost": {
 			"money": 1,
 			"tili": 2
@@ -204,6 +277,9 @@
 		"desc": "你难以找到铜矿,所以你只能买加工好的",
 		"verb": "",
 		"require": "g.metal_1>=4",
+		"fill":[
+			"cu_copper"
+		],
 		"cost": {
 			"money": 0.6
 		},
@@ -218,6 +294,9 @@
 		"desc": "在纯白金石辅助下获取铜板",
 		"verb": "",
 		"require": "g.jjclx>=4",
+		"fill":[
+			"cu_copper"
+		],
 		"cost": {
 			"money": 1,
 			"tili": 2
@@ -230,6 +309,7 @@
 	{
 		"id": "FC_get_1",
 		"name": "FC合金",
+		"tags":"生产",
 		"desc": "冶炼出合成金属F-C",
 		"verb": "",
 		"require": "g.xiulian_struct_1>=1",
@@ -254,6 +334,7 @@
 	{
 		"id": "FC_get_2",
 		"name": "FC融合",
+		"tags":"生产",
 		"desc": "更有效率的融合铁板和铜板",
 		"verb": "",
 		"require": "g.jjclx>=1",
@@ -276,6 +357,7 @@
 	{
 		"id": "sj_met_get_1",
 		"name": "合成神经材料",
+		"tags":"生产",
 		"desc": "催动合理和混沌加工出神经材料",
 		"verb": "合成中",
 		"require": "g.xiulian_struct_2>=1 && g.iron_copper>=1 && g.chaos_sci>=5",
@@ -300,6 +382,7 @@
 	{
 		"id": "sj_met_get_2",
 		"name": "神经加工",
+		"tags":"生产",
 		"desc": "更有效率的合成神经材料",
 		"verb": "加工中",
 		"require": "g.jjclx>=4",
@@ -322,6 +405,7 @@
 	{
 		"id": "cbclb_get_1",
 		"name": "纯白材料打包",
+		"tags":"生产",
 		"desc": "加工纯白材料包",
 		"verb": "加工中",
 		"require": "g.xiulian_struct_cailiaozuhe>=1",
@@ -348,6 +432,7 @@
 	{
 		"id": "cbclb_jieli",
 		"name": "材料解离",
+		"tags":"生产",
 		"desc": "解离纯白材料包并获取一定的金钱",
 		"verb": "解离中",
 		"require": "g.cbclb>=1",
@@ -373,6 +458,7 @@
 	{
 		"id": "cbclrr",
 		"name": "纯白熔融",
+		"tags":"生产",
 		"desc": "熔融纯白材料包来制取高温流",
 		"verb": "熔融中",
 		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
@@ -396,6 +482,7 @@
 	{
 		"id": "ydly",
 		"name": "余电利用",
+		"tags":"生产",
 		"desc": "利用过剩的电力赚取钱币",
 		"verb": "售卖中",
 		"require": "g.xiulian_energ_xtcd>=1",
@@ -412,6 +499,740 @@
 		},
 		"result": {
 			"money": 20
+		}
+	},
+	{
+		"id": "yangzhoaganuw",
+		"name": "☀阳照感悟",
+		"desc": "在强烈光照下进行感悟",
+		"verb": "修行中",
+		"max": 9,
+		"require": "g.chugui>=1",
+		"length": 60,
+		"cost": {
+			"lg":30,
+			"back_dream": 20,
+			"tili": 20
+		},
+		"run": {
+			"back_dream": 0.02,
+			"time": -1,
+			"tili": 1
+		}
+	},
+	{
+		"id": "canglanchaoben",
+		"name": "苍蓝典籍",
+		"desc": "漫长的编写",
+		"verb": "写作中",
+		"max": 1,
+		"require": "g.neizailingxue>=1",
+		"length": 600,
+		"cost": {
+			"lg":30,
+			"back_dream": 20,
+			"canglan": 9,
+			"huiguang": 9,
+			"huiguangzy":1,
+			"paper": 250
+		},
+		"run": {
+			"paper": 1.5,
+			"star_map": 1.5,
+			"back_dream": 0.05,
+			"time": -1,
+			"tili": 1
+		}
+	},
+	{
+		"id": "gaonjmyj",
+		"name": "高能精密研究",
+		"desc": "",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.daishukexue>=1",
+		"length": 600,
+		"cost": {
+			"lg":30,
+			"yjdl": 80,
+			"gwl": 30,
+			"cbclb": 30,
+			"wgys": 25,
+			"elect": 40,
+			"heli": 40,
+			"ganwu": 900,
+			"money": 1800,
+			"paper": 250
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -1,
+			"tili": 1
+		}
+	},
+	{
+		"id": "jiguangyanjiu",
+		"name": "激光研究",
+		"desc": "研究激光,需要粒子云室",
+		"verb": "研究中",
+		"max": 2,
+		"require": "g.xiulian_eye_weiguanlz>=1",
+		"need":"g.nepheloscope>=1",
+		"length": 600,
+		"cost": {
+			"lg":30,
+			"ljdy": 10,
+			"cishuadianquan":1,
+			"cxxwjp": 5,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "yingmidianji",
+		"name": "隐秘典籍",
+		"desc": "散乱的书页无法满足接下来的需求",
+		"verb": "编写中",
+		"max": 1,
+		"require": "g.xiulian_zhenyuandaolun>=1",
+		"length": 600,
+		"cost": {
+			"lg":30,
+			"paper": 300,
+			"books": 50,
+			"snp_data": 60,
+			"star_map_1": 15,
+			"exe_paper": 50,
+			"life_crystal": 5,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"paper": 6,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "andanlinghun",
+		"name": "黯淡灵魂",
+		"desc": "",
+		"verb": "转换中",
+		"max": 1,
+		"require": "g.andan>=1",
+		"length": 40,
+		"cost": {
+			"lg":30,
+			"andan": 10,
+			"jihun":3,
+			"jingdian": 8,
+			"paper": 300,
+			"books": 50,
+			"life_crystal": 15,
+			"yjdl": 30,
+			"shenglingshi": 5,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "xinti",
+		"name": "薪体",
+		"desc": "",
+		"verb": "转换中",
+		"max": 1,
+		"require": "g.andan>=1",
+		"length": 40,
+		"cost": {
+			"lg":30,
+			"andan": 10,
+			"shuaibai_core": 10,
+			"lxue": 10,
+			"paper": 300,
+			"books": 50,
+			"life_crystal": 15,
+			"yjdl": 30,
+			"shenglingshi": 5,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "byxlfx",
+		"name": "本源序列分析",
+		"desc": "",
+		"verb": "分析中",
+		"max": 1,
+		"require": "g.xiulian_jj_benyuanges>=1",
+		"length": 40,
+		"cost": {
+			"lg":30,
+			"jihun":3,
+			"jingdian": 8,
+			"element_wuhuan":20,
+			"element_luor":10,
+			"paper": 300,
+			"books": 50,
+			"life_crystal": 15,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "rengqh",
+		"name": "人工祛寒",
+		"desc": "冰冻核心指令前置",
+		"verb": "祛寒中",
+		"max": 1,
+		"require": "g.zlssx>=1",
+		"length": 20,
+		"cost": {
+			"money": 2000,
+			"ganwu": 1000,
+			"cold_core": 40,
+			"super_mind": 20,
+			"star_map_1": 15,
+			"gwl": 30,
+			"yjdl": 50
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "rongheshengji",
+		"name": "融合升级",
+		"desc": "提高合理和混沌上限",
+		"verb": "升级中",
+		"max": 1,
+		"require": "g.xiulian_jj_benyuanges>=1",
+		"length": 10,
+		"cost": {
+			"lg":30,
+			"jihun":3,
+			"jingdian": 8,
+			"element_wuhuan":20,
+			"element_luor":10,
+			"paper": 300,
+			"books": 50,
+			"life_crystal": 15,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		},
+		"result":{
+			"heli.max": 10,
+			"chaos.max": 7,
+			"space.max": 40
+		}
+	},
+	{
+		"id": "bianxiejd",
+		"name": "编写经典",
+		"desc": "写一部经典",
+		"verb": "编写中",
+		"require": "g.yingmidianji>=1",
+		"length": 10,
+		"cost": {
+			"lg":5,
+			"paper": 100,
+			"books": 10,
+			"snp_data": 20,
+			"star_map": 20,
+			"star_map_1": 1,
+			"exe_paper": 20,
+			"super_mind": 0.5
+		},
+		"run": {
+			"time": -2,
+			"tili": 5
+		},
+		"result":{
+			"player.exp": 30,
+			"jingdian":1
+		}
+	},
+	{
+		"id": "wuzhuoyanhua",
+		"name": "污浊衍化",
+		"desc": "研究衍化污浊核心,需要衍法台",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yanfatai>=1",
+		"need":"g.yanfatai>=1",
+		"length": 60,
+		"cost": {
+			"lg":30,
+			"dirty_lingti": 20,
+			"dirty_core": 10,
+			"cold_core": 40,
+			"yqlm": 25,
+			"yxls": 25,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "reliyanhua",
+		"name": "热力衍化",
+		"desc": "研究衍化经典,需要衍法台",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yanfatai>=1 && g.yuanzirexue>=5",
+		"need":"g.yanfatai>=1",
+		"length": 600,
+		"cost": {
+			"lg":30,
+			"jingdian": 10,
+			"ljdy": 20,
+			"dirty_lingti": 20,
+			"dirty_core": 10,
+			"cold_core": 40,
+			"yqlm": 25,
+			"yxls": 25,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "zhizhangyanhua",
+		"name": "稿纸衍化",
+		"desc": "研究衍化稿纸,需要衍法台",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yanfatai>=1",
+		"need":"g.yanfatai>=1",
+		"length": 60,
+		"cost": {
+			"lg":30,
+			"dirty_lingti": 20,
+			"books": 50,
+			"paper": 250,
+			"yqlm": 25,
+			"yxls": 25,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "shujiyanhua",
+		"name": "书籍衍化",
+		"desc": "研究衍化书籍,需要衍法台",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yanfatai>=1",
+		"need":"g.yanfatai>=1",
+		"length": 60,
+		"cost": {
+			"lg":30,
+			"dirty_lingti": 20,
+			"books": 50,
+			"paper": 250,
+			"yqlm": 25,
+			"yxls": 25,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "rezhifenxi",
+		"name": "热值分析",
+		"desc": "研究灵木与烈石间的热反应,需要粒子云室",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yuanzirexue>=1",
+		"need":"g.nepheloscope>=1",
+		"length": 33,
+		"cost": {
+			"lg":30,
+			"ljdy": 10,
+			"yqlm": 25,
+			"yxls": 25,
+			"cxxwjp": 2,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"yqlm":0.7,
+			"yxls":0.7,
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "gaoorebizhang",
+		"name": "高热壁障",
+		"desc": "研究可以适应高温的容器,需要粒子云室",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yuanzirexue>=2",
+		"need":"g.nepheloscope>=1",
+		"length": 40,
+		"cost": {
+			"lg":30,
+			"ljdy": 20,
+			"cu_copper":300,
+			"cu_iron":300,
+			"tian": 60,
+			"yqlm": 11,
+			"yxls": 11,
+			"cxxwjp": 2,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"cu_iron":0.3,
+			"cu_copper":0.3,
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "jlhrmoxing",
+		"name": "晶流换热模型",
+		"desc": "研究使用晶流水进行换热,需要粒子云室",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yuanzirexue>=2",
+		"need":"g.nepheloscope>=1",
+		"length": 100,
+		"cost": {
+			"ljdy": 20,
+			"jls":100,
+			"cxxwjp": 5,
+			"yjdl": 80,
+			"gwl": 30
+		},
+		"run": {
+			"jls":1,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "jujiaozhenlie",
+		"name": "聚焦阵列",
+		"desc": "研究如何获取高能激光,需要粒子云室",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.jiguangyanjiu>=1",
+		"need":"g.nepheloscope>=1",
+		"length": 300,
+		"cost": {
+			"ljdy": 20,
+			"cxdrong": 2,
+			"cishuadianquan":1,
+			"cxxwjp": 5
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "jgkslq",
+		"name": "激光快速冷却",
+		"desc": "研究如何使腔壁在接受激光发射后不会熔毁,需要粒子云室",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.jiguangyanjiu>=1",
+		"need":"g.nepheloscope>=1",
+		"length": 300,
+		"cost": {
+			"jls": 100,
+			"cold_core": 80,
+			"ljdy": 20,
+			"cxdljk": 1,
+			"cishuadianquan":1,
+			"cxxwjp": 5
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "jeiziyanj",
+		"name": "芥子研究",
+		"desc": "进一步研究芥子空间,对这种复杂神奇的结构你毫无头绪",
+		"verb": "研究中",
+		"max": 5,
+		"require": "g.cxxwjp>=1 && g.jieziobelisk>=1",
+		"length": 600,
+		"cost": {
+			"cxxwjp": 1,
+			"yjdl": 80,
+			"gwl": 30,
+			"cbclb": 30,
+			"jieziobelisk": 1,
+			"books": 60,
+			"ganwu": 900,
+			"money": 1800,
+			"paper": 250
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		},
+		"mod":{
+			"space.max": 5,
+			"jieziobelisk.max":1
+		}
+	},
+	{
+		"id": "event_kjycds_1",
+		"name": "空间异常读数",
+		"tags":"事件,空间异常读数事件链",
+		"desc": "在多次对芥子方尖碑进行研究后,你在某次例行研究中发现方尖碑所在环境的空间读数与普通环境不同。随行的研究人员表示从来没见过这种情况。本事件将解锁[空间异常读数]事件链",
+		"verb": "启动事件链",
+		"max": 1,
+		"warn": true,
+		"require": "g.jieziobelisk>=4 && g.jeiziyanj>=5",
+		"length": 15,
+		"log": {
+			"name": "继续研究",
+			"desc": "抓住它!这是重大发现"
+		},
+		"cost": {
+			"jieziobelisk": 1
+		},
+		"run": {
+			"time": -2
+		}
+	},
+	{
+		"id": "event_kjycds_2_1",
+		"name": "涟漪",
+		"tags":"事件,空间异常读数事件链",
+		"desc": "异常读数的分析结果表示存在一处不平整空间。点击此项将继续深入",
+		"verb": "启动事件链",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_kjycds_1>=1",
+		"length": 15,
+		"log": {
+			"name": "继续研究",
+			"desc": "抓住它!这是重大发现"
+		},
+		"cost": {
+			"paper": 100,
+			"books": 60
+		},
+		"run": {
+			"time": -1
+		},
+		"disable": ["event_kjycds_2_2"]
+	},
+	{
+		"id": "event_kjycds_3_1",
+		"name": "飘渺闪电",
+		"tags":"事件,空间异常读数事件链",
+		"desc": "不平整空间的规律被找到,虽然不稳定,但你可以利用它来进行高效发电",
+		"verb": "启动事件链",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_kjycds_2_1>=1",
+		"length": 15,
+		"log": {
+			"name": "完成事件链",
+			"desc": "解锁[飘渺线圈]"
+		},
+		"cost": {
+			"cishuadianquan":2,
+			"paper": 100,
+			"books": 60
+		},
+		"run": {
+			"time": -1
+		},
+		"disable": ["event_kjycds_3_2"]
+	},
+	{
+		"id": "event_kjycds_3_2",
+		"name": "飘渺方尖碑",
+		"tags":"事件,空间异常读数事件链",
+		"desc": "不平整空间的规律被找到,虽然不稳定,但你可以利用它来对芥子方尖碑进行升级",
+		"verb": "启动事件链",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_kjycds_2_1>=1",
+		"length": 15,
+		"log": {
+			"name": "完成事件链",
+			"desc": "解锁[飘渺线圈]"
+		},
+		"cost": {
+			"jieziobelisk":2,
+			"paper": 100,
+			"books": 60
+		},
+		"run": {
+			"time": -1
+		},
+		"disable": ["event_kjycds_3_1"]
+	},
+	{
+		"id":"event_kjycds_2_2",
+		"name": "空间平整",
+		"tags":"事件,空间异常读数事件链",
+		"desc": "异常读数的分析结果表示存在一处不平整空间。你不知道这会产生什么难以预料的后果,你决定对其进行规律化操作,这将会收获一定的建筑技术",
+		"verb": "启动事件链",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_kjycds_1>=1",
+		"length": 15,
+		"log": {
+			"name": "空间平整",
+			"desc": "你抹平了这个涟漪"
+		},
+		"cost": {
+			"heli": 40,
+			"element_wuhuan": 20
+		},
+		"run": {
+			"time": -2
+		},
+		"result": {
+			"space.max": 100
+		},
+		"disable": ["event_kjycds_2_1"]
+	},
+	{
+		"id": "dafenziguancha",
+		"name": "大分子观察",
+		"desc": "借助层序显微镜片对生物样本进行观察",
+		"verb": "观察中",
+		"max": 1,
+		"require": "g.cxxwjp>=1",
+		"length": 300,
+		"cost": {
+			"yjswyb": 20,
+			"pyy":20,
+			"fypyj":20,
+			"cxxwjp": 1,
+			"ljdy": 10,
+			"books": 60,
+			"ganwu": 900,
+			"money": 1800,
+			"paper": 250
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "xibaobiji",
+		"name": "细胞笔记",
+		"desc": "对生物细胞进行统计并记录",
+		"verb": "记录中",
+		"max": 1,
+		"require": "g.dafenziguancha>=1",
+		"length": 60,
+		"cost": {
+			"yjswyb": 20,
+			"pyy":20,
+			"fypyj":20,
+			"ljdy": 3,
+			"books": 60,
+			"ganwu": 900,
+			"money": 1800,
+			"paper": 250
+		},
+		"run": {
+			"paper": 3,
+			"ganwu": 5,
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "yjswybpx",
+		"name": "一阶生物样本培训",
+		"desc": "",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.xibaobiji>=1",
+		"length": 600,
+		"cost": {
+			"yjswyb": 20,
+			"pyy":20,
+			"fypyj":20,
+			"books": 60,
+			"ganwu": 900,
+			"money": 1800
+		},
+		"run": {
+			"time": -2,
+			"tili": 1
+		}
+	},
+	{
+		"id": "zhenyeganwu",
+		"name": "🌙真夜感悟",
+		"desc": "在无光环境下进行感悟",
+		"verb": "修行中",
+		"max": 9,
+		"require": "g.chugui>=1",
+		"length": 60,
+		"cost": {
+			"back_dream": 20,
+			"tili": 20
+		},
+		"run": {
+			"back_dream": 0.02,
+			"time": -1,
+			"tili": 1
 		}
 	},
 	{
@@ -468,6 +1289,7 @@
 		"name": "写下经验",
 		"desc": "感悟在脑中往往记不长久,写下来是个好主意,这可能耗时有点长",
 		"verb": "写作中",
+		"tags":"生产",
 		"require": "g.reading>0",
 		"length": 10,
 		"fill": [
@@ -490,6 +1312,7 @@
 		"name": "感悟升华",
 		"desc": "从大量感悟中提取精华",
 		"verb": "感悟中",
+		"tags":"生产",
 		"require": "g.ganwu>=60",
 		"length": 15,
 		"fill": [
@@ -509,6 +1332,7 @@
 	{
 		"id": "write_starmap_1",
 		"name": "天文绘制",
+		"tags":"生产",
 		"desc": "对天文进行观测,然后把知识写在稿纸上",
 		"verb": "绘制中",
 		"require": "g.xiulian_astro_zhuji_2>=1",
@@ -532,6 +1356,7 @@
 	{
 		"id": "write_starmap_2",
 		"name": "天文观测",
+		"tags":"生产",
 		"desc": "在低温望远镜下进行更细微的观测",
 		"verb": "观测中",
 		"require": "g.Telescope>=1",
@@ -556,8 +1381,38 @@
 		}
 	},
 	{
+		"id": "write_starmap_3",
+		"name": "阵列观测",
+		"tags":"生产",
+		"desc": "在阵列电波塔下进行更细微的观测",
+		"verb": "观测中",
+		"require": "g.zhenliedianbota>=1",
+		"need": "g.zhenliedianbota>=1",
+		"length": 8,
+		"fill": [
+			"star_map_1"
+		],
+		"cost": {
+			"star_map_1":1,
+			"star_map": 5,
+			"jls": 2,
+			"money": 50,
+			"ganwu": 55
+		},
+		"run": {
+			"time": -0.2,
+			"jls":0.2,
+			"tili": 1,
+			"stamina": 0.5
+		},
+		"result": {
+			"star_map_1": 3.3
+		}
+	},
+	{
 		"id": "huoxi_hc",
 		"name": "活性合成",
+		"tags":"生产",
 		"desc": "在低温下对零结晶进行加工",
 		"verb": "合成中",
 		"require": "g.ColdBio>=1",
@@ -717,6 +1572,7 @@
 		"name": "种田",
 		"desc": "种下种子,收获粮食",
 		"verb": "种植中",
+		"tags":"生产",
 		"perpetual": true,
 		"require": "g.farmer>=1",
 		"length": 10,
@@ -746,6 +1602,7 @@
 		"name": "经营摊位",
 		"desc": "经营摊位来赚取",
 		"verb": "经营中",
+		"tags":"生产",
 		"perpetual": true,
 		"require": "g.businessman>=1",
 		"length": 10,
@@ -822,12 +1679,12 @@
 	},
 	{
 		"id": "yndm",
-		"name": "如此大梦",
+		"name": "⭐如此大梦",
 		"desc": "沉醉梦境,堕入梦境",
 		"verb": "流光",
 		"require": "g.dream_death>=1",
 		"max": 1,
-		"length": 50,
+		"length": 60,
 		"cost": {
 			"money": 500,
 			"ganwu": 350,
@@ -847,25 +1704,318 @@
 		}
 	},
 	{
+		"id": "cuiti",
+		"name": "淬体",
+		"desc": "在魂体炼池中淬炼躯体",
+		"verb": "淬体中",
+		"require": "g.huntilianchi>=1",
+		"max": 50,
+		"length": 60,
+		"cost": {
+			"money": 700,
+			"ganwu": 500,
+			"huiguang": 5,
+			"gwl": 20,
+			"zero_crystal": 30
+		},
+		"run": {
+			"tili": 2,
+			"gwl": 0.1,
+			"time": -1
+		},
+		"result": {
+			"hp.max": 0.2,
+			"age.max": 1500,
+			"age": 1500
+		}
+	},
+	{
+		"id": "hjyj_1",
+		"name": "护甲研究",
+		"desc": "研究护甲",
+		"verb": "研究中",
+		"require": "g.jungongxue>=3",
+		"max": 50,
+		"length": 50,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		},
+		"result": {
+			"sp": 0.3
+		}
+	},
+	{
+		"id": "hjyj_1_1",
+		"name": "量产型护甲",
+		"desc": "",
+		"verb": "研究中",
+		"require": "g.hjyj_1>=10",
+		"max": 1,
+		"length": 10,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		}
+	},
+	{
+		"id": "hjyj_1_3",
+		"name": "重型护甲研究",
+		"desc": "",
+		"verb": "研究中",
+		"require": "g.hjyj_1>=30",
+		"max": 1,
+		"length": 10,
+		"cost": {
+			"r_adv_bzzj": 5,
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		}
+	},
+	{
+		"id": "hjyj_1_2",
+		"name": "护甲培训",
+		"desc": "",
+		"verb": "研究中",
+		"require": "g.hjyj_1>=10",
+		"max": 1,
+		"length": 6,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -30
+		}
+	},
+	{
+		"id": "wqyj_1",
+		"name": "武器研究",
+		"desc": "研究武器",
+		"verb": "研究中",
+		"require": "g.jungongxue>=3",
+		"max": 50,
+		"length": 50,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		},
+		"result": {
+			"sp": 0.3
+		}
+	},
+	{
+		"id": "wqyj_1_res",
+		"name": "武器研究成果",
+		"desc": "研究武器的成果",
+		"verb": "研究中",
+		"require": "g.wqyj_1>=30",
+		"max": 1,
+		"length": 2,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		},
+		"result": {
+			"upd_wuzsj.max": 1,
+			"upd_fanclsj.max":1,
+			"upd_bingdsj.max": 1
+		}
+	},
+	{
+		"id": "wqyj_1_res_2",
+		"name": "武器研究成果",
+		"desc": "研究武器的成果",
+		"verb": "研究中",
+		"require": "g.wqyj_1>=40",
+		"max": 1,
+		"length": 2,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		},
+		"result": {
+			"upd_wuzsj.max": 1,
+			"upd_fanclsj.max":1,
+			"upd_bingdsj.max": 1
+		}
+	},
+	{
+		"id": "shrlyj_1",
+		"name": "伤害容量研究",
+		"desc": "",
+		"verb": "研究中",
+		"require": "g.jungongxue>=3",
+		"max": 50,
+		"length": 50,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		},
+		"result": {
+			"qingjia.max": 1,
+			"zhongjia.max":1,
+			"heavyjia.max":1,
+			"wuzhuo.max":0.5,
+			"bingdong.max":0.5
+		}
+	},
+	{
+		"id": "zsrlyj_1",
+		"name": "战时人力研究",
+		"desc": "",
+		"verb": "研究中",
+		"require": "g.jungongxue>=5",
+		"max": 50,
+		"length": 50,
+		"cost": {
+			"money": 100,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -3
+		},
+		"result": {
+			"yanzhandu.rate": -0.05,
+			"shiqi.rate": 0.01,
+			"zhuzhidu.rate": 0.006
+		}
+	},
+	{
+		"id": "tongfentz",
+		"name": "同分同轴",
+		"desc": "扩展二同轴容量",
+		"verb": "",
+		"require": "g.ertongzhe>=1",
+		"max": 1,
+		"cost": {
+			"ertongzhe": 3,
+			"money": 2000,
+			"life_crystal": 5
+		},
+		"result": {
+			"ertongzhe.max":2,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "dixiantongzhou",
+		"name": "地陷同轴",
+		"desc": "对大地进行计算",
+		"verb": "计算中",
+		"require": "g.ertongzhe>=1 && g.evilamt<=0",
+		"max": 2,
+		"length": 100,
+		"cost": {
+			"yisuanzi": 1,
+			"ertongzhe": 2,
+			"money": 2000
+		},
+		"run": {
+			"ganwu": 4,
+			"time": -3
+		},
+		"result": {
+			"space.max": 200
+		}
+	},
+	{
+		"id": "wuguangtongzhou",
+		"name": "无光同轴",
+		"desc": "对无光进行计算",
+		"verb": "计算中",
+		"require": "g.ertongzhe>=1 && g.evilamt>0",
+		"max": 1,
+		"length": 150,
+		"cost": {
+			"nolight_core": 10,
+			"yisuanzi": 5,
+			"ertongzhe": 5,
+			"money": 2000
+		},
+		"run": {
+			"ganwu": 4,
+			"time": -3
+		},
+		"result": {
+			"space.max": 230
+		}
+	},
+	{
+		"id": "yanmosuanzi",
+		"name": "掩魔算子",
+		"desc": "",
+		"verb": "计算中",
+		"require": "g.yisuanzi>=1 && g.evilamt>0",
+		"max": 1,
+		"length": 150,
+		"cost": {
+			"nolight_core": 10,
+			"yisuanzi": 10,
+			"money": 2000
+		},
+		"run": {
+			"ganwu": 4,
+			"time": -5
+		},
+		"result": {
+			"age.max": 7650,
+			"age": 7650,
+			"alculation.max": 100,
+			"space.max": 60
+		}
+	},
+	{
 		"id": "fumeng1",
 		"name": "浮梦",
+		"tags":"生产",
 		"desc": "漂浮于梦境,寻觅其精华",
 		"verb": "寻觅中",
 		"require": "g.yndm>=1",
-		"length": 25,
+		"length": 14,
 		"fill": [
 			"back_dream"
 		],
 		"cost": {
-			"money": 100,
+			"money": 190,
 			"ganwu": 150,
 			"super_mind": 9,
-			"star_map": 50,
+			"star_map": 25,
 			"alculation": 60,
 			"zero_crystal": 2
 		},
 		"run": {
-			"time": -2
+			"time": -0.9
 		},
 		"result": {
 			"back_dream": 1
@@ -1078,6 +2228,31 @@
 		}
 	},
 	{
+		"id": "guichangmishu",
+		"name": "归藏秘术",
+		"desc": "天地开辟，万物浑浑，无知无识；阴阳所凭，天体始于北极之野。归藏秘术纳天地之灵，萃不灭真体",
+		"verb": "感悟中",
+		"require": "g.shenglixue>=5 && g.shenglingshi>=10 && g.ap>=5 && g.tongren>=1",
+		"max": 1,
+		"length": 300,
+		"cost": {
+			"yangxilazhu": 5,
+			"hp": 80,
+			"tili": 25,
+			"ganwu": 700,
+			"heli": 20,
+			"shenglingshi": 20
+		},
+		"run": {
+			"time": -0.08
+		},
+		"result": {
+			"tili.max": 10,
+			"age.max": 17650,
+			"age": 17650
+		}
+	},
+	{
 		"id": "underground_1",
 		"name": "地下空间",
 		"desc": "挖掘地下来扩展可建造面积",
@@ -1108,6 +2283,7 @@
 	{
 		"id": "tian_craft",
 		"name": "钛板制作",
+		"tags":"生产",
 		"desc": "标准化加工提供了高效制作钛板的途径,",
 		"verb": "制作中",
 		"require": "g.stand_jiagong>=1",
@@ -1133,6 +2309,7 @@
 	{
 		"id": "huanjweihu",
 		"name": "环境维护",
+		"tags":"生产",
 		"desc": "对周围环境进行治理[需要进行50次]",
 		"verb": "",
 		"require": "g.hjgz>=1",
@@ -1152,6 +2329,7 @@
 	{
 		"id": "quchu_frs",
 		"name": "驱除废热",
+		"tags":"生产",
 		"desc": "手动消耗生命力和混沌净化废热水",
 		"verb": "",
 		"require": "g.frs>0",
@@ -1171,7 +2349,7 @@
 		"name": "长线导能实验",
 		"desc": "进行长距离的低损导能实验。【实验需要进行10次】,",
 		"verb": "实验中",
-		"max": 30,
+		"max": 10,
 		"require": "g.xiulian_energ_xtcd>=1",
 		"length": 20,
 		"cost": {
@@ -1189,6 +2367,29 @@
 			"ganwu": 5,
 			"jsnlx.max": 0.001,
 			"jsnlx.exp": 20
+		}
+	},
+	{
+		"id": "jihunyuesheng",
+		"name": "基魂跃升",
+		"desc": "对基魂进行跃升",
+		"verb": "跃升中",
+		"max": 1,
+		"require": "g.podaoxius>=1 || g.luorxiushi>=1 || g.mxuanxs>=1",
+		"length": 60,
+		"cost": {
+			"jihun": 5,
+			"jingdian": 10,
+			"yjswyb": 20,
+			"cbclb": 30,
+			"yjdl": 30,
+			"ganwu": 1000,
+			"alculation": 1000,
+			"human_power": 1500,
+			"zero_crystal": 70
+		},
+		"run": {
+			"time": -1
 		}
 	},
 	{
@@ -1221,6 +2422,7 @@
 	{
 		"id": "yjdlzz",
 		"name": "电缆制作",
+		"tags":"生产",
 		"desc": "制作亚极电缆,",
 		"verb": "制作中",
 		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
@@ -1409,10 +2611,14 @@
 	{
 		"id": "pyjzz1",
 		"name": "培养基制作",
+		"tags":"生产",
 		"desc": "制作富养培养基,",
 		"verb": "制作中",
 		"require": "g.xiulian_life_swpy>=1",
 		"length": 20,
+		"fill":[
+			"fypyj"
+		],
 		"cost": {
 			"cold_core": 2,
 			"tian": 1,
@@ -1432,10 +2638,14 @@
 	{
 		"id": "pyyzz1",
 		"name": "培养液调配",
+		"tags":"生产",
 		"desc": "制作培养液,",
 		"verb": "调配中",
 		"require": "g.xiulian_life_swyz>=1",
 		"length": 20,
+		"fill":[
+			"pyy"
+		],
 		"cost": {
 			"yqlm": 0.5,
 			"cbclb": 1,
@@ -1521,12 +2731,162 @@
 		}
 	},
 	{
+		"id": "zhishichuanbo",
+		"name": "知识传播",
+		"desc": "展示你的博学",
+		"verb": "传播中",
+		"max": 1,
+		"require": "g.adv_sci>=1",
+		"length": 500,
+		"cost": {
+			"pyy": 10,
+			"fypyj": 10,
+			"yjdl": 60,
+			"iron_copper": 100,
+			"sj_met": 50,
+			"tian": 80,
+			"sj_met": 40,
+			"ganwu": 600,
+			"life_crystal": 15,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
+		"id": "hongguankexue",
+		"name": "宏观科学",
+		"desc": "大尺度观察",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.adv_sci>=3",
+		"length": 500,
+		"cost": {
+			"yjdl": 85,
+			"iron_copper": 100,
+			"sj_met": 50,
+			"tian": 80,
+			"ganwu": 600,
+			"star_map_1": 15,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
+		"id": "ljdyjg",
+		"name": "逻辑单元加工",
+		"desc": "制作逻辑单元",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.signal>=1",
+		"length": 20,
+		"cost": {
+			"yjdl": 20,
+			"cbclb": 5,
+			"iron_copper": 50,
+			"sj_met": 6,
+			"tian": 10,
+			"ganwu": 20,
+			"human_power": 100,
+			"zero_crystal": 15,
+			"money": 200
+		},
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"ljdy": 2
+		}
+	},
+	{
+		"id": "weiguankexue",
+		"name": "微观科学",
+		"desc": "细微观察",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.adv_sci>=4 && g.ljdy>=1",
+		"length": 500,
+		"cost": {
+			"ljdy": 10,
+			"element_wuhuan": 20,
+			"element_gold": 20,
+			"element_wood": 20,
+			"element_water": 20,
+			"element_fire": 20,
+			"element_land": 20,
+			"iron_copper": 100,
+			"sj_met": 43,
+			"tian": 65,
+			"ganwu": 600,
+			"human_power": 1000,
+			"money": 1500
+		},
+		"run": {
+			"element_wuhuan": 0.3,
+			"time": -1
+		}
+	},
+	{
+		"id": "guangjiaodufenxi",
+		"name": "光焦度分析",
+		"desc": "对可见光进行焦度分析",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.weiguankexue>=1",
+		"length": 500,
+		"cost": {
+			"ljdy": 10,
+			"cu_copper": 230,
+			"iron_copper": 120,
+			"sj_met": 43,
+			"tian": 65,
+			"ganwu": 600,
+			"human_power": 1000,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
+		"id": "jpsjg",
+		"name": "镜片深加工",
+		"desc": "研磨一块更精确的镜片",
+		"verb": "加工中",
+		"max": 1,
+		"require": "g.weiguankexue>=1",
+		"length": 60,
+		"cost": {
+			"ljdy": 15,
+			"dirty_lingti": 20,
+			"sj_met": 35,
+			"tian": 50,
+			"ganwu": 600,
+			"human_power": 1000,
+			"money": 1700
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
 		"id": "yijiepeiyu",
 		"name": "一阶培育",
+		"tags":"生产",
 		"desc": "培育一阶生物样本,",
 		"verb": "培育中",
 		"require": "g.dchjsm>=1 && g.gwfayu>=1 && g.dwswgz>=1",
 		"length": 20,
+		"fill":[
+			"yjswyb"
+		],
 		"cost": {
 			"pyy": 5,
 			"fypyj": 5,
@@ -1547,10 +2907,11 @@
 	{
 		"id": "heli_xiulian",
 		"name": "合理修炼",
+		"tags":"生产",
 		"desc": "长时间的修炼",
 		"verb": "修炼中",
 		"require": "g.xiulian_heli_ph_1>=1 && g.xiulian_heli_ys_2>=1 && g.xiulian_heli_ys_3>=1",
-		"length": 30,
+		"length": 10,
 		"cost": {
 			"ganwu": 100,
 			"heli": 10
@@ -1560,7 +2921,7 @@
 			"time": -20
 		},
 		"result": {
-			"player.exp": 35,
+			"player.exp": 100,
 			"heli.max": 0.001,
 			"heli.rate": 0.001
 		}
@@ -1568,6 +2929,7 @@
 	{
 		"id": "murder_pl",
 		"name": "谋杀",
+		"tags":"生产",
 		"desc": "长期的运货让你心生愤恨,杀人不是来钱更快吗【杀一次就没法回头了,慎选】",
 		"verb": "谋杀中",
 		"require": "g.freight>=50",
@@ -1586,8 +2948,9 @@
 	},
 	{
 		"id": "huibang",
-		"name": "毁谤",
-		"desc": "毁谤他人的名誉",
+		"name": "污蔑",
+		"tags":"生产",
+		"desc": "败坏他人的名誉",
 		"verb": "",
 		"require": "g.evilamt>10",
 		"cost": {
@@ -1596,7 +2959,7 @@
 		},
 		"result": {
 			"time": 0.2,
-			"ganwu": 5,
+			"ganwu": 8,
 			"evilamt": 0.5
 		}
 	},
@@ -1624,6 +2987,7 @@
 	{
 		"id": "spirit_ningju",
 		"name": "魂体凝聚",
+		"tags":"生产",
 		"desc": "用生灵凝聚魂体",
 		"verb": "凝聚中",
 		"require": "g.wuguangkexue>=1",
@@ -2755,20 +4119,6 @@
 		}
 	},
 	{
-		"id": "buyscroll",
-		"name": "buy scroll",
-		"desc": "A novice can get by with very basic scrolls, hopefully you won't need any of the pricier ones.",
-		"require": "g.gold>=10",
-		"cost": {
-			"gold": 10
-		},
-		"fill": "scrolls",
-		"result": {
-			"scrolls": 1,
-			"evt_scroll": true
-		}
-	},
-	{
 		"id": "scribescroll",
 		"name": "scribe scroll",
 		"require": "g.crafting>=1&&g.lore>=1",
@@ -3405,17 +4755,6 @@
 		"result": {
 			"gems": 1,
 			"crafting.max": 0.01
-		}
-	},
-	{
-		"id": "sellgem",
-		"name": "sell gem",
-		"require": "g.gems>0",
-		"cost": {
-			"gems": 1
-		},
-		"result": {
-			"gold": 35
 		}
 	},
 	{

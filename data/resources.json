@@ -57,6 +57,17 @@
 		}
 	},
 	{
+		"id": "hunti_core",
+		"name": "魂体核心",
+		"desc": "纯洁灵体",
+		"group": "结晶",
+		"require": "g.canglanchaoben>=1 && g.bafangwfs>=1 && g.flont_hqhhjz>=1",
+		"max": 9,
+		"mod": {
+			"hp.rate": 0.1
+		}
+	},
+	{
 		"id": "jihun",
 		"name": "基魂",
 		"desc": "筑基所凝聚的真魂",
@@ -84,7 +95,10 @@
 		"group": "修行",
 		"tags": "",
 		"require": "g.ganwu>=60",
-		"max": 5
+		"max": 5,
+		"mod":{
+			"ganwu.rate": 0.08
+		}
 	},
 	{
 		"id": "books",
@@ -277,6 +291,46 @@
 		}
 	},
 	{
+		"id": "andan",
+		"name": "黯淡精华",
+		"desc": "",
+		"group": "精华",
+		"tags": "",
+		"max": 10,
+		"require": "g.xiulian_jj_hunluanges>=1",
+		"mod": {
+			"heli.rate": 0.01,
+			"chaos.rate": 0.01
+		}
+	},
+	{
+		"id": "huiguang",
+		"name": "辉光精华",
+		"desc": "天体运行之精华",
+		"group": "精华",
+		"tags": "",
+		"max": 9,
+		"require": "g.yangzhoaganuw>=9 && g.zhenyeganwu>=9",
+		"mod": {
+			"heli.rate": 0.02,
+			"chaos.rate": 0.02
+		}
+	},
+	{
+		"id": "canglan",
+		"name": "苍蓝精华",
+		"desc": "五环运行之精华",
+		"group": "精华",
+		"tags": "",
+		"max": 9,
+		"require": "g.yangzhoaganuw>=9 && g.zhenyeganwu>=9",
+		"mod": {
+			"elect.rate": 0.9,
+			"heli.rate": 0.09,
+			"chaos.rate": 0.09
+		}
+	},
+	{
 		"id": "shenglingshi",
 		"name": "生灵石",
 		"desc": "大规模战争留下的神秘物质",
@@ -339,6 +393,19 @@
 		"max": 5
 	},
 	{
+		"id": "jingdian",
+		"name": "经典",
+		"desc": "传世",
+		"group": "知识",
+		"tags": "",
+		"require": "g.yingmidianji>=1",
+		"mod": {
+			"ganwu.max": 20,
+			"ganwu.rate": 1
+		},
+		"max": 10
+	},
+	{
 		"id": "dirty_lingti",
 		"name": "纯浊灵体",
 		"desc": "纯净灵体,但表达了污浊核心的反相性质",
@@ -347,6 +414,119 @@
 		"require": "g.xiulian_bio_dirty_1>=1 &&g.lingti_xue>=1",
 		"max": 2
 	},
+	{
+		"id": "fypyj",
+		"name": "富养培养基",
+		"desc": "能够存储大量营养的培养基",
+		"group": "生物",
+		"tags": "",
+		"require": "g.xiulian_life_swpy>=1",
+		"max": 10
+	},
+	{
+		"id": "pyy",
+		"name": "培养液",
+		"desc": "基本的生物培养液",
+		"group": "生物",
+		"tags": "",
+		"require": "g.xiulian_life_swyz>=1",
+		"max": 10
+	},
+	{
+		"id": "yjswyb",
+		"name": "一阶生物样本",
+		"desc": "一阶生物样本，囊括了低温高温和高电流下的生物样本",
+		"group": "生物",
+		"tags": "",
+		"require": "g.dchjsm>=1 && g.gwfayu>=1 && g.dwswgz>=1",
+		"max": 10
+	},
+	{
+		"id": "cu_iron",
+		"name": "铁板",
+		"tags": "金属",
+		"desc": "最普通的金属",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=1",
+		"max": 10
+	},
+	{
+		"id": "cu_copper",
+		"name": "铜板",
+		"tags": "金属",
+		"desc": "高导电率",
+		"group": "金属",
+		"tags": "",
+		"require": "g.metal_1>=4",
+		"max": 10
+	},
+	{
+		"id": "iron_copper",
+		"name": "合成金属F-C",
+		"tags": "金属",
+		"desc": "第一代合金,硬度和导电率良好",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_1>=1",
+		"max": 5
+	},
+	{
+		"id": "sj_met",
+		"name": "神经材料",
+		"tags": "金属",
+		"desc": "将神识附着在FC合金上,达到更优良的金属性能",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_2>=1",
+		"max": 5
+	},
+	{
+		"id": "tian",
+		"name": "钛板",
+		"tags": "金属",
+		"desc": "具有金属光泽,有延展性,密度小,容易加工",
+		"group": "金属",
+		"tags": "",
+		"require": "g.land_wa>=3 &&g.metal_1>=8",
+		"max": 5
+	},
+	{
+		"id": "cbclb",
+		"name": "纯白材料包",
+		"desc": "多种金属打包而来的材料学基础包",
+		"group": "金属",
+		"tags": "",
+		"require": "g.xiulian_struct_cailiaozuhe>=1",
+		"max": 10
+	},
+	{
+		"id": "yjdl",
+		"name": "亚极电缆",
+		"desc": "亚极电缆是一种利用了黄泉技术的高传导率电缆",
+		"group": "电子",
+		"tags": "",
+		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
+		"max": 10
+	},
+	{
+		"id": "laser_ene",
+		"name": "高能电容",
+		"desc": "激光发射使用的高能电源",
+		"group": "电子",
+		"tags": "",
+		"require": "g.red_jgsys>=1",
+		"max": 0
+	},	
+	{
+		"id": "ljdy",
+		"name": "逻辑单元",
+		"desc": "蚀刻了基础逻辑的单元模板",
+		"group": "电子",
+		"tags": "",
+		"require": "g.xinghaokz>=1 && g.luojibo>=1",
+		"max": 10
+	},	
 	{
 		"id": "zhuji_tianjie_1",
 		"name": "命玄-真魂",
@@ -378,6 +558,16 @@
 		"max": 1
 	},
 	{
+		"id": "yichongyuesheng",
+		"name": "一重跃升",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
 		"id": "xiulian_hide",
 		"name": "隐藏修炼",
 		"desc": "隐藏修炼",
@@ -393,6 +583,16 @@
 		"desc": "隐藏药材",
 		"hide": true,
 		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "updata_res_1",
+		"name": "更新",
+		"desc": "更新",
+		"hide": true,
+		"group": "更新",
 		"tags": "",
 		"locked":false,
 		"max": 1
@@ -1664,6 +1864,156 @@
 		"max": 1
 	},
 	{
+		"id": "xiulian_gcwuguan",
+		"name": "归藏五观",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":5
+	},
+	{
+		"id": "xiulian_eye_canglanyan",
+		"name": "苍蓝眼",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":5
+	},
+	{
+		"id": "xiulian_body_gczf",
+		"name": "归初之法",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":3
+	},
+	{
+		"id": "xiulian_xxh_wbxf",
+		"name": "微波细分",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_space_yuansufuz",
+		"name": "元素辅助",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_eye_weiguansj",
+		"name": "微观世界",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_eye_weiguanlz",
+		"name": "微观粒子",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_eye_ganzl",
+		"name": "感知论",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_zhujikedufenxi",
+		"name": "筑基刻度分析",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_zhenyuandaolun",
+		"name": "真元导论",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_jj_jliugeshi",
+		"name": "晶流格式",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_lizu_wxyh",
+		"name": "五行衍化",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_jj_hunluanges",
+		"name": "混乱格式",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_jj_benyuanges",
+		"name": "本源格式",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_zhuji_2_1",
+		"name": "筑基一重",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",
@@ -2189,7 +2539,14 @@
 		"hide": true,
 		"name": "计算力",
 		"val":1,
-		"max": 1
+		"max": 1,
+		"mod":{
+			"1级.max": 0.005,
+			"2级.max": 0.004,
+			"3级.max": 0.003,
+			"4级.max": 0.002,
+			"5级.max": 0.001
+		}
 	},
 	{
 		"id": "f_power",
@@ -2243,6 +2600,42 @@
 		"name": "指令容量",
 		"val":0,
 		"max": 3
+	},
+	{
+		"id": "yanzhandu",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "厌战度",
+		"val":0,
+		"max": 100
+	},
+	{
+		"id": "shiqi",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "士气",
+		"val":0,
+		"max": 50
+	},
+	{
+		"id": "zhuzhidu",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "组织度",
+		"val":0,
+		"max": 40
+	},
+	{
+		"id": "jczdxn",
+		"desc": "基础攻击性能是不计算征服对象属性的攻击性能,计算公式为:战斗评分X25%+战斗评分X【(士气X65%+组织度X75%)-[(厌战度/计算力)X厌战度]】/100",
+		"hide": true,
+		"locked": false,
+		"name": "基础攻击性能",
+		"val":0,
+		"max": 100
 	},
 	{
 		"id": "age",

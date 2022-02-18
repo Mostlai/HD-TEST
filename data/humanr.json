@@ -243,6 +243,32 @@
 		}
 	},
 	{
+		"id": "tjswybzl",
+		"name": "一阶生物样本",
+		"desc": "派遣人力制作一阶生物样本",
+		"require": "g.yjswybpx>=1",
+		"max": 3,
+		"clevel": 3,
+		"need": "g.human_power>=300",
+		"startcost":{
+			"alculation": 400,
+			"yjswyb": 1,
+			"human_power": 300,
+			"money": 300
+		},
+		"mod":{
+			"command_code":3,
+			"space.max": -25,
+			"pyy.rate": -0.01,
+			"fypyj.rate": -0.01,
+			"human_power.max": -300,
+			"alculation.max": -200,
+			"alculation.rate": -3,
+			"human_power.rate": -0.7,
+			"yjswyb.rate": 0.1
+		}
+	},
+	{
 		"id": "cbclzl",
 		"name": "纯白材料指令",
 		"desc": "派遣人力制作纯白材料包",
@@ -291,6 +317,31 @@
 			"alculation.rate": -2.5,
 			"human_power.rate": -0.7,
 			"yjdl.rate": 0.3
+		}
+	},
+	{
+		"id": "bdhxzl",
+		"name": "冰冻核心指令",
+		"desc": "派遣人力获取冰冻核心",
+		"require": "g.rengqh>=1 && g.ningjiebd>=1",
+		"max": 10,
+		"clevel": 4,
+		"need": "g.human_power>=400",
+		"startcost":{
+			"alculation": 400,
+			"cold_core": 1,
+			"human_power": 400,
+			"money": 300
+		},
+		"mod":{
+			"command_code":4,
+			"space.max": -25,
+			"gwl.rate": -0.1,
+			"human_power.max": -400,
+			"alculation.max": -200,
+			"alculation.rate": -2.5,
+			"human_power.rate": -0.7,
+			"cold_core.rate": 0.5
 		}
 	}
 ]

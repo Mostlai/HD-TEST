@@ -18,6 +18,7 @@
 		"locked": false,
 		"hide": true,
 		"mod": {
+			"hallPoints": 0.1,
 			"spelllist.max": 1,
 			"stamina.max": 1,
 			"player.tohit": 1,
@@ -25,9 +26,6 @@
 			"allies.max": ":5",
 			"speed": ":4",
 			"sp": ":3"
-		},
-		"result": {
-			"hallPoints": 0.1
 		}
 	},
 	{
@@ -57,6 +55,16 @@
 		"val": 0,
 		"unit": false,
 		"locked": false
+	},
+	{
+		"id": "rein",
+		"name": "轮回",
+		"val": 0,
+		"unit": false,
+		"locked": false,
+		"mod": {
+			"skill.rate": "2%"
+		}
 	},
 	{
 		"id": "ap",
@@ -93,7 +101,7 @@
 	{
 		"id": "speed",
 		"name": "速度",
-		"desc": "Movement speed",
+		"desc": "",
 		"val": 1,
 		"stat": true,
 		"unit": false,
@@ -101,12 +109,26 @@
 	},
 	{
 		"id": "luck",
-		"desc": "Affinity for fortune",
+		"name": "幸运",
+		"desc": "",
 		"val": 0,
 		"stat": true,
 		"unit": false,
 		"locked": false,
-		"flavor": "Let's keep this party polite"
+		"flavor": "保持开心"
+	},
+	{
+		"id": "extra_space",
+		"name": "额外面积",
+		"desc": "",
+		"val": 0,
+		"stat": true,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"space.max":1
+		},
+		"flavor": ""
 	},
 	{
 		"id": "scraft",

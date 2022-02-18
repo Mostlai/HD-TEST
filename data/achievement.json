@@ -1,9 +1,9 @@
 [
 	{
-		"id": "ach_backpack_1",
-		"name": "打开背包",
-		"desc": "完成动作-按键帮助,按E打开背包",
-		"target_item": "keyboard",
+		"id": "ach_jingjie_1",
+		"name": "筑基",
+		"desc": "完成筑基",
+		"target_item": "xiulian_zhuji_2",
 		"target_val": 1,
 		"hide": true,
 		"locked": false,
@@ -13,7 +13,58 @@
 			"heli": 1000000000000000
 		},
 		"result":{
-			"ap": 0.1
+			"ap": 1
+		}
+	},
+	{
+		"id": "ach_chugui_1",
+		"name": "初归",
+		"desc": "完成初归",
+		"target_item": "chugui",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap":1
+		}
+	},
+	{
+		"id": "ach_jingjie_2",
+		"name": "筑基一重",
+		"desc": "完成筑基一重",
+		"target_item": "xiulian_zhuji_2_1",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap":1
+		}
+	},
+	{
+		"id": "ach_chugui_2",
+		"name": "归玄",
+		"desc": "完成归玄",
+		"target_item": "guixuan",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap":1
 		}
 	},
 	{
@@ -258,9 +309,9 @@
 	{
 		"id": "ach_fumeng1_1",
 		"name": "梦中常客",
-		"desc": "浮梦500次",
+		"desc": "浮梦300次",
 		"target_item": "fumeng1",
-		"target_val": 500,
+		"target_val": 300,
 		"hide": true,
 		"locked": false,
 		"val":0,
@@ -270,7 +321,7 @@
 		},
 		"result":{
 			"ap": 0.5,
-			"back_dream.rate": 0.3
+			"back_dream.rate": 0.22
 		}
 	},
 	{
@@ -379,6 +430,78 @@
 		"result":{
 			"ap": 0.5,
 			"heli.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_spell_3",
+		"name": "光彩照人",
+		"desc": "释放红极激光130次",
+		"target_item": "spell_red_laser",
+		"target_val": 130,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 1,
+			"laser_ene.rate": 0.05
+		}
+	},
+	{
+		"id": "ach_space_1",
+		"name": "土地开发",
+		"desc": "用地面积达到500",
+		"target_item": "space",
+		"target_val": 500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "ach_space_2",
+		"name": "承包商",
+		"desc": "用地面积达到1500",
+		"target_item": "space",
+		"target_val": 1500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"space.max": 130
+		}
+	},
+	{
+		"id": "ach_space_3",
+		"name": "深层开发",
+		"desc": "用地面积达到2500",
+		"target_item": "space",
+		"target_val": 2500,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"space.max": 130
 		}
 	},
 	{
