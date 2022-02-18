@@ -249,7 +249,7 @@
 		"mod": {
 			"books.max": 2,
 			"paper.max":10,
-			"snp_data.max":4,
+			"snp_data.max":4.5,
 			"exe_paper.max": 4.5,
 			"star_map.max": 4,
 			"space": 3
