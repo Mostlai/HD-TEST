@@ -754,6 +754,9 @@
 		"verb": "编写中",
 		"require": "g.yingmidianji>=1",
 		"length": 10,
+		"fill":[
+			"jingdian"
+		],
 		"cost": {
 			"lg":5,
 			"paper": 100,
