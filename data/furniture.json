@@ -3076,6 +3076,7 @@
 			"money": 1200
 		},
 		"mod": {
+			"elect.max":1,
 			"elect.rate": 3.5,
 			"space": 15
 		}
