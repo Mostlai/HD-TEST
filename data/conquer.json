@@ -22,8 +22,6 @@
 		},
 		"acost": {
 			"money": 150,
-			"qingjia": 40,
-			"zhongjia":30,
 			"human_power": 40,
 			"alculation": 10
 		},
