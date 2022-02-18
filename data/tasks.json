@@ -2783,11 +2783,10 @@
 		}
 	},
 	{
-		"id": "ljdyjg",
+		"id": "ljdyjg1",
 		"name": "逻辑单元加工",
 		"desc": "制作逻辑单元",
-		"verb": "研究中",
-		"max": 1,
+		"verb": "加工中",
 		"require": "g.signal>=1",
 		"length": 20,
 		"cost": {
