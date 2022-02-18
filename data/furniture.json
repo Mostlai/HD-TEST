@@ -690,7 +690,7 @@
 		},
 		"mod": {
 			"ganwu.max": 50,
-			"books.max": 8,
+			"books.max": 9,
 			"paper.max": 50,
 			"exe_paper.max": 15,
 			"star_map.max": 10,
