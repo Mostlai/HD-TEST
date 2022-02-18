@@ -623,7 +623,7 @@
 		"name": "护甲镀层",
 		"desc": "增加护甲能力",
 		"max": 1,
-		"require": "g.hjyj_1_3>=40",
+		"require": "g.hjyj_1_3>=1",
 		"cost": {
 			"lg": 7,
 			"r_adv_bzzj":5,
@@ -645,7 +645,7 @@
 		"name": "进阶镀层",
 		"desc": "增加护甲能力",
 		"max": 2,
-		"require": "g.hjyj_1_3>=40",
+		"require": "g.hjyj_1_3>=1",
 		"cost": {
 			"upd_hujiaducheng":1,
 			"lg": 7,
@@ -668,7 +668,7 @@
 		"name": "护甲容量扩容",
 		"desc": "",
 		"max": 2,
-		"require": "g.hjyj_1_3>=50 && g.shrlyj_1>=30",
+		"require": "g.hjyj_1_3>=1 && g.shrlyj_1>=30",
 		"cost": {
 			"lg": 7,
 			"r_adv_bzzj":5,
