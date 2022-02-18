@@ -5,7 +5,6 @@
 		"desc": "凝聚五环元素成衍生元素-五环点",
 		"tags": "元素制作",
 		"equneed": "g.adv_mix_1>=1",
-		"max":2,
 		"require": "g.xiulian_space_ysys>=1 && g.xiulian_space_yswd>=1 && g.xiulian_space_ysch>=1",
 		"level": 1,
 		"buy": {
@@ -40,7 +39,6 @@
 		"desc": "扭曲五环点成衍生不稳定元素-落日点【该配方初始成本较贵,需要建造家具或解锁升级降低成本】",
 		"tags": "元素制作",
 		"equneed": "g.adv_mix_1>=1",
-		"max":2,
 		"require": "g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
 		"level": 1,
 		"buy": {

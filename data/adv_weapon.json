@@ -6,6 +6,9 @@
 		"require":"g.hjyj_1_2>=1 && g.hjyj_1_1>=1",
 		"val": 0,
 		"max": 5,
+		"fill": [
+			"zhongjia"
+		],
 		"cost": {
 			"money": 100,
 			"cu_iron": 5,
@@ -25,6 +28,9 @@
 		"require":"g.hjyj_1_3>=1",
 		"val": 0,
 		"max": 5,
+		"fill": [
+			"heavyjia"
+		],
 		"mod": {
 			"f_power.max": 5,
 			"f_power":5
@@ -49,6 +55,9 @@
 		"require":"g.weapon_1>=3 && g.bio_metal_1>=5",
 		"val": 0,
 		"max": 2,
+		"fill": [
+			"qingjia"
+		],
 		"mod": {
 			"f_power.max": 5,
 			"f_power":5
