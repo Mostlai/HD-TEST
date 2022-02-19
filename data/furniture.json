@@ -816,6 +816,7 @@
 			"money": 200
 		},
 		"mod": {
+			"bdhxbjd.max": 5,
 			"human_power.max": -5,
 			"human_power.rate": 0.1,
 			"space": 10
@@ -983,7 +984,7 @@
 		"name": "冰冻核心补给点",
 		"desc": "花费人力前往冰冻核心矿点挖取核心,这个建筑需要一个保暖服装生产点",
 		"tags": "",
-		"max": 10,
+		"max": 15,
 		"need": "warm_clothe",
 		"require": "g.cold_core>=1 && g.rlgl>=1",
 		"repeat": true,
@@ -1001,7 +1002,7 @@
 		},
 		"mod": {
 			"human_power.max": -30,
-			"cold_core.rate": 0.01,
+			"cold_core.rate": 0.07,
 			"space": 15
 		}
 	},
