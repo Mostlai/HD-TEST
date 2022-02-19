@@ -3686,7 +3686,7 @@
 		"id": "zjchugui",
 		"name": "真界初归",
 		"desc": "到达内在的限制",
-		"require": "g.canglan>=1 && g.g.player.level>=39",
+		"require": "g.canglan>=1 && g.player.level>=39",
 		"max": 1,
 		"cost": {
 			"neizaiqianli":1,
