@@ -157,6 +157,7 @@
 	{
 		"id": "canglanxiezou",
 		"name": "苍蓝协奏",
+		"max":1,
 		"desc": "内在力量",
 		"verb": "",
 		"require": "g.canglan>=1",
