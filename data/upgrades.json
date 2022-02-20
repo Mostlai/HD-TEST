@@ -3423,7 +3423,7 @@
 		"id": "ldlyh_1",
 		"name": "劳动力优化",
 		"desc": "获取更多人力",
-		"require": "g.jjzshq>=5",
+		"require": "g.jjzshq>=1",
 		"max": 5,
 		"cost": {
 			"jls": 100,
