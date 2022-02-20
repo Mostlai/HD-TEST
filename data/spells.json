@@ -490,7 +490,7 @@
 			"red_jgsys": 1
 		},
 		"cost": {
-			"laser_ene":4.5,
+			"laser_ene":7.5,
 			"elect": 30,
 			"money": 200
 		},
