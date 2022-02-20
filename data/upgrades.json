@@ -4202,11 +4202,11 @@
 		}
 	},
 	{
-		"id": "changwnelengque",
+		"id": "changwnelengque1",
 		"name": "常温冷却",
 		"desc": "常温下进行冷却",
 		"require": "g.xiulian_jj_jliugeshi>=1",
-		"buy": {
+		"cost": {
 			"cold_core": 30,
 			"cbclb": 30,
 			"yjdl":20,
@@ -4221,11 +4221,11 @@
 		}
 	},
 	{
-		"id": "sanreshange",
+		"id": "sanreshange1",
 		"name": "散热栅格",
 		"desc": "",
 		"require": "g.xiulian_jj_jliugeshi>=1",
-		"buy": {
+		"cost": {
 			"jls": 60,
 			"cbclb": 30,
 			"yjdl":20,
