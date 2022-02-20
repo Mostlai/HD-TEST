@@ -3653,7 +3653,7 @@
 		"desc": "更高效的获取晶流水",
 		"tags": "",
 		"max":3,
-		"require": "g.changwnelengque>=1 && g.sanreshange>=1",
+		"require": "g.changwnelengque1>=1 && g.sanreshange1>=1",
 		"repeat": true,
 		"cost": {
 			"element_wuhuan": 20,
