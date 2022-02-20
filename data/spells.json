@@ -459,9 +459,8 @@
 		"name": "红极激光",
 		"desc":"",
 		"school": "激光",
-		"need":"g.red_laser>=1",
 		"locked":true,
-		"level": 5,
+		"level": 7,
 		"buy": {
 			"money": 5
 		},
@@ -485,7 +484,6 @@
 		"name": "血色万华流",
 		"desc":"超高能红极激光造成的毁灭性打击",
 		"school": "激光",
-		"need":"g.chaoshujujiao>=1",
 		"locked":true,
 		"level": 9,
 		"buy": {
