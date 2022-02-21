@@ -752,6 +752,7 @@
 		"id": "bianxiejd",
 		"name": "编写经典",
 		"desc": "写一部经典",
+		"tags":"生产",
 		"verb": "编写中",
 		"require": "g.yingmidianji>=1",
 		"length": 10,
