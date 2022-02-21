@@ -644,7 +644,7 @@
 		"desc": "安排人力来治愈自己的伤口",
 		"tags": "",
 		"require": "g.rlgl>=1 && g.lnylx>=2",
-		"max": 2,
+		"max": 5,
 		"repeat": true,
 		"cost": {
 			"human_power": 100,
@@ -1187,6 +1187,7 @@
 		"name": "20V配电器",
 		"desc": "能稳定提供20V级电源",
 		"tags": "TENTYV",
+		"max":1,
 		"require": "g.fanshe_building>=2&&g.fanshe_math>=4&&g.xiulian_energ_cold_1>=1",
 		"repeat": true,
 		"cost": {
@@ -1216,6 +1217,7 @@
 		"tags": "workspace,enchantsource",
 		"desc": "提供用于铭刻的工具和区域,此建筑需要接通20V级电源",
 		"need": "TENTYV",
+		"max":1,
 		"require": "g.mwxue>=1",
 		"cost": {
 			"cold_core": 10,
@@ -1240,6 +1242,7 @@
 		"name": "望远镜底座",
 		"desc": "一台低温望远镜的底座,此建筑需要接通20V级电源",
 		"tags": "TelescopeBase",
+		"max":1,
 		"require": "g.fanshe_building>=2&&g.xiulian_struct_cold_1>=1",
 		"need": "TENTYV",
 		"repeat": true,
@@ -1269,6 +1272,7 @@
 		"name": "望远镜镜片",
 		"desc": "一台低温望远镜的主镜片",
 		"tags": "Telescope",
+		"max":1,
 		"require": "g.fanshe_building>=2&&g.xiulian_info_cold_1>=1&&g.xiulian_eye_adv_astro>=1",
 		"need": "TelescopeBase",
 		"repeat": true,
@@ -1298,6 +1302,7 @@
 		"name": "低温生物实验室",
 		"desc": "小型生物实验室,此建筑需要接通20V级电源",
 		"tags": "ColdBio",
+		"max":1,
 		"require": "g.fanshe_building>=2&&g.xiulian_bio_cold_1>=1",
 		"need": "TENTYV",
 		"repeat": true,
@@ -2411,6 +2416,7 @@
 		"name": "20-10配电器",
 		"desc": "能稳定提供20V级电源和10V级电源",
 		"tags": "TENTYV,TENV",
+		"max":1,
 		"require": "g.xiulian_jihe_fuzajianzhu>=1",
 		"repeat": true,
 		"cost": {
@@ -3229,7 +3235,7 @@
 		"name": "材料包网格",
 		"desc": "派遣专人管理并大量存储材料包",
 		"tags": "",
-		"max":5,
+		"max":10,
 		"require": "g.xiulian_struct_cailiaozuhe>=1",
 		"repeat": true,
 		"cost": {
@@ -3257,6 +3263,7 @@
 		"name": "合金产线",
 		"desc": "自动化的融合铁板和铜板,此建筑需要接通20V级电源",
 		"tags": "",
+		"max":10,
 		"require": "g.xiulian_struct_gaowensl>=1",
 		"need": "TENTYV",
 		"repeat": true,
@@ -3288,6 +3295,7 @@
 		"name": "电缆仓储",
 		"desc": "派遣专人对电缆进行管理",
 		"tags": "",
+		"max":50,
 		"require": "g.cxdnsy>=10 && g.gwl>=1 && g.ytjn>=1",
 		"repeat": true,
 		"cost": {
@@ -3314,6 +3322,7 @@
 		"name": "高温实验室",
 		"desc": "一个配备了热阻绝和高效冷却的实验室,此建筑需要接通20V级电源",
 		"tags": "hotlab",
+		"max":1,
 		"require": "g.xiulian_struct_gaowensl>=1&&g.xiulian_struct_gaowenpb>=1",
 		"need": "TENTYV",
 		"repeat": true,
@@ -3342,6 +3351,7 @@
 		"name": "热屏蔽容器",
 		"desc": "存放危险的高温流",
 		"tags": "",
+		"max":50,
 		"require": "g.cbclb>=1 &&g.xiulian_struct_gaowenfh>=1 &&g.hotlab>=1",
 		"repeat": true,
 		"cost": {
@@ -3369,6 +3379,7 @@
 		"name": "黄泉收集站",
 		"desc": "在黄泉建造一个收集站来获取黄泉资源",
 		"tags": "",
+		"max":50,
 		"require": "g.xiulian_eye_huangquan>=1",
 		"repeat": true,
 		"cost": {
@@ -3398,6 +3409,7 @@
 		"name": "材料存储箱",
 		"desc": "较大的金属箱子",
 		"tags": "",
+		"max":50,
 		"require": "g.xiulian_struct_fenxi>=1",
 		"repeat": true,
 		"cost": {
@@ -3600,7 +3612,7 @@
 		"desc": "将灵木与烈石进行可控热反应",
 		"tags": "",
 		"max":2,
-		"require": "g.jlhrmoxing>=1",
+		"require": "g.gaoorebizhang>=1 && g.rezhifenxi>=1",
 		"repeat": true,
 		"cost": {
 			"yqlm": 25,

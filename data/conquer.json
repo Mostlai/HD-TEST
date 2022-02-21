@@ -147,7 +147,6 @@
 			"lxue": 5
 		},
 		"acost": {
-			"f_stress": 1,
 			"money": 1800,
 			"ganwu": 500,
 			"qingjia": 40,
@@ -166,6 +165,7 @@
 			"human_power.max": 50 
 		},
 		"result":{
+			"f_stress": -1,
 			"shenglingshi": true,
 			"shenglingshi": 1,
 			"yanzhandu": 33
