@@ -847,6 +847,25 @@
 		}
 	},
 	{
+		"id": "med_fram",
+		"name": "农场",
+		"desc": "生产粮食来加快人力恢复",
+		"tags": "",
+		"max": 10,
+		"require": "g.zhenliedianbota>=1",
+		"repeat": true,
+		"cost": {
+			"small_fram": 3,
+			"human_power": 1000,
+			"money": 2000
+		},
+		"mod": {
+			"human_power.max": -5,
+			"human_power.rate": 8,
+			"space": 20
+		}
+	},
+	{
 		"id": "small_cow",
 		"name": "小型牧场",
 		"desc": "花费人力经营一个小型牧场来获取钱币",
@@ -868,6 +887,25 @@
 			"human_power.max": -15,
 			"money.rate": 0.4,
 			"space":8
+		}
+	},
+	{
+		"id": "med_fram",
+		"name": "农场",
+		"desc": "生产粮食来加快人力恢复",
+		"tags": "",
+		"max": 10,
+		"require": "g.zhenliedianbota>=1",
+		"repeat": true,
+		"cost": {
+			"small_cow": 3,
+			"human_power": 1000,
+			"money": 2000
+		},
+		"mod": {
+			"human_power.max": -30,
+			"money.rate": 1,
+			"space":20
 		}
 	},
 	{
