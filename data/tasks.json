@@ -2787,6 +2787,7 @@
 		"id": "ljdyjg1",
 		"name": "逻辑单元加工",
 		"desc": "制作逻辑单元",
+		"tags":"生产",
 		"verb": "加工中",
 		"require": "g.signal>=1",
 		"length": 20,
