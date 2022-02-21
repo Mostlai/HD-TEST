@@ -890,9 +890,9 @@
 		}
 	},
 	{
-		"id": "med_fram",
-		"name": "农场",
-		"desc": "生产粮食来加快人力恢复",
+		"id": "med_cow",
+		"name": "牧场",
+		"desc": "花费人力经营一个牧场来获取钱币",
 		"tags": "",
 		"max": 10,
 		"require": "g.zhenliedianbota>=1",
