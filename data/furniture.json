@@ -343,6 +343,7 @@
 		"name": "稳定能输送机",
 		"desc": "能稳定提供10V级电能",
 		"tags": "TENV",
+		"max":1,
 		"require": "g.energ_high_1>=8&&g.crafting_1>=10",
 		"repeat": true,
 		"cost": {
@@ -1049,6 +1050,7 @@
 		"name": "小型蒸馏口",
 		"desc": "缓慢净化废热水,这个装置需求一个稳定的电能供给才能修建【稳定能输送机】",
 		"tags": "",
+		"max":10,
 		"need": "TENV",
 		"require": "g.frs>=1",
 		"repeat": true,
