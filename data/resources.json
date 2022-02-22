@@ -291,19 +291,6 @@
 		}
 	},
 	{
-		"id": "andan",
-		"name": "黯淡精华",
-		"desc": "",
-		"group": "精华",
-		"tags": "",
-		"max": 10,
-		"require": "g.xiulian_jj_hunluanges>=1",
-		"mod": {
-			"heli.rate": 0.01,
-			"chaos.rate": 0.01
-		}
-	},
-	{
 		"id": "huiguang",
 		"name": "辉光精华",
 		"desc": "天体运行之精华",
