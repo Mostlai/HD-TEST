@@ -35,6 +35,7 @@
 		"id": "freight_adv_1",
 		"name": "体力训练I",
 		"desc": "耗费体力运输重物,但是会缓慢提高体力上限",
+		"max": 8000,
 		"verb": "",
 		"require": "g.xiulian_ld_body_1>=1",
 		"cost": {
