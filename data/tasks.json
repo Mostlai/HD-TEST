@@ -204,7 +204,7 @@
 		"desc": "驱除1点乱邪,上限10次",
 		"max":10,
 		"verb": "",
-		"need":"g.ele_luanxie>=0",
+		"need":"g.ele_luanxie>0",
 		"require": "g.xiulian_jj_jcwh>=1",
 		"cost": {
 			"money":1000,
