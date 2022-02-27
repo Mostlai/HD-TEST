@@ -5154,7 +5154,7 @@
 		"desc": "专注于研究非实黄泉的实验室",
 		"tags": "unreal_lab",
 		"max":1,
-		"require": "g.gaosuxxgl>=1 && g.zshiwangge>=1 && g.g.hqbdtj>=1",
+		"require": "g.gaosuxxgl>=1 && g.zshiwangge>=1 && g.hqbdtj>=1",
 		"repeat": true,
 		"cost": {
 			"lxue": 20,
