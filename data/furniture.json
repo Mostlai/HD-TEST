@@ -4626,6 +4626,7 @@
 		"require": "g.ltsyjs>=1",
 		"repeat": true,
 		"cost": {
+			"element_shengwuzhuzhi": 5,
 			"baibaishu": 20,
 			"paper": 300,
 			"cu_iron": 300,
@@ -4655,6 +4656,7 @@
 		"require": "g.ltsyjs>=1",
 		"repeat": true,
 		"cost": {
+			"element_shengwuzhuzhi": 5,
 			"baibaishu": 20,
 			"paper": 300,
 			"cu_iron": 300,
@@ -4684,6 +4686,7 @@
 		"require": "g.suiskcpy>=1",
 		"repeat": true,
 		"cost": {
+			"element_shengwuzhuzhi": 5,
 			"baibaishu": 20,
 			"paper": 300,
 			"cu_iron": 300,
