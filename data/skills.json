@@ -1822,7 +1822,7 @@
 	{
 		"id": "hjgcx",
 		"name": "环境工程学",
-		"require": "g.ziranhjyj>=3 && g.ziranhjyj>=3 && g.hqbdtj>=3",
+		"require": "g.ziranhjyj>=3 && g.ziranswyj>=3 && g.shujujisuan>=3",
 		"level": 17,
 		"desc": "高效开发环境,学习需要绿色实验室",
 		"need": "g.green_lab>=1",
