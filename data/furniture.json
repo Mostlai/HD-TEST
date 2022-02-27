@@ -4737,7 +4737,7 @@
 		"repeat": true,
 		"cost": {
 			"cold_core": 50,
-			"swzhi": 0.2,
+			"qiyiyeti": 10,
 			"cishuadianquan": 1,
 			"lifeitable":1,
 			"yjswyb": 10,
