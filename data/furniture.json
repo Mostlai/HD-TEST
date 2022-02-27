@@ -5151,6 +5151,31 @@
 		}
 	},
 	{
+		"id": "jingdianyuelans",
+		"name": "经典阅览室",
+		"desc": "提高经典上限",
+		"tags": "",
+		"max":5,
+		"require": "g.jingdian>=5",
+		"repeat": true,
+		"cost": {
+			"ljdy": 5,
+			"jingdian": 5,
+			"tian": 60,
+			"cu_iron": 120,
+			"cu_copper": 150,
+			"iron_copper": 100,
+			"yjdl": 80,
+			"cbclb": 50,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -4,
+			"jingdian.max": 4,
+			"space": 20
+		}
+	},
+	{
 		"id": "fsyanjius",
 		"name": "非实研究所",
 		"desc": "专注于研究非实黄泉的实验室",
