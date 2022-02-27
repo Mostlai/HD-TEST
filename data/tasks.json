@@ -2339,7 +2339,7 @@
 		"tags":"生产",
 		"verb": "冲刷中",
 		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
-		"need": "g.bio_wash>=1 && g.bio_grind && g.bio_screen>=1 && g.bio_dry>=1",
+		"need": "g.bio_wash>=1 && g.bio_grind>=1 && g.bio_screen>=1 && g.bio_dry>=1",
 		"length": 15,
 		"fill":[
 			"swzhi"
