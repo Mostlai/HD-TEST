@@ -4971,6 +4971,25 @@
 		}
 	},
 	{
+		"id": "linggshengji",
+		"name": "灵光升级",
+		"desc": "花费灵光提高感悟上限",
+		"max": 15,
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"cost": {
+			"lg": 20,
+			"element_wuhuan": 10,
+			"ganwu": 1000,
+			"money": 1500,
+			"dirty_lingti": 20,
+			"zero_crystal": 50,
+			"alculation": 500
+		},
+		"mod":{
+			"ganwu.max": 50
+		}
+	},
+	{
 		"id": "siyubiji",
 		"name": "饲育笔记",
 		"desc": "一本记载了饲育各种生物的笔记",
