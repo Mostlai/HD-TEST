@@ -4005,7 +4005,7 @@
 		"desc": "研究使用生物学的热力机械",
 		"verb": "研究中",
 		"max": 1,
-		"require": "g.zhengtengshijie>=1",
+		"require": "g.zhengtengshijie>=1 && g.gaowendongli>=1",
 		"need": "g.jxrlsys>=1",
 		"length": 30,
 		"cost": {
