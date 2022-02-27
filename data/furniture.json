@@ -5108,6 +5108,8 @@
 		"mod": {
 			"elect.rate": -4,
 			"command_code": 3,
+			"jingdian.max": 2,
+			"ganwu.max": 50,
 			"fsbdsj.max": 6,
 			"ganwu.max": 50,
 			"books.max": 6,
