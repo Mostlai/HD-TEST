@@ -2592,6 +2592,171 @@
 		}
 	},
 	{
+		"id": "chaos_ld_hdsw",
+		"name": "混沌生物(流动)",
+		"desc": "微观下细胞进行混沌运动",
+		"tags": "流动",
+		"require": "g.wgswx>=1",
+		"max": 2,
+		"cost": {
+			"chaos": 35,
+			"jls":50,
+			"pyy": 10,
+			"fypyj": 10,
+			"yjswyb": 15,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 70,
+			"life_crystal": 15
+		},
+		"xiulianresult": {
+			"time": 365,
+			"chaos.rate": 0.3,
+			"chaos.max": 1,
+			"xiulian_wgshenwu":1
+		}
+	},
+	{
+		"id": "chaos_ld_wglt",
+		"name": "微观灵体(流动)",
+		"desc": "微观层次下研究灵体",
+		"tags": "流动",
+		"require": "g.wgswx>=1",
+		"max": 2,
+		"cost": {
+			"chaos": 35,
+			"dirty_lingti": 20,
+			"cold_core": 50,
+			"lxue": 20,
+			"pyy": 10,
+			"fypyj": 10,
+			"yjswyb": 15,
+			"money": 1500,
+			"ganwu": 700,
+			"zero_crystal": 70,
+			"life_crystal": 15
+		},
+		"xiulianresult": {
+			"time": 365,
+			"dirty_lingti.rate": 0.3,
+			"xiulian_wgshenwu":1
+		}
+	},
+	{
+		"id": "chaos_ly_zhenjieyan",
+		"name": "真解眼(利用)",
+		"desc": "直视混沌",
+		"tags": "利用",
+		"require": "g.unreal_lab>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"qiyiyeti": 10,
+			"chaos": 35,
+			"dirty_lingti": 20,
+			"cold_core": 50,
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"yjswyb": 20,
+			"money": 1500,
+			"ganwu": 1600,
+			"zero_crystal": 70,
+			"life_crystal": 15
+		},
+		"xiulianresult": {
+			"time": 365,
+			"chaos.rate": 2,
+			"xiulian_huangquanxiul":1
+		}
+	},
+	{
+		"id": "chaos_ly_hundraoliu",
+		"name": "混沌扰流(利用)",
+		"desc": "对抗混沌。注意,会产生1点乱邪",
+		"tags": "利用",
+		"require": "g.unreal_lab>=1",
+		"max": 2,
+		"cost": {
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"qiyiyeti": 10,
+			"chaos": 35,
+			"dirty_lingti": 20,
+			"cold_core": 50,
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"shenshi": 15,
+			"money": 1500,
+			"ganwu": 1600,
+			"zero_crystal": 70
+		},
+		"xiulianresult": {
+			"time": 155,
+			"ele_luanxie": 1,
+			"xiulian_huangquanxiul":1
+		}
+	},
+	{
+		"id": "chaos_ly_hundkongj",
+		"name": "混沌控件(利用)",
+		"desc": "学习如何使仪器在高混沌环境下能恢复大部分功能。注意,会产生1点乱邪",
+		"tags": "利用",
+		"require": "g.unreal_lab>=1",
+		"max": 2,
+		"cost": {
+			"element_luor": 10,
+			"yjdl": 70,
+			"ljdy": 10,
+			"qiyiyeti": 10,
+			"chaos": 35,
+			"dirty_lingti": 20,
+			"cold_core": 50,
+			"lxue": 30,
+			"shuaibai_core": 30,
+			"money": 2500,
+			"ganwu": 1600,
+			"zero_crystal": 70
+		},
+		"xiulianresult": {
+			"time": 155,
+			"ele_luanxie": 1,
+			"xiulian_huangquanxiul":1
+		}
+	},
+	{
+		"id": "chaos_yuansuydong",
+		"name": "元素涌动(元素能量)",
+		"desc": "利用元素产生持久能量。注意,会产生1点乱邪",
+		"tags": "元素能量",
+		"require": "g.unreal_lab>=1",
+		"max": 2,
+		"cost": {
+			"element_luor": 10,
+			"element_wuhuan": 20,
+			"element_gold": 25,
+			"element_wood": 25,
+			"element_water": 25,
+			"element_fire": 25,
+			"element_land": 25,
+			"yjdl": 70,
+			"ljdy": 10,
+			"qiyiyeti": 10,
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"money": 2500,
+			"ganwu": 1600,
+			"zero_crystal": 70
+		},
+		"xiulianresult": {
+			"time": 155,
+			"elect.max": 5,
+			"elect.rate": 5,
+			"xiulian_chaos_yuansuydong":1,
+			"xiulian_huangquanxiul":1
+		}
+	},
+	{
 		"id": "eye_yshyj",
 		"name": "元素化研究(观测之术)",
 		"desc": "解构生命",

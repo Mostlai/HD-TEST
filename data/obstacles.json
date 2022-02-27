@@ -1,0 +1,132 @@
+[
+	{
+		"id": "obs_hill",
+		"name": "丘陵",
+		"desc": "丘陵",
+		"tags": "",
+		"clean_need": "hill_res",
+		"require": "g.huanjjg>=1",
+		"max": 1000000000000,
+		"cost":{
+			"heli": 100000000000
+		},
+		"lhxy":{
+			"time": -365,
+			"money": 2500,
+			"ljdy": 20,
+			"gwl": 50,
+			"qingjia": 40,
+			"zhongjia":30,
+			"heavyjia": 30,
+			"wuzhuo": 50,
+			"bingdong": 50
+		},
+		"ele":{
+			"adv_snp_data": 1.5,
+			"snp_data": 45
+		},
+		"mod":{
+			"human_power.rate": 5,
+			"space.max": -70
+		}
+	},
+	{
+		"id": "obs_water",
+		"name": "湖泊",
+		"desc": "湖泊",
+		"tags": "",
+		"clean_need": "water_res",
+		"require": "g.huanjjg>=1",
+		"max": 1000000000000,
+		"cost":{
+			"heli": 100000000000
+		},
+		"lhxy":{
+			"time": -720,
+			"money": 2500,
+			"ljdy": 20,
+			"gwl": 50,
+			"element_luor": 10,
+			"qingjia": 40,
+			"zhongjia":30,
+			"heavyjia": 30,
+			"wuzhuo": 50,
+			"bingdong": 50
+		},
+		"ele":{
+			"adv_snp_data": 2,
+			"snp_data": 65
+		},
+		"mod":{
+			"money.rate": 2,
+			"space.max": -90
+		}
+	},
+	{
+		"id": "obs_basin",
+		"name": "盆地",
+		"desc": "盆地",
+		"tags": "",
+		"clean_need": "basin_res",
+		"require": "g.huanjjg>=1",
+		"max": 1000000000000,
+		"cost":{
+			"heli": 100000000000
+		},
+		"lhxy":{
+			"time": -900,
+			"money": 2500,
+			"ljdy": 20,
+			"gwl": 50,
+			"swzhi": 20,
+			"element_luor": 10,
+			"qingjia": 40,
+			"zhongjia":30,
+			"heavyjia": 30,
+			"wuzhuo": 50,
+			"bingdong": 50
+		},
+		"ele":{
+			"adv_snp_data": 3,
+			"snp_data": 45
+		},
+		"mod":{
+			"space.max": -50
+		}
+	},
+	{
+		"id": "obs_mount",
+		"name": "山脉",
+		"desc": "山脉",
+		"tags": "",
+		"clean_need": "mount_res",
+		"require": "g.huanjjg>=1",
+		"max": 1000000000000,
+		"cost":{
+			"heli": 100000000000
+		},
+		"lhxy":{
+			"time": -1300,
+			"money": 4000,
+			"ljdy": 20,
+			"gwl": 120,
+			"swzhi": 20,
+			"element_luor": 10,
+			"element_wuhuan": 20,
+			"qingjia": 50,
+			"zhongjia":50,
+			"heavyjia": 50,
+			"wuzhuo": 50,
+			"bingdong": 50
+		},
+		"ele":{
+			"adv_snp_data": 4,
+			"snp_data": 55
+		},
+		"mod":{
+			"money.rate": 3,
+			"ganwu.rate": 10,
+			"space.max": -100
+		}
+	}
+]

@@ -416,25 +416,6 @@
 		}
 	},
 	{
-		"id": "en_clarity",
-		"name": "clarity",
-		"only": "head",
-		"adj": "%i of %s",
-		"desc": "An enchantment to aid the mind.",
-		"level": 3,
-		"buy": {
-			"tomes": 3,
-			"research": 800
-		},
-		"length": 20,
-		"cost": {
-			"managem": 10
-		},
-		"alter": {
-			"mod.bf.rate": -0.5
-		}
-	},
-	{
 		"id": "en_stam1",
 		"name": "refreshment",
 		"verb": "enchanting",

@@ -296,7 +296,7 @@
 	{
 		"id": "elect_mod_1",
 		"name": "感应线圈I",
-		"max": 1,
+		"max": 5,
 		"desc": "用零结晶,铜板,铁板做的小型线圈",
 		"tags": "",
 		"require": "g.elect_expand>=1",
@@ -3616,7 +3616,7 @@
 		"mod": {
 			"elect.rate": -2,
 			"space": 1,
-			"extra_space": 36
+			"extra_space": 56
 		}
 	},
 	{
@@ -3884,6 +3884,244 @@
 		}
 	},
 	{
+		"id": "lengqueshes",
+		"name": "冷却设施",
+		"desc": "热力工程的基础建筑模块",
+		"tags": "",
+		"max":8,
+		"require": "g.religongc>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 30,
+			"element_luor": 5,
+			"qiyiyeti": 1,
+			"ljdy": 5,
+			"yjdl": 20,
+			"cbclb": 10,
+			"cu_copper": 100,
+			"cu_iron": 100,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": 0.2,
+			"elect.max": 0.5,
+			"jls.rate": 0.5,
+			"space": 15
+		}
+	},
+	{
+		"id": "gaowenronglu_co",
+		"name": "高温熔炉[铜]",
+		"desc": "高效生产铜板",
+		"tags": "",
+		"max":10,
+		"require": "g.adv_meatl_yelian>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 100,
+			"gwl": 50,
+			"ljdy": 5,
+			"yjdl": 60,
+			"cbclb": 50,
+			"cu_copper": 300,
+			"cu_iron": 300,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -2,
+			"cu_copper.rate": 1.5,
+			"space": 20
+		}
+	},
+	{
+		"id": "gaowenronglu_ir",
+		"name": "高温熔炉[铁]",
+		"desc": "高效生产铁板",
+		"tags": "",
+		"max":10,
+		"require": "g.adv_meatl_yelian>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 100,
+			"gwl": 50,
+			"ljdy": 5,
+			"yjdl": 60,
+			"cbclb": 50,
+			"cu_copper": 300,
+			"cu_iron": 300,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -2,
+			"cu_iron.rate": 1.5,
+			"space": 20
+		}
+	},
+	{
+		"id": "gaowenronglu_ti",
+		"name": "高温熔炉[钛]",
+		"desc": "高效生产钛板",
+		"tags": "",
+		"max":6,
+		"require": "g.adv_meatl_yelian>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 100,
+			"gwl": 50,
+			"ljdy": 5,
+			"yjdl": 60,
+			"cbclb": 50,
+			"tian": 40,
+			"cu_copper": 240,
+			"cu_iron": 140,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -4,
+			"tian.rate": 1,
+			"space": 25
+		}
+	},
+	{
+		"id": "gaowenronglu_sj",
+		"name": "高温熔炉[神经]",
+		"desc": "高效生产神经材料",
+		"tags": "",
+		"max":5,
+		"require": "g.adv_meatl_yelian>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 60,
+			"gwl": 50,
+			"ljdy": 5,
+			"yjdl": 60,
+			"cbclb": 50,
+			"tian": 40,
+			"sj_met": 50,
+			"cu_copper": 240,
+			"cu_iron": 140,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -5,
+			"sj_met.rate": 1,
+			"space": 25
+		}
+	},
+	{
+		"id": "gaowenronglu_fc",
+		"name": "高温熔炉[FC]",
+		"desc": "高效生产FC合金",
+		"tags": "",
+		"max":5,
+		"require": "g.adv_meatl_yelian>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 60,
+			"gwl": 50,
+			"ljdy": 5,
+			"yjdl": 60,
+			"cbclb": 50,
+			"tian": 40,
+			"iron_copper": 50,
+			"cu_copper": 240,
+			"cu_iron": 140,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -4.5,
+			"iron_copper.rate": 1,
+			"space": 25
+		}
+	},
+	{
+		"id": "ccrlxsys",
+		"name": "冲层热力实验室",
+		"desc": "专注于研究热力冲层的实验室,兼具了高温实验室的功能",
+		"tags": "adv_hot_lab,hotlab",
+		"max":1,
+		"require": "g.religongc>=1",
+		"repeat": true,
+		"cost": {
+			"gwl": 55,
+			"elect_mod_1":2,
+			"lengqueshes": 2,
+			"jls": 100,
+			"element_luor": 10,
+			"qiyiyeti": 5,
+			"ljdy": 15,
+			"yjdl": 85,
+			"cbclb": 50,
+			"sj_met": 50,
+			"tian": 50,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -6,
+			"space": 30
+		}
+	},
+	{
+		"id": "gyrlsys",
+		"name": "高压热力实验室",
+		"desc": "专注于研究高压高热环境的实验室,兼具了高温实验室的功能",
+		"tags": "adv_hot_lab,hotlab",
+		"max":1,
+		"require": "g.religongc>=1",
+		"repeat": true,
+		"cost": {
+			"gwl": 50,
+			"elect_mod_1":2,
+			"lengqueshes": 2,
+			"jls": 100,
+			"shuaibai_core": 10,
+			"ljdy": 15,
+			"yjdl": 85,
+			"cbclb": 50,
+			"sj_met": 50,
+			"tian": 50,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -8,
+			"space": 30
+		}
+	},
+	{
+		"id": "jxrlsys",
+		"name": "机械热力实验室",
+		"desc": "专注于研究抗高温机械的实验室,兼具了高温实验室的功能",
+		"tags": "adv_hot_lab,hotlab",
+		"max":1,
+		"require": "g.religongc>=1",
+		"repeat": true,
+		"cost": {
+			"gwl": 60,
+			"elect_mod_1":1,
+			"lengqueshes": 2,
+			"jls": 100,
+			"ljdy": 15,
+			"yjdl": 85,
+			"cbclb": 50,
+			"sj_met": 50,
+			"tian": 100,
+			"ganwu": 300,
+			"money": 600
+		},
+		"mod": {
+			"elect.rate": -3,
+			"space": 30
+		}
+	},
+	{
 		"id": "army_laser_charge",
 		"name": "军事激光充能座",
 		"desc": "自动对高能电容进行补充",
@@ -3902,8 +4140,8 @@
 			"money": 2500
 		},
 		"mod": {
-			"elect.rate": -7,
-			"laser_ene.rate": 0.001,
+			"elect.rate": -15,
+			"laser_ene.rate": 0.1,
 			"space": 15
 		}
 	},
@@ -3926,7 +4164,7 @@
 			"money": 2500
 		},
 		"mod": {
-			"elect.rate": -3,
+			"elect.rate": -5,
 			"laser_ene.max": 2,
 			"space": 15
 		}
@@ -3957,6 +4195,1332 @@
 			"yjswyb.rate": 0.007,
 			"elect.rate": -1,
 			"space": 30
+		}
+	},
+	{
+		"id": "ltxwsys",
+		"name": "灵体显微实验室",
+		"desc": "灵体显微实验室提供显微环境",
+		"tags": "bio,microscope",
+		"max":1,
+		"require": "g.xiulian_wgshenwu>=1",
+		"repeat": true,
+		"cost": {
+			"dirty_lingti": 20,
+			"yjswyb": 10,
+			"ljdy": 7,
+			"cbclb": 30,
+			"yjdl": 80,
+			"tian": 65,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 1700
+		},
+		"mod": {
+			"dirty_lingti.rate": 0.1,
+			"dirty_lingti.max": 5,
+			"yjswyb.rate": 0.007,
+			"elect.rate": -5,
+			"space": 30
+		}
+	},
+	{
+		"id": "shengwuyanjsys",
+		"name": "生物研究室",
+		"desc": "生物研究室是智能生物实验室的升级版本",
+		"tags": "bio,ColdBio",
+		"max":1,
+		"require": "g.xiulian_wgshenwu>=1",
+		"repeat": true,
+		"cost": {
+			"zhinnegswsys": 1,
+			"dirty_lingti": 20,
+			"sj_met": 60,
+			"yjswyb": 10,
+			"ljdy": 15,
+			"yjdl": 80,
+			"tian": 65,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 1700
+		},
+		"mod": {
+			"yjswyb.rate": 0.07,
+			"elect.rate": -10,
+			"space": 30
+		}
+	},
+	{
+		"id": "gaowenhgs",
+		"name": "高温烘干室",
+		"desc": "对生物器官进行烘干",
+		"tags": "bio_dry",
+		"max":1,
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"repeat": true,
+		"cost": {
+			"element_jidingzhi": 20,
+			"yxls": 25,
+			"cishuadianquan": 1,
+			"dirty_lingti": 20,
+			"sj_met": 60,
+			"yjswyb": 20,
+			"ljdy": 15,
+			"yjdl": 80,
+			"tian": 65,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 1700
+		},
+		"mod": {
+			"human_power.max": -500,
+			"element_shengwuqiguan.max": 10,
+			"elect.rate": -3,
+			"space": 15
+		}
+	},
+	{
+		"id": "gaowenhgs",
+		"name": "生物质筛选机",
+		"desc": "从生物组织中筛选生物质",
+		"tags": "bio_screen",
+		"max":1,
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"repeat": true,
+		"cost": {
+			"element_jidingzhi": 20,
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"sj_met": 60,
+			"yjswyb": 20,
+			"ljdy": 15,
+			"yjdl": 80,
+			"tian": 65,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 1700
+		},
+		"mod": {
+			"human_power.max": -500,
+			"element_shengwuzhuzhi.max": 10,
+			"elect.rate": -3,
+			"space": 15
+		}
+	},
+	{
+		"id": "jdzqxymj",
+		"name": "几丁质球形研磨机",
+		"desc": "把不规则的甲壳研磨成粉末",
+		"tags": "bio_grind",
+		"max":1,
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 30,
+			"element_jidingzhi": 20,
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"sj_met": 60,
+			"yjswyb": 20,
+			"ljdy": 15,
+			"yjdl": 80,
+			"tian": 65,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 1700
+		},
+		"mod": {
+			"human_power.max": -500,
+			"element_jidingzhi.max": 10,
+			"elect.rate": -5,
+			"space": 30
+		}
+	},
+	{
+		"id": "swcxc",
+		"name": "生物冲洗床",
+		"desc": "用晶流水冲洗含杂的生物质",
+		"tags": "bio_wash",
+		"max":1,
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"repeat": true,
+		"cost": {
+			"jls": 100,
+			"element_jidingzhi": 20,
+			"cold_core": 40,
+			"dirty_lingti": 20,
+			"sj_met": 60,
+			"yjswyb": 20,
+			"ljdy": 15,
+			"yjdl": 80,
+			"tian": 65,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 1700
+		},
+		"mod": {
+			"jls.rate": -0.1,
+			"human_power.max": -300,
+			"elect.rate": -5,
+			"space": 30
+		}
+	},
+	{
+		"id": "jiepushiyans",
+		"name": "解剖实验室",
+		"desc": "提供解剖环境(一级)",
+		"tags": "anatomy_1",
+		"max":1,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"r_adv_w_sj1": 5,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"cishuadianquan": 2,
+			"sj_met": 60,
+			"yjswyb": 10,
+			"ljdy": 15
+		},
+		"mod": {
+			"elect.rate": -3,
+			"space": 30
+		}
+	},
+	{
+		"id": "swzzlg",
+		"name": "生物组织冷柜",
+		"desc": "提供生物组织上限",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"pyy": 10,
+			"fypyj": 10,
+			"paper": 300,
+			"r_adv_bzzj": 10,
+			"life_crystal": 10,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"element_shengwuzhuzhi.max": 10,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "swqglg",
+		"name": "生物器官冷柜",
+		"desc": "提供生物器官上限",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"pyy": 10,
+			"fypyj": 10,
+			"paper": 300,
+			"r_adv_bzzj": 10,
+			"life_crystal": 10,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"element_shengwuqiguan.max": 10,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "jdzlg",
+		"name": "几丁质冷柜",
+		"desc": "提供几丁质上限",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"pyy": 10,
+			"fypyj": 10,
+			"paper": 300,
+			"r_adv_bzzj": 10,
+			"life_crystal": 10,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"element_jidingzhi.max": 10,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "baibaishulong",
+		"name": "🐭白白鼠笼",
+		"desc": "提供白白鼠上限",
+		"tags": "",
+		"max":10,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"paper": 300,
+			"r_adv_w_sj1": 2,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"baibaishu.max": 5,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "baibaishupbj",
+		"name": "🐭白白鼠跑步机",
+		"desc": "飞快的轮子",
+		"tags": "",
+		"max":10,
+		"require": "g.baibaishu>=1",
+		"repeat": true,
+		"cost": {
+			"baibaishu": 30,
+			"yjdl": 28,
+			"wgys": 10,
+			"cbclb": 20,
+			"books": 20,
+			"tian": 100,
+			"sj_met": 20,
+			"yjswyb": 4
+		},
+		"mod": {
+			"elect.rate": 1,
+			"space": 7
+		}
+	},
+	{
+		"id": "jbglong",
+		"name": "剑背龟笼",
+		"desc": "提供剑背龟上限",
+		"tags": "",
+		"max":10,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"paper": 300,
+			"r_adv_w_sj1": 2,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"jbgui.max": 5,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "ysxylong",
+		"name": "亚瑟蜥蜴笼",
+		"desc": "提供亚瑟蜥蜴上限",
+		"tags": "",
+		"max":10,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"paper": 300,
+			"r_adv_w_sj1": 2,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"yasexiyi.max": 5,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "qwdclong",
+		"name": "钳尾刀虫笼",
+		"desc": "提供钳尾刀虫上限",
+		"tags": "",
+		"max":10,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"paper": 300,
+			"r_adv_w_sj1": 2,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"qianwdc.max": 5,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "baibaishusyjd",
+		"name": "🐭白白鼠饲育基地",
+		"desc": "饲养白白鼠",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"shuiyinhua": 10,
+			"qianniuhua": 10,
+			"paper": 300,
+			"cu_iron": 300,
+			"yjdl": 60,
+			"gwl": 50,
+			"cixinglingtichang": 1,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100,
+			"sj_met": 20,
+			"yjswyb": 5
+		},
+		"mod": {
+			"command_code": 4,
+			"human_power.max": -100,
+			"baibaishu.max": 5,
+			"baibaishu.rate": 0.5,
+			"elect.rate": -3.5,
+			"space": 25
+		}
+	},
+	{
+		"id": "jianbeiguisyjd",
+		"name": "剑背龟饲育基地",
+		"desc": "饲养剑背龟",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"baibaishu": 20,
+			"paper": 300,
+			"cu_iron": 300,
+			"ljdy": 2,
+			"yjdl": 50,
+			"gwl": 50,
+			"cixinglingtichang": 1,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100
+		},
+		"mod": {
+			"command_code": 4,
+			"human_power.max": -400,
+			"jbgui.rate": 0.2,
+			"elect.rate": -3.5,
+			"space": 25
+		}
+	},
+	{
+		"id": "ysxysyjd",
+		"name": "亚瑟蜥蜴饲育基地",
+		"desc": "饲养亚瑟蜥蜴",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"baibaishu": 20,
+			"paper": 300,
+			"cu_iron": 300,
+			"ljdy": 2,
+			"yjdl": 50,
+			"gwl": 50,
+			"cixinglingtichang": 1,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100
+		},
+		"mod": {
+			"command_code": 4,
+			"human_power.max": -400,
+			"yasexiyi.rate": 0.2,
+			"elect.rate": -3.5,
+			"space": 25
+		}
+	},
+	{
+		"id": "qwdcsyjd",
+		"name": "钳尾刀虫饲育基地",
+		"desc": "饲养钳尾刀虫",
+		"tags": "",
+		"max":5,
+		"require": "g.suiskcpy>=1",
+		"repeat": true,
+		"cost": {
+			"baibaishu": 20,
+			"paper": 300,
+			"cu_iron": 300,
+			"ljdy": 2,
+			"yjdl": 50,
+			"gwl": 50,
+			"cixinglingtichang": 1,
+			"r_adv_bzzj": 6,
+			"books": 40,
+			"tian": 100,
+			"iron_copper": 100
+		},
+		"mod": {
+			"command_code": 4,
+			"human_power.max": -400,
+			"qianwdc.rate": 0.2,
+			"elect.rate": -3.5,
+			"space": 25
+		}
+	},
+	{
+		"id": "cixinglingtichang",
+		"name": "磁性灵体场",
+		"desc": "提供灵体性质生物上限",
+		"tags": "",
+		"max":5,
+		"require": "g.ltsyjs>=1",
+		"repeat": true,
+		"cost": {
+			"hongshan": 5,
+			"yanhuo": 8,
+			"lingrang": 10,
+			"cishuadianquan": 2,
+			"sj_met": 60,
+			"yjswyb": 10,
+			"ljdy": 6
+		},
+		"mod": {
+			"生物1级.max": 1,
+			"elect.rate": -3,
+			"space": 20
+		}
+	},
+	{
+		"id": "swzlenggui",
+		"name": "生物质冷柜",
+		"desc": "提供生物质上限",
+		"tags": "",
+		"max":5,
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"repeat": true,
+		"cost": {
+			"cold_core": 50,
+			"swzhi": 0.2,
+			"cishuadianquan": 1,
+			"lifeitable":1,
+			"yjswyb": 10,
+			"ljdy": 5
+		},
+		"mod": {
+			"swzhi.max": 10,
+			"elect.rate": -6,
+			"space": 25
+		}
+	},
+	{
+		"id": "swzhuiszhan",
+		"name": "生物质回收站",
+		"desc": "对【生物质冲刷】产生的废物进行回收,降低资金消耗",
+		"tags": "",
+		"max":1,
+		"require": "g.swzranshao>=1 && g.swzjiliang>=1 && g.wgswx>=3",
+		"repeat": true,
+		"cost": {
+			"star_map_1": 15,
+			"ljdy": 5,
+			"cixinglingtichang":1,
+			"cold_core": 50,
+			"swzhi": 1,
+			"yjswyb": 20
+		},
+		"mod": {
+			"command_code": 5,
+			"human_power.max": -500,
+			"elect.rate": -3,
+			"swztaoxi.cost.money": -1000,
+			"space": 18
+		}
+	},
+	{
+		"id": "swszsxqi",
+		"name": "生物算子筛选器",
+		"desc": "使用一算子来优化【生物质冲刷】，大幅降低生物材料的使用量",
+		"tags": "",
+		"max":1,
+		"require": "g.swzranshao>=1 && g.swzjiliang>=1 && g.wgswx>=3",
+		"repeat": true,
+		"cost": {
+			"ljdy": 10,
+			"yisuanzi": 4,
+			"cixinglingtichang":1,
+			"cold_core": 50,
+			"swzhi": 1,
+			"yjswyb": 20
+		},
+		"mod": {
+			"elect.rate": -8,
+			"swztaoxi.cost.element_jidingzhi": -10,
+			"swztaoxi.cost.element_shengwuqiguan": -10,
+			"swztaoxi.cost.element_shengwuzhuzhi": -10,
+			"space": 25
+		}
+	},
+	{
+		"id": "swhxlqq",
+		"name": "生物回旋冷凝器",
+		"desc": "通过冷却设施来优化【生物质冲刷】，降低晶流水和高温流的消耗",
+		"tags": "",
+		"max":5,
+		"require": "g.swzranshao>=1 && g.swzjiliang>=1 && g.wgswx>=3",
+		"repeat": true,
+		"cost": {
+			"life_crystal": 5,
+			"ljdy": 2,
+			"yjdl": 80,
+			"cbclb": 40,
+			"jls": 150,
+			"lengqueshes": 1,
+			"cold_core": 50,
+			"yjswyb": 20
+		},
+		"mod": {
+			"elect.rate": -5,
+			"swztaoxi.cost.jls": -16,
+			"swztaoxi.cost.gwl": -6,
+			"space": 10
+		}
+	},
+	{
+		"id": "swzjzsys",
+		"name": "生物质精制实验室",
+		"desc": "研究如何降低【生物质冲刷】中的培养材料使用",
+		"tags": "",
+		"max":1,
+		"require": "g.swzranshao>=1 && g.swzjiliang>=1 && g.wgswx>=3",
+		"repeat": true,
+		"cost": {
+			"star_map_1": 5,
+			"life_crystal": 5,
+			"ljdy": 7,
+			"cold_bio_lab":1,
+			"swzhi": 10,
+			"yjdl": 80,
+			"cbclb": 40,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -10,
+			"swztaoxi.cost.pyy": -14,
+			"swztaoxi.cost.fypyj": -14,
+			"space": 20
+		}
+	},
+	{
+		"id": "swtichunqi",
+		"name": "生物提纯器",
+		"desc": "提高【生物质冲刷】的产量",
+		"tags": "",
+		"max":5,
+		"require": "g.lsesys>=1 && g.wgswx>=4",
+		"repeat": true,
+		"cost": {
+			"ljdy": 5,
+			"lengqueshes":1,
+			"swzhi": 2,
+			"yjdl": 80,
+			"cbclb": 40,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -5,
+			"swztaoxi.result.swzhi": 0.5,
+			"space": 9
+		}
+	},
+	{
+		"id": "shengwuzhifadianzhan",
+		"name": "生物质发电站",
+		"desc": "生物质发电",
+		"tags": "",
+		"max":4,
+		"require": "g.swdianyanjiu>=2",
+		"repeat": true,
+		"cost": {
+			"ljdy": 5,
+			"gwl": 40,
+			"elect_gen": 2,
+			"swzhi": 10,
+			"yjdl": 80,
+			"cbclb": 40,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": 15,
+			"space": 20
+		}
+	},
+	{
+		"id": "rsswzfdz",
+		"name": "燃烧生物质发电站",
+		"desc": "通过燃烧生物质进行发电",
+		"tags": "",
+		"max":3,
+		"require": "g.shengwurexcueyanj>=3 && g.yanchenchuli>=1",
+		"repeat": true,
+		"cost": {
+			"ljdy": 1,
+			"gwl": 40,
+			"lengqueshes":1,
+			"cishuadianquan":1,
+			"yxls": 20,
+			"swzhi": 20,
+			"yjdl": 50,
+			"cbclb": 40,
+			"jls": 150
+		},
+		"mod": {
+			"swzhi.rate": -0.0001,
+			"elect.rate": 40,
+			"space": 35
+		}
+	},
+	{
+		"id": "hqtanzhen",
+		"name": "黄泉探针",
+		"desc": "承载神识的无人化探针,只能承担简单的勘测与收集任务",
+		"tags": "",
+		"max":10,
+		"require": "g.hqbdtj>=1",
+		"repeat": true,
+		"cost": {
+			"back_dream": 20,
+			"ltxb": 1,
+			"shenshi": 15,
+			"lg": 30,
+			"gwl": 60,
+			"lxue": 30,
+			"shuaibai_core": 30,
+			"human_power": 2000,
+			"money": 2500,
+			"cbclb": 40,
+			"super_mind": 30
+		},
+		"mod": {
+			"shenshi.max": -0.1,
+			"lxue.rate": 0.1,
+			"shuaibai_core.rate": 0.1,
+			"space": 5
+		}
+	},
+	{
+		"id": "yuansurechi",
+		"name": "元素热池",
+		"desc": "小型化的高效发电方案",
+		"tags": "",
+		"max":10,
+		"require": "g.xiulian_chaos_yuansuydong>=1",
+		"repeat": true,
+		"cost": {
+			"element_gold": 10,
+			"element_wood": 10,
+			"element_water": 10,
+			"element_fire": 10,
+			"element_land": 10,
+			"cold_core": 10,
+			"tian": 25,
+			"sj_met": 20,
+			"iron_copper": 30,
+			"human_power": 500,
+			"money": 1000,
+			"cbclb": 20
+		},
+		"mod": {
+			"elect.max": 0.1,
+			"elect.rate": 1,
+			"space": 2
+		}
+	},
+	{
+		"id": "huangquanmao",
+		"name": "黄泉锚",
+		"desc": "稳定现实物体，提供1点黄泉研究基础【需要3点】",
+		"tags": "unreal_point",
+		"max":1,
+		"require": "g.xiulian_huangquanxiul>=4",
+		"repeat": true,
+		"cost": {
+			"back_dream": 10,
+			"yuansurechi":1,
+			"ltxb": 1,
+			"ltwdq":1,
+			"tian": 100,
+			"cu_copper": 300,
+			"cu_iron": 300,
+			"jingdian": 20,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"elect.rate": -3,
+			"space": 15
+		}
+	},
+	{
+		"id": "huangquanbujipt",
+		"name": "黄泉补给平台",
+		"desc": "负责长期提高黄泉维护物质，提供1点黄泉研究基础【需要3点】",
+		"tags": "unreal_point",
+		"max":1,
+		"require": "g.xiulian_huangquanxiul>=4",
+		"repeat": true,
+		"cost": {
+			"back_dream": 20,
+			"cangku": 5,
+			"ltxb": 1,
+			"yqlm": 20,
+			"zdht": 20,
+			"tian": 100,
+			"cu_copper": 300,
+			"cu_iron": 300,
+			"jingdian": 20,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"command_code": 2,
+			"human_power.rate": 10,
+			"money.rate": -2,
+			"space": 30
+		}
+	},
+	{
+		"id": "hqzhusd",
+		"name": "黄泉驻守点",
+		"desc": "提供人员在黄泉的居住地，提供1点黄泉研究基础【需要3点】",
+		"tags": "unreal_point",
+		"max":1,
+		"require": "g.xiulian_huangquanxiul>=4",
+		"repeat": true,
+		"cost": {
+			"back_dream": 20,
+			"yuansurechi": 5,
+			"ltxb": 1,
+			"life_crystal": 10,
+			"lxue": 30,
+			"shuaibai_core": 30,
+			"jingdian": 20,
+			"kangyaohuanjiebao": 3,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"command_code": 5,
+			"human_power.rate": 5,
+			"back_dream.rate": 0.1,
+			"human_power.max": 300,
+			"space": 40
+		}
+	},
+	{
+		"id": "yizhirongqi",
+		"name": "抑制容器",
+		"desc": "能够存放更多灵血和衰败核心",
+		"tags": "",
+		"max":5,
+		"require": "g.hqbdtj>=1",
+		"repeat": true,
+		"cost": {
+			"ljdy": 4,
+			"lg": 30,
+			"gwl": 60,
+			"yjdl": 70,
+			"paper": 300,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"human_power": 2000,
+			"money": 2500,
+			"cbclb": 40,
+			"super_mind": 30
+		},
+		"mod": {
+			"lxue.max": 8,
+			"shuaibai_core.max": 8,
+			"space": 15
+		}
+	},
+	{
+		"id": "zhishimailuo",
+		"name": "知识脉络",
+		"desc": "快速处理与高效容纳知识",
+		"tags": "",
+		"max":5,
+		"require": "g.gaosuxxgl>=1 && g.zshiwangge>=1",
+		"repeat": true,
+		"cost": {
+			"elect": 10,
+			"xxcls": 1,
+			"books": 60,
+			"ljdy": 15,
+			"cxdljk": 1,
+			"tian": 60,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"iron_copper": 100,
+			"shenshi": 15,
+			"yjdl": 80,
+			"cbclb": 40,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -4,
+			"command_code": 3,
+			"fsbdsj.max": 6,
+			"ganwu.max": 50,
+			"books.max": 6,
+			"paper.max": 30,
+			"exe_paper.max": 15,
+			"star_map.max": 10,
+			"star_map_1.max": 5,
+			"snp_data.max": 10,
+			"alculation.max": -100,
+			"human_power.max": -200,
+			"space": 30
+		}
+	},
+	{
+		"id": "cbgzqi",
+		"name": "纯白构造器",
+		"desc": "自动生产纯白材料包",
+		"tags": "",
+		"max":5,
+		"require": "g.gaosuxxgl>=1 && g.zshiwangge>=1",
+		"repeat": true,
+		"cost": {
+			"elect": 10,
+			"ljdy": 5,
+			"cxdljk": 1,
+			"tian": 60,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"iron_copper": 100,
+			"shenshi": 15,
+			"yjdl": 80,
+			"cbclb": 50,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -4,
+			"cbclb.rate": 0.4,
+			"space": 30
+		}
+	},
+	{
+		"id": "fsyanjius",
+		"name": "非实研究所",
+		"desc": "专注于研究非实黄泉的实验室",
+		"tags": "unreal_lab",
+		"max":1,
+		"require": "g.gaosuxxgl>=1 && g.zshiwangge>=1 && g.g.hqbdtj>=1",
+		"repeat": true,
+		"cost": {
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"star_map_1": 15,
+			"life_crystal": 10,
+			"ljdy": 18,
+			"cxdljk": 1,
+			"army_laser_chest":1,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -5,
+			"lxue.rate": 0.1,
+			"shuaibai_core.rate": 0.1,
+			"shuaibai.rate": 0.1,
+			"space": 30
+		}
+	},
+	{
+		"id": "fifty_sorce",
+		"name": "50V配电器",
+		"desc": "能稳定提供50V级电源",
+		"tags": "FIFTYV",
+		"max":1,
+		"require": "g.jiezikwjk>=1",
+		"repeat": true,
+		"cost": {
+			"yuansurechi": 10,
+			"cxdljk": 2,
+			"ljdy": 20,
+			"cxdrong":2,
+			"zero_crystal": 70,
+			"super_mind": 25,
+			"human_power": 3000,
+			"money": 3000
+		},
+		"mod": {
+			"elect.max":-1,
+			"elect.rate": -3,
+			"space": 20
+		}
+	},
+	{
+		"id": "bxjgy",
+		"name": "波形解构仪",
+		"desc": "解构非实波段数据中的波形,需要接通【50V配电器】",
+		"tags": "wave_ana",
+		"need":"FIFTYV",
+		"max":1,
+		"require": "g.jiezikwjk>=1",
+		"repeat": true,
+		"cost": {
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"star_map_1": 15,
+			"fsbdsj": 10,
+			"ljdy": 10,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -5,
+			"space": 30
+		}
+	},
+	{
+		"id": "ppzsq",
+		"name": "频谱指示器",
+		"desc": "解构非实波段数据中的频率,需要接通【50V配电器】",
+		"tags": "spect_ind",
+		"need":"FIFTYV",
+		"max":1,
+		"require": "g.jiezikwjk>=1",
+		"repeat": true,
+		"cost": {
+			"lxue": 40,
+			"shuaibai_core": 40,
+			"star_map_1": 15,
+			"fsbdsj": 10,
+			"ljdy": 10,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -5,
+			"space": 25
+		}
+	},
+	{
+		"id": "rgjxban",
+		"name": "人工接线板",
+		"desc": "自动生产逻辑单元,需要接通【50V配电器】",
+		"tags": "",
+		"need":"FIFTYV",
+		"max":5,
+		"require": "g.fsbdsj>=1",
+		"repeat": true,
+		"cost": {
+			"gwl": 100,
+			"books": 60,
+			"star_map_1": 20,
+			"fsbdsj": 20,
+			"ljdy": 20,
+			"cxdljk": 2,
+			"yuansurechi": 5,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"ljdy.rate": 0.1,
+			"human_power.max": -600,
+			"yjdl.rate": -0.1,
+			"cbclb.rate": -0.2,
+			"iron_copper.rate": -0.2,
+			"elect.rate": -5,
+			"money.rate": -0.7,
+			"space": 28
+		}
+	},
+	{
+		"id": "wuqikj",
+		"name": "武器控件",
+		"desc": "提高先进武器上限,需要接通【50V配电器】",
+		"tags": "",
+		"need":"FIFTYV",
+		"max":10,
+		"require": "g.fsbdsj>=1",
+		"repeat": true,
+		"cost": {
+			"gwl": 100,
+			"books": 60,
+			"star_map_1": 20,
+			"fsbdsj": 5,
+			"ljdy": 10,
+			"yuansurechi": 5,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"r_adv_bzzj.max": 5,
+			"r_adv_bzhj.max": 5,
+			"r_adv_w_sj1.max": 5,
+			"r_adv_w_sj2.max": 5,
+			"r_adv_w_sj3.max": 5,
+			"space": 13
+		}
+	},
+	{
+		"id": "lsesys",
+		"name": "绿色实验室",
+		"desc": "基于生物质的新型生物实验室",
+		"tags": "green_lab,bio,ColdBio",
+		"max":1,
+		"require": "g.swzhi>=1",
+		"repeat": true,
+		"cost": {
+			"star_map_1": 15,
+			"life_crystal": 10,
+			"ljdy": 18,
+			"cold_bio_lab":1,
+			"cxdljk": 2,
+			"tian": 60,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"iron_copper": 100,
+			"swzhi": 15,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -15,
+			"pyy.rate": 0.1,
+			"fypyj.rate": 0.1,
+			"yjswyb.rate": 0.1,
+			"space": 27
+		}
+	},
+	{
+		"id": "qlingzzy",
+		"name": "丘陵种植园",
+		"desc": "在丘陵上建造特殊的种植园",
+		"tags": "",
+		"max":10,
+		"require": "g.liticehui_hill>=1",
+		"need": "g.obs_hill>=1",
+		"repeat": true,
+		"cost": {
+			"money": 2000,
+			"yqlm": 20,
+			"tian": 40,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"iron_copper": 30,
+			"swzhi": 15,
+			"yjdl": 20
+		},
+		"mod": {
+			"shuiyinhua.rate": 0.1,
+			"huohua.rate": 0.1,
+			"diluhua.rate": 0.1,
+			"shuiteng.rate": 0.1,
+			"hongshan.rate": 0.1,
+			"money.rate": 0.8,
+			"obs_hill": 0.2,
+			"hill_res": 0.2,
+			"space": 15
+		}
+	},
+	{
+		"id": "qlctkzhan",
+		"name": "丘陵赤铁矿站",
+		"desc": "在丘陵上挖掘赤铁",
+		"tags": "",
+		"max":10,
+		"require": "g.liticehui_hill>=1",
+		"need": "g.obs_hill>=1",
+		"repeat": true,
+		"cost": {
+			"money": 2000,
+			"zdht": 20,
+			"tian": 40,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"iron_copper": 30,
+			"swzhi": 15,
+			"yjdl": 20
+		},
+		"mod": {
+			"command_code": 3,
+			"human_power.max": -400,
+			"citie.rate": 0.2,
+			"cu_iron.rate": 0.7,
+			"obs_hill": 0.2,
+			"hill_res": 0.2,
+			"space": 15
+		}
+	},
+	{
+		"id": "hupoyuwu",
+		"name": "湖泊渔屋",
+		"desc": "设置渔屋获取财富",
+		"tags": "",
+		"max":30,
+		"require": "g.liticehui_water>=1",
+		"need": "g.obs_water>=1",
+		"repeat": true,
+		"cost": {
+			"money": 1500,
+			"wgys": 20,
+			"tian": 40,
+			"baibaishu": 30,
+			"ljdy": 1,
+			"swzhi": 10,
+			"yjdl": 50
+		},
+		"mod": {
+			"command_code": 1,
+			"money.rate": 0.5,
+			"obs_water": 0.1,
+			"water_res": 0.1,
+			"space": 10
+		}
+	},
+	{
+		"id": "pendiyanksjz",
+		"name": "盆地岩块收集站",
+		"desc": "收集岩块和岩火",
+		"tags": "",
+		"max":10,
+		"require": "g.liticehui_basin>=1",
+		"need": "g.obs_basin>=1",
+		"repeat": true,
+		"cost": {
+			"money": 1500,
+			"zdht": 20,
+			"tian": 40,
+			"yankuai": 5,
+			"ljdy": 1,
+			"swzhi": 10,
+			"yjdl": 50
+		},
+		"mod": {
+			"command_code": 1,
+			"human_power.max": -200,
+			"yanhuo.rate": 0.1,
+			"yankuai.rate": 0.1,
+			"obs_basin": 0.1,
+			"basin_res": 0.1,
+			"space": 10
+		}
+	},
+	{
+		"id": "smtongkzd",
+		"name": "山脉铜矿站点",
+		"desc": "自动获取铜板",
+		"tags": "",
+		"max":10,
+		"require": "g.liticehui_mount>=1",
+		"need": "g.obs_mount>=1",
+		"repeat": true,
+		"cost": {
+			"money": 1500,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"zdht": 20,
+			"tian": 40,
+			"ljdy": 5,
+			"swzhi": 10,
+			"yjdl": 50
+		},
+		"mod": {
+			"command_code": 2,
+			"human_power.max": -300,
+			"cu_copper.rate": 0.5,
+			"obs_mount": 0.1,
+			"mount_res": 0.1,
+			"space": 15
+		}
+	},
+	{
+		"id": "cehuizxz",
+		"name": "测绘中心站",
+		"desc": "存放进阶测绘资料",
+		"tags": "",
+		"max":5,
+		"require": "g.hjgcx>=1",
+		"repeat": true,
+		"cost": {
+			"fsbdsj": 10,
+			"snp_data": 150,
+			"money": 3600,
+			"cu_iron": 350,
+			"cu_copper": 350,
+			"tian": 100,
+			"ljdy": 20,
+			"swzhi": 20,
+			"yjdl": 50
+		},
+		"mod": {
+			"snp_data.rate": 0.5,
+			"adv_snp_data.max": 8,
+			"space": 21
 		}
 	},
 	{

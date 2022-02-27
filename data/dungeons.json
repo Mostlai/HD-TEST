@@ -538,6 +538,52 @@
 		]
 	},
 	{
+		"id": "daxzc",
+		"name": "大型战场",
+		"desc": "曾经发生战争",
+		"require": "evt_zhengzhan",
+		"level": 30,
+		"dist": 600,
+		"length": 40,
+		"run": {
+			"hp": 2,
+			"stamina": 1,
+			"tili": 2,
+			"time": -2
+		},
+		"result": {
+			"snp_data": 10,
+			"zero_crystal": 20,
+			"shenglingshi":5,
+			"dirty_lingti": 5
+		},
+		"boss": "huzhenshi",
+		"spawns": [
+			[
+				"m_solid_4",
+				"m_solid_4",
+				"m_solid_4",
+				"baifuzhang",
+				"baifuzhang"
+			],
+			[
+				"m_solid_4",
+				"xiantianzhuji",
+				"baifuzhang",
+				"xiantianzhuji"
+			],
+			[
+				"xiantianzhuji",
+				"baifuzhang",
+				"m_solid_4"
+			],
+			[
+				"baifuzhang",
+				"baifuzhang"
+			]
+		]
+	},
+	{
 		"id": "yichongyuesheng_fuben",
 		"name": "基魂跃升",
 		"sym": "☯⚡",

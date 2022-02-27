@@ -160,6 +160,27 @@
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
+		"id": "reli_core",
+		"name": "微型热能堆[AL]",
+		"color": "#2980B9",
+		"desc": "小型化的阳换热器,也能提供微弱的防护",
+		"equneed":"g.AL>=1",
+		"armor": 5,
+		"slot": "trinket",
+		"enchants": 6,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"yxls.rate": -0.01,
+				"shenshi.max": -1,
+				"elect.max": 10,
+				"elect.rate": 15
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "tian_helmet",
 		"name": "钛合头盔[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -225,6 +246,34 @@
 				"shenshi.max": -1,
 				"elect.max": -3,
 				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "relimianju",
+		"name": "热力面具[AL]",
+		"color": "#2980B9",
+		"desc": "精巧的面甲结构,带给你清醒的思维",
+		"equneed":"g.AL>=1",
+		"armor": 30,
+		"slot": "head",
+		"enchants": 6,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 20,
+				"lg.rate": 0.5,
+				"super_mind.rate": 0.5,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5,
+				"shenshi.max": -2,
+				"elect.max": -5,
+				"elect.rate": -4
 			}
 		},
 		"flavor": "装备需求:[AL]级神机"
@@ -339,6 +388,34 @@
 				"shenshi.max": -1,
 				"elect.max": -5,
 				"elect.rate": -2
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "rlgcpao",
+		"name": "热力工程袍[AL]",
+		"desc": "优雅的烫金袍子,内部复合了逻辑单元",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 35,
+		"slot": "chest",
+		"enchants": 6,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 25,
+				"lg.rate": 0.2,
+				"super_mind.rate": 0.2,
+				"self.resist.wood": 15,
+				"self.resist.fire": 30,
+				"self.resist.land": 15,
+				"self.resist.gold": 15,
+				"self.resist.water": 15,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -6
 			}
 		},
 		"flavor": "装备需求:[AL]级神机"
@@ -525,6 +602,27 @@
 		}
 	},
 	{
+		"id": "jixiepijian",
+		"name": "机械披肩[AL]",
+		"color": "#2980B9",
+		"desc": "精致的机械披肩",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "back",
+		"enchants": 6,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 15,
+				"jls.rate": 0.3,
+				"gwl.rate": 0.3,
+				"self.speed": 5
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "cbxl",
 		"name": "纯白项链",
 		"desc": "提高对金的抗性",
@@ -560,6 +658,25 @@
 		}
 	},
 	{
+		"id": "jixiejiezhi",
+		"name": "机械戒指[AL]",
+		"color": "#2980B9",
+		"desc": "精致的机械戒指,提供感悟速率",
+		"equneed":"g.AL>=1",
+		"armor": 2,
+		"slot": "fingers",
+		"enchants": 6,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"ganwu.rate": 1.5
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
 		"id": "cbzw",
 		"name": "纯白之握",
 		"desc": "提高对金的抗性",
@@ -577,156 +694,70 @@
 		}
 	},
 	{
-		"id": "padded armor",
-		"armor": 3,
-		"slot": "chest",
-		"cost": 150,
-		"level": 4,
-		"only": "leather,cloth"
-	},
-	{
-		"id": "chainmail",
-		"armor": 5,
-		"slot": "chest",
-		"cost": 350,
-		"level": 5,
-		"enchants": 2,
-		"only": "metal,ethereal"
-	},
-	{
-		"id": "plate mail",
-		"armor": 8,
-		"slot": "chest",
-		"cost": 700,
-		"level": 9,
-		"enchants": 2,
-		"only": "metal,ethereal"
-	},
-	{
-		"id": "robe",
-		"armor": 0,
-		"slot": "chest",
-		"cost": 50,
-		"only": "cloth",
-		"enchants": 10
-	},
-	{
-		"id": "conical helm",
-		"armor": 3,
-		"slot": "head",
-		"cost": 40,
-		"only": "metal,ethereal"
-	},
-	{
-		"id": "belt",
-		"armor": 0,
-		"slot": "waist",
-		"cost": 30,
-		"enchants": 2,
-		"only": "natural,cloth"
-	},
-	{
-		"id": "girdle",
-		"armor": 1,
-		"slot": "waist",
-		"cost": 50
-	},
-	{
-		"id": "cincture",
-		"armor": 1,
-		"slot": "waist",
-		"cost": 50,
-		"enchants": 3
-	},
-	{
 		"id": "sash",
+		"name":"腰带",
 		"armor": 0,
 		"slot": "waist",
 		"cost": 10,
 		"only": "cloth",
-		"enchants": 3
-	},
-	{
-		"id": "cape",
-		"armor": 0,
-		"slot": "back",
-		"cost": 50,
-		"only": "cloth",
-		"enchants": 3
-	},
-	{
-		"id": "cloak",
-		"armor": 1,
-		"slot": "back",
-		"cost": 50,
-		"only": "cloth",
-		"enchants": 5
+		"enchants": 1
 	},
 	{
 		"id": "wings",
+		"name":"披风",
 		"armor": 1,
 		"slot": "back",
 		"level": 20,
 		"cost": 5000,
 		"properties": "10%",
-		"enchants": 4
+		"enchants": 1
 	},
 	{
 		"id": "greaves",
+		"name":"裤子",
 		"armor": 1,
 		"slot": "shins",
 		"cost": 30
 	},
 	{
-		"id": "pendant",
-		"armor": 0,
-		"slot": "neck",
-		"cost": 300,
-		"properties": "5%",
-		"enchants": 4
-	},
-	{
-		"id": "collar",
-		"armor": 1,
-		"slot": "neck",
-		"cost": 30,
-		"enchants": 2
-	},
-	{
 		"id": "amulet",
+		"name":"围脖",
 		"armor": 0,
 		"slot": "neck",
 		"cost": 500,
 		"level": 15,
 		"properties": "10%",
-		"enchants": 5
+		"enchants": 1
 	},
 	{
 		"id": "necklace",
+		"name":"项链",
 		"armor": 0,
 		"slot": "neck",
 		"cost": 50,
 		"properties": "1%",
-		"enchants": 3
+		"enchants": 1
 	},
 	{
 		"id": "band",
+		"name":"扳指",
 		"armor": 0,
 		"slot": "fingers",
 		"kind": "ring",
 		"cost": 50,
 		"level": 3,
 		"properties": "1%",
-		"enchants": 3
+		"enchants": 1
 	},
 	{
 		"id": "loop",
+		"name":"套圈",
 		"armor": 0,
 		"slot": "fingers",
 		"kind": "ring",
 		"cost": 10,
 		"level": 1,
-		"enchants": 2
+		"enchants": 0
 	},
 	{
 		"id": "ring",
@@ -737,6 +768,6 @@
 		"level": 5,
 		"cost": 100,
 		"properties": "3%",
-		"enchants": 5
+		"enchants": 1
 	}
 ]

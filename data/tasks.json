@@ -183,6 +183,32 @@
 		}
 	},
 	{
+		"id": "hqtzkcce",
+		"name": "黄泉探针勘测",
+		"desc": "启动一枚黄泉探针深入黄泉获取【非实波段数据】及有关资料。此动作需要至少3点【黄泉研究基础】",
+		"verb": "",
+		"require": "g.jiezikwjk>=1",
+		"cost": {
+			"human_power": 1000,
+			"money": 3500,
+			"tian": 10,
+			"iron_copper": 20,
+			"laser_ene": 5,
+			"ljdy": 5,
+			"yuansurechi": 1,
+			"hqtanzhen": 1
+		},
+		"result": {
+			"time": 30,
+			"player.exp": 500,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"snp_data": 30,
+			"exe_paper": 30,
+			"fsbdsj": 10
+		}
+	},
+	{
 		"id": "buhuolt",
 		"name": "灵体捕获",
 		"desc": "捕获游荡的灵体",
@@ -1224,6 +1250,27 @@
 		}
 	},
 	{
+		"id": "gwlpx",
+		"name": "高温流培训",
+		"desc": "",
+		"verb": "培训中",
+		"max": 1,
+		"require": "g.reliusc>=1",
+		"length": 60,
+		"cost": {
+			"gwl": 50,
+			"yjdl": 50,
+			"cbclb": 50,
+			"books": 60,
+			"ganwu": 900,
+			"money": 1800
+		},
+		"run": {
+			"time": -10,
+			"tili": 1
+		}
+	},
+	{
 		"id": "zhenyeganwu",
 		"name": "🌙真夜感悟",
 		"desc": "在无光环境下进行感悟",
@@ -1742,7 +1789,7 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 50,
+		"length": 30,
 		"cost": {
 			"money": 100,
 			"ganwu": 30
@@ -1814,7 +1861,7 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 50,
+		"length": 30,
 		"cost": {
 			"money": 100,
 			"ganwu": 30
@@ -1878,7 +1925,7 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 50,
+		"length": 30,
 		"cost": {
 			"money": 100,
 			"ganwu": 30
@@ -1902,7 +1949,7 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=5",
 		"max": 50,
-		"length": 50,
+		"length": 30,
 		"cost": {
 			"money": 100,
 			"ganwu": 30
@@ -1915,6 +1962,959 @@
 			"yanzhandu.rate": -0.05,
 			"shiqi.rate": 0.01,
 			"zhuzhidu.rate": 0.006
+		}
+	},
+	{
+		"id": "xibaoyanj",
+		"name": "细胞研究",
+		"desc": "在显微镜的帮助下研究生物细胞",
+		"verb": "研究中",
+		"require": "g.wgswx>=2 && g.ltxwsys>=1",
+		"need":"g.ltxwsys>=1",
+		"max": 5,
+		"length": 20,
+		"cost": {
+			"super_mind": 20,
+			"books": 30,
+			"qiyiyeti": 5,
+			"yjswyb": 10,
+			"money": 1500,
+			"ganwu": 1000
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -25
+		},
+		"result": {
+			"hp.max": 1,
+			"hp.rate": 0.7
+		}
+	},
+	{
+		"id": "zhenheyanjiu",
+		"name": "真核研究",
+		"desc": "研究真核生物",
+		"verb": "研究中",
+		"require": "g.xibaoyanj>=5 && g.ltxwsys>=1",
+		"need":"g.ltxwsys>=1",
+		"max": 1,
+		"length": 20,
+		"cost": {
+			"lg": 30,
+			"super_mind": 20,
+			"dirty_lingti": 25,
+			"yjdl": 80,
+			"cbclb": 50,
+			"books": 30,
+			"qiyiyeti": 5,
+			"yjswyb": 20,
+			"money": 1500,
+			"ganwu": 1000
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -25
+		}
+	},
+	{
+		"id": "yuanheyanjiu",
+		"name": "原核研究",
+		"desc": "研究原核研究",
+		"verb": "研究中",
+		"require": "g.xibaoyanj>=5 && g.ltxwsys>=1",
+		"need":"g.ltxwsys>=1",
+		"max": 1,
+		"length": 20,
+		"cost": {
+			"lg": 30,
+			"super_mind": 20,
+			"dirty_lingti": 25,
+			"yjdl": 80,
+			"cbclb": 50,
+			"books": 30,
+			"qiyiyeti": 5,
+			"yjswyb": 20,
+			"money": 1500,
+			"ganwu": 1000
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -25
+		}
+	},
+	{
+		"id": "sysltsw",
+		"name": "适应性灵体生物",
+		"desc": "一种自适应环境的生物",
+		"verb": "研究中",
+		"require": "g.yuanheyanjiu>=1 && g.zhenheyanjiu>=1",
+		"need":"g.ltxwsys>=1",
+		"max": 1,
+		"length": 20,
+		"cost": {
+			"element_luor":10,
+			"element_wuhuan":15,
+			"lg": 30,
+			"super_mind": 20,
+			"dirty_lingti": 25,
+			"yjdl": 80,
+			"cbclb": 50,
+			"books": 30,
+			"qiyiyeti": 5,
+			"yjswyb": 20,
+			"money": 1500,
+			"ganwu": 1000
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -25
+		},
+		"mod":{
+			"dirty_lingti.max": 5
+		}
+	},
+	{
+		"id": "ltsyjs",
+		"name": "灵体饲养技术",
+		"desc": "研究如何饲养适应性灵体生物",
+		"verb": "研究中",
+		"require": "g.sysltsw>=1",
+		"need":"g.ltxwsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"pyy": 20,
+			"fypyj": 20,
+			"lingtichang": 1,
+			"siyubiji": 1,
+			"element_luor":10,
+			"element_wuhuan":15,
+			"qiyiyeti": 10,
+			"books": 50
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -25
+		},
+		"mod":{
+			"ele_confusion.max": 5,
+			"lingtichang.max": -1,
+			"siyubiji.max": -1
+		}
+	},
+	{
+		"id": "suiskcpy",
+		"name": "水生昆虫培育",
+		"desc": "研究如何饲养水生灵体昆虫",
+		"verb": "研究中",
+		"require": "g.sysltsw>=1",
+		"need":"g.ltxwsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"pyy": 20,
+			"fypyj": 20,
+			"baibaishu": 25,
+			"money": 2500,
+			"element_luor":10,
+			"element_wuhuan":15,
+			"qiyiyeti": 5,
+			"books": 50
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -25
+		}
+	},
+	{
+		"id": "shengwuzhiquyang",
+		"name": "生物质取样",
+		"desc": "从生物组织中提取生物质,需要【生物研究室】",
+		"verb": "提取中",
+		"require": "g.element_shengwuzhuzhi>=1",
+		"need":"g.shengwuyanjsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"baibaishu": 30,
+			"element_shengwuzhuzhi": 30,
+			"pyy": 20,
+			"fypyj": 20,
+			"yjswyb": 20,
+			"dirty_lingti": 20,
+			"dirty_core": 50,
+			"cold_core": 50,
+			"money": 2500,
+			"qiyiyeti": 5,
+			"super_mind": 40
+		},
+		"run": {
+			"ganwu": 10,
+			"elect": 10,
+			"time": -25
+		}
+	},
+	{
+		"id": "qiguanjiepou",
+		"name": "器官解剖",
+		"desc": "分析生物器官,需要【生物研究室】",
+		"verb": "提取中",
+		"require": "g.element_shengwuqiguan>=1",
+		"need":"g.shengwuyanjsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"baibaishu": 30,
+			"element_shengwuqiguan": 30,
+			"pyy": 20,
+			"fypyj": 20,
+			"yjswyb": 20,
+			"dirty_lingti": 20,
+			"dirty_core": 50,
+			"cold_core": 50,
+			"money": 2500,
+			"qiyiyeti": 5,
+			"super_mind": 40
+		},
+		"run": {
+			"ganwu": 10,
+			"elect": 10,
+			"time": -25
+		}
+	},
+	{
+		"id": "jiaqiaoleilxfx",
+		"name": "甲壳类力学分析",
+		"desc": "对几丁质进行力学分析,需要【生物研究室】",
+		"verb": "分析中",
+		"require": "g.element_jidingzhi>=1",
+		"need":"g.shengwuyanjsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"baibaishu": 30,
+			"element_jidingzhi": 30,
+			"pyy": 20,
+			"fypyj": 20,
+			"yjswyb": 20,
+			"dirty_lingti": 20,
+			"dirty_core": 50,
+			"cold_core": 50,
+			"money": 2500,
+			"qiyiyeti": 5,
+			"super_mind": 40
+		},
+		"run": {
+			"ganwu": 10,
+			"elect": 10,
+			"time": -25
+		}
+	},
+	{
+		"id": "swzjiliang",
+		"name": "生物质计量",
+		"desc": "对生物质进行计量,以此提高生产效率,需要【生物研究室】",
+		"verb": "研究中",
+		"require": "g.swzhi>=1",
+		"need":"g.shengwuyanjsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"yjdl": 70,
+			"cbclb": 50,
+			"gwl": 50,
+			"baibaishu": 30,
+			"swzhi": 2,
+			"pyy": 20,
+			"fypyj": 20,
+			"yjswyb": 20,
+			"money": 2500,
+			"qiyiyeti": 5
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -15
+		},
+		"result":{
+			"swzhi": 1
+		}
+	},
+	{
+		"id": "swzranshao",
+		"name": "燃烧生物质",
+		"desc": "燃烧生物质来获取生物质的基础物理性质,需要【生物研究室】",
+		"verb": "研究中",
+		"require": "g.swzhi>=1",
+		"need":"g.shengwuyanjsys>=1",
+		"max": 1,
+		"length": 60,
+		"cost": {
+			"yjdl": 70,
+			"cbclb": 50,
+			"yxls": 20,
+			"zdht": 20,
+			"gwl": 150,
+			"baibaishu": 30,
+			"swzhi": 2,
+			"yjswyb": 20,
+			"money": 2500,
+			"qiyiyeti": 5
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -15
+		},
+		"result":{
+			"swzhi": 1
+		}
+	},
+	{
+		"id": "swdianyanjiu",
+		"name": "生物电研究",
+		"desc": "研究如何从生物质中获取能量,需要【生物研究室】",
+		"verb": "研究中",
+		"require": "g.swzhi>=1",
+		"need":"g.shengwuyanjsys>=1",
+		"max": 2,
+		"length": 30,
+		"cost": {
+			"yjdl": 70,
+			"cbclb": 50,
+			"elect": 50,
+			"heli": 40,
+			"baibaishu": 20,
+			"jbgui": 5,
+			"qianwdc": 5,
+			"yasexiyi": 5,
+			"swzhi": 10,
+			"yjswyb": 20,
+			"money": 2500,
+			"qiyiyeti": 5
+		},
+		"run": {
+			"elect": 10,
+			"ganwu": 10,
+			"time": -15
+		},
+		"result":{
+			"swzhi": 3,
+			"elect": 100
+		}
+	},
+	{
+		"id": "shengwurexcueyanj",
+		"name": "生物热学研究",
+		"desc": "结合生物质与原子热学,需要【生物研究室】【冲层热力实验室】",
+		"verb": "研究中",
+		"require": "g.swzhi>=1 && g.yuanzirexue>=5",
+		"need":"g.shengwuyanjsys>=1 && g.ccrlxsys>=1",
+		"max": 3,
+		"length": 30,
+		"cost": {
+			"yjdl": 70,
+			"cbclb": 50,
+			"gwl": 150,
+			"baibaishu": 20,
+			"jbgui": 5,
+			"qianwdc": 5,
+			"yasexiyi": 5,
+			"swzhi": 10,
+			"yjswyb": 20,
+			"money": 2500
+		},
+		"run": {
+			"elect": 10,
+			"ganwu": 10,
+			"time": -15
+		},
+		"result":{
+			"swzhi": 7,
+			"elect": 100
+		}
+	},
+	{
+		"id": "swztaoxi",
+		"name": "生物质冲刷",
+		"desc": "从生物组织,生物器官以及几丁质中获取生物质。需要【高温烘干室】【生物质筛选机】【几丁质球形研磨机】【生物冲洗床】。该配方可进行优化升级",
+		"tags":"生产",
+		"verb": "冲刷中",
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"need": "g.bio_wash>=1 && g.bio_grind && g.bio_screen>=1 && g.bio_dry>=1",
+		"length": 15,
+		"fill":[
+			"swzhi"
+		],
+		"cost": {
+			"money": 2000,
+			"baibaishu": 20,
+			"element_jidingzhi": 20,
+			"element_shengwuqiguan": 20,
+			"element_shengwuzhuzhi": 20,
+			"jls": 130,
+			"gwl": 50,
+			"pyy": 20,
+			"fypyj": 20,
+			"dirty_lingti": 10
+		},
+		"run": {
+			"money": 10,
+			"ganwu": 10,
+			"elect": 10,
+			"time": -1
+		},
+		"result":{
+			"swzhi": 2
+		}
+	},
+	{
+		"id": "swzxishou",
+		"name": "生物质吸收",
+		"desc": "吸收生物质",
+		"verb": "吸收中",
+		"require": "g.lsesys>=1",
+		"length": 15,
+		"max": 25,
+		"cost": {
+			"swzhi": 5,
+			"ljdy": 5,
+			"money": 2000,
+			"gwl": 50,
+			"pyy": 20,
+			"fypyj": 20,
+			"life_crystal": 5
+		},
+		"run": {
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"result": {
+			"age": 3000,
+			"age.max": 3000
+		}
+	},
+	{
+		"id": "hqbdtj",
+		"name": "数据计算",
+		"desc": "研究非实波段数据中的信息,需要【频谱指示器】【波形解构仪】【非实研究所】。【环境工程学前置之一】",
+		"verb": "研究中",
+		"require": "g.ppzsq>=1 && g.bxjgy>=1 && g.fsyanjius>=1",
+		"need": "g.unreal_lab>=1 && g.wave_ana>=1 && g.spect_ind>=1",
+		"length": 33,
+		"max": 3,
+		"cost": {
+			"human_power": 1000,
+			"alculation": 300,
+			"fsbdsj": 10,
+			"shenshi": 15,
+			"ljdy": 20,
+			"money": 3000,
+			"lxue": 50,
+			"shuaibai_core": 50,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"result": {
+			"space.max": 50,
+			"age": 1000,
+			"age.max": 1000
+		}
+	},
+	{
+		"id": "ziranhjyj",
+		"name": "自然环境研究",
+		"desc": "研究自然环境,需要【绿色实验室】。【环境工程学前置之一】",
+		"verb": "研究中",
+		"require": "g.lsesys>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 3,
+		"cost": {
+			"human_power": 1000,
+			"alculation": 300,
+			"swzhi": 10,
+			"ljdy": 5,
+			"money": 3000,
+			"jingdian": 10,
+			"jls": 100,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"result": {
+			"space.max": 25
+		}
+	},
+	{
+		"id": "ziranhjyj",
+		"name": "自然生物研究",
+		"desc": "研究自然生物,需要【绿色实验室】。【环境工程学前置之一】",
+		"verb": "研究中",
+		"require": "g.lsesys>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 3,
+		"cost": {
+			"human_power": 1000,
+			"alculation": 300,
+			"swzhi": 3,
+			"baibaishu": 20,
+			"diluhua": 2,
+			"shuiteng": 2,
+			"hongshan": 5,
+			"tusong": 3,
+			"ljdy": 5,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"result": {
+			"space.max": 15,
+			"hp.max": 1
+		}
+	},
+	{
+		"id": "hqbdtj",
+		"name": "黄泉波段调解",
+		"desc": "尝试解析黄泉的构成",
+		"verb": "研究中",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"human_power": 3700,
+			"alculation": 2500,
+			"cxxwjp":1,
+			"shenshi": 15,
+			"ljdy": 15,
+			"money": 3000,
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"result": {
+			"shuaibai_core.rate": 0.07,
+			"lxue.rate": 0.07,
+			"age": 6000,
+			"age.max": 6000
+		}
+	},
+	{
+		"id": "huanjjg",
+		"name": "环境解构",
+		"desc": "对附近的环境进行解构测绘。【注意，此研究将产生面积为1260的地块障碍。确保你还有富裕的空间】【研究需要绿色实验室】",
+		"verb": "解构中",
+		"warn": true,
+		"require": "g.hjgcx>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"human_power": 3700,
+			"shenshi": 15,
+			"ljdy": 15,
+			"snp_data": 140,
+			"fsbdsj": 20,
+			"swzhi": 20,
+			"money": 3000,
+			"lxue": 50,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"result": {
+			"obs_hill": 5,
+			"obs_water": 4,
+			"obs_basin": 3,
+			"obs_mount": 4
+		}
+	},
+	{
+		"id": "liticehui_hill",
+		"name": "立体测绘(丘陵)",
+		"desc": "对丘陵进行立体测绘分析【研究需要绿色实验室】",
+		"verb": "测绘中",
+		"warn": true,
+		"require": "g.huanjjg>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"jbgui": 10,
+			"qianwdc":  10,
+			"yasexiyi": 10,
+			"human_power": 3700,
+			"shenshi": 15,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"swzhi": 20,
+			"money": 3000,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "getobs_hill",
+		"name": "丘陵纳入",
+		"desc": "获取周围的丘陵群落【研究需要绿色实验室】",
+		"tags": "生产",
+		"verb": "获取中",
+		"warn": true,
+		"require": "g.liticehui_hill>=1",
+		"need": "g.green_lab>=1",
+		"length": 10,
+		"max": 1,
+		"cost": {
+			"human_power": 1000,
+			"snp_data": 140,
+			"fsbdsj": 10
+		},
+		"run": {
+			"time": -10
+		},
+		"result":{
+			"obs_hill": 2
+		}
+	},
+	{
+		"id": "liticehui_water",
+		"name": "立体测绘(湖泊)",
+		"desc": "对湖泊进行立体测绘分析【研究需要绿色实验室】",
+		"verb": "测绘中",
+		"warn": true,
+		"require": "g.huanjjg>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"jbgui": 10,
+			"qianwdc":  10,
+			"yasexiyi": 10,
+			"human_power": 3700,
+			"shenshi": 15,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"swzhi": 20,
+			"money": 3000,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "getbos_water",
+		"name": "湖泊纳入",
+		"desc": "获取周围的丘陵群落【研究需要绿色实验室】",
+		"tags": "生产",
+		"verb": "获取中",
+		"warn": true,
+		"require": "g.liticehui_water>=1",
+		"need": "g.green_lab>=1",
+		"length": 10,
+		"max": 1,
+		"cost": {
+			"human_power": 1000,
+			"snp_data": 140,
+			"fsbdsj": 10
+		},
+		"run": {
+			"time": -10
+		},
+		"result":{
+			"obs_water": 2
+		}
+	},
+	{
+		"id": "liticehui_basin",
+		"name": "立体测绘(盆地)",
+		"desc": "对盆地进行立体测绘分析【研究需要绿色实验室】",
+		"verb": "测绘中",
+		"warn": true,
+		"require": "g.huanjjg>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"jbgui": 10,
+			"qianwdc":  10,
+			"yasexiyi": 10,
+			"human_power": 3700,
+			"shenshi": 15,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"swzhi": 20,
+			"money": 3000,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "getbos_basin",
+		"name": "盆地纳入",
+		"desc": "获取周围的盆地纳入【研究需要绿色实验室】",
+		"tags": "生产",
+		"verb": "获取中",
+		"warn": true,
+		"require": "g.liticehui_basin>=1",
+		"need": "g.green_lab>=1",
+		"length": 10,
+		"max": 1,
+		"cost": {
+			"human_power": 1000,
+			"snp_data": 140,
+			"fsbdsj": 10
+		},
+		"run": {
+			"time": -10
+		},
+		"result":{
+			"obs_basin": 2
+		}
+	},
+	{
+		"id": "liticehui_mount",
+		"name": "立体测绘(山脉)",
+		"desc": "对山脉进行立体测绘分析【研究需要绿色实验室】",
+		"verb": "测绘中",
+		"warn": true,
+		"require": "g.huanjjg>=1",
+		"need": "g.green_lab>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"jbgui": 10,
+			"qianwdc":  10,
+			"yasexiyi": 10,
+			"human_power": 3700,
+			"shenshi": 15,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"swzhi": 20,
+			"money": 3000,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "getbos_mount",
+		"name": "山脉纳入",
+		"desc": "获取周围的盆地纳入【研究需要绿色实验室】",
+		"tags": "生产",
+		"verb": "获取中",
+		"warn": true,
+		"require": "g.liticehui_mount>=1",
+		"need": "g.green_lab>=1",
+		"length": 10,
+		"max": 1,
+		"cost": {
+			"human_power": 1000,
+			"snp_data": 140,
+			"fsbdsj": 10
+		},
+		"run": {
+			"time": -10
+		},
+		"result":{
+			"obs_mount": 2
+		}
+	},
+	{
+		"id": "dimianhjyj",
+		"name": "地面环境研究",
+		"desc": "进行小规模的地面研究【研究需要绿色实验室】",
+		"verb": "研究中",
+		"warn": true,
+		"require": "g.liticehui_mount>=1 && g.liticehui_basin>=1 && g.liticehui_water>=1 && g.liticehui_hill>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"adv_snp_data": 10,
+			"swzhi": 20,
+			"money": 3000,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "zshiwangge",
+		"name": "知识网格",
+		"desc": "使用神识来高效管理知识",
+		"verb": "研究中",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"paper": 300,
+			"human_power": 3700,
+			"alculation": 2500,
+			"cxxwjp":1,
+			"shenshi": 15,
+			"ljdy": 5,
+			"money": 3000,
+			"pyy": 20,
+			"yjswyb": 20,
+			"dirty_lingti": 20,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		}
+	},
+	{
+		"id": "gaosuxxgl",
+		"name": "高速信息管理",
+		"desc": "使用神识来快速处理信息",
+		"verb": "研究中",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"length": 33,
+		"max": 1,
+		"cost": {
+			"human_power": 3700,
+			"alculation": 2500,
+			"shenshi": 15,
+			"books": 60,
+			"snp_data": 60,
+			"ljdy": 5,
+			"money": 3000,
+			"dirty_lingti": 20,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"snp_data.rate": 0.5,
+			"alculation.max": 300,
+			"alculation.rate": 20
+		}
+	},
+	{
+		"id": "kongjianly",
+		"name": "空间路由",
+		"desc": "使用神识来高效管理空间",
+		"verb": "改造中",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"length": 33,
+		"max": 5,
+		"cost": {
+			"paper": 300,
+			"star_map_1": 20,
+			"super_mind": 30,
+			"books": 60,
+			"snp_data": 60,
+			"human_power": 3700,
+			"alculation": 2500,
+			"shenshi": 15,
+			"money": 3000,
+			"jingdian": 20,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 100
 		}
 	},
 	{
@@ -2786,6 +3786,250 @@
 		}
 	},
 	{
+		"id": "reliusc",
+		"name": "热流生成",
+		"desc": "研究高效生成高温流",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yuanzirexue>=5",
+		"length": 50,
+		"cost": {
+			"yjdl": 85,
+			"iron_copper": 100,
+			"gwl": 50,
+			"ganwu": 600,
+			"star_map_1": 15,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
+		"id": "religongc",
+		"name": "热力工程",
+		"desc": "研究通过热力进行工程建设",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.yuanzirexue>=5",
+		"length": 50,
+		"cost": {
+			"yjdl": 85,
+			"iron_copper": 100,
+			"gwl": 50,
+			"ganwu": 600,
+			"star_map_1": 15,
+			"human_power": 1000,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
+		"id": "huanreshengji",
+		"name": "换热升级",
+		"desc": "进一部提升阳换热器效率",
+		"verb": "研究中",
+		"max": 2,
+		"require": "g.ccrlxsys>=1",
+		"need": "g.ccrlxsys>=1",
+		"length": 50,
+		"cost": {
+			"lengqueshes":1,
+			"gwl": 60,
+			"yjdl": 40,
+			"iron_copper":150,
+			"ganwu": 600,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		},
+		"mod":{
+			"yxhuanrqi.mod.elect.rate": 7
+		}
+	},
+	{
+		"id": "adv_meatl_yelian",
+		"name": "先进金属冶炼",
+		"desc": "进一部提升铜铁获取速度",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.ccrlxsys>=1",
+		"need": "g.ccrlxsys>=1",
+		"length": 50,
+		"cost": {
+			"gwl": 60,
+			"yjdl": 40,
+			"cu_copper": 300,
+			"cu_iron": 300,
+			"iron_copper": 100,
+			"ganwu": 600,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		},
+		"mod":{
+			"cu_copper.rate": 1,
+			"cu_iron.rate":1
+		}
+	},
+	{
+		"id": "gaoyarongr",
+		"name": "高压熔融",
+		"desc": "获得更高级的金属加工工艺",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.gyrlsys>=1",
+		"need": "g.gyrlsys>=1",
+		"length": 50,
+		"cost": {
+			"gwl": 60,
+			"yjdl": 40,
+			"tian": 120,
+			"sj_met": 50,
+			"iron_copper": 100,
+			"ganwu": 600,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"zero_crystal": 40,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		},
+		"mod":{
+			"tian.rate": 0.5
+		}
+	},
+	{
+		"id": "gaowenyunsuan",
+		"name": "高压运算",
+		"desc": "提高超识获取速度和上限",
+		"verb": "运算中",
+		"max": 8,
+		"require": "g.gyrlsys>=1",
+		"need": "g.gyrlsys>=1",
+		"length": 50,
+		"cost": {
+			"gwl": 60,
+			"yjdl": 40,
+			"tian": 120,
+			"sj_met": 50,
+			"iron_copper": 100,
+			"ganwu": 1000,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		},
+		"mod":{
+			"super_mind.rate": 0.1,
+			"super_mind.max": 1
+		}
+	},
+	{
+		"id": "gaowendongli",
+		"name": "高温动力",
+		"desc": "将高温能换成机械的运动能",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.jxrlsys>=1",
+		"need": "g.jxrlsys>=1",
+		"length": 50,
+		"cost": {
+			"ljdy": 10,
+			"gwl": 60,
+			"yjdl": 80,
+			"tian": 120,
+			"sj_met": 50,
+			"ganwu": 1000,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		},
+		"mod":{
+			"speed": 5
+		}
+	},
+	{
+		"id": "zhengtengshijie",
+		"name": "蒸腾世界",
+		"desc": "迎接热力世界",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.jxrlsys>=1 && g.gyrlsys>=1 && g.ccrlxsys>=1",
+		"need": "g.jxrlsys>=1",
+		"length": 50,
+		"cost": {
+			"ljdy": 10,
+			"yjswyb": 20,
+			"gwl": 60,
+			"yjdl": 80,
+			"tian": 50,
+			"sj_met": 50,
+			"ganwu": 1000,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"money": 1500
+		},
+		"run": {
+			"time": -1
+		}
+	},
+	{
+		"id": "reliswgc",
+		"name": "热力生物工程",
+		"desc": "研究使用生物学的热力机械",
+		"verb": "研究中",
+		"max": 1,
+		"require": "g.jxrlsys>=1",
+		"need": "g.jxrlsys>=1",
+		"length": 30,
+		"cost": {
+			"ljdy": 15,
+			"yjswyb": 10,
+			"gwl": 60,
+			"yjdl": 80,
+			"tian": 50,
+			"sj_met": 50,
+			"ganwu": 1000,
+			"star_map_1": 15,
+			"alculation": 1600,
+			"human_power": 1800,
+			"money": 2500
+		},
+		"run": {
+			"time": -1
+		},
+		"mod":{
+			"ganwu.rate": 6,
+			"lg.rate": 0.1
+		}
+	},
+	{
 		"id": "ljdyjg1",
 		"name": "逻辑单元加工",
 		"desc": "制作逻辑单元",
@@ -2927,10 +4171,10 @@
 		},
 		"run": {
 			"heli": 7,
-			"time": -20
+			"time": -3
 		},
 		"result": {
-			"player.exp": 100,
+			"player.exp": 400,
 			"heli.max": 0.001,
 			"heli.rate": 0.001
 		}

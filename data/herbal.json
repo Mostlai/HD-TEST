@@ -15,17 +15,20 @@
 		},
 		"lhxy":{
 			"time": -1,
-			"jls": 1,
-			"heli": 10,
-			"elect": 3
+			"elect": 3,
+			"element_gold":3,
+			"element_wood":3,
+			"element_water": 3,
+			"element_fire": 3,
+			"element_land": 3
 		},
 		"ele":{
 			"ele_confusion": 4,
-			"element_gold":2,
-			"element_wood":2,
-			"element_water": 2,
-			"element_fire": 2,
-			"element_land": 2
+			"element_gold":5,
+			"element_wood":5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5
 		},
 		"flavor": "需要1级炼化台"
 	},
@@ -523,5 +526,120 @@
 			"element_water": -0.5
 		},
 		"flavor": "需要1级炼化台"
+	},
+	{
+		"id": "baibaishu",
+		"name": "白白鼠",
+		"desc": "白白龟,一种小巧鼠类,基本的生物材料",
+		"tags": "生物组织1级,生物1级",
+		"equneed": "g.anatomy_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.ltsyjs>=1",
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"money": 100,
+			"time": -3,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 4,
+			"element_shengwuzhuzhi": 0.1
+		},
+		"flavor": "需要1级解剖实验室"
+	},
+	{
+		"id": "jbgui",
+		"name": "剑背龟",
+		"desc": "剑背龟,缓慢的龟类,主要提供生物组织",
+		"tags": "生物组织1级,生物1级",
+		"equneed": "g.anatomy_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.ltsyjs>=1",
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"money": 100,
+			"baibaishu": 0.5,
+			"dirty_lingti": 1,
+			"time": -3,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 5,
+			"element_shengwuzhuzhi": 1.3,
+			"element_shengwuqiguan": 0.1,
+			"element_land": 1,
+			"element_water": 0.5
+		},
+		"flavor": "需要1级解剖实验室"
+	},
+	{
+		"id": "qianwdc",
+		"name": "钳尾刀虫",
+		"desc": "钳尾刀虫,一种水生昆虫,甲壳富含几丁质",
+		"tags": "几丁质1级,生物1级",
+		"equneed": "g.anatomy_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.ltsyjs>=1",
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"money": 500,
+			"lxue": 0.5,
+			"dirty_lingti": 1,
+			"time": -3,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 5,
+			"element_jidingzhi": 1.2,
+			"element_land": 2,
+			"element_gold": 1,
+			"element_water": 0.1
+		},
+		"flavor": "需要1级解剖实验室"
+	},
+	{
+		"id": "yasexiyi",
+		"name": "亚瑟蜥蜴",
+		"desc": "亚瑟蜥蜴,具有复杂的器官构造",
+		"tags": "生物器官1级,生物1级",
+		"equneed": "g.anatomy_1>=1",
+		"color": "#9c7402",
+		"hide": false,
+		"require": "g.ltsyjs>=1",
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"money": 100,
+			"baibaishu": 0.5,
+			"dirty_lingti": 1,
+			"time": -3,
+			"heli": 3
+		},
+		"ele":{
+			"ele_confusion": 5,
+			"element_shengwuqiguan": 1.2,
+			"element_shengwuzhuzhi": 0.2,
+			"element_wood": 2,
+			"element_fire": 1
+		},
+		"flavor": "需要1级解剖实验室"
 	}
 ]

@@ -320,6 +320,30 @@
 		}
 	},
 	{
+		"id": "gwlzl",
+		"name": "高温流指令",
+		"desc": "派遣人力制作高温流",
+		"require": "g.gwlpx>=1",
+		"max": 6,
+		"clevel": 2,
+		"need": "g.human_power>=500",
+		"startcost":{
+			"alculation": 500,
+			"gwl": 1,
+			"human_power": 500,
+			"money": 300
+		},
+		"mod":{
+			"command_code":2,
+			"space.max": -35,
+			"human_power.max": -400,
+			"alculation.max": -200,
+			"alculation.rate": -2.5,
+			"human_power.rate": -0.7,
+			"gwl.rate": 0.8
+		}
+	},
+	{
 		"id": "bdhxzl",
 		"name": "冰冻核心指令",
 		"desc": "派遣人力获取冰冻核心",

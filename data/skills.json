@@ -1785,6 +1785,70 @@
 		}
 	},
 	{
+		"id": "wgswx",
+		"name": "微观生物学",
+		"require": "g.zhinnegswsys>=1",
+		"level": 17,
+		"desc": "在微观层面研究生物,学习需要智能生物实验室",
+		"need": "g.zhinnegswsys>=1",
+		"buy": {
+			"yjswyb": 20,
+			"pyy": 20,
+			"ljdy": 10,
+			"cxxwjp": 5,
+			"cishuadianquan":1,
+			"ganwu": 1000,
+			"super_mind": 30,
+			"money": 1500,
+			"alculation": 1000,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 20
+		},
+		"run": {
+			"pyy": 0.4,
+			"alculation": 10,
+			"ganwu": 4,
+			"elect": 3
+		},
+		"result": {
+			"space.max": 10,
+			"hp.rate":0.7,
+			"lg.rate": 0.001,
+			"sp":1
+		}
+	},
+	{
+		"id": "hjgcx",
+		"name": "环境工程学",
+		"require": "g.ziranhjyj>=3 && g.ziranhjyj>=3 && g.hqbdtj>=3",
+		"level": 17,
+		"desc": "高效开发环境,学习需要绿色实验室",
+		"need": "g.green_lab>=1",
+		"buy": {
+			"fsbdsj": 20,
+			"swzhi": 20,
+			"ganwu": 1000,
+			"super_mind": 30,
+			"money": 3500,
+			"alculation": 1000,
+			"star_map_1": 30
+		},
+		"effect": {
+			"time": 20
+		},
+		"run": {
+			"alculation": 10,
+			"ganwu": 4,
+			"elect": 10
+		},
+		"result": {
+			"space.max": 25,
+			"sp":1
+		}
+	},
+	{
 		"id": "guishuxue",
 		"name": "诡术学",
 		"require": "g.xiulian_chaos_ld_1>=1",

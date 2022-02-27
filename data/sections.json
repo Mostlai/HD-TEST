@@ -30,6 +30,11 @@
 		"require": "g.home_un>=1"
 	},
 	{
+		"id": "sect_humanr",
+		"name": "人力",
+		"require": "g.rlgl>=1"
+	},
+	{
 		"id": "sect_raid",
 		"name": "探险",
 		"require": "g.small_map>=1"

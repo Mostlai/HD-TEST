@@ -68,7 +68,7 @@
 			},
 			{
 				"id": "evt_offic_shangxian",
-				"require": "g.off_influence>=35000",
+				"require": "g.off_influence.max>=35000",
 				"name": "影响力上限",
 				"desc": "影响力达到上限",
 				"disable":[

@@ -2505,7 +2505,8 @@
 			"self.defense": 10,
 			"nolight_core.rate": 0.01,
 			"hp.rate":3,
-			"heli.rate": -2,
+			"heli.rate": -3,
+			"chaos.rate": 6,
 			"shenshi.rate": 2
 		}
 	},
@@ -4967,6 +4968,168 @@
 		"mod": {
 			"shuaibai.rate": -0.5,
 			"shuaibai.max":1
+		}
+	},
+	{
+		"id": "siyubiji",
+		"name": "饲育笔记",
+		"desc": "一本记载了饲育各种生物的笔记",
+		"max": 1,
+		"require": "g.sysltsw>=1",
+		"cost": {
+			"element_luor":10,
+			"ganwu": 2500,
+			"money": 1500,
+			"dirty_lingti": 30,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"alculation": 2000,
+			"cold_core": 50,
+			"dirty_core": 20
+		}
+	},
+	{
+		"id": "yueshengshenshi",
+		"name": "跃升神识",
+		"desc": "提高神识上限",
+		"max": 1,
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"cost": {
+			"shenshi":10,
+			"shenglingshi":1,
+			"ganwu": 2500,
+			"money": 3000,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"alculation": 2000,
+			"cold_core": 50,
+			"jingdian": 20
+		},
+		"mod":{
+			"shenshi.max": 5,
+			"shenshi.rate": 1
+		}
+	},
+	{
+		"id": "zhengzhan",
+		"name": "征战",
+		"desc": "解锁大型战场",
+		"max": 1,
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"cost": {
+			"shenshi":10,
+			"shenglingshi":5,
+			"ganwu": 2500,
+			"money": 3000,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"jingdian": 20
+		}
+	},
+	{
+		"id": "yongdishengji",
+		"name": "用地升级",
+		"desc": "扩展面积",
+		"max": 5,
+		"require": "g.hjgcx>=2",
+		"cost": {
+			"ljdy": 20,
+			"shenshi":10,
+			"shenglingshi":5,
+			"swzhi": 20,
+			"fsbdsj": 20,
+			"ganwu": 2500,
+			"money": 3000,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"jingdian": 20
+		},
+		"mod":{
+			"space.max": 60
+		}
+	},
+	{
+		"id": "jiezikwjk",
+		"name": "芥子空稳接口",
+		"desc": "提供一个稳定的,支持多人来回进出的黄泉入口",
+		"max": 1,
+		"warn": true,
+		"require": "g.xiulian_huangquanxiul>=4",
+		"cost": {
+			"ljdy": 10,
+			"shenshi":15,
+			"shenglingshi":1,
+			"ganwu": 2500,
+			"money": 3000,
+			"huangquan_well": 1,
+			"jingdian": 20
+		},
+		"mod":{
+			"elect.rate": -2,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "swzxliao",
+		"name": "生物质香料",
+		"desc": "从生物质中提取香料获取财富",
+		"max": 5,
+		"require": "g.swzhi>=1",
+		"cost": {
+			"swzhi":10,
+			"ganwu": 2500,
+			"money": 3000,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"alculation": 2000,
+			"cold_core": 50,
+			"dirty_core": 20
+		},
+		"mod":{
+			"money.rate": 3
+		}
+	},
+	{
+		"id": "yanchenchuli",
+		"name": "烟尘处理",
+		"desc": "处理燃烧生物质产生的有害粉尘",
+		"max": 1,
+		"require": "g.swzhi>=1",
+		"cost": {
+			"swzhi":5,
+			"gwl": 100,
+			"dirty_lingti": 20,
+			"super_mind": 40,
+			"lg": 30,
+			"ganwu": 2500,
+			"money": 3000,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"alculation": 2000,
+			"dirty_core": 20
+		},
+		"mod":{
+			"jls.rate": 0.3
+		}
+	},
+	{
+		"id": "lingtichang",
+		"name": "灵体场",
+		"desc": "一个能容纳大量灵体的场",
+		"max": 1,
+		"require": "g.sysltsw>=1",
+		"cost": {
+			"element_wuhuan":20,
+			"qiyiyeti": 10,
+			"ganwu": 2500,
+			"money": 1500,
+			"dirty_lingti": 30,
+			"snp_data": 60,
+			"zero_crystal": 50,
+			"human_power": 1700,
+			"alculation": 2000,
+			"cold_core": 50,
+			"dirty_core": 20
 		}
 	},
 	{

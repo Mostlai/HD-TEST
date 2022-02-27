@@ -393,6 +393,34 @@
 		"max": 10
 	},
 	{
+		"id": "fsbdsj",
+		"name": "非实波段数据",
+		"desc": "记载了黄泉的地貌信息和波段数据",
+		"group": "知识",
+		"tags": "",
+		"require": "g.hqbdtj>=1",
+		"mod": {
+			"lg.rate": 0.001,
+			"super_mind.rate": 0.001,
+			"star_map_1.rate": 0.001
+		},
+		"max": 0.1
+	},
+	{
+		"id": "adv_snp_data",
+		"name": "进阶测绘资料",
+		"desc": "清理自然地貌获得的测绘资料",
+		"group": "知识",
+		"tags": "",
+		"require": "g.hqbdtj>=1",
+		"mod": {
+			"lg.rate": 0.001,
+			"super_mind.rate": 0.001,
+			"star_map_1.rate": 0.001
+		},
+		"max": 0.1
+	},
+	{
 		"id": "dirty_lingti",
 		"name": "纯浊灵体",
 		"desc": "纯净灵体,但表达了污浊核心的反相性质",
@@ -427,6 +455,15 @@
 		"tags": "",
 		"require": "g.dchjsm>=1 && g.gwfayu>=1 && g.dwswgz>=1",
 		"max": 10
+	},
+	{
+		"id": "swzhi",
+		"name": "生物质",
+		"desc": "生物学研究的基础材料",
+		"group": "生物",
+		"tags": "",
+		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
+		"max": 0.1
 	},
 	{
 		"id": "cu_iron",
@@ -580,6 +617,16 @@
 		"desc": "更新",
 		"hide": true,
 		"group": "更新",
+		"tags": "",
+		"locked":false,
+		"max": 1
+	},
+	{
+		"id": "xiulian_wiki",
+		"name": "wiki",
+		"desc": "wiki",
+		"hide": true,
+		"group": "wiki",
 		"tags": "",
 		"locked":false,
 		"max": 1
@@ -2001,6 +2048,36 @@
 		"max":1
 	},
 	{
+		"id": "xiulian_wgshenwu",
+		"name": "微观生物研究",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":2
+	},
+	{
+		"id": "xiulian_huangquanxiul",
+		"name": "非实黄泉修炼",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":4
+	},
+	{
+		"id": "xiulian_chaos_yuansuydong",
+		"name": "元素涌动",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",
@@ -2432,6 +2509,19 @@
 		}
 	},
 	{
+		"id": "exchange_code_wiki",
+		"desc": "打开wiki",
+		"info": "感谢你打开本游戏的Wiki百科,目前百科只提供解锁关系,点击Wiki中的The brain标签显示条目解锁内容",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"xiulian_wiki": 1
+		}
+	},
+	{
 		"id": "exchange_code_2",
 		"desc": "十个零结晶兑换码",
 		"info": "十个零结晶!!!",
@@ -2625,6 +2715,15 @@
 		"max": 100
 	},
 	{
+		"id": "obstacles_info",
+		"desc": "地块障碍是你领土内较难开发的地形,每单位地块障碍有大量的地板占用和一些正面或者负面的资源加成。你建造的地块依赖性建筑会产生对应的地块占用(即地形名旁括号内的数字),你不能清理这个数字以下的地块。",
+		"hide": true,
+		"locked": false,
+		"name": "地块障碍",
+		"val":0,
+		"max": 1
+	},
+	{
 		"id": "age",
 		"desc": "",
 		"flavor": "餐玉驻年龄，吞霞反容颜",
@@ -2632,6 +2731,42 @@
 		"name": "寿命",
 		"val":21900,
 		"max": 21900
+	},
+	{
+		"id": "hill_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "丘陵占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "water_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "湖泊占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "basin_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "盆地占用",
+		"val":0,
+		"max":1000000000000
+	},
+	{
+		"id": "mount_res",
+		"desc": "",
+		"hide": true,
+		"locked": false,
+		"name": "山脉占用",
+		"val":0,
+		"max":1000000000000
 	},
 	{
 		"id": "tili",

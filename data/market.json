@@ -24,6 +24,18 @@
 		}
 	},
 	{
+		"id": "market_sell_baibaishu",
+		"name": "出售白白鼠",
+		"desc": "出售白白鼠换钱",
+		"require": "g.ltsyjs>=1",
+		"cost": {
+			"baibaishu": 1
+		},
+		"result": {
+			"money": 35
+		}
+	},
+	{
 		"id": "market_shortsword",
 		"name": "短剑",
 		"desc": "一把好用的短剑",
@@ -319,6 +331,26 @@
 		}
 	},
 	{
+		"id": "market_relimianju",
+		"name": "热力面具[AL-头盔]",
+		"require": "g.reliswgc>=1",
+		"cost": {
+			"lengqueshes":1,
+			"gwl": 50,
+			"jls": 100,
+			"yjdl": 50,
+			"money": 2500,
+			"zero_crystal": 70,
+			"ganwu": 1000,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 30
+		},
+		"loot": {
+			"relimianju": "100%"
+		}
+	},
+	{
 		"id": "market_nmpj",
 		"name": "凝火披肩[AL-背部]",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
@@ -446,6 +478,26 @@
 		},
 		"loot": {
 			"zidianjing": "100%"
+		}
+	},
+	{
+		"id": "market_rlgcpao",
+		"name": "热力工程袍[AL-护甲]",
+		"require": "g.reliswgc>=1",
+		"cost": {
+			"lengqueshes":1,
+			"gwl": 50,
+			"jls": 100,
+			"money": 2500,
+			"yjdl": 50,
+			"zero_crystal": 70,
+			"ganwu": 1000,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 50
+		},
+		"loot": {
+			"rlgcpao": "100%"
 		}
 	},
 	{
@@ -731,6 +783,23 @@
 		}
 	},
 	{
+		"id": "market_reli_core",
+		"name": "微型热能堆[AL]",
+		"require": "g.reliswgc>=1",
+		"cost": {
+			"lengqueshes":5,
+			"money": 2500,
+			"ganwu": 1000,
+			"yjdl": 50,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 50
+		},
+		"loot": {
+			"reli_core": "100%"
+		}
+	},
+	{
 		"id": "market_yqlp",
 		"name": "御气罗盘",
 		"require": "g.jjclx>=3",
@@ -751,6 +820,23 @@
 		},
 		"loot": {
 			"yqlp": "100%"
+		}
+	},
+	{
+		"id": "market_jixiepijian",
+		"name": "机械披肩[AL]",
+		"require": "g.reliswgc>=1",
+		"cost": {
+			"lengqueshes":1,
+			"money": 2500,
+			"ganwu": 1000,
+			"yjdl": 20,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 50
+		},
+		"loot": {
+			"jixiepijian": "100%"
 		}
 	},
 	{
@@ -797,6 +883,24 @@
 		},
 		"loot": {
 			"cbbz": "100%"
+		}
+	},
+	{
+		"id": "market_jixiejiezhi",
+		"name": "机械戒指[AL]",
+		"require": "g.reliswgc>=1",
+		"cost": {
+			"lg": 20,
+			"lengqueshes":1,
+			"money": 2500,
+			"ganwu": 1000,
+			"yjdl": 15,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 50
+		},
+		"loot": {
+			"jixiejiezhi": "100%"
 		}
 	},
 	{

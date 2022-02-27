@@ -330,15 +330,10 @@
 		"desc": "你发现一些有趣的地点...."
 	},
 	{
-		"id": "evt_scroll",
-		"name": "A tattered scroll",
-		"desc": "You buy a strange scroll from a travelling peddler. If you could only decipher the cryptic symbols."
-	},
-	{
-		"id": "evt_alcove",
-		"name": "Moving In",
-		"desc": "After taking your savings, your new master grants you a small nook under the stairs.",
-		"require": "alcove"
+		"id": "evt_zhengzhan",
+		"name": "征战",
+		"require": "g.zhengzhan>=1",
+		"desc": "解锁大型战场...."
 	},
 	{
 		"id": "evt_helper",
@@ -352,18 +347,6 @@
 			"lore.rate": 0.1,
 			"player.exp": 10
 		}
-	},
-	{
-		"id": "evt_rangers",
-		"name": "Impudent Meddlers",
-		"require": "g.wicked>0&&g.player.level>=15&&g.evilamt>=75",
-		"desc": "Hearing of your wicked deeds, the rangers of the Ettinmarch plots your downfall. An assault on their camps should crush their presumption."
-	},
-	{
-		"id": "evt_cabal",
-		"name": "Vile Plotters",
-		"require": "g.respectable>0&&g.player.level>=15&&g.virtue>=75",
-		"desc": "Learning of your virtuous ways, a cabal of ossurite priests plots your destruction. Travel to the Fetid Barrows and unravel their schemes."
 	},
 	{
 		"id": "tier0",
@@ -536,36 +519,6 @@
 		}
 	},
 	{
-		"id": "decent",
-		"require": "g.virtue>90&&g.evilamt<10",
-		"desc": "You are turning out to be an upstanding spellcaster.",
-		"mod": {
-			"light.rate": 0.1
-		}
-	},
-	{
-		"id": "respectable",
-		"require": "g.virtue>350&&g.evilamt<20",
-		"desc": "You have become a respected personage in the magical world.",
-		"result": {
-			"fame": 1
-		},
-		"mod": {
-			"light.rate": 0.1
-		}
-	},
-	{
-		"id": "good",
-		"name": "virtuous",
-		"require": "g.virtue>750&&g.evil<=0",
-		"desc": "Your actions have shown you to be a virtuous wizard.",
-		"mod": {
-			"light.max": 1,
-			"lightlore.rate": 0.1,
-			"lightlore.max": 1
-		}
-	},
-	{
 		"id": "secretfire",
 		"name": "servant of the secret fire",
 		"desc": "",
@@ -574,26 +527,6 @@
 			"firelore.max": 1,
 			"lightlore.rate": 0.2,
 			"lightlore.max": 1
-		}
-	},
-	{
-		"id": "immoral",
-		"desc": "You have taken your first steps on the path of evil. It's a good thing.",
-		"require": "g.evilamt>=5",
-		"mod": {
-			"shadowlore.rate": 0.2
-		}
-	},
-	{
-		"id": "wicked",
-		"desc": "Your wicked deeds put you on the sure path of evil. A few more steps, and there will be no turning back.",
-		"require": "g.evilamt>=250",
-		"result": {
-			"fame": 1
-		},
-		"mod": {
-			"shadowlore.max": 1,
-			"shadowlore.rate": 0.2
 		}
 	}
 ]

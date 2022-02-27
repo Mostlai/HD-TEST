@@ -64,6 +64,45 @@
 		}
 	},
 	{
+		"id": "baifuzhang",
+		"name": "百夫长[筑基]",
+		"level": 25,
+		"desc": "",
+		"kind": "heli",
+		"hp": 140,
+		"tohit": 16,
+		"defense": 31,
+		"attack": {
+			"name": "攻击",
+			"kind": "heli",
+			"dmg": "24~28"
+		},
+		"loot": {
+			"shenglingshi": 0.1,
+			"dirty_lingti": 0.3
+		}
+	},
+	{
+		"id": "huzhenshi",
+		"name": "护阵使者[筑基]",
+		"level": 30,
+		"desc": "",
+		"kind": "heli",
+		"hp": 400,
+		"tohit": 16,
+		"defense": 51,
+		"spells": "sgfszj",
+		"attack": {
+			"name": "攻击",
+			"kind": "heli",
+			"dmg": "44~45"
+		},
+		"loot": {
+			"shenglingshi": 1,
+			"dirty_lingti": 5
+		}
+	},
+	{
 		"id": "xiantianzhuji",
 		"name": "先天生命[筑基]",
 		"level": 25,

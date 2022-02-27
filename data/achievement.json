@@ -1,5 +1,22 @@
 [
 	{
+		"id": "ach_wiki",
+		"name": "Wiki",
+		"desc": "打开Wiki百科",
+		"target_item": "xiulian_wiki",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.1
+		}
+	},
+	{
 		"id": "ach_jingjie_1",
 		"name": "筑基",
 		"desc": "完成筑基",
@@ -343,6 +360,25 @@
 		}
 	},
 	{
+		"id": "ach_hqtzkcce_1",
+		"name": "好奇号",
+		"desc": "进行50次黄泉探针勘测",
+		"target_item": "hqtzkcce",
+		"target_val": 50,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.2,
+			"tian.rate": 0.2,
+			"ljdy.rate": 0.05
+		}
+	},
+	{
 		"id": "ach_conquer_1",
 		"name": "我来",
 		"desc": "征服25个小城镇",
@@ -375,6 +411,42 @@
 		},
 		"result":{
 			"ap": 0.1,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_obs_1",
+		"name": "养鱼人",
+		"desc": "拥有20单位湖泊",
+		"target_item": "obs_water",
+		"target_val": 20,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_obs_2",
+		"name": "登山者",
+		"desc": "拥有15单位山脉",
+		"target_item": "obs_mount",
+		"target_val": 20,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
 			"money.rate": 0.5
 		}
 	},
@@ -502,6 +574,24 @@
 		"result":{
 			"ap": 0.3,
 			"space.max": 130
+		}
+	},
+	{
+		"id": "ach_space_4",
+		"name": "地面工程",
+		"desc": "用地面积达到5000",
+		"target_item": "space",
+		"target_val": 5000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.3,
+			"space.max": 200
 		}
 	},
 	{

@@ -122,5 +122,35 @@
 		"color": "#9c7402",
 		"val":0,
 		"max": 1
+	},
+	{
+		"id": "element_shengwuzhuzhi",
+		"name": "生物组织",
+		"desc": "",
+		"hide": true,
+		"require": "g.ltsyjs>=1",
+		"color": "#29d61d",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "element_shengwuqiguan",
+		"name": "生物器官",
+		"desc": "",
+		"hide": true,
+		"require": "g.ltsyjs>=1",
+		"color": "#29d61d",
+		"val":0,
+		"max": 1
+	},
+	{
+		"id": "element_jidingzhi",
+		"name": "几丁质",
+		"desc": "",
+		"hide": true,
+		"require": "g.ltsyjs>=1",
+		"color": "#29d61d",
+		"val":0,
+		"max": 1
 	}
 ]
