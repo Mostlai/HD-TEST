@@ -3966,7 +3966,7 @@
 		"desc": "高效生产钛板",
 		"tags": "",
 		"max":6,
-		"require": "g.adv_meatl_yelian>=1",
+		"require": "g.gaoyarongr>=1",
 		"repeat": true,
 		"cost": {
 			"jls": 100,
@@ -3992,7 +3992,7 @@
 		"desc": "高效生产神经材料",
 		"tags": "",
 		"max":5,
-		"require": "g.adv_meatl_yelian>=1",
+		"require": "g.gaoyarongr>=1",
 		"repeat": true,
 		"cost": {
 			"jls": 60,
@@ -4019,7 +4019,7 @@
 		"desc": "高效生产FC合金",
 		"tags": "",
 		"max":5,
-		"require": "g.adv_meatl_yelian>=1",
+		"require": "g.gaoyarongr>=1",
 		"repeat": true,
 		"cost": {
 			"jls": 60,
