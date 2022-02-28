@@ -4877,14 +4877,14 @@
 		"name": "生物质发电站",
 		"desc": "生物质发电",
 		"tags": "",
-		"max":4,
+		"max":7,
 		"require": "g.swdianyanjiu>=2",
 		"repeat": true,
 		"cost": {
 			"ljdy": 5,
 			"gwl": 40,
 			"elect_gen": 2,
-			"swzhi": 10,
+			"swzhi": 15,
 			"yjdl": 80,
 			"cbclb": 40,
 			"jls": 150
