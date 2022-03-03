@@ -4997,7 +4997,8 @@
 			"money": 2500
 		},
 		"mod": {
-			"elect.rate": -3,
+			"elect.rate": -1,
+			"extra_space": 30,
 			"space": 15
 		}
 	},
@@ -5035,7 +5036,7 @@
 		"name": "黄泉驻守点",
 		"desc": "提供人员在黄泉的居住地，提供1点黄泉研究基础【需要3点】",
 		"tags": "unreal_point",
-		"max":1,
+		"max":10,
 		"require": "g.xiulian_huangquanxiul>=4",
 		"repeat": true,
 		"cost": {
@@ -5051,9 +5052,8 @@
 			"money": 2500
 		},
 		"mod": {
-			"command_code": 5,
-			"human_power.rate": 5,
-			"back_dream.rate": 0.1,
+			"human_power.rate": 1,
+			"back_dream.rate": 0.03,
 			"human_power.max": 300,
 			"space": 40
 		}
