@@ -787,7 +787,7 @@
 		},
 		"mod": {
 			"heli.rate": -0.01,
-			"elect.rate": -1,
+			"elect.rate": -0.3,
 			"jls.rate": 0.2,
 			"frs.rate": 0.1,
 			"cold_core.rate": -0.005,
