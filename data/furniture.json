@@ -470,7 +470,7 @@
 		"name": "合理电座",
 		"desc": "改良的磁刷线圈",
 		"tags": "",
-		"max": 3,
+		"max": 10,
 		"require": "g.yisuanzi>=1",
 		"repeat": true,
 		"cost": {
@@ -1752,7 +1752,7 @@
 		"name": "灵体线圈",
 		"desc": "借助灵体获取电能",
 		"tags": "",
-		"max":3,
+		"max":10,
 		"require": "g.stand_chejian>=1",
 		"repeat": true,
 		"cost": {
