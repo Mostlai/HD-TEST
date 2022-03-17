@@ -5103,6 +5103,28 @@
 		}
 	},
 	{
+		"id": "luojijiaohuanji",
+		"name": "逻辑交易机",
+		"desc": "进行自动交易获取钱币",
+		"tags": "",
+		"max":10,
+		"require": "g.ljdy>=1",
+		"repeat": true,
+		"cost": {
+			"jingdian": 20,
+			"ljdy": 5,
+			"yjdl": 50,
+			"cu_copper": 200,
+			"cu_iron": 200,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"money.rate": 2,
+			"space": 20
+		}
+	},
+	{
 		"id": "yizhirongqi",
 		"name": "抑制容器",
 		"desc": "能够存放更多灵血和衰败核心",
