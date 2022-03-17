@@ -5059,6 +5059,50 @@
 		}
 	},
 	{
+		"id": "luojiccx",
+		"name": "逻辑存储箱",
+		"desc": "存放逻辑单元",
+		"tags": "",
+		"max":10,
+		"require": "g.ljdy>=1",
+		"repeat": true,
+		"cost": {
+			"life_crystal": 10,
+			"jingdian": 20,
+			"ljdy": 5,
+			"fcchest": 1,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"ljdy.max": 5,
+			"money.max": 300,
+			"space": 10
+		}
+	},
+	{
+		"id": "feirefsq",
+		"name": "芥子废热发生器",
+		"desc": "产生顽固废热水",
+		"tags": "",
+		"max":10,
+		"require": "g.ljdy>=1",
+		"repeat": true,
+		"cost": {
+			"jingdian": 20,
+			"jls": 100,
+			"gwl": 50,
+			"yjdl": 80,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"frs": 80,
+			"extra_space": 30,
+			"space": 20
+		}
+	},
+	{
 		"id": "yizhirongqi",
 		"name": "抑制容器",
 		"desc": "能够存放更多灵血和衰败核心",
