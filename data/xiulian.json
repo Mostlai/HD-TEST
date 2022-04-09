@@ -4498,7 +4498,7 @@
 	},
 	{
 		"id": "lj_zhenhun_31",
-		"name": "真实生命(路径)",
+		"name": "真实命态(路径)",
 		"desc": "领悟生命的真实形态",
 		"tags": "路径",
 		"require": "g.xiulian_lj_zhenhun_1>=1",
