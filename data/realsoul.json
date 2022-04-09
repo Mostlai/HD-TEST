@@ -183,12 +183,13 @@
 			"exp": 550,
 			"element_blood": 20,
 			"zhenhun_pice_1": 40,
-			"white_soulcore_pice": 5
+			"white_soulcore_pice": 10
 		},
 		"craft_result":{
 			"white_jihun_fu": 1
 		},
 		"up_mod":{
+			"white_jihun.scost.white_soulcore_pice": 1,
 			"white_jihun.mod.max_rs": 1,
 			"white_jihun.mod.max_rs_mod": 2
 		},
