@@ -1857,6 +1857,7 @@
 		"name": "寻求闪亮",
 		"desc": "探寻闪亮之魂",
 		"verb": "寻求中",
+		"max": 1,
 		"require": "g.xl_lj_zhenhun_11>=1",
 		"length": 600,
 		"cost": {
@@ -1881,6 +1882,7 @@
 		"name": "寻求智慧",
 		"desc": "探寻智慧之魂",
 		"verb": "寻求中",
+		"max": 1,
 		"require": "g.xl_lj_zhenhun_11>=1",
 		"length": 600,
 		"cost": {
@@ -1906,6 +1908,7 @@
 		"name": "寻求黄金",
 		"desc": "探寻黄金之魂",
 		"verb": "寻求中",
+		"max": 1,
 		"require": "g.xl_lj_zhenhun_11>=1",
 		"length": 600,
 		"cost": {
@@ -2291,6 +2294,7 @@
 		"id": "xunqiukb",
 		"name": "寻求空白",
 		"desc": "探寻空白之魂",
+		"max": 1,
 		"verb": "寻求中",
 		"require": "g.xl_lj_zhenhun_11>=1",
 		"length": 600,
@@ -2312,6 +2316,7 @@
 	{
 		"id": "xunqiuhy",
 		"name": "寻求火焰",
+		"max": 1,
 		"desc": "探寻火焰之魂",
 		"verb": "寻求中",
 		"require": "g.xl_lj_zhenhun_11>=1",
@@ -2334,6 +2339,7 @@
 	{
 		"id": "xunqiupans",
 		"name": "寻求磐石",
+		"max": 1,
 		"desc": "探寻磐石之魂",
 		"verb": "寻求中",
 		"require": "g.xl_lj_zhenhun_11>=1",
@@ -2356,6 +2362,7 @@
 	{
 		"id": "xunqiuguangmao",
 		"name": "寻求广袤",
+		"max": 1,
 		"desc": "探寻界中之魂",
 		"verb": "寻求中",
 		"require": "g.sdlttancha>=5",
@@ -2380,6 +2387,7 @@
 		"id": "xunqiuty",
 		"name": "寻求统御",
 		"desc": "探寻率兵之魂",
+		"max": 1,
 		"verb": "寻求中",
 		"require": "g.sdlttancha>=10",
 		"length": 600,
