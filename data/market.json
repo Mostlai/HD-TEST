@@ -2,6 +2,7 @@
 	{
 		"id": "market_sell_zero_crystal",
 		"name": "出售零结晶",
+		"tags": "市场出售",
 		"desc": "出售多余的零结晶换钱",
 		"require": "g.market_un>0&&g.zero_crystal>=1",
 		"cost": {
@@ -14,6 +15,7 @@
 	{
 		"id": "market_buy_zero_crystal",
 		"name": "购买零结晶",
+		"tags": "购买资源",
 		"desc": "购买零结晶以备不时之需",
 		"require": "g.market_un>0&&g.zero_crystal>=1",
 		"cost": {
@@ -26,6 +28,7 @@
 	{
 		"id": "market_sell_baibaishu",
 		"name": "出售白白鼠",
+		"tags": "市场出售",
 		"desc": "出售白白鼠换钱",
 		"require": "g.ltsyjs>=1",
 		"cost": {
@@ -38,6 +41,7 @@
 	{
 		"id": "market_shortsword",
 		"name": "短剑",
+		"tags": "购买武器",
 		"desc": "一把好用的短剑",
 		"require": "g.market_un>0",
 		"cost": {
@@ -50,6 +54,7 @@
 	{
 		"id": "market_handaxe",
 		"name": "手斧",
+		"tags": "购买武器",
 		"desc": "一把好用的手斧",
 		"require": "g.market_un>0",
 		"cost": {
@@ -62,6 +67,7 @@
 	{
 		"id": "market_gloves",
 		"name": "皮手套",
+		"tags": "购买护甲",
 		"require": "g.market_un>0",
 		"cost": {
 			"money": 5
@@ -73,6 +79,7 @@
 	{
 		"id": "market_boots",
 		"name": "布鞋",
+		"tags": "购买护甲",
 		"require": "g.market_un>0",
 		"cost": {
 			"money": 3
@@ -84,6 +91,7 @@
 	{
 		"id": "market_hat",
 		"name": "小帽子",
+		"tags": "购买护甲",
 		"require": "g.market_un>0",
 		"cost": {
 			"money": 3
@@ -95,6 +103,7 @@
 	{
 		"id": "market_jerkin",
 		"name": "坎肩",
+		"tags": "购买护甲",
 		"require": "g.market_un>0",
 		"cost": {
 			"money": 7
@@ -106,6 +115,7 @@
 	{
 		"id": "market_pants",
 		"name": "皮裤",
+		"tags": "购买护甲",
 		"require": "g.market_un>0",
 		"cost": {
 			"money": 5
@@ -117,6 +127,7 @@
 	{
 		"id": "market_fch",
 		"name": "云翼头盔",
+		"tags": "购买护甲",
 		"require": "g.bio_metal_1>=1",
 		"cost": {
 			"iron_copper": 3
@@ -128,6 +139,7 @@
 	{
 		"id": "market_fca",
 		"name": "云翼护甲",
+		"tags": "购买护甲",
 		"require": "g.bio_metal_1>=1",
 		"cost": {
 			"iron_copper": 4
@@ -139,6 +151,7 @@
 	{
 		"id": "market_fcs",
 		"name": "云翼护腿",
+		"tags": "购买护甲",
 		"require": "g.bio_metal_1>=1",
 		"cost": {
 			"iron_copper": 3
@@ -150,6 +163,7 @@
 	{
 		"id": "market_fcf",
 		"name": "云翼战靴",
+		"tags": "购买护甲",
 		"require": "g.bio_metal_1>=1",
 		"cost": {
 			"iron_copper": 2
@@ -161,6 +175,7 @@
 	{
 		"id": "market_sj_sword_1",
 		"name": "神识流剑",
+		"tags": "购买武器",
 		"require": "g.sj_met>=5 &&g.metal_app>=5",
 		"cost": {
 			"sj_met": 5
@@ -172,6 +187,7 @@
 	{
 		"id": "market_ys_sword",
 		"name": "幽蚀之锋",
+		"tags": "购买武器",
 		"require": "g.fanshe_metal>=3",
 		"cost": {
 			"money": 320,
@@ -188,6 +204,7 @@
 	{
 		"id": "market_sgcd",
 		"name": "碎骨长刀",
+		"tags": "购买武器",
 		"require": "g.wuzhuojieshi>=3",
 		"cost": {
 			"money": 320,
@@ -202,6 +219,7 @@
 	{
 		"id": "market_xsp",
 		"name": "修士袍",
+		"tags": "购买护甲",
 		"require": "g.sj_met>=1 &&g.metal_app>=5",
 		"cost": {
 			"money": 120,
@@ -215,6 +233,7 @@
 	{
 		"id": "market_xsl",
 		"name": "修士履",
+		"tags": "购买护甲",
 		"require": "g.sj_met>=1 &&g.metal_app>=5",
 		"cost": {
 			"money": 100,
@@ -228,6 +247,7 @@
 	{
 		"id": "market_xsg",
 		"name": "修士冠",
+		"tags": "购买护甲",
 		"require": "g.sj_met>=1 &&g.metal_app>=5",
 		"cost": {
 			"money": 120,
@@ -241,6 +261,7 @@
 	{
 		"id": "market_xsyd",
 		"name": "修士鞶带",
+		"tags": "购买护甲",
 		"require": "g.sj_met>=1 &&g.metal_app>=5",
 		"cost": {
 			"money": 100,
@@ -254,6 +275,7 @@
 	{
 		"id": "market_tianh",
 		"name": "钛合头盔[BASE]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1",
 		"cost": {
 			"lg": 11,
@@ -280,6 +302,7 @@
 	{
 		"id": "market_wuyuew",
 		"name": "无月望[AL-头盔]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
 		"cost": {
 			"lg": 11,
@@ -307,6 +330,7 @@
 	{
 		"id": "market_nmhmj",
 		"name": "凝火面具[AL-头盔]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
 		"cost": {
 			"lg": 11,
@@ -333,6 +357,7 @@
 	{
 		"id": "market_relimianju",
 		"name": "热力面具[AL-头盔]",
+		"tags": "购买护甲",
 		"require": "g.reliswgc>=1",
 		"cost": {
 			"lengqueshes":1,
@@ -353,6 +378,7 @@
 	{
 		"id": "market_sanmsj",
 		"name": "三目三鹫[AL-头盔]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_lj_zhenhun_5>=1",
 		"cost": {
 			"gwl": 50,
@@ -373,6 +399,7 @@
 	{
 		"id": "market_shouhunzhet",
 		"name": "狩魂者头盔【AL-T】",
+		"tags": "购买护甲",
 		"require": "g.shouhunzhemox>=1",
 		"cost": {
 			"gwl": 50,
@@ -386,6 +413,7 @@
 	{
 		"id": "market_nmpj",
 		"name": "凝火披肩[AL-背部]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
 		"cost": {
 			"lg": 11,
@@ -412,6 +440,7 @@
 	{
 		"id": "market_nmsy",
 		"name": "凝火束腰[AL-腰部]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
 		"cost": {
 			"lg": 11,
@@ -438,6 +467,7 @@
 	{
 		"id": "market_wlbashqz",
 		"name": "五轮[AL-腰部]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_lj_zhenhun_5>=1",
 		"cost": {
 			"gwl": 50,
@@ -458,6 +488,7 @@
 	{
 		"id": "market_tianc",
 		"name": "钛合装甲[BASE-护甲]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1",
 		"cost": {
 			"lg": 11,
@@ -484,6 +515,7 @@
 	{
 		"id": "market_wuyuej",
 		"name": "无月镜[AL-护甲]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
 		"cost": {
 			"lg": 11,
@@ -511,6 +543,7 @@
 	{
 		"id": "market_zidianj",
 		"name": "紫电明镜[AL-护甲]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
 		"cost": {
 			"lg": 11,
@@ -536,6 +569,7 @@
 	{
 		"id": "market_rlgcpao",
 		"name": "热力工程袍[AL-护甲]",
+		"tags": "购买护甲",
 		"require": "g.reliswgc>=1",
 		"cost": {
 			"lengqueshes":1,
@@ -556,6 +590,7 @@
 	{
 		"id": "market_shouhunzhej",
 		"name": "狩魂者战甲【AL-T】",
+		"tags": "购买护甲",
 		"require": "g.shouhunzhemox>=1",
 		"cost": {
 			"gwl": 100,
@@ -569,6 +604,7 @@
 	{
 		"id": "market_tians",
 		"name": "钛合护腿[BASE]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1",
 		"cost": {
 			"lg": 11,
@@ -595,6 +631,7 @@
 	{
 		"id": "market_wuyuzl",
 		"name": "无月之旅[AL-护腿]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
 		"cost": {
 			"lg": 11,
@@ -622,6 +659,7 @@
 	{
 		"id": "market_zidianta",
 		"name": "紫电踏[AL-护腿]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
 		"cost": {
 			"lg": 11,
@@ -647,6 +685,7 @@
 	{
 		"id": "market_shouhunzhetui",
 		"name": "狩魂者护腿【AL-T】",
+		"tags": "购买护甲",
 		"require": "g.shouhunzhemox>=1",
 		"cost": {
 			"gwl": 100,
@@ -660,6 +699,7 @@
 	{
 		"id": "market_tianf",
 		"name": "钛合护足[BASE]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1",
 		"cost": {
 			"lg": 11,
@@ -686,6 +726,7 @@
 	{
 		"id": "market_shouhunzhezu",
 		"name": "狩魂者护足【AL-T】",
+		"tags": "购买护甲",
 		"require": "g.shouhunzhemox>=1",
 		"cost": {
 			"gwl": 100,
@@ -699,6 +740,7 @@
 	{
 		"id": "market_wuyuzw",
 		"name": "无月之握[AL-护手]",
+		"tags": "购买护甲",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
 		"cost": {
 			"lg": 11,
@@ -726,6 +768,7 @@
 	{
 		"id": "market_zdianci",
 		"name": "紫电刺[AL-护手]",
+		"tags": "购买护甲",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
 		"cost": {
 			"yjdl": 10,
@@ -752,6 +795,7 @@
 	{
 		"id": "market_hongjijgfsq",
 		"name": "红极激光发射器[AL-护手]",
+		"tags": "购买护甲",
 		"require": "g.red_jgsys>=1",
 		"cost": {
 			"ljdy": 10,
@@ -775,6 +819,7 @@
 	{
 		"id": "market_shouhunchangfs",
 		"name": "狩魂场发生器【AL-T-护手】",
+		"tags": "购买护甲",
 		"require": "g.kangjuxingzj>=1",
 		"cost": {
 			"gwl": 100,
@@ -791,6 +836,7 @@
 	{
 		"id": "market_wuyuemijian",
 		"name": "无月秘剑[AL-武器]",
+		"tags": "购买武器",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
 		"cost": {
 			"lg": 11,
@@ -818,6 +864,7 @@
 	{
 		"id": "market_yhdd",
 		"name": "阳火大刀[AL-武器]",
+		"tags": "购买武器",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
 		"cost": {
 			"gwl": 10,
@@ -842,6 +889,7 @@
 	{
 		"id": "market_zhenchanjian",
 		"name": "震颤剑[AL-武器]",
+		"tags": "购买武器",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.cbclb>=1",
 		"cost": {
 			"cbclb": 10,
@@ -865,6 +913,7 @@
 	{
 		"id": "market_shouhunqiehuo",
 		"name": "狩魂者怯火枪【AL-T】",
+		"tags": "购买武器",
 		"require": "g.shouhunzhemox>=1",
 		"cost": {
 			"gwl": 100,
@@ -881,6 +930,7 @@
 	{
 		"id": "market_shouhunciliu",
 		"name": "狩魂者磁流枪【AL-T】",
+		"tags": "购买武器",
 		"require": "g.shouhunzhemox>=1",
 		"cost": {
 			"gwl": 100,
@@ -897,6 +947,7 @@
 	{
 		"id": "market_tiane",
 		"name": "合理转化炉[BASE]",
+		"tags": "购买反应炉",
 		"require": "g.sjkzl>=1",
 		"cost": {
 			"lg": 11,
@@ -925,6 +976,7 @@
 	{
 		"id": "market_reli_core",
 		"name": "微型热能堆[AL]",
+		"tags": "购买反应炉",
 		"require": "g.reliswgc>=1",
 		"cost": {
 			"lengqueshes":5,
@@ -942,6 +994,7 @@
 	{
 		"id": "market_youkongrelu_core",
 		"name": "游空热炉【AL-T】",
+		"tags": "购买反应炉",
 		"require": "g.youkonmgrelumx>=1",
 		"cost": {
 			"lengqueshes":5,
@@ -956,6 +1009,7 @@
 	{
 		"id": "market_yqlp",
 		"name": "御气罗盘",
+		"tags": "购买护甲",
 		"require": "g.jjclx>=3",
 		"cost": {
 			"cbjs": 5,
@@ -979,6 +1033,7 @@
 	{
 		"id": "market_jixiepijian",
 		"name": "机械披肩[AL]",
+		"tags": "购买护甲",
 		"require": "g.reliswgc>=1",
 		"cost": {
 			"lengqueshes":1,
@@ -996,6 +1051,7 @@
 	{
 		"id": "market_suihunzhushe",
 		"name": "碎魂注射模块【AL-T】",
+		"tags": "购买护甲",
 		"require": "g.zhushemokuai>=1",
 		"cost": {
 			"gwl": 100,
@@ -1012,6 +1068,7 @@
 	{
 		"id": "market_cbxl",
 		"name": "纯白项链",
+		"tags": "购买护甲",
 		"require": "g.jjclx>=3",
 		"cost": {
 			"cbjs": 5,
@@ -1035,6 +1092,7 @@
 	{
 		"id": "market_cbbz",
 		"name": "纯白扳指",
+		"tags": "购买护甲",
 		"require": "g.jjclx>=3",
 		"cost": {
 			"cbjs": 5,
@@ -1058,6 +1116,7 @@
 	{
 		"id": "market_jixiejiezhi",
 		"name": "机械戒指[AL]",
+		"tags": "购买护甲",
 		"require": "g.reliswgc>=1",
 		"cost": {
 			"lg": 20,
@@ -1076,6 +1135,7 @@
 	{
 		"id": "market_cbzw",
 		"name": "纯白之握",
+		"tags": "购买护甲",
 		"require": "g.jjclx>=3",
 		"cost": {
 			"cbjs": 5,
@@ -1098,7 +1158,8 @@
 	},
 	{
 		"id": "market_basezd",
-		"name": "紫电[BASE]-武器",
+		"name": "紫电[BASE]",
+		"tags": "购买武器",
 		"require": "g.cbclb>=1",
 		"cost": {
 			"cbclb": 15,
@@ -1118,7 +1179,8 @@
 	},
 	{
 		"id": "market_baserndn",
-		"name": "热能电刀[BASE]-武器",
+		"name": "热能电刀[BASE]",
+		"tags": "购买武器",
 		"require": "g.gwwlx>=4",
 		"cost": {
 			"yxls": 10,
@@ -1138,7 +1200,8 @@
 	},
 	{
 		"id": "market_basefeijian",
-		"name": "飞剑[BASE]-武器",
+		"name": "飞剑[BASE]",
+		"tags": "购买武器",
 		"require": "g.xiulian_energ_xtcd>=1",
 		"cost": {
 			"wgys": 10,
