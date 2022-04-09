@@ -55,6 +55,7 @@
 		"val":0,
 		"max": 1000000000000,
 		"mod":{
+			"white_jihun.scost.white_soulcore_pice": 1,
 			"white_jihun.mod.max_rs": 1,
 			"white_jihun.mod.max_rs_mod": 2
 		}
