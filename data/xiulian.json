@@ -4594,7 +4594,7 @@
 		"name": "异步游空(思维)",
 		"desc": "扩展指令容量",
 		"tags": "思维",
-		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
 		"max": 2,
 		"cost": {
 			"money": 3000,
@@ -4617,7 +4617,7 @@
 		"name": "异步通感(思维)",
 		"desc": "提升大量计算力上限",
 		"tags": "思维",
-		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
 		"max": 2,
 		"cost": {
 			"money": 3000,
@@ -4639,7 +4639,7 @@
 		"name": "异步管理(思维)",
 		"desc": "提升大量人力上限",
 		"tags": "思维",
-		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
 		"max": 2,
 		"cost": {
 			"money": 3000,
