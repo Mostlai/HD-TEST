@@ -1,0 +1,84 @@
+[
+
+	{
+		"id": "blood_soulcore_pice",
+		"name": "血核碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "elect_soulcore_pice",
+		"name": "电闪碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "skill_soulcore_pice",
+		"name": "智识碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "money_soulcore_pice",
+		"name": "贪婪碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "white_soulcore_pice",
+		"name": "静白碎片",
+		"desc": "",
+		"val": 0,
+		"max": 20,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "ranshao_soulcore_pice",
+		"name": "燃烧碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "stone_soulcore_pice",
+		"name": "碎石碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "floor_soulcore_pice",
+		"name": "界中碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "command_soulcore_pice",
+		"name": "率兵碎片",
+		"desc": "",
+		"val": 0,
+		"max": 10,
+		"locked": false,
+		"flavor": ""
+	}
+]

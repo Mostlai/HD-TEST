@@ -38,7 +38,8 @@
 		"obstacles",
 		"weapon_factory",
 		"realsoul",
-		"realsoul_fu"
+		"realsoul_fu",
+		"soulpice"
 	],
 	"modules": [
 		"patrons",
