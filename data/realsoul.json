@@ -106,11 +106,11 @@
 			"skill_soulcore_pice": 5
 		},
 		"craft_result":{
-			"elect_jihun_fu": 1
+			"skill_jihun_fu": 1
 		},
 		"up_mod":{
-			"elect_jihun.mod.max_rs": 1,
-			"elect_jihun.mod.skill.rate": 10
+			"skill_jihun.mod.max_rs": 1,
+			"skill_jihun.mod.skill.rate": 10
 		},
 		"mod":{
 			"max_rs": 0,
