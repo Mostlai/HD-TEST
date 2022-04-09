@@ -256,6 +256,28 @@
 		}
 	},
 	{
+		"id": "heisezhist",
+		"name": "黑色置书台",
+		"desc": "能引导黑焰",
+		"tags": "",
+		"max": 1,
+		"require": "g.xunqiuhy>=1",
+		"repeat": true,
+		"cost": {
+			"heiyan": 10,
+			"booktable": 10,
+			"tian": 60
+		},
+		"mod": {
+			"books.max": 20,
+			"paper.max":100,
+			"snp_data.max": 20,
+			"exe_paper.max": 40,
+			"star_map.max": 30,
+			"space": 20
+		}
+	},
+	{
 		"id": "bantiaox",
 		"name": "板条箱",
 		"desc": "一个小型板条箱给你存放寻常金属",
@@ -515,6 +537,120 @@
 		"mod": {
 			"alculation.max":80,
 			"space": 15
+		}
+	},
+	{
+		"id": "kewangtian",
+		"name": "刻望天",
+		"desc": "一算子基础上的星空计算结果",
+		"tags": "",
+		"max": 10,
+		"require": "g.xingtusuanzi>=1",
+		"repeat": true,
+		"cost": {
+			"yisuanzi": 5,
+			"alculation": 400,
+			"money": 3000,
+			"shenglingshi": 1.5,
+			"star_map_1": 20,
+			"cold_core": 40,
+			"exe_paper": 60,
+			"star_map": 55,
+			"ganwu": 600
+		},
+		"mod": {
+			"alculation.max":50,
+			"space": 12
+		}
+	},
+	{
+		"id": "jingxingshi",
+		"name": "静心室",
+		"desc": "快速保持冷静",
+		"tags": "",
+		"max": 1,
+		"require": "g.xingtusuanzi>=1",
+		"repeat": true,
+		"cost": {
+			"yisuanzi": 5,
+			"kewangtian": 1,
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 600
+		},
+		"mod": {
+			"stress.rate": -0.5,
+			"skill.rate": 40,
+			"space": 20
+		}
+	},
+	{
+		"id": "helicjdj",
+		"name": "合理差极模块",
+		"desc": "使用刻望天与合理的相差性质进行发电",
+		"tags": "",
+		"max": 15,
+		"require": "g.xingtusuanzi>=1",
+		"repeat": true,
+		"cost": {
+			"helibengji": 1,
+			"kewangtian": 4,
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 600
+		},
+		"mod": {
+			"heli.rate": -0.5,
+			"elect.rate": 4.2,
+			"space": 12
+		}
+	},
+	{
+		"id": "jlcjmk",
+		"name": "混乱差极模块",
+		"desc": "使用刻望天与混沌的无序性进行发电",
+		"tags": "",
+		"max": 15,
+		"require": "g.xingtusuanzi>=1",
+		"repeat": true,
+		"cost": {
+			"element_luor": 10,
+			"qiyiyeti": 5,
+			"kewangtian": 3,
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 600
+		},
+		"mod": {
+			"ele_confusion.rate": 0.01,
+			"chaos.rate": -0.5,
+			"elect.rate": 5,
+			"space": 9
+		}
+	},
+	{
+		"id": "sweisys",
+		"name": "思维实验室",
+		"desc": "专注于研究思维的实验室",
+		"tags": "",
+		"max": 1,
+		"require": "g.xingtusuanzi>=1",
+		"repeat": true,
+		"cost": {
+			"shenglingshi": 10,
+			"jlcjmk": 3,
+			"helicjdj": 3,
+			"qiyiyeti": 10,
+			"kewangtian": 5,
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 600
+		},
+		"mod": {
+			"skill.rate": 20,
+			"ele_confusion.rate": -0.3,
+			"elect.rate": -6,
+			"space": 30
 		}
 	},
 	{
@@ -3491,8 +3627,120 @@
 			"money": 2200
 		},
 		"mod": {
+			"star_map_1.rate": 0.1,
+			"star_map.rate": 0.6,
 			"elect.rate": -1,
+			"space": 40
+		}
+	},
+	{
+		"id": "guangbotatai",
+		"name": "广播塔台",
+		"desc": "提高指令容量",
+		"tags": "",
+		"max":20,
+		"require": "g.guangbozhil>=1",
+		"repeat": true,
+		"cost": {
+			"zhenliedianbota": 1,
+			"jingdian": 5,
+			"ljdy": 10,
+			"kewangtian": 3,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 2200
+		},
+		"mod": {
+			"elect.rate": -3,
+			"human_power.max": -100,
+			"command_code.max": 5, 
 			"space": 25
+		}
+	},
+	{
+		"id": "jingjietatai",
+		"name": "警戒塔台",
+		"desc": "提高战斗评级",
+		"tags": "",
+		"max":20,
+		"require": "g.guangbozhil>=1",
+		"repeat": true,
+		"cost": {
+			"zhenliedianbota": 1,
+			"jingdian": 5,
+			"ljdy": 10,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 2200
+		},
+		"mod": {
+			"elect.rate": -3,
+			"human_power.max": -50,
+			"f_power": 40, 
+			"space": 15
+		}
+	},
+	{
+		"id": "mujitatai",
+		"name": "募集塔台",
+		"desc": "提高人力上限和恢复速度",
+		"tags": "",
+		"max":10,
+		"require": "g.guangbozhil>=1",
+		"repeat": true,
+		"cost": {
+			"zhenliedianbota": 1,
+			"jingdian": 5,
+			"human_power": 3000,
+			"ljdy": 10,
+			"paper": 300,
+			"ganwu": 1200,
+			"money": 2200
+		},
+		"mod": {
+			"elect.rate": -3,
+			"human_power.max": 200,
+			"human_power.rate": 2, 
+			"space": 15
+		}
+	},
+	{
+		"id": "bxrldlchang",
+		"name": "标型人力电力厂",
+		"desc": "本身不进行生产,作为电力指令的启动素材,撤销电力指令不会返还",
+		"tags": "",
+		"max":5,
+		"require": "g.pingfandiann>=1 && g.chaozuoguifan>=1",
+		"repeat": true,
+		"cost": {
+			"jingdian": 5,
+			"human_power": 1000,
+			"tian": 40,
+			"money": 1000
+		},
+		"mod": {
+			"space": 35
+		}
+	},
+	{
+		"id": "jcrelichang",
+		"name": "基础热能电力厂",
+		"desc": "本身不进行生产,作为电力指令的启动素材,撤销电力指令不会返还",
+		"tags": "",
+		"max":5,
+		"require": "g.pingfandiann>=1 && g.chaozuoguifan>=1 && g.yuanzirexue>=5",
+		"repeat": true,
+		"cost": {
+			"yxls": 15,
+			"jingdian": 10,
+			"ljdy": 5,
+			"yangrend": 1,
+			"human_power": 1000,
+			"tian": 40,
+			"money": 1000
+		},
+		"mod": {
+			"space": 35
 		}
 	},
 	{
@@ -4731,11 +4979,147 @@
 		}
 	},
 	{
+		"id": "qingxkj",
+		"name": "轻型框架",
+		"desc": "轻型框架用于建造部分精密结构",
+		"tags": "",
+		"max":50,
+		"require": "g.shouhunzhemox>=1",
+		"repeat": true,
+		"cost": {
+			"element_blood": 5,
+			"zhenhun_pice_1": 3,
+			"sj_met": 20,
+			"yjswyb": 5,
+			"tian": 50,
+			"cbclb": 10,
+			"ljdy": 6
+		},
+		"mod": {
+			"space": 1
+		}
+	},
+	{
+		"id": "qingxdql",
+		"name": "轻型电曲路",
+		"desc": "轻型电曲路用于建造部分精密结构",
+		"tags": "",
+		"max":50,
+		"require": "g.shouhunzhemox>=1",
+		"repeat": true,
+		"cost": {
+			"element_blood": 10,
+			"zhenhun_pice_1": 1,
+			"sj_met": 20,
+			"tian": 50,
+			"yjdl": 20,
+			"ljdy": 6
+		},
+		"mod": {
+			"elect.rate": 1,
+			"space": 1
+		}
+	},
+	{
+		"id": "bbskzjk",
+		"name": "白白鼠控制接口",
+		"desc": "用于控制与训练白白鼠",
+		"tags": "",
+		"max":5,
+		"require": "g.quntizysw>=1",
+		"repeat": true,
+		"cost": {
+			"baibaishu": 30,
+			"swzhi": 10,
+			"qingxdql": 5,
+			"qingxkj": 3,
+			"sj_met": 50,
+			"tian": 100,
+			"yjdl": 20,
+			"ljdy": 6
+		},
+		"mod": {
+			"baibaishu.rate": 1,
+			"elect.rate": -6,
+			"space": 30
+		}
+	},
+	{
+		"id": "qwdckzjk",
+		"name": "钳尾刀虫控制接口",
+		"desc": "用于控制与训练钳尾刀虫",
+		"tags": "",
+		"max":5,
+		"require": "g.quntijgsw>=1",
+		"repeat": true,
+		"cost": {
+			"qianwdc": 30,
+			"swzhi": 10,
+			"qingxdql": 5,
+			"qingxkj": 3,
+			"sj_met": 50,
+			"tian": 100,
+			"yjdl": 20,
+			"ljdy": 6
+		},
+		"mod": {
+			"qianwdc.rate": 0.3,
+			"elect.rate": -6,
+			"space": 30
+		}
+	},
+	{
+		"id": "jbgckzjk",
+		"name": "剑背龟控制接口",
+		"desc": "用于控制与训练剑背龟",
+		"tags": "",
+		"max":5,
+		"require": "g.quntifysw>=1",
+		"repeat": true,
+		"cost": {
+			"jbgui": 30,
+			"swzhi": 10,
+			"qingxdql": 5,
+			"qingxkj": 3,
+			"sj_met": 50,
+			"tian": 100,
+			"yjdl": 20,
+			"ljdy": 6
+		},
+		"mod": {
+			"jbgui.rate": 0.3,
+			"elect.rate": -6,
+			"space": 30
+		}
+	},
+	{
+		"id": "suihunslkzq",
+		"name": "碎魂散列控制器",
+		"desc": "用于控制与训练碎魂者",
+		"tags": "",
+		"max":1,
+		"require": "g.fuhexsw>=1",
+		"repeat": true,
+		"cost": {
+			"jbgui": 30,
+			"baibaishu": 30,
+			"yasexiyi": 30,
+			"qianwdc": 30,
+			"swzhi": 10,
+			"qingxdql": 5,
+			"qingxkj": 5
+		},
+		"mod": {
+			"elect.rate": -6,
+			"space": 30
+		}
+	},
+	{
 		"id": "swzlenggui",
 		"name": "生物质冷柜",
 		"desc": "提供生物质上限",
 		"tags": "",
-		"max":5,
+		"max":6,
 		"require": "g.qiguanjiepou>=1 && g.shengwuzhiquyang>=1 && g.jiaqiaoleilxfx>=1",
 		"repeat": true,
 		"cost": {
@@ -4748,7 +5132,7 @@
 		},
 		"mod": {
 			"swzhi.max": 10,
-			"elect.rate": -6,
+			"elect.rate": -3,
 			"space": 25
 		}
 	},
@@ -4769,9 +5153,9 @@
 			"yjswyb": 20
 		},
 		"mod": {
-			"command_code": 5,
-			"human_power.max": -500,
-			"elect.rate": -3,
+			"command_code": 2,
+			"human_power.max": -300,
+			"elect.rate": -1,
 			"swztaoxi.cost.money": -1000,
 			"space": 18
 		}
@@ -4892,6 +5276,112 @@
 		"mod": {
 			"elect.rate": 15,
 			"space": 20
+		}
+	},
+	{
+		"id": "dipydianqi",
+		"name": "低平压电器",
+		"desc": "利用生物质的低位平压电性质进行发电,效率较低",
+		"tags": "",
+		"max":20,
+		"require": "g.swdianyanjiu>=2",
+		"repeat": true,
+		"cost": {
+			"ljdy": 10,
+			"jingdian": 10,
+			"gwl": 40,
+			"swzhi": 15,
+			"yjdl": 80,
+			"cbclb": 40,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": 6,
+			"space": 10
+		}
+	},
+	{
+		"id": "daochongcjt",
+		"name": "刀虫拆解台",
+		"desc": "自动解剖钳尾刀虫",
+		"tags": "",
+		"max":10,
+		"require": "g.swdianyanjiu>=2",
+		"repeat": true,
+		"cost": {
+			"ljdy": 15,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"dipydianqi": 1,
+			"qianwdc": 20,
+			"jingdian": 10,
+			"gwl": 100,
+			"swzhi": 10,
+			"yjdl": 80,
+			"cbclb": 50,
+			"jls": 150
+		},
+		"mod": {
+			"qianwdc.rate": -0.1,
+			"element_jidingzhi.rate": 0.08,
+			"elect.rate": -2,
+			"space": 15
+		}
+	},
+	{
+		"id": "xiyichaijt",
+		"name": "蜥蜴拆解台",
+		"desc": "自动解剖亚瑟蜥蜴",
+		"tags": "",
+		"max":10,
+		"require": "g.swdianyanjiu>=2",
+		"repeat": true,
+		"cost": {
+			"ljdy": 15,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"dipydianqi": 1,
+			"yasexiyi": 20,
+			"jingdian": 10,
+			"gwl": 100,
+			"swzhi": 10,
+			"yjdl": 80,
+			"cbclb": 50,
+			"jls": 150
+		},
+		"mod": {
+			"yasexiyi.rate": -0.1,
+			"element_shengwuqiguan.rate": 0.08,
+			"elect.rate": -2,
+			"space": 10
+		}
+	},
+	{
+		"id": "jbguichaijt",
+		"name": "剑背拆解台",
+		"desc": "自动解剖剑背龟",
+		"tags": "",
+		"max":10,
+		"require": "g.swdianyanjiu>=2",
+		"repeat": true,
+		"cost": {
+			"ljdy": 15,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"dipydianqi": 1,
+			"jbgui": 20,
+			"jingdian": 10,
+			"gwl": 100,
+			"swzhi": 10,
+			"yjdl": 80,
+			"cbclb": 50,
+			"jls": 150
+		},
+		"mod": {
+			"jbgui.rate": -0.1,
+			"element_shengwuzhuzhi.rate": 0.08,
+			"elect.rate": -2,
+			"space": 10
 		}
 	},
 	{
@@ -5122,6 +5612,211 @@
 		"mod": {
 			"money.rate": 2,
 			"space": 20
+		}
+	},
+	{
+		"id": "blood_orb",
+		"name": "血珠",
+		"desc": "存放血响",
+		"tags": "",
+		"max":10,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"jingdian": 20,
+			"ljdy": 5,
+			"cu_copper": 100,
+			"cu_iron": 150,
+			"hp": 30,
+			"money": 2500
+		},
+		"mod": {
+			"element_blood.max": 5,
+			"space": 20
+		}
+	},
+	{
+		"id": "hunyuren",
+		"name": "魂语刃",
+		"desc": "游空真魂凝聚的利刃，几乎没什么杀伤力",
+		"tags": "",
+		"max":10,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"lxue":20,
+			"zhenhun_pice_1": 40,
+			"hp": 50,
+			"tili": 30,
+			"dirty_lingti":10,
+			"dirty_core":10
+		},
+		"mod": {
+			"space": 1,
+			"extra_space": 10
+		}
+	},
+	{
+		"id": "shihunren",
+		"name": "试魂刃",
+		"desc": "游空真魂凝聚的利刃，缓慢的伤害修行者本身获取血响",
+		"tags": "",
+		"max":10,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"hunyuren": 1,
+			"lxue":20,
+			"zhenhun_pice_1": 40,
+			"hp": 50,
+			"tili": 30,
+			"dirty_lingti":10,
+			"dirty_core":10
+		},
+		"mod": {
+			"hp.max":-1,
+			"element_blood.rate": 0.07,
+			"space": 5
+		}
+	},
+	{
+		"id": "quanxiangren",
+		"name": "全向刃",
+		"desc": "游空真魂凝聚的利刃，刀尖指向血液汇聚之处",
+		"tags": "point_blade",
+		"max":1,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"element_wuhuan":15,
+			"element_luor":10,
+			"hunyuren": 1,
+			"lxue":20,
+			"zhenhun_pice_1": 40,
+			"hp": 50,
+			"tili": 30,
+			"dirty_lingti":10,
+			"dirty_core":10
+		},
+		"mod": {
+			"money.rate": 10,
+			"space": 5
+		}
+	},
+	{
+		"id": "xuevan",
+		"name": "血餐",
+		"desc": "更多血液",
+		"tags": "",
+		"max":10,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"ganwu":600,
+			"element_blood": 10,
+			"lxue":3,
+			"zhenhun_pice_1": 1,
+			"hp": 50,
+			"tili": 30,
+			"dirty_lingti":10,
+			"dirty_core":10
+		},
+		"mod": {
+			"hp.max":2,
+			"space": 5
+		}
+	},
+	{
+		"id": "xuexiangciquan",
+		"name": "血响磁圈",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"element_blood": 25,
+			"lxue":20,
+			"tian":30,
+			"star_map":55,
+			"star_map_1":10,
+			"zhenhun_pice_1": 30,
+			"hp": 60,
+			"tili": 30
+		},
+		"mod": {
+			"elect.rate":2,
+			"space": 10
+		}
+	},
+	{
+		"id": "xuexiangliudong",
+		"name": "血响流动",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.xueshu>=1",
+		"repeat": true,
+		"cost": {
+			"element_blood": 10,
+			"lxue":20,
+			"tian":30,
+			"star_map":55,
+			"star_map_1":10,
+			"zhenhun_pice_1": 30,
+			"hp": 60,
+			"tili": 30
+		},
+		"mod": {
+			"elect.rate":5,
+			"space": 10
+		}
+	},
+	{
+		"id": "xueqian",
+		"name": "血钱",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.xueshu>=1",
+		"repeat": true,
+		"cost": {
+			"ganwu":1500,
+			"element_blood": 10,
+			"lxue":10,
+			"zhenhun_pice_1": 4,
+			"hp": 50,
+			"tili": 30,
+			"dirty_lingti":10,
+			"dirty_core":10
+		},
+		"mod": {
+			"money.rate":2,
+			"space": 5
+		}
+	},
+	{
+		"id": "xueling",
+		"name": "血灵",
+		"desc": "提供感悟速率",
+		"tags": "",
+		"max":20,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"repeat": true,
+		"cost": {
+			"ganwu":600,
+			"element_blood": 25,
+			"lxue":20,
+			"paper":100,
+			"jingdian":10,
+			"super_mind":10,
+			"zhenhun_pice_1": 30,
+			"hp": 60,
+			"tili": 30
+		},
+		"mod": {
+			"ganwu.rate":1,
+			"space": 10
 		}
 	},
 	{

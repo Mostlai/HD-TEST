@@ -36,7 +36,9 @@
 		"metal",
 		"fight",
 		"obstacles",
-		"weapon_factory"
+		"weapon_factory",
+		"realsoul",
+		"realsoul_fu"
 	],
 	"modules": [
 		"patrons",

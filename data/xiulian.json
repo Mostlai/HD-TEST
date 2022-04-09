@@ -2752,6 +2752,7 @@
 			"time": 155,
 			"elect.max": 5,
 			"elect.rate": 5,
+			"ele_luanxie": 1,
 			"xiulian_chaos_yuansuydong":1,
 			"xiulian_huangquanxiul":1
 		}
@@ -3495,7 +3496,7 @@
 		"name": "混乱格式(元素物理)",
 		"desc": "神识混乱化",
 		"tags": "元素物理",
-		"require": "g.bianxiejd>=1 && g.luoryuequ>=1",
+		"require": "g.zlssx>=1 && g.luoryuequ>=1",
 		"max": 2,
 		"cost": {
 			"element_wuhuan":10,
@@ -3521,7 +3522,7 @@
 		"name": "本源格式(元素物理)",
 		"desc": "神识本源化",
 		"tags": "元素物理",
-		"require": "g.bianxiejd>=1 && g.podaozhim>=1",
+		"require": "g.zlssx>=1 && g.podaozhim>=1",
 		"max": 2,
 		"cost": {
 			"element_wuhuan":10,
@@ -4422,6 +4423,405 @@
 		"xiulianresult": {
 			"frs":29,
 			"xiulian_heli_ys_3":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_1",
+		"name": "真魂(路径)",
+		"desc": "解锁真魂路线",
+		"tags": "路径",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"human_power": 2000,
+			"money": 4000,
+			"ganwu": 2500,
+			"super_mind": 40,
+			"alculation": 1500,
+			"star_map_1": 20,
+			"life_crystal": 10
+		},
+		"xiulianresult": {
+			"hp.max": 10,
+			"xiulian_lj_zhenhun_1":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_2",
+		"name": "真实生命(路径)",
+		"desc": "修炼内在的真实生命",
+		"tags": "路径",
+		"require": "g.xiulian_lj_zhenhun_1>=1",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"jingdian": 10,
+			"dirty_lingti": 20,
+			"qiyiyeti": 10,
+			"ganwu": 2500,
+			"super_mind": 40,
+			"alculation": 1500,
+			"star_map_1": 20,
+			"life_crystal": 10
+		},
+		"xiulianresult": {
+			"zhenhun_pice_1.max": 10,
+			"xiulian_lj_zhenhun_2":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_3",
+		"name": "真实形态(路径)",
+		"desc": "修炼内在的真实生命",
+		"tags": "路径",
+		"require": "g.xiulian_lj_zhenhun_1>=1",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"jingdian": 10,
+			"dirty_lingti": 20,
+			"qiyiyeti": 10,
+			"ganwu": 2500,
+			"super_mind": 40,
+			"alculation": 1500,
+			"star_map_1": 20,
+			"life_crystal": 10
+		},
+		"xiulianresult": {
+			"age.max": 36500,
+			"age": 36500,
+			"zhenhun_pice_1.max": 10,
+			"zhenhun_pice_2.max": 5,
+			"xiulian_lj_zhenhun_2":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_3",
+		"name": "真实形态(路径)",
+		"desc": "领悟生命的真实形态",
+		"tags": "路径",
+		"require": "g.xiulian_lj_zhenhun_1>=1",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"jingdian": 10,
+			"dirty_lingti": 20,
+			"qiyiyeti": 10,
+			"ganwu": 2500,
+			"super_mind": 40,
+			"alculation": 1500,
+			"star_map_1": 20,
+			"life_crystal": 10
+		},
+		"xiulianresult": {
+			"age.max": 36500,
+			"age": 36500,
+			"zhenhun_pice_1.max": 10,
+			"zhenhun_pice_2.max": 5,
+			"xiulian_lj_zhenhun_2":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_4",
+		"name": "真实灵魂(路径)",
+		"desc": "体会一切的真实灵魂",
+		"tags": "路径",
+		"require": "g.xiulian_lj_zhenhun_1>=1",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"jingdian": 10,
+			"dirty_lingti": 20,
+			"qiyiyeti": 10,
+			"ganwu": 2500,
+			"super_mind": 40,
+			"alculation": 1500,
+			"star_map_1": 20,
+			"life_crystal": 10
+		},
+		"xiulianresult": {
+			"dirty_lingti.rate": 1,
+			"zhenhun_pice_1.max": 10,
+			"zhenhun_pice_2.max": 5,
+			"xiulian_lj_zhenhun_2":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_5",
+		"name": "勿失秋毫(观测之术)",
+		"desc": "修炼衍生真魂之术",
+		"tags": "观测之术",
+		"require": "g.xiulian_lj_zhenhun_2>=3",
+		"max": 2,
+		"cost": {
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"dirty_lingti": 20,
+			"ganwu": 2500,
+			"alculation": 1500
+		},
+		"xiulianresult": {
+			"xiulian_lj_zhenhun_5":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_6",
+		"name": "异常探测(观测之术)",
+		"desc": "看到那些能量充沛之地",
+		"tags": "观测之术",
+		"require": "g.xiulian_lj_zhenhun_2>=3",
+		"max": 2,
+		"cost": {
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"zero_crystal": 50,
+			"heli": 40,
+			"jingdian": 10,
+			"ganwu": 2500,
+			"alculation": 1500
+		},
+		"xiulianresult": {
+			"xiulian_lj_zhenhun_6":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_7",
+		"name": "异步游空(思维)",
+		"desc": "扩展指令容量",
+		"tags": "思维",
+		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"max": 2,
+		"cost": {
+			"money": 3000,
+			"alculation": 1000,
+			"human_power": 1000,
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"zhenhun_pice_1": 35
+		},
+		"xiulianresult": {
+			"command_code.max":20
+		}
+	},
+	{
+		"id": "lj_zhenhun_8",
+		"name": "异步通感(思维)",
+		"desc": "提升大量计算力上限",
+		"tags": "思维",
+		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"max": 2,
+		"cost": {
+			"money": 3000,
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"alculation":1500,
+			"zhenhun_pice_1": 35
+		},
+		"xiulianresult": {
+			"alculation.max":1000
+		}
+	},
+	{
+		"id": "lj_zhenhun_9",
+		"name": "异步管理(思维)",
+		"desc": "提升大量人力上限",
+		"tags": "思维",
+		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"max": 2,
+		"cost": {
+			"money": 3000,
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"human_power":2000,
+			"zhenhun_pice_1": 35
+		},
+		"xiulianresult": {
+			"human_power.max":1500
+		}
+	},
+	{
+		"id": "lj_blood_1",
+		"name": "疗血(生命构造)",
+		"desc": "修炼血术",
+		"tags": "生命构造",
+		"require": "g.xueshu>=5",
+		"max": 2,
+		"cost": {
+			"money": 3000,
+			"hp": 50,
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_luor": 10,
+			"ganwu": 2500,
+			"human_power":2000,
+			"zhenhun_pice_1": 10
+		},
+		"xiulianresult": {
+			"xl_lj_blood_1":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_10",
+		"name": "纯净基魂(路径)",
+		"desc": "凝聚第一个真魂",
+		"tags": "路径",
+		"require": "g.xiulian_lj_zhenhun_6>=3",
+		"max": 2,
+		"cost": {
+			"lxue": 30,
+			"qiyiyeti": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"jihun":5,
+			"zhenhun_pice_1": 35
+		},
+		"xiulianresult": {
+			"hp.max":10,
+			"heli.rate":1,
+			"chaos.rate":1,
+			"shenshi.rate":1,
+			"xl_lj_zhenhun_10":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_11",
+		"name": "真语魂(路径)",
+		"desc": "探求更多真魂",
+		"tags": "路径",
+		"require": "g.max_rs>=1",
+		"max": 2,
+		"cost": {
+			"lxue": 30,
+			"element_blood": 50,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"jihun":5,
+			"zhenhun_pice_1": 40
+		},
+		"xiulianresult": {
+			"heli.rate":1,
+			"chaos.rate":1,
+			"shenshi.rate":1,
+			"xl_lj_zhenhun_11":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_12",
+		"name": "黑焰引导(元素能量)",
+		"desc": "学习黑焰法术",
+		"tags": "元素能量",
+		"require": "g.heisezhist>=1",
+		"max": 2,
+		"cost": {
+			"element_blood": 50,
+			"element_fire": 10,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"huohua": 10,
+			"yanhuo": 10,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"jihun":5,
+			"zhenhun_pice_1": 40
+		},
+		"xiulianresult": {
+			"age.max": 20950,
+			"age": 20950,
+			"xl_lj_zhenhun_12":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_13",
+		"name": "黄泉魂(路径)",
+		"desc": "",
+		"tags": "路径",
+		"require": "g.fsbdsj>=1 && g.xl_lj_zhenhun_11>=1",
+		"max": 2,
+		"cost": {
+			"element_blood": 50,
+			"fsbdsj" : 20,
+			"dirty_core": 10,
+			"dirty_lingti": 20,
+			"ganwu": 2500,
+			"jingdian": 10,
+			"jihun":5,
+			"zhenhun_pice_1": 40
+		},
+		"xiulianresult": {
+			"age.max": 20950,
+			"age": 20950,
+			"xl_lj_zhenhun_13":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_14",
+		"name": "碎魂游星(能量物理)",
+		"desc": "解锁碎魂战斗装甲",
+		"tags": "能量物理",
+		"require": "g.xl_lj_zhenhun_11>=1 && g.ljdy>=1",
+		"max": 2,
+		"cost": {
+			"element_blood": 50,
+			"ljdy" : 20,
+			"dirty_core": 10,
+			"dirty_lingti": 20,
+			"ganwu": 3000,
+			"money": 2000,
+			"laser_ene": 3,
+			"jingdian": 10,
+			"jihun":5,
+			"zhenhun_pice_1": 40
+		},
+		"xiulianresult": {
+			"age.max": 20950,
+			"age": 20950,
+			"xl_lj_zhenhun_14":1
+		}
+	},
+	{
+		"id": "lj_zhenhun_15",
+		"name": "碎魂生物(生命构造)",
+		"desc": "解锁碎魂生物学",
+		"tags": "生命构造",
+		"require": "g.xl_lj_zhenhun_11>=1 && g.swzhi>=1",
+		"max": 2,
+		"cost": {
+			"element_blood": 40,
+			"swzhi" : 20,
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti": 20,
+			"ganwu": 3000,
+			"money": 2000,
+			"jingdian": 10,
+			"zhenhun_pice_1": 40
+		},
+		"xiulianresult": {
+			"age.max": 20950,
+			"age": 20950,
+			"xl_lj_zhenhun_15":1
 		}
 	},
 	{

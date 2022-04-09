@@ -1936,6 +1936,75 @@
 		}
 	},
 	{
+		"id": "xueshu",
+		"name": "血术",
+		"require": "g.niuquxue>=4 && g.xl_lj_zhenhun_10>=1",
+		"level": 17,
+		"desc": "扭曲血液",
+		"buy": {
+			"element_blood": 10,
+			"element_luor": 10,
+			"element_wuhuan": 10,
+			"ganwu": 1500,
+			"money": 1500,
+			"shihunren":1
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"element_blood": 0.1,
+			"alculation": 10,
+			"element_luor": 0.05,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"hp.rate": 1,
+			"hp.max": 2,
+			"skill.rate": 5,
+			"ganwu.rate": 2,
+			"ganwu.max": 10
+		}
+	},
+	{
+		"id": "suihun_bio",
+		"name": "碎魂生物学",
+		"require": "g.xl_lj_zhenhun_15>=1",
+		"level": 17,
+		"desc": "",
+		"buy": {
+			"element_blood": 10,
+			"element_luor": 10,
+			"element_wuhuan": 10,
+			"ganwu": 1500,
+			"money": 1500,
+			"swzhi":10
+		},
+		"effect": {
+			"time": 17
+		},
+		"run": {
+			"element_blood": 0.1,
+			"alculation": 10,
+			"ganwu": 4,
+			"tili": 3
+		},
+		"result": {
+			"sp": 1
+		},
+		"mod": {
+			"hp.rate": 1,
+			"hp.max": 2,
+			"skill.rate": 5,
+			"ganwu.rate": 2,
+			"ganwu.max": 10
+		}
+	},
+	{
 		"id": "niuquzhouyu",
 		"name": "扭曲咒语",
 		"require": "g.niuquxue>=3 && g.guifaxue>=5",

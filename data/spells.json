@@ -292,6 +292,100 @@
 		"result": "m_solid_2"
 	},
 	{
+		"id": "solid_3",
+		"name": "治愈鼠召唤",
+		"desc": "需要【白白鼠控制接口】",
+		"school": "生物",
+		"need": "g.bbskzjk>=1",
+		"locked":true,
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"baibaishu": 10,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": "zhiyushu"
+	},
+	{
+		"id": "solid_4",
+		"name": "守御龟召唤",
+		"desc": "需要【剑背龟控制接口】",
+		"school": "生物",
+		"need": "g.jbgckzjk>=1",
+		"locked":true,
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"jbgui": 5,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": "shouyugui"
+	},
+	{
+		"id": "solid_5",
+		"name": "猛攻螳螂召唤",
+		"desc": "需要【钳尾刀虫控制接口】",
+		"school": "生物",
+		"need": "g.qwdckzjk>=1",
+		"locked":true,
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"qianwdc": 5,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": "mgtangl"
+	},
+	{
+		"id": "solid_6",
+		"name": "碎魂群召唤",
+		"desc": "需要【碎魂散列控制器】",
+		"school": "生物",
+		"need": "g.suihunslkzq>=1",
+		"locked":true,
+		"level": 5,
+		"cd": 10,
+		"buy": {
+			"human_power": 1000,
+			"money": 200
+		},
+		"cost": {
+			"money": 1000,
+			"hp": 30,
+			"dirty_lingti": 5,
+			"zhenhun_pice_1": 5,
+			"shenshi": 5,
+			"super_mind": 2,
+			"heli": 20,
+			"chaos": 20
+		},
+		"result": [
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi",
+			"suihunqunzi"
+		]
+	},
+	{
 		"id": "wmgxj",
 		"name": "万木归心决[筑基]",
 		"school": "源泉",
@@ -369,7 +463,7 @@
 			"name": "破落化伤",
 			"duration": 10,
 			"effect": {
-				"hp": 10
+				"hp": 6
 			}
 		}
 	},
@@ -843,7 +937,7 @@
 			"name": "大梦如歌",
 			"duration": 20,
 			"effect": {
-				"hp": 20
+				"hp": 12
 			}
 		}
 	},
@@ -868,7 +962,7 @@
 			"name": "午夜无归",
 			"duration": 30,
 			"effect": {
-				"hp": 40
+				"hp": 18
 			}
 		}
 	},
@@ -892,7 +986,7 @@
 			"name": "自然生灵",
 			"duration": 60,
 			"effect": {
-				"hp": 35
+				"hp": 18
 			}
 		}
 	},
@@ -1096,7 +1190,7 @@
 			"name": "抽刀封隙式",
 			"duration": 10,
 			"effect": {
-				"hp": 30
+				"hp": 15
 			}
 		}
 	},
@@ -1127,6 +1221,206 @@
 				}
 			}
 		}
+	},
+	{
+		"id": "blood_sum_1",
+		"name": "渴望血",
+		"desc":"消耗一颗血核碎片召唤【残缺的渴血野兽】",
+		"school": "血术",
+		"locked":true,
+		"level": 7,
+		"buy": {
+			"blood_soulcore_pice": 1,
+			"element_blood": 20,
+			"zhenhun_pice_1": 5,
+			"money": 3000
+		},
+		"cost": {
+			"blood_soulcore_pice": 1
+		},
+		"result": "kexuebeast_player"
+	},
+	{
+		"id": "yiwangxue",
+		"name": "遗忘血",
+		"desc":"损失气血来获取气血恢复",
+		"school": "血术",
+		"locked":true,
+		"level": 7,
+		"buy": {
+			"zhenhun_pice_1": 5,
+			"element_blood": 20
+		},
+		"cost": {
+			"hp": 30
+		},
+		"dot": {
+			"id": "yiwangxuebf",
+			"name": "遗忘血",
+			"duration": 10,
+			"effect": {
+				"hp": 10
+			}
+		}
+	},
+	{
+		"id": "smxue",
+		"name": "生命血",
+		"school": "血术",
+		"locked":true,
+		"level": 7,
+		"buy": {
+			"zhenhun_pice_1": 5,
+			"element_blood": 20
+		},
+		"cost": {
+			"heli": 1,
+			"tili": 1,
+			"hp": 10
+		},
+		"attack": {
+			"damage": "30~31",
+			"kind": "chaos",
+			"dot": {
+				"kind": "chaos",
+				"name": "生命血",
+				"duration": 1,
+				"damage": 10
+			}
+		}
+	},
+	{
+		"id": "balck_firestorm",
+		"name": "皆受黑焰",
+		"school": "真火",
+		"level": 10,
+		"desc": "引导曾经的火惩罚每个人",
+		"cd": 10,
+		"locked":true,
+		"need": "g.heisezhist>=1",
+		"buy": {
+			"ganwu": 2000,
+			"heiyan": 10
+		},
+		"cost": {
+			"heli": 10,
+			"heiyan": 3
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"kind": "fire",
+						"dmg": "30~31",
+						"duration": 30
+					}
+				},
+				{
+					"id": "bfirestormprotection",
+					"name": "黑焰防护",
+					"targets": "allies",
+					"dot": {
+						"duration": 30,
+						"mod": {
+							"self.resist.fire": 80
+						}
+					}
+				}
+			]
+		},
+		"flavor": "需要有【黑色置书台】家具"
+	},
+	{
+		"id": "balck_firestorm_cure",
+		"name": "皆享黑焰",
+		"school": "真火",
+		"level": 10,
+		"desc": "引导曾经的火治愈每个人",
+		"cd": 10,
+		"locked":true,
+		"need": "g.heisezhist>=1",
+		"buy": {
+			"ganwu": 2000,
+			"heiyan": 10
+		},
+		"cost": {
+			"heli": 10,
+			"heiyan": 3
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"id": "jiexhy_all",
+						"name": "皆享黑焰",
+						"kind": "fire",
+						"duration": 30,
+						"effect": {
+							"hp": 20
+						}
+					}
+				},
+				{
+					"id": "jiexhy_all_p",
+					"name": "皆享黑焰[友方额外加成]",
+					"targets": "allies",
+					"dot": {
+						"duration": 30,
+						"effect": {
+							"hp": 15
+						}
+					}
+				}
+			]
+		},
+		"flavor": "需要有【黑色置书台】家具"
+	},
+	{
+		"id": "shouhunchang",
+		"name": "狩魂场【狩魂】",
+		"desc": "激活狩魂场",
+		"school": "神机",
+		"locked":true,
+		"need": "g.shouhun_chang>=1",
+		"level": 1,
+		"cd": 20,
+		"buy": {
+			"elect": 1
+		},
+		"cost": {
+			"elect": 1
+		},
+		"dot": {
+			"duration": 10,
+			"targets": "allies",
+			"mod": {
+				"self.defense": 100,
+				"elect.rate": -20
+			}
+		},
+		"flavor": "需要装备【狩魂场发生器【AL-T】】"
+	},
+	{
+		"id": "suihun_zhushe",
+		"level": 1,
+		"name": "碎魂注射【狩魂】",
+		"desc": "注射大量神经活性物质以恢复活力",
+		"school": "神机",
+		"locked":true,
+		"cd": 10,
+		"need": "g.jisu_zhushe>=1",
+		"buy": {
+			"elect": 1
+		},
+		"cost": {
+			"elect": 30
+		},
+		"result": {
+			"self.hp": 88
+		},
+		"flavor": "需要装备【碎魂注射模块【AL-T】】"
 	},
 	{
 		"id": "stam1",

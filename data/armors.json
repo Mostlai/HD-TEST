@@ -181,6 +181,27 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "youkongrelu_core",
+		"name": "游空热炉【AL-T】",
+		"color": "#2980B9",
+		"desc": "游空真魂驱动的反应炉",
+		"equneed":"g.ALT>=1",
+		"armor": 10,
+		"slot": "trinket",
+		"enchants": 6,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"yxls.rate": -0.01,
+				"shenshi.max": -1,
+				"elect.max": 10,
+				"elect.rate": 25
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
 		"id": "tian_helmet",
 		"name": "钛合头盔[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -279,6 +300,56 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "sanmsj",
+		"name": "三目三鹫[AL]",
+		"color": "#2980B9",
+		"desc": "雕刻了三鹫",
+		"equneed":"g.AL>=1",
+		"armor": 35,
+		"slot": "head",
+		"enchants": 0,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 40,
+				"lg.rate": 0.5,
+				"super_mind.rate": 0.5,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "shouhunzhet",
+		"name": "狩魂者头盔【AL-T】",
+		"color": "#2980B9",
+		"desc": "狩猎真魂",
+		"equneed":"g.ALT>=1",
+		"armor": 45,
+		"slot": "head",
+		"enchants": 0,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 60,
+				"self.resist.heli": 10,
+				"self.resist.chaos": 10,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
 		"id": "ninghuopijian",
 		"name": "凝火披肩[AL]",
 		"color": "#2980B9",
@@ -308,7 +379,7 @@
 		"equneed":"g.AL>=1",
 		"armor": 10,
 		"slot": "waist",
-		"enchants": 3,
+		"enchants": 2,
 		"cost": 10,
 		"level": 30,
 		"alter": {
@@ -318,6 +389,31 @@
 				"shenshi.max": -1,
 				"elect.max": -3,
 				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "wlbashqz",
+		"name": "五轮[AL]",
+		"color": "#2980B9",
+		"desc": "真魂学的研究成果",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "waist",
+		"enchants": 10,
+		"cost": 10,
+		"level": 60,
+		"alter": {
+			"mod": {
+				"f_power": 20,
+				"lg.rate": 0.2,
+				"super_mind.rate": 0.2,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5
 			}
 		},
 		"flavor": "装备需求:[AL]级神机"
@@ -421,6 +517,33 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "shouhunzhej",
+		"name": "狩魂者战甲【AL-T】",
+		"color": "#2980B9",
+		"desc": "狩猎真魂",
+		"equneed":"g.ALT>=1",
+		"armor": 90,
+		"slot": "chest",
+		"enchants": 0,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 100,
+				"self.resist.heli": 15,
+				"self.resist.chaos": 15,
+				"self.resist.wood": 20,
+				"self.resist.fire": 20,
+				"self.resist.land": 20,
+				"self.resist.gold": 20,
+				"self.resist.water": 20,
+				"elect.max": -5,
+				"elect.rate": -15
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
 		"id": "tian_shins",
 		"name": "钛合护腿[BASE]",
 		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
@@ -467,6 +590,33 @@
 			}
 		},
 		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "shouhunzhetui",
+		"name": "狩魂者护腿【AL-T】",
+		"color": "#2980B9",
+		"desc": "狩猎真魂",
+		"equneed":"g.ALT>=1",
+		"armor": 45,
+		"slot": "shins",
+		"enchants": 0,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 60,
+				"self.resist.heli": 15,
+				"self.resist.chaos": 15,
+				"self.resist.wood": 13,
+				"self.resist.fire": 13,
+				"self.resist.land": 13,
+				"self.resist.gold": 13,
+				"self.resist.water": 13,
+				"elect.max": -3,
+				"elect.rate": -5
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
 	},
 	{
 		"id": "zidianta",
@@ -539,6 +689,33 @@
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
+		"id": "shouhunzhezu",
+		"name": "狩魂者护足【AL-T】",
+		"color": "#2980B9",
+		"desc": "狩猎真魂",
+		"equneed":"g.ALT>=1",
+		"armor": 25,
+		"slot": "feet",
+		"enchants": 0,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"f_power": 40,
+				"self.resist.heli": 8,
+				"self.resist.chaos": 8,
+				"self.resist.wood": 8,
+				"self.resist.fire": 8,
+				"self.resist.land": 8,
+				"self.resist.gold": 8,
+				"self.resist.water": 8,
+				"elect.max": -3,
+				"elect.rate": -3
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
 		"id": "wuyuwo",
 		"name": "无月之握[AL]",
 		"desc": "无光技术打造的AL级护手",
@@ -585,6 +762,32 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "shouhunchangfs",
+		"name": "狩魂场发生器【AL-T】",
+		"tags":"",
+		"desc": "允许你展开一面合理护盾加强防御,并能够单独产生高能电容来发射激光",
+		"color": "#2980B9",
+		"equneed":"g.ALT>=1",
+		"armor": 18,
+		"slot": "hands",
+		"enchants": 3,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"laser_ene.rate": 0.7,
+				"laser_ene.max": 5,
+				"shouhun_chang.max":1,
+				"shouhun_chang.rate":1,
+				"f_power": 30,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -5
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
 		"id": "yqlp",
 		"name": "御气罗盘",
 		"desc": "能帮助使用者速度更快",
@@ -621,6 +824,30 @@
 			}
 		},
 		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "suihunzhushemk",
+		"name": "碎魂注射模块【AL-T】",
+		"tags":"",
+		"desc": "允许你进行快速治疗",
+		"color": "#2980B9",
+		"equneed":"g.ALT>=1",
+		"armor": 5,
+		"slot": "back",
+		"enchants": 3,
+		"cost": 10,
+		"level": 55,
+		"alter": {
+			"mod": {
+				"jisu_zhushe.max":1,
+				"jisu_zhushe.rate":1,
+				"f_power": 30,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -5
+			}
+		},
+		"flavor": "装备需求:[AL-T]级神机"
 	},
 	{
 		"id": "cbxl",

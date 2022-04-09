@@ -75,9 +75,28 @@
 		"locked": true,
 		"max": 1,
 		"mod": {
+			"max_rs.max": 1,
 			"shuaibai.rate": -1,
 			"hp.rate": 0.2
 		}
+	},
+	{
+		"id": "zhenhun_pice_1",
+		"name": "游空真魂",
+		"group": "真魂",
+		"desc": "游离的微弱真魂碎片,虽然无法直接吸收里面的能量,但还是可以用于强化或者合成真魂",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"val":0,
+		"max": 0
+	},
+	{
+		"id": "zhenhun_pice_2",
+		"name": "崩解真魂",
+		"group": "真魂",
+		"desc": "崩解的真魂,虽然无法直接吸收里面的能量,但还是可以用于强化或者合成真魂",
+		"require": "g.xiulian_lj_zhenhun_6>=999",
+		"val":0,
+		"max": 0
 	},
 	{
 		"id": "ganwu",
@@ -550,7 +569,16 @@
 		"tags": "",
 		"require": "g.xinghaokz>=1 && g.luojibo>=1",
 		"max": 10
-	},	
+	},
+	{
+		"id": "heiyan",
+		"name": "黑焰",
+		"desc": "黑色火焰",
+		"group": "真魂衍生",
+		"tags": "",
+		"require": "g.xunqiuhy>=1",
+		"max": 0
+	},
 	{
 		"id": "zhuji_tianjie_1",
 		"name": "命玄-真魂",
@@ -630,6 +658,26 @@
 		"tags": "",
 		"locked":false,
 		"max": 1
+	},
+	{
+		"id": "shouhun_chang",
+		"name": "狩魂场许可",
+		"desc": "",
+		"hide": true,
+		"group": "",
+		"tags": "",
+		"locked":false,
+		"max": 0
+	},
+	{
+		"id": "jisu_zhushe",
+		"name": "注射碎魂许可",
+		"desc": "",
+		"hide": true,
+		"group": "",
+		"tags": "",
+		"locked":false,
+		"max": 0
 	},
 	{
 		"id": "xiulian_heli_1",
@@ -2078,6 +2126,116 @@
 		"max":1
 	},
 	{
+		"id": "xiulian_lj_zhenhun_1",
+		"name": "真魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_lj_zhenhun_2",
+		"name": "真实寻觅",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":3
+	},
+	{
+		"id": "xiulian_lj_zhenhun_5",
+		"name": "勿失秋毫",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xiulian_lj_zhenhun_6",
+		"name": "异常探测",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_zhenhun_10",
+		"name": "纯净基魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_zhenhun_11",
+		"name": "真语魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_blood_1",
+		"name": "疗血",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_zhenhun_12",
+		"name": "黑焰引导",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_zhenhun_13",
+		"name": "黄泉魂",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_zhenhun_14",
+		"name": "碎魂游星",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_lj_zhenhun_15",
+		"name": "碎魂生物",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",
@@ -2674,7 +2832,7 @@
 		"id": "command_code",
 		"desc": "指令容量",
 		"hide": true,
-		"name": "指令容量",
+		"name": "指令占用",
 		"val":0,
 		"max": 3
 	},

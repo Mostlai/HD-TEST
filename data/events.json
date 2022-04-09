@@ -231,6 +231,81 @@
 		}
 	},
 	{
+		"id": "evt_xueshu",
+		"name": "血术",
+		"require": "g.xl_lj_blood_1>=1",
+		"desc": "",
+		"result": {
+			"smxue": true,
+			"yiwangxue": true,
+			"blood_sum_1": true
+		}
+	},
+	{
+		"id": "evt_heiyan",
+		"name": "黑焰",
+		"require": "g.xl_lj_zhenhun_12>=1",
+		"desc": "",
+		"result": {
+			"balck_firestorm_cure": true,
+			"balck_firestorm": true
+		}
+	},
+	{
+		"id": "evt_kangjuxingzj",
+		"name": "狩魂场",
+		"require": "g.kangjuxingzj>=1",
+		"desc": "",
+		"result": {
+			"shouhunchang": true
+		}
+	},
+	{
+		"id": "evt_zhushemokuai",
+		"name": "碎魂注射",
+		"require": "g.zhushemokuai>=1",
+		"desc": "",
+		"result": {
+			"suihun_zhushe": true
+		}
+	},
+	{
+		"id": "evt_zyszh",
+		"name": "治愈鼠召唤",
+		"require": "g.quntizysw>=1",
+		"desc": "",
+		"result": {
+			"solid_3": true
+		}
+	},
+	{
+		"id": "evt_sygzh",
+		"name": "守御龟召唤",
+		"require": "g.quntifysw>=1",
+		"desc": "",
+		"result": {
+			"solid_4": true
+		}
+	},
+	{
+		"id": "evt_mgtlzh",
+		"name": "猛攻螳螂召唤",
+		"require": "g.quntijgsw>=1",
+		"desc": "",
+		"result": {
+			"solid_5": true
+		}
+	},
+	{
+		"id": "evt_shqzhuan",
+		"name": "碎魂群召唤",
+		"require": "g.fuhexsw>=1",
+		"desc": "",
+		"result": {
+			"solid_6": true
+		}
+	},
+	{
 		"id": "evt_zhujiyuesheng",
 		"name": "基魂跃升",
 		"require": "g.jihunyuesheng>=1",
@@ -334,6 +409,60 @@
 		"name": "征战",
 		"require": "g.zhengzhan>=1",
 		"desc": "解锁大型战场...."
+	},
+	{
+		"id": "evt_quanxiangren",
+		"name": "未见之村",
+		"require": "g.quanxiangren>=1",
+		"desc": "发现未见之村...."
+	},
+	{
+		"id": "evt_xunqiusl",
+		"name": "风暴崖",
+		"require": "g.xunqiusl>=1",
+		"desc": "发现风暴崖...."
+	},
+	{
+		"id": "evt_xunqiuzh",
+		"name": "失落图书馆",
+		"require": "g.xunqiuzh>=1",
+		"desc": "发现失落图书馆...."
+	},
+	{
+		"id": "evt_xunqiuhj",
+		"name": "银色森林",
+		"require": "g.xunqiuhj>=1",
+		"desc": "发现银色森林...."
+	},
+	{
+		"id": "evt_xunqiukb",
+		"name": "白色诵读团",
+		"require": "g.xunqiukb>=1",
+		"desc": "发现白色诵读团...."
+	},
+	{
+		"id": "evt_xunqiuhy",
+		"name": "黑色诵读团",
+		"require": "g.xunqiuhy>=1",
+		"desc": "发现黑色诵读团...."
+	},
+	{
+		"id": "evt_xunqiupans",
+		"name": "无言小屋",
+		"require": "g.xunqiupans>=1",
+		"desc": "发现无言小屋...."
+	},
+	{
+		"id": "evt_huangwuqixuan",
+		"name": "荒芜气旋层",
+		"require": "g.xunqiuguangmao>=1",
+		"desc": "发现荒芜气旋层...."
+	},
+	{
+		"id": "evt_xunqiuty",
+		"name": "穷究雪原",
+		"require": "g.xunqiuty>=1",
+		"desc": "发现穷究雪原...."
 	},
 	{
 		"id": "evt_helper",

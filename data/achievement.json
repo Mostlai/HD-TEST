@@ -342,24 +342,6 @@
 		}
 	},
 	{
-		"id": "ach_muder_1",
-		"name": "杰夫",
-		"desc": "谋杀200次",
-		"target_item": "murder_pl",
-		"target_val": 200,
-		"hide": true,
-		"locked": false,
-		"val":0,
-		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
-		"result":{
-			"ap": 0.2,
-			"hp.rate": 0.5
-		}
-	},
-	{
 		"id": "ach_hqtzkcce_1",
 		"name": "好奇号",
 		"desc": "进行50次黄泉探针勘测",
@@ -484,6 +466,42 @@
 		"result":{
 			"ap": 1,
 			"command_code.max": 20
+		}
+	},
+	{
+		"id": "xueliang_1",
+		"name": "血魂",
+		"desc": "气血达到350",
+		"target_item": "hp",
+		"target_val": 350,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"player.defense": 20
+		}
+	},
+	{
+		"id": "shohun_1",
+		"name": "猎人",
+		"desc": "激活10真魂容量",
+		"target_item": "max_rs",
+		"target_val": 10,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"ap": 0.5,
+			"max_rs.max": 4
 		}
 	},
 	{

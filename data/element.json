@@ -124,6 +124,16 @@
 		"max": 1
 	},
 	{
+		"id": "element_blood",
+		"name": "血响",
+		"desc": "提纯的血液",
+		"hide": true,
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"color": "#B22222",
+		"val":0,
+		"max": 1
+	},
+	{
 		"id": "element_shengwuzhuzhi",
 		"name": "生物组织",
 		"desc": "",

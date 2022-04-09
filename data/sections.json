@@ -35,6 +35,11 @@
 		"require": "g.rlgl>=1"
 	},
 	{
+		"id": "sect_mode",
+		"name": "模型",
+		"require": "g.hp>=999999999"
+	},
+	{
 		"id": "sect_raid",
 		"name": "探险",
 		"require": "g.small_map>=1"

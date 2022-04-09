@@ -165,6 +165,83 @@
 		]
 	},
 	{
+		"id": "hq_4",
+		"name": "荒芜气旋层[黄泉]",
+		"desc": "",
+		"require": "g.evt_huangwuqixuan>=1",
+		"level": 35,
+		"dist": 600,
+		"length": 40,
+		"run": {
+			"back_dream": 0.4,
+			"hp": 1,
+			"stamina": 1,
+			"tili": 1,
+			"time": -2
+		},
+		"result": {
+			"floor_soulcore_pice": 1,
+			"hunti_core": "3~4",
+			"lxue": "3~7",
+			"shuaibai_core": "3~6",
+			"snp_data": "9~12",
+			"zero_crystal": "5~12"
+		},
+		"boss": {"40":["huian_fashi_1","huian_fashi_2","huian_fashi_3","huian_fashi_3"]},
+		"spawns": [
+			[
+				"huian_fashi_2",
+				"huian_fashi_1"
+			]
+		]
+	},
+	{
+		"id": "hq_5",
+		"name": "穷究雪原[黄泉]",
+		"desc": "",
+		"require": "g.evt_xunqiuty>=1",
+		"level": 35,
+		"dist": 600,
+		"length": 40,
+		"run": {
+			"back_dream": 0.4,
+			"hp": 1,
+			"stamina": 1,
+			"tili": 1,
+			"time": -2
+		},
+		"result": {
+			"command_soulcore_pice": 1,
+			"hunti_core": "3~4",
+			"lxue": "3~7",
+			"shuaibai_core": "3~6",
+			"snp_data": "9~12",
+			"zero_crystal": "5~12"
+		},
+		"boss": {"40":["xueguosb_4","xueguosb_3","xueguosb_2","xueguosb_5"]},
+		"spawns": [
+			[
+				"xueguosb_4",
+				"xueguosb_4"
+			],
+			[
+				"xueguosb_1",
+				"xueguosb_2",
+				"xueguosb_3",
+				"xueguosb_4"
+			],
+			[
+				"xueguosb_2",
+				"xueguosb_3",
+				"xueguosb_3"
+			],
+			[
+				"xueguosb_2",
+				"xueguosb_2"
+			]
+		]
+	},
+	{
 		"id": "hq_mo_1",
 		"name": "无光平原[魔导]",
 		"desc": "无法看见光明。这里的时间流速更快,环境更危险",
@@ -554,7 +631,7 @@
 		"result": {
 			"snp_data": 10,
 			"zero_crystal": 20,
-			"shenglingshi":5,
+			"shenglingshi":2,
 			"dirty_lingti": 5
 		},
 		"boss": "huzhenshi",
@@ -563,18 +640,15 @@
 				"m_solid_4",
 				"m_solid_4",
 				"m_solid_4",
-				"baifuzhang",
 				"baifuzhang"
 			],
 			[
 				"m_solid_4",
-				"xiantianzhuji",
 				"baifuzhang",
 				"xiantianzhuji"
 			],
 			[
 				"xiantianzhuji",
-				"baifuzhang",
 				"m_solid_4"
 			],
 			[
@@ -689,6 +763,238 @@
 			[
 				"wuxiangmo",
 				"wuxiangling"
+			]
+		]
+	},
+	{
+		"id": "weijiancun",
+		"name": "未见之村[渴血]",
+		"sym": "🕯",
+		"desc": "",
+		"require": "evt_quanxiangren",
+		"dist":600,
+		"level": 39,
+		"length": 35,
+		"run": {
+			"hp": 0.99,
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"blood_soulcore_pice":1
+		},
+		"boss": "kexuebeast",
+		"spawns": [
+			[
+				"chiduncunm",
+				"chiduncunm"
+			],
+			[
+				"weijiandog",
+				"chiduncunm"
+			],
+			[
+				"weijiandog",
+				"weijiandog",
+				"weijiandog"
+			],
+			[
+				"weijiancunm",
+				"weijiancunm"
+			],
+			[
+				"weijiancunm",
+				"chiduncunm"
+			],
+			[
+				"kexuecunm",
+				"kexuecunm"
+			]
+		]
+	},
+	{
+		"id": "stormya",
+		"name": "风暴崖",
+		"sym": "",
+		"desc": "",
+		"require": "evt_xunqiusl",
+		"dist":600,
+		"level": 39,
+		"length": 35,
+		"run": {
+			"elect": -10,
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"elect_soulcore_pice":1
+		},
+		"boss": {"35":["air_light","air_bird","air_bird","air_fish","storm_egal"]},
+		"spawns": [
+			[
+				"air_fish",
+				"air_fish",
+				"air_bird"
+			],
+			[
+				"air_fish",
+				"air_bird",
+				"air_bird"
+			],
+			[
+				"air_light",
+				"air_bird",
+				"air_light"
+			]
+		]
+	},
+	{
+		"id": "lostlib",
+		"name": "失落图书馆",
+		"sym": "",
+		"desc": "",
+		"require": "evt_xunqiuzh",
+		"dist":600,
+		"level": 30,
+		"length": 35,
+		"run": {
+			"ganwu": -10,
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"skill_soulcore_pice":1
+		},
+		"boss": {"35":["qijuanzhe","qijuanzhe","qijuanzhe","qijuanzhe","lost_soul_man"]},
+		"spawns": [
+			[
+				"qishuzhe",
+				"qishuzhe"
+			],
+			[
+				"qishuzhe",
+				"qishuzhe",
+				"qishuzhe"
+			],
+			[
+				"qijuanzhe",
+				"qijuanzhe",
+				"qishuzhe"
+			]
+		]
+	},
+	{
+		"id": "silverwood",
+		"name": "银色森林",
+		"sym": "",
+		"desc": "",
+		"require": "evt_xunqiuhj",
+		"dist":600,
+		"level": 30,
+		"length": 35,
+		"run": {
+			"money": 5,
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"money_soulcore_pice":1
+		},
+		"boss": {"35":["gold_snake","gold_snake","mu_snake","sliver_snake"]},
+		"spawns": [
+			[
+				"white_lion",
+				"white_lion"
+			],
+			[
+				"mu_snake",
+				"mu_snake"
+			],
+			[
+				"gold_snake",
+				"gold_snake"
+			]
+		]
+	},
+	{
+		"id": "whitelake",
+		"name": "白色诵读团",
+		"sym": "",
+		"desc": "",
+		"require": "evt_xunqiukb",
+		"dist":600,
+		"level": 30,
+		"length": 25,
+		"run": {
+			"ganwu": -10,
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"white_soulcore_pice":1
+		},
+		"boss": {"25":["baiyiren","baiyiren","baiyiren","baiyiren","baiyiren","baiyiren","baiyiren_flag"]},
+		"spawns": [
+			[
+				"baiyiren",
+				"baiyiren"
+			]
+		]
+	},
+	{
+		"id": "blacklake",
+		"name": "黑色诵读团",
+		"sym": "",
+		"desc": "",
+		"require": "evt_xunqiuhy",
+		"dist":600,
+		"level": 30,
+		"length": 25,
+		"run": {
+			"ganwu": -10,
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"ranshao_soulcore_pice":1
+		},
+		"boss": {"25":["heiyiren","heiyiren","heiyiren","heiyiren","heiyiren","heiyiren","heiyiren_flag"]},
+		"spawns": [
+			[
+				"heiyiren",
+				"heiyiren"
+			]
+		]
+	},
+	{
+		"id": "wiyanxiaowu",
+		"name": "无言小屋",
+		"sym": "",
+		"desc": "",
+		"require": "evt_xunqiupans",
+		"dist":600,
+		"level": 30,
+		"length": 25,
+		"run": {
+			"time": -1
+		},
+		"result": {
+			"zhenhun_pice_1": 10,
+			"stone_soulcore_pice":1
+		},
+		"boss": "wuyangezhe",
+		"spawns": [
+			[
+				"rengui",
+				"rengui"
+			],
+			[
+				"rengui",
+				"shanyao"
+			],
+			[
+				"shanyao",
+				"shanyao"
 			]
 		]
 	},

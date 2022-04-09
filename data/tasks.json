@@ -573,6 +573,34 @@
 		}
 	},
 	{
+		"id": "sdlttancha",
+		"name": "深度灵体探查",
+		"desc": "启动一枚黄泉探针深入黄泉对黄泉真魂进行探查任务。此动作需要至少3点【黄泉研究基础】",
+		"verb": "探查中",
+		"require": "g.xl_lj_zhenhun_13>=1",
+		"length": 600,
+		"max": 10,
+		"cost": {
+			"human_power": 3000,
+			"money": 3500,
+			"tian": 10,
+			"iron_copper": 20,
+			"laser_ene": 5,
+			"ljdy": 10,
+			"yuansurechi": 1,
+			"hqtanzhen": 1
+		},
+		"result": {
+			"time": 30,
+			"player.exp": 800,
+			"lxue": 10,
+			"shuaibai_core": 10,
+			"snp_data": 30,
+			"exe_paper": 30,
+			"fsbdsj": 10
+		}
+	},
+	{
 		"id": "gaonjmyj",
 		"name": "高能精密研究",
 		"desc": "",
@@ -1783,6 +1811,596 @@
 		}
 	},
 	{
+		"id": "suipianshijian",
+		"name": "碎片时间",
+		"desc": "利用游空真魂延迟死亡",
+		"verb": "凝聚中",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"max": 50,
+		"length": 22,
+		"cost": {
+			"ganwu": 2000,
+			"zero_crystal": 50,
+			"shenshi": 6,
+			"zhenhun_pice_1": 25
+		},
+		"run": {
+			"tili": 2,
+			"time": -1
+		},
+		"result": {
+			"age.max": 2500,
+			"age": 2500
+		}
+	},
+	{
+		"id": "youkdj",
+		"name": "游空点金",
+		"tags": "生产",
+		"desc": "利用游空真魂获取钱财",
+		"verb": "点金中",
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"length": 5,
+		"cost": {
+			"zhenhun_pice_1": 2.5
+		},
+		"run": {
+			"tili": 5,
+			"time": -0.2
+		},
+		"result": {
+			"money": 100
+		}
+	},
+	{
+		"id": "xunqiusl",
+		"name": "寻求闪亮",
+		"desc": "探寻闪亮之魂",
+		"verb": "寻求中",
+		"require": "g.xl_lj_zhenhun_11>=1",
+		"length": 600,
+		"cost": {
+			"elect":20,
+			"yisuanzi":5,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"elect.rate": 2,
+			"max_rs.max": 2
+		}
+	},
+	{
+		"id": "xunqiuzh",
+		"name": "寻求智慧",
+		"desc": "探寻智慧之魂",
+		"verb": "寻求中",
+		"require": "g.xl_lj_zhenhun_11>=1",
+		"length": 600,
+		"cost": {
+			"paper":300,
+			"books":30,
+			"snp_data":30,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"skill.rate": 2,
+			"max_rs.max": 2
+		}
+	},
+	{
+		"id": "xunqiuhj",
+		"name": "寻求黄金",
+		"desc": "探寻黄金之魂",
+		"verb": "寻求中",
+		"require": "g.xl_lj_zhenhun_11>=1",
+		"length": 600,
+		"cost": {
+			"shenglingshi":10,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"money.rate": 2,
+			"max_rs.max": 2
+		}
+	},
+	{
+		"id": "tanlanshijian",
+		"name": "贪婪时间",
+		"desc": "",
+		"verb": "",
+		"require": "g.xunqiuhj>=1",
+		"length": 10,
+		"max": 50,
+		"cost": {
+			"shenglingshi":10,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"age.max": 2500,
+			"age": 2500
+		}
+	},
+	{
+		"id": "tanyushijian",
+		"name": "贪欲时间",
+		"desc": "",
+		"verb": "",
+		"require": "g.xunqiuhj>=1",
+		"length": 10,
+		"max": 10,
+		"cost": {
+			"shenglingshi":10,
+			"money_soulcore_pice": 1,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"age.max": 36500,
+			"age": 36500
+		}
+	},
+	{
+		"id": "tanyuyouKong",
+		"name": "贪婪游空",
+		"warn": true,
+		"desc": "",
+		"verb": "",
+		"require": "g.xunqiuhj>=1",
+		"length": 10,
+		"max": 5,
+		"cost": {
+			"shenglingshi":20,
+			"money_soulcore_pice": 10,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"zhenhun_pice_1.rate": 0.1,
+			"money.rate": -2,
+			"hp.max": -2
+		}
+	},
+	{
+		"id": "quntizysw",
+		"name": "群体治愈型生物",
+		"warn": true,
+		"desc": "",
+		"verb": "",
+		"require": "g.suihunkongzhi>=1",
+		"length": 10,
+		"max": 5,
+		"cost": {
+			"shenglingshi":20,
+			"zhenhun_pice_1": 5,
+			"baibaishu": 30,
+			"swzhi": 10,
+			"element_shengwuzhuzhi": 10,
+			"element_shengwuqiguan": 10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"money.rate": 2,
+			"hp.max": 2
+		}
+	},
+	{
+		"id": "quntijgsw",
+		"name": "群体进攻型生物",
+		"warn": true,
+		"desc": "",
+		"verb": "",
+		"require": "g.suihunkongzhi>=1",
+		"length": 10,
+		"max": 5,
+		"cost": {
+			"shenglingshi":20,
+			"zhenhun_pice_1": 5,
+			"qianwdc": 30,
+			"swzhi": 10,
+			"element_shengwuzhuzhi": 10,
+			"element_shengwuqiguan": 10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"money.rate": 2,
+			"hp.max": 2
+		}
+	},
+	{
+		"id": "quntifysw",
+		"name": "群体防御型生物",
+		"warn": true,
+		"desc": "",
+		"verb": "",
+		"require": "g.suihunkongzhi>=1",
+		"length": 10,
+		"max": 5,
+		"cost": {
+			"shenglingshi":20,
+			"zhenhun_pice_1": 5,
+			"jbgui": 30,
+			"swzhi": 10,
+			"element_shengwuzhuzhi": 10,
+			"element_shengwuqiguan": 10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"money.rate": 2,
+			"hp.max": 2
+		}
+	},
+	{
+		"id": "kezhixingzj",
+		"name": "克制性装甲",
+		"desc": "游空真魂的研究使得新型装甲成为可能",
+		"verb": "",
+		"require": "g.xl_lj_zhenhun_14>=1",
+		"length": 300,
+		"max": 1,
+		"cost": {
+			"shenglingshi":10,
+			"element_blood": 45,
+			"tian": 100,
+			"cbclb": 100,
+			"yjdl": 100,
+			"ljdy": 20,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"elect.rate": 10
+		}
+	},
+	{
+		"id": "hunchuanjiegou",
+		"name": "魂传结构",
+		"desc": "游空真魂的研究使得动力系统得到了改善",
+		"verb": "",
+		"require": "g.xl_lj_zhenhun_14>=1",
+		"length": 300,
+		"max": 1,
+		"cost": {
+			"shenglingshi":10,
+			"element_blood": 45,
+			"tian": 100,
+			"cbclb": 100,
+			"yjdl": 100,
+			"gwl": 60,
+			"jls": 100,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"elect.rate": 10
+		}
+	},
+	{
+		"id": "jingzhilengre",
+		"name": "静止冷热反应",
+		"desc": "游空真魂的研究使得能量供应系统得到了改善",
+		"verb": "",
+		"require": "g.xl_lj_zhenhun_14>=1",
+		"length": 300,
+		"max": 1,
+		"cost": {
+			"shenglingshi":10,
+			"element_blood": 45,
+			"tian": 100,
+			"cbclb": 100,
+			"yjdl": 100,
+			"gwl": 60,
+			"jls": 100,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"elect.rate": 15
+		}
+	},
+	{
+		"id": "shouhunzhemox",
+		"name": "狩魂者战斗装甲模型",
+		"desc": "狩魂者战斗装甲是用于应对获取真魂的高强度战斗而设计的战斗装甲",
+		"verb": "",
+		"require": "g.jingzhilengre>=1 && g.hunchuanjiegou>=1 && g.kezhixingzj>=1",
+		"length": 500,
+		"max": 1,
+		"cost": {
+			"shenglingshi":20,
+			"element_blood": 45,
+			"ljdy": 20,
+			"jingdian": 20,
+			"yjswyb": 20,
+			"tian": 100,
+			"cbclb": 100,
+			"yjdl": 100,
+			"gwl": 60,
+			"jls": 100,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		}
+	},
+	{
+		"id": "shouhunzhemok",
+		"name": "狩魂者战斗装甲模块",
+		"desc": "狩魂者战斗装甲的附加战斗模块",
+		"verb": "",
+		"require": "g.shouhunzhemox>=1",
+		"length": 500,
+		"max": 1,
+		"cost": {
+			"shenglingshi":20,
+			"element_blood": 45,
+			"qingxdql": 20,
+			"qingxkj": 20,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		}
+	},
+	{
+		"id": "kangjuxingzj",
+		"name": "抗拒性装甲",
+		"desc": "该项研究专注于形成一面立场阻挡伤害",
+		"verb": "",
+		"require": "g.shouhunzhemok>=1",
+		"length": 300,
+		"max": 1,
+		"cost": {
+			"shenglingshi":10,
+			"element_blood": 45,
+			"qingxdql": 15,
+			"qingxkj": 15,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"elect.rate": 5
+		}
+	},
+	{
+		"id": "zhushemokuai",
+		"name": "碎魂注射模块",
+		"desc": "该项研究专注于快速恢复生命",
+		"verb": "",
+		"require": "g.shouhunzhemok>=1",
+		"length": 300,
+		"max": 1,
+		"cost": {
+			"shenglingshi":10,
+			"element_blood": 45,
+			"qingxdql": 15,
+			"qingxkj": 15,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"hp.rate": 2
+		}
+	},
+	{
+		"id": "youkonmgrelumx",
+		"name": "游空热炉模型",
+		"desc": "游空热炉被设计用于供应狩魂者的高强度电力消耗",
+		"verb": "",
+		"require": "g.shouhunzhemox>=1",
+		"length": 100,
+		"max": 1,
+		"cost": {
+			"element_blood": 40,
+			"ljdy": 20,
+			"tian": 100,
+			"cbclb": 100,
+			"yjdl": 100,
+			"cold_core": 50,
+			"jls": 100,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		}
+	},
+	{
+		"id": "lianxiejingzs",
+		"name": "连携进攻战术",
+		"desc": "连携进攻战术是一种显著增强合理与混沌威力的战术",
+		"verb": "",
+		"require": "g.xl_lj_zhenhun_14>=1",
+		"length": 100,
+		"max": 1,
+		"cost": {
+			"shenglingshi":10,
+			"element_blood": 45,
+			"heli": 40,
+			"chaos": 45,
+			"element_wuhuan": 10,
+			"element_luor": 10,
+			"zhenhun_pice_1": 20
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"player.bonuses.heli": 15,
+			"player.bonuses.chaos": 15
+		}
+	},
+	{
+		"id": "xunqiukb",
+		"name": "寻求空白",
+		"desc": "探寻空白之魂",
+		"verb": "寻求中",
+		"require": "g.xl_lj_zhenhun_11>=1",
+		"length": 600,
+		"cost": {
+			"shenglingshi":10,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"max_rs.max": 3
+		}
+	},
+	{
+		"id": "xunqiuhy",
+		"name": "寻求火焰",
+		"desc": "探寻火焰之魂",
+		"verb": "寻求中",
+		"require": "g.xl_lj_zhenhun_11>=1",
+		"length": 600,
+		"cost": {
+			"shenglingshi":10,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"max_rs.max": 1
+		}
+	},
+	{
+		"id": "xunqiupans",
+		"name": "寻求磐石",
+		"desc": "探寻磐石之魂",
+		"verb": "寻求中",
+		"require": "g.xl_lj_zhenhun_11>=1",
+		"length": 600,
+		"cost": {
+			"shenglingshi":10,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"max_rs.max": 1
+		}
+	},
+	{
+		"id": "xunqiuguangmao",
+		"name": "寻求广袤",
+		"desc": "探寻界中之魂",
+		"verb": "寻求中",
+		"require": "g.sdlttancha>=5",
+		"length": 600,
+		"cost": {
+			"fsbdsj": 20,
+			"shenglingshi":10,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"max_rs.max": 1
+		}
+	},
+	{
+		"id": "xunqiuty",
+		"name": "寻求统御",
+		"desc": "探寻率兵之魂",
+		"verb": "寻求中",
+		"require": "g.sdlttancha>=10",
+		"length": 600,
+		"cost": {
+			"fsbdsj": 20,
+			"shenglingshi":10,
+			"zhenhun_pice_1": 40,
+			"ganwu": 2500,
+			"money": 3000,
+			"jingdian":10
+		},
+		"run": {
+			"tili": 5,
+			"time": -2
+		},
+		"result": {
+			"command_code.max": 3,
+			"max_rs.max": 1
+		}
+	},
+	{
 		"id": "hjyj_1",
 		"name": "护甲研究",
 		"desc": "研究护甲",
@@ -2595,7 +3213,7 @@
 		}
 	},
 	{
-		"id": "getobs_hill",
+		"id": "getobs_hill1",
 		"name": "丘陵纳入",
 		"desc": "获取周围的丘陵群落【研究需要绿色实验室】",
 		"tags": "生产",
@@ -2604,7 +3222,6 @@
 		"require": "g.liticehui_hill>=1",
 		"need": "g.green_lab>=1",
 		"length": 10,
-		"max": 1,
 		"cost": {
 			"human_power": 1000,
 			"snp_data": 140,
@@ -2653,7 +3270,7 @@
 		}
 	},
 	{
-		"id": "getbos_water",
+		"id": "getbos_water1",
 		"name": "湖泊纳入",
 		"desc": "获取周围的丘陵群落【研究需要绿色实验室】",
 		"tags": "生产",
@@ -2662,7 +3279,6 @@
 		"require": "g.liticehui_water>=1",
 		"need": "g.green_lab>=1",
 		"length": 10,
-		"max": 1,
 		"cost": {
 			"human_power": 1000,
 			"snp_data": 140,
@@ -2711,7 +3327,7 @@
 		}
 	},
 	{
-		"id": "getbos_basin",
+		"id": "getbos_basin1",
 		"name": "盆地纳入",
 		"desc": "获取周围的盆地纳入【研究需要绿色实验室】",
 		"tags": "生产",
@@ -2720,7 +3336,6 @@
 		"require": "g.liticehui_basin>=1",
 		"need": "g.green_lab>=1",
 		"length": 10,
-		"max": 1,
 		"cost": {
 			"human_power": 1000,
 			"snp_data": 140,
@@ -2850,6 +3465,266 @@
 			"heli": 10,
 			"ganwu": 10,
 			"time": -0.1
+		}
+	},
+	{
+		"id": "tongzhousl",
+		"name": "同轴生灵",
+		"desc": "跃升下的生灵石强化二同轴",
+		"verb": "研究中",
+		"require": "g.xiulian_zhuji_2_1>=1 && g.ertongzhe>=1",
+		"length": 33,
+		"max": 5,
+		"cost": {
+			"ertongzhe": 1,
+			"shenglingshi": 5,
+			"jihun": 5,
+			"paper": 300,
+			"snp_data": 60,
+			"human_power": 3500,
+			"alculation": 2500,
+			"shenshi": 15,
+			"ljdy": 15,
+			"money": 3000,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"alculation.max": 20
+		}
+	},
+	{
+		"id": "xingtusuanzi",
+		"name": "星图算子",
+		"desc": "结合虚灵星图的一算子",
+		"verb": "研究中",
+		"require": "g.tongzhousl>=5",
+		"length": 22,
+		"max": 1,
+		"cost": {
+			"yisuanzi": 5,
+			"ertongzhe": 2,
+			"shenglingshi": 15,
+			"star_map_1": 30,
+			"paper": 300,
+			"snp_data": 60,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000,
+			"gwl": 130
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"heli": 10,
+			"ganwu": 10,
+			"time": -0.1
+		}
+	},
+	{
+		"id": "huangjinyouhua",
+		"name": "黄金优化",
+		"tags": "co_optimiza",
+		"desc": "提高金钱指令的效率",
+		"verb": "研究中",
+		"require": "g.sweisys>=1",
+		"need": "g.sweisys>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"shenglingshi": 10,
+			"ertongzhe": 1,
+			"shenglingshi": 15,
+			"star_map_1": 30,
+			"kewangtian": 5,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"time": -7
+		},
+		"mod":{
+			"yjjqzl.max": 5,
+			"yjjqzl.mod.command_code": 1,
+			"yjjqzl.mod.space.max": -10,
+			"yjjqzl.mod.human_power.max": -50,
+			"yjjqzl.mod.money.rate": 2.5
+		}
+	},
+	{
+		"id": "ljjyouhua",
+		"name": "零结晶优化",
+		"tags": "co_optimiza",
+		"desc": "提高零结晶指令的效率",
+		"verb": "研究中",
+		"require": "g.sweisys>=1",
+		"need": "g.sweisys>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"zero_crystal": 60,
+			"ertongzhe": 1,
+			"shenglingshi": 15,
+			"star_map_1": 30,
+			"kewangtian": 5,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"time": -7
+		},
+		"mod":{
+			"ljjzl.max": 5,
+			"ljjzl.mod.command_code": 1,
+			"ljjzl.mod.space.max": -5,
+			"ljjzl.mod.human_power.max": -50,
+			"ljjzl.mod.zero_crystal.rate": 0.5
+		}
+	},
+	{
+		"id": "gaozhiyouhua",
+		"name": "稿纸优化",
+		"tags": "co_optimiza",
+		"desc": "提高稿纸指令的效率",
+		"verb": "研究中",
+		"require": "g.sweisys>=1",
+		"need": "g.sweisys>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"paper": 300,
+			"zhijiagong": 1,
+			"shenglingshi": 15,
+			"star_map_1": 30,
+			"kewangtian": 5,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"time": -7
+		},
+		"mod":{
+			"gzhizl.max": 5,
+			"gzhizl.mod.command_code": 1,
+			"gzhizl.mod.space.max": -10,
+			"gzhizl.mod.human_power.max": -60,
+			"gzhizl.mod.paper.rate": 2
+		}
+	},
+	{
+		"id": "jyjlyouhua",
+		"name": "经验记录优化",
+		"tags": "co_optimiza",
+		"desc": "提高经验记录指令的效率",
+		"verb": "研究中",
+		"require": "g.sweisys>=1",
+		"need": "g.sweisys>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"zhijiagong": 1,
+			"shenglingshi": 10,
+			"star_map_1": 30,
+			"kewangtian": 6,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"time": -7
+		},
+		"mod":{
+			"jyjlzl.max": 5,
+			"jyjlzl.mod.command_code": 1,
+			"jyjlzl.mod.space.max": -10,
+			"jyjlzl.mod.human_power.max": -70,
+			"jyjlzl.mod.exe_paper.rate": 0.5
+		}
+	},
+	{
+		"id": "tianwenjiluyh",
+		"name": "天文记录优化",
+		"tags": "co_optimiza",
+		"desc": "提高经验记录指令的效率",
+		"verb": "研究中",
+		"require": "g.sweisys>=1",
+		"need": "g.sweisys>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"wangyuanj_diz": 1,
+			"wangyuanj_jp": 1,
+			"shenglingshi": 10,
+			"star_map_1": 30,
+			"kewangtian": 4,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"time": -7
+		},
+		"mod":{
+			"twjlzl.max": 5,
+			"twjlzl.mod.command_code": 1,
+			"twjlzl.mod.space.max": -10,
+			"twjlzl.mod.human_power.max": -70,
+			"twjlzl.mod.star_map.rate": 0.5
+		}
+	},
+	{
+		"id": "guangbozhil",
+		"name": "广播指令",
+		"tags": "",
+		"desc": "研究使用广播提高指令容量,研究需要【思维实验室】",
+		"verb": "研究中",
+		"require": "g.co_optimiza>=3 && g.sweisys>=1",
+		"need": "g.sweisys>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"zhenliedianbota": 1,
+			"shenglingshi": 10,
+			"star_map_1": 30,
+			"kewangtian": 5,
+			"jingdian": 10,
+			"human_power": 3500,
+			"alculation": 2500,
+			"ljdy": 20,
+			"money": 3000
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"time": -7
+		},
+		"mod":{
+			"command_code.max": 10
 		}
 	},
 	{

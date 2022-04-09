@@ -57,6 +57,146 @@
 		}
 	},
 	{
+		"id": "en_zhenhun_shui_1",
+		"name": "水行玉珠",
+		"adj": "水",
+		"only": "waist",
+		"verb": "安装中",
+		"desc": "镶嵌一颗水行玉珠在腰带上",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"level": 2,
+		"buy": {
+			"money": 3000,
+			"wgys": 20,
+			"jls": 100,
+			"jingdian": 10,
+			"ganwu": 2000
+		},
+		"length": 30,
+		"cost": {
+			"wgys": 20,
+			"jls": 100,
+			"element_water": 10,
+			"money": 1000
+		},
+		"alter": {
+			"mod.element_water.rate": 0.05,
+			"mod.zhenhun_pice_1.rate": 0.01
+		}
+	},
+	{
+		"id": "en_zhenhun_huo_1",
+		"name": "火行玉珠",
+		"adj": "火",
+		"only": "waist",
+		"verb": "安装中",
+		"desc": "镶嵌一颗火行玉珠在腰带上",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"level": 2,
+		"buy": {
+			"money": 3000,
+			"wgys": 20,
+			"jls": 100,
+			"jingdian": 10,
+			"ganwu": 2000
+		},
+		"length": 30,
+		"cost": {
+			"wgys": 20,
+			"jls": 100,
+			"element_fire": 10,
+			"money": 1000
+		},
+		"alter": {
+			"mod.element_fire.rate": 0.05,
+			"mod.zhenhun_pice_1.rate": 0.01
+		}
+	},
+	{
+		"id": "en_zhenhun_tu_1",
+		"name": "土行玉珠",
+		"adj": "土",
+		"only": "waist",
+		"verb": "安装中",
+		"desc": "镶嵌一颗土行玉珠在腰带上",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"level": 2,
+		"buy": {
+			"money": 3000,
+			"wgys": 20,
+			"jls": 100,
+			"jingdian": 10,
+			"ganwu": 2000
+		},
+		"length": 30,
+		"cost": {
+			"wgys": 20,
+			"jls": 100,
+			"element_land": 10,
+			"money": 1000
+		},
+		"alter": {
+			"mod.element_land.rate": 0.05,
+			"mod.zhenhun_pice_1.rate": 0.01
+		}
+	},
+	{
+		"id": "en_zhenhun_jin_1",
+		"name": "金行玉珠",
+		"adj": "金",
+		"only": "waist",
+		"verb": "安装中",
+		"desc": "镶嵌一颗金行玉珠在腰带上",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"level": 2,
+		"buy": {
+			"money": 3000,
+			"wgys": 20,
+			"jls": 100,
+			"jingdian": 10,
+			"ganwu": 2000
+		},
+		"length": 30,
+		"cost": {
+			"wgys": 20,
+			"jls": 100,
+			"element_gold": 10,
+			"money": 1000
+		},
+		"alter": {
+			"mod.element_gold.rate": 0.05,
+			"mod.zhenhun_pice_1.rate": 0.01
+		}
+	},
+	{
+		"id": "en_zhenhun_mu_1",
+		"name": "木行玉珠",
+		"adj": "木",
+		"only": "waist",
+		"verb": "安装中",
+		"desc": "镶嵌一颗木行玉珠在腰带上",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"level": 2,
+		"buy": {
+			"money": 3000,
+			"wgys": 20,
+			"jls": 100,
+			"jingdian": 10,
+			"ganwu": 2000
+		},
+		"length": 30,
+		"cost": {
+			"wgys": 20,
+			"jls": 100,
+			"element_wood": 10,
+			"money": 1000
+		},
+		"alter": {
+			"mod.element_wood.rate": 0.05,
+			"mod.zhenhun_pice_1.rate": 0.01
+		}
+	},
+	{
 		"id": "en_luck1",
 		"name": "luck",
 		"adj": "lucky",

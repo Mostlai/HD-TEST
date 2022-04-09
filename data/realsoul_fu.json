@@ -1,0 +1,113 @@
+[
+	{
+		"id": "blood_jihun_fu",
+		"name": "纯净血魂升级",
+		"desc": "纯净血魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"blood_jihun.mod.max_rs": 1,
+			"blood_jihun.mod.hp.max": 20
+		}
+	},
+	{
+		"id": "elect_jihun_fu",
+		"name": "电闪真魂升级",
+		"desc": "电闪真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"elect_jihun.mod.max_rs": 1,
+			"elect_jihun.mod.elect.rate": 10
+		}
+	},
+	{
+		"id": "skill_jihun_fu",
+		"name": "智识真魂升级",
+		"desc": "智识真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"skill_jihun.mod.max_rs": 1,
+			"skill_jihun.mod.skill.rate": 10
+		}
+	},
+	{
+		"id": "money_jihun_fu",
+		"name": "贪婪真魂升级",
+		"desc": "贪婪真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"money_jihun.mod.max_rs": 1,
+			"money_jihun.mod.money.rate": 15
+		}
+	},
+	{
+		"id": "white_jihun_fu",
+		"name": "碎白真魂升级",
+		"desc": "碎白真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"white_jihun.mod.max_rs": 1,
+			"white_jihun.mod.max_rs_mod": 2
+		}
+	},
+	{
+		"id": "ranshao_jihun_fu",
+		"name": "燃烧真魂升级",
+		"desc": "燃烧真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"ranshao_jihun.mod.max_rs": 1,
+			"ranshao_jihun.mod.heiyan.max": 2,
+			"ranshao_jihun.mod.heiyan.rate": 1
+		}
+	},
+	{
+		"id": "stone_jihun_fu",
+		"name": "坚石真魂升级",
+		"desc": "坚石真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"stone_jihun.mod.max_rs": 1,
+			"stone_jihun.mod.player.defense": 5
+		}
+	},
+	{
+		"id": "floor_jihun_fu",
+		"name": "界中真魂升级",
+		"desc": "界中真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"floor_jihun.mod.max_rs": 1,
+			"floor_jihun.mod.space.max": 100
+		}
+	},
+	{
+		"id": "command_jihun_fu",
+		"name": "率兵真魂升级",
+		"desc": "率兵真魂",
+		"require": "g.hp>=1",
+		"val":0,
+		"max": 1000000000000,
+		"mod":{
+			"command_jihun.mod.max_rs": 1,
+			"command_jihun.mod.command_code.max": 5,
+			"command_jihun.mod.human_power.max": 300,
+			"command_jihun.mod.alculation.max": 100
+		}
+	}
+]

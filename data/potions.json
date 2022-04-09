@@ -359,9 +359,9 @@
 			"drug_resist": 1,
 			"dot": {
 				"effect": {
-					"ele_confusion": -1
+					"ele_confusion": -2
 				},
-				"duration": 7
+				"duration": 30
 			}
 		},
 		"flavor": "需要1级元素混合器"

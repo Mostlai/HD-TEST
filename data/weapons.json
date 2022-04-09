@@ -235,6 +235,64 @@
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
+		"id": "shouhunqiehuo",
+		"name": "狩魂者怯火枪【AL-T】",
+		"color": "#2980B9",
+		"desc": "原始但狂野的火枪",
+		"equneed":"g.ALT>=1",
+		"slot": "hands",
+		"material": "shouhun",
+		"enchants": 2,
+		"attack": {
+			"name": "射击",
+			"kind": "fire",
+			"damage": "38~39",
+			"dot": {
+				"duration": 20,
+				"dmg": "5~6",
+				"name": "灼烧",
+				"kind": "fire"
+			}
+		},
+		"alter": {
+			"mod": {
+				"self.resist.gold": 5,
+				"self.resist.wood": 5,
+				"elect.rate": -4,
+				"f_power": 45
+			}
+		},
+		"cost": 30,
+		"level": 55,
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
+		"id": "shouhunciliu",
+		"name": "狩魂者磁流枪【AL-T】",
+		"color": "#2980B9",
+		"desc": "原始但狂野的火枪",
+		"equneed":"g.ALT>=1",
+		"slot": "hands",
+		"material": "shouhun",
+		"enchants": 2,
+		"attack": {
+			"name": "射击",
+			"kind": "elect",
+			"damage": "43~44"
+		},
+		"alter": {
+			"mod": {
+				"self.resist.gold": 5,
+				"self.resist.wood": 5,
+				"elect.rate": -3,
+				"f_power": 45
+			}
+		},
+		"cost": 30,
+		"level": 55,
+		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
 		"id": "base_zd",
 		"name": "紫电[BASE]",
 		"desc": "附着高能电流的巨大直剑",

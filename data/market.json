@@ -351,6 +351,39 @@
 		}
 	},
 	{
+		"id": "market_sanmsj",
+		"name": "三目三鹫[AL-头盔]",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"cost": {
+			"gwl": 50,
+			"cbclb": 40,
+			"jls": 100,
+			"yjdl": 80,
+			"money": 5000,
+			"zero_crystal": 100,
+			"ganwu": 1000,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 50
+		},
+		"loot": {
+			"sanmsj": "100%"
+		}
+	},
+	{
+		"id": "market_shouhunzhet",
+		"name": "狩魂者头盔【AL-T】",
+		"require": "g.shouhunzhemox>=1",
+		"cost": {
+			"gwl": 50,
+			"qingxkj": 2,
+			"qingxdql": 3
+		},
+		"loot": {
+			"shouhunzhet": "100%"
+		}
+	},
+	{
 		"id": "market_nmpj",
 		"name": "凝火披肩[AL-背部]",
 		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
@@ -403,8 +436,28 @@
 		}
 	},
 	{
+		"id": "market_wlbashqz",
+		"name": "五轮[AL-腰部]",
+		"require": "g.xiulian_lj_zhenhun_5>=1",
+		"cost": {
+			"gwl": 50,
+			"cbclb": 40,
+			"jls": 100,
+			"yjdl": 80,
+			"money": 5000,
+			"zero_crystal": 100,
+			"ganwu": 1000,
+			"super_mind": 40,
+			"cold_core": 40,
+			"tian": 50
+		},
+		"loot": {
+			"wlbashqz": "100%"
+		}
+	},
+	{
 		"id": "market_tianc",
-		"name": "钛合装甲[BASE]",
+		"name": "钛合装甲[BASE-护甲]",
 		"require": "g.sjkzl>=1",
 		"cost": {
 			"lg": 11,
@@ -501,6 +554,19 @@
 		}
 	},
 	{
+		"id": "market_shouhunzhej",
+		"name": "狩魂者战甲【AL-T】",
+		"require": "g.shouhunzhemox>=1",
+		"cost": {
+			"gwl": 100,
+			"qingxkj": 5,
+			"qingxdql": 5
+		},
+		"loot": {
+			"shouhunzhej": "100%"
+		}
+	},
+	{
 		"id": "market_tians",
 		"name": "钛合护腿[BASE]",
 		"require": "g.sjkzl>=1",
@@ -579,6 +645,19 @@
 		}
 	},
 	{
+		"id": "market_shouhunzhetui",
+		"name": "狩魂者护腿【AL-T】",
+		"require": "g.shouhunzhemox>=1",
+		"cost": {
+			"gwl": 100,
+			"qingxkj": 3,
+			"qingxdql": 3
+		},
+		"loot": {
+			"shouhunzhetui": "100%"
+		}
+	},
+	{
 		"id": "market_tianf",
 		"name": "钛合护足[BASE]",
 		"require": "g.sjkzl>=1",
@@ -602,6 +681,19 @@
 		},
 		"loot": {
 			"tian_foot": "100%"
+		}
+	},
+	{
+		"id": "market_shouhunzhezu",
+		"name": "狩魂者护足【AL-T】",
+		"require": "g.shouhunzhemox>=1",
+		"cost": {
+			"gwl": 100,
+			"qingxkj": 2,
+			"qingxdql": 2
+		},
+		"loot": {
+			"shouhunzhezu": "100%"
 		}
 	},
 	{
@@ -681,6 +773,22 @@
 		}
 	},
 	{
+		"id": "market_shouhunchangfs",
+		"name": "狩魂场发生器【AL-T-护手】",
+		"require": "g.kangjuxingzj>=1",
+		"cost": {
+			"gwl": 100,
+			"cold_core": 15,
+			"zero_crystal": 30,
+			"yjdl": 30,
+			"qingxkj": 6,
+			"qingxdql": 6
+		},
+		"loot": {
+			"shouhunchangfs": "100%"
+		}
+	},
+	{
 		"id": "market_wuyuemijian",
 		"name": "无月秘剑[AL-武器]",
 		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
@@ -755,6 +863,38 @@
 		}
 	},
 	{
+		"id": "market_shouhunqiehuo",
+		"name": "狩魂者怯火枪【AL-T】",
+		"require": "g.shouhunzhemox>=1",
+		"cost": {
+			"gwl": 100,
+			"cold_core": 15,
+			"zero_crystal": 30,
+			"yjdl": 30,
+			"qingxkj": 2,
+			"qingxdql": 2
+		},
+		"loot": {
+			"shouhunqiehuo": "100%"
+		}
+	},
+	{
+		"id": "market_shouhunciliu",
+		"name": "狩魂者磁流枪【AL-T】",
+		"require": "g.shouhunzhemox>=1",
+		"cost": {
+			"gwl": 100,
+			"cold_core": 15,
+			"zero_crystal": 30,
+			"yjdl": 30,
+			"qingxkj": 2,
+			"qingxdql": 2
+		},
+		"loot": {
+			"shouhunciliu": "100%"
+		}
+	},
+	{
 		"id": "market_tiane",
 		"name": "合理转化炉[BASE]",
 		"require": "g.sjkzl>=1",
@@ -800,6 +940,20 @@
 		}
 	},
 	{
+		"id": "market_youkongrelu_core",
+		"name": "游空热炉【AL-T】",
+		"require": "g.youkonmgrelumx>=1",
+		"cost": {
+			"lengqueshes":5,
+			"money": 2500,
+			"qingxkj": 2,
+			"qingxdql": 5
+		},
+		"loot": {
+			"youkongrelu_core": "100%"
+		}
+	},
+	{
 		"id": "market_yqlp",
 		"name": "御气罗盘",
 		"require": "g.jjclx>=3",
@@ -837,6 +991,22 @@
 		},
 		"loot": {
 			"jixiepijian": "100%"
+		}
+	},
+	{
+		"id": "market_suihunzhushe",
+		"name": "碎魂注射模块【AL-T】",
+		"require": "g.zhushemokuai>=1",
+		"cost": {
+			"gwl": 100,
+			"cold_core": 15,
+			"zero_crystal": 30,
+			"yjdl": 30,
+			"qingxkj": 6,
+			"qingxdql": 6
+		},
+		"loot": {
+			"suihunzhushemk": "100%"
 		}
 	},
 	{

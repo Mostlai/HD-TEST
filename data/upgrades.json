@@ -777,6 +777,50 @@
 		}
 	},
 	{
+		"id": "youkongbaiban",
+		"name": "游空白板",
+		"desc": "",
+		"max": 5,
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"cost": {
+			"zdht": 10,
+			"wgys":10,
+			"yisuanzi": 5,
+			"money": 1600,
+			"human_power":2200,
+			"zhenhun_pice_1": 20
+		},
+		"mod": {
+			"space.max": 70
+		}
+	},
+	{
+		"id": "suipianmaoyi",
+		"name": "碎片贸易",
+		"desc": "消耗一个游空真魂获取微量的钱财速率",
+		"max": 200,
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"cost": {
+			"zhenhun_pice_1": 1
+		},
+		"mod": {
+			"money.rate": 0.1
+		}
+	},
+	{
+		"id": "xianxiajisuan",
+		"name": "闲暇计算",
+		"desc": "消耗多个游空真魂获取微量的计算力速率",
+		"max": 200,
+		"require": "g.xiulian_lj_zhenhun_6>=1",
+		"cost": {
+			"zhenhun_pice_1": 2
+		},
+		"mod": {
+			"alculation.rate": 0.2
+		}
+	},
+	{
 		"id": "upd_wqgckr",
 		"name": "武器工厂扩容",
 		"desc": "扩容1级武器工厂",
@@ -2918,6 +2962,33 @@
 		}
 	},
 	{
+		"id": "shouhun_shenji",
+		"name": "狩魂骨架",
+		"tags": "ALT,AL,base",
+		"slot": "core",
+		"warn": true,
+		"desc": "AL-T级神机,为狩魂战斗装甲而设计。允许安装AL-T级及其以下装甲",
+		"require": "g.shouhunzhemox>=1",
+		"buy": {
+			"qingxkj": 5,
+			"qingxdql": 5,
+			"jingdian": 10,
+			"jls": 100,
+			"life_crystal": 20,
+			"star_map_1": 15,
+			"books": 50
+		},
+		"mod":{
+			"hp.rate":5,
+			"self.resist.chaos": 15,
+			"self.resist.heli": 15,
+			"dist": 30,
+			"heli.max": -5,
+			"chaos.max": -5,
+			"shenshi.max": -2
+		}
+	},
+	{
 		"id": "flont_1",
 		"slot": "front",
 		"name": "刻录石",
@@ -3024,6 +3095,29 @@
 		}
 	},
 	{
+		"id": "flont_shouhun",
+		"slot": "front",
+		"name": "狩魂御阵",
+		"desc": "狩猎真魂",
+		"require": "g.shouhunzhemox>=1",
+		"buy": {
+			"qingxkj":10,
+			"qingxdql": 10,
+			"paper": 300,
+			"shenglingshi": 10,
+			"life_crystal": 15
+		},
+		"mod": {
+			"space.max": "10%",
+			"stress.max": 5,
+			"stress.rate":-0.5,
+			"player.defense": 30,
+			"hp.max": 10,
+			"zhenhun_pice_1.rate": 0.05,
+			"dist": 50
+		}
+	},
+	{
 		"id": "flont_shengzhen",
 		"slot": "front",
 		"name": "生阵",
@@ -3041,7 +3135,7 @@
 		"mod": {
 			"space.max": "12%",
 			"hp.max": 5,
-			"hp.rate": 2,
+			"hp.rate": 5,
 			"dist": 50
 		}
 	},
@@ -3133,6 +3227,47 @@
 		}
 	},
 	{
+		"id": "suihunkongzhi",
+		"name": "碎魂控制",
+		"desc": "使用游空真魂控制生物行动",
+		"require": "g.suihun_bio>=3",
+		"max": 1,
+		"cost": {
+			"yjswyb": 20,
+			"zhenhun_pice_1": 20,
+			"swzhi": 20,
+			"ganwu": 1000,
+			"cold_core": 40,
+			"super_mind": 20,
+			"star_map_1": 10
+		},
+		"result":{
+			"money.rate": 5,
+			"heli.rate": 2,
+			"chaos.rate": 2
+		}
+	},
+	{
+		"id": "fuhexsw",
+		"name": "复合型生物",
+		"desc": "牺牲部分性能的复合型战斗生物",
+		"require": "g.suihun_bio>=5 && g.suihunkongzhi>=1",
+		"max": 1,
+		"cost": {
+			"yjswyb": 20,
+			"zhenhun_pice_1": 20,
+			"swzhi": 20,
+			"ganwu": 1000,
+			"qingxdql": 5,
+			"qingxkj": 5
+		},
+		"result":{
+			"money.rate": 5,
+			"heli.rate": 2,
+			"chaos.rate": 2
+		}
+	},
+	{
 		"id": "jingcuicl",
 		"name": "精粹苍蓝",
 		"desc": "元素学指导下的苍蓝锻体",
@@ -3149,7 +3284,7 @@
 			"frs": 29,
 			"shuaibai.rate": -0.5,
 			"space.max": 40,
-			"hp.max": 10
+			"hp.max": 15
 		}
 	},
 	{
@@ -4056,6 +4191,76 @@
 		},
 		"mod":{
 			"space.max": 50
+		}
+	},
+	{
+		"id": "chaozuoguifan",
+		"name": "操作规范",
+		"desc": "写一本高危作业下的操作规范",
+		"require": "g.guangbozhil>=1",
+		"max": 1,
+		"cost": {
+			"jihun": 5,
+			"gwl": 100,
+			"kewangtian": 2,
+			"shenglingshi": 5,
+			"human_power": 3500,
+			"cbclb": 30,
+			"yjdl": 80,
+			"money": 3800,
+			"ganwu": 2000,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 30
+		},
+		"mod":{
+			"elect.rate": 2
+		}
+	},
+	{
+		"id": "pingfandiann",
+		"name": "平凡电能",
+		"desc": "推广电能",
+		"require": "g.guangbozhil>=1",
+		"max": 1,
+		"cost": {
+			"jihun": 5,
+			"gwl": 100,
+			"elect": 40,
+			"kewangtian": 2,
+			"shenglingshi": 10,
+			"human_power": 3500,
+			"yjdl": 80,
+			"money": 3800,
+			"ganwu": 2000,
+			"super_mind": 30,
+			"alculation": 1000,
+			"star_map_1": 30
+		},
+		"mod":{
+			"elect.rate": 3
+		}
+	},
+	{
+		"id": "jingtaikz",
+		"name": "静态控制",
+		"desc": "提高指令容量",
+		"require": "g.sweisys>=1",
+		"max": 5,
+		"cost": {
+			"jihun": 5,
+			"kewangtian": 5,
+			"gwl": 100,
+			"elect": 40,
+			"shenglingshi": 10,
+			"super_mind": 40,
+			"human_power": 3500,
+			"yjdl": 80,
+			"money": 3800,
+			"ganwu": 2000
+		},
+		"mod":{
+			"command_code.max": 6
 		}
 	},
 	{

@@ -1,0 +1,358 @@
+[
+	{
+		"id": "blood_jihun",
+		"name": "纯净血魂",
+		"desc": "大量提高气血上限",
+		"img": "./images/soul1.png",
+		"require": "g.xl_lj_zhenhun_10>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"blood_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"hp": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"blood_soulcore_pice": 5
+		},
+		"craft_result":{
+			"blood_jihun_fu": 1
+		},
+		"up_mod":{
+			"blood_jihun.mod.max_rs": 1,
+			"blood_jihun.mod.hp.max": 35
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.defense": 20,
+			"hp.max": 120
+		}
+	},
+	{
+		"id": "elect_jihun",
+		"name": "电闪真魂",
+		"desc": "曾经弱小的飞禽,在经过风暴洗礼后也会成长为震慑一方的猛兽。当它沉醉于闪电的力量而腐朽时，应该会想起那个被闪电v惊吓的夜晚吧。",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiusl>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"elect_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"elect": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"elect_soulcore_pice": 5
+		},
+		"craft_result":{
+			"elect_jihun_fu": 1
+		},
+		"up_mod":{
+			"elect_jihun.mod.max_rs": 1,
+			"elect_jihun.mod.elect.rate": 10
+		},
+		"mod":{
+			"max_rs": 0,
+			"elect.rate": 40
+		}
+	},
+	{
+		"id": "skill_jihun",
+		"name": "智识真魂",
+		"desc": "被虚幻知识侵蚀的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiuzh>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"skill_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"books": 50,
+			"star_map_1": 20,
+			"jingdian": 10,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"ganwu": 1500,
+			"zhenhun_pice_1": 40,
+			"skill_soulcore_pice": 5
+		},
+		"craft_result":{
+			"elect_jihun_fu": 1
+		},
+		"up_mod":{
+			"elect_jihun.mod.max_rs": 1,
+			"elect_jihun.mod.skill.rate": 10
+		},
+		"mod":{
+			"max_rs": 0,
+			"ganwu.rate": 20,
+			"skill.rate": 50
+		}
+	},
+	{
+		"id": "money_jihun",
+		"name": "贪婪真魂",
+		"desc": "银色巨蛇缠绕的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiuhj>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"money_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"money": 3000,
+			"ganwu": 2000,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"money": 3000,
+			"zhenhun_pice_1": 40,
+			"money_soulcore_pice": 5
+		},
+		"craft_result":{
+			"money_jihun_fu": 1
+		},
+		"up_mod":{
+			"money_jihun.mod.max_rs": 1,
+			"money_jihun.mod.money.rate": 15
+		},
+		"mod":{
+			"max_rs": 0,
+			"money.rate": 35,
+			"hp.rate": -1
+		}
+	},
+	{
+		"id": "white_jihun",
+		"name": "碎白真魂",
+		"desc": "没有任何力量的真魂，但能让使用者能掌握更多其它真魂。一直唱着无声乐曲的诵读团，总是成群结队行动，其目的一直是个谜。",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiukb>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 4000,
+			"element_blood": 40,
+			"white_soulcore_pice": 20,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"jihun": 5,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 550,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"white_soulcore_pice": 5
+		},
+		"craft_result":{
+			"white_jihun_fu": 1
+		},
+		"up_mod":{
+			"white_jihun.mod.max_rs": 1,
+			"white_jihun.mod.max_rs_mod": 2
+		},
+		"mod":{
+			"max_rs": 0,
+			"max_rs_mod": 5
+		}
+	},
+	{
+		"id": "ranshao_jihun",
+		"name": "燃烧真魂",
+		"desc": "缠绕着黑色火焰的真魂。在某些区域，黑色的火焰是讨罪的象征。相传许久以前黑色诵读团内部发生了不和。",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiuhy>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"ranshao_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"jihun": 5,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"ranshao_soulcore_pice": 5
+		},
+		"craft_result":{
+			"ranshao_jihun_fu": 1
+		},
+		"up_mod":{
+			"ranshao_jihun.mod.max_rs": 1,
+			"ranshao_jihun.mod.heiyan.max": 2,
+			"ranshao_jihun.mod.heiyan.rate": 1
+		},
+		"mod":{
+			"max_rs": 0,
+			"heiyan.max": 10,
+			"heiyan.rate": 1
+		}
+	},
+	{
+		"id": "stone_jihun",
+		"name": "坚石真魂",
+		"desc": "拥有强大防御的真魂。曾经游历大陆的歌者，在被不言语的人们夺取声音后滋生了坚硬的魂魄，但他也因此惧怕火焰。",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiupans>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"stone_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"jihun": 5,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"stone_soulcore_pice": 5
+		},
+		"craft_result":{
+			"stone_jihun_fu": 1
+		},
+		"up_mod":{
+			"stone_jihun.mod.max_rs": 1,
+			"stone_jihun.mod.player.defense": 5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.defense": 35
+		}
+	},
+	{
+		"id": "floor_jihun",
+		"name": "界中真魂",
+		"desc": "内含空间的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiuguangmao>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"floor_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"jihun": 5,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"floor_soulcore_pice": 5
+		},
+		"craft_result":{
+			"floor_jihun_fu": 1
+		},
+		"up_mod":{
+			"floor_jihun.mod.max_rs": 1,
+			"floor_jihun.mod.space.max": 100
+		},
+		"mod":{
+			"max_rs": 0,
+			"space.max": 300
+		}
+	},
+	{
+		"id": "command_jihun",
+		"name": "率兵真魂",
+		"desc": "遗忘国度的将军灵魂。在雪原建起的国家，凭黑色的布衣战士而征伐天下。但在某个时间点，随着火焰消失在世间。",
+		"img": "./images/soul1.png",
+		"require": "g.xunqiuty>=1",
+		"val":0,
+		"max": 98,
+		"cost":{
+			"heli": 10000000000
+		},
+		"lhxy":{
+			"exp": 3000,
+			"command_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"human_power": 2000,
+			"alculation": 2000,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"zhenhun_pice_1": 40,
+			"human_power": 2000,
+			"alculation": 2000,
+			"command_soulcore_pice": 5
+		},
+		"craft_result":{
+			"command_jihun_fu": 1
+		},
+		"up_mod":{
+			"command_jihun.mod.max_rs": 1,
+			"command_jihun.mod.command_code.max": 5,
+			"command_jihun.mod.human_power.max": 300,
+			"command_jihun.mod.alculation.max": 100
+		},
+		"mod":{
+			"max_rs": 0,
+			"command_code.max": 20,
+			"human_power.max": 1000,
+			"alculation.max": 1000
+		}
+	}
+]

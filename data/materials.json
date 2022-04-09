@@ -28,6 +28,18 @@
 		}
 	},
 	{
+		"id": "shouhun",
+		"name": "狩魂",
+		"kind": "cloth",
+		"weight": 0,
+		"priceMod": 5,
+		"level": 50,
+		"only": "weapon",
+		"alter": {
+			"attack.tohit": 10
+		}
+	},
+	{
 		"id": "yangxi",
 		"name": "阳息",
 		"kind": "cloth",
