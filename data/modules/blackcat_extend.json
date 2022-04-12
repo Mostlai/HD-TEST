@@ -1,0 +1,658 @@
+{
+	"module": "blackcat_extend",
+	"sym": "🐱",
+	"data": {
+		"events": [
+			{
+				"id": "evt_blackcat_thd",
+				"require": "g.ht_blackcat_power>=1",
+				"name": "十万猫之力",
+				"desc": "",
+				"result": {
+					"maolitoushe": true,
+					"maozhihaoling": true
+				}
+			}
+		],
+		"spells": [
+			{
+				"id": "maolitoushe",
+				"name": "猫力投射",
+				"level": 5,
+				"school": "猫力",
+				"desc": "释放十万猫之力的恐怖力量",
+				"locked": true,
+				"buy": {
+					"blackcat_power": 100000,
+					"ht_blackcat_power": 1
+				},
+				"cost": {
+					"blackcat_power": 1000,
+					"ht_blackcat_power": 1
+				},
+				"attack": {
+					"damage": "50~100",
+					"dot": {
+						"kind": "cat",
+						"duration": 10,
+						"damage": 10
+					}
+				}
+			},
+			{
+				"id": "maozhihaoling",
+				"name": "猫之号令",
+				"desc": "短时间内提高猫力的获取速度",
+				"school": "猫力",
+				"locked":true,
+				"level": 5,
+				"buy": {
+					"blackcat_power": 100000,
+					"ht_blackcat_power": 1
+				},
+				"cost": {
+					"blackcat_power": 1000
+				},
+				"dot": {
+					"duration": 20,
+					"mod": {
+						"blackcat_power.rate": 200
+					}
+				}
+			}
+		],
+		"resources": [
+			{
+				"id": "blackcat_power",
+				"name": "猫力",
+				"desc": "喵喵喵喵",
+				"require": "g.evt_blackcat_2>=1",
+				"max": 100,
+				"group": "猫猫"
+			},
+			{
+				"id": "ht_blackcat_power",
+				"name": "十万猫力",
+				"desc": "感受吧，这是十万猫之力！",
+				"require": "g.th_maoli_t>=1",
+				"max": 0,
+				"group": "猫猫",
+				"mod": {
+					"blackcat_power.rate": 100
+				}
+			}
+		],
+		"tasks": [
+			{
+				"id": "evt_blackcat_1",
+				"name": "流浪猫猫",
+				"tags":"事件,流浪猫猫事件链",
+				"desc": "一只流浪的猫猫来到你的领地。本事件将解锁[流浪猫猫]事件链",
+				"verb": "启动事件链",
+				"max": 1,
+				"warn": true,
+				"require": "g.time>=182500",
+				"length": 600,
+				"cost": {
+					"money": 1000,
+					"ganwu": 500
+				},
+				"run": {
+					"time": -2
+				}
+			},
+			{
+				"id": "evt_blackcat_2",
+				"name": "收养",
+				"tags":"事件,流浪猫猫事件链",
+				"desc": "收养猫猫。本事件将结束[流浪猫猫]事件链",
+				"verb": "启动事件链",
+				"max": 1,
+				"warn": true,
+				"require": "g.evt_blackcat_1>=1",
+				"length": 60,
+				"cost": {
+					"money": 1000,
+					"ganwu": 500
+				},
+				"run": {
+					"time": -5
+				},
+				"result": {
+					"space.max": 100
+				},
+				"disable": ["evt_blackcat_3"]
+			},
+			{
+				"id": "evt_blackcat_3",
+				"name": "送离",
+				"tags":"事件,流浪猫猫事件链",
+				"desc": "还是把它送给别人吧。本事件将解锁[流浪猫猫]事件链",
+				"verb": "启动事件链",
+				"max": 1,
+				"warn": true,
+				"require": "g.evt_blackcat_1>=1",
+				"length": 5,
+				"cost": {
+					"money": 1000,
+					"ganwu": 500
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"space.max": 200,
+					"money": 2000,
+					"age.max": 3650,
+					"age": 3650
+				},
+				"disable": ["evt_blackcat_2"]
+			},
+			{
+				"id": "th_maoli_t",
+				"name": "十万猫之力",
+				"desc": "抵达猫力上限，解锁十万猫力",
+				"verb": "",
+				"max": 1,
+				"warn": true,
+				"require": "g.blackcat_power>=100000",
+				"length": 60,
+				"cost": {
+					"blackcat_power": 100000
+				},
+				"run": {
+					"time": -5
+				},
+				"result": {
+					"ht_blackcat_power.max": 1,
+					"ht_blackcat_power.rate": 1
+				}
+			},
+			{
+				"id": "rua_cat",
+				"name": "摸猫",
+				"desc": "摸猫,rua!",
+				"verb": "",
+				"require": "g.evt_blackcat_2>=1",
+				"cost": {
+					"tili": 9
+				},
+				"result": {
+					"time": 0.1,
+					"blackcat_power": 1,
+					"money": 1
+				}
+			}
+		],
+		"upgrades": [
+			{
+				"id": "quick_ruacat_1",
+				"name": "快速摸猫(1)",
+				"desc": "提高摸猫获得的猫力",
+				"max":10,
+				"require": "g.blackcat_power>=50",
+				"cost": {
+					"blackcat_power":100
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 5,
+					"rua_cat.result.blackcat_power": 0.5
+				}
+			},
+			{
+				"id": "quick_ruacat_2",
+				"name": "快速摸猫(2)",
+				"desc": "提高摸猫获得的猫力",
+				"max":8,
+				"require": "g.blackcat_power>=300",
+				"cost": {
+					"blackcat_power":300
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 10,
+					"rua_cat.result.blackcat_power": 1
+				}
+			},
+			{
+				"id": "quick_ruacat_3",
+				"name": "快速摸猫(3)",
+				"desc": "提高摸猫获得的猫力",
+				"max":5,
+				"require": "g.blackcat_power>=800",
+				"cost": {
+					"blackcat_power":700
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 20,
+					"rua_cat.result.blackcat_power": 1
+				}
+			},
+			{
+				"id": "quick_ruacat_4",
+				"name": "快速摸猫(4)",
+				"desc": "提高摸猫获得的猫力",
+				"max":5,
+				"require": "g.blackcat_power>=1700",
+				"cost": {
+					"blackcat_power":1700
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 100,
+					"rua_cat.result.blackcat_power": 5
+				}
+			},
+			{
+				"id": "quick_ruacat_5",
+				"name": "快速摸猫(5)",
+				"desc": "提高摸猫获得的猫力",
+				"max":5,
+				"require": "g.blackcat_power>=9000",
+				"cost": {
+					"blackcat_power":9000
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 100,
+					"rua_cat.result.blackcat_power": 5
+				}
+			},
+			{
+				"id": "quick_ruacat_6",
+				"name": "快速摸猫(6)",
+				"desc": "提高摸猫获得的猫力",
+				"max":10,
+				"require": "g.blackcat_power>=20000",
+				"cost": {
+					"blackcat_power":20000
+				},
+				"mod":{
+					"rua_cat.result.blackcat_power": 10
+				}
+			},
+			{
+				"id": "quick_ruacat_7",
+				"name": "快速摸猫(7)",
+				"desc": "提高摸猫获得的猫力",
+				"max":5,
+				"require": "g.blackcat_power>=45000",
+				"cost": {
+					"blackcat_power":45000
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 1000,
+					"rua_cat.result.blackcat_power": 10
+				}
+			},
+			{
+				"id": "quick_ruacat_8",
+				"name": "快速摸猫(8)",
+				"desc": "提高摸猫获得的猫力",
+				"max":5,
+				"require": "g.blackcat_power>=60000",
+				"cost": {
+					"blackcat_power":60000
+				},
+				"mod":{
+					"quick_ruacat_1.cost.blackcat_power": 1000,
+					"rua_cat.result.blackcat_power": 10
+				}
+			},
+			{
+				"id": "bp_extend",
+				"name": "猫力扩展(1)",
+				"desc": "提高猫力上限",
+				"max":5,
+				"require": "g.blackcat_power>=50",
+				"cost": {
+					"blackcat_power":100
+				},
+				"mod":{
+					"blackcat_power.max": 20,
+					"bp_extend.cost.blackcat_power": 20
+				}
+			},
+			{
+				"id": "bp_extend_2",
+				"name": "猫力扩展(2)",
+				"desc": "提高猫力上限",
+				"max":10,
+				"require": "g.blackcat_power>=150",
+				"cost": {
+					"blackcat_power":200
+				},
+				"mod":{
+					"blackcat_power.max": 20,
+					"bp_extend.cost.blackcat_power": 20
+				}
+			},
+			{
+				"id": "bp_extend_3",
+				"name": "猫力扩展(3)",
+				"desc": "提高猫力上限",
+				"max":40,
+				"require": "g.blackcat_power>=400",
+				"cost": {
+					"blackcat_power":400
+				},
+				"mod":{
+					"blackcat_power.max": 15,
+					"bp_extend.cost.blackcat_power": 15
+				}
+			},
+			{
+				"id": "bp_extend_4",
+				"name": "猫力扩展(4)",
+				"desc": "提高猫力上限",
+				"max":20,
+				"require": "g.blackcat_power>=400",
+				"cost": {
+					"blackcat_power":1000
+				},
+				"mod":{
+					"blackcat_power.max": 50,
+					"bp_extend.cost.blackcat_power": 50
+				}
+			},
+			{
+				"id": "bp_extend_5",
+				"name": "猫力扩展(5)",
+				"desc": "提高猫力上限",
+				"max":40,
+				"require": "g.blackcat_power>=2000",
+				"cost": {
+					"blackcat_power":2000
+				},
+				"mod":{
+					"blackcat_power.max": 100,
+					"bp_extend.cost.blackcat_power": 100
+				}
+			},
+			{
+				"id": "bp_extend_6",
+				"name": "猫力扩展(6)",
+				"desc": "提高猫力上限",
+				"max":20,
+				"require": "g.blackcat_power>=6000",
+				"cost": {
+					"blackcat_power":6000
+				},
+				"mod":{
+					"blackcat_power.max": 700,
+					"bp_extend.cost.blackcat_power": 700
+				}
+			},
+			{
+				"id": "bp_extend_7",
+				"name": "猫力扩展(7)",
+				"desc": "提高猫力上限",
+				"max":40,
+				"require": "g.blackcat_power>=20000",
+				"cost": {
+					"blackcat_power":20000
+				},
+				"mod":{
+					"blackcat_power.max": 750,
+					"bp_extend.cost.blackcat_power": 750
+				}
+			},
+			{
+				"id": "bp_extend_8",
+				"name": "猫力扩展(8)",
+				"desc": "提高猫力上限",
+				"max":50,
+				"require": "g.blackcat_power>=50000",
+				"cost": {
+					"blackcat_power":50000
+				},
+				"mod":{
+					"blackcat_power.max": 1000,
+					"bp_extend.cost.blackcat_power": 1000
+				}
+			},
+			{
+				"id": "shenglimomao",
+				"name": "省力摸猫",
+				"desc": "降低摸猫消耗的体力",
+				"max":1,
+				"require": "g.blackcat_power>=150",
+				"cost": {
+					"blackcat_power":150
+				},
+				"mod":{
+					"rua_cat.cost.tili": -4
+				}
+			},
+			{
+				"id": "jieyuemomao",
+				"name": "节约摸猫",
+				"desc": "降低摸猫消耗的体力",
+				"max":1,
+				"require": "g.blackcat_power>=3000",
+				"cost": {
+					"blackcat_power":3000
+				},
+				"mod":{
+					"rua_cat.cost.tili": -5
+				}
+			},
+			{
+				"id": "momaofangsong",
+				"name": "摸猫放松",
+				"desc": "降低摸猫消耗的体力，这个升级让摸猫变得可以恢复体力",
+				"max":1,
+				"require": "g.blackcat_power>=10000",
+				"cost": {
+					"blackcat_power":10000
+				},
+				"mod":{
+					"rua_cat.cost.tili": -5
+				}
+			}
+		],
+		"furniture": [
+			{
+				"id": "be_maowo",
+				"name": "猫窝",
+				"desc": "自动生成猫力",
+				"max": 5,
+				"require": "g.blackcat_power>=200",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 400
+				},
+				"mod": {
+					"blackcat_power.rate": 1,
+					"space": 20
+				}
+			},
+			{
+				"id": "be_maowo_1",
+				"name": "精致猫窝",
+				"desc": "自动生成猫力",
+				"max": 5,
+				"require": "g.blackcat_power>=1000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 1000
+				},
+				"mod": {
+					"blackcat_power.rate": 3,
+					"space": 20
+				}
+			},
+			{
+				"id": "be_maowo_2",
+				"name": "宝石猫窝",
+				"desc": "自动生成猫力",
+				"max": 5,
+				"require": "g.blackcat_power>=12000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 12000
+				},
+				"mod": {
+					"blackcat_power.rate": 8,
+					"space": 15
+				}
+			},
+			{
+				"id": "be_maowo_3",
+				"name": "绝伦猫窝",
+				"desc": "自动生成猫力",
+				"max": 5,
+				"require": "g.blackcat_power>=65000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 40000
+				},
+				"mod": {
+					"blackcat_power.rate": 10,
+					"space": 15
+				}
+			},
+			{
+				"id": "be_maowo_3",
+				"name": "动力猫窝",
+				"desc": "自动生成猫力",
+				"max": 5,
+				"require": "g.blackcat_power>=25000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 25000
+				},
+				"mod": {
+					"blackcat_power.rate": 12,
+					"space": 15
+				}
+			},
+			{
+				"id": "be_maodongji",
+				"name": "猫动机",
+				"desc": "自动生成电能",
+				"max": 5,
+				"require": "g.blackcat_power>=300",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 300
+				},
+				"mod": {
+					"elect.rate": 4,
+					"blackcat_power.rate": -0.1,
+					"space": 4
+				}
+			},
+			{
+				"id": "be_adv_maodongji",
+				"name": "先进猫动机",
+				"desc": "自动生成电能",
+				"max": 5,
+				"require": "g.blackcat_power>=14000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 14000
+				},
+				"mod": {
+					"elect.rate": 4,
+					"blackcat_power.rate": -0.1,
+					"space": 4
+				}
+			},
+			{
+				"id": "be_jm_maodongji",
+				"name": "精妙猫动机",
+				"desc": "自动生成电能",
+				"max": 5,
+				"require": "g.blackcat_power>=30000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 30000
+				},
+				"mod": {
+					"elect.rate": 9,
+					"blackcat_power.rate": -0.1,
+					"space": 4
+				}
+			},
+			{
+				"id": "be_zhaocaimao",
+				"name": "招财之猫",
+				"desc": "自动生成钱币",
+				"max": 20,
+				"require": "g.blackcat_power>=2000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 2000
+				},
+				"mod": {
+					"money.rate": 1,
+					"space": 10
+				}
+			},
+			{
+				"id": "be_maozhiling",
+				"name": "猫之领",
+				"desc": "扩展地板",
+				"max": 20,
+				"require": "g.blackcat_power>=19000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 19000
+				},
+				"mod": {
+					"space": 1,
+					"extra_space": 8
+				}
+			},
+			{
+				"id": "be_maozhiling_1",
+				"name": "猫之领(改)",
+				"desc": "扩展地板",
+				"max": 20,
+				"require": "g.blackcat_power>=50000",
+				"repeat": true,
+				"cost": {
+					"money": 1000,
+					"heli": 30,
+					"chaos": 30,
+					"blackcat_power": 50000
+				},
+				"mod": {
+					"money.rate": 1,
+					"space": 1,
+					"extra_space": 12
+				}
+			}
+		],
+		"skills": [
+		]
+	}
+}
