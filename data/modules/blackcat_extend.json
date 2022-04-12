@@ -102,7 +102,7 @@
 				}
 			},
 			{
-				"id": "evt_blackcat_2",
+				"id": "evt_blackcat_21",
 				"name": "收养",
 				"tags":"事件,流浪猫猫事件链",
 				"desc": "收养猫猫。本事件将结束[流浪猫猫]事件链",
@@ -119,15 +119,15 @@
 					"time": -5
 				},
 				"result": {
-					"space.max": 100
+					"space.max": 10
 				},
-				"disable": ["evt_blackcat_3"]
+				"disable": ["evt_blackcat_31"]
 			},
 			{
-				"id": "evt_blackcat_3",
+				"id": "evt_blackcat_31",
 				"name": "送离",
 				"tags":"事件,流浪猫猫事件链",
-				"desc": "还是把它送给别人吧。本事件将解锁[流浪猫猫]事件链",
+				"desc": "还是把它送给别人吧。本事件将结束[流浪猫猫]事件链",
 				"verb": "启动事件链",
 				"max": 1,
 				"warn": true,
@@ -141,12 +141,12 @@
 					"time": -1
 				},
 				"result": {
-					"space.max": 200,
+					"space.max": 20,
 					"money": 2000,
 					"age.max": 3650,
 					"age": 3650
 				},
-				"disable": ["evt_blackcat_2"]
+				"disable": ["evt_blackcat_21"]
 			},
 			{
 				"id": "th_maoli_t",
@@ -173,7 +173,7 @@
 				"name": "摸猫",
 				"desc": "摸猫,rua!",
 				"verb": "",
-				"require": "g.evt_blackcat_2>=1",
+				"require": "g.evt_blackcat_21>=1",
 				"cost": {
 					"tili": 9
 				},
@@ -209,7 +209,7 @@
 					"blackcat_power":300
 				},
 				"mod":{
-					"quick_ruacat_1.cost.blackcat_power": 10,
+					"quick_ruacat_2.cost.blackcat_power": 10,
 					"rua_cat.result.blackcat_power": 1
 				}
 			},
@@ -223,7 +223,7 @@
 					"blackcat_power":700
 				},
 				"mod":{
-					"quick_ruacat_1.cost.blackcat_power": 20,
+					"quick_ruacat_3.cost.blackcat_power": 20,
 					"rua_cat.result.blackcat_power": 1
 				}
 			},
@@ -237,7 +237,7 @@
 					"blackcat_power":1700
 				},
 				"mod":{
-					"quick_ruacat_1.cost.blackcat_power": 100,
+					"quick_ruacat_4.cost.blackcat_power": 100,
 					"rua_cat.result.blackcat_power": 5
 				}
 			},
@@ -251,7 +251,7 @@
 					"blackcat_power":9000
 				},
 				"mod":{
-					"quick_ruacat_1.cost.blackcat_power": 100,
+					"quick_ruacat_5.cost.blackcat_power": 100,
 					"rua_cat.result.blackcat_power": 5
 				}
 			},
@@ -278,7 +278,7 @@
 					"blackcat_power":45000
 				},
 				"mod":{
-					"quick_ruacat_1.cost.blackcat_power": 1000,
+					"quick_ruacat_7.cost.blackcat_power": 1000,
 					"rua_cat.result.blackcat_power": 10
 				}
 			},
@@ -292,7 +292,7 @@
 					"blackcat_power":60000
 				},
 				"mod":{
-					"quick_ruacat_1.cost.blackcat_power": 1000,
+					"quick_ruacat_8.cost.blackcat_power": 1000,
 					"rua_cat.result.blackcat_power": 10
 				}
 			},
@@ -321,7 +321,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 20,
-					"bp_extend.cost.blackcat_power": 20
+					"bp_extend_2.cost.blackcat_power": 20
 				}
 			},
 			{
@@ -335,7 +335,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 15,
-					"bp_extend.cost.blackcat_power": 15
+					"bp_extend_3.cost.blackcat_power": 15
 				}
 			},
 			{
@@ -349,7 +349,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 50,
-					"bp_extend.cost.blackcat_power": 50
+					"bp_extend_4.cost.blackcat_power": 50
 				}
 			},
 			{
@@ -363,7 +363,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 100,
-					"bp_extend.cost.blackcat_power": 100
+					"bp_extend_5.cost.blackcat_power": 100
 				}
 			},
 			{
@@ -377,7 +377,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 700,
-					"bp_extend.cost.blackcat_power": 700
+					"bp_extend_6.cost.blackcat_power": 700
 				}
 			},
 			{
@@ -391,7 +391,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 750,
-					"bp_extend.cost.blackcat_power": 750
+					"bp_extend_7.cost.blackcat_power": 750
 				}
 			},
 			{
@@ -405,7 +405,7 @@
 				},
 				"mod":{
 					"blackcat_power.max": 1000,
-					"bp_extend.cost.blackcat_power": 1000
+					"bp_extend_8.cost.blackcat_power": 1000
 				}
 			},
 			{
