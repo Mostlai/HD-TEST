@@ -1,3 +1,40 @@
 [
-	
+	{
+		"id": "crude_oil",
+		"name": "原油",
+		"desc": "原油",
+		"stop_follow": ["hp","money"],
+		"img": "./images/crude_oil.png",
+		"val": 100,
+		"max": 100,
+		"follow": "原油",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.hp>=1"
+	},
+	{
+		"id": "crude_oil_waste",
+		"name": "原油渣",
+		"desc": "原油渣",
+		"img": "./images/crude_oil.png",
+		"max": 100,
+		"follow": "原油渣",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.hp>=1"
+	},
+	{
+		"id": "zafenyou",
+		"name": "杂酚油",
+		"desc": "杂酚油",
+		"img": "./images/crude_oil.png",
+		"max": 100,
+		"follow": "杂酚油",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.hp>=1"
+	}
 ]

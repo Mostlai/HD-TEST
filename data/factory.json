@@ -1,0 +1,11 @@
+[
+	{
+		"id": "huagongchang",
+		"name": "MKI化工厂",
+		"max": 10,
+		"require": "g.hp>=1",
+		"mod":{
+			"huagong_thread.max": 1
+		}
+	}
+]

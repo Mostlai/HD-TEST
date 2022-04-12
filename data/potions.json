@@ -359,7 +359,7 @@
 			"drug_resist": 1,
 			"dot": {
 				"effect": {
-					"ele_confusion": -2
+					"ele_confusion": -3
 				},
 				"duration": 30
 			}

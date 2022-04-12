@@ -1,0 +1,39 @@
+[
+	{
+		"id": "huagong_thread",
+		"name":"化工线程",
+		"max": 0
+	},
+	{
+		"id": "crude_oil_rp_1",
+		"name": "AA原油裂解",
+		"desc": "2原油通量裂解为1.5啥玩意和0.49啥玩意",
+		"thread_use": "huagong_thread",
+		"tags": "原油",
+		"require": "g.hp>=1",
+		"cost":{
+			"crude_oil": 2
+		},
+		"mod":{
+			"industry_space": 1,
+			"industry_elect": 1,
+			"industry_thread": 1
+		}
+	},
+	{
+		"id": "zafenyou_rp1",
+		"name": "杂酚油补燃",
+		"desc": "2原油通量裂解为1.5啥玩意和0.49啥玩意",
+		"thread_use": "huagong_thread",
+		"tags": "杂酚油",
+		"require": "g.hp>=1",
+		"cost":{
+			"crude_oil": 2
+		},
+		"mod":{
+			"industry_space": 1,
+			"industry_elect": 1,
+			"industry_thread": 1
+		}
+	}
+]

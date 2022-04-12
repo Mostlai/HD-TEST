@@ -84,6 +84,7 @@
 	},
 	{
 		"id": "dodge",
+		"name":"闪避",
 		"val": 1,
 		"stat": true,
 		"unit": false,
@@ -91,6 +92,7 @@
 	},
 	{
 		"id": "breath",
+		"name": "呼吸",
 		"max": 5,
 		"val": 5,
 		"unit": false,
@@ -156,6 +158,33 @@
 		}
 	},
 	{
+		"id": "industry_space",
+		"name": "工业用地",
+		"desc": "工业设备占用工业用地",
+		"val": 0,
+		"max": 50,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "industry_elect",
+		"name": "工业电力",
+		"desc": "工业电力不同于普通电力,是专供于工业设备的稳定电力",
+		"val": 0,
+		"max": 30,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "industry_thread",
+		"name": "工业线程",
+		"desc": "工业线程决定了你能同时进行多少个生产模式",
+		"val": 0,
+		"max": 15,
+		"unit": false,
+		"locked": false
+	},
+	{
 		"id": "scraft",
 		"name": "spellcraft power",
 		"val": 1,
@@ -165,8 +194,8 @@
 	},
 	{
 		"id": "DR",
-		"name": "Damage reduction",
-		"desc": "Amount of damage subtracted from total.",
+		"name": "伤害吸收",
+		"desc": "从受到的伤害中能减去的伤害值。",
 		"val": 0,
 		"stat": true,
 		"unit": false,
