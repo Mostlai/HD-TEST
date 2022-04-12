@@ -3392,7 +3392,7 @@
 		}
 	},
 	{
-		"id": "getbos_mount",
+		"id": "getbos_mount1",
 		"name": "山脉纳入",
 		"desc": "获取周围的盆地纳入【研究需要绿色实验室】",
 		"tags": "生产",
@@ -3401,7 +3401,6 @@
 		"require": "g.liticehui_mount>=1",
 		"need": "g.green_lab>=1",
 		"length": 10,
-		"max": 1,
 		"cost": {
 			"human_power": 1000,
 			"snp_data": 140,
