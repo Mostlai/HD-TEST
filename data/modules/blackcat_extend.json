@@ -66,7 +66,7 @@
 				"id": "blackcat_power",
 				"name": "猫力",
 				"desc": "喵喵喵喵",
-				"require": "g.evt_blackcat_2>=1",
+				"require": "g.evt_blackcat_21>=1",
 				"max": 100,
 				"group": "猫猫"
 			},
