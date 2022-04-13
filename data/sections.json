@@ -37,7 +37,7 @@
 	{
 		"id": "sect_mode",
 		"name": "模型",
-		"require": "g.hp>=1"
+		"require": "g.hp>=9999999"
 	},
 	{
 		"id": "sect_raid",
