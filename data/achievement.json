@@ -85,6 +85,24 @@
 		}
 	},
 	{
+		"id": "ach_money_0",
+		"name": "十元",
+		"desc": "钱币达到10",
+		"target_item": "money",
+		"target_val": 10,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		"cost":{
+			"heli": 1000000000000000
+		},
+		"result":{
+			"age.max": 8000,
+			"age": 8000
+		}
+	},
+	{
 		"id": "ach_money_1",
 		"name": "存钱罐",
 		"desc": "钱币达到300",
