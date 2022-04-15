@@ -477,9 +477,9 @@
 			"sj_met": 5,
 			"cold_core": 20,
 			"zero_crystal": 40,
-			"snp_data": 50,
-			"exe_paper": 54,
-			"star_map": 55,
+			"snp_data": 25,
+			"exe_paper": 25,
+			"star_map": 25,
 			"ganwu": 250
 		},
 		"mod": {
