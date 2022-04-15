@@ -2237,7 +2237,7 @@
 		"mod": {
 			"elect.rate": -6,
 			"heli.rate": -1,
-			"qiyiyeti.max": 5,
+			"qiyiyeti.max": 14,
 			"element_luor.max": 5,
 			"space": 20
 		}
