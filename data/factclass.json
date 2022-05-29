@@ -110,7 +110,7 @@
 		"img": "./images/crude_oil.png",
 		"val": 0,
 		"max": 5,
-		"follow": "培质",
+		"follow": "纤板",
 		"cost":{
 			"heli": 1000000000
 		},

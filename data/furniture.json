@@ -5993,10 +5993,10 @@
 		"desc": "",
 		"tags": "",
 		"max":25,
-		"require": "g.water>=1",
+		"require": "g.ind_water>=1",
 		"repeat": true,
 		"cost": {
-			"water": 2,
+			"ind_water": 2,
 			"zero_crystal":25,
 			"heli":40,
 			"tian": 30,
@@ -6171,15 +6171,15 @@
 		}
 	},
 	{
-		"id": "stell_cang",
+		"id": "steel_cang",
 		"name": "工制钢仓库",
 		"desc": "",
 		"tags": "",
 		"max":15,
-		"require": "g.stell>=1",
+		"require": "g.steel>=1",
 		"repeat": true,
 		"cost": {
-			"stell": 5,
+			"steel": 5,
 			"coil_1": 50,
 			"zero_crystal":25,
 			"heli":40,
@@ -6189,7 +6189,7 @@
 			"money": 1000
 		},
 		"mod": {
-			"stell.max": 65,
+			"steel.max": 65,
 			"space": 5
 		}
 	},
@@ -6315,7 +6315,7 @@
 		"repeat": true,
 		"cost": {
 			"ganwu": 100,
-			"soft_dirt_cang": 5,
+			"soft_dirt": 5,
 			"coil_1": 100,
 			"jls": 100,
 			"heli":40,
