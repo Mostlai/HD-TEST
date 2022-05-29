@@ -6171,15 +6171,15 @@
 		}
 	},
 	{
-		"id": "stell_cang",
+		"id": "steel_cang",
 		"name": "工制钢仓库",
 		"desc": "",
 		"tags": "",
 		"max":15,
-		"require": "g.stell>=1",
+		"require": "g.steel>=1",
 		"repeat": true,
 		"cost": {
-			"stell": 5,
+			"steel": 5,
 			"coil_1": 50,
 			"zero_crystal":25,
 			"heli":40,
@@ -6189,7 +6189,7 @@
 			"money": 1000
 		},
 		"mod": {
-			"stell.max": 65,
+			"steel.max": 65,
 			"space": 5
 		}
 	},
