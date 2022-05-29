@@ -301,7 +301,7 @@
 	{
 		"id": "temp_rp_2",
 		"name": "燃烧焦炭",
-		"desc": "消耗1煤炭并产出1.7黄温",
+		"desc": "消耗1焦炭并产出1.7黄温",
 		"thread_use": "burn_thread",
 		"tags": "黄温",
 		"require": "g.coke>=1",
