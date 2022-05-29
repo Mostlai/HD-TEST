@@ -5496,7 +5496,7 @@
 			"steel": 300,
 			"elect": 20,
 			"ganwu": 100,
-			"adv_snp_data": 10,
+			"adv_snp_data": 3,
 			"human_power": 1000
 		},
 		"run": {
