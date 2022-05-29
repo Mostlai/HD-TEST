@@ -4,7 +4,7 @@
 		"name": "生灵石收敛",
 		"tags": "社会域",
 		"desc": "自动获取生灵石",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 1000,
 		"run":{
 			"money": 100,
@@ -21,7 +21,7 @@
 		"name": "土地扩张I",
 		"tags": "工程域",
 		"desc": "提高空间和工业用地上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 1000,
 		"run":{
 			"money": 100,
@@ -38,7 +38,7 @@
 		"name": "土地扩张II",
 		"tags": "工程域",
 		"desc": "提高空间和工业用地上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 3000,
 		"run":{
 			"money": 100,
@@ -55,7 +55,7 @@
 		"name": "电力增长I",
 		"tags": "物理域",
 		"desc": "提高电能和工业用电上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 1000,
 		"run":{
 			"money": 100,
@@ -73,7 +73,7 @@
 		"name": "电力增长II",
 		"tags": "物理域",
 		"desc": "提高电能和工业用电上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 3000,
 		"run":{
 			"money": 100,
@@ -91,7 +91,7 @@
 		"name": "线程控制",
 		"tags": "物理域",
 		"desc": "提高指令和工业线程上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 1000,
 		"run":{
 			"money": 100,
@@ -108,7 +108,7 @@
 		"name": "真魂扩容",
 		"tags": "物理域",
 		"desc": "提高真魂容量上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 1600,
 		"run":{
 			"money": 100,
@@ -124,7 +124,7 @@
 		"name": "先进指挥",
 		"tags": "社会域",
 		"desc": "提高指令和工业线程上限",
-		"require": "g.hp>=1",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"research_need_point": 1000,
 		"run":{
 			"money": 100,

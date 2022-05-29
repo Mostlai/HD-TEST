@@ -17,7 +17,7 @@
 	{
 		"id": "sect_techo",
 		"name": "研究",
-		"require": "g.hp>=1"
+		"require": "g.xl_lj_konwledege_1>=1"
 	},
 	{
 		"id": "sect_market",
