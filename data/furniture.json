@@ -5993,10 +5993,10 @@
 		"desc": "",
 		"tags": "",
 		"max":25,
-		"require": "g.water>=1",
+		"require": "g.ind_water>=1",
 		"repeat": true,
 		"cost": {
-			"water": 2,
+			"ind_water": 2,
 			"zero_crystal":25,
 			"heli":40,
 			"tian": 30,
