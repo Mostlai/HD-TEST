@@ -3418,7 +3418,6 @@
 		"name": "地面环境研究",
 		"desc": "进行小规模的地面研究【研究需要绿色实验室】",
 		"verb": "研究中",
-		"warn": true,
 		"require": "g.liticehui_mount>=1 && g.liticehui_basin>=1 && g.liticehui_water>=1 && g.liticehui_hill>=1",
 		"need": "g.green_lab>=1",
 		"length": 20,
@@ -3442,6 +3441,323 @@
 		},
 		"mod":{
 			"space.max": 50
+		}
+	},
+	{
+		"id": "qiulzykaifa",
+		"name": "丘陵资源开发",
+		"desc": "开发丘陵地貌的资源【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.dimianhjyj>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"adv_snp_data": 10
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"industry_space.max": 5,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "shanmaizykf",
+		"name": "山脉资源开发",
+		"desc": "开发山脉地貌的资源【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.dimianhjyj>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"adv_snp_data": 10
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"industry_space.max": 5,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "pendizykf",
+		"name": "盆地资源开发",
+		"desc": "开发盆地地貌的资源【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.dimianhjyj>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 20,
+			"snp_data": 140,
+			"fsbdsj": 10,
+			"adv_snp_data": 10
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"industry_space.max": 5,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "shengchanlun",
+		"name": "生产论",
+		"desc": "日益增长的资源需求需要强大的生产力来推动【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.dimianhjyj>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"snp_data": 140,
+			"adv_snp_data": 10,
+			"alculation": 2000,
+			"yjdl": 80,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"industry_space.max": 5,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "smshengchan",
+		"name": "生命生产",
+		"desc": "在生命领域的生产进步【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.shengchanlun>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"yjswyb": 20,
+			"shenglingshi": 20,
+			"human_power": 3500,
+			"ljdy": 35,
+			"snp_data": 140,
+			"adv_snp_data": 25,
+			"alculation": 2000,
+			"yjdl": 80,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"industry_space.max": 5,
+			"space.max": 100
+		}
+	},
+	{
+		"id": "ind_washac",
+		"name": "工业级挖沙场",
+		"desc": "提供采掘沙类的场所【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.shengchanlun>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"adv_snp_data": 10,
+			"alculation": 2000,
+			"yjdl": 80,
+			"gwl": 50,
+			"swzhi": 5,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "ind_caijuechang",
+		"name": "工业级采掘场",
+		"desc": "提供采掘矿物的场所【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.shengchanlun>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"adv_snp_data": 10,
+			"alculation": 2000,
+			"yjdl": 80,
+			"gwl": 50,
+			"swzhi": 5,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "ind_reliwendu",
+		"name": "热力温度",
+		"desc": "保存并存储工业级高温【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.shengchanlun>=1 && g.yuanzirexue>=5",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 1,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"adv_snp_data": 10,
+			"alculation": 2000,
+			"yjdl": 80,
+			"gwl": 80,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"gwl.rate": 1,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "ind_wendukongz",
+		"name": "温度控制",
+		"desc": "使黄温能投入生产【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.temper_1>=1 && g.glass>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 10,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"glass": 40,
+			"temper_1": 40,
+			"alculation": 2000,
+			"yjdl": 80,
+			"gwl": 80,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 10
+		}
+	},
+	{
+		"id": "ind_jiaotangy",
+		"name": "焦炭工艺",
+		"desc": "研究获取焦炭【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.temp_1_unit>=1 && g.coal>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 10,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"glass": 40,
+			"temp_1_unit": 50,
+			"coal": 50,
+			"alculation": 2000,
+			"yjdl": 80,
+			"gwl": 80,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 10
+		}
+	},
+	{
+		"id": "ind_gongzhigang",
+		"name": "工制钢炼成",
+		"desc": "工制钢是适合合理修炼环境下的钢材【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.temp_1_unit>=1 && g.coal>=1",
+		"need": "g.green_lab>=1",
+		"length": 20,
+		"max": 10,
+		"cost": {
+			"human_power": 3500,
+			"ljdy": 35,
+			"glass": 100,
+			"temp_1_unit": 50,
+			"coke": 50,
+			"alculation": 2000,
+			"yjdl": 80,
+			"gwl": 80,
+			"jls": 100
+		},
+		"run": {
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 10
 		}
 	},
 	{
@@ -4191,7 +4507,7 @@
 			"time": -1
 		},
 		"result": {
-			"tian": 3
+			"tian": 5
 		}
 	},
 	{
@@ -5139,6 +5455,56 @@
 		"result": {
 			"dirty_lingti": 2,
 			"evilamt": 2
+		}
+	},
+	{
+		"id": "spart_gaizhao",
+		"name": "零部件改造",
+		"desc": "使用零部件改造武器",
+		"verb": "实验中",
+		"max": 10,
+		"require": "g.spare_parts>=1",
+		"length": 20,
+		"cost": {
+			"spare_parts": 200,
+			"steel": 200,
+			"elect": 20,
+			"ganwu": 100,
+			"adv_snp_data": 2,
+			"human_power": 1000,
+			"zero_crystal": 50
+		},
+		"run": {
+			"time": -1,
+			"elect": 10
+		},
+		"result": {
+			"ganwu.max": 20
+		}
+	},
+	{
+		"id": "spart_zuzhuang",
+		"name": "组装机制",
+		"desc": "零部件的自动化结构实验",
+		"verb": "实验中",
+		"max": 10,
+		"require": "g.spare_parts>=1",
+		"length": 20,
+		"cost": {
+			"money": 6000,
+			"spare_parts": 200,
+			"steel": 300,
+			"elect": 20,
+			"ganwu": 100,
+			"adv_snp_data": 10,
+			"human_power": 1000
+		},
+		"run": {
+			"time": -1,
+			"elect": 10
+		},
+		"result": {
+			"ganwu.max": 20
 		}
 	},
 	{

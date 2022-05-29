@@ -4825,6 +4825,35 @@
 		}
 	},
 	{
+		"id": "lj_konwledege_1",
+		"name": "新型知识体系(路径)",
+		"desc": "对纷杂信息的进阶统合吸收",
+		"tags": "路径",
+		"require": "g.nicheng_data>=1 || g.xicheng_data>=1 || g.guanggan_data>=1",
+		"max": 2,
+		"cost": {
+			"element_blood": 40,
+			"lxue": 20,
+			"shuaibai_core": 20,
+			"dirty_core": 10,
+			"dirty_lingti": 20,
+			"ganwu": 3000,
+			"money": 6000,
+			"jingdian": 10,
+			"steel": 400,
+			"spare_parts": 300,
+			"blank_unit": 200
+		},
+		"xiulianresult": {
+			"age.max": 3650,
+			"age": 3650,
+			"ganwu.max": 500,
+			"ganwu.rate": 6,
+			"money.rate": 6,
+			"xl_lj_konwledege_1":1
+		}
+	},
+	{
 		"id": "jizhun_fl",
 		"name": "风灵(路径)",
 		"desc": "如风一般[30岁前完成了筑基]",

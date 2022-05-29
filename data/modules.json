@@ -1,5 +1,6 @@
 {
 	"core": [
+		"tags",
 		"resources",
 		"upgrades",
 		"tasks",
@@ -39,7 +40,13 @@
 		"weapon_factory",
 		"realsoul",
 		"realsoul_fu",
-		"soulpice"
+		"soulpice",
+		"factclass",
+		"factclass_fu",
+		"factrecipe",
+		"factory",
+		"player_res",
+		"techo"
 	],
 	"modules": [
 		"patrons",
@@ -53,6 +60,8 @@
 		"winter",
 		"legacy",
 		"officialdom",
-		"blackcat_extend"
+		"blackcat_extend",
+		"old_swamp",
+		"thatwood"
 	]
 }

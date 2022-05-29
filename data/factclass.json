@@ -1,40 +1,366 @@
 [
 	{
-		"id": "crude_oil",
-		"name": "原油",
-		"desc": "原油",
-		"stop_follow": ["hp","money"],
+		"id": "spare_parts",
+		"name": "零部件",
+		"desc": "适用于各种器件的精密零部件",
 		"img": "./images/crude_oil.png",
-		"val": 100,
-		"max": 100,
-		"follow": "原油",
+		"val": 0,
+		"max": 5,
+		"follow": "零部件",
 		"cost":{
 			"heli": 1000000000
 		},
-		"require": "g.hp>=1"
+		"require": "g.steel>=1"
 	},
 	{
-		"id": "crude_oil_waste",
-		"name": "原油渣",
-		"desc": "原油渣",
+		"id": "nicheng_data",
+		"name": "泥成数据",
+		"desc": "基于松风基质的研究数据",
 		"img": "./images/crude_oil.png",
-		"max": 100,
-		"follow": "原油渣",
+		"val": 0,
+		"max": 5,
+		"follow": "泥成数据",
 		"cost":{
 			"heli": 1000000000
 		},
-		"require": "g.hp>=1"
+		"require": "g.spart_zuzhuang>=10 && g.songfeng_jizhi>=1"
 	},
 	{
-		"id": "zafenyou",
-		"name": "杂酚油",
-		"desc": "杂酚油",
+		"id": "xicheng_data",
+		"name": "洗成数据",
+		"desc": "基于工制梁的工程冲洗数据",
 		"img": "./images/crude_oil.png",
-		"max": 100,
-		"follow": "杂酚油",
+		"val": 0,
+		"max": 5,
+		"follow": "洗成数据",
 		"cost":{
 			"heli": 1000000000
 		},
-		"require": "g.hp>=1"
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "guanggan_data",
+		"name": "光感数据",
+		"desc": "基于感光透镜的光磁数据",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "光感数据",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "blank_unit",
+		"name": "空单元",
+		"desc": "标准化的工业容器",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "空单元",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.ind_wendukongz>=5"
+	},
+	{
+		"id": "temp_1_unit",
+		"name": "黄温单元",
+		"desc": "存储黄温的单元",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "黄温单元",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.ind_wendukongz>=10"
+	},
+	{
+		"id": "soft_dirt",
+		"name": "生物软泥",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "生物软泥",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.smshengchan>=1"
+	},
+	{
+		"id": "pei_zhi",
+		"name": "培质",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "培质",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.smshengchan>=1"
+	},
+	{
+		"id": "xianban",
+		"name": "纤板",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "培质",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.smshengchan>=1"
+	},
+	{
+		"id": "songfeng_jizhi",
+		"name": "松风基质",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "松风基质",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.soft_dirt>=1 && g.xianban>=1 && g.pei_zhi>=1"
+	},
+	{
+		"id": "wujianbao",
+		"name": "物件包",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "物件包",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "zhenxishi",
+		"name": "珍洗石",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "珍洗石",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "gongzhiliang",
+		"name": "工制梁",
+		"desc": "工程学标准用梁",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "工制梁",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "naicixian",
+		"name": "耐磁线",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "耐磁线",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "ganguangtj",
+		"name": "感光透镜",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "感光透镜",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "ind_water",
+		"name": "水",
+		"desc": "生命之源",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "水",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.coal>=1"
+	},
+	{
+		"id": "ind_steam_1",
+		"name": "低温蒸汽",
+		"desc": "约200°C的蒸汽单元",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "低温蒸汽",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.coal>=1"
+	},
+	{
+		"id": "steel",
+		"name": "工制钢",
+		"desc": "工制钢是适合合理修炼环境下的钢材",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "工制钢",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.ind_gongzhigang>=5"
+	},
+	{
+		"id": "coil_1",
+		"name": "工制线圈",
+		"desc": "工制线圈是适合合理修炼环境下的线材",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "工制线圈",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.shengchanlun>=1"
+	},
+	{
+		"id": "glass",
+		"name": "玻璃",
+		"desc": "玻璃是一种基础的工业资源",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 2,
+		"follow": "玻璃",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.limestone>=1 && g.quartz>=1"
+	},
+	{
+		"id": "coal",
+		"name": "煤炭",
+		"desc": "煤炭是一种黑色固体燃料",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "煤炭",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.pendizykf>=1"
+	},
+	{
+		"id": "coke",
+		"name": "焦炭",
+		"desc": "焦炭比煤炭热值更高,通常用于炼钢",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "焦炭",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.ind_jiaotangy>=1"
+	},
+	{
+		"id": "temper_1",
+		"name": "黄温",
+		"desc": "黄温是较高温度的存在，不可直接利用",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "黄温",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.ind_reliwendu>=1"
+	},
+	{
+		"id": "quartz",
+		"name": "石英砂",
+		"desc": "石英砂主要作为玻璃的生产原材料",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "石英砂",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.qiulzykaifa>=1"
+	},
+	{
+		"id": "limestone",
+		"name": "石灰石",
+		"desc": "石英石主要作为玻璃的生产原材料",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "石灰石",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.shanmaizykf>=1"
+	},
+	{
+		"id": "ryongping",
+		"name": "日用品",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "日用品",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=1"
+	},
+	{
+		"id": "gaojihuowu",
+		"name": "高级货物",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "高级货物",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=4"
+	},
+	{
+		"id": "shichiping",
+		"name": "奢侈品",
+		"desc": "",
+		"img": "./images/crude_oil.png",
+		"val": 0,
+		"max": 5,
+		"follow": "奢侈品",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.spart_zuzhuang>=8"
 	}
 ]

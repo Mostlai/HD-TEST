@@ -1,0 +1,720 @@
+{
+	"module": "old_swamp",
+	"data": {
+		"events": [
+			{
+				"id": "evt_oldswamp_l1",
+				"require": "g.evt_oldswamp_1>=1",
+				"name": "远沼",
+				"desc": "贸然进入大沼非明智之举,你决定先在边缘探索一下。远沼边缘每次探险完成获得1远沼堪舆数据,10远沼堪舆数据解锁下一步"
+			},
+            {
+				"id": "evt_oldswamp_2",
+				"require": "g.oldswamp_data>=10",
+				"name": "远沼探明",
+				"desc": "你收集了10份远沼堪舆数据，这足以帮助你进行下一步探查了"
+			},
+            {
+				"id": "evt_oldswamp_3",
+				"require": "g.heiyan>=1 && g.jinshimu>=1",
+				"name": "焰与泽",
+				"desc": "黑焰在大沼",
+                "result": {
+                    "balckfire_oldswamp_1": true
+                }
+			},
+            {
+				"id": "evt_oldswamp_3",
+				"require": "g.heiyan>=1 && g.hp<=3 && g.evt_oldswamp_3>=1",
+				"name": "焰与血",
+				"desc": "黑焰在衰亡",
+                "result": {
+                    "balckfire_oldswamp_2": true
+                }
+			},
+            {
+				"id": "evt_oldswamp_4",
+				"require": "g.heiyan>=1 && g.ganwu<=100 && g.evt_oldswamp_3>=1",
+				"name": "焰与愚",
+				"desc": "黑焰认定人不智",
+                "result": {
+                    "balckfire_oldswamp_3": true
+                }
+			}
+		],
+		"spells": [
+			{
+				"id": "balckfire_oldswamp_1",
+				"name": "焰与泽",
+				"level": 12,
+				"school": "真火",
+				"desc": "遗忘火曾到远沼",
+				"locked": true,
+		        "need": "g.heisezhist>=1",
+				"buy": {
+                  "heli": 20,
+                  "chaos": 10,
+                  "alculation": 1000,
+                  "heiyan": 9
+				},
+				"cost": {
+                  "heli": 20,
+                  "chaos": 20,
+                  "alculation": 60,
+                  "heiyan": 10
+				},
+                "attack": {
+                    "hits": [
+                        {
+                            "targets": "all",
+                            "dot": {
+                                "name": "泽罪",
+                                "kind": "fire",
+                                "dmg": "130~152",
+                                "duration": 1
+                            }
+                        },
+                        {
+                            "id": "bfirestormprotection_1",
+                            "name": "黑焰防护",
+                            "targets": "allies",
+                            "dot": {
+                                "duration": 30,
+                                "mod": {
+                                    "self.resist.fire": 40
+                                }
+                            }
+                        }
+                    ]
+                },
+		        "flavor": "需要有【黑色置书台】家具"
+            },
+			{
+				"id": "balckfire_oldswamp_2",
+				"name": "焰与血",
+				"level": 12,
+				"school": "真火",
+				"desc": "判罚火曾面临熄灭",
+				"locked": true,
+		        "need": "g.heisezhist>=1",
+				"buy": {
+                  "jinshimu": 20,
+                  "xueduhua": 20,
+                  "heli": 20,
+                  "chaos": 10,
+                  "alculation": 1000,
+                  "heiyan": 9
+				},
+				"cost": {
+                  "hp": 80,
+                  "alculation": 60,
+                  "heiyan": 10
+				},
+                "attack": {
+                    "damage": 200,
+                    "kind": "fire",
+			        "targets": "enemies",
+                    "dot": {
+                        "kind": "fire",
+                        "name": "熄灭",
+                        "duration": 100,
+                        "damage": 10
+                    }
+                },
+		        "flavor": "需要有【黑色置书台】家具"
+            },
+            {
+                "id": "balckfire_oldswamp_3",
+				"name": "焰与愚",
+				"level": 9,
+				"school": "真火",
+				"desc": "智慧火曾遭到蒙蔽",
+				"locked": true,
+		        "need": "g.heisezhist>=1",
+				"buy": {
+                  "jinshimu": 20,
+                  "xueduhua": 20,
+                  "heli": 20,
+                  "chaos": 10,
+                  "alculation": 1000,
+                  "heiyan": 9
+				},
+				"cost": {
+                  "ganwu": 200,
+                  "alculation": 60,
+                  "heiyan": 10
+				},
+                "dot": {
+                    "duration": 30,
+                    "mod": {
+                        "alculation.rate": 10,
+                        "ganwu.rate": 20,
+                        "skill.rate": 40
+                    }
+                },
+		        "flavor": "需要有【黑色置书台】家具"
+            }
+        ],
+		"resources": [
+			{
+				"id": "oldswamp_data",
+				"name": "远沼堪舆数据",
+				"desc": "",
+				"require": "g.evt_oldswamp_1>=1",
+				"max": 10,
+                "hide": true,
+				"group": "修行"
+			}
+		],
+        "herbal":[
+            {
+                "id": "xueduhua",
+                "name": "雪毒花",
+                "desc": "生长在大沼的花朵",
+                "tags": "洪水1级,药材1级",
+                "equneed": "g.artifice_1>=1",
+                "color": "#00BFFF",
+                "hide": false,
+                "require": "g.evt_oldswamp_1>=1",
+                "val":0,
+                "max": 0,
+                "cost":{
+                    "heli": 10000000000
+                },
+                "lhxy":{
+                    "time": -1,
+                    "hp": 3
+                },
+                "ele":{
+                    "ele_confusion": 0.3,
+                    "element_wood": 1,
+                    "element_water": 2,
+                    "element_fire": -0.1,
+                    "element_land": 1
+                },
+                "flavor": "需要1级炼化台"
+            },
+            {
+                "id": "jinshimu",
+                "name": "金石木",
+                "desc": "生长在大沼的树木",
+                "tags": "巨木1级,药材1级",
+                "equneed": "g.artifice_1>=1",
+                "color": "#00BFFF",
+                "hide": false,
+                "require": "g.evt_oldswamp_2>=1",
+                "val":0,
+                "max": 0,
+                "cost":{
+                    "heli": 10000000000
+                },
+                "lhxy":{
+                    "time": -1,
+                    "hp": 3
+                },
+                "ele":{
+                    "ele_confusion": 0.1,
+                    "element_wood": 1.5,
+                    "element_water": 1.5,
+                    "element_fire": 1.2,
+                    "element_gold": 1.2
+                },
+                "flavor": "需要1级炼化台"
+            }
+        ],
+        "potions":[
+            {
+                "id": "oldswamp_p_1",
+                "name": "雪毒汁",
+                "desc": "恢复气血",
+                "equneed": "g.mix_1>=1",
+                "require": "g.evt_oldswamp_2>=1",
+                "level": 1,
+                "dr": 0.1,
+                "sell":{
+                    "money": 60
+                },
+                "buy": {
+                    "sp":1,
+                    "money": 600,
+                    "ganwu": 400
+                },
+                "cost": {
+                    "money": 10,
+                    "element_fire": 1,
+                    "element_wood": 1,
+                    "element_water": 1,
+                    "xueduhua": 1
+                },
+                "use": {
+                    "drug_resist": 0.1,
+                    "hp": 50,
+                    "dot": {
+                        "duration": 600,
+                        "effect": {
+                            "hp": 5
+                        }
+                    }
+                },
+                "flavor": "需要1级元素混合器"
+            }
+        ],
+		"homes": [
+			{
+				"id": "oldswamp_home_1",
+				"name": "石厦",
+				"desc": "",
+				"require": "g.task_oldswamp_3>=10",
+                "cost": {
+                    "lg": 30,
+                    "jls": 150,
+                    "money": 7000,
+                    "ganwu": 2000,
+                    "alculation": 2000,
+                    "human_power": 3000,
+                    "paper": 300,
+                    "books":60,
+                    "star_map_1": 23,
+                    "snp_data": 100,
+                    "exe_paper": 100
+                },
+				"mod": {
+                    "money.max": 1000,
+                    "space.max": 700,
+                    "skill.rate": 20,
+                    "ganwu.rate":3,
+                    "ganwu.max": 400
+				}
+			},
+            {
+				"id": "oldswamp_home_2",
+				"name": "壤厦",
+				"desc": "",
+				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
+                "cost": {
+                    "lingrang": 20,
+                    "jls": 150,
+                    "element_blood": 10,
+                    "money": 8000,
+                    "ganwu": 2000,
+                    "alculation": 4000,
+                    "human_power": 3000,
+                    "adv_snp_data": 10,
+                    "fsbdsj": 10
+                },
+				"mod": {
+                    "industry_space.max": 20,
+                    "money.max": 1300,
+                    "space.max": 1000,
+                    "skill.rate": 50,
+                    "ganwu.rate":6,
+                    "ganwu.max": 700
+				}
+			}
+		],
+		"tasks": [
+			{
+				"id": "evt_oldswamp_1",
+				"name": "陷于大沼",
+				"tags":"事件,陷于大沼事件链",
+				"desc": "你察觉到远处的沼泽中有未知的存在。本事件将解锁[陷于大沼]扩展内容",
+				"verb": "启动事件链",
+				"max": 1,
+				"warn": true,
+                "require": "g.max_rs>=1",
+				"length": 600,
+				"cost": {
+					"money": 8000,
+                    "heli": 40,
+                    "hp": 200,
+					"ganwu": 2500
+				},
+				"run": {
+					"time": -2
+				}
+			},
+            {
+				"id": "task_oldswamp_2",
+				"name": "芥子合并",
+				"tags":"",
+				"desc": "将金石芥子和雪毒芥子进行合并",
+				"verb": "",
+				"max": 1,
+				"warn": true,
+                "require": "g.oswamp_fur_1>=1 && g.oswamp_fur_2>=1",
+				"length": 600,
+				"cost": {
+					"money": 8000,
+                    "heli": 40,
+                    "jinshimu": 10,
+                    "xueduhua": 10,
+                    "oswamp_fur_1": 3,
+					"oswamp_fur_2": 3
+				},
+				"run": {
+					"time": -2
+				}
+			},
+            {
+				"id": "task_oldswamp_3",
+				"name": "金石木建筑",
+				"tags":"",
+				"desc": "将金石木用于大型工程建设",
+				"verb": "",
+				"max": 10,
+				"warn": true,
+                "require": "g.jinshimu>=1",
+				"length": 600,
+				"cost": {
+					"money": 5000,
+                    "ganwu": 2000,
+                    "snp_data": 50,
+                    "jinshimu": 10,
+                    "xueduhua": 10
+				},
+				"run": {
+					"time": -2
+				}
+			},
+            {
+				"id": "task_oldswamp_4",
+				"name": "金石理念",
+				"tags":"",
+				"desc": "继续驻留于世",
+				"verb": "",
+				"max": 50,
+				"warn": true,
+                "require": "g.jinshimu>=1",
+				"length": 24,
+				"cost": {
+					"money": 5000,
+                    "ganwu": 2000,
+                    "dirty_lingti": 10,
+                    "yjswyb": 10,
+                    "super_mind": 20,
+                    "shenglingshi": 1,
+                    "snp_data": 50,
+                    "jinshimu": 10,
+                    "xueduhua": 10
+				},
+				"run": {
+					"time": -2
+				},
+                "result": {
+                    "age.max": 2400,
+                    "age": 24000
+                }
+			},
+            {
+				"id": "task_oldswamp_5",
+				"name": "黑焰理念",
+				"tags":"",
+				"desc": "继续驻留于世",
+				"verb": "",
+				"max": 30,
+				"warn": true,
+                "require": "g.jinshimu>=1",
+				"length": 24,
+				"cost": {
+					"money": 5000,
+                    "ganwu": 2000,
+                    "dirty_lingti": 10,
+                    "heiyan": 20,
+                    "super_mind": 20,
+                    "shenglingshi": 1,
+                    "snp_data": 50,
+                    "jinshimu": 10,
+                    "xueduhua": 10
+				},
+				"run": {
+					"time": -2
+				},
+                "result": {
+                    "age.max": 3000,
+                    "age": 3000
+                }
+			}
+		],
+		"upgrades": [
+			{
+				"id": "oswamp_blbeast",
+                "name": "空光兽",
+                "desc": "远沼路远,需要能远行的坐骑才能抵达",
+                "require": "g.evt_oldswamp_1>=1",
+                "slot": "mount",
+                "tags": "",
+                "buy": {
+                    "money": 3000,
+                    "super_mind":30,
+                    "element_blood":40,
+                    "zhenhun_pice_1": 20,
+                    "shenglingshi": 20,
+                    "zdht": 30,
+                    "wgys": 30,
+                    "laser_ene": 5
+                },
+                "mod": {
+                    "dist": 300,
+                    "age.max": 30000,
+                    "age": 30000,
+                    "hp.max": -5,
+                    "shuaibai.rate": -0.1
+                }
+			},
+            {
+                "id": "oswamp_flont_1",
+                "slot": "front",
+                "name": "阵厦",
+                "desc": "",
+				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
+                "cost": {
+                    "lingrang": 20,
+                    "jls": 150,
+                    "element_blood": 10,
+                    "money": 8000,
+                    "ganwu": 2000,
+                    "xueduhua": 20,
+                    "jinshimu": 20,
+                    "alculation": 4000,
+                    "human_power": 3000,
+                    "adv_snp_data": 10,
+                    "fsbdsj": 10
+                },
+                "mod": {
+                    "industry_space.max": 20,
+                    "space.max": "24%",
+                    "dist": 100
+                }
+            },
+            {
+                "id": "oswamp_flont_2",
+                "slot": "front",
+                "name": "序阵厦",
+                "desc": "",
+				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
+                "cost": {
+                    "lingrang": 20,
+                    "jls": 150,
+                    "element_blood": 10,
+                    "money": 8000,
+                    "ganwu": 2000,
+                    "xueduhua": 20,
+                    "jinshimu": 20,
+                    "alculation": 4000,
+                    "human_power": 3000,
+                    "adv_snp_data": 10,
+                    "fsbdsj": 10
+                },
+                "mod": {
+                    "industry_elect.max": 14,
+                    "space.max": "24%",
+                    "dist": 100
+                }
+            }
+        ],
+		"furniture": [
+			{
+				"id": "oswamp_fur_1",
+				"name": "雪毒芥子",
+				"desc": "雪毒花改造的芥子结构",
+				"max": 5,
+				"require": "g.evt_oldswamp_2>=1",
+				"repeat": true,
+				"cost": {
+					"money": 5000,
+                    "ganwu": 2500,
+                    "xueduhua": 10,
+                    "element_fire": 10,
+                    "element_water": 20,
+                    "element_wuhuan": 20,
+                    "syxjz": 2
+				},
+				"mod": {
+                    "syxjz.max": 1,
+					"space": 10,
+			        "extra_space": 60
+				}
+			},
+            {
+				"id": "oswamp_fur_2",
+				"name": "金石芥子",
+				"desc": "金石木改造的芥子结构",
+				"max": 5,
+				"require": "g.evt_oldswamp_2>=1",
+				"repeat": true,
+				"cost": {
+					"money": 5000,
+                    "ganwu": 2500,
+                    "jinshimu": 10,
+                    "element_fire": 10,
+                    "element_water": 20,
+                    "element_wuhuan": 20,
+                    "syxjz": 2
+				},
+				"mod": {
+                    "syxjz.max": 1,
+					"space": 10,
+			        "extra_space": 60
+				}
+			},
+            {
+				"id": "oswamp_fur_2_1",
+				"name": "忘芥子",
+				"desc": "金石木与雪毒花改造的芥子结构",
+				"max": 5,
+				"require": "g.task_oldswamp_2>=1",
+				"repeat": true,
+				"cost": {
+					"money": 5000,
+                    "ganwu": 2500,
+                    "xueduhua": 10,
+                    "jinshimu": 10,
+                    "oswamp_fur_2": 1,
+                    "oswamp_fur_1": 1
+				},
+				"mod": {
+					"space": 10,
+			        "extra_space": 100
+				}
+			},
+            {
+				"id": "oswamp_fur_3",
+				"name": "金石木容器",
+				"desc": "利用金石木来存储奇异液体",
+				"max": 10,
+				"require": "g.jinshimu>=1",
+				"repeat": true,
+				"cost": {
+					"money": 2000,
+                    "ganwu": 1000,
+                    "xueduhua": 2,
+                    "jinshimu": 10,
+                    "qiyiyeti": 10
+				},
+				"mod": {
+                    "qiyiyeti.max": 4,
+					"space": 5
+				}
+			}
+		],
+		"skills": [
+		],
+		"locales": [
+			{
+				"id": "oldswamp_l1",
+				"name": "远沼边缘",
+				"desc": "位于远古盆地北方数百里的远沼边缘,每次探险完成获得1远沼堪舆数据,10远沼堪舆数据解锁下一步",
+				"require": "evt_oldswamp_l1",
+				"level": 30,
+				"dist": 1000,
+				"run": {
+                    "hp": 5,
+					"stamina": 2
+				},
+				"length": 35,
+				"result": {
+                    "xueduhua": 1,
+                    "ganwu": 100,
+                    "qiyiyeti": 5,
+                    "oldswamp_data": 1
+                },
+                "encs": [
+                    "enc_oswamp_1",
+                    "enc_oswamp_2",
+                    "enc_qiyiyet",
+                    "enc_yeshou_2",
+                    "enc_zero_c",
+                    "enc_oswamp_xdh"
+                ]
+			},
+			{
+				"id": "oldswamp_l2",
+				"name": "远沼",
+				"desc": "位于远古盆地北方数百里的远沼",
+				"require": "evt_oldswamp_2",
+				"level": 30,
+				"dist": 1000,
+				"run": {
+                    "hp": 5,
+					"stamina": 2
+				},
+				"length": 35,
+				"result": {
+                    "xueduhua": 1,
+                    "jinshimu": 1,
+                    "ganwu": 200,
+                    "money": 200,
+                    "qiyiyeti": 10
+                },
+                "encs": [
+                    "enc_oswamp_1",
+                    "enc_oswamp_2",
+                    "enc_qiyiyet",
+                    "enc_yeshou_2",
+                    "enc_oswamp_jsmu",
+                    "enc_oswamp_xdh"
+                ]
+			}
+		],
+        "encounters":[
+            {
+                "id": "enc_oswamp_1",
+                "name": "休息",
+                "desc": "你决定休息一下",
+                "effect": {
+                    "hp": "1~2",
+                    "stamina": "0~1",
+                    "weary": "-1~0",
+                    "unease": "-1~0",
+                    "madness": "-1~0",
+                    "tili": "0~1"
+                },
+                "result": {
+                    "ganwu": 20
+                }
+            },
+            {
+                "id": "enc_oswamp_2",
+                "name": "未知声音",
+                "desc": "未知的声音从大沼深处传来",
+                "effect": {
+                    "bf": "-1~2",
+                    "madness": "1~2",
+                    "heli": -4,
+                    "chaos": -4
+                },
+                "result": {
+                    "ganwu": 20
+                }
+            },
+            {
+                "id": "enc_oswamp_xdh",
+                "name": "雪毒花",
+                "desc": "你开始采集一些雪毒花",
+                "effect": {
+                    "bf": "-1~2",
+                    "madness": "1~2",
+                    "heli": -4,
+                    "chaos": -4
+                },
+                "result": {
+                    "xueduhua": "1~2"
+                }
+            },
+            {
+                "id": "enc_oswamp_jsmu",
+                "name": "金石木",
+                "desc": "你开始采集一些金石木",
+                "effect": {
+                    "bf": "-1~2",
+                    "madness": "1~2",
+                    "heli": -4,
+                    "chaos": -4
+                },
+                "result": {
+                    "jinshimu": "1~2"
+                }
+            }
+        ]
+	}
+}

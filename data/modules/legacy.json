@@ -65,7 +65,6 @@
 				"hands":2,
 				"desc": "A snowglobe with magical powers. It reminds you of colder days.",
 				"level": 10,
-				"material":"glass",
 				"unique": true,
 				"type": "weapon",
 				"enchants": 10,

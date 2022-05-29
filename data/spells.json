@@ -1310,7 +1310,7 @@
 					"targets": "all",
 					"dot": {
 						"kind": "fire",
-						"dmg": "30~31",
+						"dmg": "87~92",
 						"duration": 30
 					}
 				},

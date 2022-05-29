@@ -1,0 +1,203 @@
+{
+	"module": "thatwood",
+	"sym": "",
+	"data": {
+		"events": [
+			{
+				"id": "thatwood_be",
+				"name": "此木",
+				"require": "g.time>=365000",
+				"desc": ""
+			},
+			{
+				"id": "thatwood_event_1",
+				"name": "上溯千载",
+				"desc": "上溯千载,见古人",
+				"require": "g.thatwood_tasks_5>=1",
+				"result":{
+					"time": -365000
+				}
+			},
+			{
+				"id": "thatwood_event_2",
+				"name": "下溯千载",
+				"desc": "下溯千载,见未来",
+				"require": "g.thatwood_timing_1<=0 && g.thatwood_tasks_5>=1",
+				"result":{
+					"thatwood_timing_2": -1,
+					"time": 365000
+				}
+			}
+		],
+		"resources": [
+			{
+				"id": "thatwood_timing_1",
+				"name": "此木历程A",
+				"max": 100,
+				"hide": true,
+				"locked": false,
+				"desc": "此木计时器"
+			},
+			{
+				"id": "thatwood_timing_2",
+				"name": "此木历程B",
+				"max": 1,
+				"val": 0,
+				"hide": true,
+				"locked": false,
+				"desc": "此木倒计时",
+				"mod":{
+					"time.rate": 1,
+					"thatwood_timing_1.rate": -1
+				}
+			}
+		],
+		"tasks": [
+			{
+				"id": "thatwood_tasks_1",
+				"name": "见木",
+				"desc": "那里有棵树，长在不能成树之地，你接近了树，你听到树天地人以观此木，祇自灵兮。以得此灵，祇自慧兮。以思此慧，洗尘清清。",
+				"require": "g.thatwood_be>=1",
+				"tags":"事件,此木事件链",
+				"max": 1,
+				"length": 60,
+				"cost": {
+					"ganwu": 1000
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"age.max": 3650,
+					"age": 3650
+				}
+			},
+			{
+				"id": "thatwood_tasks_2",
+				"name": "闻木",
+				"desc": "现世之人，日日行行，经营四方。听此木言，无思前路，断崖渐显。无思史言，载已曲矣。",
+				"require": "g.thatwood_tasks_1>=1",
+				"tags":"事件,此木事件链",
+				"length": 60,
+				"max": 1,
+				"cost": {
+					"ganwu": 1000
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"age.max": 3650,
+					"age": 3650
+				}
+			},
+			{
+				"id": "thatwood_tasks_3",
+				"name": "伐木",
+				"desc": "日月兮造，生死给予。光澈于哀土之间，月伤于盈亏之时。汝动干戈，兴金兵，血流于彼岸之河，孺子不可教也。",
+				"require": "g.thatwood_tasks_2>=1",
+				"tags":"事件,此木事件链",
+				"length": 60,
+				"max": 1,
+				"warn": true,
+				"cost": {
+					"ganwu": 1000
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"age.max": 3650,
+					"age": 3650
+				},
+				"disable": ["thatwood_tasks_4"]
+			},
+			{
+				"id": "thatwood_tasks_4",
+				"name": "思木",
+				"desc": "虚虚之木，以谓此木。此木之伟，维其高矣。此木之坚，维其定矣。至至之木，请听此言。山川悠远，曷其没矣？闻吾言，随吾行，行吾事，然则至善至德之理遍闻天下，大道可望，若做得此事，孺子可教也。",
+				"require": "g.thatwood_tasks_2>=1",
+				"tags":"事件,此木事件链",
+				"length": 60,
+				"max": 1,
+				"warn": true,
+				"cost": {
+					"ganwu": 1000
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"age.max": 3650,
+					"age": 3650
+				},
+				"disable": ["thatwood_tasks_3"]
+			},
+			{
+				"id": "thatwood_tasks_5",
+				"name": "阴阳木",
+				"desc": "间连续方程算组推演....时宙在下，宇时在上。天难忱斯，不易维德。时间难易，使不得自在。现实不稳定.....吾有三事，未竟未成未得，此为一然，俄闻天难，裂分为三。今上溯千载，再历百日，下溯千载。汝需谨记岁月非恒。",
+				"require": "g.thatwood_tasks_3>=1 || g.thatwood_tasks_4>=1",
+				"tags":"事件,此木事件链",
+				"length": 60,
+				"max": 1,
+				"cost": {
+					"ganwu": 1000
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"thatwood_timing_1": 100,
+					"thatwood_timing_2": 1,
+					"age.max": 3650,
+					"age": 3650
+				}
+			},
+			{
+				"id": "thatwood_tasks_6",
+				"name": "此木",
+				"desc": "汝非同道，此木已离。三千世界，此木唯一。【此木事件链结束】",
+				"require": "g.thatwood_event_2>=1",
+				"tags":"事件,此木事件链",
+				"length": 60,
+				"max": 1,
+				"cost": {
+					"ganwu": 1000
+				},
+				"run": {
+					"time": -1
+				},
+				"result": {
+					"age.max": 3650,
+					"age": 3650
+				}
+			}
+		],
+		"enchants": [
+			{
+				"id": "thatwood_enc_1",
+				"name": "恒木",
+				"adj": "%i 恒",
+				"only": "armor,weapon",
+				"desc": "岁月非恒",
+				"require": "g.thatwood_tasks_6>=1",
+				"level": 5,
+				"buy": {
+					"ganwu": 2000
+				},
+				"length": 30,
+				"cost": {
+					"ganwu": 2000,
+					"chaos": 20,
+					"heli": 20,
+					"tili": 40
+				},
+				"alter": {
+					"mod.age.max": 3650,
+					"mod.age": 3650
+				}
+			}
+		]
+	}
+}

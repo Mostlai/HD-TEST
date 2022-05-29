@@ -158,11 +158,62 @@
 		}
 	},
 	{
+		"id": "physic_rate",
+		"name": "物理域研究速率",
+		"desc": "物理域研究速率",
+		"val": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "physic_point",
+		"name": "物理域研究成果",
+		"desc": "物理域研究成果",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "socia_rate",
+		"name": "社会域研究速率",
+		"desc": "社会域研究速率",
+		"val": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "socia_point",
+		"name": "社会域研究成果",
+		"desc": "社会域研究成果",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "engineer_rate",
+		"name": "工程域研究速率",
+		"desc": "工程域研究速率",
+		"val": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "engineer_point",
+		"name": "工程域研究成果",
+		"desc": "工程域研究成果",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
 		"id": "industry_space",
 		"name": "工业用地",
 		"desc": "工业设备占用工业用地",
 		"val": 0,
-		"max": 50,
+		"max": 5,
 		"unit": false,
 		"locked": false
 	},
@@ -171,7 +222,7 @@
 		"name": "工业电力",
 		"desc": "工业电力不同于普通电力,是专供于工业设备的稳定电力",
 		"val": 0,
-		"max": 30,
+		"max": 0,
 		"unit": false,
 		"locked": false
 	},
@@ -180,7 +231,16 @@
 		"name": "工业线程",
 		"desc": "工业线程决定了你能同时进行多少个生产模式",
 		"val": 0,
-		"max": 15,
+		"max": 5,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "industry_open",
+		"name": "物流畅通",
+		"desc": "物流畅通决定了你的生产效率,每点物流畅通值提供1%生产效率",
+		"val": 100,
+		"max": 100,
 		"unit": false,
 		"locked": false
 	},

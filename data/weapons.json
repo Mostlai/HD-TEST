@@ -274,7 +274,7 @@
 		"equneed":"g.ALT>=1",
 		"slot": "hands",
 		"material": "shouhun",
-		"enchants": 2,
+		"enchants": 5,
 		"attack": {
 			"name": "射击",
 			"kind": "elect",
@@ -291,6 +291,27 @@
 		"cost": 30,
 		"level": 55,
 		"flavor": "装备需求:[AL-T]级神机"
+	},
+	{
+		"id": "gongxuessq",
+		"name": "工学速射枪",
+		"color": "#2980B9",
+		"desc": "无需神机的强大枪械",
+		"slot": "hands",
+		"material": "shouhun",
+		"enchants": 2,
+		"attack": {
+			"name": "火射",
+			"kind": "fire",
+			"damage": "70~80"
+		},
+		"alter": {
+			"mod": {
+				"f_power": 25
+			}
+		},
+		"cost": 30,
+		"level": 55
 	},
 	{
 		"id": "base_zd",
@@ -453,7 +474,6 @@
 		"hands": 2,
 		"level": 8,
 		"enchants": 7,
-		"only": "glass,ruby",
 		"properties": 1
 	},
 	{

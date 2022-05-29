@@ -2,7 +2,7 @@
 	{
 		"id": "en_armor1_pl",
 		"name": "加固装甲",
-		"verb": "加固",
+		"adj": "加固",
 		"only": "armor",
 		"verb": "安装中",
 		"desc": "使用钛板和衰败核心进行加固",
@@ -30,7 +30,7 @@
 	{
 		"id": "en_elect_1",
 		"name": "小型伺服",
-		"verb": "S伺服",
+		"adj": "S伺服",
 		"only": "armor",
 		"verb": "安装中",
 		"desc": "使用衰败核心和冷却核心对装甲进行加速调整",
@@ -54,6 +54,86 @@
 		"alter": {
 			"mod.elect.rate": -0.5,
 			"mod.speed": 1
+		}
+	},
+	{
+		"id": "en_dmg1_spart",
+		"name": "改装伤害",
+		"verb": "改装中",
+		"adj": "%i 利",
+		"only": "weapon",
+		"desc": "使用零部件改装武器",
+		"require": "g.spart_gaizhao>=5",
+		"level": 2,
+		"buy": {
+			"adv_snp_data": 2,
+			"spare_parts": 50,
+			"steel": 50,
+			"elect": 20,
+			"ganwu": 100
+		},
+		"length": 30,
+		"cost": {
+			"spare_parts": 50,
+			"steel": 50,
+			"elect": 20,
+			"ganwu": 100
+		},
+		"alter": {
+			"attack.bonus": 10
+		}
+	},
+	{
+		"id": "en_tohit1_spart",
+		"name": "改装命中",
+		"verb": "改装中",
+		"adj": "%i 明",
+		"only": "weapon",
+		"desc": "使用零部件改装武器",
+		"require": "g.spart_gaizhao>=5",
+		"level": 2,
+		"buy": {
+			"adv_snp_data": 2,
+			"spare_parts": 50,
+			"steel": 50,
+			"elect": 20,
+			"ganwu": 100
+		},
+		"length": 30,
+		"cost": {
+			"spare_parts": 50,
+			"steel": 50,
+			"elect": 20,
+			"ganwu": 100
+		},
+		"alter": {
+			"attack.tohit": 5
+		}
+	},
+	{
+		"id": "en_hp_spart_1",
+		"name": "改装治愈",
+		"adj": "%i 愈",
+		"only": "armor,weapon",
+		"desc": "使用零部件改装武器或者护甲",
+		"require": "g.spart_gaizhao>=10",
+		"level": 1,
+		"buy": {
+			"adv_snp_data": 2,
+			"spare_parts": 50,
+			"steel": 50,
+			"elect": 20,
+			"ganwu": 100
+		},
+		"length": 30,
+		"cost": {
+			"spare_parts": 70,
+			"steel": 50,
+			"elect": 20,
+			"ganwu": 100
+		},
+		"alter": {
+			"mod.hp.rate": 2
 		}
 	},
 	{

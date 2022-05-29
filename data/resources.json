@@ -2236,6 +2236,16 @@
 		"max":1
 	},
 	{
+		"id": "xl_lj_konwledege_1",
+		"name": "新型知识体系",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",

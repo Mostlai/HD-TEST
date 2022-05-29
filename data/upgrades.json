@@ -2586,7 +2586,6 @@
 		"desc": "阴影之下,晦暗滋生",
 		"tags": "",
 		"slot": "honorific",
-		"desc": "",
 		"require": "g.jihun>=1 && g.mima_xue>=5",
 		"buy": {
 			"lg": 12,
@@ -2608,8 +2607,7 @@
 			"hp.rate":0.5,
 			"heli.max": -10,
 			"chaos.max": 5,
-			"chaos.rate": 1,
-			"chaos.rate": 0.3
+			"chaos.rate": 1
 		}
 	},
 	{
@@ -2909,7 +2907,6 @@
 			"cold_core": 10,
 			"lxue": 5,
 			"shuaibai_core": 5,
-			"super_mind": 9,
 			"tian": 5,
 			"sj_met": 15,
 			"star_map": 70,
@@ -2937,7 +2934,6 @@
 			"jls": 40,
 			"money": 700,
 			"ganwu": 450,
-			"super_mind": 9,
 			"alculation": 100,
 			"human_power": 210,
 			"cold_core": 20,
@@ -4545,7 +4541,6 @@
 			"life_crystal": 5,
 			"star_map_1": 10,
 			"cbclb": 20,
-			"star_map_1": 10,
 			"ganwu": 500,
 			"money": 1800
 		},
@@ -4569,7 +4564,6 @@
 			"life_crystal": 5,
 			"star_map_1": 10,
 			"cbclb": 20,
-			"star_map_1": 10,
 			"ganwu": 500,
 			"money": 1800
 		},
@@ -5354,6 +5348,28 @@
 			"alculation": 2000,
 			"cold_core": 50,
 			"dirty_core": 20
+		}
+	},
+	{
+		"id": "factoryextend_1",
+		"name": "工厂扩展",
+		"desc": "提高一级工厂上限",
+		"max": 5,
+		"require": "g.steel>=1",
+		"cost": {
+			"steel": 300,
+			"coil_1": 100,
+			"ganwu": 2500,
+			"money": 5000,
+			"snp_data": 60,
+			"fsbdsj": 20,
+			"adv_snp_data": 10,
+			"alculation": 2000
+		},
+		"mod":{
+			"industry_space.max": 10,
+			"space.max": 50,
+			"一级工厂.max": 5
 		}
 	},
 	{

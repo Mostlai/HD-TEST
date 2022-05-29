@@ -1,0 +1,139 @@
+[
+	{
+		"id": "techo_soc_sls",
+		"name": "生灵石收敛",
+		"tags": "社会域",
+		"desc": "自动获取生灵石",
+		"require": "g.hp>=1",
+		"research_need_point": 1000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"shenglingshi.max": 20,
+			"shenglingshi.rate": 0.1
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_space_1",
+		"name": "土地扩张I",
+		"tags": "工程域",
+		"desc": "提高空间和工业用地上限",
+		"require": "g.hp>=1",
+		"research_need_point": 1000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"space.max": 500,
+			"industry_space.max": 20
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_space_2",
+		"name": "土地扩张II",
+		"tags": "工程域",
+		"desc": "提高空间和工业用地上限",
+		"require": "g.hp>=1",
+		"research_need_point": 3000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"space.max": 1000,
+			"industry_space.max": 30
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_elc_1",
+		"name": "电力增长I",
+		"tags": "物理域",
+		"desc": "提高电能和工业用电上限",
+		"require": "g.hp>=1",
+		"research_need_point": 1000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"elect.max": 10,
+			"elect.rate": 10,
+			"industry_elect.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_elc_2",
+		"name": "电力增长II",
+		"tags": "物理域",
+		"desc": "提高电能和工业用电上限",
+		"require": "g.hp>=1",
+		"research_need_point": 3000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"elect.max": 10,
+			"elect.rate": 10,
+			"industry_elect.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_thr_1",
+		"name": "线程控制",
+		"tags": "物理域",
+		"desc": "提高指令和工业线程上限",
+		"require": "g.hp>=1",
+		"research_need_point": 1000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"command_code.max": 10,
+			"industry_thread.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_soul_1",
+		"name": "真魂扩容",
+		"tags": "物理域",
+		"desc": "提高真魂容量上限",
+		"require": "g.hp>=1",
+		"research_need_point": 1600,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"max_rs_mod": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_soc_thr_1",
+		"name": "先进指挥",
+		"tags": "社会域",
+		"desc": "提高指令和工业线程上限",
+		"require": "g.hp>=1",
+		"research_need_point": 1000,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"command_code.max": 10,
+			"industry_thread.max": 10
+		},
+		"max": 1
+	}
+]

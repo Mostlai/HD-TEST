@@ -937,11 +937,28 @@
 			"cold_core": 15,
 			"zero_crystal": 30,
 			"yjdl": 30,
-			"qingxkj": 2,
-			"qingxdql": 2
+			"qingxkj": 1,
+			"qingxdql": 1
 		},
 		"loot": {
 			"shouhunciliu": "100%"
+		}
+	},
+	{
+		"id": "market_gongxuessq",
+		"name": "工学速射枪",
+		"tags": "购买武器",
+		"require": "g.spare_parts>=1",
+		"cost": {
+			"spare_parts": 60,
+			"steel": 100,
+			"blank_unit": 50,
+			"yjdl": 50,
+			"qingxkj": 3,
+			"qingxdql": 3
+		},
+		"loot": {
+			"gongxuessq": "100%"
 		}
 	},
 	{

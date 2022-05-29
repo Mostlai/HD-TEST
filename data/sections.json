@@ -15,6 +15,11 @@
 		"require": "g.ganwu>0"
 	},
 	{
+		"id": "sect_techo",
+		"name": "研究",
+		"require": "g.hp>=1"
+	},
+	{
 		"id": "sect_market",
 		"name": "交易",
 		"require": "g.market_un>0"
@@ -37,7 +42,7 @@
 	{
 		"id": "sect_mode",
 		"name": "模型",
-		"require": "g.hp>=9999999"
+		"require": "g.shengchanlun>=1"
 	},
 	{
 		"id": "sect_raid",

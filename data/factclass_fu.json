@@ -1,0 +1,483 @@
+[
+	{
+		"id": "glass_quar_rp",
+		"name": "玻璃(源:石英砂,石灰石)",
+		"stop_follow": ["quartz", "limestone"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"glass.rate": 1
+		}
+	},
+    {
+		"id": "bunit_glass_rp",
+		"name": "空单元(源:玻璃)",
+		"stop_follow": ["glass"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"blank_unit.rate": 1
+		}
+	},
+    {
+		"id": "temp_fu_1",
+		"name": "黄温(源:煤炭)",
+		"stop_follow": ["coal"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"temper_1.rate": 1
+		}
+	},
+    {
+		"id": "temp_fu_2",
+		"name": "黄温(源:焦炭)",
+		"stop_follow": ["coal"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"temper_1.rate": 1
+		}
+	},
+    {
+		"id": "tounit_to_rp",
+		"name": "黄温单元(源:黄温,空单元)",
+		"stop_follow": ["blank_unit","temper_1"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"temp_1_unit.rate": 1
+		}
+	},
+    {
+		"id": "coke_ct_tp",
+		"name": "焦炭(源:黄温单元,煤炭)",
+		"stop_follow": ["temp_1_unit","coal"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"coke.rate": 1
+		}
+	},
+    {
+		"id": "stell_ciron_tp",
+		"name": "工制钢(源:铁板,焦炭)",
+		"stop_follow": ["cu_iron","coke"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"steel.rate": 1
+		}
+	},
+    {
+		"id": "coli1_cyj_tp",
+		"name": "工制线圈(源:铜板,亚极电缆)",
+		"stop_follow": ["cu_copper","yjdl"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"coil_1.rate": 1
+		}
+	},
+	{
+		"id": "steam_1fu_coal",
+		"name": "低温蒸汽(源:水,煤炭)",
+		"stop_follow": ["ind_water","coal"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"ind_steam_1.rate": 1
+		}
+	},
+	{
+		"id": "steam_1fu_coke",
+		"name": "低温蒸汽(源:水,焦炭)",
+		"stop_follow": ["ind_water","coke"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"ind_steam_1.rate": 1
+		}
+	},
+	{
+		"id": "elect_fu_steam1",
+		"name": "工业电力(源:低温蒸汽)",
+		"stop_follow": ["ind_steam_1"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"industry_elect.max": 1
+		}
+	},
+	{
+		"id": "spart_fu_1",
+		"name": "零部件(源:工制钢,玻璃,工制线圈)",
+		"stop_follow": ["steel","glass","coil_1"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"spare_parts.rate": 1
+		}
+	},
+	{
+		"id": "sfotdirt_fu_1",
+		"name": "生物软泥(源:水,生物质)",
+		"stop_follow": ["ind_water","swzhi"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"soft_dirt.rate": 1
+		}
+	},
+	{
+		"id": "sfotdirt_fu_2",
+		"name": "生物软泥(源:纤板,培质)",
+		"stop_follow": ["ind_water","swzhi"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"soft_dirt.rate": 1
+		}
+	},
+	{
+		"id": "peizhi_fu_1",
+		"name": "培质(源:水,生物软泥)",
+		"stop_follow": ["ind_water","soft_dirt"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"pei_zhi.rate": 1
+		}
+	},
+	{
+		"id": "xianban_fu_1",
+		"name": "纤板(源:水,玻璃)",
+		"stop_follow": ["ind_water","glass"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"xianban.rate": 1
+		}
+	},
+	{
+		"id": "songfeng_fu_1",
+		"name": "松风基质(源:生物软泥,培质)",
+		"stop_follow": ["soft_dirt","pei_zhi"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"songfeng_jizhi.rate": 1
+		}
+	},
+	{
+		"id": "ryongping_fu_1",
+		"name": "日用品(源:零部件,工制钢)",
+		"stop_follow": ["spare_parts","steel"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"ryongping.rate": 1
+		}
+	},
+	{
+		"id": "ryongping_fu_2",
+		"name": "钱币(源:日用品)",
+		"stop_follow": ["ryongping"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"money.rate": 1
+		}
+	},
+	{
+		"id": "gaojihw_fu_1",
+		"name": "高级货物(源:零部件,工制钢,玻璃)",
+		"stop_follow": ["spare_parts","steel","glass"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"gaojihuowu.rate": 1
+		}
+	},
+	{
+		"id": "gaojihw_fu_2",
+		"name": "钱币(源:高级货物)",
+		"stop_follow": ["gaojihuowu"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"money.rate": 1
+		}
+	},
+	{
+		"id": "shichiping_fu_1",
+		"name": "奢侈品(源:日用品,高级货物)",
+		"stop_follow": ["ryongping","gaojihuowu"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"shichiping.rate": 1
+		}
+	},
+	{
+		"id": "shichiping_fu_2",
+		"name": "钱币(源:奢侈品)",
+		"stop_follow": ["shichiping"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"money.rate": 1
+		}
+	},
+	{
+		"id": "nicsju_fu_1",
+		"name": "泥成数据(源:零部件,松风基质)",
+		"stop_follow": ["spare_parts", "songfeng_jizhi"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"nicheng_data.rate": 1
+		}
+	},
+	{
+		"id": "wujianbao_fu_1",
+		"name": "物件包(源:纯白,工制线圈)",
+		"stop_follow": ["cbclb", "coil_1"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"wujianbao.rate": 1
+		}
+	},
+	{
+		"id": "zhenxishi_fu_1",
+		"name": "珍洗石(源:水,石英砂)",
+		"stop_follow": ["ind_water", "quartz"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"zhenxishi.rate": 1
+		}
+	},
+	{
+		"id": "wujianbao_fu_2",
+		"name": "纯白材料包(源:珍洗石,物件包)",
+		"stop_follow": ["zhenxishi", "wujianbao"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"cbclb.rate": 1
+		}
+	},
+	{
+		"id": "wujianbao_fu_3",
+		"name": "亚极电缆(源:零部件,物件包)",
+		"stop_follow": ["spare_parts", "wujianbao"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"yjdl.rate": 1
+		}
+	},
+	{
+		"id": "gongzhiliang_fu_1",
+		"name": "工制梁(源:黄温单元,工制钢,物件包)",
+		"stop_follow": ["temp_1_unit", "wujianbao","steel"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"gongzhiliang.rate": 1
+		}
+	},
+	{
+		"id": "xicheng_data_fu_1",
+		"name": "洗成数据(源:珍洗石,工制梁,水)",
+		"stop_follow": ["zhenxishi", "gongzhiliang","ind_water"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"xicheng_data.rate": 1
+		}
+	},
+	{
+		"id": "naicixian_fu_1",
+		"name": "耐磁线(源:工制线圈)",
+		"stop_follow": ["coil_1"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"naicixian.rate": 1
+		}
+	},
+	{
+		"id": "elect_fu_naicixian",
+		"name": "工业电力(源:耐磁线,低温蒸汽)",
+		"stop_follow": ["ind_steam_1","naicixian"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"industry_elect.max": 1
+		}
+	},
+	{
+		"id": "ganguangtj_fu_1",
+		"name": "感光透镜(源:玻璃,水,工制线圈)",
+		"stop_follow": ["ind_water","glass","coil_1"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"ganguangtj.rate": 1
+		}
+	},
+	{
+		"id": "guanggan_data_fu_1",
+		"name": "光感数据(源:感光透镜,耐磁线)",
+		"stop_follow": ["ganguangtj","naicixian"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"guanggan_data.rate": 1
+		}
+	},
+	{
+		"id": "phy_fu_1",
+		"name": "物理成果(源:光感数据)",
+		"stop_follow": ["guanggan_data"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"physic_point.rate": 1
+		}
+	},
+	{
+		"id": "soc_fu_1",
+		"name": "社会成果(源:泥成数据)",
+		"stop_follow": ["nicheng_data"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"socia_point.rate": 1
+		}
+	},
+	{
+		"id": "eng_fu_1",
+		"name": "工程成果(源:洗成数据)",
+		"stop_follow": ["xicheng_data"],
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false,
+		"mod":{
+			"engineer_point.rate": 1
+		}
+	}
+]

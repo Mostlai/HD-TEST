@@ -1,39 +1,954 @@
 [
 	{
-		"id": "huagong_thread",
-		"name":"化工线程",
-		"max": 0
+		"id": "dig_thread",
+		"name":"挖掘线程",
+		"max": 0,
+		"locked": false
 	},
 	{
-		"id": "crude_oil_rp_1",
-		"name": "AA原油裂解",
-		"desc": "2原油通量裂解为1.5啥玩意和0.49啥玩意",
-		"thread_use": "huagong_thread",
-		"tags": "原油",
-		"require": "g.hp>=1",
+		"id": "sand_thread",
+		"name":"采砂线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "burn_thread",
+		"name":"燃烧线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "daore_thread",
+		"name":"导热线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "distillation_thread",
+		"name":"蒸馏线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "furnace_thread",
+		"name":"高炉线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "rline_thread",
+		"name":"轧线线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "pump_thread",
+		"name":"泵机",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "steam_thread",
+		"name":"蒸汽机",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "purify_thread",
+		"name":"净化线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "trade_thread",
+		"name":"贸易线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "assemble_thread",
+		"name":"组装线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "sysn_thread",
+		"name":"分析线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "phy_sysn_1",
+		"name": "光感数据分析",
+		"desc": "消耗1光感数据并生产3物理域研究成果",
+		"thread_use": "sysn_thread",
+		"tags": "光感数据",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"cost":{
-			"crude_oil": 2
+			"guanggan_data": 5
 		},
 		"mod":{
-			"industry_space": 1,
-			"industry_elect": 1,
-			"industry_thread": 1
+			"guanggan_data.rate": -1,
+			"phy_fu_1.rate": 2,
+			"phy_fu_1.max": 2,
+			"human_power.max": -100,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
 		}
 	},
 	{
-		"id": "zafenyou_rp1",
-		"name": "杂酚油补燃",
-		"desc": "2原油通量裂解为1.5啥玩意和0.49啥玩意",
-		"thread_use": "huagong_thread",
-		"tags": "杂酚油",
-		"require": "g.hp>=1",
+		"id": "soc_sysn_1",
+		"name": "泥成数据分析",
+		"desc": "消耗1泥成数据并生产3社会域研究成果",
+		"thread_use": "sysn_thread",
+		"tags": "泥成数据",
+		"require": "g.xl_lj_konwledege_1>=1",
 		"cost":{
-			"crude_oil": 2
+			"nicheng_data": 5
 		},
 		"mod":{
-			"industry_space": 1,
+			"nicheng_data.rate": -1,
+			"soc_fu_1.rate": 2,
+			"soc_fu_1.max": 2,
+			"human_power.max": -100,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "eng_sysn_1",
+		"name": "洗成数据分析",
+		"desc": "消耗1洗成数据并生产3工程域研究成果",
+		"thread_use": "sysn_thread",
+		"tags": "洗成数据",
+		"require": "g.xl_lj_konwledege_1>=1",
+		"cost":{
+			"xicheng_data": 5
+		},
+		"mod":{
+			"xicheng_data.rate": -1,
+			"eng_fu_1.rate": 2,
+			"eng_fu_1.max": 2,
+			"human_power.max": -100,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "water_rp_1",
+		"name": "湖泊抽水",
+		"desc": "消耗50人力从湖泊中抽取3水",
+		"thread_use": "pump_thread",
+		"tags": "水",
+		"require": "g.coal>=1",
+		"cost":{
+			"human_power": 200
+		},
+		"mod":{
+			"ind_water.rate": 3,
+			"obs_water": 0.3,
+			"water_res": 0.3,
+			"human_power.max": -50,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "steam_1_coal",
+		"name": "蒸汽煤炭",
+		"desc": "消耗0.6煤炭和1水并生产1低温蒸汽",
+		"thread_use": "burn_thread",
+		"tags": "低温蒸汽",
+		"require": "g.coal>=1",
+		"cost":{
+			"coal": 10,
+			"ind_water": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"ind_water.rate": -1,
+			"coal.rate": -0.6,
+			"steam_1fu_coal.rate": 1,
+			"steam_1fu_coal.max": 1,
+			"human_power.max": -50,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "steam_1_coke",
+		"name": "蒸汽焦炭",
+		"desc": "消耗0.5焦炭和1.2水并生产1.2低温蒸汽",
+		"thread_use": "burn_thread",
+		"tags": "低温蒸汽",
+		"require": "g.coke>=1",
+		"cost":{
+			"coke": 10,
+			"ind_water": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"ind_water.rate": -1.2,
+			"coke.rate": -0.5,
+			"steam_1fu_coke.rate": 1,
+			"steam_1fu_coke.max": 1,
+			"human_power.max": -50,
+			"industry_space": 0.4,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "elect_1_steam1",
+		"name": "低温蒸汽机",
+		"desc": "消耗0.5低温蒸汽并生产1.8工业电力",
+		"thread_use": "steam_thread",
+		"tags": "低温蒸汽",
+		"require": "g.coal>=1",
+		"cost":{
+			"ind_steam_1": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"ind_steam_1.rate": -0.5,
+			"elect_fu_steam1.rate": 1.8,
+			"elect_fu_steam1.max": 1.8,
+			"industry_space": 0.4,
+			"industry_elect": 0.1,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "quartz_rp_1",
+		"name": "石英砂采砂",
+		"desc": "200人力每秒生产2石英砂",
+		"thread_use": "sand_thread",
+		"tags": "石英砂",
+		"require": "g.ind_caijuechang>=1 && g.qiulzykaifa>=1",
+		"cost":{
+			"human_power": 200
+		},
+		"mod":{
+			"quartz.rate": 2,
+			"human_power.max": -200,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "limestone_rp_1",
+		"name": "石灰石采砂",
+		"desc": "200人力每秒生产1.5石灰石",
+		"thread_use": "sand_thread",
+		"tags": "石灰石",
+		"require": "g.ind_caijuechang>=1 && g.shanmaizykf>=1",
+		"cost":{
+			"human_power": 200
+		},
+		"mod":{
+			"limestone.rate": 1.5,
+			"human_power.max": -200,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "coal_rp_1",
+		"name": "煤炭开采",
+		"desc": "100人力每秒生产2煤炭",
+		"thread_use": "dig_thread",
+		"tags": "煤炭",
+		"require": "g.ind_caijuechang>=1 && g.pendizykf>=1",
+		"cost":{
+			"human_power": 200
+		},
+		"mod":{
+			"coal.rate": 2,
+			"human_power.max": -200,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "temp_rp_1",
+		"name": "燃烧煤炭",
+		"desc": "消耗1煤炭并产出1.3黄温",
+		"thread_use": "burn_thread",
+		"tags": "黄温",
+		"require": "g.ind_reliwendu>=1",
+		"cost":{
+			"coal": 1,
+			"human_power": 200
+		},
+		"mod":{
+			"coal.rate": -1,
+			"temp_fu_1.rate": 1.3,
+			"temp_fu_1.max": 1.3,
+			"human_power.max": -50,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "temp_rp_2",
+		"name": "燃烧焦炭",
+		"desc": "消耗1煤炭并产出1.7黄温",
+		"thread_use": "burn_thread",
+		"tags": "黄温",
+		"require": "g.coke>=1",
+		"cost":{
+			"coke": 1,
+			"human_power": 200
+		},
+		"mod":{
+			"coke.rate": -1,
+			"temp_fu_2.rate": 1.7,
+			"temp_fu_2.max": 1.7,
+			"human_power.max": -50,
+			"industry_space": 0.3,
+			"industry_elect": 0.1,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "glass_rp_1",
+		"name": "熔融石英",
+		"desc": "消耗1石英砂和0.5石灰石并生产1玻璃",
+		"thread_use": "burn_thread",
+		"tags": "玻璃",
+		"require": "g.ind_reliwendu>=1",
+		"cost":{
+			"quartz": 50,
+			"limestone": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"quartz.rate": -1,
+			"limestone.rate": -0.5,
+			"glass_quar_rp.rate": 1,
+			"glass_quar_rp.max": 1,
+			"human_power.max": -100,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "bunit_rp_1",
+		"name": "熔铸空单元",
+		"desc": "消耗1.5玻璃并生产2空单元",
+		"thread_use": "burn_thread",
+		"tags": "空单元",
+		"require": "g.ind_wendukongz>=5",
+		"cost":{
+			"glass": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"glass.rate": -1.5,
+			"bunit_glass_rp.rate": 2,
+			"bunit_glass_rp.max": 2,
+			"human_power.max": -50,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "tm1unit_rp_1",
+		"name": "导热空单元",
+		"desc": "消耗1黄温和1空单元并生产1黄温单元",
+		"thread_use": "daore_thread",
+		"tags": "黄温单元",
+		"require": "g.ind_wendukongz>=10",
+		"cost":{
+			"blank_unit": 50,
+			"temper_1": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"blank_unit.rate": -1,
+			"temper_1.rate": -1,
+			"tounit_to_rp.rate": 1,
+			"tounit_to_rp.max": 1,
+			"human_power.max": -50,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "coke_rp_1",
+		"name": "焦炭蒸馏",
+		"desc": "消耗1黄温单元和1.5煤炭并生产1.6焦炭",
+		"thread_use": "distillation_thread",
+		"tags": "焦炭",
+		"require": "g.ind_jiaotangy>=10",
+		"cost":{
+			"temp_1_unit": 50,
+			"coal": 50,
+			"human_power": 200
+		},
+		"mod":{
+			"temp_1_unit.rate": -1,
+			"coal.rate": -1.5,
+			"coke_ct_tp.rate": 1.6,
+			"coke_ct_tp.max": 1.6,
+			"human_power.max": -100,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "stell_rp_1",
+		"name": "焦炭炼钢",
+		"desc": "消耗2焦炭和2铁板并生产1.3工制钢",
+		"thread_use": "furnace_thread",
+		"tags": "工制钢",
+		"require": "g.ind_jiaotangy>=10",
+		"cost":{
+			"coke": 60,
+			"cu_iron": 100,
+			"human_power": 200
+		},
+		"mod":{
+			"cu_iron.rate": -2,
+			"coke.rate": -2,
+			"stell_ciron_tp.rate": 1.3,
+			"stell_ciron_tp.max": 1.3,
+			"human_power.max": -100,
+			"industry_space": 0.3,
 			"industry_elect": 1,
-			"industry_thread": 1
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "coil_1_rp_1",
+		"name": "亚极电缆轧线",
+		"desc": "消耗0.6亚极电缆和2铜板并生产1.5工制线圈",
+		"thread_use": "rline_thread",
+		"tags": "工制线圈",
+		"require": "g.shengchanlun>=1",
+		"cost":{
+			"yjdl": 60,
+			"cu_copper": 100,
+			"human_power": 200
+		},
+		"mod":{
+			"yjdl.rate": -0.6,
+			"cu_copper.rate": -2,
+			"coli1_cyj_tp.rate": 1.5,
+			"coli1_cyj_tp.max": 1.5,
+			"human_power.max": -100,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "spear_part_rp_1",
+		"name": "零部件加工",
+		"desc": "消耗2工制钢和1.5玻璃和2工制线圈并生产2.5零部件",
+		"thread_use": "rline_thread",
+		"tags": "零部件",
+		"require": "g.steel>=1",
+		"cost":{
+			"steel": 30,
+			"glass": 30,
+			"coil_1": 30,
+			"cu_copper": 100,
+			"human_power": 200
+		},
+		"mod":{
+			"steel.rate": -2,
+			"glass.rate": -1.5,
+			"coil_1.rate": -2,
+			"spart_fu_1.rate": 2.5,
+			"spart_fu_1.max": 2.5,
+			"human_power.max": -100,
+			"industry_space": 0.5,
+			"industry_elect": 0.5,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "soft_dirt_rp_1",
+		"name": "生物质净化",
+		"desc": "消耗0.1生物质和0.5水并生产1.5生物软泥",
+		"thread_use": "purify_thread",
+		"tags": "生物软泥",
+		"require": "g.smshengchan>=1",
+		"cost":{
+			"ind_water": 100,
+			"swzhi": 0.5
+		},
+		"mod":{
+			"ind_water.rate": -0.5,
+			"swzhi.rate": -0.1,
+			"sfotdirt_fu_1.rate": 1.5,
+			"sfotdirt_fu_1.max": 1.5,
+			"human_power.max": -100,
+			"industry_space": 0.3,
+			"industry_elect": 0.3,
+			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "soft_dirt_rp_2",
+		"name": "培质软泥",
+		"desc": "消耗0.2纤板和0.4培质并生产0.8生物软泥",
+		"thread_use": "purify_thread",
+		"tags": "生物软泥",
+		"require": "g.smshengchan>=1",
+		"cost":{
+			"xianban": 100,
+			"pei_zhi": 60
+		},
+		"mod":{
+			"xianban.rate": -0.2,
+			"pei_zhi.rate": -0.4,
+			"sfotdirt_fu_2.rate": 1.5,
+			"sfotdirt_fu_2.max": 1.5,
+			"human_power.max": -70,
+			"industry_space": 0.4,
+			"industry_elect": 0.4,
+			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "peizhi_rp_1",
+		"name": "软泥净化",
+		"desc": "消耗0.5生物软泥和0.5水并生产0.5培质",
+		"thread_use": "purify_thread",
+		"tags": "培质",
+		"require": "g.smshengchan>=1",
+		"cost":{
+			"ind_water": 100,
+			"soft_dirt": 10
+		},
+		"mod":{
+			"ind_water.rate": -0.5,
+			"soft_dirt.rate": -0.5,
+			"peizhi_fu_1.rate": 0.5,
+			"peizhi_fu_1.max": 0.5,
+			"human_power.max": -100,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "xianban_rp_1",
+		"name": "玻璃净化",
+		"desc": "消耗0.5玻璃和0.5水并生产0.5纤板",
+		"thread_use": "purify_thread",
+		"tags": "纤板",
+		"require": "g.smshengchan>=1",
+		"cost":{
+			"ind_water": 100,
+			"glass": 30
+		},
+		"mod":{
+			"ind_water.rate": -0.5,
+			"glass.rate": -0.5,
+			"xianban_fu_1.rate": 0.5,
+			"xianban_fu_1.max": 0.5,
+			"human_power.max": -100,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "songfeng_rp_1",
+		"name": "培养松风",
+		"desc": "消耗1生物软泥和0.5培质并生产1.5松风基质",
+		"thread_use": "purify_thread",
+		"tags": "松风基质",
+		"require": "g.soft_dirt>=1 && g.xianban>=1 && g.pei_zhi>=1",
+		"cost":{
+			"soft_dirt": 30,
+			"pei_zhi": 30
+		},
+		"mod":{
+			"soft_dirt.rate": -1,
+			"pei_zhi.rate": -0.5,
+			"songfeng_fu_1.rate": 0.5,
+			"songfeng_fu_1.max": 0.5,
+			"human_power.max": -100,
+			"industry_space": 0.3,
+			"industry_elect": 0.3,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "ryongp_rp_1",
+		"name": "生产日用品",
+		"desc": "消耗1零部件和1工制钢并生产3日用品",
+		"thread_use": "rline_thread",
+		"tags": "日用品",
+		"require": "g.spart_zuzhuang>=1",
+		"cost":{
+			"spare_parts": 30,
+			"steel": 30
+		},
+		"mod":{
+			"spare_parts.rate": -1,
+			"steel.rate": -1,
+			"ryongping_fu_1.rate": 3,
+			"ryongping_fu_1.max": 3,
+			"human_power.max": -100,
+			"industry_space": 0.6,
+			"industry_elect": 0.4,
+			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "ryongp_rp_2",
+		"name": "销售日用品",
+		"desc": "消耗2日用品并生产15钱币",
+		"thread_use": "trade_thread",
+		"tags": "日用品",
+		"require": "g.spart_zuzhuang>=1",
+		"cost":{
+			"ryongping": 30
+		},
+		"mod":{
+			"ryongping.rate": -2,
+			"ryongping_fu_2.rate": 15,
+			"ryongping_fu_2.max": 15,
+			"industry_space": 0.5,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "gaojihw_rp_1",
+		"name": "生产高级货物",
+		"desc": "消耗1零部件和1工制钢和2玻璃并生产2高级货物",
+		"thread_use": "rline_thread",
+		"tags": "高级货物",
+		"require": "g.spart_zuzhuang>=4",
+		"cost":{
+			"spare_parts": 30,
+			"steel": 30,
+			"glass": 50
+		},
+		"mod":{
+			"spare_parts.rate": -1,
+			"steel.rate": -1,
+			"glass.rate": -2,
+			"gaojihw_fu_1.rate": 2,
+			"gaojihw_fu_1.max": 2,
+			"human_power.max": -100,
+			"industry_space": 0.6,
+			"industry_elect": 0.4,
+			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "gaojihw_rp_2",
+		"name": "销售高级货物",
+		"desc": "消耗2高级货物并生产27钱币",
+		"thread_use": "trade_thread",
+		"tags": "高级货物",
+		"require": "g.spart_zuzhuang>=4",
+		"cost":{
+			"ryongping": 30
+		},
+		"mod":{
+			"gaojihuowu.rate": -2,
+			"gaojihw_fu_1.rate": 15,
+			"gaojihw_fu_1.max": 15,
+			"industry_space": 0.7,
+			"industry_elect": 0.2,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "shichip_rp_1",
+		"name": "生产奢侈品",
+		"desc": "消耗2日用品和1高级货物并生产2奢侈品",
+		"thread_use": "rline_thread",
+		"tags": "奢侈品",
+		"require": "g.spart_zuzhuang>=8",
+		"cost":{
+			"gaojihuowu": 50,
+			"ryongping": 50
+		},
+		"mod":{
+			"gaojihuowu.rate": -2,
+			"ryongping.rate": -1,
+			"shichiping_fu_1.rate": 2,
+			"shichiping_fu_1.max": 2,
+			"human_power.max": -100,
+			"industry_space": 0.4,
+			"industry_elect": 0.6,
+			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "shichip_rp_2",
+		"name": "销售奢侈品",
+		"desc": "消耗0.5奢侈品并生产20钱币",
+		"thread_use": "trade_thread",
+		"tags": "奢侈品",
+		"require": "g.spart_zuzhuang>=8",
+		"cost":{
+			"ryongping": 30
+		},
+		"mod":{
+			"shichiping.rate": -0.5,
+			"shichiping_fu_2.rate": 15,
+			"shichiping_fu_2.max": 15,
+			"industry_space": 0.5,
+			"industry_elect": 0.35,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "nichengshj_rp_2",
+		"name": "生产泥成数据",
+		"desc": "消耗2松风基质和1零部件并生产1泥成数据",
+		"thread_use": "assemble_thread",
+		"tags": "泥成数据",
+		"require": "g.spart_zuzhuang>=10 && g.songfeng_jizhi>=1",
+		"cost":{
+			"songfeng_jizhi": 50,
+			"spare_parts": 50
+		},
+		"mod":{
+			"songfeng_jizhi.rate": -2,
+			"spare_parts.rate": -1,
+			"nicsju_fu_1.rate": 1,
+			"nicsju_fu_1.max": 1,
+			"industry_space": 1,
+			"industry_elect": 0.5,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "wujianbao_rp_1",
+		"name": "产物件包",
+		"desc": "消耗2纯白材料包和0.5工制线圈并生产2物件包",
+		"thread_use": "assemble_thread",
+		"tags": "物件包",
+		"require": "g.spart_zuzhuang>=10",
+		"cost":{
+			"cbclb": 50,
+			"coil_1": 50
+		},
+		"mod":{
+			"cbclb.rate": -2,
+			"coil_1.rate": -0.5,
+			"wujianbao_fu_1.rate": 2,
+			"wujianbao_fu_1.max": 2,
+			"industry_space": 0.2,
+			"industry_elect": 0.2,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "zhenxishi_rp_1",
+		"name": "产珍洗石",
+		"desc": "消耗1水和2石英砂并生产1.5珍洗石",
+		"thread_use": "purify_thread",
+		"tags": "珍洗石",
+		"require": "g.spart_zuzhuang>=10",
+		"cost":{
+			"ind_water": 50,
+			"quartz": 50
+		},
+		"mod":{
+			"ind_water.rate": -1,
+			"quartz.rate": -2,
+			"zhenxishi_fu_1.rate": 1.5,
+			"zhenxishi_fu_1.max": 1.5,
+			"industry_space": 0.2,
+			"industry_elect": 0.2,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "wujianbao_rp_2",
+		"name": "产纯白包",
+		"desc": "消耗1.3珍洗石和1物件包并生产2纯白材料包",
+		"thread_use": "purify_thread",
+		"tags": "物件包",
+		"require": "g.zhenxishi>=1",
+		"cost":{
+			"zhenxishi": 50,
+			"wujianbao": 50
+		},
+		"mod":{
+			"zhenxishi.rate": -1.3,
+			"wujianbao.rate": -1,
+			"wujianbao_fu_2.rate": 2,
+			"wujianbao_fu_2.max": 2,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "wujianbao_rp_3",
+		"name": "产亚极电缆",
+		"desc": "消耗1零部件和1物件包并生产3亚极电缆",
+		"thread_use": "rline_thread",
+		"tags": "物件包",
+		"require": "g.wujianbao>=1",
+		"cost":{
+			"spare_parts": 50,
+			"wujianbao": 50
+		},
+		"mod":{
+			"spare_parts.rate": -1,
+			"wujianbao.rate": -1,
+			"wujianbao_fu_3.rate": 3,
+			"wujianbao_fu_3.max": 3,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "gongzhiliang_rp_1",
+		"name": "产工制梁",
+		"desc": "消耗1黄温单元和1.5工制钢和1.5物件包并生产1工制梁",
+		"thread_use": "assemble_thread",
+		"tags": "工制梁",
+		"require": "g.wujianbao>=1",
+		"cost":{
+			"temp_1_unit": 50,
+			"steel": 100,
+			"wujianbao": 50
+		},
+		"mod":{
+			"temp_1_unit.rate": -1,
+			"steel.rate": -1.5,
+			"wujianbao.rate": -1.5,
+			"gongzhiliang_fu_1.rate": 1,
+			"gongzhiliang_fu_1.max": 1,
+			"industry_space": 0.2,
+			"industry_elect": 0.4,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "xicheng_data_rp_1",
+		"name": "洗成数据生产",
+		"desc": "消耗1珍洗石和1工制梁和2水并生产1洗成数据",
+		"thread_use": "purify_thread",
+		"tags": "洗成数据",
+		"require": "g.wujianbao>=1",
+		"cost":{
+			"temp_1_unit": 50,
+			"steel": 100,
+			"wujianbao": 50
+		},
+		"mod":{
+			"zhenxishi.rate": -1,
+			"gongzhiliang.rate": -1,
+			"ind_water.rate": -2,
+			"xicheng_data_fu_1.rate": 1,
+			"xicheng_data_fu_1.max": 1,
+			"industry_space": 0.2,
+			"industry_elect": 0.4,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "naicixian_rp_1",
+		"name": "产耐磁线",
+		"desc": "消耗3工制线圈并生产1.5耐磁线",
+		"thread_use": "rline_thread",
+		"tags": "耐磁线",
+		"require": "g.spart_zuzhuang>=10",
+		"cost":{
+			"coil_1": 50
+		},
+		"mod":{
+			"coil_1.rate": -3,
+			"naicixian_fu_1.rate": 1.5,
+			"naicixian_fu_1.max": 1.5,
+			"industry_space": 0.1,
+			"industry_elect": 0.5,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "naicixian_rp_2",
+		"name": "耐磁产电",
+		"desc": "消耗2耐磁线和1低温蒸汽并生产4工业电力",
+		"thread_use": "steam_thread",
+		"tags": "低温蒸汽",
+		"require": "g.naicixian>=10",
+		"cost":{
+			"naicixian": 50,
+			"ind_steam_1": 50
+		},
+		"mod":{
+			"naicixian.rate": -2,
+			"ind_steam_1.rate": -1,
+			"elect_fu_naicixian.rate": 4,
+			"elect_fu_naicixian.max": 4,
+			"industry_space": 0.4,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "ganguangtj_rp_1",
+		"name": "产感光透镜",
+		"desc": "消耗1玻璃和1水和1工制线圈并生产1感光透镜",
+		"thread_use": "assemble_thread",
+		"tags": "感光透镜",
+		"require": "g.spart_zuzhuang>=10",
+		"cost":{
+			"glass": 50,
+			"ind_water": 100,
+			"coil_1": 50
+		},
+		"mod":{
+			"glass.rate": -1,
+			"ind_water.rate": -1,
+			"coil_1.rate": -1,
+			"ganguangtj_fu_1.rate": 1,
+			"ganguangtj_fu_1.max": 1,
+			"industry_space": 0.1,
+			"industry_elect": 0.5,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "guanggan_data_rp_1",
+		"name": "光感数据生产",
+		"desc": "消耗1感光透镜和1耐磁线并生产1光感数据",
+		"thread_use": "assemble_thread",
+		"tags": "光感数据",
+		"require": "g.spart_zuzhuang>=10",
+		"cost":{
+			"ganguangtj": 50,
+			"naicixian": 100
+		},
+		"mod":{
+			"ganguangtj.rate": -1,
+			"naicixian.rate": -1,
+			"guanggan_data_fu_1.rate": 1,
+			"guanggan_data_fu_1.max": 1,
+			"industry_space": 0.3,
+			"industry_elect": 0.5,
+			"industry_thread": 0.3
 		}
 	}
 ]

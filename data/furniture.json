@@ -727,6 +727,28 @@
 		}
 	},
 	{
+		"id": "ldlxw_4",
+		"name": "劳动力募集小屋4",
+		"desc": "募集劳动力",
+		"tags": "",
+		"require": "g.spare_parts>=1",
+		"max": 10,
+		"repeat": true,
+		"cost": {
+			"spare_parts": 40,
+			"tian": 100,
+			"zero_crystal": 50,
+			"exe_paper": 40,
+			"snp_data": 50,
+			"adv_snp_data": 1,
+			"money": 1500
+		},
+		"mod": {
+			"human_power.max": 500,
+			"space": 15
+		}
+	},
+	{
 		"id": "swcl_1",
 		"name": "事务处理点1",
 		"desc": "使用人力帮助处理事务",
@@ -772,6 +794,29 @@
 		"mod": {
 			"human_power.max": -15,
 			"alculation.max": 30,
+			"space": 10
+		}
+	},
+	{
+		"id": "swcl_3",
+		"name": "事务处理点3",
+		"desc": "使用人力帮助处理事务",
+		"tags": "",
+		"require": "g.spare_parts>=1",
+		"max": 10,
+		"repeat": true,
+		"cost": {
+			"spare_parts": 40,
+			"tian": 100,
+			"zero_crystal": 50,
+			"exe_paper": 40,
+			"snp_data": 50,
+			"adv_snp_data": 1,
+			"money": 1500
+		},
+		"mod": {
+			"human_power.max": -30,
+			"alculation.max": 300,
 			"space": 10
 		}
 	},
@@ -866,6 +911,33 @@
 			"heli.rate": 0.5,
 			"chaos.rate": 0.5,
 			"space": 6
+		}
+	},
+	{
+		"id": "small_jlz_1",
+		"name": "聚灵仪改",
+		"desc": "消耗计算力来更快的凝聚能量",
+		"tags": "",
+		"require": "g.spare_parts>=1",
+		"max": 10,
+		"repeat": true,
+		"cost": {
+			"spare_parts": 50,
+			"tian": 100,
+			"zero_crystal": 50,
+			"exe_paper": 40,
+			"snp_data": 50,
+			"adv_snp_data": 1,
+			"money": 1500
+		},
+		"mod": {
+			"alculation.max": -20,
+			"human_power.max": -50,
+			"heli.max":2,
+			"chaos.max":2,
+			"heli.rate": 0.5,
+			"chaos.rate": 0.5,
+			"space": 16
 		}
 	},
 	{
@@ -1385,6 +1457,84 @@
 			"elect.max":-1,
 			"elect.rate": -0.7,
 			"space": 10
+		}
+	},
+	{
+		"id": "yibaiwu_sorce",
+		"name": "150V配电器",
+		"desc": "能稳定提供150V级电源",
+		"tags": "OHFV",
+		"max":1,
+		"require": "g.xl_lj_konwledege_1>=1",
+		"repeat": true,
+		"cost": {
+			"coil_1": 400,
+			"spare_parts": 200,
+			"dirty_lingti": 10,
+			"zero_crystal": 100,
+			"super_mind": 5,
+			"alculation": 1000,
+			"human_power": 1000,
+			"adv_snp_data": 20,
+			"tian": 100,
+			"money": 520
+		},
+		"mod": {
+			"elect.max":-1,
+			"elect.rate": -15,
+			"space": 10
+		}
+	},
+	{
+		"id": "normal_lab",
+		"name": "通用实验室",
+		"tags": "",
+		"desc": "对各个领域均可进行研究的实验室,此建筑需要接通150V级电源",
+		"need": "OHFV",
+		"max":10,
+		"require": "g.xl_lj_konwledege_1>=1",
+		"cost": {
+			"coil_1": 400,
+			"spare_parts": 200,
+			"glass": 300,
+			"ind_water": 400,
+			"blank_unit": 200,
+			"fsbdsj": 20,
+			"adv_snp_data": 20,
+			"money": 5000
+		},
+		"mod": {
+			"elect.rate": -6,
+			"physic_rate": 1,
+			"socia_rate": 1,
+			"engineer_rate": 1,
+			"space": 30
+		}
+	},
+	{
+		"id": "normal_data_box",
+		"name": "通用数据屉",
+		"tags": "",
+		"desc": "对各个领域的数据均可进行存储,此建筑需要接通150V级电源",
+		"need": "OHFV",
+		"max":20,
+		"require": "g.xl_lj_konwledege_1>=1",
+		"cost": {
+			"coil_1": 100,
+			"spare_parts": 100,
+			"glass": 100,
+			"temp_1_unit": 50,
+			"yjdl": 80,
+			"fsbdsj": 20,
+			"adv_snp_data": 20,
+			"money": 5000
+		},
+		"mod": {
+			"elect.rate": -2,
+			"socia_point.max": 200,
+			"physic_point.max": 200,
+			"engineer_point.max": 200,
+			"space": 15
 		}
 	},
 	{
@@ -5615,6 +5765,955 @@
 		}
 	},
 	{
+		"id": "kwpeidianqi",
+		"name": "千瓦配电器",
+		"desc": "简单的提供工业电力",
+		"tags": "",
+		"max":10,
+		"require": "g.shengchanlun>=1",
+		"repeat": true,
+		"cost": {
+			"zero_crystal":25,
+			"heli":40,
+			"wgys": 20,
+			"jingdian": 20,
+			"ljdy": 20,
+			"yjdl": 50,
+			"paper": 100,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"elect.rate": -4,
+			"industry_elect.max": 1,
+			"space": 5
+		}
+	},
+	{
+		"id": "meitandlj",
+		"name": "煤炭动力机",
+		"desc": "简单的提供工业电力",
+		"tags": "",
+		"max":20,
+		"require": "g.coal>=1",
+		"repeat": true,
+		"cost": {
+			"zero_crystal":25,
+			"heli":40,
+			"coal": 50,
+			"jingdian": 20,
+			"ljdy": 20,
+			"yjdl": 80,
+			"paper": 100,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"coal.rate": -1,
+			"industry_elect.max": 1.5,
+			"space": 5
+		}
+	},
+	{
+		"id": "jiaotandlj",
+		"name": "焦炭动力机",
+		"desc": "简单的提供工业电力",
+		"tags": "",
+		"max":20,
+		"require": "g.coke>=1",
+		"repeat": true,
+		"cost": {
+			"zero_crystal":25,
+			"heli":40,
+			"coke": 50,
+			"coil_1": 50,
+			"jingdian": 20,
+			"ljdy": 20,
+			"yjdl": 80,
+			"paper": 100,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"coke.rate": -1,
+			"industry_elect.max": 2,
+			"space": 5
+		}
+	},
+	{
+		"id": "limestone_cang",
+		"name": "石灰石筒仓",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.limestone>=1",
+		"repeat": true,
+		"cost": {
+			"limestone": 5,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"limestone.max": 80,
+			"space": 5
+		}
+	},
+	{
+		"id": "quartz_cang",
+		"name": "石英砂筒仓",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.limestone>=1",
+		"repeat": true,
+		"cost": {
+			"quartz": 5,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"quartz.max": 80,
+			"space": 5
+		}
+	},
+	{
+		"id": "ryongpingv_cang",
+		"name": "日用品货柜",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.ryongping>=1",
+		"repeat": true,
+		"cost": {
+			"ryongping": 5,
+			"spare_parts": 50,
+			"steel": 30,
+			"money": 4000
+		},
+		"mod": {
+			"ryongping.max": 80,
+			"space": 7
+		}
+	},
+	{
+		"id": "gaojiwu_cang",
+		"name": "高级物柜",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.gaojihuowu>=1",
+		"repeat": true,
+		"cost": {
+			"gaojihuowu": 5,
+			"ryongping": 100,
+			"spare_parts": 50,
+			"steel": 50,
+			"money": 4000
+		},
+		"mod": {
+			"gaojihuowu.max": 80,
+			"space": 10
+		}
+	},
+	{
+		"id": "shichip_cang",
+		"name": "奢侈品柜",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.shichiping>=1",
+		"repeat": true,
+		"cost": {
+			"shichiping": 5,
+			"gaojihuowu": 50,
+			"ryongping": 100,
+			"spare_parts": 50,
+			"steel": 50,
+			"money": 4000
+		},
+		"mod": {
+			"shichiping.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "ncsju_cang",
+		"name": "泥成数据包",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.spart_zuzhuang>=10 && g.songfeng_jizhi>=1",
+		"repeat": true,
+		"cost": {
+			"nicheng_data": 5,
+			"stell": 100,
+			"xianban": 90,
+			"spare_parts": 100,
+			"steel": 50,
+			"money": 4000
+		},
+		"mod": {
+			"nicheng_data.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "glass_cang",
+		"name": "玻璃仓库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.glass>=1",
+		"repeat": true,
+		"cost": {
+			"glass": 2,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"glass.max": 80,
+			"space": 5
+		}
+	},
+	{
+		"id": "water_cang",
+		"name": "水塔",
+		"desc": "",
+		"tags": "",
+		"max":25,
+		"require": "g.water>=1",
+		"repeat": true,
+		"cost": {
+			"water": 2,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"ind_water.max": 80,
+			"space": 10
+		}
+	},
+	{
+		"id": "steam1_cang",
+		"name": "蒸汽箱",
+		"desc": "",
+		"tags": "",
+		"max":25,
+		"require": "g.ind_steam_1>=1",
+		"repeat": true,
+		"cost": {
+			"ind_steam_1": 2,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"ind_steam_1.max": 80,
+			"space": 10
+		}
+	},
+	{
+		"id": "glass_floor_extend",
+		"name": "琉璃步行路",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.glass>=1",
+		"repeat": true,
+		"cost": {
+			"glass": 160,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"limestone": 10,
+			"quartz": 10,
+			"human_power": 1000,
+			"money": 4000
+		},
+		"mod": {
+			"industry_space.max": 3,
+			"space": 10
+		}
+	},
+	{
+		"id": "glass_theard_extend",
+		"name": "琉璃通讯室",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.glass>=1",
+		"repeat": true,
+		"cost": {
+			"glass": 160,
+			"jingdian":10,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 1000,
+			"money": 4000
+		},
+		"mod": {
+			"industry_thread.max": 2,
+			"space": 10
+		}
+	},
+	{
+		"id": "stell_floor_extend",
+		"name": "工钢步行路",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.steel>=1",
+		"repeat": true,
+		"cost": {
+			"steel": 100,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"limestone": 10,
+			"quartz": 10,
+			"human_power": 1000,
+			"money": 4000
+		},
+		"mod": {
+			"industry_space.max": 7,
+			"space": 10
+		}
+	},
+	{
+		"id": "steel_theard_extend",
+		"name": "工钢通讯室",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.steel>=1",
+		"repeat": true,
+		"cost": {
+			"steel": 130,
+			"jingdian":10,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 1000,
+			"money": 4000
+		},
+		"mod": {
+			"industry_thread.max": 4,
+			"space": 10
+		}
+	},
+	{
+		"id": "coal_cang",
+		"name": "煤炭仓库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.coal>=1",
+		"repeat": true,
+		"cost": {
+			"coal": 1,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"coal.max": 80,
+			"space": 5
+		}
+	},
+	{
+		"id": "coke_cang",
+		"name": "焦炭仓库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.coal>=1",
+		"repeat": true,
+		"cost": {
+			"coke": 1,
+			"coil_1": 50,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"coke.max": 70,
+			"space": 5
+		}
+	},
+	{
+		"id": "stell_cang",
+		"name": "工制钢仓库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.stell>=1",
+		"repeat": true,
+		"cost": {
+			"stell": 5,
+			"coil_1": 50,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 1000
+		},
+		"mod": {
+			"stell.max": 65,
+			"space": 5
+		}
+	},
+	{
+		"id": "coil_1_cang",
+		"name": "工制线圈仓库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.coil_1>=1",
+		"repeat": true,
+		"cost": {
+			"coil_1": 5,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 1000
+		},
+		"mod": {
+			"coil_1.max": 80,
+			"space": 5
+		}
+	},
+	{
+		"id": "huangwen_cang",
+		"name": "黄温阻绝仓",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.temper_1>=1",
+		"repeat": true,
+		"cost": {
+			"temper_1": 5,
+			"cold_core": 50,
+			"jls": 100,
+			"gwl": 50,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 1000
+		},
+		"mod": {
+			"temper_1.max": 50,
+			"space": 5
+		}
+	},
+	{
+		"id": "bunit_cang",
+		"name": "空单元货架",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.blank_unit>=1",
+		"repeat": true,
+		"cost": {
+			"blank_unit": 5,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 1000
+		},
+		"mod": {
+			"blank_unit.max": 50,
+			"space": 5
+		}
+	},
+	{
+		"id": "temp_1_unit_cang",
+		"name": "黄温单元货架",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.temp_1_unit>=1",
+		"repeat": true,
+		"cost": {
+			"temp_1_unit": 5,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"yjdl": 50,
+			"human_power": 2500,
+			"money": 1000
+		},
+		"mod": {
+			"temp_1_unit.max": 50,
+			"space": 5
+		}
+	},
+	{
+		"id": "spear_part_cang",
+		"name": "零部件仓库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.spare_parts>=1",
+		"repeat": true,
+		"cost": {
+			"ganwu": 100,
+			"spare_parts": 5,
+			"steel": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"human_power": 2500,
+			"money": 2500
+		},
+		"mod": {
+			"spare_parts.max": 50,
+			"space": 6
+		}
+	},
+	{
+		"id": "soft_dirt_cang",
+		"name": "软泥仓",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"ganwu": 100,
+			"soft_dirt_cang": 5,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"soft_dirt.max": 50,
+			"space": 13
+		}
+	},
+	{
+		"id": "pei_zhi_cang",
+		"name": "培质板",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"ganwu": 100,
+			"pei_zhi": 5,
+			"glass": 75,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"pei_zhi.max": 50,
+			"space": 13
+		}
+	},
+	{
+		"id": "xianban_cang",
+		"name": "纤板架",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"xianban": 5,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"xianban.max": 50,
+			"space": 7
+		}
+	},
+	{
+		"id": "songfeng_cang",
+		"name": "松风库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"songfeng_jizhi": 5,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"songfeng_jizhi.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "wijianbao_cang",
+		"name": "物件包库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"wujianbao": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"wujianbao.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "zhenxishi_cang",
+		"name": "珍洗石库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"zhenxishi": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"zhenxishi.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "gongzhiliang_cang",
+		"name": "工制梁库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"gongzhiliang": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 1000
+		},
+		"mod": {
+			"gongzhiliang.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "xicheng_data_cang",
+		"name": "洗成数据包",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"xicheng_data": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"tian": 100,
+			"money": 3000
+		},
+		"mod": {
+			"xicheng_data.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "guanggan_data_cang",
+		"name": "光感数据包",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"guanggan_data": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"tian": 100,
+			"money": 3000
+		},
+		"mod": {
+			"guanggan_data.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "naicixian_cang",
+		"name": "耐磁线库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"naicixian": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"tian": 100,
+			"money": 3000
+		},
+		"mod": {
+			"naicixian.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "naicixian_cang",
+		"name": "感光透镜库",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.spart_zuzhuang>=10",
+		"repeat": true,
+		"cost": {
+			"ganguangtj": 5,
+			"spare_parts": 70,
+			"ganwu": 100,
+			"stell": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"tian": 100,
+			"money": 3000
+		},
+		"mod": {
+			"ganguangtj.max": 50,
+			"space": 10
+		}
+	},
+	{
+		"id": "xianban_jinghua",
+		"name": "纤板净化设施",
+		"desc": "提升净化机上限",
+		"tags": "纤板设施1",
+		"max":10,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"soft_dirt": 100,
+			"xianban": 60,
+			"pei_zhi": 50,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 2500
+		},
+		"mod": {
+			"factory_jinghuaji.max": 2,
+			"space": 10
+		}
+	},
+	{
+		"id": "xianban_zhengqi",
+		"name": "纤板蒸汽设施",
+		"desc": "提升蒸汽机上限",
+		"tags": "纤板设施1",
+		"max":10,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"soft_dirt": 100,
+			"xianban": 60,
+			"pei_zhi": 50,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 2500
+		},
+		"mod": {
+			"factory_steammech.max": 2,
+			"space": 10
+		}
+	},
+	{
+		"id": "xianban_jishui",
+		"name": "纤板汲水设施",
+		"desc": "提升水泵上限",
+		"tags": "纤板设施1",
+		"max":10,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"soft_dirt": 100,
+			"xianban": 60,
+			"pei_zhi": 50,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 2500
+		},
+		"mod": {
+			"factory_pumb.max": 2,
+			"space": 10
+		}
+	},
+	{
+		"id": "xianban_fasan",
+		"name": "纤板发散设施",
+		"desc": "提升工业用地上限",
+		"tags": "纤板设施1",
+		"max":10,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"soft_dirt": 100,
+			"xianban": 150,
+			"pei_zhi": 50,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 2500
+		},
+		"mod": {
+			"industry_space.max": 5,
+			"space": 10
+		}
+	},
+	{
+		"id": "xianban_kuozhan",
+		"name": "纤板扩展设施",
+		"desc": "提升空间上限",
+		"tags": "纤板设施1",
+		"max":10,
+		"require": "g.smshengchan>=1",
+		"repeat": true,
+		"cost": {
+			"soft_dirt": 100,
+			"xianban": 150,
+			"pei_zhi": 50,
+			"ganwu": 100,
+			"glass": 120,
+			"coil_1": 100,
+			"jls": 100,
+			"heli":40,
+			"tian": 100,
+			"money": 2500
+		},
+		"mod": {
+			"space": 50,
+			"extra_space": 100
+		}
+	},
+	{
+		"id": "xianban_sheshi_e",
+		"name": "纤板重构",
+		"desc": "提升所有纤板设施1级的上限",
+		"tags": "",
+		"require": "g.spare_parts>=1",
+		"max": 10,
+		"repeat": true,
+		"cost": {
+			"spare_parts": 100,
+			"soft_dirt": 100,
+			"xianban": 150,
+			"pei_zhi": 100,
+			"zero_crystal": 50,
+			"exe_paper": 40,
+			"snp_data": 50,
+			"adv_snp_data": 3,
+			"money": 1500
+		},
+		"mod": {
+			"纤板设施1.max": 1,
+			"human_power.max": 100,
+			"space": 15
+		}
+	},
+	{
 		"id": "blood_orb",
 		"name": "血珠",
 		"desc": "存放血响",
@@ -6202,6 +7301,56 @@
 			"human_power.max": -400,
 			"citie.rate": 0.2,
 			"cu_iron.rate": 0.7,
+			"obs_hill": 0.2,
+			"hill_res": 0.2,
+			"space": 15
+		}
+	},
+	{
+		"id": "tongkcjc",
+		"name": "铜矿采掘场",
+		"desc": "获取铜板",
+		"tags": "",
+		"max":20,
+		"require": "g.ind_caijuechang>=1",
+		"need": "g.obs_hill>=1",
+		"repeat": true,
+		"cost": {
+			"money": 2000,
+			"zdht": 20,
+			"factory_caijue": 40,
+			"iron_copper": 50,
+			"swzhi": 15,
+			"yjdl": 20
+		},
+		"mod": {
+			"human_power.max": -500,
+			"cu_copper.rate": 2,
+			"obs_hill": 0.2,
+			"hill_res": 0.2,
+			"space": 15
+		}
+	},
+	{
+		"id": "tiekkcjc",
+		"name": "铁矿采掘场",
+		"desc": "获取铁板",
+		"tags": "",
+		"max":20,
+		"require": "g.ind_caijuechang>=1",
+		"need": "g.obs_hill>=1",
+		"repeat": true,
+		"cost": {
+			"money": 2000,
+			"zdht": 20,
+			"factory_caijue": 40,
+			"iron_copper": 50,
+			"swzhi": 15,
+			"yjdl": 20
+		},
+		"mod": {
+			"human_power.max": -500,
+			"cu_iron.rate": 2,
 			"obs_hill": 0.2,
 			"hill_res": 0.2,
 			"space": 15

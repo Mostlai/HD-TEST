@@ -1,11 +1,322 @@
 [
 	{
-		"id": "huagongchang",
-		"name": "MKI化工厂",
+		"id": "factory_zuzhuangji",
+		"name": "组装机",
+		"tags": "一级工厂",
 		"max": 10,
-		"require": "g.hp>=1",
+		"require": "g.spart_zuzhuang>=10",
+		"cost":{
+			"ganwu": 2000,
+			"steel": 300,
+			"glass": 200,
+			"coil_1": 300,
+			"gaojihuowu": 100,
+			"money": 5000,
+			"ljdy": 10
+		},
 		"mod":{
-			"huagong_thread.max": 1
+			"industry_space": 0.4,
+			"industry_elect": 0.4,
+			"assemble_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_fenxishi",
+		"name": "分析室",
+		"tags": "一级工厂",
+		"max": 20,
+		"require": "g.xl_lj_konwledege_1>=1",
+		"cost":{
+			"ganwu": 2000,
+			"steel": 300,
+			"glass": 200,
+			"coil_1": 300,
+			"blank_unit": 100,
+			"money": 5000,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.4,
+			"sysn_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_steammech",
+		"name": "蒸汽机",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.coal>=1",
+		"cost":{
+			"tian": 100,
+			"money": 2000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"coil_1": 100,
+			"ljdy": 10
+		},
+		"mod":{
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"steam_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_jinghuaji",
+		"name": "净化机",
+		"tags": "一级工厂",
+		"max": 15,
+		"require": "g.smshengchan>=1",
+		"cost":{
+			"ganwu": 1000,
+			"tian": 100,
+			"money": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 10
+		},
+		"mod":{
+			"industry_space": 0.1,
+			"industry_elect": 0.3,
+			"purify_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_caijue",
+		"name": "采掘场",
+		"tags": "一级工厂",
+		"max": 15,
+		"require": "g.ind_caijuechang>=1",
+		"cost":{
+			"tian": 100,
+			"money": 2000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.3,
+			"dig_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_washa",
+		"name": "挖沙场",
+		"tags": "一级工厂",
+		"max": 15,
+		"require": "g.ind_caijuechang>=1",
+		"cost":{
+			"tian": 100,
+			"money": 2000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jingdian": 10,
+			"cu_copper": 90,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.3,
+			"sand_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_pumb",
+		"name": "水泵",
+		"tags": "一级工厂",
+		"max": 15,
+		"require": "g.coal>=1",
+		"cost":{
+			"tian": 100,
+			"money": 2000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"coil_1": 100
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.3,
+			"pump_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_burn",
+		"name": "燃烧室",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.ind_reliwendu>=1",
+		"cost":{
+			"coil_1": 40,
+			"tian": 100,
+			"yxls": 25,
+			"money": 1000,
+			"human_power": 1000,
+			"yjdl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.5,
+			"burn_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_burn_1",
+		"name": "工钢燃烧室",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.steel>=1",
+		"cost":{
+			"steel": 50,
+			"coil_1": 140,
+			"tian": 100,
+			"yxls": 25,
+			"money": 1000,
+			"human_power": 1000,
+			"yjdl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.6,
+			"industry_elect": 0.8,
+			"burn_thread.max": 1.5
+		}
+	},
+	{
+		"id": "factory_daore",
+		"name": "导热室",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.ind_wendukongz>=10",
+		"cost":{
+			"coil_1": 100,
+			"tian": 100,
+			"yxls": 25,
+			"glass": 80,
+			"money": 1000,
+			"human_power": 1000,
+			"yjdl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 1.2,
+			"daore_thread.max": 1
+		}
+	},
+	{
+		"id": "hezixzlt",
+		"name": "合子性蒸馏塔",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.ind_jiaotangy>=7",
+		"cost":{
+			"coil_1": 120,
+			"tian": 100,
+			"coal": 80,
+			"glass": 80,
+			"blank_unit": 80,
+			"money": 4000,
+			"human_power": 1000,
+			"yjdl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 2,
+			"industry_elect": 1.2,
+			"distillation_thread.max": 1
+		}
+	},
+	{
+		"id": "hunlixgl",
+		"name": "混理性高炉",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.ind_gongzhigang>=7",
+		"cost":{
+			"coil_1": 60,
+			"tian": 100,
+			"temp_1_unit": 80,
+			"glass": 80,
+			"blank_unit": 80,
+			"money": 4000,
+			"human_power": 1000,
+			"yjdl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 2,
+			"industry_elect": 2,
+			"furnace_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_yaxianji",
+		"name": "轧线机",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.shengchanlun>=1",
+		"cost":{
+			"tian": 100,
+			"money": 2000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.4,
+			"rline_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_xiaoshoudian",
+		"name": "销售点",
+		"tags": "一级工厂",
+		"max": 20,
+		"require": "g.spart_zuzhuang>=1",
+		"cost":{
+			"spare_parts": 100,
+			"steel": 100,
+			"money": 3000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 0.5,
+			"industry_elect": 0.4,
+			"trade_thread.max": 1
+		}
+	},
+	{
+		"id": "factory_space_extend1",
+		"name": "扩展单元1",
+		"max": 20,
+		"require": "g.steel>=1",
+		"cost":{
+			"steel": 300,
+			"glass": 50,
+			"coil_1": 300,
+			"money": 5000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"extra_space": 150
 		}
 	}
 ]
