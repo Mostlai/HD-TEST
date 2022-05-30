@@ -227,6 +227,18 @@
 		"locked": false
 	},
 	{
+		"id": "industry_elect_extra",
+		"name": "额外工业电力",
+		"desc": "工业电力不同于普通电力,是专供于工业设备的稳定电力",
+		"val": 0,
+		"stat": true,
+		"unit": false,
+		"locked": false,
+		"mod": {
+			"industry_elect.max": 1
+		}
+	},
+	{
 		"id": "industry_thread",
 		"name": "工业线程",
 		"desc": "工业线程决定了你能同时进行多少个生产模式",

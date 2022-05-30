@@ -362,7 +362,7 @@
 		"mod":{
 			"industry_space": 1,
 			"industry_elect": 0.1,
-			"industry_elect.max": 1.8
+			"industry_elect_extra": 1.8
 		}
 	}
 ]
