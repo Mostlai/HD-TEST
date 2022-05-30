@@ -149,7 +149,7 @@
 		"id": "factory_burn",
 		"name": "燃烧室",
 		"tags": "一级工厂",
-		"max": 10,
+		"max": 20,
 		"require": "g.ind_reliwendu>=1",
 		"cost":{
 			"coil_1": 40,
