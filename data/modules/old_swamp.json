@@ -24,7 +24,7 @@
                 }
 			},
             {
-				"id": "evt_oldswamp_3",
+				"id": "evt_oldswamp_5",
 				"require": "g.heiyan>=1 && g.hp<=3 && g.evt_oldswamp_3>=1",
 				"name": "焰与血",
 				"desc": "黑焰在衰亡",
@@ -33,8 +33,8 @@
                 }
 			},
             {
-				"id": "evt_oldswamp_4",
-				"require": "g.heiyan>=1 && g.ganwu<=100 && g.evt_oldswamp_3>=1",
+				"id": "evt_oldswamp_6",
+				"require": "g.heiyan>=1 && g.ganwu<=1000 && g.evt_oldswamp_3>=1",
 				"name": "焰与愚",
 				"desc": "黑焰认定人不智",
                 "result": {

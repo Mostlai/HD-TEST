@@ -151,6 +151,78 @@
 		}
 	},
 	{
+		"id": "yindaozhe",
+		"name": "引导者",
+		"desc": "引导者",
+		"actname": "统帅",
+		"warn": true,
+		"actdesc": "统帅",
+		"require": "g.human_power>=1500 && g.zhangguan>=1",
+		"cost": {
+			"human_power": 1500,
+			"money": 2000,
+			"ganwu": 700,
+			"exe_paper": 20,
+			"alculation":700,
+			"star_map": 70,
+			"super_mind": 12,
+			"snp_data": 30
+		},
+		"result": {
+			"human_power.max": 600
+		}
+	},
+	{
+		"id": "taguang",
+		"name": "塔光",
+		"desc": "引领如炬",
+		"actname": "统帅",
+		"warn": true,
+		"disable": "caikuang",
+		"actdesc": "统帅",
+		"require": "g.human_power>=5000 && g.yindaozhe>=1",
+		"cost": {
+			"human_power": 5000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":2000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"human_power.max": 2000
+		}
+	},
+	{
+		"id": "caikuang",
+		"name": "裁光",
+		"desc": "判裁如炬",
+		"actname": "统帅",
+		"warn": true,
+		"disable": "taguang",
+		"actdesc": "统帅",
+		"require": "g.human_power>=5000 && g.yindaozhe>=1",
+		"cost": {
+			"human_power": 5000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":2000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"max_rs_mod": 5,
+			"command_code.max": 15,
+			"human_power.max": 1000
+		}
+	},
+	{
 		"id": "qsz",
 		"name": "求索者",
 		"desc": "追求最庞大的计算能力",
@@ -173,6 +245,78 @@
 		},
 		"result": {
 			"alculation.max": 30
+		}
+	},
+	{
+		"id": "jiaoshou",
+		"name": "教授",
+		"desc": "追求最庞大的计算能力",
+		"actname": "教授",
+		"warn": true,
+		"actdesc": "教授",
+		"require": "g.alculation>=2000 && g.qsz>=1",
+		"cost": {
+			"human_power": 1000,
+			"money": 2000,
+			"ganwu": 700,
+			"exe_paper": 20,
+			"alculation":2000,
+			"star_map": 70,
+			"super_mind": 12,
+			"snp_data": 30
+		},
+		"result": {
+			"alculation.max": 400
+		}
+	},
+	{
+		"id": "manhaiqiushi",
+		"name": "漫海求识",
+		"desc": "漫海求识",
+		"actname": "漫海求识",
+		"warn": true,
+		"disable": "renwenxuetu",
+		"actdesc": "漫海求识",
+		"require": "g.human_power>=5000 && g.jiaoshou>=1",
+		"cost": {
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":5000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"command_code.max": 10,
+			"alculation.max": 2500
+		}
+	},
+	{
+		"id": "renwenxuetu",
+		"name": "人文学徒",
+		"desc": "人文学徒",
+		"actname": "人文学徒",
+		"warn": true,
+		"disable": "manhaiqiushi",
+		"actdesc": "人文学徒",
+		"require": "g.human_power>=5000 && g.jiaoshou>=1",
+		"cost": {
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 1000,
+			"exe_paper": 20,
+			"alculation":5000,
+			"shenglingshi": 20,
+			"lg": 9,
+			"star_map": 70,
+			"super_mind": 12
+		},
+		"result": {
+			"human_power.max": 1000,
+			"alculation.max": 1000
 		}
 	},
 	{

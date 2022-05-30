@@ -320,5 +320,49 @@
 			"industry_elect": 0.1,
 			"extra_space": 150
 		}
+	},
+	{
+		"id": "factory_hr_extend1",
+		"name": "人力单元1",
+		"max": 20,
+		"require": "g.steel>=1",
+		"cost":{
+			"steel": 300,
+			"glass": 50,
+			"coil_1": 300,
+			"money": 5000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 1,
+			"industry_elect": 0.1,
+			"human_power.max": 200
+		}
+	},
+	{
+		"id": "factory_elect_extend1",
+		"name": "电力单元1",
+		"max": 20,
+		"require": "g.steel>=1",
+		"cost":{
+			"steel": 300,
+			"glass": 50,
+			"coil_1": 300,
+			"money": 5000,
+			"human_power": 2000,
+			"yjdl": 80,
+			"jls": 100,
+			"gwl": 80,
+			"ljdy": 20
+		},
+		"mod":{
+			"industry_space": 1,
+			"industry_elect": 0.1,
+			"industry_elect.max": 1.8
+		}
 	}
 ]

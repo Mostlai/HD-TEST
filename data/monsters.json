@@ -814,7 +814,7 @@
 					"duration": 10,
 					"dmg": "0~1",
 					"mod": {
-						"ganwu.rate": -50
+						"ganwu.rate": -100
 					}
 				}
 			},
@@ -1007,12 +1007,12 @@
 					"desc": "你开始丢失感悟"
 				},
 				"dot": {
-					"id": "jzswbf",
+					"id": "jzswbf_flag",
 					"name":"静止思维",
 					"duration": 10,
 					"dmg": "0~1",
 					"mod": {
-						"ganwu.rate": -50
+						"ganwu.rate": -500
 					}
 				}
 			},

@@ -183,7 +183,7 @@
 	{
 		"id": "steam_1_coke",
 		"name": "蒸汽焦炭",
-		"desc": "消耗0.5焦炭和1.2水并生产1.2低温蒸汽",
+		"desc": "消耗0.5焦炭和1.2水并生产1.5低温蒸汽",
 		"thread_use": "burn_thread",
 		"tags": "低温蒸汽",
 		"require": "g.coke>=1",
@@ -195,8 +195,8 @@
 		"mod":{
 			"ind_water.rate": -1.2,
 			"coke.rate": -0.5,
-			"steam_1fu_coke.rate": 1,
-			"steam_1fu_coke.max": 1,
+			"steam_1fu_coke.rate": 1.5,
+			"steam_1fu_coke.max": 1.5,
 			"human_power.max": -50,
 			"industry_space": 0.4,
 			"industry_elect": 0.1,
@@ -668,8 +668,8 @@
 		},
 		"mod":{
 			"gaojihuowu.rate": -2,
-			"gaojihw_fu_1.rate": 15,
-			"gaojihw_fu_1.max": 15,
+			"gaojihw_fu_2.rate": 27,
+			"gaojihw_fu_2.max": 27,
 			"industry_space": 0.7,
 			"industry_elect": 0.2,
 			"industry_thread": 0.1
@@ -709,8 +709,8 @@
 		},
 		"mod":{
 			"shichiping.rate": -0.5,
-			"shichiping_fu_2.rate": 15,
-			"shichiping_fu_2.max": 15,
+			"shichiping_fu_2.rate": 20,
+			"shichiping_fu_2.max": 20,
 			"industry_space": 0.5,
 			"industry_elect": 0.35,
 			"industry_thread": 0.2

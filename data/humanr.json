@@ -396,5 +396,49 @@
 			"human_power.rate": -0.7,
 			"cold_core.rate": 0.5
 		}
+	},
+	{
+		"id": "hr_xuetuggong",
+		"name": "学徒工坊",
+		"desc": "消耗指令获取人力",
+		"require": "g.alculation>=5000",
+		"max": 20,
+		"need": "g.human_power>=2000",
+		"startcost":{
+			"alculation": 400,
+			"books": 50,
+			"snp_data": 50,
+			"human_power": 2000,
+			"money": 2000
+		},
+		"mod":{
+			"command_code":7,
+			"space.max": -25,
+			"human_power.max": 500,
+			"alculation.max": -200,
+			"alculation.rate": -2.5
+		}
+	},
+	{
+		"id": "hr_suanzheggong",
+		"name": "算者工坊",
+		"desc": "消耗指令获取计算力",
+		"require": "g.human_power>=5000",
+		"max": 20,
+		"need": "g.human_power>=2000",
+		"startcost":{
+			"alculation": 400,
+			"books": 50,
+			"snp_data": 50,
+			"human_power": 2000,
+			"money": 2000
+		},
+		"mod":{
+			"command_code":7,
+			"space.max": -25,
+			"human_power.max": -100,
+			"alculation.max": 290,
+			"alculation.rate": -2.5
+		}
 	}
 ]
