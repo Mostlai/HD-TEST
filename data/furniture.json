@@ -5954,7 +5954,7 @@
 		"repeat": true,
 		"cost": {
 			"nicheng_data": 5,
-			"stell": 100,
+			"steel": 100,
 			"xianban": 90,
 			"spare_parts": 100,
 			"steel": 50,
@@ -6052,7 +6052,7 @@
 		},
 		"mod": {
 			"industry_space.max": 3,
-			"space": 10
+			"space": 7
 		}
 	},
 	{
@@ -6074,8 +6074,8 @@
 			"money": 4000
 		},
 		"mod": {
-			"industry_thread.max": 2,
-			"space": 10
+			"industry_thread.max": 4,
+			"space": 20
 		}
 	},
 	{
@@ -6121,8 +6121,8 @@
 			"money": 4000
 		},
 		"mod": {
-			"industry_thread.max": 4,
-			"space": 10
+			"industry_thread.max": 7,
+			"space": 18
 		}
 	},
 	{
@@ -6408,7 +6408,7 @@
 			"wujianbao": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"jls": 100,
@@ -6433,7 +6433,7 @@
 			"zhenxishi": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"jls": 100,
@@ -6458,7 +6458,7 @@
 			"gongzhiliang": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"jls": 100,
@@ -6483,7 +6483,7 @@
 			"xicheng_data": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"tian": 100,
@@ -6506,7 +6506,7 @@
 			"guanggan_data": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"tian": 100,
@@ -6529,7 +6529,7 @@
 			"naicixian": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"tian": 100,
@@ -6552,7 +6552,7 @@
 			"ganguangtj": 5,
 			"spare_parts": 70,
 			"ganwu": 100,
-			"stell": 100,
+			"steel": 100,
 			"glass": 120,
 			"coil_1": 100,
 			"tian": 100,
