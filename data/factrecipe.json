@@ -583,8 +583,8 @@
 		"mod":{
 			"soft_dirt.rate": -1,
 			"pei_zhi.rate": -0.5,
-			"songfeng_fu_1.rate": 0.5,
-			"songfeng_fu_1.max": 0.5,
+			"songfeng_fu_1.rate": 1.5,
+			"songfeng_fu_1.max": 1.5,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 0.3,

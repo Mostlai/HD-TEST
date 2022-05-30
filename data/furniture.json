@@ -7343,7 +7343,7 @@
 		"cost": {
 			"money": 2000,
 			"zdht": 20,
-			"factory_caijue": 40,
+			"factory_caijue": 10,
 			"iron_copper": 50,
 			"swzhi": 15,
 			"yjdl": 20
@@ -7368,7 +7368,7 @@
 		"cost": {
 			"money": 2000,
 			"zdht": 20,
-			"factory_caijue": 40,
+			"factory_caijue": 10,
 			"iron_copper": 50,
 			"swzhi": 15,
 			"yjdl": 20
