@@ -18,7 +18,7 @@
                 "id": "evt_oldswamp_2_1",
                 "require": "g.oldswamp_data>=10",
                 "name": "远沼材料",
-                "desc": "",
+                "desc": "远沼材料",
                 "result": {
                     "xueduhua": true,
                     "jinshimu": true
