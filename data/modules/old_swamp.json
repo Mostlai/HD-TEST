@@ -15,6 +15,16 @@
 				"desc": "你收集了10份远沼堪舆数据，这足以帮助你进行下一步探查了"
 			},
             {
+                "id": "evt_oldswamp_2_1",
+                "require": "g.oldswamp_data>=10",
+                "name": "远沼材料",
+                "desc": "",
+                "result": {
+                    "xueduhua": true,
+                    "jinshimu": true
+                }
+            },
+            {
 				"id": "evt_oldswamp_3",
 				"require": "g.heiyan>=1 && g.jinshimu>=1",
 				"name": "焰与泽",
@@ -25,7 +35,7 @@
 			},
             {
 				"id": "evt_oldswamp_5",
-				"require": "g.heiyan>=1 && g.hp<=3 && g.evt_oldswamp_3>=1",
+				"require": "g.heiyan>=1 && g.hp<=20 && g.jinshimu>=1",
 				"name": "焰与血",
 				"desc": "黑焰在衰亡",
                 "result": {
@@ -34,7 +44,7 @@
 			},
             {
 				"id": "evt_oldswamp_6",
-				"require": "g.heiyan>=1 && g.ganwu<=1000 && g.evt_oldswamp_3>=1",
+				"require": "g.heiyan>=1 && g.ganwu<=1000 && g.jinshimu>=1",
 				"name": "焰与愚",
 				"desc": "黑焰认定人不智",
                 "result": {
@@ -160,7 +170,7 @@
 				"id": "oldswamp_data",
 				"name": "远沼堪舆数据",
 				"desc": "",
-				"require": "g.evt_oldswamp_1>=1",
+				"locked": false,
 				"max": 10,
                 "hide": true,
 				"group": "修行"
@@ -174,8 +184,7 @@
                 "tags": "洪水1级,药材1级",
                 "equneed": "g.artifice_1>=1",
                 "color": "#00BFFF",
-                "hide": false,
-                "require": "g.evt_oldswamp_1>=1",
+                "require": "evt_oldswamp_2",
                 "val":0,
                 "max": 0,
                 "cost":{
@@ -201,8 +210,7 @@
                 "tags": "巨木1级,药材1级",
                 "equneed": "g.artifice_1>=1",
                 "color": "#00BFFF",
-                "hide": false,
-                "require": "g.evt_oldswamp_2>=1",
+                "require": "evt_oldswamp_2",
                 "val":0,
                 "max": 0,
                 "cost":{
@@ -467,7 +475,7 @@
                 "name": "阵厦",
                 "desc": "",
 				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
-                "cost": {
+                "buy": {
                     "lingrang": 20,
                     "jls": 150,
                     "element_blood": 10,
@@ -492,7 +500,7 @@
                 "name": "序阵厦",
                 "desc": "",
 				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
-                "cost": {
+                "buy": {
                     "lingrang": 20,
                     "jls": 150,
                     "element_blood": 10,
