@@ -524,6 +524,7 @@
 		"name": "雷诀[筑基]",
 		"school": "真水",
 		"locked":true,
+		"cd": 1,
 		"level": 5,
 		"buy": {
 			"sp": 2,

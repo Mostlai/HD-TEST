@@ -80,6 +80,7 @@
 	{
 		"id": "phy_sysn_1",
 		"name": "光感数据分析",
+		"sleep": 0,
 		"desc": "消耗1光感数据并生产3物理域研究成果",
 		"thread_use": "sysn_thread",
 		"tags": "光感数据",
@@ -183,7 +184,7 @@
 	{
 		"id": "steam_1_coke",
 		"name": "蒸汽焦炭",
-		"desc": "消耗0.5焦炭和1.2水并生产1.5低温蒸汽",
+		"desc": "消耗0.5焦炭和1.2水并生产1.9低温蒸汽",
 		"thread_use": "burn_thread",
 		"tags": "低温蒸汽",
 		"require": "g.coke>=1",
@@ -195,12 +196,12 @@
 		"mod":{
 			"ind_water.rate": -1.2,
 			"coke.rate": -0.5,
-			"steam_1fu_coke.rate": 1.5,
-			"steam_1fu_coke.max": 1.5,
+			"steam_1fu_coke.rate": 1.9,
+			"steam_1fu_coke.max": 1.9,
 			"human_power.max": -50,
 			"industry_space": 0.4,
 			"industry_elect": 0.1,
-			"industry_thread": 0.2
+			"industry_thread": 0.3
 		}
 	},
 	{
@@ -301,7 +302,7 @@
 	{
 		"id": "temp_rp_2",
 		"name": "燃烧焦炭",
-		"desc": "消耗1焦炭并产出1.7黄温",
+		"desc": "消耗1焦炭并产出1.9黄温",
 		"thread_use": "burn_thread",
 		"tags": "黄温",
 		"require": "g.coke>=1",
@@ -311,8 +312,8 @@
 		},
 		"mod":{
 			"coke.rate": -1,
-			"temp_fu_2.rate": 1.7,
-			"temp_fu_2.max": 1.7,
+			"temp_fu_2.rate": 1.9,
+			"temp_fu_2.max": 1.9,
 			"human_power.max": -50,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -687,8 +688,8 @@
 			"ryongping": 50
 		},
 		"mod":{
-			"gaojihuowu.rate": -2,
-			"ryongping.rate": -1,
+			"gaojihuowu.rate": -1,
+			"ryongping.rate": -2,
 			"shichiping_fu_1.rate": 2,
 			"shichiping_fu_1.max": 2,
 			"human_power.max": -100,
@@ -889,7 +890,7 @@
 	{
 		"id": "naicixian_rp_2",
 		"name": "耐磁产电",
-		"desc": "消耗2耐磁线和1低温蒸汽并生产4工业电力",
+		"desc": "消耗2耐磁线和1低温蒸汽并生产5.8工业电力",
 		"thread_use": "steam_thread",
 		"tags": "低温蒸汽",
 		"require": "g.naicixian>=10",
@@ -900,8 +901,8 @@
 		"mod":{
 			"naicixian.rate": -2,
 			"ind_steam_1.rate": -1,
-			"elect_fu_naicixian.rate": 4,
-			"elect_fu_naicixian.max": 4,
+			"elect_fu_naicixian.rate": 5.8,
+			"elect_fu_naicixian.max": 5.8,
 			"industry_space": 0.4,
 			"industry_elect": 0.1,
 			"industry_thread": 0.1

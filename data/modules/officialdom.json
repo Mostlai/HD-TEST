@@ -55,6 +55,7 @@
 				"desc": "显然,你的影响力已经不足以支持你继续从政了",
 				"disable":[
 					"off_work_1",
+					"off_work_21",
 					"off_tanwu_1",
 					"off_shanggong_1",
 					"off_lqfl",
