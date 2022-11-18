@@ -5729,15 +5729,14 @@
 		"require": "g.ljdy>=1",
 		"repeat": true,
 		"cost": {
-			"jingdian": 20,
 			"jls": 100,
 			"gwl": 50,
 			"yjdl": 80,
 			"human_power": 2500,
-			"money": 2500
+			"money": 1000
 		},
 		"mod": {
-			"frs": 80,
+			"frs": 90,
 			"extra_space": 30,
 			"space": 20
 		}
