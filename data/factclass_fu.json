@@ -171,7 +171,7 @@
 	{
 		"id": "sfotdirt_fu_2",
 		"name": "生物软泥(源:纤板,培质)",
-		"stop_follow": ["xianban","swzhi"],
+		"stop_follow": ["xianban","pei_zhi"],
 		"desc": "",
 		"val": 0,
 		"max": 0,
