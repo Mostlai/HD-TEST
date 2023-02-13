@@ -120,6 +120,19 @@
 		}
 	},
 	{
+		"id": "gubenxianling",
+		"name": "古本险灵",
+		"desc": "在古本纪发现的有助于修行的资源",
+		"group": "修行",
+		"tags": "",
+		"require": "g.weijibence>=1",
+		"max": 2,
+		"mod":{
+			"ganwu.max": 10,
+			"ganwu.rate": 1
+		}
+	},
+	{
 		"id": "books",
 		"name": "书籍",
 		"desc": "知识的载体",
@@ -2236,8 +2249,38 @@
 		"max":1
 	},
 	{
+		"id": "xl_lz_baoyangzhenjue",
+		"name": "抱阳真觉",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_fy_fuyinshizhu",
+		"name": "负阴蚀烛",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
 		"id": "xl_lj_konwledege_1",
 		"name": "新型知识体系",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
+		"id": "xl_crzj_zhujierchong",
+		"name": "筑基二重",
 		"desc": "",
 		"hide": true,
 		"group": "修行",

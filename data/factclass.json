@@ -2,8 +2,9 @@
 	{
 		"id": "spare_parts",
 		"name": "零部件",
+		"tags": "固体",
 		"desc": "适用于各种器件的精密零部件",
-		"img": "./images/crude_oil.png",
+		"img": "./images/spare_part.png",
 		"val": 0,
 		"max": 5,
 		"follow": "零部件",
@@ -15,8 +16,9 @@
 	{
 		"id": "nicheng_data",
 		"name": "泥成数据",
+		"tags": "固体",
 		"desc": "基于松风基质的研究数据",
-		"img": "./images/crude_oil.png",
+		"img": "./images/data.png",
 		"val": 0,
 		"max": 5,
 		"follow": "泥成数据",
@@ -28,8 +30,9 @@
 	{
 		"id": "xicheng_data",
 		"name": "洗成数据",
+		"tags": "固体",
 		"desc": "基于工制梁的工程冲洗数据",
-		"img": "./images/crude_oil.png",
+		"img": "./images/data.png",
 		"val": 0,
 		"max": 5,
 		"follow": "洗成数据",
@@ -41,8 +44,9 @@
 	{
 		"id": "guanggan_data",
 		"name": "光感数据",
+		"tags": "固体",
 		"desc": "基于感光透镜的光磁数据",
-		"img": "./images/crude_oil.png",
+		"img": "./images/data.png",
 		"val": 0,
 		"max": 5,
 		"follow": "光感数据",
@@ -54,8 +58,9 @@
 	{
 		"id": "blank_unit",
 		"name": "空单元",
+		"tags": "固体",
 		"desc": "标准化的工业容器",
-		"img": "./images/crude_oil.png",
+		"img": "./images/blank_unit.png",
 		"val": 0,
 		"max": 5,
 		"follow": "空单元",
@@ -67,8 +72,9 @@
 	{
 		"id": "temp_1_unit",
 		"name": "黄温单元",
+		"tags": "固体",
 		"desc": "存储黄温的单元",
-		"img": "./images/crude_oil.png",
+		"img": "./images/blank_unit.png",
 		"val": 0,
 		"max": 5,
 		"follow": "黄温单元",
@@ -80,8 +86,9 @@
 	{
 		"id": "soft_dirt",
 		"name": "生物软泥",
+		"tags": "液体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/soft_dirt.png",
 		"val": 0,
 		"max": 5,
 		"follow": "生物软泥",
@@ -93,8 +100,9 @@
 	{
 		"id": "pei_zhi",
 		"name": "培质",
+		"tags": "液体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/pei_zhi.png",
 		"val": 0,
 		"max": 5,
 		"follow": "培质",
@@ -106,8 +114,9 @@
 	{
 		"id": "xianban",
 		"name": "纤板",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/xianban.png",
 		"val": 0,
 		"max": 5,
 		"follow": "纤板",
@@ -119,8 +128,9 @@
 	{
 		"id": "songfeng_jizhi",
 		"name": "松风基质",
+		"tags": "液体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/songfeng_jizhi.png",
 		"val": 0,
 		"max": 5,
 		"follow": "松风基质",
@@ -132,8 +142,9 @@
 	{
 		"id": "wujianbao",
 		"name": "物件包",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/wujianbao.png",
 		"val": 0,
 		"max": 5,
 		"follow": "物件包",
@@ -145,8 +156,9 @@
 	{
 		"id": "zhenxishi",
 		"name": "珍洗石",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/zhenxishi.png",
 		"val": 0,
 		"max": 5,
 		"follow": "珍洗石",
@@ -158,8 +170,9 @@
 	{
 		"id": "gongzhiliang",
 		"name": "工制梁",
+		"tags": "固体",
 		"desc": "工程学标准用梁",
-		"img": "./images/crude_oil.png",
+		"img": "./images/gongzhiliang.png",
 		"val": 0,
 		"max": 5,
 		"follow": "工制梁",
@@ -171,8 +184,9 @@
 	{
 		"id": "naicixian",
 		"name": "耐磁线",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/naicixian.png",
 		"val": 0,
 		"max": 5,
 		"follow": "耐磁线",
@@ -184,8 +198,9 @@
 	{
 		"id": "ganguangtj",
 		"name": "感光透镜",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/glass.png",
 		"val": 0,
 		"max": 5,
 		"follow": "感光透镜",
@@ -197,8 +212,9 @@
 	{
 		"id": "ind_water",
 		"name": "水",
+		"tags": "液体",
 		"desc": "生命之源",
-		"img": "./images/crude_oil.png",
+		"img": "./images/ind_water.png",
 		"val": 0,
 		"max": 5,
 		"follow": "水",
@@ -210,8 +226,9 @@
 	{
 		"id": "ind_steam_1",
 		"name": "低温蒸汽",
+		"tags": "气体",
 		"desc": "约200°C的蒸汽单元",
-		"img": "./images/crude_oil.png",
+		"img": "./images/steam.png",
 		"val": 0,
 		"max": 5,
 		"follow": "低温蒸汽",
@@ -223,8 +240,9 @@
 	{
 		"id": "steel",
 		"name": "工制钢",
+		"tags": "固体",
 		"desc": "工制钢是适合合理修炼环境下的钢材",
-		"img": "./images/crude_oil.png",
+		"img": "./images/wujianbao.png",
 		"val": 0,
 		"max": 5,
 		"follow": "工制钢",
@@ -236,8 +254,9 @@
 	{
 		"id": "coil_1",
 		"name": "工制线圈",
+		"tags": "固体",
 		"desc": "工制线圈是适合合理修炼环境下的线材",
-		"img": "./images/crude_oil.png",
+		"img": "./images/naicixian.png",
 		"val": 0,
 		"max": 5,
 		"follow": "工制线圈",
@@ -249,8 +268,9 @@
 	{
 		"id": "glass",
 		"name": "玻璃",
+		"tags": "固体",
 		"desc": "玻璃是一种基础的工业资源",
-		"img": "./images/crude_oil.png",
+		"img": "./images/glass.png",
 		"val": 0,
 		"max": 2,
 		"follow": "玻璃",
@@ -262,8 +282,9 @@
 	{
 		"id": "coal",
 		"name": "煤炭",
+		"tags": "固体",
 		"desc": "煤炭是一种黑色固体燃料",
-		"img": "./images/crude_oil.png",
+		"img": "./images/coal.png",
 		"val": 0,
 		"max": 5,
 		"follow": "煤炭",
@@ -275,8 +296,9 @@
 	{
 		"id": "coke",
 		"name": "焦炭",
+		"tags": "固体",
 		"desc": "焦炭比煤炭热值更高,通常用于炼钢",
-		"img": "./images/crude_oil.png",
+		"img": "./images/coal.png",
 		"val": 0,
 		"max": 5,
 		"follow": "焦炭",
@@ -288,8 +310,9 @@
 	{
 		"id": "temper_1",
 		"name": "黄温",
+		"tags": "液体",
 		"desc": "黄温是较高温度的存在，不可直接利用",
-		"img": "./images/crude_oil.png",
+		"img": "./images/temper_1.png",
 		"val": 0,
 		"max": 5,
 		"follow": "黄温",
@@ -301,8 +324,9 @@
 	{
 		"id": "quartz",
 		"name": "石英砂",
+		"tags": "固体",
 		"desc": "石英砂主要作为玻璃的生产原材料",
-		"img": "./images/crude_oil.png",
+		"img": "./images/ore1.png",
 		"val": 0,
 		"max": 5,
 		"follow": "石英砂",
@@ -314,8 +338,9 @@
 	{
 		"id": "limestone",
 		"name": "石灰石",
+		"tags": "固体",
 		"desc": "石英石主要作为玻璃的生产原材料",
-		"img": "./images/crude_oil.png",
+		"img": "./images/ore1.png",
 		"val": 0,
 		"max": 5,
 		"follow": "石灰石",
@@ -327,8 +352,9 @@
 	{
 		"id": "ryongping",
 		"name": "日用品",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/goods.png",
 		"val": 0,
 		"max": 5,
 		"follow": "日用品",
@@ -340,8 +366,9 @@
 	{
 		"id": "gaojihuowu",
 		"name": "高级货物",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/goods.png",
 		"val": 0,
 		"max": 5,
 		"follow": "高级货物",
@@ -353,8 +380,9 @@
 	{
 		"id": "shichiping",
 		"name": "奢侈品",
+		"tags": "固体",
 		"desc": "",
-		"img": "./images/crude_oil.png",
+		"img": "./images/goods.png",
 		"val": 0,
 		"max": 5,
 		"follow": "奢侈品",
@@ -362,5 +390,103 @@
 			"heli": 1000000000
 		},
 		"require": "g.spart_zuzhuang>=8"
+	},
+	{
+		"id": "guben_core",
+		"name": "古本之核",
+		"desc": "取自古本纪的核心碎片，用于粉碎加工为多种材料",
+		"tags": "固体",
+		"img": "./images/guben_core.png",
+		"val": 0,
+		"max": 5,
+		"follow": "古本之核",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.weijibence>=1 && g.fengyunbence>=1 && g.shidaiyancengbence>=1"
+	},
+	{
+		"id": "suixifanmo",
+		"name": "碎隙凡膜",
+		"desc": "设计用于隔离古本纪的环境危害",
+		"tags": "流体",
+		"img": "./images/xianban.png",
+		"val": 0,
+		"max": 5,
+		"follow": "碎隙凡膜",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.chenshigq>=1"
+	},
+	{
+		"id": "zhenzhi_ore",
+		"name": "真直矿",
+		"desc": "难分如墨",
+		"tags": "固体",
+		"img": "./images/ore3.png",
+		"val": 0,
+		"max": 5,
+		"follow": "真直矿",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.guben_core>=1"
+	},
+	{
+		"id": "zhenzhi_spindle",
+		"name": "真直锭",
+		"desc": "抱阳负阴",
+		"tags": "固体",
+		"img": "./images/zhenzhiding.png",
+		"val": 0,
+		"max": 5,
+		"follow": "真直锭",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.zhenzhi_ore>=1"
+	},
+	{
+		"id": "yinjing",
+		"name": "荧晶",
+		"desc": "筛选出来的发光晶体",
+		"tags": "固体",
+		"img": "./images/yinjing.png",
+		"val": 0,
+		"max": 5,
+		"follow": "荧晶",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.guben_core>=1"
+	},
+	{
+		"id": "xuanmuye",
+		"name": "玄牝液",
+		"desc": "天灵之华",
+		"tags": "液体",
+		"img": "./images/xuanmuye.png",
+		"val": 0,
+		"max": 5,
+		"follow": "玄牝液",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.zhenzyyjjx>=1"
+	},
+	{
+		"id": "yanqi",
+		"name": "岩气",
+		"desc": "剧毒",
+		"tags": "气体",
+		"img": "./images/yanqi.png",
+		"val": 0,
+		"max": 5,
+		"follow": "岩气",
+		"cost":{
+			"heli": 1000000000
+		},
+		"require": "g.guben_core>=1"
 	}
 ]

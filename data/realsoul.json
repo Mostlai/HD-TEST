@@ -7,9 +7,7 @@
 		"require": "g.xl_lj_zhenhun_10>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -46,9 +44,7 @@
 		"require": "g.xunqiusl>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -84,9 +80,7 @@
 		"require": "g.xunqiuzh>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -126,9 +120,7 @@
 		"require": "g.xunqiuhj>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -167,9 +159,7 @@
 		"require": "g.xunqiukb>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 4000,
 			"element_blood": 40,
@@ -206,9 +196,7 @@
 		"require": "g.xunqiuhy>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -246,9 +234,7 @@
 		"require": "g.xunqiupans>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -284,9 +270,7 @@
 		"require": "g.xunqiuguangmao>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
@@ -322,9 +306,7 @@
 		"require": "g.xunqiuty>=1",
 		"val":0,
 		"max": 98,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"exp": 3000,
 			"command_soulcore_pice": 10,

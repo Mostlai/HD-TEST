@@ -657,6 +657,10 @@ div.hp .fill, div.hp .bgfill {
 	background:#ac0404;
 }
 
+div.shiled .fill, div.shiled .bgfill {
+	background:#00adec;
+}
+
 div.alculation .fill, div.alculation .bgfill {
 	background:#1310d8;
 }

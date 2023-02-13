@@ -4854,6 +4854,78 @@
 		}
 	},
 	{
+		"id": "lz_baoyangzhenjue",
+		"name": "抱阳真觉(立足)",
+		"desc": "而生生者当自觉为净真火，生生者当照见浮落星辰。凡俗众生见表之理则不能己，思觉者见通幽世则得一意，天相者见大彻宇宙则忘乎形。人已抱阳，即当真觉。",
+		"tags": "立足",
+		"require": "g.baoyangsizhen>=9",
+		"max": 2,
+		"cost": {
+			"element_blood": 40,
+			"lxue": 20,
+			"money": 8000,
+			"gubenxianling": 15,
+			"zhenzhi_spindle": 150,
+			"shenglingshi": 20
+		},
+		"xiulianresult": {
+			"age.max": 36500,
+			"age": 36500,
+			"ganwu.max": 500,
+			"ganwu.rate": -6,
+			"xl_lz_baoyangzhenjue":1
+		}
+	},
+	{
+		"id": "fy_fuyinshizhu",
+		"name": "负阴蚀烛(立足)",
+		"desc": "昔有双星环之当世，近则名月，远则名幽。北方有天相烛龙蔽大阳火光，世俗不见幽，万万生生不思觉。人已负阴，当见证月幽，思索漫步光河。",
+		"tags": "立足",
+		"require": "g.baoyangsizhen>=9",
+		"max": 2,
+		"cost": {
+			"element_blood": 40,
+			"gubenxianling": 15,
+			"xuanmuye": 150,
+			"element_wuhuan": 20,
+			"element_luor": 20,
+			"ganwu": 4500
+		},
+		"xiulianresult": {
+			"age.max": 36500,
+			"age": 36500,
+			"ganwu.max": 500,
+			"ganwu.rate": -6,
+			"xl_fy_fuyinshizhu":1
+		}
+	},
+	{
+		"id": "crzj_zhujierchong",
+		"name": "筑基二重(初入筑基)",
+		"desc": "夜与昼穿梭于天幕时，我随之颤抖，光从远端照于行星，我不禁看他，月幽匿于云中之时，我伸出双手。如壁垒般的天穹，人必要超越它。",
+		"tags": "初入筑基",
+		"require": "g.baoyangsizhen>=9",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"zhenhun_pice_1": 40,
+			"element_blood": 40,
+			"xuanmuye": 150,
+			"gubenxianling": 15,
+			"zhenzhi_spindle": 150,
+			"element_wuhuan": 20,
+			"element_luor": 20,
+			"ganwu": 4500
+		},
+		"xiulianresult": {
+			"age.max": 90000,
+			"age": 90000,
+			"heli.max": 50,
+			"chaos.max": 50,
+			"xl_crzj_zhujierchong":1
+		}
+	},
+	{
 		"id": "jizhun_fl",
 		"name": "风灵(路径)",
 		"desc": "如风一般[30岁前完成了筑基]",

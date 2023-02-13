@@ -999,6 +999,47 @@
 		]
 	},
 	{
+		"id": "gubenjiyouxuwei",
+		"name": "古本纪有序位",
+		"sym": "",
+		"desc": "古本纪中相对稳定的空间，此处探索需要[碎隙凡膜]",
+		"require": "g.gubenlvtu>=1",
+		"dist":1,
+		"level": 35,
+		"length": 30,
+		"run": {
+			"time": -2,
+			"suixifanmo": 0.4
+		},
+		"result": {
+			"gubenxianling": "1~3",
+			"shenglingshi": 10,
+			"money": 500,
+			"ganwu": 1000,
+			"qiyiyeti": "10~12"
+		},
+		"boss": "gubenmonster_4",
+		"spawns": [
+			[
+				"gubenmonster_1",
+				"gubenmonster_1"
+			],
+			[
+				"gubenmonster_2",
+				"gubenmonster_2"
+			],
+			[
+				"gubenmonster_3",
+				"gubenmonster_3"
+			],
+			[
+				"gubenmonster_1",
+				"gubenmonster_2",
+				"gubenmonster_3"
+			]
+		]
+	},
+	{
 		"id": "sunnyfield",
 		"name": "Sunny Field",
 		"level": 1,

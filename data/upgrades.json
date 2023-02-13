@@ -5369,7 +5369,111 @@
 		"mod":{
 			"industry_space.max": 10,
 			"space.max": 50,
-			"一级工厂.max": 5
+			"一级工厂.max": 12
+		}
+	},
+	{
+		"id": "gubenlvtu",
+		"name": "古本旅途",
+		"desc": "准备前往古本纪",
+		"max": 1,
+		"require": "g.gubenbji>=1",
+		"cost": {
+			"huangquan_well": 1,
+			"zhanhuofangjianbei": 1,
+			"ciliuobelisk": 1,
+			"ganwu": 2500,
+			"money": 8000,
+			"snp_data": 120,
+			"exe_paper": 120,
+			"fsbdsj": 20
+		}
+	},
+	{
+		"id": "gubenhejiexi",
+		"name": "古本核解析",
+		"desc": "对这种深层材料进行解析",
+		"max": 1,
+		"require": "g.guben_core>=1",
+		"cost": {
+			"yuansurechi": 2,
+			"coil_1": 100,
+			"ganwu": 2500,
+			"money": 8000,
+			"snp_data": 120,
+			"exe_paper": 120,
+			"fsbdsj": 20,
+			"alculation": 2000
+		},
+		"mod":{
+			"guben_core.max": 10,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "xianyusheng",
+		"name": "险与生",
+		"desc": "吸收古本险灵",
+		"max": 9,
+		"require": "g.gubenxianling>=1",
+		"cost": {
+			"guben_core": 55,
+			"gubenxianling": 1,
+			"coil_1": 100,
+			"ganwu": 2500,
+			"money": 6000,
+			"snp_data": 120,
+			"exe_paper": 120,
+			"fsbdsj": 5
+		},
+		"mod":{
+			"money.rate": 2,
+			"element_wuhuan.max": 2,
+			"element_luor.max": 2,
+			"gubenxianling.max": 2
+		}
+	},
+	{
+		"id": "baoyangsizhen",
+		"name": "抱阳思真",
+		"desc": "而万物思于阳，人以眼泪哀悼余晖。在如伤神之墨的夜晚，微风穿梭于枝桠，一切寒冷贯彻的居所，亦有飞蛾猛烈的扑向烈焰。子时夜分，过九遇真，有无相生。",
+		"max": 9,
+		"require": "g.zhenzyyjjx>=1",
+		"cost": {
+			"money": 8000,
+			"gubenxianling": 3,
+			"zhenzhi_spindle": 100,
+			"shenglingshi": 20,
+			"ganwu": 4500,
+			"snp_data": 120,
+			"exe_paper": 120,
+			"fsbdsj": 5
+		},
+		"mod":{
+			"ganwu.max": 100,
+			"ganwu.rate": -2
+		}
+	},
+	{
+		"id": "fuyinsizhu",
+		"name": "负阴思烛",
+		"desc": "骄阳将光芒洒至行星镜端，以晦暗名义窥视大沼，正午时分，人秉烛居于暗室，背驰理智，思索暗夜流淌之光河。我已越过凡俗众生，妄达天九之数。",
+		"max": 9,
+		"require": "g.zhenzyyjjx>=1",
+		"cost": {
+			"money": 3000,
+			"gubenxianling": 3,
+			"xuanmuye": 100,
+			"element_wuhuan": 20,
+			"element_luor": 20,
+			"ganwu": 4500,
+			"snp_data": 120,
+			"exe_paper": 120,
+			"fsbdsj": 5
+		},
+		"mod":{
+			"ganwu.max": 100,
+			"ganwu.rate": -2
 		}
 	},
 	{

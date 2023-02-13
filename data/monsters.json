@@ -682,6 +682,8 @@
 		"desc": "",
 		"kind": "heli",
 		"hp": 250,
+		"shiled": 250,
+		"shiled_max": 250,
 		"tohit": 99,
 		"defense": 83,
 		"attack": {
@@ -886,6 +888,176 @@
 			"wuhuan": 50,
 			"heli": 50,
 			"chaos": 50
+		}
+	},
+	{
+		"id": "gubenmonster_1",
+		"name": "勿言",
+		"level": 39,
+		"desc": "",
+		"kind": "heli",
+		"hp": 400,
+		"speed": 50,
+		"tohit": 33,
+		"defense": 400,
+		"attack": [
+			{
+				"name": "无论",
+				"kind": "fire",
+				"dmg": "129~130",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"shenglingshi": 1,
+			"lxue": 1,
+			"gubenxianling": 0.3,
+			"qiyiyeti": 2,
+			"money": 100
+		},
+		"resist": {
+			"fire": 30,
+			"gold": 30,
+			"wood": 30,
+			"water": 30,
+			"land": 30,
+			"wuhuan": 30,
+			"heli": 30,
+			"chaos": 30
+		}
+	},
+	{
+		"id": "gubenmonster_2",
+		"name": "勿视",
+		"level": 39,
+		"desc": "",
+		"kind": "heli",
+		"hp": 400,
+		"speed": 50,
+		"tohit": 33,
+		"defense": 400,
+		"attack": [
+			{
+				"name": "无观",
+				"kind": "water",
+				"dmg": "129~130",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"shenglingshi": 1,
+			"lxue": 1,
+			"gubenxianling": 0.3,
+			"qiyiyeti": 2,
+			"money": 100
+		},
+		"resist": {
+			"fire": 30,
+			"gold": 30,
+			"wood": 30,
+			"water": 30,
+			"land": 30,
+			"wuhuan": 30,
+			"heli": 30,
+			"chaos": 30
+		}
+	},
+	{
+		"id": "gubenmonster_3",
+		"name": "勿闻",
+		"level": 39,
+		"desc": "",
+		"kind": "heli",
+		"hp": 400,
+		"speed": 50,
+		"tohit": 33,
+		"defense": 400,
+		"attack": [
+			{
+				"name": "无听",
+				"kind": "land",
+				"dmg": "129~130",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"shenglingshi": 1,
+			"lxue": 1,
+			"gubenxianling": 0.3,
+			"qiyiyeti": 2,
+			"money": 100
+		},
+		"resist": {
+			"fire": 30,
+			"gold": 30,
+			"wood": 30,
+			"water": 30,
+			"land": 30,
+			"wuhuan": 30,
+			"heli": 30,
+			"chaos": 30
+		}
+	},
+	{
+		"id": "gubenmonster_4",
+		"name": "沉重灭轮",
+		"level": 44,
+		"desc": "见此奥秘！",
+		"kind": "heli",
+		"hp": 4300,
+		"speed": 19,
+		"tohit": 33,
+		"defense": 800,
+		"attack": [
+			{
+				"name": "沉默",
+				"kind": "heli",
+				"dmg": "240~300",
+				"targets": "enemies"
+			},
+			{
+				"name": "反河",
+				"kind": "chaos",
+				"dmg": "50~730",
+				"targets": "enemies"
+			},
+			{
+				"name": "厚重之环",
+				"targets": "ally",
+				"log": {
+					"%": "100%",
+					"desc": "见此奥秘!"
+				},
+				"dot": {
+					"duration": 60,
+					"mod": {
+						"defense": 100
+					}
+				}
+			},
+			{
+				"name": "沉重生轮",
+				"targets": "self",
+				"result": {
+					"hp": 67
+				}
+			}
+		],
+		"loot": {
+			"gubenxianling": 2,
+			"shenglingshi": 10,
+			"lxue": 10,
+			"money": 1000
+		},
+		"resist": {
+			"fire": 30,
+			"gold": 30,
+			"wood": 30,
+			"water": 30,
+			"land": 30,
+			"wuhuan": 30,
+			"heli": 30,
+			"chaos": -500
 		}
 	},
 	{

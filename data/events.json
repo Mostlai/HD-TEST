@@ -1,5 +1,18 @@
 [
 	{
+		"id": "evt_loop_frsfw",
+		"name": "废热水自复位",
+		"loopcd": 1,
+		"loopcd_now": 0,
+		"hide": true,
+		"max": 100000000000000,
+		"require": "g.frs<0",
+		"desc": "废热水自复位",
+		"mod": {
+			"frs": 2
+		}
+	},
+	{
 		"id": "evt_intro",
 		"name": "初来",
 		"require": "hp",

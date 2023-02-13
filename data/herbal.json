@@ -10,9 +10,7 @@
 		"require": "g.xiulian_jj_qybz>=1",
 		"val":0,
 		"max": 0,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"elect": 3,
@@ -43,9 +41,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -70,9 +66,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -96,9 +90,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -122,9 +114,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -148,9 +138,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -174,9 +162,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"elect": 3
@@ -199,9 +185,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"elect": 3
@@ -225,9 +209,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"elect": 3
@@ -252,9 +234,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -279,9 +259,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -305,9 +283,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -330,9 +306,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3,
@@ -357,9 +331,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -382,9 +354,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -408,9 +378,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -434,9 +402,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -460,9 +426,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -487,9 +451,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -513,9 +475,7 @@
 		"require": "g.yaolixue>=1",
 		"val":0,
 		"max": 5,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"time": -1,
 			"heli": 3
@@ -538,9 +498,7 @@
 		"require": "g.ltsyjs>=1",
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"money": 100,
 			"time": -3,
@@ -563,9 +521,7 @@
 		"require": "g.ltsyjs>=1",
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 10000000000
-		},
+		
 		"lhxy":{
 			"money": 100,
 			"baibaishu": 0.5,
@@ -593,9 +549,6 @@
 		"require": "g.ltsyjs>=1",
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 10000000000
-		},
 		"lhxy":{
 			"money": 500,
 			"lxue": 0.5,
@@ -623,9 +576,6 @@
 		"require": "g.ltsyjs>=1",
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 10000000000
-		},
 		"lhxy":{
 			"money": 100,
 			"baibaishu": 0.5,

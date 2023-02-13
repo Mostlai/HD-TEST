@@ -9,9 +9,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.1
 		}
@@ -26,9 +24,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1
 		}
@@ -43,9 +39,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap":1
 		}
@@ -60,9 +54,22 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
+		"result":{
+			"ap":1
+		}
+	},
+	{
+		"id": "ach_jingjie_3",
+		"name": "筑基二重",
+		"desc": "完成筑基二重",
+		"target_item": "xl_crzj_zhujierchong",
+		"target_val": 1,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		
 		"result":{
 			"ap":1
 		}
@@ -77,9 +84,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap":1
 		}
@@ -94,9 +99,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.1,
 			"money.max": 20
@@ -112,9 +115,23 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
+		"result":{
+			"ap": 0.1,
+			"money.max": 100
+		}
+	},
+	{
+		"id": "ach_money_3",
+		"name": "财富",
+		"desc": "钱币达到6000",
+		"target_item": "money",
+		"target_val": 6000,
+		"hide": true,
+		"locked": false,
+		"val":0,
+		"max": 1,
+		
 		"result":{
 			"ap": 0.1,
 			"money.max": 100
@@ -130,9 +147,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"age.max": 4000,
@@ -149,9 +164,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"age.max": 10000,
@@ -168,9 +181,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 2,
 			"age.max": 50000,
@@ -187,9 +198,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 5,
 			"age.max": 100000,
@@ -206,9 +215,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.1,
 			"ganwu.rate": 0.5
@@ -224,9 +231,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"ganwu.rate": 1
@@ -242,9 +247,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"ganwu.rate": 2
@@ -260,9 +263,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.6,
 			"ganwu.rate": 1
@@ -279,9 +280,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"tili.rate": 0.5
@@ -297,9 +296,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"star_map.rate": 0.5
@@ -315,9 +312,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"star_map_1.rate": 0.3
@@ -333,9 +328,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"back_dream.rate": 0.22
@@ -351,9 +344,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.2,
 			"tian.rate": 0.2,
@@ -370,9 +361,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.1,
 			"money.rate": 0.5
@@ -388,9 +377,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.1,
 			"money.rate": 0.5
@@ -406,9 +393,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"money.rate": 0.5
@@ -424,9 +409,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"money.rate": 0.5
@@ -442,9 +425,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.1,
 			"command_code.max": 3
@@ -460,9 +441,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1,
 			"command_code.max": 20
@@ -478,9 +457,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"player.defense": 20
@@ -496,9 +473,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"max_rs.max": 4
@@ -514,9 +489,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5,
 			"heli.rate": 0.5
@@ -532,9 +505,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1,
 			"laser_ene.rate": 0.05
@@ -550,9 +521,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"space.max": 50
@@ -568,9 +537,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"space.max": 130
@@ -586,9 +553,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"space.max": 130
@@ -604,9 +569,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"space.max": 200
@@ -622,9 +585,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.5
 		}
@@ -639,9 +600,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1
 		}
@@ -656,9 +615,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1,
 			"off_influence.max": 100
@@ -674,9 +631,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1,
 			"off_influence.max": 100
@@ -692,9 +647,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"element_water.rate": 0.0001
@@ -710,9 +663,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"age.max": 3650,
@@ -729,9 +680,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 0.3,
 			"zero_crystal.rate": 0.01
@@ -747,9 +696,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 2,
 			"ganwu.rate": 0.88
@@ -765,9 +712,7 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		"cost":{
-			"heli": 1000000000000000
-		},
+		
 		"result":{
 			"ap": 1.5,
 			"money.rate": 0.2022

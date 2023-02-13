@@ -3554,6 +3554,287 @@
 		}
 	},
 	{
+		"id": "jizhibenlu",
+		"name": "级址本录",
+		"desc": "你的进步程度已经可以让你研究大地的巧妙构造了，此项任务将对不同级别的岩层地址进行深入研究【研究需要绿色实验室】",
+		"verb": "研究中",
+		"require": "g.shengchanlun>=1",
+		"need": "g.green_lab>=1",
+		"length": 30,
+		"max": 1,
+		"cost": {
+			"money": 7300,
+			"human_power": 3500,
+			"zero_crystal": 100,
+			"lg": 25,
+			"jihun": 5,
+			"back_dream": 20,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30,
+			"adv_snp_data": 10,
+			"alculation": 2000,
+			"jls": 100
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"age.max": 7650,
+			"age": 7650,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "fengyunbence",
+		"name": "风云本册",
+		"desc": "特定的研究只能在特定的气象环境下进行【研究需要无涉控制中心】",
+		"verb": "研究中",
+		"require": "g.jizhibenlu>=1",
+		"need": "g.ntctc>=1",
+		"length": 5,
+		"max": 1,
+		"cost": {
+			"money": 6000,
+			"human_power": 3500,
+			"zero_crystal": 100,
+			"lg": 25,
+			"jihun": 5,
+			"life_crystal": 30,
+			"dirty_lingti": 15,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30,
+			"adv_snp_data": 3,
+			"jls": 100
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 50,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"dirty_lingti.rate": 0.2,
+			"life_crystal.rate": 0.2,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "weijibence",
+		"name": "危急本册",
+		"desc": "对深处的研究会招惹一些注意【研究需要无涉控制中心】",
+		"verb": "研究中",
+		"require": "g.jizhibenlu>=1",
+		"need": "g.ntctc>=1",
+		"length": 10,
+		"max": 1,
+		"cost": {
+			"money": 6000,
+			"hp": 80,
+			"shenshi": 20,
+			"human_power": 3500,
+			"zero_crystal": 100,
+			"lg": 25,
+			"jihun": 5,
+			"life_crystal": 30,
+			"dirty_lingti": 15,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30,
+			"adv_snp_data": 3
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"hp.max": 5,
+			"alculation.max": 300,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "shidaiyancengbence",
+		"name": "世代岩层本册",
+		"desc": "不同深度的岩层可以按照世代进行分类【研究需要无涉控制中心】",
+		"verb": "研究中",
+		"require": "g.jizhibenlu>=1",
+		"need": "g.ntctc>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"swzhi": 20,
+			"yjswyb": 30,
+			"ganwu": 2500,
+			"money": 7000,
+			"human_power": 3500,
+			"zero_crystal": 100,
+			"lg": 25,
+			"jihun": 5,
+			"life_crystal": 30,
+			"dirty_lingti": 15,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30,
+			"adv_snp_data": 3
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"space.max": 50
+		}
+	},
+	{
+		"id": "gubenbji",
+		"name": "古本纪",
+		"desc": "对最近的纪层进行考察【研究需要无涉控制中心】",
+		"verb": "考察中",
+		"require": "g.shidaiyancengbence>=1 && g.fengyunbence>=1",
+		"need": "g.ntctc>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"adv_snp_data": 10,
+			"money": 7000,
+			"human_power": 1000,
+			"zero_crystal": 100,
+			"life_crystal": 30,
+			"dirty_lingti": 15,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 10,
+			"elect": 10,
+			"ganwu": 10,
+			"time": -0.1
+		},
+		"mod":{
+			"alculation.max": 100,
+			"space.max": 50
+		}
+	},
+	{
+		"id": "chenshigq",
+		"name": "尘世的过去",
+		"desc": "熙攘市场今何在【研究需要无涉控制中心】",
+		"verb": "研究中",
+		"require": "g.shidaiyancengbence>=1 && g.fengyunbence>=1",
+		"need": "g.ntctc>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"adv_snp_data": 10,
+			"money": 7000,
+			"ganwu": 2000,
+			"lg": 30,
+			"human_power": 1000,
+			"zero_crystal": 100,
+			"life_crystal": 30,
+			"dirty_lingti": 15,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 10,
+			"ganwu": 10,
+			"time": -5
+		},
+		"mod":{
+			"human_power.max": 200,
+			"alculation.max": 200
+		}
+	},
+	{
+		"id": "houzhongzhihuan",
+		"name": "厚重之环",
+		"desc": "大地之下的厚重之影【研究需要无涉控制中心】",
+		"verb": "研究中",
+		"require": "g.shidaiyancengbence>=1 && g.fengyunbence>=1",
+		"need": "g.ntctc>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"adv_snp_data": 10,
+			"money": 7000,
+			"ganwu": 2000,
+			"lg": 30,
+			"human_power": 1000,
+			"zero_crystal": 100,
+			"life_crystal": 30,
+			"dirty_lingti": 15,
+			"heli": 70,
+			"chaos": 60,
+			"tili": 30
+		},
+		"run": {
+			"stamina": 7,
+			"tili": 10,
+			"ganwu": 10,
+			"time": -5
+		},
+		"mod":{
+			"human_power.max": 200,
+			"alculation.max": 200
+		}
+	},
+	{
+		"id": "zhenzyyjjx",
+		"name": "真直与萤晶解析",
+		"desc": "研究真直锭与萤晶的应用【研究需要无涉控制中心】",
+		"verb": "研究中",
+		"require": "g.zhenzhi_spindle>=1",
+		"need": "g.ntctc>=1",
+		"length": 60,
+		"max": 1,
+		"cost": {
+			"adv_snp_data": 4,
+			"money": 7400,
+			"ganwu": 2000,
+			"gubenxianling": 10,
+			"lg": 30,
+			"zhenzhi_spindle": 200,
+			"yinjing": 200,
+			"ind_water": 200,
+			"life_crystal": 30,
+			"heli": 70,
+			"chaos": 60
+		},
+		"run": {
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"stamina": 7,
+			"tili": 10,
+			"ganwu": 10,
+			"time": -5
+		},
+		"mod":{
+			"zhenzhi_ore.max": 100,
+			"zhenzhi_spindle.max": 100,
+			"yinjing.max": 100,
+			"human_power.max": 100,
+			"alculation.max": 100
+		}
+	},
+	{
 		"id": "smshengchan",
 		"name": "生命生产",
 		"desc": "在生命领域的生产进步【研究需要绿色实验室】",

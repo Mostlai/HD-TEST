@@ -9,6 +9,15 @@
 		"locked": false
 	},
 	{
+		"id": "shiled",
+		"name": "护盾",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"unit": false,
+		"locked": false
+	},
+	{
 		"id": "level",
 		"name": "等级",
 		"val": 0,
@@ -301,6 +310,24 @@
 		"result": {
 			"hallPoints": 1
 		},
+		"val": 0
+	},
+	{
+		"id": "player_idf",
+		"name": "player_idf",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"val": 1
+	},
+	{
+		"id": "logversion",
+		"name": "2023001",
+		"logversion": "2023001",
+		"frecipever": "20203r01",
+		"hide": true,
+		"locked": false,
+		"stat": true,
 		"val": 0
 	}
 ]

@@ -11,9 +11,7 @@
 		"buy":{
 			"money":100
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 11,
 			"zhuzhidu": 11,
@@ -52,9 +50,7 @@
 		"buy":{
 			"money":600
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 11,
 			"zhuzhidu": 11,
@@ -94,9 +90,7 @@
 			"life_crystal":5,
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 33,
 			"zhuzhidu": 33,
@@ -136,9 +130,7 @@
 		"buy":{
 			"money":0
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 33,
 			"zhuzhidu": 33,
@@ -184,9 +176,7 @@
 			"life_crystal":5,
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 33,
 			"zhuzhidu": 33,
@@ -228,9 +218,7 @@
 			"life_crystal":5,
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 33,
 			"zhuzhidu": 33,
@@ -273,9 +261,7 @@
 			"life_crystal":5,
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 33,
 			"zhuzhidu": 33,
@@ -317,9 +303,7 @@
 		"buy":{
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -362,9 +346,7 @@
 		"buy":{
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -407,9 +389,7 @@
 		"buy":{
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -452,9 +432,7 @@
 		"buy":{
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -497,9 +475,7 @@
 		"buy":{
 			"money":1000
 		},
-		"cost":{
-			"heli": 100000000000000
-		},
+		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,

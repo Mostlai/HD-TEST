@@ -6031,6 +6031,99 @@
 		}
 	},
 	{
+		"id": "gubencore_cang",
+		"name": "古本核库",
+		"desc": "",
+		"tags": "",
+		"max":25,
+		"require": "g.guben_core>=1",
+		"repeat": true,
+		"cost": {
+			"guben_core": 2,
+			"zero_crystal":100,
+			"life_crystal": 10,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 3000,
+			"money": 8000
+		},
+		"mod": {
+			"guben_core.max": 80,
+			"space": 30
+		}
+	},
+	{
+		"id": "fanmoxiangzi",
+		"name": "凡膜箱",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.suixifanmo>=1",
+		"repeat": true,
+		"cost": {
+			"suixifanmo": 1,
+			"zero_crystal":100,
+			"heli":55,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 1000,
+			"money": 3000
+		},
+		"mod": {
+			"hp.max": 0.1,
+			"suixifanmo.max": 50,
+			"space": 25
+		}
+	},
+	{
+		"id": "yinzhiqp",
+		"name": "萤制气瓶",
+		"desc": "",
+		"tags": "",
+		"max":15,
+		"require": "g.yanqi>=1",
+		"repeat": true,
+		"cost": {
+			"yanqi": 1,
+			"yinjing": 2,
+			"zero_crystal":100,
+			"heli":55,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 1000,
+			"money": 3000
+		},
+		"mod": {
+			"yanqi.max": 150,
+			"yinjing.max": 20,
+			"space": 10
+		}
+	},
+	{
+		"id": "zhenzhihecti",
+		"name": "真直合成体",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.zhenzhi_ore>=1",
+		"repeat": true,
+		"cost": {
+			"zhenzhi_ore": 1,
+			"zero_crystal":100,
+			"heli":55,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 1000,
+			"money": 5000
+		},
+		"mod": {
+			"zhenzhi_ore.max": 30,
+			"zhenzhi_spindle.max": 20,
+			"space": 10
+		}
+	},
+	{
 		"id": "glass_floor_extend",
 		"name": "琉璃步行路",
 		"desc": "",
@@ -6560,6 +6653,75 @@
 		"mod": {
 			"ganguangtj.max": 50,
 			"space": 10
+		}
+	},
+	{
+		"id": "gubenfenshenzhu",
+		"name": "古本分神柱",
+		"desc": "提高所有固体类资源上限",
+		"tags": "",
+		"max":5,
+		"require": "g.gubenhejiexi>=1",
+		"repeat": true,
+		"cost": {
+			"guben_core": 100,
+			"ganwu": 100,
+			"glass": 200,
+			"coil_1": 200,
+			"tian": 100,
+			"yjdl": 300,
+			"ljdy": 10,
+			"money": 6700
+		},
+		"mod": {
+			"固体.max": 30,
+			"space": 60
+		}
+	},
+	{
+		"id": "gubenfentizhu",
+		"name": "古本分体柱",
+		"desc": "提高所有液体类资源上限",
+		"tags": "",
+		"max":5,
+		"require": "g.gubenhejiexi>=1",
+		"repeat": true,
+		"cost": {
+			"guben_core": 100,
+			"ganwu": 100,
+			"glass": 200,
+			"coil_1": 200,
+			"tian": 100,
+			"yjdl": 300,
+			"ljdy": 10,
+			"money": 6700
+		},
+		"mod": {
+			"液体.max": 30,
+			"space": 60
+		}
+	},
+	{
+		"id": "gubenfentizhu",
+		"name": "古本分旋柱",
+		"desc": "提高所有气体类资源上限",
+		"tags": "",
+		"max":5,
+		"require": "g.gubenhejiexi>=1",
+		"repeat": true,
+		"cost": {
+			"guben_core": 100,
+			"ganwu": 100,
+			"glass": 200,
+			"coil_1": 200,
+			"tian": 100,
+			"yjdl": 300,
+			"ljdy": 10,
+			"money": 6700
+		},
+		"mod": {
+			"气体.max": 30,
+			"space": 60
 		}
 	},
 	{
@@ -7268,6 +7430,133 @@
 			"fypyj.rate": 0.1,
 			"yjswyb.rate": 0.1,
 			"space": 27
+		}
+	},
+	{
+		"id": "wushectc",
+		"name": "无涉控制中心",
+		"desc": "为了应对级址发现成果成立的控制中心,[玻璃的获取需要对工业模式进行探索]",
+		"tags": "ntctc,bio",
+		"max":1,
+		"require": "g.jizhibenlu>=1",
+		"repeat": true,
+		"cost": {
+			"glass": 100,
+			"star_map_1": 15,
+			"life_crystal": 10,
+			"ljdy": 18,
+			"obs_hill": 1,
+			"obs_water": 1,
+			"obs_basin": 1,
+			"obs_mount": 1,
+			"tian": 60,
+			"iron_copper": 120,
+			"swzhi": 15,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"elect.rate": -30,
+			"space": 55
+		}
+	},
+	{
+		"id": "suanliuzipt",
+		"name": "算留子平台",
+		"desc": "有着高速运算能力的平台层，用于组合成钻井",
+		"tags": "",
+		"max":2,
+		"require": "g.fengyunbence>=1",
+		"repeat": true,
+		"cost": {
+			"ertongzhe": 1,
+			"glass": 100,
+			"life_crystal": 30,
+			"tian": 60,
+			"iron_copper": 120,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"alculation.max": 40,
+			"elect.rate": -8,
+			"space": 50
+		}
+	},
+	{
+		"id": "keliuzilengzhu",
+		"name": "克流子棱柱",
+		"desc": "重型组合支撑梁，用于组合成钻井",
+		"tags": "",
+		"max":2,
+		"require": "g.shidaiyancengbence>=1",
+		"repeat": true,
+		"cost": {
+			"yisuanzi": 5,
+			"yxls": 20,
+			"cbjs": 20,
+			"life_crystal": 10,
+			"ljdy": 18,
+			"tian": 100,
+			"iron_copper": 50,
+			"yjdl": 80,
+			"cbclb": 40,
+			"gwl": 100,
+			"jls": 150
+		},
+		"mod": {
+			"alculation.max": 20,
+			"elect.rate": -8,
+			"space": 20
+		}
+	},
+	{
+		"id": "shengxuchongjizuan",
+		"name": "生序冲击钻",
+		"desc": "对一座山脉进行改造用于成为突破级址粘膜的冲击钻头，用于组合成钻井",
+		"tags": "",
+		"max":1,
+		"require": "g.shidaiyancengbence>=1",
+		"repeat": true,
+		"cost": {
+			"keliuzilengzhu": 2,
+			"obs_hill": 1,
+			"laser_ene": 4,
+			"gwl": 130,
+			"jls": 200
+		},
+		"mod": {
+			"human_power.max": -200,
+			"alculation.max": 400,
+			"elect.rate": -40,
+			"space": 250
+		}
+	},
+	{
+		"id": "yanxuhumo",
+		"name": "掩序护膜",
+		"desc": "对一座湖泊进行改造成为用于扰乱钻头存在感的护膜，用于组合成钻井",
+		"tags": "",
+		"max":1,
+		"require": "g.weijibence>=1",
+		"repeat": true,
+		"cost": {
+			"cold_core": 160,
+			"gwl": 100,
+			"suanliuzipt": 1,
+			"obs_water": 1,
+			"laser_ene": 4,
+			"jls": 200
+		},
+		"mod": {
+			"human_power.max": -200,
+			"alculation.max": 400,
+			"elect.rate": -40,
+			"space": 85
 		}
 	},
 	{

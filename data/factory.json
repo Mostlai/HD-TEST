@@ -364,5 +364,74 @@
 			"industry_elect": 0.1,
 			"industry_elect_extra": 1.8
 		}
+	},
+	{
+		"id": "factory_posuiji",
+		"name": "破碎机",
+		"desc": "对坚硬物体进行破碎处理",
+		"tags": "一级工厂",
+		"max": 10,
+		"require": "g.weijibence>=1 && g.fengyunbence>=1 && g.shidaiyancengbence>=1",
+		"cost":{
+			"steel": 100,
+			"glass": 50,
+			"coil_1": 300,
+			"money": 5000,
+			"human_power": 2000
+		},
+		"mod":{
+			"space": 40,
+			"elect.rate": -10,
+			"industry_space": 1,
+			"industry_elect": 1,
+			"sysn_posui_1.max": 1
+		}
+	},
+	{
+		"id": "factory_huojuyanc",
+		"name": "火炬烟囱",
+		"desc": "排放废物",
+		"tags": "一级工厂",
+		"max": 25,
+		"require": "g.gubenhejiexi>=1",
+		"cost":{
+			"steel": 200,
+			"glass": 20,
+			"spare_parts": 20,
+			"money": 1000,
+			"human_power": 2000
+		},
+		"mod":{
+			"space": 23,
+			"elect.rate": -10,
+			"industry_space": 1,
+			"industry_elect": 1,
+			"sysn_qitipaifang_1.max": 1
+		}
+	},
+	{
+		"id": "factory_gubenjizuanj",
+		"name": "古本纪钻井",
+		"desc": "对古本纪级址层进行开掘，需要消耗大量电力对粘膜进行突破和对钻头维护",
+		"tags": "一级工厂",
+		"max": 1,
+		"require": "g.weijibence>=1 && g.fengyunbence>=1 && g.shidaiyancengbence>=1",
+		"cost":{
+			"shengxuchongjizuan": 1,
+			"yanxuhumo": 1,
+			"keliuzilengzhu": 2,
+			"suanliuzipt": 1,
+			"glass": 200,
+			"coil_1": 300,
+			"money": 8000,
+			"ljdy": 10
+		},
+		"mod":{
+			"space": 420,
+			"elect.rate": -130,
+			"industry_space": 1,
+			"industry_elect": 1,
+			"sysn_zuanji_1.max": 1
+		}
 	}
 ]

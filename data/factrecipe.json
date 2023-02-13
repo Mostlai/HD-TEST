@@ -78,20 +78,42 @@
 		"locked": false
 	},
 	{
+		"id": "sysn_zuanji_1",
+		"name":"古本钻机",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "sysn_posui_1",
+		"name":"破碎线程",
+		"max": 0,
+		"locked": false
+	},
+	{
+		"id": "sysn_qitipaifang_1",
+		"name":"气体排放",
+		"max": 0,
+		"locked": false
+	},
+	{
 		"id": "phy_sysn_1",
 		"name": "光感数据分析",
-		"sleep": 0,
 		"desc": "消耗1光感数据并生产3物理域研究成果",
 		"thread_use": "sysn_thread",
 		"tags": "光感数据",
 		"require": "g.xl_lj_konwledege_1>=1",
+		"inp":[
+			{"id":"guanggan_data","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"physic_point","base_val":3,"now_val":0}
+		],
 		"cost":{
 			"guanggan_data": 5
 		},
 		"mod":{
-			"guanggan_data.rate": -1,
-			"phy_fu_1.rate": 2,
-			"phy_fu_1.max": 2,
+			"guanggan_data.balance": -1,
+			"physic_point.balance": 3,
 			"human_power.max": -100,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -108,10 +130,15 @@
 		"cost":{
 			"nicheng_data": 5
 		},
+		"inp":[
+			{"id":"nicheng_data","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"socia_point","base_val":3,"now_val":0}
+		],
 		"mod":{
-			"nicheng_data.rate": -1,
-			"soc_fu_1.rate": 2,
-			"soc_fu_1.max": 2,
+			"nicheng_data.balance": -1,
+			"socia_point.balance": 3,
 			"human_power.max": -100,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -128,10 +155,15 @@
 		"cost":{
 			"xicheng_data": 5
 		},
+		"inp":[
+			{"id":"xicheng_data","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"engineer_point","base_val":3,"now_val":0}
+		],
 		"mod":{
-			"xicheng_data.rate": -1,
-			"eng_fu_1.rate": 2,
-			"eng_fu_1.max": 2,
+			"xicheng_data.balance": -1,
+			"engineer_point.balance": 3,
 			"human_power.max": -100,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -141,7 +173,7 @@
 	{
 		"id": "water_rp_1",
 		"name": "湖泊抽水",
-		"desc": "消耗50人力从湖泊中抽取3水",
+		"desc": "消耗50人力从湖泊中抽取4.4水",
 		"thread_use": "pump_thread",
 		"tags": "水",
 		"require": "g.coal>=1",
@@ -149,7 +181,8 @@
 			"human_power": 200
 		},
 		"mod":{
-			"ind_water.rate": 3,
+			"ind_water.balance": 4.4,
+			"ind_water.rate": 4.4,
 			"obs_water": 0.3,
 			"water_res": 0.3,
 			"human_power.max": -50,
@@ -161,7 +194,7 @@
 	{
 		"id": "steam_1_coal",
 		"name": "蒸汽煤炭",
-		"desc": "消耗0.6煤炭和1水并生产1低温蒸汽",
+		"desc": "消耗0.6煤炭和1水并生产1.9低温蒸汽",
 		"thread_use": "burn_thread",
 		"tags": "低温蒸汽",
 		"require": "g.coal>=1",
@@ -170,11 +203,17 @@
 			"ind_water": 50,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"coal","base_val":0.6,"now_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"ind_steam_1","base_val":1.9,"now_val":0}
+		],
 		"mod":{
-			"ind_water.rate": -1,
-			"coal.rate": -0.6,
-			"steam_1fu_coal.rate": 1,
-			"steam_1fu_coal.max": 1,
+			"ind_water.balance": -1,
+			"coal.balance": -0.6,
+			"ind_steam_1.balance": 1.9,
 			"human_power.max": -50,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -184,7 +223,7 @@
 	{
 		"id": "steam_1_coke",
 		"name": "蒸汽焦炭",
-		"desc": "消耗0.5焦炭和1.2水并生产1.9低温蒸汽",
+		"desc": "消耗0.5焦炭和1.2水并生产2.9低温蒸汽",
 		"thread_use": "burn_thread",
 		"tags": "低温蒸汽",
 		"require": "g.coke>=1",
@@ -193,11 +232,17 @@
 			"ind_water": 50,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"coke","base_val":0.5,"now_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"ind_steam_1","base_val":2.9,"now_val":0}
+		],
 		"mod":{
-			"ind_water.rate": -1.2,
-			"coke.rate": -0.5,
-			"steam_1fu_coke.rate": 1.9,
-			"steam_1fu_coke.max": 1.9,
+			"ind_water.balance": -1.2,
+			"coke.balance": -0.5,
+			"ind_steam_1.balance": 2.9,
 			"human_power.max": -50,
 			"industry_space": 0.4,
 			"industry_elect": 0.1,
@@ -207,7 +252,7 @@
 	{
 		"id": "elect_1_steam1",
 		"name": "低温蒸汽机",
-		"desc": "消耗0.5低温蒸汽并生产1.8工业电力",
+		"desc": "消耗0.5低温蒸汽并生产2工业电力",
 		"thread_use": "steam_thread",
 		"tags": "低温蒸汽",
 		"require": "g.coal>=1",
@@ -216,9 +261,8 @@
 			"human_power": 200
 		},
 		"mod":{
-			"ind_steam_1.rate": -0.5,
-			"elect_fu_steam1.rate": 1.8,
-			"elect_fu_steam1.max": 1.8,
+			"ind_steam_1.balance": -0.5,
+			"industry_elect.max": 2,
 			"industry_space": 0.4,
 			"industry_elect": 0.1,
 			"industry_thread": 0.2
@@ -227,7 +271,7 @@
 	{
 		"id": "quartz_rp_1",
 		"name": "石英砂采砂",
-		"desc": "200人力每秒生产2石英砂",
+		"desc": "200人力每秒生产3石英砂",
 		"thread_use": "sand_thread",
 		"tags": "石英砂",
 		"require": "g.ind_caijuechang>=1 && g.qiulzykaifa>=1",
@@ -235,7 +279,8 @@
 			"human_power": 200
 		},
 		"mod":{
-			"quartz.rate": 2,
+			"quartz.balance": 3,
+			"quartz.rate": 3,
 			"human_power.max": -200,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -245,7 +290,7 @@
 	{
 		"id": "limestone_rp_1",
 		"name": "石灰石采砂",
-		"desc": "200人力每秒生产1.5石灰石",
+		"desc": "200人力每秒生产2.7石灰石",
 		"thread_use": "sand_thread",
 		"tags": "石灰石",
 		"require": "g.ind_caijuechang>=1 && g.shanmaizykf>=1",
@@ -253,7 +298,8 @@
 			"human_power": 200
 		},
 		"mod":{
-			"limestone.rate": 1.5,
+			"limestone.balance": 2.7,
+			"limestone.rate": 2.7,
 			"human_power.max": -200,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -263,7 +309,7 @@
 	{
 		"id": "coal_rp_1",
 		"name": "煤炭开采",
-		"desc": "100人力每秒生产2煤炭",
+		"desc": "100人力每秒生产3煤炭",
 		"thread_use": "dig_thread",
 		"tags": "煤炭",
 		"require": "g.ind_caijuechang>=1 && g.pendizykf>=1",
@@ -271,7 +317,8 @@
 			"human_power": 200
 		},
 		"mod":{
-			"coal.rate": 2,
+			"coal.balance": 3,
+			"coal.rate": 3,
 			"human_power.max": -200,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -281,7 +328,7 @@
 	{
 		"id": "temp_rp_1",
 		"name": "燃烧煤炭",
-		"desc": "消耗1煤炭并产出1.3黄温",
+		"desc": "消耗1煤炭并产出1.5黄温",
 		"thread_use": "burn_thread",
 		"tags": "黄温",
 		"require": "g.ind_reliwendu>=1",
@@ -289,10 +336,15 @@
 			"coal": 1,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"coal","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"temper_1","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"coal.rate": -1,
-			"temp_fu_1.rate": 1.3,
-			"temp_fu_1.max": 1.3,
+			"coal.balance": -1,
+			"temper_1.balance": 1.5,
 			"human_power.max": -50,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -302,7 +354,7 @@
 	{
 		"id": "temp_rp_2",
 		"name": "燃烧焦炭",
-		"desc": "消耗1焦炭并产出1.9黄温",
+		"desc": "消耗1焦炭并产出2.2黄温",
 		"thread_use": "burn_thread",
 		"tags": "黄温",
 		"require": "g.coke>=1",
@@ -310,10 +362,15 @@
 			"coke": 1,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"coke","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"temper_1","base_val":2.2,"now_val":0}
+		],
 		"mod":{
-			"coke.rate": -1,
-			"temp_fu_2.rate": 1.9,
-			"temp_fu_2.max": 1.9,
+			"coke.balance": -1,
+			"temper_1.balance": 2.2,
 			"human_power.max": -50,
 			"industry_space": 0.3,
 			"industry_elect": 0.1,
@@ -327,16 +384,22 @@
 		"thread_use": "burn_thread",
 		"tags": "玻璃",
 		"require": "g.ind_reliwendu>=1",
+		"inp":[
+			{"id":"quartz","base_val":1,"now_val":0},
+			{"id":"limestone","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"glass","base_val":1,"now_val":0}
+		],
 		"cost":{
 			"quartz": 50,
 			"limestone": 50,
 			"human_power": 200
 		},
 		"mod":{
-			"quartz.rate": -1,
-			"limestone.rate": -0.5,
-			"glass_quar_rp.rate": 1,
-			"glass_quar_rp.max": 1,
+			"quartz.balance": -1,
+			"limestone.balance": -0.5,
+			"glass.balance": 1,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 0.2,
@@ -354,10 +417,15 @@
 			"glass": 50,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"glass","base_val":1.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"blank_unit","base_val":2,"now_val":0}
+		],
 		"mod":{
-			"glass.rate": -1.5,
-			"bunit_glass_rp.rate": 2,
-			"bunit_glass_rp.max": 2,
+			"glass.balance": -1.5,
+			"blank_unit.balance": 2.2,
 			"human_power.max": -50,
 			"industry_space": 0.3,
 			"industry_elect": 0.2,
@@ -376,11 +444,17 @@
 			"temper_1": 50,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"blank_unit","base_val":1,"now_val":0},
+			{"id":"temper_1","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"temp_1_unit","base_val":1,"now_val":0}
+		],
 		"mod":{
-			"blank_unit.rate": -1,
-			"temper_1.rate": -1,
-			"tounit_to_rp.rate": 1,
-			"tounit_to_rp.max": 1,
+			"blank_unit.balance": -1,
+			"temper_1.balance": -1,
+			"temp_1_unit.balance": 1,
 			"human_power.max": -50,
 			"industry_space": 0.3,
 			"industry_elect": 0.2,
@@ -399,11 +473,17 @@
 			"coal": 50,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"temp_1_unit","base_val":1,"now_val":0},
+			{"id":"coal","base_val":1.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"coke","base_val":1.6,"now_val":0}
+		],
 		"mod":{
-			"temp_1_unit.rate": -1,
-			"coal.rate": -1.5,
-			"coke_ct_tp.rate": 1.6,
-			"coke_ct_tp.max": 1.6,
+			"temp_1_unit.balance": -1,
+			"coal.balance": -1.5,
+			"coke.balance": 1.6,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 0.2,
@@ -422,11 +502,17 @@
 			"cu_iron": 100,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"cu_iron","base_val":2,"now_val":0},
+			{"id":"coke","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"steel","base_val":1.3,"now_val":0}
+		],
 		"mod":{
-			"cu_iron.rate": -2,
-			"coke.rate": -2,
-			"stell_ciron_tp.rate": 1.3,
-			"stell_ciron_tp.max": 1.3,
+			"cu_iron.balance": -2,
+			"coke.balance": -2,
+			"steel.balance": 1.3,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 1,
@@ -445,11 +531,17 @@
 			"cu_copper": 100,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"yjdl","base_val":0.6,"now_val":0},
+			{"id":"cu_copper","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"coil_1","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"yjdl.rate": -0.6,
-			"cu_copper.rate": -2,
-			"coli1_cyj_tp.rate": 1.5,
-			"coli1_cyj_tp.max": 1.5,
+			"yjdl.balance": -0.6,
+			"cu_copper.balance": -2,
+			"coil_1.balance": 1.5,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 0.2,
@@ -470,12 +562,19 @@
 			"cu_copper": 100,
 			"human_power": 200
 		},
+		"inp":[
+			{"id":"steel","base_val":2,"now_val":0},
+			{"id":"glass","base_val":1.5,"now_val":0},
+			{"id":"coil_1","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"spare_parts","base_val":2.5,"now_val":0}
+		],
 		"mod":{
-			"steel.rate": -2,
-			"glass.rate": -1.5,
-			"coil_1.rate": -2,
-			"spart_fu_1.rate": 2.5,
-			"spart_fu_1.max": 2.5,
+			"steel.balance": -2,
+			"glass.balance": -1.5,
+			"coil_1.balance": -2,
+			"spare_parts.balance": 2.5,
 			"human_power.max": -100,
 			"industry_space": 0.5,
 			"industry_elect": 0.5,
@@ -493,11 +592,17 @@
 			"ind_water": 100,
 			"swzhi": 0.5
 		},
+		"inp":[
+			{"id":"swzhi","base_val":0.1,"now_val":0},
+			{"id":"ind_water","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"soft_dirt","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"ind_water.rate": -0.5,
-			"swzhi.rate": -0.1,
-			"sfotdirt_fu_1.rate": 1.5,
-			"sfotdirt_fu_1.max": 1.5,
+			"ind_water.balance": -0.5,
+			"swzhi.balance": -0.1,
+			"soft_dirt.balance": 1.5,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 0.3,
@@ -507,7 +612,7 @@
 	{
 		"id": "soft_dirt_rp_2",
 		"name": "培质软泥",
-		"desc": "消耗0.2纤板和0.4培质并生产0.8生物软泥",
+		"desc": "消耗0.2纤板和0.4培质并生产1.5生物软泥",
 		"thread_use": "purify_thread",
 		"tags": "生物软泥",
 		"require": "g.smshengchan>=1",
@@ -515,11 +620,17 @@
 			"xianban": 100,
 			"pei_zhi": 60
 		},
+		"inp":[
+			{"id":"xianban","base_val":0.2,"now_val":0},
+			{"id":"pei_zhi","base_val":0.4,"now_val":0}
+		],
+		"outp":[
+			{"id":"soft_dirt","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"xianban.rate": -0.2,
-			"pei_zhi.rate": -0.4,
-			"sfotdirt_fu_2.rate": 1.5,
-			"sfotdirt_fu_2.max": 1.5,
+			"xianban.balance": -0.2,
+			"pei_zhi.balance": -0.4,
+			"soft_dirt.balance": 1.5,
 			"human_power.max": -70,
 			"industry_space": 0.4,
 			"industry_elect": 0.4,
@@ -537,11 +648,17 @@
 			"ind_water": 100,
 			"soft_dirt": 10
 		},
+		"inp":[
+			{"id":"ind_water","base_val":0.5,"now_val":0},
+			{"id":"soft_dirt","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"pei_zhi","base_val":0.5,"now_val":0}
+		],
 		"mod":{
-			"ind_water.rate": -0.5,
-			"soft_dirt.rate": -0.5,
-			"peizhi_fu_1.rate": 0.5,
-			"peizhi_fu_1.max": 0.5,
+			"ind_water.balance": -0.5,
+			"soft_dirt.balance": -0.5,
+			"pei_zhi.balance": 0.5,
 			"human_power.max": -100,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -559,11 +676,17 @@
 			"ind_water": 100,
 			"glass": 30
 		},
+		"inp":[
+			{"id":"ind_water","base_val":0.5,"now_val":0},
+			{"id":"glass","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"xianban","base_val":0.5,"now_val":0}
+		],
 		"mod":{
-			"ind_water.rate": -0.5,
-			"glass.rate": -0.5,
-			"xianban_fu_1.rate": 0.5,
-			"xianban_fu_1.max": 0.5,
+			"ind_water.balance": -0.5,
+			"glass.balance": -0.5,
+			"xianban.balance": 0.5,
 			"human_power.max": -100,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -581,11 +704,17 @@
 			"soft_dirt": 30,
 			"pei_zhi": 30
 		},
+		"inp":[
+			{"id":"soft_dirt","base_val":1,"now_val":0},
+			{"id":"pei_zhi","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"xianban","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"soft_dirt.rate": -1,
-			"pei_zhi.rate": -0.5,
-			"songfeng_fu_1.rate": 1.5,
-			"songfeng_fu_1.max": 1.5,
+			"soft_dirt.balance": -1,
+			"pei_zhi.balance": -0.5,
+			"songfeng_jizhi.balance": 1.5,
 			"human_power.max": -100,
 			"industry_space": 0.3,
 			"industry_elect": 0.3,
@@ -603,11 +732,17 @@
 			"spare_parts": 30,
 			"steel": 30
 		},
+		"inp":[
+			{"id":"spare_parts","base_val":1,"now_val":0},
+			{"id":"steel","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"ryongping","base_val":3,"now_val":0}
+		],
 		"mod":{
-			"spare_parts.rate": -1,
-			"steel.rate": -1,
-			"ryongping_fu_1.rate": 3,
-			"ryongping_fu_1.max": 3,
+			"spare_parts.balance": -1,
+			"steel.balance": -1,
+			"ryongping.balance": 3,
 			"human_power.max": -100,
 			"industry_space": 0.6,
 			"industry_elect": 0.4,
@@ -624,10 +759,15 @@
 		"cost":{
 			"ryongping": 30
 		},
+		"inp":[
+			{"id":"ryongping","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"money","base_val":15,"now_val":0}
+		],
 		"mod":{
-			"ryongping.rate": -2,
-			"ryongping_fu_2.rate": 15,
-			"ryongping_fu_2.max": 15,
+			"ryongping.balance": -2,
+			"money.balance": 15,
 			"industry_space": 0.5,
 			"industry_elect": 0.1,
 			"industry_thread": 0.1
@@ -645,12 +785,19 @@
 			"steel": 30,
 			"glass": 50
 		},
+		"inp":[
+			{"id":"spare_parts","base_val":1,"now_val":0},
+			{"id":"steel","base_val":1,"now_val":0},
+			{"id":"glass","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"gaojihuowu","base_val":3,"now_val":0}
+		],
 		"mod":{
-			"spare_parts.rate": -1,
-			"steel.rate": -1,
-			"glass.rate": -2,
-			"gaojihw_fu_1.rate": 2,
-			"gaojihw_fu_1.max": 2,
+			"spare_parts.balance": -1,
+			"steel.balance": -1,
+			"glass.balance": -2,
+			"gaojihuowu.balance": 2,
 			"human_power.max": -100,
 			"industry_space": 0.6,
 			"industry_elect": 0.4,
@@ -665,12 +812,17 @@
 		"tags": "高级货物",
 		"require": "g.spart_zuzhuang>=4",
 		"cost":{
-			"ryongping": 30
+			"gaojihuowu": 30
 		},
+		"inp":[
+			{"id":"gaojihuowu","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"money","base_val":27,"now_val":0}
+		],
 		"mod":{
-			"gaojihuowu.rate": -2,
-			"gaojihw_fu_2.rate": 27,
-			"gaojihw_fu_2.max": 27,
+			"gaojihuowu.balance": -2,
+			"money.balance": 27,
 			"industry_space": 0.7,
 			"industry_elect": 0.2,
 			"industry_thread": 0.1
@@ -687,11 +839,17 @@
 			"gaojihuowu": 50,
 			"ryongping": 50
 		},
+		"inp":[
+			{"id":"gaojihuowu","base_val":1,"now_val":0},
+			{"id":"ryongping","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"shichiping","base_val":2,"now_val":0}
+		],
 		"mod":{
-			"gaojihuowu.rate": -1,
-			"ryongping.rate": -2,
-			"shichiping_fu_1.rate": 2,
-			"shichiping_fu_1.max": 2,
+			"gaojihuowu.balance": -1,
+			"ryongping.balance": -2,
+			"shichiping.balance": 2,
 			"human_power.max": -100,
 			"industry_space": 0.4,
 			"industry_elect": 0.6,
@@ -706,12 +864,17 @@
 		"tags": "奢侈品",
 		"require": "g.spart_zuzhuang>=8",
 		"cost":{
-			"ryongping": 30
+			"shichiping": 30
 		},
+		"inp":[
+			{"id":"shichiping","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"money","base_val":20,"now_val":0}
+		],
 		"mod":{
-			"shichiping.rate": -0.5,
-			"shichiping_fu_2.rate": 20,
-			"shichiping_fu_2.max": 20,
+			"shichiping.balance": -0.5,
+			"money.balance": 20,
 			"industry_space": 0.5,
 			"industry_elect": 0.35,
 			"industry_thread": 0.2
@@ -728,11 +891,17 @@
 			"songfeng_jizhi": 50,
 			"spare_parts": 50
 		},
+		"inp":[
+			{"id":"songfeng_jizhi","base_val":2,"now_val":0},
+			{"id":"spare_parts","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"nicheng_data","base_val":1,"now_val":0}
+		],
 		"mod":{
-			"songfeng_jizhi.rate": -2,
-			"spare_parts.rate": -1,
-			"nicsju_fu_1.rate": 1,
-			"nicsju_fu_1.max": 1,
+			"songfeng_jizhi.balance": -2,
+			"spare_parts.balance": -1,
+			"nicheng_data.balance": 1,
 			"industry_space": 1,
 			"industry_elect": 0.5,
 			"industry_thread": 0.1
@@ -749,11 +918,17 @@
 			"cbclb": 50,
 			"coil_1": 50
 		},
+		"inp":[
+			{"id":"cbclb","base_val":2,"now_val":0},
+			{"id":"coil_1","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"wujianbao","base_val":2,"now_val":0}
+		],
 		"mod":{
-			"cbclb.rate": -2,
-			"coil_1.rate": -0.5,
-			"wujianbao_fu_1.rate": 2,
-			"wujianbao_fu_1.max": 2,
+			"cbclb.balance": -2,
+			"coil_1.balance": -0.5,
+			"wujianbao.balance": 2,
 			"industry_space": 0.2,
 			"industry_elect": 0.2,
 			"industry_thread": 0.1
@@ -770,11 +945,17 @@
 			"ind_water": 50,
 			"quartz": 50
 		},
+		"inp":[
+			{"id":"ind_water","base_val":1,"now_val":0},
+			{"id":"quartz","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"zhenxishi","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"ind_water.rate": -1,
-			"quartz.rate": -2,
-			"zhenxishi_fu_1.rate": 1.5,
-			"zhenxishi_fu_1.max": 1.5,
+			"ind_water.balance": -1,
+			"quartz.balance": -2,
+			"zhenxishi.balance": 1.5,
 			"industry_space": 0.2,
 			"industry_elect": 0.2,
 			"industry_thread": 0.1
@@ -791,11 +972,17 @@
 			"zhenxishi": 50,
 			"wujianbao": 50
 		},
+		"inp":[
+			{"id":"zhenxishi","base_val":1.3,"now_val":0},
+			{"id":"wujianbao","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"cbclb","base_val":2,"now_val":0}
+		],
 		"mod":{
-			"zhenxishi.rate": -1.3,
-			"wujianbao.rate": -1,
-			"wujianbao_fu_2.rate": 2,
-			"wujianbao_fu_2.max": 2,
+			"zhenxishi.balance": -1.3,
+			"wujianbao.balance": -1,
+			"cbclb.balance": 2,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
 			"industry_thread": 0.1
@@ -812,11 +999,17 @@
 			"spare_parts": 50,
 			"wujianbao": 50
 		},
+		"inp":[
+			{"id":"spare_parts","base_val":1,"now_val":0},
+			{"id":"wujianbao","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"cbclb","base_val":3,"now_val":0}
+		],
 		"mod":{
-			"spare_parts.rate": -1,
-			"wujianbao.rate": -1,
-			"wujianbao_fu_3.rate": 3,
-			"wujianbao_fu_3.max": 3,
+			"spare_parts.balance": -1,
+			"wujianbao.balance": -1,
+			"yjdl.balance": 3,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
 			"industry_thread": 0.1
@@ -834,12 +1027,19 @@
 			"steel": 100,
 			"wujianbao": 50
 		},
+		"inp":[
+			{"id":"temp_1_unit","base_val":1,"now_val":0},
+			{"id":"steel","base_val":1.5,"now_val":0},
+			{"id":"wujianbao","base_val":1.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"gongzhiliang","base_val":1,"now_val":0}
+		],
 		"mod":{
-			"temp_1_unit.rate": -1,
-			"steel.rate": -1.5,
-			"wujianbao.rate": -1.5,
-			"gongzhiliang_fu_1.rate": 1,
-			"gongzhiliang_fu_1.max": 1,
+			"temp_1_unit.balance": -1,
+			"steel.balance": -1.5,
+			"wujianbao.balance": -1.5,
+			"gongzhiliang.balance": 1,
 			"industry_space": 0.2,
 			"industry_elect": 0.4,
 			"industry_thread": 0.1
@@ -857,12 +1057,19 @@
 			"steel": 100,
 			"wujianbao": 50
 		},
+		"inp":[
+			{"id":"zhenxishi","base_val":1,"now_val":0},
+			{"id":"gongzhiliang","base_val":1,"now_val":0},
+			{"id":"ind_water","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"xicheng_data","base_val":1,"now_val":0}
+		],
 		"mod":{
-			"zhenxishi.rate": -1,
-			"gongzhiliang.rate": -1,
-			"ind_water.rate": -2,
-			"xicheng_data_fu_1.rate": 1,
-			"xicheng_data_fu_1.max": 1,
+			"zhenxishi.balance": -1,
+			"gongzhiliang.balance": -1,
+			"ind_water.balance": -2,
+			"xicheng_data.balance": 1,
 			"industry_space": 0.2,
 			"industry_elect": 0.4,
 			"industry_thread": 0.1
@@ -878,10 +1085,15 @@
 		"cost":{
 			"coil_1": 50
 		},
+		"inp":[
+			{"id":"coil_1","base_val":3,"now_val":0}
+		],
+		"outp":[
+			{"id":"naicixian","base_val":1.5,"now_val":0}
+		],
 		"mod":{
-			"coil_1.rate": -3,
-			"naicixian_fu_1.rate": 1.5,
-			"naicixian_fu_1.max": 1.5,
+			"coil_1.balance": -3,
+			"naicixian.balance": 1.5,
 			"industry_space": 0.1,
 			"industry_elect": 0.5,
 			"industry_thread": 0.1
@@ -890,7 +1102,7 @@
 	{
 		"id": "naicixian_rp_2",
 		"name": "耐磁产电",
-		"desc": "消耗2耐磁线和1低温蒸汽并生产5.8工业电力",
+		"desc": "消耗2耐磁线和1低温蒸汽并生产6.7工业电力",
 		"thread_use": "steam_thread",
 		"tags": "低温蒸汽",
 		"require": "g.naicixian>=10",
@@ -899,10 +1111,11 @@
 			"ind_steam_1": 50
 		},
 		"mod":{
+			"naicixian.balance": -2,
+			"ind_steam_1.balance": -1,
 			"naicixian.rate": -2,
 			"ind_steam_1.rate": -1,
-			"elect_fu_naicixian.rate": 5.8,
-			"elect_fu_naicixian.max": 5.8,
+			"industry_elect.max": 6.7,
 			"industry_space": 0.4,
 			"industry_elect": 0.1,
 			"industry_thread": 0.1
@@ -920,12 +1133,19 @@
 			"ind_water": 100,
 			"coil_1": 50
 		},
+		"inp":[
+			{"id":"glass","base_val":1,"now_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0},
+			{"id":"coil_1","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"naicixian","base_val":1,"now_val":0}
+		],
 		"mod":{
-			"glass.rate": -1,
-			"ind_water.rate": -1,
-			"coil_1.rate": -1,
-			"ganguangtj_fu_1.rate": 1,
-			"ganguangtj_fu_1.max": 1,
+			"glass.balance": -1,
+			"ind_water.balance": -1,
+			"coil_1.balance": -1,
+			"ganguangtj.balance": 1,
 			"industry_space": 0.1,
 			"industry_elect": 0.5,
 			"industry_thread": 0.1
@@ -942,14 +1162,247 @@
 			"ganguangtj": 50,
 			"naicixian": 100
 		},
+		"inp":[
+			{"id":"ganguangtj","base_val":1,"now_val":0},
+			{"id":"naicixian","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"guanggan_data","base_val":1,"now_val":0}
+		],
 		"mod":{
-			"ganguangtj.rate": -1,
-			"naicixian.rate": -1,
-			"guanggan_data_fu_1.rate": 1,
-			"guanggan_data_fu_1.max": 1,
+			"ganguangtj.balance": -1,
+			"naicixian.balance": -1,
+			"guanggan_data.balance": 1,
 			"industry_space": 0.3,
 			"industry_elect": 0.5,
 			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "gubenjizuantan",
+		"name": "古本纪钻探",
+		"desc": "消耗1碎隙凡膜和0.2水并生产5古本之核",
+		"thread_use": "sysn_zuanji_1",
+		"tags": "古本之核",
+		"require": "g.chenshigq>=1",
+		"cost":{
+			"suixifanmo": 10,
+			"ind_water": 20,
+			"life_crystal": 5
+		},
+		"inp":[
+			{"id":"suixifanmo","base_val":1,"now_val":0},
+			{"id":"ind_water","base_val":0.2,"now_val":0}
+		],
+		"outp":[
+			{"id":"guben_core","base_val":5,"now_val":0}
+		],
+		"mod":{
+			"suixifanmo.balance": -1,
+			"ind_water.balance": -0.2,
+			"guben_core.balance": 5,
+			"industry_space": 0.1,
+			"industry_elect": 0.5,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "suixifanmo_rp_1",
+		"name": "凡膜构造",
+		"desc": "消耗1水和1煤炭并生产0.2碎隙凡膜",
+		"thread_use": "assemble_thread",
+		"tags": "碎隙凡膜",
+		"require": "g.chenshigq>=1",
+		"cost":{
+			"ind_water": 100,
+			"coal": 100,
+			"life_crystal": 20
+		},
+		"inp":[
+			{"id":"ind_water","base_val":1,"now_val":0},
+			{"id":"coal","base_val":1,"now_val":0}
+		],
+		"outp":[
+			{"id":"suixifanmo","base_val":0.2,"now_val":0}
+		],
+		"mod":{
+			"ind_water.balance": -1,
+			"coal.balance": -1,
+			"suixifanmo.balance": 0.2,
+			"industry_space": 0.1,
+			"industry_elect": 0.2,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "gubenheposui_1",
+		"name": "古本核破碎",
+		"desc": "消耗2古本之核并生产10岩气，3水，2萤晶，2真直矿",
+		"thread_use": "sysn_posui_1",
+		"tags": "古本之核",
+		"require": "g.chenshigq>=1",
+		"cost":{
+			"guben_core": 1,
+			"ind_water": 50,
+			"coil_1": 20
+		},
+		"inp":[
+			{"id":"guben_core","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"yanqi","base_val":10,"now_val":0},
+			{"id":"ind_water","base_val":3,"now_val":0},
+			{"id":"yinjing","base_val":2,"now_val":0},
+			{"id":"zhenzhi_ore","base_val":2,"now_val":0}
+		],
+		"mod":{
+			"guben_core.balance": -2,
+			"yanqi.balance": 10,
+			"ind_water.balance": 3,
+			"yinjing.balance": 2,
+			"zhenzhi_ore.balance": 2,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "gubenheyasuo",
+		"name": "古本核压缩",
+		"desc": "消耗2古本之核并生产0.5物件包",
+		"thread_use": "assemble_thread",
+		"tags": "古本之核",
+		"require": "g.zhenzyyjjx>=1",
+		"cost":{
+			"wujianbao": 10,
+			"guben_core": 10,
+			"ind_water": 50
+		},
+		"inp":[
+			{"id":"guben_core","base_val":2,"now_val":0}
+		],
+		"outp":[
+			{"id":"wujianbao","base_val":0.5,"now_val":0}
+		],
+		"mod":{
+			"guben_core.balance": -2,
+			"wujianbao.balance": 0.5,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "zhenzhikuangrong",
+		"name": "熔真直矿",
+		"desc": "消耗50钛板和6真直矿并生产3真直锭和1低温蒸汽和48钛板",
+		"thread_use": "furnace_thread",
+		"tags": "真直矿",
+		"require": "g.zhenzhi_ore>=1",
+		"cost":{
+			"guben_core": 1,
+			"zhenzhi_ore": 10,
+			"ind_water": 50
+		},
+		"inp":[
+			{"id":"tian","base_val":50,"now_val":0},
+			{"id":"zhenzhi_ore","base_val":6,"now_val":0}
+		],
+		"outp":[
+			{"id":"tian","base_val":48,"now_val":0},
+			{"id":"ind_steam_1","base_val":1,"now_val":0},
+			{"id":"zhenzhi_spindle","base_val":3,"now_val":0}
+		],
+		"mod":{
+			"tian.balance": -2,
+			"zhenzhi_ore.balance": -6,
+			"ind_steam_1.balance": 1,
+			"zhenzhi_spindle.balance": 3,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "xuanmuhecheng",
+		"name": "玄牝合成",
+		"desc": "消耗4萤晶和3水并生产0.5玄牝液",
+		"thread_use": "purify_thread",
+		"tags": "玄牝液",
+		"require": "g.zhenzyyjjx>=1",
+		"cost":{
+			"yinjing": 10,
+			"ind_water": 50
+		},
+		"inp":[
+			{"id":"yinjing","base_val":4,"now_val":0},
+			{"id":"ind_water","base_val":3,"now_val":0}
+		],
+		"outp":[
+			{"id":"xuanmuye","base_val":0.5,"now_val":0}
+		],
+		"mod":{
+			"yinjing.balance": -4,
+			"ind_water.balance": -3,
+			"xuanmuye.balance": 0.5,
+			"industry_space": 0.1,
+			"industry_elect": 0.3,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "qiyihecheng",
+		"name": "奇异合成",
+		"desc": "消耗1玄牝液和8岩气并生产1奇异液体",
+		"thread_use": "purify_thread",
+		"tags": "玄牝液",
+		"require": "g.zhenzyyjjx>=1",
+		"cost":{
+			"xuanmuye": 10,
+			"ind_water": 50
+		},
+		"inp":[
+			{"id":"xuanmuye","base_val":1,"now_val":0},
+			{"id":"yanqi","base_val":8,"now_val":0}
+		],
+		"outp":[
+			{"id":"qiyiyeti","base_val":1,"now_val":0}
+		],
+		"mod":{
+			"xuanmuye.balance": -1,
+			"yanqi.balance": -8,
+			"qiyiyeti.balance": 1,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "yanqipaifang",
+		"name": "岩气排放",
+		"desc": "消耗12岩气并生产0.3煤炭和0.1焦炭",
+		"thread_use": "sysn_qitipaifang_1",
+		"tags": "岩气",
+		"require": "g.gubenhejiexi>=1",
+		"cost":{
+			"guben_core": 1,
+			"money": 800,
+			"ind_water": 50
+		},
+		"inp":[
+			{"id":"yanqi","base_val":12,"now_val":0}
+		],
+		"outp":[
+			{"id":"coal","base_val":0.3,"now_val":0},
+			{"id":"coke","base_val":0.1,"now_val":0}
+		],
+		"mod":{
+			"yanqi.balance": -12,
+			"coal.balance": 0.3,
+			"coke.balance": 0.1,
+			"industry_space": 0.1,
+			"industry_elect": 0.4,
+			"industry_thread": 0.1
 		}
 	}
 ]
