@@ -1,5 +1,19 @@
 [
 	{
+		"id": "helper_1",
+		"name": "按TAB打开指引页",
+		"desc": "按TAB打开指引页",
+		"verb": "",
+		"locked": false,
+		"cost": {
+			"tili": 0.1
+		},
+		"result": {
+			"money": 1
+		},
+		"flavor": "按TAB打开指引页"
+	},
+	{
 		"id": "clean",
 		"name": "扫地",
 		"desc": "给大户人家做仆役...",
@@ -117,6 +131,22 @@
 			"money": 0.1,
 			"time": 2,
 			"ganwu": 0.05
+		}
+	},
+	{
+		"id": "heliganwu",
+		"name": "合理感悟",
+		"desc": "运用合理获取感悟",
+		"verb": "",
+		"require": "g.heli>25",
+		"cost": {
+			"tili": 0.7,
+			"stamina": 0.15,
+			"heli": 1
+		},
+		"result": {
+			"time": 0.5,
+			"ganwu": 5
 		}
 	},
 	{
@@ -1204,6 +1234,181 @@
 			"space.max": 100
 		},
 		"disable": ["event_kjycds_2_1"]
+	},
+	{
+		"id":"event_yuansutunshi",
+		"name": "元素吞噬",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "史籍中语焉不详的一页，古人寻道于五位元素中，时而于林地纵乐，时而于大洋沉溺，时而于戊己独坐，时而于兵戈互伤，时而于阳火呼吸。在更加平凡的时代，早已被人忘记。",
+		"verb": "启动事件链",
+		"max": 1,
+		"warn": true,
+		"require": "g.shengchanlun>=1",
+		"length": 15,
+		"cost": {
+			"heli": 40,
+			"chaos": 40,
+			"elect": 100,
+			"shenshi": 20,
+			"element_wuhuan": 20,
+			"element_luor": 10,
+			"element_gold": 21,
+			"element_wood": 21,
+			"element_water": 21,
+			"element_fire": 21,
+			"element_land": 21
+		},
+		"run": {
+			"elect": 80,
+			"time": -2
+		},
+		"result": {
+			"element_wuhuan.max": 20,
+			"element_luor.max": 20,
+			"element_gold.max": 20,
+			"element_wood.max": 20,
+			"element_water.max": 20,
+			"element_fire.max": 20,
+			"element_land.max": 20
+		}
+	},
+	{
+		"id":"event_yuansutunshi_gold",
+		"name": "兵戈之感伤",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "凡俗尘烟为国君的指令扬起，人谈吐更早时候未曾发生的大战，兵戈挥向北方，于非昼非夜的时辰残害蔽幽之影。",
+		"verb": "我流血",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_yuansutunshi>=1",
+		"length": 30,
+		"cost": {
+			"heli": 40,
+			"element_gold": 41
+		},
+		"run": {
+			"time": -60
+		},
+		"result": {
+			"element_gold.rate": -0.2,
+			"element_gold.max": 19
+		},
+		"flavor": "开启此事件将每秒消耗0.2锐金，完成事件需要保持锐金不小于零六十秒"
+	},
+	{
+		"id":"event_yuansutunshi_wood",
+		"name": "林地之纵乐",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "嘻，世人何伤感于失落之星，吾尝闻兆兆长河外有一木，其枝遍于八荒，其叶穿梭古今，其根明晓万事，嘻，孺子当大颂大木。",
+		"verb": "我纵乐",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_yuansutunshi>=1",
+		"length": 30,
+		"cost": {
+			"heli": 40,
+			"element_wood": 41
+		},
+		"run": {
+			"time": -60
+		},
+		"result": {
+			"element_wood.rate": -0.2,
+			"element_wood.max": 19
+		},
+		"flavor": "开启此事件将每秒消耗0.2巨木，完成事件需要保持巨木不小于零六十秒"
+	},
+	{
+		"id":"event_yuansutunshi_water",
+		"name": "大洋之沉溺",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "舌与眼，你该忘记！莫听闻凡俗秽音，莫细嗅凡俗污物，昔年水漫于尘世，诸鱼顶礼膜拜洋中大物。叹！门扉已闭，遗落凡谬光河！",
+		"verb": "我沉溺",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_yuansutunshi>=1",
+		"length": 30,
+		"cost": {
+			"heli": 40,
+			"element_water": 41
+		},
+		"run": {
+			"time": -60
+		},
+		"result": {
+			"element_water.rate": -0.2,
+			"element_water.max": 19
+		},
+		"flavor": "开启此事件将每秒消耗0.2洪水，完成事件需要保持洪水不小于零六十秒"
+	},
+	{
+		"id":"event_yuansutunshi_fire",
+		"name": "阳火之呼吸",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "骄阳的光辉从光河漫入尘世，我不记得为何要凝视浩渺星辰，人大声歌颂被三千千骄阳遗落的伟哉天体，彼值于北方之蛇影将亿恒生生止步觉悟之门。",
+		"verb": "我呼吸",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_yuansutunshi>=1",
+		"length": 30,
+		"cost": {
+			"heli": 40,
+			"element_fire": 41
+		},
+		"run": {
+			"time": -60
+		},
+		"result": {
+			"element_fire.rate": -0.2,
+			"element_fire.max": 19
+		},
+		"flavor": "开启此事件将每秒消耗0.2烈火，完成事件需要保持烈火不小于零六十秒"
+	},
+	{
+		"id":"event_yuansutunshi_land",
+		"name": "戊己之独坐",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "昔年工匠为无名君主建大庙，大庙通至天穹，有琉璃华光昼夜遍布于身，亦难逃岁月，北方大害断其为三段于千重戊己之下。",
+		"verb": "我独坐",
+		"max": 1,
+		"warn": true,
+		"require": "g.event_yuansutunshi>=1",
+		"length": 30,
+		"cost": {
+			"heli": 40,
+			"element_land": 41
+		},
+		"run": {
+			"time": -60
+		},
+		"result": {
+			"element_land.rate": -0.2,
+			"element_land.max": 19
+		},
+		"flavor": "开启此事件将每秒消耗0.2厚土，完成事件需要保持厚土不小于零六十秒"
+	},
+	{
+		"id":"event_yuansutunshi_end",
+		"name": "彷徨在遥远群星",
+		"tags":"事件,元素吞噬事件链",
+		"desc": "即使过了许多个春秋，人在看见璀璨星海时也会想起那个寒冷的雨夜。整个夜空都大声呼喊，归来！十万闪烁星辰为其呐喊，斑斓之色从天际落下。天幕亮起一块惨白的伤口，人说他在南鱼座徘徊，二位化身为其奉献，名曰北落，名曰师门，巨大漆黑之影埋藏在庙宇中，星斗无动于衷。",
+		"verb": "啊",
+		"max": 1,
+		"warn": true,
+		"require": "g.eyuansuts_bingge>=1 && g.eyuansuts_lindi>=1 && g.eyuansuts_dayang>=1 && g.eyuansuts_yanghuo>=1 && g.eyuansuts_wuji>=1",
+		"length": 30,
+		"cost": {
+			"star_map_1" :42,
+			"heli": 42,
+			"chaos": 42,
+			"elect": 42
+		},
+		"run": {
+			"time": 60
+		},
+		"result": {
+			"ganwu.max": 1
+		}
 	},
 	{
 		"id": "dafenziguancha",

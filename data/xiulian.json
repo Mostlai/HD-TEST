@@ -4862,6 +4862,7 @@
 		"max": 2,
 		"cost": {
 			"element_blood": 40,
+			"qiyiyeti":20,
 			"lxue": 20,
 			"money": 8000,
 			"gubenxianling": 15,
@@ -4885,6 +4886,7 @@
 		"max": 2,
 		"cost": {
 			"element_blood": 40,
+			"qiyiyeti":20,
 			"gubenxianling": 15,
 			"xuanmuye": 150,
 			"element_wuhuan": 20,
@@ -4908,6 +4910,7 @@
 		"max": 2,
 		"cost": {
 			"jihun": 5,
+			"qiyiyeti":20,
 			"zhenhun_pice_1": 40,
 			"element_blood": 40,
 			"xuanmuye": 150,

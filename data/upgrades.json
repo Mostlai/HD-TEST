@@ -2850,6 +2850,32 @@
 		}
 	},
 	{
+		"id": "zunhao_sijue",
+		"name": "思觉",
+		"tags": "t2",
+		"slot": "honorific",
+		"desc": "我已超越凡俗",
+		"require": "g.xl_crzj_zhujierchong>=1",
+		"buy": {
+			"human_power": 2000,
+			"qiyiyeti":20,
+			"zhenzhi_spindle": 150,
+			"element_wuhuan": 20,
+			"element_luor": 20,
+			"money": 8000
+		},
+		"mod":{
+			"hp.rate":8,
+			"tili.rate": 2,
+			"stamina.rate": 2,
+			"self.defense": 20,
+			"heli.max": 20,
+			"chaos.max": 20,
+			"shenshi.max": 20,
+			"space.max": 200
+		}
+	},
+	{
 		"id": "yeyz",
 		"name": "行恶役者",
 		"tags": "t1,moxiu",
@@ -5474,6 +5500,102 @@
 		"mod":{
 			"ganwu.max": 100,
 			"ganwu.rate": -2
+		}
+	},
+	{
+		"id": "fuyinsizhu",
+		"name": "超越凡俗",
+		"desc": "我从万物中学习，他教导我许多，前进需明晰被遮掩之物，我的眼正穿透那迷雾。",
+		"max": 9,
+		"require": "g.xl_crzj_zhujierchong>=1",
+		"cost": {
+			"money": 5000,
+			"gubenxianling": 7,
+			"xuanmuye": 100,
+			"element_wuhuan": 20,
+			"element_luor": 20,
+			"ganwu": 4500,
+			"zhenzhi_spindle": 150,
+			"yinjing": 150,
+			"adv_snp_data": 15
+		},
+		"mod":{
+			"level.max": 1
+		}
+	},
+	{
+		"id": "eyuansuts_bingge",
+		"name": "兵戈",
+		"desc": "我望见过往云烟",
+		"max": 1,
+		"require": "g.evt_yuansutunshi_gold_success>=2",
+		"cost": {
+			"element_gold": 40
+		},
+		"mod":{
+			"element_gold.rate": 0.3,
+			"qiyiyeti.max": 5,
+			"qiyiyeti.rate": 0.01
+		}
+	},
+	{
+		"id": "eyuansuts_lindi",
+		"name": "思考在林地",
+		"desc": "我听见遥远的生命呼吸",
+		"max": 1,
+		"require": "g.evt_yuansutunshi_wood_success>=2",
+		"cost": {
+			"element_wood": 40
+		},
+		"mod":{
+			"element_wood.rate": 0.3,
+			"qiyiyeti.max": 5,
+			"qiyiyeti.rate": 0.01
+		}
+	},
+	{
+		"id": "eyuansuts_dayang",
+		"name": "大洋之影",
+		"desc": "覆州大物前往群星",
+		"max": 1,
+		"require": "g.evt_yuansutunshi_water_success>=2",
+		"cost": {
+			"element_water": 40
+		},
+		"mod":{
+			"element_water.rate": 0.3,
+			"qiyiyeti.max": 5,
+			"qiyiyeti.rate": 0.01
+		}
+	},
+	{
+		"id": "eyuansuts_yanghuo",
+		"name": "长久的火",
+		"desc": "寒冬的雪花也承载着温暖之阳",
+		"max": 1,
+		"require": "g.evt_yuansutunshi_fire_success>=2",
+		"cost": {
+			"element_fire": 40
+		},
+		"mod":{
+			"element_fire.rate": 0.3,
+			"qiyiyeti.max": 5,
+			"qiyiyeti.rate": 0.01
+		}
+	},
+	{
+		"id": "eyuansuts_wuji",
+		"name": "秘密之地",
+		"desc": "可曾见深埋地底的史诗",
+		"max": 1,
+		"require": "g.evt_yuansutunshi_land_success>=2",
+		"cost": {
+			"element_land": 40
+		},
+		"mod":{
+			"element_land.rate": 0.3,
+			"qiyiyeti.max": 5,
+			"qiyiyeti.rate": 0.01
 		}
 	},
 	{

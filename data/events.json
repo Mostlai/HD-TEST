@@ -478,6 +478,101 @@
 		"desc": "发现穷究雪原...."
 	},
 	{
+		"id": "evt_yuansutunshi_gold_success",
+		"name": "兵戈之感伤检测",
+		"desc": "",
+		"require": "g.event_yuansutunshi_gold>=1 && g.element_gold>0 && g.evt_yuansutunshi_gold_fail<=0",
+		"loopcd": 60,
+		"loopcd_now": 0,
+		"hide": true,
+		"max": 2
+	},
+	{
+		"id": "evt_yuansutunshi_gold_fail",
+		"name": "兵戈之感伤检测",
+		"desc": "吞噬失败....",
+		"require": "g.event_yuansutunshi_gold>=1 && g.element_gold<=0",
+		"mod": {
+			"element_gold.rate": 0.2
+		}
+	},
+	{
+		"id": "evt_yuansutunshi_wood_success",
+		"name": "林地之纵乐检测",
+		"desc": "",
+		"require": "g.event_yuansutunshi_wood>=1 && g.element_wood>0 && g.evt_yuansutunshi_wood_fail<=0",
+		"loopcd": 60,
+		"loopcd_now": 0,
+		"hide": true,
+		"max": 2
+	},
+	{
+		"id": "evt_yuansutunshi_wood_fail",
+		"name": "林地之纵乐检测",
+		"desc": "吞噬失败....",
+		"require": "g.event_yuansutunshi_wood>=1 && g.element_wood<=0",
+		"mod": {
+			"element_wood.rate": 0.2
+		}
+	},
+	{
+		"id": "evt_yuansutunshi_water_success",
+		"name": "大洋之沉溺检测",
+		"desc": "",
+		"require": "g.event_yuansutunshi_water>=1 && g.element_water>0 && g.evt_yuansutunshi_water_fail<=0",
+		"loopcd": 60,
+		"loopcd_now": 0,
+		"hide": true,
+		"max": 2
+	},
+	{
+		"id": "evt_yuansutunshi_water_fail",
+		"name": "大洋之沉溺检测",
+		"desc": "吞噬失败....",
+		"require": "g.event_yuansutunshi_water>=1 && g.element_water<=0",
+		"mod": {
+			"element_water.rate": 0.2
+		}
+	},
+	{
+		"id": "evt_yuansutunshi_fire_success",
+		"name": "阳火之呼吸检测",
+		"desc": "",
+		"require": "g.event_yuansutunshi_fire>=1 && g.element_fire>0 && g.evt_yuansutunshi_fire_fail<=0",
+		"loopcd": 60,
+		"loopcd_now": 0,
+		"hide": true,
+		"max": 2
+	},
+	{
+		"id": "evt_yuansutunshi_fire_fail",
+		"name": "阳火之呼吸检测",
+		"desc": "吞噬失败....",
+		"require": "g.event_yuansutunshi_fire>=1 && g.element_fire<=0",
+		"mod": {
+			"element_fire.rate": 0.2
+		}
+	},
+	{
+		"id": "evt_yuansutunshi_land_success",
+		"name": "戊己之独坐检测",
+		"desc": "",
+		"require": "g.event_yuansutunshi_land>=1 && g.element_land>0 && g.evt_yuansutunshi_land_fail<=0",
+		"loopcd": 60,
+		"loopcd_now": 0,
+		"hide": true,
+		"max": 2
+	},
+	{
+		"id": "evt_yuansutunshi_land_fail",
+		"name": "戊己之独坐检测",
+		"desc": "吞噬失败....",
+		"require": "g.event_yuansutunshi_land>=1 && g.element_land<=0",
+		"mod": {
+			"element_land.rate": 0.2
+		}
+	},
+	{
 		"id": "evt_helper",
 		"name": "Promotion",
 		"desc": "In return for your new services, your master grants you a small allowance for your studies. The position does require of course, some initial fees...",
