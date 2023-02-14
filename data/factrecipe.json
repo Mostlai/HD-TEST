@@ -1004,7 +1004,7 @@
 			{"id":"wujianbao","base_val":1,"now_val":0}
 		],
 		"outp":[
-			{"id":"cbclb","base_val":3,"now_val":0}
+			{"id":"yjdl","base_val":3,"now_val":0}
 		],
 		"mod":{
 			"spare_parts.balance": -1,
