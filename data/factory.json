@@ -403,7 +403,7 @@
 		},
 		"mod":{
 			"space": 23,
-			"elect.rate": -10,
+			"elect.rate": -5,
 			"industry_space": 1,
 			"industry_elect": 1,
 			"sysn_qitipaifang_1.max": 1
@@ -428,7 +428,7 @@
 		},
 		"mod":{
 			"space": 420,
-			"elect.rate": -130,
+			"elect.rate": -45,
 			"industry_space": 1,
 			"industry_elect": 1,
 			"sysn_zuanji_1.max": 1
