@@ -63,7 +63,7 @@
 		},
 		"mod":{
 			"elect.max": 10,
-			"elect.rate": 10,
+			"elect.rate": 20,
 			"industry_elect.max": 10
 		},
 		"max": 1
@@ -73,7 +73,7 @@
 		"name": "电力增长II",
 		"tags": "物理域",
 		"desc": "提高电能和工业用电上限",
-		"require": "g.xl_lj_konwledege_1>=1",
+		"require": "g.techo_phy_elc_1>=1",
 		"research_need_point": 3000,
 		"run":{
 			"money": 100,
@@ -81,8 +81,26 @@
 		},
 		"mod":{
 			"elect.max": 10,
-			"elect.rate": 10,
-			"industry_elect.max": 10
+			"elect.rate": 25,
+			"industry_elect.max": 15
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_elc_3",
+		"name": "电力增长III",
+		"tags": "物理域",
+		"desc": "提高电能和工业用电上限",
+		"require": "g.techo_phy_elc_2>=1",
+		"research_need_point": 6500,
+		"run":{
+			"money": 100,
+			"ganwu": 50
+		},
+		"mod":{
+			"elect.max": 10,
+			"elect.rate": 30,
+			"industry_elect.max": 25
 		},
 		"max": 1
 	},
