@@ -4,6 +4,7 @@
 		"name": "按TAB打开指引页",
 		"desc": "按TAB打开指引页",
 		"verb": "",
+		"max": 1,
 		"locked": false,
 		"cost": {
 			"tili": 0.1

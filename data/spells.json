@@ -1422,6 +1422,39 @@
 		"flavor": "需要装备【碎魂注射模块【AL-T】】"
 	},
 	{
+		"id": "sijue_defense_1",
+		"name": "汝不见幽",
+		"school": "混沌",
+		"level": 10,
+		"desc": "",
+		"cd": 10,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000,
+			"gubenxianling": 5,
+			"shenglingshi": 20,
+			"lxue": 20,
+			"money": 8000
+		},
+		"cost": {
+			"heli": 10,
+			"chaos": 20
+		},
+		"attack": {
+			"hits": [
+				{
+					"targets": "all",
+					"dot": {
+						"mod": {
+							"self.defense": -200
+						},
+						"duration": 23
+					}
+				}
+			]
+		}
+	},
+	{
 		"id": "stam1",
 		"name": "minor fount",
 		"level": 1,

@@ -1,4 +1,14 @@
 [
+
+	{
+		"id": "sijue_defense_1_effect",
+		"name": "汝不见幽",
+		"kind": "chaos",
+		"duration": 20,
+		"mod": {
+			"defense": -200
+		}
+	},
 	{
 		"id": "charmed",
 		"flags": "charmed",
