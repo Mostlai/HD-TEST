@@ -1237,7 +1237,7 @@
 	{
 		"id": "gubenheposui_1",
 		"name": "古本核破碎",
-		"desc": "消耗2古本之核并生产10岩气，3水，2萤晶，2真直矿",
+		"desc": "消耗2古本之核并生产10岩气，2萤晶，2真直矿",
 		"thread_use": "sysn_posui_1",
 		"tags": "古本之核",
 		"require": "g.chenshigq>=1",
@@ -1251,14 +1251,12 @@
 		],
 		"outp":[
 			{"id":"yanqi","base_val":10,"now_val":0},
-			{"id":"ind_water","base_val":3,"now_val":0},
 			{"id":"yinjing","base_val":2,"now_val":0},
 			{"id":"zhenzhi_ore","base_val":2,"now_val":0}
 		],
 		"mod":{
 			"guben_core.balance": -2,
 			"yanqi.balance": 10,
-			"ind_water.balance": 3,
 			"yinjing.balance": 2,
 			"zhenzhi_ore.balance": 2,
 			"industry_space": 0.3,
