@@ -1252,8 +1252,8 @@
 		"outp":[
 			{"id":"yanqi","base_val":10,"now_val":0},
 			{"id":"ind_water","base_val":3,"now_val":0,"ignore": true},
-			{"id":"yinjing","base_val":2,"now_val":0},
-			{"id":"zhenzhi_ore","base_val":2,"now_val":0}
+			{"id":"yinjing","base_val":2,"now_val":0,"ignore": true},
+			{"id":"zhenzhi_ore","base_val":2,"now_val":0,"ignore": true}
 		],
 		"mod":{
 			"guben_core.balance": -2,
