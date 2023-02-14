@@ -1201,8 +1201,8 @@
 			"suixifanmo.balance": -1,
 			"ind_water.balance": -0.2,
 			"guben_core.balance": 5,
-			"industry_space": 0.1,
-			"industry_elect": 0.5,
+			"industry_space": 0.3,
+			"industry_elect": 1,
 			"industry_thread": 0.2
 		}
 	},
