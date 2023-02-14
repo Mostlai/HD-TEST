@@ -31,6 +31,12 @@
 		"desc": "在游戏界面的右上角可以找到WIKI入口。WIKI的内容限于作者精力不会太丰富，你可以在点击WIKI页面左侧的【路线图】来查看当前浏览条目的相关条目。如果你想丰富WIKI内容，可以联系作者获得WIKI的push 令牌。",
 		"require": "g.hp>=1",
 		"val": 0,
+		"text_url":[
+			{
+				"name":"WIKI",
+				"url":"https://mostlai.github.io/HD-WIKI/"
+			}
+		],
 		"target":{
 			"0":{
 				"id": "money",
@@ -44,5 +50,36 @@
 			"money": 2
 		},
 		"flavor": "本游戏QQ群281738137，欢迎直接对峙作者"
+	},
+	{
+		"id": "missions_3",
+		"name": "纯浊灵体",
+		"tags": "指引任务",
+		"desc": "你最开始可以在【小型战场】上获取这种资源，每个人生来可以容纳2个纯浊灵体，但如果你没有解锁他，是无法看见的。要提升纯浊灵体的资源上限值，可以通过建造【流光玻璃瓶】来提升。",
+		"require": "g.hp>=1",
+		"val": 0,
+		"text_url":[
+			{
+				"name":"纯浊灵体",
+				"url":"https://mostlai.github.io/HD-WIKI/#纯浊灵体"
+			},
+			{
+				"name":"流光玻璃瓶",
+				"url":"https://mostlai.github.io/HD-WIKI/#流光玻璃瓶"
+			}
+		],
+		"target":{
+			"0":{
+				"id": "liuguangboli",
+				"val": 1
+			}
+		},
+		"lhxy":{
+			"dirty_lingti": 1
+		},
+		"result":{
+			"space.max": 25,
+			"dirty_lingti": 2
+		}
 	}
 ]
