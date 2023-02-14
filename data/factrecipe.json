@@ -1237,7 +1237,7 @@
 	{
 		"id": "gubenheposui_1",
 		"name": "古本核破碎",
-		"desc": "消耗2古本之核并生产10岩气，2萤晶，2真直矿",
+		"desc": "消耗2古本之核并生产10岩气，3水，2萤晶，2真直矿",
 		"thread_use": "sysn_posui_1",
 		"tags": "古本之核",
 		"require": "g.chenshigq>=1",
@@ -1251,12 +1251,14 @@
 		],
 		"outp":[
 			{"id":"yanqi","base_val":10,"now_val":0},
+			{"id":"ind_water","base_val":3,"now_val":0,"ignore": true},
 			{"id":"yinjing","base_val":2,"now_val":0},
 			{"id":"zhenzhi_ore","base_val":2,"now_val":0}
 		],
 		"mod":{
 			"guben_core.balance": -2,
 			"yanqi.balance": 10,
+			"ind_water.balance": 3,
 			"yinjing.balance": 2,
 			"zhenzhi_ore.balance": 2,
 			"industry_space": 0.3,
@@ -1307,14 +1309,13 @@
 			{"id":"zhenzhi_ore","base_val":6,"now_val":0}
 		],
 		"outp":[
-			{"id":"tian","base_val":48,"now_val":0},
-			{"id":"ind_steam_1","base_val":1,"now_val":0},
+			{"id":"tian","base_val":48,"now_val":0,"ignore": true},
+			{"id":"ind_steam_1","base_val":1,"now_val":0,"ignore": true},
 			{"id":"zhenzhi_spindle","base_val":3,"now_val":0}
 		],
 		"mod":{
 			"tian.balance": -2,
 			"zhenzhi_ore.balance": -6,
-			"ind_steam_1.balance": 1,
 			"zhenzhi_spindle.balance": 3,
 			"industry_space": 0.3,
 			"industry_elect": 0.2,
@@ -1391,8 +1392,8 @@
 			{"id":"yanqi","base_val":12,"now_val":0}
 		],
 		"outp":[
-			{"id":"coal","base_val":0.3,"now_val":0},
-			{"id":"coke","base_val":0.1,"now_val":0}
+			{"id":"coal","base_val":0.3,"now_val":0,"ignore": true},
+			{"id":"coke","base_val":0.1,"now_val":0,"ignore": true}
 		],
 		"mod":{
 			"yanqi.balance": -12,
