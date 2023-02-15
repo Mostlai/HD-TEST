@@ -254,7 +254,7 @@
 		"name": "低温蒸汽机",
 		"desc": "消耗0.5低温蒸汽并生产2工业电力",
 		"thread_use": "steam_thread",
-		"tags": "低温蒸汽",
+		"tags": "低温蒸汽,发电",
 		"require": "g.coal>=1",
 		"cost":{
 			"ind_steam_1": 50,
@@ -1104,7 +1104,7 @@
 		"name": "耐磁产电",
 		"desc": "消耗2耐磁线和1低温蒸汽并生产6.7工业电力",
 		"thread_use": "steam_thread",
-		"tags": "低温蒸汽",
+		"tags": "低温蒸汽,发电",
 		"require": "g.naicixian>=10",
 		"cost":{
 			"naicixian": 50,
