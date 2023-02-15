@@ -5528,7 +5528,7 @@
 		"name": "兵戈",
 		"desc": "我望见过往云烟",
 		"max": 1,
-		"require": "g.evt_yuansutunshi_gold_success>=2",
+		"require": "g.evt_yuansutunshi_gold_success>=2 && g.evt_yuansutunshi_gold_fail<=0",
 		"cost": {
 			"element_gold": 40
 		},
@@ -5543,7 +5543,7 @@
 		"name": "思考在林地",
 		"desc": "我听见遥远的生命呼吸",
 		"max": 1,
-		"require": "g.evt_yuansutunshi_wood_success>=2",
+		"require": "g.evt_yuansutunshi_wood_success>=2 && g.evt_yuansutunshi_wood_fail<=0",
 		"cost": {
 			"element_wood": 40
 		},
@@ -5558,7 +5558,7 @@
 		"name": "大洋之影",
 		"desc": "覆州大物前往群星",
 		"max": 1,
-		"require": "g.evt_yuansutunshi_water_success>=2",
+		"require": "g.evt_yuansutunshi_water_success>=2 && g.evt_yuansutunshi_water_fail<=0",
 		"cost": {
 			"element_water": 40
 		},
@@ -5573,7 +5573,7 @@
 		"name": "长久的火",
 		"desc": "寒冬的雪花也承载着温暖之阳",
 		"max": 1,
-		"require": "g.evt_yuansutunshi_fire_success>=2",
+		"require": "g.evt_yuansutunshi_fire_success>=2 && g.evt_yuansutunshi_fire_fail<=0",
 		"cost": {
 			"element_fire": 40
 		},
@@ -5588,7 +5588,7 @@
 		"name": "秘密之地",
 		"desc": "可曾见深埋地底的史诗",
 		"max": 1,
-		"require": "g.evt_yuansutunshi_land_success>=2",
+		"require": "g.evt_yuansutunshi_land_success>=2 && g.evt_yuansutunshi_land_fail<=0",
 		"cost": {
 			"element_land": 40
 		},
