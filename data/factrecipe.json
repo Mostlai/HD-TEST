@@ -1139,7 +1139,7 @@
 			{"id":"coil_1","base_val":1,"now_val":0}
 		],
 		"outp":[
-			{"id":"naicixian","base_val":1,"now_val":0}
+			{"id":"ganguangtj","base_val":1,"now_val":0}
 		],
 		"mod":{
 			"glass.balance": -1,

@@ -1423,11 +1423,11 @@
 	},
 	{
 		"id": "sijue_defense_1",
-		"name": "汝不见幽",
+		"name": "思觉动魄",
 		"school": "混沌",
 		"level": 10,
-		"desc": "",
-		"cd": 10,
+		"desc": "而人自幽诸秘史观诸生灵，知彼之伤衰残寡孤害，汝当庆贺见证三害三败。",
+		"cd": 25,
 		"locked":true,
 		"buy": {
 			"ganwu": 2000,
@@ -1437,13 +1437,15 @@
 			"money": 8000
 		},
 		"cost": {
+			"shenshi": 25,
 			"heli": 10,
 			"chaos": 20
 		},
 		"attack": {
+			"tohit": 60,
 			"hits": [
 				{
-					"targets": "all",
+					"targets": "enemies",
 					"dot": {
 						"mod": {
 							"self.defense": -200
