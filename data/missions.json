@@ -56,7 +56,7 @@
 		"name": "纯浊灵体",
 		"tags": "指引任务",
 		"desc": "你最开始可以在【小型战场】上获取这种资源，每个人生来可以容纳2个纯浊灵体，但如果你没有解锁他，是无法看见的。要提升纯浊灵体的资源上限值，可以通过建造【流光玻璃瓶】来提升。",
-		"require": "g.hp>=1",
+		"require": "g.lingti_xue>=1",
 		"val": 0,
 		"text_url":[
 			{
@@ -185,8 +185,8 @@
 		"id": "missions_9",
 		"name": "测绘资料",
 		"tags": "指引任务",
-		"desc": "测绘资料是前期重要的资源之一，一开始你可以在【探险】里的【远山】副本获得这种资源。",
-		"require": "g.Knowledge_integration_1>=1&&g.Knowledge_class_1>=1",
+		"desc": "测绘资料是前期重要的资源之一，一开始你可以在【探险】里的【远山】副本获得这种资源。研究【基础知识聚合】和【基础科学】解锁他",
+		"require": "g.ganwu>=1",
 		"val": 0,
 		"target":{
 			"0":{
@@ -194,6 +194,16 @@
 				"val": 5
 			}
 		},
+		"text_url":[
+			{
+				"name":"基础知识聚合",
+				"url":"https://mostlai.github.io/HD-WIKI/#基础知识聚合"
+			},
+			{
+				"name":"基础科学",
+				"url":"https://mostlai.github.io/HD-WIKI/#基础科学"
+			}
+		],
 		"lhxy":{
 			"money": 1
 		},

@@ -709,7 +709,7 @@
 			{"id":"pei_zhi","base_val":0.5,"now_val":0}
 		],
 		"outp":[
-			{"id":"xianban","base_val":1.5,"now_val":0}
+			{"id":"songfeng_jizhi","base_val":1.5,"now_val":0}
 		],
 		"mod":{
 			"soft_dirt.balance": -1,

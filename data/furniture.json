@@ -5811,6 +5811,30 @@
 		}
 	},
 	{
+		"id": "luojidongliji",
+		"name": "逻辑动力机",
+		"desc": "简单的提供工业电力",
+		"tags": "",
+		"max":13,
+		"require": "g.shengchanlun>=1",
+		"repeat": true,
+		"cost": {
+			"zero_crystal":25,
+			"heli":40,
+			"wgys": 20,
+			"jingdian": 20,
+			"ljdy": 20,
+			"yjdl": 50,
+			"cold_core": 20,
+			"life_crystal": 10,
+			"money": 2000
+		},
+		"mod": {
+			"industry_elect.max": 4,
+			"space": 5
+		}
+	},
+	{
 		"id": "limestone_cang",
 		"name": "石灰石筒仓",
 		"desc": "",
