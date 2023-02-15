@@ -172,6 +172,7 @@
 			"money": 40
 		},
 		"mod": {
+			"bed.max": -1,
 			"rest.effect.stamina": 0.27,
 			"space": 2
 		}
@@ -2819,6 +2820,7 @@
 			"money": 1500
 		},
 		"mod": {
+			"bed.max": -1,
 			"rest.effect.stamina": 0.5,
 			"yingchang.effect.stamina": 0.6,
 			"depp_rest.effect.stamina": 0.7,
