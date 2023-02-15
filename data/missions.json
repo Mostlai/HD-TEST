@@ -181,5 +181,63 @@
 		"result":{
 			"money": 1
 		}
+	},
+	{
+		"id": "missions_9",
+		"name": "测绘资料",
+		"tags": "指引任务",
+		"desc": "测绘资料是前期重要的资源之一，一开始你可以在【探险】里的【远山】副本获得这种资源。",
+		"require": "g.Knowledge_integration_1>=1&&g.Knowledge_class_1>=1",
+		"val": 0,
+		"target":{
+			"0":{
+				"id": "snp_data",
+				"val": 5
+			}
+		},
+		"lhxy":{
+			"money": 1
+		},
+		"result":{
+			"money": 1
+		}
+	},
+	{
+		"id": "missions_10",
+		"name": "冰冻核心和晶流水",
+		"tags": "指引任务",
+		"desc": "当你学会【攀登技巧】和【极寒环境适应】以及【清醒思维】后，你将解锁冰冻副本，完全通关这个系列副本后，你可以采掘到【冰冻核心】，获取【冰冻核心】之后你可以在家具里面建造【神经冷凝箱】来获取【晶流水】和【废热水】。",
+		"require": "g.xiulian_ld_panpa>=1",
+		"val": 0,
+		"target":{
+			"0":{
+				"id": "cold_core",
+				"val": 5
+			}
+		},
+		"text_url":[
+			{
+				"name":"攀登技巧",
+				"url":"https://mostlai.github.io/HD-WIKI/#攀登技巧"
+			},
+			{
+				"name":"极寒环境适应",
+				"url":"https://mostlai.github.io/HD-WIKI/#极寒环境适应"
+			},
+			{
+				"name":"清醒思维",
+				"url":"https://mostlai.github.io/HD-WIKI/#清醒思维"
+			},
+			{
+				"name":"神经冷凝箱",
+				"url":"https://mostlai.github.io/HD-WIKI/#极寒环境适应"
+			}
+		],
+		"lhxy":{
+			"money": 1
+		},
+		"result":{
+			"money": 1
+		}
 	}
 ]
