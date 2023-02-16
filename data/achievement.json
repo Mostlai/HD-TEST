@@ -404,7 +404,7 @@
 		"name": "登山者",
 		"desc": "拥有15单位山脉",
 		"target_item": "obs_mount",
-		"target_val": 20,
+		"target_val": 15,
 		"hide": true,
 		"locked": false,
 		"val":0,

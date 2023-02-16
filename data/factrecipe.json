@@ -1403,5 +1403,61 @@
 			"industry_elect": 0.4,
 			"industry_thread": 0.1
 		}
+	},
+	{
+		"id": "yisuanzihec",
+		"name": "一算子合成",
+		"desc": "消耗1真直锭和0.5逻辑单元并生产0.5一算子",
+		"thread_use": "assemble_thread",
+		"tags": "真直锭",
+		"require": "g.zhenzyyjjx>=1",
+		"cost":{
+			"zhenzhi_spindle": 10,
+			"ljdy": 1
+		},
+		"inp":[
+			{"id":"zhenzhi_spindle","base_val":1,"now_val":0},
+			{"id":"ljdy","base_val":0.5,"now_val":0}
+		],
+		"outp":[
+			{"id":"yisuanzi","base_val":0.5,"now_val":0}
+		],
+		"mod":{
+			"zhenzhi_spindle.balance": -1,
+			"ljdy.balance": -0.5,
+			"yisuanzi.balance": 0.5,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "luojihecheng",
+		"name": "逻辑合成",
+		"desc": "消耗1萤晶和0.6工制线圈和0.3玻璃并生产0.5逻辑单元",
+		"thread_use": "assemble_thread",
+		"tags": "萤晶",
+		"require": "g.zhenzyyjjx>=1",
+		"cost":{
+			"xuanmuye": 10,
+			"ind_water": 50
+		},
+		"inp":[
+			{"id":"yinjing","base_val":1,"now_val":0},
+			{"id":"coil_1","base_val":0.6,"now_val":0},
+			{"id":"glass","base_val":0.3,"now_val":0}
+		],
+		"outp":[
+			{"id":"ljdy","base_val":0.5,"now_val":0}
+		],
+		"mod":{
+			"yinjing.balance": -1,
+			"coil_1.balance": -0.6,
+			"glass.balance": -0.3,
+			"ljdy.balance": 0.5,
+			"industry_space": 0.1,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
 	}
 ]
