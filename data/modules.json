@@ -1,6 +1,7 @@
 {
 	"core": [
 		"tags",
+		"gfx_config",
 		"resources",
 		"upgrades",
 		"tasks",
@@ -47,7 +48,8 @@
 		"factrecipe",
 		"factory",
 		"player_res",
-		"techo"
+		"techo",
+		"ap_upgrade"
 	],
 	"modules": [
 		"patrons",

@@ -1,0 +1,160 @@
+[
+	{
+		"id": "ap_u_time_1",
+		"name": "千年升级I",
+		"desc": "消耗7AP获得600年寿命",
+		"require": "g.ap>0",
+		"max": 10,
+		"cost":{
+			"ap": 7
+		},
+		"result":{
+			"age.max": 219000,
+			"age": 219000
+		}
+	},
+	{
+		"id": "ap_u_time_2",
+		"name": "千年升级II",
+		"desc": "消耗20AP获得1800年寿命",
+		"require": "g.ap>0",
+		"max": 10,
+		"cost":{
+			"ap": 20
+		},
+		"result":{
+			"age.max": 657000,
+			"age": 657000
+		}
+	},
+	{
+		"id": "ap_u_money_1",
+		"name": "财富I",
+		"desc": "消耗0.1AP获得100钱币",
+		"require": "g.ap>0",
+		"max": 1000,
+		"cost":{
+			"ap": 0.1
+		},
+		"result":{
+			"money": 100
+		}
+	},
+	{
+		"id": "ap_u_money_2",
+		"name": "财富II",
+		"desc": "消耗0.5AP获得700钱币",
+		"require": "g.ap>0",
+		"max": 1000,
+		"cost":{
+			"ap": 0.5
+		},
+		"result":{
+			"money": 700
+		}
+	},
+	{
+		"id": "ap_u_ganwu_1",
+		"name": "灵感I",
+		"desc": "消耗0.1AP获得100感悟",
+		"require": "g.ap>0",
+		"max": 1000,
+		"cost":{
+			"ap": 0.1
+		},
+		"result":{
+			"ganwu": 700
+		}
+	},
+	{
+		"id": "ap_u_ganwu_2",
+		"name": "灵感II",
+		"desc": "消耗0.5AP获得650感悟",
+		"require": "g.ap>0",
+		"max": 1000,
+		"cost":{
+			"ap": 0.5
+		},
+		"result":{
+			"ganwu": 650
+		}
+	},
+	{
+		"id": "ap_u_space_1",
+		"name": "空间I",
+		"desc": "消耗1AP获得150地板空间",
+		"require": "g.techo_soc_ap_1>=1",
+		"max": 5,
+		"cost":{
+			"ap": 1
+		},
+		"result":{
+			"space.max": 150
+		}
+	},
+	{
+		"id": "ap_u_space_2",
+		"name": "空间II",
+		"desc": "消耗5AP获得800地板空间",
+		"require": "g.ap_u_space_1>=5",
+		"max": 20,
+		"cost":{
+			"ap": 2
+		},
+		"result":{
+			"space.max": 800
+		}
+	},
+	{
+		"id": "ap_u_hr_1",
+		"name": "人力I",
+		"desc": "消耗1AP获得100人力上限",
+		"require": "g.human_power>=5000",
+		"max": 5,
+		"cost":{
+			"ap": 1
+		},
+		"result":{
+			"human_power.max": 100
+		}
+	},
+	{
+		"id": "ap_u_hr_2",
+		"name": "人力II",
+		"desc": "消耗5AP获得550人力上限",
+		"require": "g.ap_u_hr_1>=5",
+		"max": 20,
+		"cost":{
+			"ap": 5
+		},
+		"result":{
+			"human_power.max": 550
+		}
+	},
+	{
+		"id": "ap_u_alcu_1",
+		"name": "计算力I",
+		"desc": "消耗1AP获得80计算力上限",
+		"require": "g.techo_soc_ap_1>=1",
+		"max": 5,
+		"cost":{
+			"ap": 1
+		},
+		"result":{
+			"alculation.max": 100
+		}
+	},
+	{
+		"id": "ap_u_alcu_2",
+		"name": "计算力II",
+		"desc": "消耗5AP获得420计算力上限",
+		"require": "g.ap_u_alcu_1>=5",
+		"max": 20,
+		"cost":{
+			"ap": 5
+		},
+		"result":{
+			"alculation.max": 420
+		}
+	}
+]

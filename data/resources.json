@@ -2813,6 +2813,36 @@
 		}
 	},
 	{
+		"id": "exchange_code_8",
+		"desc": "不告诉你",
+		"equneed": "g.evilamt>0",
+		"info": "不告诉你",
+		"needinfo": "你还不能兑换此兑换码",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"evilamt": 49
+		}
+	},
+	{
+		"id": "exchange_code_9",
+		"desc": "我不知道",
+		"equneed": "g.evilamt<=0",
+		"info": "我不知道,经验+3,告辞",
+		"needinfo": "你还不能兑换此兑换码",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"player.exp": 3
+		}
+	},
+	{
 		"id": "time",
 		"desc": "",
 		"flavor": "餐玉驻年龄，吞霞反容颜",

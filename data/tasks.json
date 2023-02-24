@@ -5871,6 +5871,7 @@
 		"tags":"生产",
 		"desc": "长期的运货让你心生愤恨,杀人不是来钱更快吗【杀一次就没法回头了,慎选】",
 		"verb": "谋杀中",
+		"warn": true,
 		"require": "g.freight>=50",
 		"length": 3,
 		"cost": {
@@ -5883,6 +5884,27 @@
 		"result": {
 			"money": 6,
 			"evilamt": 0.5
+		}
+	},
+	{
+		"id": "jinrue_pl",
+		"name": "入恶",
+		"tags":"任务",
+		"desc": "入恶",
+		"verb": "入恶中",
+		"require": "g.evilamt>=0.1",
+		"length": 3,
+		"cost": {
+			"tili": 3
+		},
+		"run": {
+			"time": -0.5,
+			"tili": 0.3
+		},
+		"result": {
+			"money": 60,
+			"zero_crystal": 5,
+			"evilamt": 50
 		}
 	},
 	{

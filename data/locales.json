@@ -321,6 +321,39 @@
 		]
 	},
 	{
+		"id": "zhenhcaluxian",
+		"name": "侦察路线",
+		"level": 20,
+		"length": 40,
+		"dist":800,
+		"require": "g.evt_adv_zcha>=1",
+		"desc": "规划的侦察路线",
+		"run": {
+			"time": -1,
+			"tili": 5
+		},
+		"result": {
+			"qiyiyeti": "7~12",
+			"swzhi": 5,
+			"socia_point": 60,
+			"money": 1000,
+			"ganwu": 1000
+		},
+		"loot": {
+			"money": "10~20"
+		},
+		"encs": [
+			"enc_cave_1",
+			"enc_zcha_1",
+			"enc_rest",
+			"enc_zcha_2",
+			"enc_qiyiyet",
+			"enc_box_1",
+			"enc_zcha_3",
+			"enc_zcha_4"
+		]
+	},
+	{
 		"id": "mustylibrary",
 		"name": "musty library",
 		"level": 1,

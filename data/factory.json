@@ -433,5 +433,56 @@
 			"industry_elect": 1,
 			"sysn_zuanji_1.max": 1
 		}
+	},
+	{
+		"id": "factory_chaijie",
+		"name": "拆解设施",
+		"desc": "进行拆解工作",
+		"tags": "一级工厂",
+		"max": 1,
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
+		"cost":{
+			"yinjing": 200,
+			"zhenzhi_spindle": 160,
+			"spare_parts": 300,
+			"glass": 200,
+			"coil_1": 300,
+			"money": 6000,
+			"ljdy": 10
+		},
+		"mod":{
+			"space": 45,
+			"elect.rate": -2,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"sysn_chaijie_1.max": 1
+		}
+	},
+	{
+		"id": "factory_juheqi",
+		"name": "聚合器",
+		"desc": "进行初等聚合加工",
+		"tags": "一级工厂",
+		"max": 1,
+		"require": "g.juhexue_1>=5",
+		"cost":{
+			"xuanmuye": 200,
+			"yuansuhunheqi": 1,
+			"jiujishiyans": 1,
+			"yinjing": 200,
+			"zhenzhi_spindle": 160,
+			"spare_parts": 300,
+			"glass": 200,
+			"coil_1": 300,
+			"money": 6000,
+			"ljdy": 10
+		},
+		"mod":{
+			"space": 34,
+			"elect.rate": -2,
+			"industry_space": 0.3,
+			"industry_elect": 0.2,
+			"juhe_thread.max": 1
+		}
 	}
 ]

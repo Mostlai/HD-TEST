@@ -9,7 +9,6 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.1
 		}
@@ -24,7 +23,6 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 1
 		}
@@ -39,9 +37,8 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		
 		"result":{
-			"ap":1
+			"ap":2
 		}
 	},
 	{
@@ -51,12 +48,11 @@
 		"target_item": "xiulian_zhuji_2_1",
 		"target_val": 1,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_jingjie_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
-			"ap":1
+			"ap":2
 		}
 	},
 	{
@@ -66,12 +62,11 @@
 		"target_item": "xl_crzj_zhujierchong",
 		"target_val": 1,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_jingjie_2>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
-			"ap":1
+			"ap":3
 		}
 	},
 	{
@@ -81,12 +76,11 @@
 		"target_item": "guixuan",
 		"target_val": 1,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_chugui_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
-			"ap":1
+			"ap":3
 		}
 	},
 	{
@@ -99,7 +93,6 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.1,
 			"money.max": 20
@@ -112,12 +105,11 @@
 		"target_item": "money",
 		"target_val": 2000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_money_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
-			"ap": 0.1,
+			"ap": 0.2,
 			"money.max": 100
 		}
 	},
@@ -128,13 +120,27 @@
 		"target_item": "money",
 		"target_val": 6000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_money_2>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
-			"ap": 0.1,
+			"ap": 0.3,
 			"money.max": 100
+		}
+	},
+	{
+		"id": "ach_money_4",
+		"name": "大量财富",
+		"desc": "钱币达到12000",
+		"target_item": "money",
+		"target_val": 12000,
+		"hide": true,
+		"require" : "g.ach_money_3>0",
+		"val":0,
+		"max": 1,	
+		"result":{
+			"ap": 0.4,
+			"money.max": 200
 		}
 	},
 	{
@@ -161,10 +167,9 @@
 		"target_item": "time",
 		"target_val": 365000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_time_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.5,
 			"age.max": 10000,
@@ -178,10 +183,9 @@
 		"target_item": "time",
 		"target_val": 3650000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_time_2>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 2,
 			"age.max": 50000,
@@ -195,10 +199,9 @@
 		"target_item": "time",
 		"target_val": 14600000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_time_3>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 5,
 			"age.max": 100000,
@@ -228,10 +231,9 @@
 		"target_item": "ganwu",
 		"target_val": 2000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_ganwu_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"ganwu.rate": 1
@@ -244,10 +246,9 @@
 		"target_item": "ganwu",
 		"target_val": 5000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_ganwu_2>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.5,
 			"ganwu.rate": 2
@@ -277,7 +278,7 @@
 		"target_item": "freight_adv_1",
 		"target_val": 500,
 		"hide": true,
-		"locked": false,
+		"require":"g.freight_adv_1>=1",
 		"val":0,
 		"max": 1,
 		
@@ -293,7 +294,7 @@
 		"target_item": "write_starmap_1",
 		"target_val": 500,
 		"hide": true,
-		"locked": false,
+		"require":"g.write_starmap_1>=1",
 		"val":0,
 		"max": 1,
 		
@@ -305,14 +306,13 @@
 	{
 		"id": "ach_star_map_2",
 		"name": "巡天",
-		"desc": "天文观测700次",
+		"desc": "天文观测400次",
 		"target_item": "write_starmap_2",
-		"target_val": 700,
+		"target_val": 400,
 		"hide": true,
-		"locked": false,
+		"require":"g.write_starmap_1>=1",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.5,
 			"star_map_1.rate": 0.3
@@ -325,7 +325,7 @@
 		"target_item": "fumeng1",
 		"target_val": 300,
 		"hide": true,
-		"locked": false,
+		"require":"g.fumeng1>=1",
 		"val":0,
 		"max": 1,
 		
@@ -341,7 +341,7 @@
 		"target_item": "hqtzkcce",
 		"target_val": 50,
 		"hide": true,
-		"locked": false,
+		"require":"g.hqtzkcce>0",
 		"val":0,
 		"max": 1,
 		
@@ -349,6 +349,166 @@
 			"ap": 0.2,
 			"tian.rate": 0.2,
 			"ljdy.rate": 0.05
+		}
+	},
+	{
+		"id": "ach_elect_1",
+		"name": "蓄电池",
+		"desc": "电能达到10",
+		"target_item": "elect",
+		"target_val": 10,
+		"hide": true,
+		"locked": true,
+		"require": "g.energ_1>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.1,
+			"elect.rate": 0.1
+		}
+	},
+	{
+		"id": "ach_elect_2",
+		"name": "发电机",
+		"desc": "电能达到50",
+		"target_item": "elect",
+		"target_val": 50,
+		"hide": true,
+		"locked": true,
+		"require": "g.ach_elect_1>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.2,
+			"elect.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_elect_3",
+		"name": "发电站",
+		"desc": "电能达到50",
+		"target_item": "elect",
+		"target_val": 100,
+		"hide": true,
+		"locked": true,
+		"require": "g.ach_elect_2>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.3,
+			"elect.rate": 1
+		}
+	},
+	{
+		"id": "ach_human_power_1",
+		"name": "百夫长",
+		"desc": "人力达到100",
+		"target_item": "human_power",
+		"target_val": 100,
+		"hide": true,
+		"locked": true,
+		"require":"g.human_power>50",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.1,
+			"human_power.max": 10
+		}
+	},
+	{
+		"id": "ach_human_power_2",
+		"name": "千夫长",
+		"desc": "人力达到1000",
+		"target_item": "human_power",
+		"target_val": 1000,
+		"hide": true,
+		"locked": true,
+		"require":"g.ach_human_power_1>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.2,
+			"human_power.max": 20
+		}
+	},
+	{
+		"id": "ach_human_power_3",
+		"name": "全都听我的指挥",
+		"desc": "人力达到5000",
+		"target_item": "human_power",
+		"target_val": 5000,
+		"hide": true,
+		"locked": true,
+		"require":"g.ach_human_power_2>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.3,
+			"human_power.max": 50
+		}
+	},
+	{
+		"id": "ach_human_power_4",
+		"name": "万夫长",
+		"desc": "人力达到10000",
+		"target_item": "human_power",
+		"target_val": 10000,
+		"hide": true,
+		"locked": true,
+		"require":"g.ach_human_power_3>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.4,
+			"human_power.max": 100
+		}
+	},
+	{
+		"id": "ach_alculation_1",
+		"name": "计算器",
+		"desc": "计算力达到1000",
+		"target_item": "alculation",
+		"target_val": 1000,
+		"hide": true,
+		"locked": true,
+		"require":"g.alculation>500",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.1,
+			"alculation.max": 10
+		}
+	},
+	{
+		"id": "ach_alculation_2",
+		"name": "计算机",
+		"desc": "计算力达到5000",
+		"target_item": "alculation",
+		"target_val": 5000,
+		"hide": true,
+		"locked": true,
+		"require":"g.ach_alculation_1>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.2,
+			"alculation.max": 50
+		}
+	},
+	{
+		"id": "ach_alculation_3",
+		"name": "运算平台",
+		"desc": "计算力达到10000",
+		"target_item": "alculation",
+		"target_val": 10000,
+		"hide": true,
+		"locked": true,
+		"require":"g.ach_alculation_2>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.3,
+			"alculation.max": 100
 		}
 	},
 	{
@@ -374,12 +534,42 @@
 		"target_item": "conquer_mediun",
 		"target_val": 14,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_conquer_1>0",
 		"val":0,
 		"max": 1,
 		
 		"result":{
-			"ap": 0.1,
+			"ap": 0.2,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_conquer_3",
+		"name": "我再来",
+		"desc": "征服10个大型城镇",
+		"target_item": "conquer_dxczhen",
+		"target_val": 10,
+		"hide": true,
+		"require" : "g.ach_conquer_2>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.3,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_conquer_4",
+		"name": "我还来",
+		"desc": "征服10个小型要塞",
+		"target_item": "conquer_xxyaosai",
+		"target_val": 10,
+		"hide": true,
+		"require" : "g.ach_conquer_3>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.3,
 			"money.rate": 0.5
 		}
 	},
@@ -390,10 +580,9 @@
 		"target_item": "obs_water",
 		"target_val": 20,
 		"hide": true,
-		"locked": false,
+		"require": "g.huanjjg>=1",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.5,
 			"money.rate": 0.5
@@ -406,10 +595,39 @@
 		"target_item": "obs_mount",
 		"target_val": 15,
 		"hide": true,
-		"locked": false,
+		"require": "g.huanjjg>=1",
 		"val":0,
 		"max": 1,
-		
+		"result":{
+			"ap": 0.5,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_obs_3",
+		"name": "采石人",
+		"desc": "拥有18单位盆地",
+		"target_item": "obs_basin",
+		"target_val": 18,
+		"hide": true,
+		"require": "g.huanjjg>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.5,
+			"money.rate": 0.5
+		}
+	},
+	{
+		"id": "ach_obs_4",
+		"name": "采药者",
+		"desc": "拥有24单位丘陵",
+		"target_item": "obs_hill",
+		"target_val": 18,
+		"hide": true,
+		"require": "g.huanjjg>=1",
+		"val":0,
+		"max": 1,
 		"result":{
 			"ap": 0.5,
 			"money.rate": 0.5
@@ -480,6 +698,54 @@
 		}
 	},
 	{
+		"id": "ach_zhiyushu_1",
+		"name": "治愈鼠召唤",
+		"desc": "释放治愈鼠召唤300次",
+		"target_item": "solid_3",
+		"target_val": 300,
+		"hide": true,
+		"locked": true,
+		"require": "g.bbskzjk>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.5,
+			"baibaishu.rata": 0.1
+		}
+	},
+	{
+		"id": "ach_shouyugui_1",
+		"name": "守御龟召唤",
+		"desc": "释放守御龟召唤300次",
+		"target_item": "solid_4",
+		"target_val": 300,
+		"hide": true,
+		"locked": true,
+		"require": "g.jbgckzjk>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.5,
+			"jbgui.rata": 0.1
+		}
+	},
+	{
+		"id": "ach_qianwdc_1",
+		"name": "猛攻螳螂召唤",
+		"desc": "释放猛攻螳螂召唤300次",
+		"target_item": "solid_5",
+		"target_val": 300,
+		"hide": true,
+		"locked": true,
+		"require": "g.qwdckzjk>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.5,
+			"qianwdc.rata": 0.1
+		}
+	},
+	{
 		"id": "ach_spell_2",
 		"name": "他要爆了",
 		"desc": "释放雷诀[筑基]500次",
@@ -521,7 +787,6 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"space.max": 50
@@ -534,7 +799,7 @@
 		"target_item": "space",
 		"target_val": 1500,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_space_1>0",
 		"val":0,
 		"max": 1,
 		
@@ -550,7 +815,7 @@
 		"target_item": "space",
 		"target_val": 2500,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_space_2>0",
 		"val":0,
 		"max": 1,
 		
@@ -566,7 +831,7 @@
 		"target_item": "space",
 		"target_val": 5000,
 		"hide": true,
-		"locked": false,
+		"require" : "g.ach_space_3>0",
 		"val":0,
 		"max": 1,
 		
@@ -576,13 +841,31 @@
 		}
 	},
 	{
+		"id": "ach_space_5",
+		"name": "建设工厂",
+		"desc": "用地面积达到12000",
+		"target_item": "space",
+		"target_val": 12000,
+		"hide": true,
+		"locked": true,
+		"require" : "g.ach_space_4>0",
+		"val":0,
+		"max": 1,
+		
+		"result":{
+			"ap": 0.3,
+			"space.max": 250
+		}
+	},
+	{
 		"id": "ach_offic_1",
 		"name": "上道了",
 		"desc": "成为巡检使",
 		"target_item": "off_xunjian",
 		"target_val": 1,
 		"hide": true,
-		"locked": false,
+		"locked": true,
+		"require":"g.off_enter_1>0",
 		"val":0,
 		"max": 1,
 		
@@ -597,7 +880,8 @@
 		"target_item": "off_dlsq",
 		"target_val": 1,
 		"hide": true,
-		"locked": false,
+		"locked": true,
+		"require":"g.ach_offic_1>0",
 		"val":0,
 		"max": 1,
 		
@@ -612,7 +896,8 @@
 		"target_item": "off_influence",
 		"target_val": 3000,
 		"hide": true,
-		"locked": false,
+		"locked": true,
+		"require":"g.ach_offic_1>0",
 		"val":0,
 		"max": 1,
 		
@@ -628,10 +913,10 @@
 		"target_item": "off_influence",
 		"target_val": 5000,
 		"hide": true,
-		"locked": false,
+		"locked": true,
+		"require":"g.ach_offic_3>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 1,
 			"off_influence.max": 100
@@ -663,7 +948,6 @@
 		"locked": false,
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"age.max": 3650,
@@ -698,8 +982,37 @@
 		"max": 1,
 		
 		"result":{
-			"ap": 2,
+			"ap": 0.5,
 			"ganwu.rate": 0.88
+		}
+	},
+	{
+		"id": "ach_exchange_6",
+		"name": "不告诉你",
+		"desc": "我不到啊",
+		"target_item": "exchange_code_8",
+		"target_val": 1,
+		"hide": true,
+		"require": "g.exchange_code_8>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.2
+		}
+	},
+	{
+		"id": "ach_exchange_7",
+		"name": "我不知道",
+		"desc": "经验+3",
+		"target_item": "exchange_code_9",
+		"target_val": 1,
+		"hide": true,
+		"require": "g.exchange_code_9>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"player.exp": 3,
+			"ap": 0.2
 		}
 	},
 	{

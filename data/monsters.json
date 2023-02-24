@@ -1006,7 +1006,7 @@
 		"kind": "heli",
 		"hp": 4300,
 		"speed": 19,
-		"tohit": 33,
+		"tohit": 200,
 		"defense": 800,
 		"attack": [
 			{

@@ -6697,7 +6697,7 @@
 		}
 	},
 	{
-		"id": "gubenfentizhu",
+		"id": "gubenfenxuanzhu",
 		"name": "古本分旋柱",
 		"desc": "提高所有气体类资源上限",
 		"tags": "",
@@ -6717,6 +6717,30 @@
 		"mod": {
 			"气体.max": 30,
 			"space": 60
+		}
+	},
+	{
+		"id": "xuanmuyeping",
+		"name": "玄牝液瓶",
+		"desc": "提高玄牝液上限",
+		"tags": "",
+		"max":5,
+		"require": "g.techo_eng_juhe_1>=1",
+		"repeat": true,
+		"cost": {
+			"xuanmuye": 30,
+			"guben_core": 100,
+			"ganwu": 100,
+			"glass": 200,
+			"coil_1": 200,
+			"tian": 100,
+			"yjdl": 300,
+			"ljdy": 10,
+			"money": 6700
+		},
+		"mod": {
+			"xuanmuye.max": 80,
+			"space": 20
 		}
 	},
 	{

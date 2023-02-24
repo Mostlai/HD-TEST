@@ -2201,6 +2201,152 @@
 		}
 	},
 	{
+		"id": "juhexue_1",
+		"name": "聚合学",
+		"level": 18,
+		"max": 10,
+		"require": "g.zhenzyyjjx>=1",
+		"desc": "",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 7000,
+			"xuanmuye": 100,
+			"zhenzhi_spindle": 200,
+			"yinjing": 200,
+			"star_map_1": 15
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"tili": 2
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"ganwu.max": 20
+		}
+	},
+	{
+		"id": "adv_junshixue",
+		"name": "进阶军事学",
+		"level": 15,
+		"max": 10,
+		"require": "g.zhenzyyjjx>=1",
+		"desc": "",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 7000,
+			"f_qingjia_1": 30,
+			"f_zhongjia_1": 30,
+			"f_heavyjia_1": 30
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"tili": 2
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"伤害要素.max": 1
+		}
+	},
+	{
+		"id": "hqcbxue",
+		"name": "后勤储备学",
+		"level": 18,
+		"max": 10,
+		"require": "g.adv_junshixue>=5",
+		"desc": "仅提高伤害要素上限",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 7000,
+			"f_qingjia_1": 30,
+			"f_zhongjia_1": 30,
+			"f_heavyjia_1": 30
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"tili": 2
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"伤害要素.max": 15
+		}
+	},
+	{
+		"id": "shyhxue",
+		"name": "伤害优化学",
+		"level": 18,
+		"max": 10,
+		"require": "g.adv_junshixue>=5",
+		"desc": "仅提高战斗评级",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 7000,
+			"f_qingjia_1": 30,
+			"f_zhongjia_1": 30,
+			"f_heavyjia_1": 30
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"tili": 2
+		},
+		"result": {
+			"sp": 0.05
+		},
+		"mod": {
+			"f_power": 100
+		}
+	},
+	{
+		"id": "adv_zhencha",
+		"name": "进阶侦察学",
+		"level": 35,
+		"max": 10,
+		"require": "g.adv_junshixue>=10",
+		"desc": "(在探索副本中学习)",
+		"buy": {
+			"sp": 10,
+			"ganwu": 430,
+			"super_mind": 30,
+			"money": 7000,
+			"f_qingjia_1": 30,
+			"f_zhongjia_1": 30,
+			"f_heavyjia_1": 30
+		},
+		"effect": {
+			"time": 5
+		},
+		"run": {
+			"heli": 30,
+			"chaos": 30,
+			"elect": 100,
+			"tili": 2
+		},
+		"result": {
+			"sp": 0.1
+		}
+	},
+	{
 		"id": "lore",
 		"name": "mage lore",
 		"school": "arcane",

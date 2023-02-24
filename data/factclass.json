@@ -7,10 +7,7 @@
 		"img": "./images/spare_part.png",
 		"val": 0,
 		"max": 5,
-		"follow": "零部件",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "零部件", 
 		"require": "g.steel>=1"
 	},
 	{
@@ -21,10 +18,7 @@
 		"img": "./images/data.png",
 		"val": 0,
 		"max": 5,
-		"follow": "泥成数据",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "泥成数据", 
 		"require": "g.spart_zuzhuang>=10 && g.songfeng_jizhi>=1"
 	},
 	{
@@ -35,10 +29,7 @@
 		"img": "./images/data.png",
 		"val": 0,
 		"max": 5,
-		"follow": "洗成数据",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "洗成数据", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -49,10 +40,7 @@
 		"img": "./images/data.png",
 		"val": 0,
 		"max": 5,
-		"follow": "光感数据",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "光感数据", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -63,10 +51,7 @@
 		"img": "./images/blank_unit.png",
 		"val": 0,
 		"max": 5,
-		"follow": "空单元",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "空单元", 
 		"require": "g.ind_wendukongz>=5"
 	},
 	{
@@ -77,10 +62,7 @@
 		"img": "./images/blank_unit.png",
 		"val": 0,
 		"max": 5,
-		"follow": "黄温单元",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "黄温单元", 
 		"require": "g.ind_wendukongz>=10"
 	},
 	{
@@ -91,10 +73,7 @@
 		"img": "./images/soft_dirt.png",
 		"val": 0,
 		"max": 5,
-		"follow": "生物软泥",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "生物软泥", 
 		"require": "g.smshengchan>=1"
 	},
 	{
@@ -105,10 +84,7 @@
 		"img": "./images/pei_zhi.png",
 		"val": 0,
 		"max": 5,
-		"follow": "培质",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "培质", 
 		"require": "g.smshengchan>=1"
 	},
 	{
@@ -119,10 +95,7 @@
 		"img": "./images/xianban.png",
 		"val": 0,
 		"max": 5,
-		"follow": "纤板",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "纤板", 
 		"require": "g.smshengchan>=1"
 	},
 	{
@@ -133,10 +106,7 @@
 		"img": "./images/songfeng_jizhi.png",
 		"val": 0,
 		"max": 5,
-		"follow": "松风基质",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "松风基质", 
 		"require": "g.soft_dirt>=1 && g.xianban>=1 && g.pei_zhi>=1"
 	},
 	{
@@ -147,10 +117,7 @@
 		"img": "./images/wujianbao.png",
 		"val": 0,
 		"max": 5,
-		"follow": "物件包",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "物件包", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -161,10 +128,7 @@
 		"img": "./images/zhenxishi.png",
 		"val": 0,
 		"max": 5,
-		"follow": "珍洗石",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "珍洗石", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -175,10 +139,7 @@
 		"img": "./images/gongzhiliang.png",
 		"val": 0,
 		"max": 5,
-		"follow": "工制梁",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "工制梁", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -189,10 +150,7 @@
 		"img": "./images/naicixian.png",
 		"val": 0,
 		"max": 5,
-		"follow": "耐磁线",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "耐磁线", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -203,10 +161,7 @@
 		"img": "./images/glass.png",
 		"val": 0,
 		"max": 5,
-		"follow": "感光透镜",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "感光透镜", 
 		"require": "g.spart_zuzhuang>=10"
 	},
 	{
@@ -217,10 +172,7 @@
 		"img": "./images/ind_water.png",
 		"val": 0,
 		"max": 5,
-		"follow": "水",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "水", 
 		"require": "g.coal>=1"
 	},
 	{
@@ -231,10 +183,7 @@
 		"img": "./images/steam.png",
 		"val": 0,
 		"max": 5,
-		"follow": "低温蒸汽",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "低温蒸汽", 
 		"require": "g.coal>=1"
 	},
 	{
@@ -245,10 +194,7 @@
 		"img": "./images/wujianbao.png",
 		"val": 0,
 		"max": 5,
-		"follow": "工制钢",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "工制钢", 
 		"require": "g.ind_gongzhigang>=5"
 	},
 	{
@@ -259,10 +205,7 @@
 		"img": "./images/naicixian.png",
 		"val": 0,
 		"max": 5,
-		"follow": "工制线圈",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "工制线圈", 
 		"require": "g.shengchanlun>=1"
 	},
 	{
@@ -273,10 +216,7 @@
 		"img": "./images/glass.png",
 		"val": 0,
 		"max": 2,
-		"follow": "玻璃",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "玻璃", 
 		"require": "g.limestone>=1 && g.quartz>=1"
 	},
 	{
@@ -287,10 +227,7 @@
 		"img": "./images/coal.png",
 		"val": 0,
 		"max": 5,
-		"follow": "煤炭",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "煤炭", 
 		"require": "g.pendizykf>=1"
 	},
 	{
@@ -301,10 +238,7 @@
 		"img": "./images/coal.png",
 		"val": 0,
 		"max": 5,
-		"follow": "焦炭",
-		"cost":{
-			"heli": 1000000000
-		},
+		"follow": "焦炭", 
 		"require": "g.ind_jiaotangy>=1"
 	},
 	{
@@ -316,9 +250,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "黄温",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.ind_reliwendu>=1"
 	},
 	{
@@ -330,9 +261,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "石英砂",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.qiulzykaifa>=1"
 	},
 	{
@@ -344,9 +272,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "石灰石",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.shanmaizykf>=1"
 	},
 	{
@@ -358,9 +283,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "日用品",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.spart_zuzhuang>=1"
 	},
 	{
@@ -372,9 +294,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "高级货物",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.spart_zuzhuang>=4"
 	},
 	{
@@ -386,9 +305,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "奢侈品",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.spart_zuzhuang>=8"
 	},
 	{
@@ -400,9 +316,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "古本之核",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.weijibence>=1 && g.fengyunbence>=1 && g.shidaiyancengbence>=1"
 	},
 	{
@@ -414,9 +327,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "碎隙凡膜",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.chenshigq>=1"
 	},
 	{
@@ -428,9 +338,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "真直矿",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.guben_core>=1"
 	},
 	{
@@ -442,9 +349,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "真直锭",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.zhenzhi_ore>=1"
 	},
 	{
@@ -456,9 +360,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "荧晶",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.guben_core>=1"
 	},
 	{
@@ -470,9 +371,6 @@
 		"val": 0,
 		"max": 5,
 		"follow": "玄牝液",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.zhenzyyjjx>=1"
 	},
 	{
@@ -484,9 +382,61 @@
 		"val": 0,
 		"max": 5,
 		"follow": "岩气",
-		"cost":{
-			"heli": 1000000000
-		},
 		"require": "g.guben_core>=1"
+	},
+	{
+		"id": "f_qingjia_1",
+		"name": "标准轻甲I",
+		"desc": "I级标准轻甲单元，每个可拆解为10轻甲要素。",
+		"tags": "固体",
+		"img": "./images/weapon_pack.png",
+		"val": 0,
+		"max": 5,
+		"follow": "标准轻甲I",
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10"
+	},
+	{
+		"id": "f_zhongjia_1",
+		"name": "标准中甲I",
+		"desc": "I级标准中甲单元，每个可拆解为10中甲要素。",
+		"tags": "固体",
+		"img": "./images/weapon_pack.png",
+		"val": 0,
+		"max": 5,
+		"follow": "标准中甲I",
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10"
+	},
+	{
+		"id": "f_heavyjia_1",
+		"name": "标准重甲I",
+		"desc": "I级标准重甲单元，每个可拆解为10重甲要素。",
+		"tags": "固体",
+		"img": "./images/weapon_pack.png",
+		"val": 0,
+		"max": 5,
+		"follow": "标准重甲I",
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10"
+	},
+	{
+		"id": "f_wuzhuo_1",
+		"name": "标准污浊I",
+		"desc": "I级标准污浊单元，每个可拆解为10污浊要素。",
+		"tags": "固体",
+		"img": "./images/weapon_pack.png",
+		"val": 0,
+		"max": 5,
+		"follow": "标准污浊I",
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10"
+	},
+	{
+		"id": "f_bingdong_1",
+		"name": "标准冷结I",
+		"desc": "I级标准冷结单元，每个可拆解为10冷结要素。",
+		"tags": "固体",
+		"img": "./images/weapon_pack.png",
+		"val": 0,
+		"max": 5,
+		"follow": "标准冷结I",
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10"
 	}
 ]

@@ -322,12 +322,30 @@
 	},
 	{
 		"id": "logversion",
-		"name": "2023001",
-		"logversion": "2023001",
+		"name": "2023002",
+		"logversion": "2023002",
 		"frecipever": "20203r05",
 		"hide": true,
 		"locked": false,
 		"stat": true,
 		"val": 0
+	},
+	{
+		"id": "hidequickbar",
+		"name": "hidequickbar",
+		"max":1,
+		"val":1,
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "hidegundong",
+		"name": "hidegundong",
+		"max":1,
+		"val":1,
+		"hide": true,
+		"locked": false,
+		"stat": true
 	}
 ]

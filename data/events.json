@@ -573,6 +573,12 @@
 		}
 	},
 	{
+		"id": "evt_adv_zcha",
+		"name": "侦察路线",
+		"require": "g.adv_junshixue>=10",
+		"desc": "侦察路线...."
+	},
+	{
 		"id": "evt_helper",
 		"name": "Promotion",
 		"desc": "In return for your new services, your master grants you a small allowance for your studies. The position does require of course, some initial fees...",

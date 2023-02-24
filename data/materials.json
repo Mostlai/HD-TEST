@@ -249,10 +249,7 @@
 		"priceMod": 100,
 		"level": 7,
 		"alter": {
-			"damage": 8,
-			"armor": 8,
-			"attack.tohit": 10,
-			"enchants.max": 6
+			"damage": 1
 		}
 	},
 	{
@@ -262,10 +259,7 @@
 		"priceMod": 100,
 		"level": 8,
 		"alter": {
-			"damage": 6,
-			"armor": 6,
-			"attack.tohit": 12,
-			"enchants.max": 7
+			"damage": 1
 		}
 	},
 	{
@@ -275,10 +269,7 @@
 		"priceMod": 100,
 		"level": 8,
 		"alter": {
-			"damage": 7,
-			"armor": 7,
-			"attack.tohit": 9,
-			"enchants.max": 7
+			"damage": 1
 		}
 	},
 	{
@@ -288,10 +279,7 @@
 		"priceMod": 2000,
 		"level": 8,
 		"alter": {
-			"damage": 5,
-			"armor": 5,
-			"attack.tohit": 15,
-			"enchants.max": 3
+			"damage": 1
 		}
 	},
 	{
@@ -301,10 +289,7 @@
 		"priceMod": 1000,
 		"level": 9,
 		"alter": {
-			"damage": 10,
-			"armor": 10,
-			"attack.tohit": 12,
-			"enchants.max": 4
+			"armor": 1
 		}
 	}
 ]

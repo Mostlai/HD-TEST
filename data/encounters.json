@@ -460,6 +460,60 @@
 		}
 	},
 	{
+		"id": "enc_zcha_1",
+		"name": "被伏击",
+		"desc": "伏击",
+		"effect": {
+			"bf": "-1~6",
+			"rage": "2~6",
+			"unease": "2~4"
+		},
+		"result": {
+			"hp": -60
+		}
+	},
+	{
+		"id": "enc_zcha_2",
+		"name": "怪异",
+		"desc": "奇怪的景象",
+		"effect": {
+			"bf": "-1~6",
+			"madness": "3~6"
+		},
+		"result": {
+			"hp": -20,
+			"ganwu": -20
+		}
+	},
+	{
+		"id": "enc_zcha_3",
+		"name": "发现目标",
+		"desc": "",
+		"effect": {
+			"bf": "-1~2",
+			"rage": "2~3",
+			"madness": "1~3",
+			"adv_zhencha.exp": 700
+		},
+		"result": {
+			"ganwu": -20
+		}
+	},
+	{
+		"id": "enc_zcha_4",
+		"name": "侦察目标",
+		"desc": "",
+		"effect": {
+			"bf": "-1~2",
+			"rage": "2~6",
+			"madness": "1~3",
+			"adv_zhencha.exp": 1000
+		},
+		"result": {
+			"ganwu": -50
+		}
+	},
+	{
 		"id": "enc_primer1",
 		"name": "magical primer",
 		"desc": "An introduction to magical theory.",

@@ -153,5 +153,182 @@
 			"industry_thread.max": 10
 		},
 		"max": 1
+	},
+	{
+		"id": "techo_eng_assemble_1",
+		"name": "组装优化",
+		"tags": "工程域",
+		"desc": "提高组装机的建造上限",
+		"require": "g.zhenzyyjjx>=1",
+		"research_need_point": 6000,
+		"run":{
+			"xuanmuye": 1,
+			"ind_water": 2,
+			"shenglingshi": 1,
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"factory_zuzhuangji.max": 25
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_conquer_1",
+		"name": "武器拆解",
+		"tags": "工程域",
+		"desc": "得益于强大的工业体系，军工学的发展得到了有力的推进",
+		"require": "g.zhenzyyjjx>=1",
+		"research_need_point": 6000,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"space.max": 100,
+			"industry_space.max": 5,
+			"jungongxue.max": 5
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_conquer_2",
+		"name": "武器组装",
+		"tags": "工程域",
+		"desc": "自动化组装先进武器成为可能",
+		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
+		"research_need_point": 8000,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"space.max": 100,
+			"industry_elect.max": 20,
+			"industry_space.max": 5
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_soc_conquer_1",
+		"name": "地区指挥",
+		"tags": "社会域",
+		"desc": "更进一步扩大征服上限",
+		"require": "g.zhenzyyjjx>=1",
+		"research_need_point": 6000,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"1级.max": 20,
+			"2级.max": 10,
+			"3级.max": 10,
+			"4级.max": 10,
+			"5级.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_soc_conquer_2",
+		"name": "扩张学说",
+		"tags": "社会域",
+		"desc": "解锁新的对外扩张对象",
+		"require": "g.jungongxue>=10",
+		"research_need_point": 8000,
+		"run":{
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"1级.max": 1,
+			"2级.max": 1,
+			"3级.max": 1,
+			"4级.max": 1,
+			"5级.max": 1
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_soc_ap_1",
+		"name": "里程升级",
+		"tags": "社会域",
+		"desc": "解锁里程点升级",
+		"require": "g.socia_point>=100",
+		"research_need_point": 20000,
+		"run":{
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"ganwu.max": 100
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_juhe_1",
+		"name": "玄牝聚合",
+		"tags": "物理域",
+		"desc": "新的研究方向揭示了玄牝液如何聚合为五环点",
+		"require": "g.juhexue_1>=10",
+		"research_need_point": 10000,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"ganwu.max": 100
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_juhe_2",
+		"name": "生物质聚合",
+		"tags": "物理域",
+		"desc": "新的研究方向揭示了玄牝液如何聚合为生物质",
+		"require": "g.juhexue_1>=10",
+		"research_need_point": 10000,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"ganwu.max": 100
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_juhe_1",
+		"name": "玄牝仓储",
+		"tags": "工程域",
+		"desc": "新的技术使得玄牝液不再依赖分体柱存储",
+		"require": "g.juhexue_1>=5",
+		"research_need_point": 8000,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"yinjing": 1,
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"space.max": 100
+		},
+		"max": 1
 	}
 ]
