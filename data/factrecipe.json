@@ -1501,7 +1501,7 @@
 		"desc": "消耗1玄牝液和9纤板和4珍洗石并生产8生物质",
 		"thread_use": "juhe_thread",
 		"tags": "玄牝液",
-		"require": "g.techo_phy_juhe_1>=1",
+		"require": "g.techo_phy_juhe_2>=1",
 		"cost":{
 			"xuanmuye": 40
 		},
