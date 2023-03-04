@@ -570,7 +570,7 @@
 			"conquer_yyslsc": 1
 		},
 		"acost": {
-			"woods":30,
+			"element_wood":30,
 			"yqlm":30,
 			"money": 3000,
 			"ganwu": 3000,
@@ -657,7 +657,7 @@
 			"conquer_jlssc": 1
 		},
 		"acost": {
-			"gold":30,
+			"element_gold":30,
 			"cbjs":30,
 			"money": 3000,
 			"ganwu": 3000,
@@ -743,7 +743,7 @@
 			"conquer_lzdhsc": 1
 		},
 		"acost": {
-			"water":30,
+			"element_water":30,
 			"wgys":30,
 			"money": 3000,
 			"ganwu": 3000,
@@ -829,7 +829,7 @@
 			"conquer_dmhssc": 1
 		},
 		"acost": {
-			"fire":30,
+			"element_fire":30,
 			"yxls":30,
 			"money": 3000,
 			"ganwu": 3000,
@@ -915,7 +915,7 @@
 			"conquer_glpdsc": 1
 		},
 		"acost": {
-			"land":30,
+			"element_land":30,
 			"zdht":30,
 			"money": 3000,
 			"ganwu": 3000,
