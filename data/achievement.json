@@ -674,7 +674,7 @@
 		"name": "采药者",
 		"desc": "拥有24单位丘陵",
 		"target_item": "obs_hill",
-		"target_val": 18,
+		"target_val": 24,
 		"hide": true,
 		"require": "g.huanjjg>=1",
 		"val":0,

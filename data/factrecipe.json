@@ -416,12 +416,12 @@
 			{"id":"glass","base_val":1,"now_val":0}
 		],
 		"cost":{
-			"burn_thread": 1,
 			"quartz": 50,
 			"limestone": 50,
 			"human_power": 200
 		},
 		"mod":{
+			"burn_thread": 1,
 			"quartz.balance": -1,
 			"limestone.balance": -0.5,
 			"glass.balance": 1,
