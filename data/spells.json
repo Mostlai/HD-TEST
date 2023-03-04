@@ -1317,16 +1317,18 @@
 				{
 					"targets": "all",
 					"dot": {
+						"id": "jieshouheiyan_effect",
+						"name":"皆受黑焰",
 						"kind": "fire",
 						"dmg": "87~92",
 						"duration": 30
 					}
 				},
 				{
-					"id": "bfirestormprotection",
-					"name": "黑焰防护",
 					"targets": "allies",
 					"dot": {
+						"id": "bfirestormprotection",
+						"name": "黑焰防护",
 						"duration": 30,
 						"mod": {
 							"self.resist.fire": 80
