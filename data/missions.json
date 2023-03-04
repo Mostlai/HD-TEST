@@ -250,6 +250,52 @@
 		}
 	},
 	{
+		"id": "missions_11",
+		"name": "神经材料上限",
+		"tags": "指引任务",
+		"desc": "神经材料是前期重要的资源之一，当部分升级或修炼需要10个材料才能解锁的时候，你需要学会【灵反空间存储】来提高你的神经材料存储上限。",
+		"require": "g.sj_met>=5",
+		"val": 0,
+		"target":{
+			"0":{
+				"id": "sj_met",
+				"val": 10
+			}
+		},
+		"text_url":[
+			{
+				"name":"灵反空间存储",
+				"url":"https://mostlai.github.io/HD-WIKI/#灵反空间存储"
+			}
+		],
+		"lhxy":{
+			"money": 1
+		},
+		"result":{
+			"money": 1
+		}
+	},
+	{
+		"id": "missions_12",
+		"name": "生灵石获取",
+		"tags": "指引任务",
+		"desc": "生灵石是修炼到筑基一重的必须材料，但在筑基一重之前只能通过探险【中型战场】副本来稳定获取生灵石，当你达到筑基一重之后，将会有更多途径来让你更多更快地获取生灵石。",
+		"require": "g.shenglingshi>=1",
+		"val": 0,
+		"target":{
+			"0":{
+				"id": "shenglingshi",
+				"val": 20
+			}
+		},
+		"lhxy":{
+			"money": 1
+		},
+		"result":{
+			"money": 1
+		}
+	},
+	{
 		"id": "missions_13",
 		"name": "小齿轮的用法",
 		"tags": "指引任务",

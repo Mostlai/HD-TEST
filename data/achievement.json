@@ -266,7 +266,7 @@
 		"max": 1,
 		"result":{
 			"ap":0.1,
-			"money": 10
+			"money": 100
 		}
 	},
 	{
@@ -276,7 +276,7 @@
 		"target_item": "youli",
 		"target_val": 800,
 		"hide": true,
-		"locked": false,
+		"require":"g.youli>0",
 		"val":0,
 		"max": 1,
 		
@@ -341,7 +341,7 @@
 		"target_item": "write_starmap_2",
 		"target_val": 400,
 		"hide": true,
-		"require":"g.write_starmap_1>=1",
+		"require":"g.write_starmap_2>=1",
 		"val":0,
 		"max": 1,
 		"result":{
@@ -389,7 +389,6 @@
 		"target_item": "elect",
 		"target_val": 10,
 		"hide": true,
-		"locked": true,
 		"require": "g.energ_1>=1",
 		"val":0,
 		"max": 1,
@@ -405,7 +404,6 @@
 		"target_item": "elect",
 		"target_val": 50,
 		"hide": true,
-		"locked": true,
 		"require": "g.ach_elect_1>=1",
 		"val":0,
 		"max": 1,
@@ -421,7 +419,6 @@
 		"target_item": "elect",
 		"target_val": 100,
 		"hide": true,
-		"locked": true,
 		"require": "g.ach_elect_2>=1",
 		"val":0,
 		"max": 1,
@@ -437,7 +434,6 @@
 		"target_item": "human_power",
 		"target_val": 100,
 		"hide": true,
-		"locked": true,
 		"require":"g.human_power>50",
 		"val":0,
 		"max": 1,
@@ -453,7 +449,6 @@
 		"target_item": "human_power",
 		"target_val": 1000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_human_power_1>0",
 		"val":0,
 		"max": 1,
@@ -469,7 +464,6 @@
 		"target_item": "human_power",
 		"target_val": 5000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_human_power_2>0",
 		"val":0,
 		"max": 1,
@@ -485,7 +479,6 @@
 		"target_item": "human_power",
 		"target_val": 10000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_human_power_3>0",
 		"val":0,
 		"max": 1,
@@ -495,13 +488,27 @@
 		}
 	},
 	{
+		"id": "ach_human_power_5",
+		"name": "人山人海",
+		"desc": "人力达到25000",
+		"target_item": "human_power",
+		"target_val": 25000,
+		"hide": true,
+		"require":"g.ach_human_power_4>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 1,
+			"human_power.max": 200
+		}
+	},
+	{
 		"id": "ach_alculation_1",
 		"name": "计算器",
 		"desc": "计算力达到1000",
 		"target_item": "alculation",
 		"target_val": 1000,
 		"hide": true,
-		"locked": true,
 		"require":"g.alculation>500",
 		"val":0,
 		"max": 1,
@@ -517,7 +524,6 @@
 		"target_item": "alculation",
 		"target_val": 5000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_alculation_1>0",
 		"val":0,
 		"max": 1,
@@ -533,7 +539,6 @@
 		"target_item": "alculation",
 		"target_val": 10000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_alculation_2>0",
 		"val":0,
 		"max": 1,
@@ -543,13 +548,28 @@
 		}
 	},
 	{
+		"id": "ach_alculation_4",
+		"name": "超级计算机",
+		"desc": "计算力达到25000",
+		"target_item": "alculation",
+		"target_val": 25000,
+		"hide": true,
+		"require":"g.ach_alculation_3>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 1,
+			"alculation.max": 200
+		}
+	},
+	{
 		"id": "ach_conquer_1",
 		"name": "我来",
 		"desc": "征服25个小城镇",
 		"target_item": "conquer_small",
 		"target_val": 25,
 		"hide": true,
-		"locked": false,
+		"require":"g.human_power>4",
 		"val":0,
 		"max": 1,
 		
@@ -671,7 +691,7 @@
 		"target_item": "command_code",
 		"target_val": 10,
 		"hide": true,
-		"locked": false,
+		"require":"command_code>=1",
 		"val":0,
 		"max": 1,
 		
@@ -687,7 +707,7 @@
 		"target_item": "command_code",
 		"target_val": 100,
 		"hide": true,
-		"locked": false,
+		"require":"ach_zl_1>0",
 		"val":0,
 		"max": 1,
 		
@@ -743,13 +763,27 @@
 		}
 	},
 	{
+		"id": "ach_suihun_zhushe",
+		"name": "碎魂熟练",
+		"desc": "释放碎魂注射【狩魂】1000次",
+		"target_item": "suihun_zhushe",
+		"target_val": 1000,
+		"hide": true,
+		"require": "g.jisu_zhushe>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 0.5,
+			"suihun_zhushe.cd": -2
+		}
+	},
+	{
 		"id": "ach_zhiyushu_1",
 		"name": "治愈鼠召唤",
 		"desc": "释放治愈鼠召唤300次",
 		"target_item": "solid_3",
 		"target_val": 300,
 		"hide": true,
-		"locked": true,
 		"require": "g.bbskzjk>=1",
 		"val":0,
 		"max": 1,
@@ -765,7 +799,6 @@
 		"target_item": "solid_4",
 		"target_val": 300,
 		"hide": true,
-		"locked": true,
 		"require": "g.jbgckzjk>=1",
 		"val":0,
 		"max": 1,
@@ -781,7 +814,6 @@
 		"target_item": "solid_5",
 		"target_val": 300,
 		"hide": true,
-		"locked": true,
 		"require": "g.qwdckzjk>=1",
 		"val":0,
 		"max": 1,
@@ -797,10 +829,9 @@
 		"target_item": "ljzj",
 		"target_val": 500,
 		"hide": true,
-		"locked": false,
+		"require": "g.ljzj>=1",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.5,
 			"heli.rate": 0.5
@@ -813,10 +844,9 @@
 		"target_item": "spell_red_laser",
 		"target_val": 130,
 		"hide": true,
-		"locked": false,
+		"require": "g.spell_red_laser>=1",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 1,
 			"laser_ene.rate": 0.05
@@ -888,11 +918,10 @@
 	{
 		"id": "ach_space_5",
 		"name": "建设工厂",
-		"desc": "用地面积达到12000",
+		"desc": "用地面积达到28000",
 		"target_item": "space",
 		"target_val": 12000,
 		"hide": true,
-		"locked": true,
 		"require" : "g.ach_space_4>0",
 		"val":0,
 		"max": 1,
@@ -903,13 +932,28 @@
 		}
 	},
 	{
+		"id": "ach_space_6",
+		"name": "开疆扩土",
+		"desc": "用地面积达到28000",
+		"target_item": "space",
+		"target_val": 28000,
+		"hide": true,
+		"require" : "g.ach_space_5>0",
+		"val":0,
+		"max": 1,
+		
+		"result":{
+			"ap": 1,
+			"space.max": 500
+		}
+	},
+	{
 		"id": "ach_offic_1",
 		"name": "上道了",
 		"desc": "成为巡检使",
 		"target_item": "off_xunjian",
 		"target_val": 1,
 		"hide": true,
-		"locked": true,
 		"require":"g.off_enter_1>0",
 		"val":0,
 		"max": 1,
@@ -925,7 +969,6 @@
 		"target_item": "off_dlsq",
 		"target_val": 1,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_offic_1>0",
 		"val":0,
 		"max": 1,
@@ -941,7 +984,6 @@
 		"target_item": "off_influence",
 		"target_val": 3000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_offic_1>0",
 		"val":0,
 		"max": 1,
@@ -958,7 +1000,6 @@
 		"target_item": "off_influence",
 		"target_val": 5000,
 		"hide": true,
-		"locked": true,
 		"require":"g.ach_offic_3>0",
 		"val":0,
 		"max": 1,
