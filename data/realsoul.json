@@ -674,7 +674,7 @@
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
-			"speed_soulcore_pice": 10,
+			"spell_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
 			"jihun":5,
