@@ -415,7 +415,7 @@
 	{
 		"id": "ach_elect_3",
 		"name": "发电站",
-		"desc": "电能达到50",
+		"desc": "电能达到100",
 		"target_item": "elect",
 		"target_val": 100,
 		"hide": true,
