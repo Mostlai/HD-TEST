@@ -3135,62 +3135,6 @@
 		}
 	},
 	{
-		"id": "wanmusuojinling",
-		"name": "源泉金宿",
-		"tags": "源泉金宿",
-		"level": 38,
-		"desc": "",
-		"kind": "gold",
-		"hp": 1200,
-		"speed": 22,
-		"tohit": 120,
-		"defense": 120,
-		"if_death":{
-			"action": "transform",
-			"require": "team_have_tag",
-			"target_tag": "锐金木宿"
-		},
-		"attack": [
-			{
-				"name": "金意",
-				"kind": "gold",
-				"dmg": "160~320",
-				"targets": "enemies"
-			}
-		],
-		"resist": {
-			"gold": 40
-		}
-	},
-	{
-		"id": "ruijinmusu",
-		"name": "锐金木宿",
-		"tags": "锐金木宿",
-		"level": 38,
-		"desc": "",
-		"kind": "wood",
-		"hp": 1200,
-		"speed": 22,
-		"tohit": 120,
-		"defense": 120,
-		"if_death":{
-			"action": "transform",
-			"require": "team_have_tag",
-			"target_tag": "源泉金宿"
-		},
-		"attack": [
-			{
-				"name": "木意",
-				"kind": "wood",
-				"dmg": "160~320",
-				"targets": "enemies"
-			}
-		],
-		"resist": {
-			"wood": 40
-		}
-	},
-	{
 		"id": "newt",
 		"level": 0.2,
 		"kind": "beast",
