@@ -1,7 +1,7 @@
 [
 	{
 		"id": "conquer_small",
-		"name": "🏡小城镇【按E打开指示器】",
+		"name": "小城镇【按E打开指示器】",
 		"tags":"1级",
 		"desc": "一个人口较少的城镇，防御薄弱，但占地面积也少",
 		"power": 30,
@@ -40,7 +40,7 @@
 	},
 	{
 		"id": "conquer_mediun",
-		"name": "🏠中型城镇",
+		"name": "中型城镇",
 		"tags":"2级",
 		"desc": "一个发展一般的城镇，防御不弱",
 		"power": 100,
@@ -79,7 +79,7 @@
 	},
 	{
 		"id": "conquer_dxczhen",
-		"name": "🏠大型城镇",
+		"name": "大型城镇",
 		"tags":"5级",
 		"desc": "大型城镇",
 		"power": 700,
@@ -120,7 +120,7 @@
 	},
 	{
 		"id": "conquer_lianjun_zhihui",
-		"name": "🗡联军指挥部[1级]",
+		"name": "联军指挥部[1级]",
 		"tags":"",
 		"desc": "1级联军的指挥中心,攻陷一座以减少【战斗压迫】",
 		"power": 500,
@@ -165,7 +165,7 @@
 	},
 	{
 		"id": "conquer_xxyaosai",
-		"name": "🗡小型要塞",
+		"name": "小型要塞",
 		"tags":"5级",
 		"desc": "一处小型要塞",
 		"power": 890,
@@ -206,8 +206,226 @@
 		}
 	},
 	{
+		"id": "conquer_zxyaosai",
+		"name": "中型要塞",
+		"tags":"6级",
+		"desc": "一处中型要塞",
+		"power": 5000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=1",
+		"buy":{
+			"adv_snp_data":5,
+			"money":5000
+		},
+		
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 2000,
+			"conquer_zxyaosai": 1
+		},
+		"acost": {
+			"money": 4000,
+			"ganwu": 2000,
+			"qingjia": 70,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 3000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 30,
+			"space.max": 45,
+			"alculation.max": 25,
+			"alculation.rate": 0.5,
+			"human_power.max": 120 
+		},
+		"result":{
+			"yanzhandu": 55
+		}
+	},
+	{
+		"id": "conquer_obs_hill",
+		"name": "丘陵考察站",
+		"tags":"6级",
+		"desc": "在丘陵建设一个考察站，能让你在一次性纳入更多丘陵",
+		"power": 8000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=3",
+		"buy":{
+			"adv_snp_data":10,
+			"money":10000
+
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_obs_hill": 1
+		},
+		"acost": {
+			"adv_snp_data":2,
+			"money": 5000,
+			"ganwu": 3000,
+			"qingjia": 75,
+			"zhongjia":75,
+			"heavyjia": 75,
+			"wuzhuo": 75,
+			"bingdong": 75,
+			"human_power": 4000,
+			"alculation": 800
+		},
+		"mod":{
+			"f_power": 25,
+			"space.max": 50,
+			"getobs_hill1.result.obs_hill": 0.1,
+			"alculation.max": 30,
+			"human_power.rate": 0.2,
+			"human_power.max": 40 
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
+		"id": "conquer_obs_water",
+		"name": "湖泊垂钓点",
+		"tags":"6级",
+		"desc": "在湖泊建设一个垂钓点，能让你在一次性纳入更多湖泊",
+		"power": 8000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=3",
+		"buy":{
+			"adv_snp_data":10,
+			"money":10000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_obs_water": 1
+		},
+		"acost": {
+			"adv_snp_data":2,
+			"money": 5000,
+			"ganwu": 3000,
+			"qingjia": 75,
+			"zhongjia":75,
+			"heavyjia": 75,
+			"wuzhuo": 75,
+			"bingdong": 75,
+			"human_power": 4000,
+			"alculation": 800
+		},
+		"mod":{
+			"f_power": 25,
+			"space.max": 50,
+			"getbos_water1.result.obs_water": 0.1,
+			"alculation.max": 30,
+			"human_power.rate": 0.2,
+			"human_power.max": 40, 
+			"money.rate":0.5
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
+		"id": "conquer_obs_basin",
+		"name": "盆地采矿处",
+		"tags":"6级",
+		"desc": "在盆地建设一个采矿处，能让你在一次性纳入更多盆地",
+		"power": 8000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=3",
+		"buy":{
+			"adv_snp_data":10,
+			"money":10000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_obs_basin": 1
+		},
+		"acost": {
+			"adv_snp_data":2,
+			"money": 5000,
+			"ganwu": 3000,
+			"qingjia": 75,
+			"zhongjia":75,
+			"heavyjia": 75,
+			"wuzhuo": 75,
+			"bingdong": 75,
+			"human_power": 4000,
+			"alculation": 800
+		},
+		"mod":{
+			"f_power": 25,
+			"space.max": 50,
+			"getbos_basin1.result.obs_basin": 0.1,
+			"alculation.max": 30,
+			"human_power.rate": 0.2,
+			"human_power.max": 40, 
+			"money.rate":0.5
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
+		"id": "conquer_obs_mount",
+		"name": "山脉科研站",
+		"tags":"6级",
+		"desc": "在山脉建设一个科研站，能让你在一次性纳入更多山脉",
+		"power": 8000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=3",
+		"buy":{
+			"adv_snp_data":10,
+			"money":10000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_obs_mount": 1
+		},
+		"acost": {
+			"adv_snp_data":2,
+			"money": 5000,
+			"ganwu": 3000,
+			"qingjia": 75,
+			"zhongjia":75,
+			"heavyjia": 75,
+			"wuzhuo": 75,
+			"bingdong": 75,
+			"human_power": 4000,
+			"alculation": 800
+		},
+		"mod":{
+			"f_power": 25,
+			"space.max": 50,
+			"getbos_mount1.result.obs_mount": 0.1,
+			"alculation.max": 30,
+			"human_power.rate": 0.2,
+			"human_power.max": 40, 
+			"money.rate":0.5
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
 		"id": "conquer_xibupingyuan",
-		"name": "🛤西部平原",
+		"name": "西部平原",
 		"tags":"5级",
 		"desc": "西部平原",
 		"power": 590,
@@ -218,7 +436,6 @@
 			"life_crystal":5,
 			"money":1000
 		},
-		
 		"counterattack": {
 			"shiqi": 33,
 			"zhuzhidu": 33,
@@ -249,7 +466,7 @@
 	},
 	{
 		"id": "conquer_yijitusghug",
-		"name": "🛤遗迹图书馆",
+		"name": "遗迹图书馆",
 		"tags":"5级",
 		"desc": "遗迹图书馆",
 		"power": 950,
@@ -293,7 +510,7 @@
 	},
 	{
 		"id": "conquer_yysl",
-		"name": "⛺月影森林前哨基地",
+		"name": "月影森林前哨基地",
 		"tags":"5级",
 		"desc": "在月影森林建设一个基地",
 		"power": 190,
@@ -303,7 +520,6 @@
 		"buy":{
 			"money":1000
 		},
-		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -332,6 +548,50 @@
 		},
 		"result":{
 			"yanzhandu": 33
+		}
+	},
+	{
+		"id": "conquer_yyslsc",
+		"name": "月影森林深处营地",
+		"tags":"5级",
+		"desc": "在月影森林深处建设一个营地",
+		"power": 4000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=5",
+		"buy":{
+			"adv_snp_data":2,
+			"money":5000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_yyslsc": 1
+		},
+		"acost": {
+			"woods":30,
+			"yqlm":30,
+			"money": 3000,
+			"ganwu": 3000,
+			"qingjia": 70,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 2000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 20,
+			"space.max": 30,
+			"yqlm.rate": 0.1,
+			"alculation.max": 25,
+			"human_power.rate": 0.15,
+			"human_power.max": 45 
+		},
+		"result":{
+			"yanzhandu": 44
 		}
 	},
 	{
@@ -378,8 +638,52 @@
 		}
 	},
 	{
+		"id": "conquer_jlssc",
+		"name": "🏔巨灵山深处守望点",
+		"tags":"5级",
+		"desc": "在巨灵山建设深处一个守望点",
+		"power": 4000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=5",
+		"buy":{
+			"adv_snp_data":2,
+			"money":5000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_jlssc": 1
+		},
+		"acost": {
+			"gold":30,
+			"cbjs":30,
+			"money": 3000,
+			"ganwu": 3000,
+			"qingjia": 70,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 2000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 20,
+			"space.max": 30,
+			"cbjs.rate": 0.1,
+			"alculation.max": 25,
+			"human_power.rate": 0.15,
+			"human_power.max": 45 
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
 		"id": "conquer_lzdh",
-		"name": "🏞劳泽大湖测量中心",
+		"name": "劳泽大湖测量中心",
 		"tags":"5级",
 		"desc": "在劳泽大湖建设一个测量中心",
 		"power": 190,
@@ -389,7 +693,6 @@
 		"buy":{
 			"money":1000
 		},
-		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -421,8 +724,52 @@
 		}
 	},
 	{
+		"id": "conquer_lzdhsc",
+		"name": "🏞劳泽大湖深处测量中心",
+		"tags":"5级",
+		"desc": "在劳泽大湖建设深处一个测量中心",
+		"power": 4000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=5",
+		"buy":{
+			"adv_snp_data":2,
+			"money":5000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_lzdhsc": 1
+		},
+		"acost": {
+			"water":30,
+			"wgys":30,
+			"money": 3000,
+			"ganwu": 3000,
+			"qingjia": 70,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 2000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 20,
+			"space.max": 30,
+			"wgys.rate": 0.1,
+			"alculation.max": 25,
+			"human_power.rate": 0.15,
+			"human_power.max": 45 
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
 		"id": "conquer_dmhs",
-		"name": "🌋地脉火山研究站",
+		"name": "地脉火山研究站",
 		"tags":"5级",
 		"desc": "在地脉火山建设一个研究站",
 		"power": 190,
@@ -432,7 +779,6 @@
 		"buy":{
 			"money":1000
 		},
-		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -464,8 +810,52 @@
 		}
 	},
 	{
+		"id": "conquer_dmhssc",
+		"name": "地脉火山深处研究站",
+		"tags":"5级",
+		"desc": "在地脉火山深处建设一个研究站",
+		"power": 4000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=5",
+		"buy":{
+			"adv_snp_data":2,
+			"money":5000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_dmhssc": 1
+		},
+		"acost": {
+			"fire":30,
+			"yxls":30,
+			"money": 3000,
+			"ganwu": 3000,
+			"qingjia": 70,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 2000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 20,
+			"space.max": 30,
+			"yxls.rate": 0.1,
+			"alculation.max": 25,
+			"human_power.rate": 0.15,
+			"human_power.max": 45 
+		},
+		"result":{
+			"yanzhandu": 44
+		}
+	},
+	{
 		"id": "conquer_glpd",
-		"name": "🗺古老盆地观测站",
+		"name": "古老盆地观测站",
 		"tags":"5级",
 		"desc": "在古老盆地建设一个观测站",
 		"power": 190,
@@ -475,7 +865,6 @@
 		"buy":{
 			"money":1000
 		},
-		
 		"counterattack": {
 			"shiqi": 22,
 			"zhuzhidu": 22,
@@ -504,6 +893,50 @@
 		},
 		"result":{
 			"yanzhandu": 33
+		}
+	},
+	{
+		"id": "conquer_glpdsc",
+		"name": "古老盆地深处观测站",
+		"tags":"5级",
+		"desc": "在古老盆地深处建设一个观测站",
+		"power": 4000,
+		"max": 1,
+		"val": 0,
+		"require": "g.adv_zhencha>=5",
+		"buy":{
+			"adv_snp_data":2,
+			"money":5000
+		},
+		"counterattack": {
+			"shiqi": 44,
+			"zhuzhidu": 44,
+			"money": 1000,
+			"conquer_glpdsc": 1
+		},
+		"acost": {
+			"land":30,
+			"zdht":30,
+			"money": 3000,
+			"ganwu": 3000,
+			"qingjia": 70,
+			"zhongjia":70,
+			"heavyjia": 70,
+			"wuzhuo": 70,
+			"bingdong": 70,
+			"human_power": 2000,
+			"alculation": 700
+		},
+		"mod":{
+			"f_power": 20,
+			"space.max": 30,
+			"zdht.rate": 0.1,
+			"alculation.max": 25,
+			"human_power.rate": 0.15,
+			"human_power.max": 45 
+		},
+		"result":{
+			"yanzhandu": 44
 		}
 	}
 ]

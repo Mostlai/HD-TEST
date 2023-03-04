@@ -255,6 +255,21 @@
 		}
 	},
 	{
+		"id": "ach_freight_1",
+		"name": "辛苦搬砖",
+		"desc": "运货500次",
+		"target_item": "freight",
+		"target_val": 500,
+		"hide": true,
+		"require" : "g.freight>200",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap":0.1,
+			"money": 10
+		}
+	},
+	{
 		"id": "ach_youli_1",
 		"name": "景区游客",
 		"desc": "游历800次",
@@ -270,6 +285,22 @@
 			"ganwu.rate": 1
 		},
 		"disable": ["youli"]
+	},
+	{
+		"id": "ach_hpmax_1",
+		"name": "实验探索",
+		"desc": "极端实验500次",
+		"target_item": "hpmax_1",
+		"target_val": 500,
+		"hide": true,
+		"require":"g.hpmax_1>=1",
+		"val":0,
+		"max": 1,
+		
+		"result":{
+			"ap": 0.3,
+			"hp.rate": 0.01
+		}
 	},
 	{
 		"id": "ach_tili_1",
@@ -688,13 +719,27 @@
 		"target_item": "max_rs",
 		"target_val": 10,
 		"hide": true,
-		"locked": false,
+		"require":"g.max_rs>=1",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.5,
 			"max_rs.max": 4
+		}
+	},
+	{
+		"id": "shohun_2",
+		"name": "狩魂者",
+		"desc": "激活50真魂容量",
+		"target_item": "max_rs",
+		"target_val": 50,
+		"hide": true,
+		"require":"g.shohun_1>=1",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 1,
+			"max_rs.max": 10
 		}
 	},
 	{

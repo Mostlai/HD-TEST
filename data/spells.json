@@ -127,6 +127,7 @@
 		"school": "合理",
 		"locked":true,
 		"level": 4,
+		"cd": 2,
 		"buy": {
 			"ganwu": 22,
 			"zero_crystal": 6,
@@ -444,6 +445,7 @@
 		"id": "prhss",
 		"name": "破落化伤术[筑基]",
 		"level": 5,
+		"cd": 20,
 		"locked":true,
 		"school": "源泉",
 		"buy": {
@@ -922,6 +924,7 @@
 		"school": "混沌",
 		"locked":true,
 		"level": 6,
+		"cd": 25,
 		"buy": {
 			"sp": 2,
 			"ganwu": 100,
@@ -947,6 +950,7 @@
 		"school": "混沌",
 		"locked":true,
 		"level": 9,
+		"cd": 45,
 		"buy": {
 			"sp": 2,
 			"ganwu": 1000,
@@ -972,6 +976,7 @@
 		"school": "合理",
 		"locked":true,
 		"level": 9,
+		"cd": 120,
 		"buy": {
 			"sp": 2,
 			"ganwu": 1000,
@@ -1176,6 +1181,7 @@
 		"school": "归藏",
 		"locked":true,
 		"level": 5,
+		"cd": 25,
 		"buy": {
 			"canglan": 3,
 			"huiguang": 3
@@ -1246,6 +1252,7 @@
 		"school": "血术",
 		"locked":true,
 		"level": 7,
+		"cd": 14,
 		"buy": {
 			"zhenhun_pice_1": 5,
 			"element_blood": 20
@@ -1454,6 +1461,112 @@
 					}
 				}
 			]
+		}
+	},
+	{
+		"id": "sijue_attack_1",
+		"name": "元素轰鸣",
+		"school": "合理",
+		"level": 10,
+		"desc": "",
+		"cd": 4,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000,
+			"gubenxianling": 5,
+			"shenglingshi": 20,
+			"lxue": 20,
+			"money": 8000
+		},
+		"cost": {
+			"gold": 60,
+			"wood": 60,
+			"water": 60,
+			"fire": 60,
+			"land": 60
+		},
+		"attack": {
+			"tohit": -10,
+			"damage": "252~310",
+			"kind": "wuhuan",
+			"dot": {
+				"kind": "wuhuan",
+				"name": "元素滞留",
+				"duration": 1,
+				"damage": 50
+			}
+		}
+	},
+	{
+		"id": "yinyingmiansha",
+		"name": "阴影面纱",
+		"desc": "将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%",
+		"school": "混沌",
+		"locked":true,
+		"level": 5,
+		"cd": 60,
+		"buy": {
+			"ganwu": 2
+		},
+		"cost": {
+			"heli": 12,
+			"chaos": 12
+		},
+		"dot": {
+			"duration": 30,
+			"id": "effect_dark_mask",
+			"name": "阴影面纱",
+			"desc":"将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%",
+			"dmg_scale": 2,
+			"be_dmg_scale": 2.5,
+			"mod": {
+				"self.tohit": -20
+			}
+		}
+	},
+	{
+		"id": "xuejiewuying",
+		"name": "血界无影",
+		"desc": "消耗50气血，普通召唤【无影】至友方场上。",
+		"school": "血术",
+		"locked":true,
+		"level": 6,
+		"buy": {
+			"ganwu": 2
+		},
+		"cost": {
+			"hp": 50
+		},
+		"result": [
+			"un_shadow",
+			"un_shadow"
+		]
+	},
+	{
+		"id": "xuejieliutianling",
+		"name": "血界流天灵",
+		"sp": "superior",
+		"desc": "消耗50气血。若场上至少存在2个【无影】字段的友方单位，则将2个【无影】字段单位牺牲，特殊召唤1个【血界-流天灵】至友方场上。",
+		"more_info":"此召唤物每次攻击命中时均有20%几率对全部敌方单位添加-20防御的临时效果",
+		"school": "血术",
+		"locked":true,
+		"level": 9,
+		"buy": {
+			"ganwu": 2
+		},
+		"cost": {
+			"hp": 50
+		},
+		"superior_target":{
+			"tags": "无影",
+			"number": 2,
+			"msg": "聚集的群星化为一体时，新的羁绊将照亮未来！化作光芒闪耀的道路吧！上级召唤！血色之影，血界-流天灵！ ",
+			"result": "xuejieliutianling_mon",
+			"keep": false,
+			"result_number": 1
+		},
+		"attack": {
+			"damage": 1
 		}
 	},
 	{

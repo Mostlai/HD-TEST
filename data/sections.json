@@ -45,6 +45,11 @@
 		"require": "g.shengchanlun>=1"
 	},
 	{
+		"id": "sect_svehicle",
+		"name": "构造",
+		"locked": true
+	},
+	{
 		"id": "sect_raid",
 		"name": "探险",
 		"require": "g.small_map>=1"

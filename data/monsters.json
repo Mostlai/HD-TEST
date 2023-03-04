@@ -911,7 +911,7 @@
 		"loot": {
 			"shenglingshi": 1,
 			"lxue": 1,
-			"gubenxianling": 0.3,
+			"gubenxianling": 0.2,
 			"qiyiyeti": 2,
 			"money": 100
 		},
@@ -947,7 +947,7 @@
 		"loot": {
 			"shenglingshi": 1,
 			"lxue": 1,
-			"gubenxianling": 0.3,
+			"gubenxianling": 0.1,
 			"qiyiyeti": 2,
 			"money": 100
 		},
@@ -983,7 +983,7 @@
 		"loot": {
 			"shenglingshi": 1,
 			"lxue": 1,
-			"gubenxianling": 0.3,
+			"gubenxianling": 0.2,
 			"qiyiyeti": 2,
 			"money": 100
 		},
@@ -1044,7 +1044,7 @@
 			}
 		],
 		"loot": {
-			"gubenxianling": 2,
+			"gubenxianling": 9,
 			"shenglingshi": 10,
 			"lxue": 10,
 			"money": 1000
@@ -2819,6 +2819,319 @@
 			"zero_crystal": 5,
 			"snp_data": 10,
 			"back_dream": 2
+		}
+	},
+	{
+		"id": "zhuohun_1",
+		"name": "灼魂",
+		"level": 38,
+		"desc": "",
+		"kind": "body",
+		"hp": 1800,
+		"speed": 22,
+		"tohit": 200,
+		"defense": 300,
+		"attack": [
+			{
+				"name": "灼神",
+				"kind": "body",
+				"dmg": "150~220",
+				"targets": "enemies"
+			},
+			{
+				"name": "灼我",
+				"targets": "self",
+				"result": {
+					"hp": 20
+				}
+			}
+		],
+		"loot": {
+			"body_soulcore_pice":0.05,
+			"hunti_core": 0.5,
+			"shenglingshi": 10,
+			"lxue": 10
+		},
+		"resist": {
+			"fire": 30,
+			"gold": 30,
+			"wood": 30,
+			"water": 30,
+			"land": 30
+		}
+	},
+	{
+		"id": "zhuohun_2",
+		"name": "灼魂之灵",
+		"level": 38,
+		"desc": "",
+		"kind": "body",
+		"hp": 2500,
+		"speed": 22,
+		"tohit": 200,
+		"defense": 100,
+		"attack": [
+			{
+				"name": "灼神",
+				"kind": "body",
+				"dmg": "360~420",
+				"targets": "enemies"
+			},
+			{
+				"name": "灼我",
+				"targets": "self",
+				"result": {
+					"hp": 20
+				}
+			}
+		],
+		"loot": {
+			"body_soulcore_pice":0.3,
+			"hunti_core": 7,
+			"shenglingshi": 10,
+			"lxue": 10
+		},
+		"resist": {
+			"fire": 30,
+			"gold": 30,
+			"wood": 30,
+			"water": 30,
+			"land": 30
+		}
+	},
+	{
+		"id": "gongwei_1",
+		"name": "共位之灾",
+		"level": 38,
+		"desc": "",
+		"kind": "heli",
+		"hp": 1700,
+		"speed": 22,
+		"tohit": 200,
+		"defense": 100,
+		"attack": [
+			{
+				"name": "合害",
+				"kind": "heli",
+				"dmg": "150~220",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"heli_soulcore_pice":0.05,
+			"shenglingshi": 10,
+			"lxue": 10
+		},
+		"resist": {
+			"heli": 99
+		}
+	},
+	{
+		"id": "gongwei_2",
+		"name": "共位之幸",
+		"level": 38,
+		"desc": "",
+		"kind": "heli",
+		"hp": 900,
+		"speed": 22,
+		"tohit": 200,
+		"defense": 200,
+		"attack": [
+			{
+				"name": "混幸",
+				"kind": "chaos",
+				"dmg": "150~220",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"hundun_soulcore_pice":0.05,
+			"shenglingshi": 10,
+			"lxue": 10
+		},
+		"resist": {
+			"chaos": 99
+		}
+	},
+	{
+		"id": "gongwei_3",
+		"name": "共位之灵",
+		"level": 38,
+		"desc": "免疫99%合理以及混沌伤害",
+		"kind": "heli",
+		"hp": 2000,
+		"speed": 22,
+		"tohit": 160,
+		"defense": 150,
+		"attack": [
+			{
+				"name": "混沌之理",
+				"kind": "chaos",
+				"dmg": "170~320",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"hundun_soulcore_pice":1,
+			"heli_soulcore_pice":1,
+			"shenglingshi": 10,
+			"lxue": 10
+		},
+		"resist": {
+			"heli": 99,
+			"chaos": 99
+		}
+	},
+	{
+		"id": "tiaoxiezhiling_0",
+		"name": "寻何物?",
+		"level": 38,
+		"desc": "",
+		"kind": "wuhuan",
+		"hp": 1,
+		"speed": 1,
+		"tohit": 1,
+		"defense": 1,
+		"attack": [
+			{
+				"name": "可憎之影",
+				"kind": "wuhuan",
+				"dmg": "5000~5200",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"lxue": 1
+		},
+		"resist": {
+			"fire": 100,
+			"gold": 100,
+			"water": 100,
+			"wood": 100,
+			"land": 100
+		}
+	},
+	{
+		"id": "tiaoxiezhiling",
+		"name": "正灵宿本位",
+		"level": 38,
+		"desc": "开虚张弓影",
+		"kind": "wuhuan",
+		"hp": 4000,
+		"speed": 22,
+		"tohit": 200,
+		"defense": 300,
+		"attack": [
+			{
+				"name": "谁役使万灵",
+				"kind": "wuhuan",
+				"dmg": "340~520",
+				"targets": "enemies"
+			},
+			{
+				"name": "五元难伤神",
+				"kind": "wuhuan",
+				"dmg": "340~520",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"fire_soulcore_pice":1,
+			"gold_soulcore_pice":1,
+			"water_soulcore_pice":1,
+			"wood_soulcore_pice":1,
+			"land_soulcore_pice":1,
+			"shenglingshi": 10,
+			"lxue": 10
+		},
+		"resist": {
+			"fire": 99,
+			"gold": 99,
+			"water": 99,
+			"wood": 99,
+			"land": 99
+		}
+	},
+	{
+		"id": "zaodongzhiling",
+		"name": "躁动之灵",
+		"level": 38,
+		"desc": "",
+		"kind": "fire",
+		"hp": 2000,
+		"speed": 22,
+		"tohit": 200,
+		"defense": 150,
+		"attack": [
+			{
+				"name": "攻击",
+				"kind": "fire",
+				"dmg": "160~320",
+				"targets": "enemies"
+			}
+		],
+		"loot": {
+			"speed_soulcore_pice": 0.05,
+			"spell_soulcore_pice": 0.05,
+			"shenglingshi": 1,
+			"lxue": 1
+		},
+		"resist": {
+			"fire": 20
+		}
+	},
+	{
+		"id": "un_shadow",
+		"name": "无影",
+		"tags": "无影",
+		"level": 1,
+		"desc": "",
+		"kind": "blood",
+		"hp": 350,
+		"speed": 22,
+		"tohit": 80,
+		"defense": 60,
+		"attack": [
+			{
+				"name": "攻击",
+				"kind": "fire",
+				"dmg": "10~120",
+				"targets": "enemies"
+			}
+		],
+		"resist": {
+			"fire": 20
+		}
+	},
+	{
+		"id": "xuejieliutianling_mon",
+		"name": "血界-流天灵",
+		"level": 38,
+		"desc": "",
+		"kind": "fire",
+		"hp": 1200,
+		"speed": 22,
+		"tohit": 120,
+		"defense": 120,
+		"attack": [
+			{
+				"name": "血界爆裂",
+				"kind": "fire",
+				"dmg": "160~320",
+				"targets": "enemies",
+				"dot": {
+					"%": "20%",
+					"id": "s_weak",
+					"name": "虚弱",
+					"mod": {
+						"defense": -20
+					},
+					"duration": 10
+				}
+			}
+		],
+		"resist": {
+			"fire": 20
 		}
 	},
 	{

@@ -582,6 +582,7 @@
 			"time": -1
 		},
 		"result": {
+			"shenglingshi": 2,
 			"snp_data": 5,
 			"zero_crystal": 7,
 			"lxue": 5
@@ -1038,6 +1039,153 @@
 				"gubenmonster_3"
 			]
 		]
+	},
+	{
+		"id": "zhuohunzhiling_dug",
+		"name": "灼魂之灵",
+		"sym": "",
+		"desc": "炽热灵魂",
+		"require": "g.evt_zhuohunzhiling>=1",
+		"dist":700,
+		"level": 35,
+		"length": 30,
+		"run": {
+			"back_dream": 0.5,
+			"time": -0.5
+		},
+		"result": {
+			"money": 500,
+			"ganwu": 1000,
+			"qiyiyeti": "4~9",
+			"body_soulcore_pice": 2,
+			"hunti_core": 4
+		},
+		"boss": {"30":["zhuohun_1","zhuohun_1","zhuohun_1","zhuohun_2"]},
+		"spawns": [
+			[
+				"zhuohun_1"
+			],
+			[
+				"zhuohun_1",
+				"zhuohun_1"
+			]
+		],
+		"flavor": "归藏秘术将很难造成伤害"
+	},
+	{
+		"id": "gongweizhiling_dug",
+		"name": "共位之灵",
+		"sym": "",
+		"desc": "二素之灵",
+		"require": "g.evt_gongweizhiling>=1",
+		"dist":700,
+		"level": 35,
+		"length": 30,
+		"run": {
+			"back_dream": 0.5,
+			"time": -0.5
+		},
+		"result": {
+			"money": 500,
+			"ganwu": 1000,
+			"qiyiyeti": "4~9",
+			"heli_soulcore_pice": 1,
+			"hundun_soulcore_pice":  1
+		},
+		"boss": {"30":["gongwei_3","gongwei_3"]},
+		"spawns": [
+			[
+				"gongwei_1"
+			],
+			[
+				"gongwei_1",
+				"gongwei_2"
+			],
+			[
+				"gongwei_2"
+			]
+		],
+		"flavor": "混沌与合理将很难造成伤害"
+	},
+	{
+		"id": "tiaoxiezhiling_dug",
+		"name": "调谐之灵",
+		"sym": "",
+		"desc": "调谐正灵",
+		"require": "g.evt_tiaoxiezhiling>=1",
+		"dist":700,
+		"level": 35,
+		"length": 2,
+		"run": {
+			"back_dream": 0.5,
+			"time": -0.5
+		},
+		"result": {
+			"money": 500,
+			"ganwu": 1000,
+			"qiyiyeti": "4~9",
+			"fire_soulcore_pice":2,
+			"gold_soulcore_pice":2,
+			"water_soulcore_pice":2,
+			"wood_soulcore_pice":2,
+			"land_soulcore_pice":2
+		},
+		"boss": "tiaoxiezhiling",
+		"spawns": [
+			[
+				"tiaoxiezhiling_0"
+			]
+		],
+		"flavor": "五环元素将很难造成伤害"
+	},
+	{
+		"id": "zaodongzhiling_dug",
+		"name": "躁动之灵",
+		"sym": "",
+		"desc": "躁动不安",
+		"require": "g.evt_zaodongzhiling>=1",
+		"dist":700,
+		"level": 35,
+		"length": 50,
+		"run": {
+			"back_dream": 0.5,
+			"time": -0.5
+		},
+		"result": {
+			"money": 500,
+			"ganwu": 1000,
+			"qiyiyeti": "4~9",
+			"element_blood": 30,
+			"speed_soulcore_pice": 2,
+			"spell_soulcore_pice": 2
+		},
+		"boss": "zaodongzhiling",
+		"spawns": [
+			[
+				"zaodongzhiling"
+			],
+			[
+				"zaodongzhiling",
+				"zaodongzhiling"
+			],
+			[
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling"
+			],
+			[
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling",
+				"zaodongzhiling"
+			]
+		],
+		"flavor": ""
 	},
 	{
 		"id": "sunnyfield",

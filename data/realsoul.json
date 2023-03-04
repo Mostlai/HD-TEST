@@ -28,7 +28,7 @@
 		},
 		"up_mod":{
 			"blood_jihun.mod.max_rs": 1,
-			"blood_jihun.mod.hp.max": 35
+			"blood_jihun.mod.hp.max": 20
 		},
 		"mod":{
 			"max_rs": 0,
@@ -336,6 +336,366 @@
 			"command_code.max": 20,
 			"human_power.max": 1000,
 			"alculation.max": 1000
+		}
+	},
+	{
+		"id": "heli_jihun",
+		"name": "合理真魂",
+		"desc": "能提高合理系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_2>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"heli_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"heli": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"heli_soulcore_pice": 5
+		},
+		"craft_result":{
+			"heli_jihun_fu": 1
+		},
+		"up_mod":{
+			"heli_jihun.mod.max_rs": 1,
+			"heli_jihun.mod.player.bonuses.heli": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.heli": 4.5
+		}
+	},
+	{
+		"id": "hundun_jihun",
+		"name": "混沌真魂",
+		"desc": "能提高混沌系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_2>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"hundun_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"hundun": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"hundun_soulcore_pice": 5
+		},
+		"craft_result":{
+			"hundun_jihun_fu": 1
+		},
+		"up_mod":{
+			"hundun_jihun.mod.max_rs": 1,
+			"hundun_jihun.mod.player.bonuses.hundun": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.hundun": 4.5
+		}
+	},
+	{
+		"id": "fire_jihun",
+		"name": "真火真魂",
+		"desc": "能提高真火系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_3>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"fire_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"fire": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"fire_soulcore_pice": 5
+		},
+		"craft_result":{
+			"fire_jihun_fu": 1
+		},
+		"up_mod":{
+			"fire_jihun.mod.max_rs": 1,
+			"fire_jihun.mod.player.bonuses.fire": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.fire": 4.5
+		}
+	},
+	{
+		"id": "water_jihun",
+		"name": "真水真魂",
+		"desc": "能提高真水系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_3>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"water_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"water": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"water_soulcore_pice": 5
+		},
+		"craft_result":{
+			"water_jihun_fu": 1
+		},
+		"up_mod":{
+			"water_jihun.mod.max_rs": 1,
+			"water_jihun.mod.player.bonuses.water": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.water": 4.5
+		}
+	},
+	{
+		"id": "land_jihun",
+		"name": "厚土真魂",
+		"desc": "能提高厚土系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_3>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"land_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"land": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"land_soulcore_pice": 5
+		},
+		"craft_result":{
+			"land_jihun_fu": 1
+		},
+		"up_mod":{
+			"land_jihun.mod.max_rs": 1,
+			"land_jihun.mod.player.bonuses.land": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.land": 4.5
+		}
+	},
+	{
+		"id": "gold_jihun",
+		"name": "锐金真魂",
+		"desc": "能提高锐金系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_3>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"gold_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"gold": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"gold_soulcore_pice": 5
+		},
+		"craft_result":{
+			"gold_jihun_fu": 1
+		},
+		"up_mod":{
+			"gold_jihun.mod.max_rs": 1,
+			"gold_jihun.mod.player.bonuses.gold": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.gold": 4.5
+		}
+	},
+	{
+		"id": "wood_jihun",
+		"name": "源泉真魂",
+		"desc": "能提高源泉系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_3>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"wood_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"wood": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"wood_soulcore_pice": 5
+		},
+		"craft_result":{
+			"wood_jihun_fu": 1
+		},
+		"up_mod":{
+			"wood_jihun.mod.max_rs": 1,
+			"wood_jihun.mod.player.bonuses.wood": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.wood": 4.5
+		}
+	},
+	{
+		"id": "body_jihun",
+		"name": "归藏真魂",
+		"desc": "能提高归藏系法术伤害的真魂",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_1>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"body_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"body": 50,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"body_soulcore_pice": 5
+		},
+		"craft_result":{
+			"body_jihun_fu": 1
+		},
+		"up_mod":{
+			"body_jihun.mod.max_rs": 1,
+			"body_jihun.mod.player.bonuses.body": 0.5
+		},
+		"mod":{
+			"max_rs": 0,
+			"player.bonuses.body": 4.5
+		}
+	},
+	{
+		"id": "speed_jihun",
+		"name": "疾速真魂",
+		"desc": "内含疾风之力的真魂，能使你加速行动",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_4>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"speed_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"jihun":5,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"speed_soulcore_pice": 5
+		},
+		"craft_result":{
+			"speed_jihun_fu": 1
+		},
+		"up_mod":{
+			"speed_jihun.mod.max_rs": 1,
+			"speed_jihun.mod.speed": 0.3
+		},
+		"mod":{
+			"max_rs": 0,
+			"speed": 2.7
+		}
+	},
+	{
+		"id": "spell_jihun",
+		"name": "记忆真魂",
+		"desc": "运用内含法术力量的真魂，让你能记忆更多法术",
+		"img": "./images/soul1.png",
+		"require": "g.techo_phy_zhenhu_4>=1",
+		"val":0,
+		"max": 98,
+		
+		"lhxy":{
+			"exp": 3000,
+			"element_blood": 40,
+			"speed_soulcore_pice": 10,
+			"zhenhun_pice_1": 40,
+			"super_mind": 20,
+			"jihun":5,
+			"shenglingshi": 20
+		},
+		"scost":{
+			"exp": 500,
+			"element_blood": 20,
+			"zhenhun_pice_1": 40,
+			"spell_soulcore_pice": 5
+		},
+		"craft_result":{
+			"spell_jihun_fu": 1
+		},
+		"up_mod":{
+			"spell_jihun.mod.max_rs": 1,
+			"spell_jihun.mod.spelllist.max": 1
+		},
+		"mod":{
+			"max_rs": 0,
+			"spelllist.max": 6
 		}
 	}
 ]

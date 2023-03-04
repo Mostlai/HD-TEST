@@ -579,6 +579,30 @@
 		"desc": "侦察路线...."
 	},
 	{
+		"id": "evt_zhuohunzhiling",
+		"name": "灼魂之灵",
+		"require": "g.techo_phy_zhenhu_1>=1",
+		"desc": "发现灼魂之灵...."
+	},
+	{
+		"id": "evt_gongweizhiling",
+		"name": "共位之灵",
+		"require": "g.techo_phy_zhenhu_2>=1",
+		"desc": "发现共位之灵...."
+	},
+	{
+		"id": "evt_tiaoxiezhiling",
+		"name": "调谐之灵",
+		"require": "g.techo_phy_zhenhu_3>=1",
+		"desc": "发现调谐之灵...."
+	},
+	{
+		"id": "evt_zaodongzhiling",
+		"name": "躁动之灵",
+		"require": "g.techo_phy_zhenhu_4>=1",
+		"desc": "发现躁动之灵...."
+	},
+	{
 		"id": "evt_helper",
 		"name": "Promotion",
 		"desc": "In return for your new services, your master grants you a small allowance for your studies. The position does require of course, some initial fees...",

@@ -80,5 +80,95 @@
 		"max": 10,
 		"locked": false,
 		"flavor": ""
+	},
+	{
+		"id": "heli_soulcore_pice",
+		"name": "合理碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "hundun_soulcore_pice",
+		"name": "混沌碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "fire_soulcore_pice",
+		"name": "真火碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "water_soulcore_pice",
+		"name": "真水碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "land_soulcore_pice",
+		"name": "厚土碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "gold_soulcore_pice",
+		"name": "锐金碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "wood_soulcore_pice",
+		"name": "源泉碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "body_soulcore_pice",
+		"name": "归藏碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "speed_soulcore_pice",
+		"name": "疾速碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
+	},
+	{
+		"id": "spell_soulcore_pice",
+		"name": "记忆碎片",
+		"desc": "",
+		"val": 0,
+		"max": 0,
+		"locked": false,
+		"flavor": ""
 	}
 ]

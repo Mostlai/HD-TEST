@@ -330,5 +330,111 @@
 			"space.max": 100
 		},
 		"max": 1
+	},
+	{
+		"id": "techo_phy_zhenhu_0",
+		"name": "同构异位真魂",
+		"tags": "物理域",
+		"desc": "新的物理数据提供了分形真魂的研究方向",
+		"require": "g.physic_point>=0.1",
+		"research_need_point": 5000,
+		"run":{
+			"shenshi": 10,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"max_rs_mod": 5,
+			"shenshi.max": 3
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_zhenhu_1",
+		"name": "单体魂分形",
+		"tags": "物理域",
+		"desc": "关于归藏学的真魂分形研究",
+		"require": "g.techo_phy_zhenhu_0>=1 && g.guixuan>=1",
+		"research_need_point": 6300,
+		"run":{
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"hunti_core.max": 18,
+			"body_soulcore_pice.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_zhenhu_2",
+		"name": "二素魂分形",
+		"tags": "物理域",
+		"desc": "关于合理与混沌的真魂分形研究",
+		"require": "g.techo_phy_zhenhu_0>=1",
+		"research_need_point": 6300,
+		"run":{
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"heli.max": 2,
+			"chaos.max": 2,
+			"heli_soulcore_pice.max": 10,
+			"hundun_soulcore_pice.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_zhenhu_3",
+		"name": "五位魂分形",
+		"tags": "物理域",
+		"desc": "关于五元素的真魂分形研究",
+		"require": "g.techo_phy_zhenhu_0>=1",
+		"research_need_point": 6300,
+		"run":{
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"gold.max": 5,
+			"wood.max": 5,
+			"water.max": 5,
+			"fire.max": 5,
+			"land.max": 5,
+			"fire_soulcore_pice.max": 10,
+			"water_soulcore_pice.max": 10,
+			"wood_soulcore_pice.max": 10,
+			"land_soulcore_pice.max": 10,
+			"gold_soulcore_pice.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_zhenhu_4",
+		"name": "忆风魂分形",
+		"tags": "物理域",
+		"desc": "关于速度与记忆的真魂分形研究",
+		"require": "g.techo_phy_zhenhu_0>=1",
+		"research_need_point": 4000,
+		"run":{
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"speed_soulcore_pice.max": 10,
+			"spell_soulcore_pice.max": 10
+		},
+		"max": 1
 	}
 ]

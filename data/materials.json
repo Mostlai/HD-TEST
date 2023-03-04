@@ -77,6 +77,7 @@
 	},
 	{
 		"id": "silk",
+		"name": "丝绸",
 		"kind": "cloth",
 		"weight": 0,
 		"priceMod": 5,
@@ -89,6 +90,7 @@
 	},
 	{
 		"id": "cotton",
+		"name": "棉",
 		"kind": "cloth",
 		"level": 0,
 		"exclude": "weapon",
@@ -98,6 +100,7 @@
 	},
 	{
 		"id": "stone",
+		"name": "石头",
 		"kind": "natural",
 		"weight": 3,
 		"level": 0,
@@ -109,6 +112,7 @@
 	},
 	{
 		"id": "leather",
+		"name": "皮革",
 		"kind": "leather",
 		"weight": 1,
 		"priceMod": 1,
@@ -121,7 +125,7 @@
 	{
 		"id": "wood",
 		"kind": "wood",
-		"adj": "wooden",
+		"adj": "木制",
 		"priceMod": 1,
 		"level": 0,
 		"only": "weapon",
@@ -134,6 +138,7 @@
 	},
 	{
 		"id": "bone",
+		"name": "骨制",
 		"kind": "natural",
 		"priceMod": 1,
 		"level": 2,
@@ -146,6 +151,7 @@
 	},
 	{
 		"id": "ivory",
+		"name": "象牙",
 		"kind": "natural",
 		"priceMod": 5,
 		"level": 4,
@@ -159,7 +165,7 @@
 	{
 		"id": "mat_gold",
 		"name": "gold",
-		"adj": "golden",
+		"adj": "金制",
 		"kind": "metal",
 		"priceMod": 3,
 		"level": 4,
@@ -173,6 +179,7 @@
 	{
 		"id": "mat_ruby",
 		"name": "ruby",
+		"name": "闪亮",
 		"kind": "crystal",
 		"priceMod": 7,
 		"level": 6,
@@ -184,6 +191,7 @@
 	},
 	{
 		"id": "bronze",
+		"name": "青铜",
 		"kind": "metal",
 		"weight": 2,
 		"priceMod": 5,
@@ -197,6 +205,7 @@
 	},
 	{
 		"id": "iron",
+		"name": "铁质",
 		"kind": "metal",
 		"weight": 2,
 		"priceMod": 10,
@@ -210,7 +219,7 @@
 	},
 	{
 		"id": "dragonscale",
-		"name": "dragonscale",
+		"name": "火护",
 		"kind": "leather",
 		"weight": 1,
 		"priceMod": 50,
@@ -227,7 +236,7 @@
 	},
 	{
 		"id": "basiliskhide",
-		"name": "basilisk hide",
+		"name": "蛇皮",
 		"kind": "leather",
 		"weight": 1,
 		"priceMod": 30,
@@ -244,6 +253,7 @@
 	},
 	{
 		"id": "mithril",
+		"name": "害锋",
 		"kind": "metal",
 		"weight": 1,
 		"priceMod": 100,
@@ -254,6 +264,7 @@
 	},
 	{
 		"id": "ebonwood",
+		"name": "衰木",
 		"kind": "wood",
 		"weight": 1,
 		"priceMod": 100,
@@ -265,6 +276,7 @@
 	{
 		"id": "idrasil",
 		"kind": "wood",
+		"adj": "木锋",
 		"weight": 1,
 		"priceMod": 100,
 		"level": 8,
@@ -275,6 +287,7 @@
 	{
 		"id": "ethereal",
 		"kind": "ethereal",
+		"adj": "尖锐",
 		"weight": 0,
 		"priceMod": 2000,
 		"level": 8,
@@ -285,7 +298,7 @@
 	{
 		"id": "adamant",
 		"kind": "metal",
-		"adj": "adamantine",
+		"adj": "坚硬",
 		"priceMod": 1000,
 		"level": 9,
 		"alter": {
