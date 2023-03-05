@@ -133,16 +133,16 @@
 		}
 	},
 	{
-		"id": "hundun_jihun_fu",
+		"id": "chaos_jihun_fu",
 		"name": "混沌真魂升级",
 		"desc": "混沌真魂",
 		"require": "g.hp>=1",
 		"val":0,
 		"max": 1000000000000,
 		"mod":{
-			"hundun_jihun.scost.hundun_soulcore_pice": 0.3,
-			"hundun_jihun.mod.max_rs": 1,
-			"hundun_jihun.mod.player.bonuses.hundun": 0.5
+			"chaos_jihun.scost.hundun_soulcore_pice": 0.3,
+			"chaos_jihun.mod.max_rs": 1,
+			"chaos_jihun.mod.player.bonuses.hundun": 0.5
 		}
 	},
 	{

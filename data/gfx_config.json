@@ -2,6 +2,7 @@
 	{
 		"id": "g_c",
 		"ap_ic": "./images/ap.png",
-		"up_ic": "./images/upgrade.png"
+		"up_ic": "./images/upgrade.png",
+		"f_n_img": "./images/wujianbao.png"
 	}
 ]

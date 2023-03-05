@@ -375,7 +375,7 @@
 		}
 	},
 	{
-		"id": "hundun_jihun",
+		"id": "chaos_jihun",
 		"name": "混沌真魂",
 		"desc": "能提高混沌系法术伤害的真魂",
 		"img": "./images/soul1.png",
@@ -386,24 +386,24 @@
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
-			"hundun_soulcore_pice": 10,
+			"chaos_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"hundun": 50,
+			"chaos": 50,
 			"shenglingshi": 20
 		},
 		"scost":{
 			"exp": 500,
 			"element_blood": 20,
 			"zhenhun_pice_1": 40,
-			"hundun_soulcore_pice": 5
+			"chaos_soulcore_pice": 5
 		},
 		"craft_result":{
-			"hundun_jihun_fu": 1
+			"chaos_jihun_fu": 1
 		},
 		"up_mod":{
-			"hundun_jihun.mod.max_rs": 1,
-			"hundun_jihun.mod.player.bonuses.hundun": 0.5
+			"chaos_jihun.mod.max_rs": 1,
+			"chaos_jihun.mod.player.bonuses.chaos": 0.5
 		},
 		"mod":{
 			"max_rs": 0,
@@ -425,7 +425,7 @@
 			"fire_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"fire": 50,
+			"element_fire": 50,
 			"shenglingshi": 20
 		},
 		"scost":{
@@ -461,7 +461,7 @@
 			"water_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"water": 50,
+			"element_water": 50,
 			"shenglingshi": 20
 		},
 		"scost":{
@@ -497,7 +497,7 @@
 			"land_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"land": 50,
+			"element_land": 50,
 			"shenglingshi": 20
 		},
 		"scost":{
@@ -533,7 +533,7 @@
 			"gold_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"gold": 50,
+			"element_gold": 50,
 			"shenglingshi": 20
 		},
 		"scost":{
@@ -569,7 +569,7 @@
 			"wood_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"wood": 50,
+			"element_wood": 50,
 			"shenglingshi": 20
 		},
 		"scost":{
@@ -605,7 +605,7 @@
 			"body_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
-			"body": 50,
+			"hp": 200,
 			"shenglingshi": 20
 		},
 		"scost":{
@@ -674,7 +674,7 @@
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
-			"speed_soulcore_pice": 10,
+			"spell_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
 			"jihun":5,
