@@ -133,7 +133,7 @@
 		}
 	},
 	{
-		"id": "chaos_jihun_fu",
+		"id": "hundun_jihun_fu",
 		"name": "混沌真魂升级",
 		"desc": "混沌真魂",
 		"require": "g.hp>=1",

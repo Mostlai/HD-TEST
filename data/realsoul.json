@@ -386,7 +386,7 @@
 		"lhxy":{
 			"exp": 3000,
 			"element_blood": 40,
-			"chaos_soulcore_pice": 10,
+			"hundun_soulcore_pice": 10,
 			"zhenhun_pice_1": 40,
 			"super_mind": 20,
 			"chaos": 50,
@@ -396,10 +396,10 @@
 			"exp": 500,
 			"element_blood": 20,
 			"zhenhun_pice_1": 40,
-			"chaos_soulcore_pice": 5
+			"hundun_jihun_fu": 5
 		},
 		"craft_result":{
-			"chaos_jihun_fu": 1
+			"hundun_jihun_fu": 1
 		},
 		"up_mod":{
 			"chaos_jihun.mod.max_rs": 1,
