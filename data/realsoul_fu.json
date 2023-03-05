@@ -142,7 +142,7 @@
 		"mod":{
 			"chaos_jihun.scost.hundun_soulcore_pice": 0.3,
 			"chaos_jihun.mod.max_rs": 1,
-			"chaos_jihun.mod.player.bonuses.hundun": 0.5
+			"chaos_jihun.mod.player.bonuses.chaos": 0.5
 		}
 	},
 	{
