@@ -412,8 +412,8 @@
 	},
 	{
 		"id": "logversion",
-		"name": "2023003",
-		"logversion": "2023003",
+		"name": "2023005",
+		"logversion": "2023005",
 		"frecipever": "20203r06",
 		"hide": true,
 		"locked": false,
