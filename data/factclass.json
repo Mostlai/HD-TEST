@@ -1,5 +1,17 @@
 [
 	{
+		"id": "dock_unit_1",
+		"name": "装卸单元I",
+		"desc": "装卸单元能够提高线程的装卸速度，从而提高整体效率。装卸速度0.5",
+		"tags": "固体,装卸单元",
+		"img": "./images/dock_unit.png",
+		"val": 0,
+		"max": 5,
+		"follow": "装卸单元I",
+		"d_rate": 0.5,
+		"require": "g.techo_eng_zyzz_1>=1"
+	},
+	{
 		"id": "spare_parts",
 		"name": "零部件",
 		"tags": "固体",
@@ -9,6 +21,28 @@
 		"max": 5,
 		"follow": "零部件", 
 		"require": "g.steel>=1"
+	},
+	{
+		"id": "mech_mo_struct",
+		"name": "机传结构",
+		"tags": "固体",
+		"desc": "这个小巧的装置使机械结构能够灵活的响应",
+		"img": "./images/part_2.png",
+		"val": 0,
+		"max": 5,
+		"follow": "机传结构", 
+		"require": "g.techo_eng_zyzz_1>=1"
+	},
+	{
+		"id": "emember_unit",
+		"name": "套件单元",
+		"tags": "固体",
+		"desc": "复合了多个功能性组件的套件单元，满足你的大部分欲望",
+		"img": "./images/part_1.png",
+		"val": 0,
+		"max": 5,
+		"follow": "套件单元", 
+		"require": "g.techo_eng_zyzz_1>=1"
 	},
 	{
 		"id": "nicheng_data",
@@ -152,6 +186,17 @@
 		"max": 5,
 		"follow": "耐磁线", 
 		"require": "g.spart_zuzhuang>=10"
+	},
+	{
+		"id": "yingcixian",
+		"name": "萤磁线",
+		"tags": "固体",
+		"desc": "由耐磁线镀上萤晶而来，萤磁线比耐磁线有更好的导电的能力",
+		"img": "./images/naicixian.png",
+		"val": 0,
+		"max": 5,
+		"follow": "萤磁线", 
+		"require": "g.techo_eng_yjyy_1>=1"
 	},
 	{
 		"id": "ganguangtj",

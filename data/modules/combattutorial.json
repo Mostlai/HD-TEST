@@ -166,6 +166,7 @@
 			{
 				"id": "youhun_1",
 				"name": "幽魂",
+				"kind": "undead/soul_form",
 				"level": 7,
 				"speed": 3,
 				"hp": 24,
@@ -179,6 +180,7 @@
 			{
 				"id": "youhun_2",
 				"name": "愤怒亡魂",
+				"kind": "undead/soul_form",
 				"level": 7,
 				"speed": 3,
 				"hp": 30,
@@ -192,6 +194,7 @@
 			{
 				"id": "youhun_3",
 				"name": "不安亡灵",
+				"kind": "undead/soul_form",
 				"level": 7,
 				"speed": 3,
 				"hp": 35,
@@ -205,6 +208,7 @@
 			{
 				"id": "ice_1",
 				"name": "冰精",
+				"kind": "elementals/land_living",
 				"level": 6,
 				"speed": 2,
 				"hp": 30,
@@ -218,6 +222,7 @@
 			{
 				"id": "ice_2",
 				"name": "雪地行者",
+				"kind": "elementals/land_living",
 				"level": 6,
 				"speed": 3,
 				"hp": 10,
@@ -231,6 +236,7 @@
 			{
 				"id": "ice_3",
 				"name": "雪牛",
+				"kind": "beast/land_living",
 				"level": 6,
 				"speed": 3,
 				"hp": 10,
@@ -244,6 +250,7 @@
 			{
 				"id": "monkey",
 				"name": "猿猴",
+				"kind": "beast/land_living",
 				"level": 0,
 				"speed": -5,
 				"hp": 8,
@@ -257,6 +264,7 @@
 			{
 				"id": "tiger",
 				"name": "猛虎",
+				"kind": "beast/land_living",
 				"level": 0,
 				"speed": -7,
 				"hp": 15,
@@ -270,6 +278,7 @@
 			{
 				"id": "jingguai",
 				"name": "精怪",
+				"kind": "beast/fey",
 				"level": 0,
 				"speed": -5,
 				"hp": 20,
@@ -283,6 +292,7 @@
 			{
 				"id": "tramp",
 				"name": "流浪汉",
+				"kind": "humanoid/human",
 				"desc": "一个四处漂泊的人",
 				"level": 0,
 				"speed": -10,
@@ -297,6 +307,7 @@
 			{
 				"id": "wasteland_walker",
 				"name": "荒地流浪者",
+				"kind": "humanoid/human",
 				"desc": "一个四处漂泊的人",
 				"level": 0,
 				"speed": -6,
@@ -311,6 +322,7 @@
 			{
 				"id": "robber",
 				"name": "强盗",
+				"kind": "humanoid/human",
 				"desc": "强盗",
 				"level": 0,
 				"speed": -10,
@@ -325,6 +337,7 @@
 			{
 				"id": "jackals",
 				"name": "豺狼",
+				"kind": "beast/land_living",
 				"desc": "凶恶的野兽",
 				"level": 0,
 				"speed": -10,

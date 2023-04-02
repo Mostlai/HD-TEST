@@ -9,8 +9,8 @@
 		"locked": false
 	},
 	{
-		"id": "shiled",
-		"name": "护盾",
+		"id": "shiled_o",
+		"name": "护盾(废弃)",
 		"desc": "",
 		"val": 0,
 		"max": 0,
@@ -30,7 +30,13 @@
 			"hallPoints": 0.1,
 			"spelllist.max": 1,
 			"stamina.max": 1,
+			"player.shiled_max": 0.5,
 			"player.tohit": 1,
+			"player.dodge": 0.5,
+			"player.physical_class": 0.35,
+			"player.physical_save": 0.25,
+			"player.spell_class": 0.35,
+			"player.spell_save": 0.25,
 			"hp.max": 1,
 			"allies.max": ":5",
 			"speed": ":4",
@@ -267,7 +273,7 @@
 	},
 	{
 		"id": "scraft",
-		"name": "spellcraft power",
+		"name": "法术融合上限",
 		"val": 1,
 		"stat": true,
 		"unit": true,
@@ -283,8 +289,24 @@
 		"locked": false
 	},
 	{
+		"id": "hardiness",
+		"name": "护甲强度",
+		"desc": "",
+		"stat": true,
+		"unit": false,
+		"locked": false
+	},
+	{
+		"id": "tohit",
+		"name": "命中",
+		"desc": "",
+		"stat": true,
+		"unit": false,
+		"locked": false
+	},
+	{
 		"id": "virtue",
-		"require": "tier0",
+		"name": "善",
 		"hide": "true",
 		"locked": false,
 		"desc": "Tendency to good",
@@ -293,7 +315,7 @@
 	},
 	{
 		"id": "evilamt",
-		"name": "evil",
+		"name": "恶",
 		"hide": true,
 		"locked": false,
 		"stat": true,
@@ -302,7 +324,7 @@
 	},
 	{
 		"id": "fame",
-		"name": "notoriety",
+		"name": "声望",
 		"hide": true,
 		"locked": false,
 		"stat": true,
@@ -311,6 +333,74 @@
 			"hallPoints": 1
 		},
 		"val": 0
+	},
+	{
+		"id": "summoned_max",
+		"name": "召唤物最大同时存在数量",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"val": 4
+	},
+	{
+		"id": "summoned_damage",
+		"name": "召唤物造成伤害加成",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"val": 0
+	},
+	{
+		"id": "physical_class",
+		"name": "物理强度",
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "spell_class",
+		"name": "法术强度",
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "physical_save",
+		"name": "物理抵抗",
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "spell_save",
+		"name": "法术抵抗",
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "physical_critical",
+		"name": "物理暴击率",
+		"val": 5,
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "spell_critical",
+		"name": "法术暴击率",
+		"val": 5,
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "critical_damage",
+		"name": "暴击伤害",
+		"val": 150,
+		"hide": true,
+		"locked": false,
+		"stat": true
 	},
 	{
 		"id": "player_idf",
@@ -322,9 +412,9 @@
 	},
 	{
 		"id": "logversion",
-		"name": "2023002",
-		"logversion": "2023002",
-		"frecipever": "20203r05",
+		"name": "2023003",
+		"logversion": "2023003",
+		"frecipever": "20203r06",
 		"hide": true,
 		"locked": false,
 		"stat": true,
@@ -344,6 +434,46 @@
 		"name": "hidegundong",
 		"max":1,
 		"val":1,
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "tohit_bonus",
+		"name": "额外命中加成",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"val": 0,
+		"mod":{
+			"player.tohit": 1
+		}
+	},
+	{
+		"id": "damage_bonus",
+		"name": "额外全局伤害加成",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"val": 0,
+		"mod":{
+			"player.damage": 1
+		}
+	},
+	{
+		"id": "weapon_bonus",
+		"name": "武器伤害加成",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"val": 0,
+		"mod":{
+			"weapon.damage": 1
+		}
+	},
+	{
+		"id": "equip_dot_count",
+		"name": "物品DOT",
 		"hide": true,
 		"locked": false,
 		"stat": true

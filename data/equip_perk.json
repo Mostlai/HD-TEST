@@ -1,0 +1,1894 @@
+[
+	{
+		"id": "redd",
+		"name": "红色",
+		"adj": "红色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真火抗性%": 3,
+				"锐金抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.fire": 3,
+			"self.resist.gold": 1
+		}
+	},
+	{
+		"id": "crimson",
+		"name": "绯红",
+		"adj": "绯红",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真火抗性%": 5,
+				"锐金抗性%": 2
+			}
+		},
+		"mod": {
+			"self.resist.fire": 5,
+			"self.resist.gold": 2
+		}
+	},
+	{
+		"id": "crimson_1",
+		"name": "深红",
+		"adj": "深红",
+		"weight": 1,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真火抗性%": 3,
+				"真火伤害加成": 1
+			}
+		},
+		"mod": {
+			"self.resist.fire": 6,
+			"player.bonuses.fire": 1
+		}
+	},
+	{
+		"id": "blue",
+		"name": "蓝色",
+		"adj": "蓝色",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真水抗性%": 3,
+				"真火抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.water": 3,
+			"self.resist.fire": 1
+		}
+	},
+	{
+		"id": "blue_1",
+		"name": "蓝色",
+		"adj": "蓝色",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真水抗性%": 3,
+				"电能恢复": 0.3
+			}
+		},
+		"mod": {
+			"self.resist.water": 3,
+			"elect.rate": 0.3
+		}
+	},
+	{
+		"id": "azure",
+		"name": "天蓝",
+		"adj": "天蓝",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真水抗性%": 5,
+				"真火抗性%": 2,
+				"合理恢复" : 1
+			}
+		},
+		"mod": {
+			"self.resist.water": 5,
+			"self.resist.fire": 2,
+			"heli.rate": 1
+		}
+	},
+	{
+		"id": "lapis",
+		"name": "深蓝",
+		"adj": "深蓝",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"真水抗性%": 6,
+				"真水伤害加成": 1
+			}
+		},
+		"mod": {
+			"self.resist.water": 6,
+			"player.bonuses.water": 1
+		}
+	},
+	{
+		"id": "green",
+		"name": "绿色",
+		"adj": "绿色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"源泉抗性%": 3,
+				"厚土抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.wood": 3,
+			"self.resist.land": 1
+		}
+	},
+	{
+		"id": "viridity",
+		"name": "翠绿",
+		"adj": "翠绿",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"源泉抗性%": 5,
+				"气血恢复": 0.5
+			}
+		},
+		"mod": {
+			"self.resist.wood": 5,
+			"self.hp.rate": 0.5
+		}
+	},
+	{
+		"id": "drakgreen",
+		"name": "深绿",
+		"adj": "深绿",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"源泉抗性%": 5,
+				"气血上限": 2
+			}
+		},
+		"mod": {
+			"self.resist.wood": 5,
+			"self.hp.max": 2
+		}
+	},
+	{
+		"id": "yellowlight",
+		"name": "浅黄",
+		"adj": "浅黄",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"厚土抗性%": 3,
+				"真水抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.land": 3,
+			"self.resist.water": 1
+		}
+	},
+	{
+		"id": "yello",
+		"name": "黄色",
+		"adj": "黄色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"厚土抗性%": 5,
+				"防御": 2
+			}
+		},
+		"mod": {
+			"self.resist.land": 5,
+			"player.defense": 2
+		}
+	},
+	{
+		"id": "drakyellow",
+		"name": "深黄",
+		"adj": "深黄",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"厚土抗性%": 2,
+				"物理抗性": 5
+			}
+		},
+		"mod": {
+			"self.resist.land": 5,
+			"self.resist.psychic": 5
+		}
+	},
+	{
+		"id": "goldlite",
+		"name": "淡金色",
+		"adj": "淡金色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"锐金抗性%": 3,
+				"源泉抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.gold": 3,
+			"self.resist.wood": 1
+		}
+	},
+	{
+		"id": "goldcolor",
+		"name": "金色",
+		"adj": "金色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"锐金抗性%": 5,
+				"命中": 2
+			}
+		},
+		"mod": {
+			"self.resist.gold": 5,
+			"player.tohit": 2
+		}
+	},
+	{
+		"id": "lightgold",
+		"name": "亮金",
+		"adj": "亮金",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"锐金抗性%": 1,
+				"命中": 7,
+				"防御": -5
+			}
+		},
+		"mod": {
+			"self.resist.gold": 1,
+			"player.tohit": 7,
+			"self.defense": -5
+		}
+	},
+	{
+		"id": "electthrough",
+		"name": "通电",
+		"adj": "通电",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"电击抗性%": -7,
+				"电能恢复": 3
+			}
+		},
+		"mod": {
+			"self.resist.elect": -7,
+			"elect.rate": 3
+		}
+	},
+	{
+		"id": "electunthrough",
+		"name": "阻电",
+		"adj": "阻电",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"电击抗性%": 5,
+				"电能恢复": -2
+			}
+		},
+		"mod": {
+			"self.resist.elect": 5,
+			"elect.rate": -2
+		}
+	},
+	{
+		"id": "zaodong",
+		"name": "躁动",
+		"adj": "躁动",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"物理暴击率%": 5
+			}
+		},
+		"mod": {
+			"player.physical_critical": 5
+		}
+	},
+	{
+		"id": "kuangbao",
+		"name": "狂暴",
+		"adj": "狂暴",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"法术暴击率%": -3,
+				"物理暴击率%": 8
+			}
+		},
+		"mod": {
+			"player.spell_critical": -3,
+			"player.physical_critical": 8
+		}
+	},
+	{
+		"id": "mineng",
+		"name": "秘能",
+		"adj": "秘能",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"法术暴击率%": 5
+			}
+		},
+		"mod": {
+			"player.spell_critical": 5
+		}
+	},
+	{
+		"id": "ruomi",
+		"name": "弱秘",
+		"adj": "弱秘",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"物理暴击率%": -3,
+				"法术暴击率%": 8
+			}
+		},
+		"mod": {
+			"player.physical_critical": -3,
+			"player.spell_critical": 8
+		}
+	},
+	{
+		"id": "mozhan",
+		"name": "魔战",
+		"adj": "魔战",
+		"weight": 1,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"物理暴击率%": 6,
+				"法术暴击率%": 6
+			}
+		},
+		"mod": {
+			"player.physical_critical": 6,
+			"player.spell_critical": 6
+		}
+	},
+	{
+		"id": "huixing_1",
+		"name": "会心",
+		"adj": "会心",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "neck",
+		"perk_info":{
+			"info":{
+				"暴击伤害加成%": 3
+			}
+		},
+		"mod": {
+			"player.critical_damage": 3
+		}
+	},
+	{
+		"id": "huixing_2",
+		"name": "会心",
+		"adj": "会心",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "neck",
+		"perk_info":{
+			"info":{
+				"物理暴击率%": 3
+			}
+		},
+		"mod": {
+			"player.physical_critical": 3
+		}
+	},
+	{
+		"id": "huixing_3",
+		"name": "会心",
+		"adj": "会心",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "neck",
+		"perk_info":{
+			"info":{
+				"法术暴击率%": 3
+			}
+		},
+		"mod": {
+			"player.spell_critical": 3
+		}
+	},
+	{
+		"id": "whitelight",
+		"name": "淡白色",
+		"adj": "淡白色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"合理抗性%": 2,
+				"混沌抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.heli": 2,
+			"self.resist.chaos": 1
+		}
+	},
+	{
+		"id": "black",
+		"name": "黑色",
+		"adj": "黑色",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"混沌抗性%": 2,
+				"合理抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.chaos": 2,
+			"self.resist.heli": 1
+		}
+	},
+	{
+		"id": "doublehate",
+		"name": "双厌",
+		"adj": "双厌",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"混沌抗性%": -3,
+				"合理抗性%": -3,
+				"气血恢复": -1,
+				"气血上限": 5
+			}
+		},
+		"mod": {
+			"self.resist.chaos": -3,
+			"self.resist.heli": -3,
+			"self.hp.rate": -1,
+			"self.hp.max": 5
+		}
+	},
+	{
+		"id": "uncolor",
+		"name": "失色",
+		"adj": "失色",
+		"weight": 1,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"锐金抗性%": -6,
+				"源泉抗性%": -6,
+				"真火抗性%": -6,
+				"真水抗性%": -6,
+				"厚土抗性%": -6,
+				"命中": 5,
+				"全局伤害加成": 5
+			}
+		},
+		"mod": {
+			"self.resist.gold": -6,
+			"self.resist.wood": -6,
+			"self.resist.fire": -6,
+			"self.resist.water": -6,
+			"self.resist.land": -6,
+			"player.tohit_bonus": 5,
+			"player.damage_bonus": 5
+		}
+	},
+	{
+		"id": "color_plating",
+		"name": "镀彩",
+		"adj": "镀彩",
+		"weight": 1,
+		"rank": 2,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"锐金抗性%": 1,
+				"源泉抗性%": 1,
+				"真火抗性%": 1,
+				"真水抗性%": 1,
+				"厚土抗性%": 1
+			}
+		},
+		"mod": {
+			"self.resist.gold": 1,
+			"self.resist.wood": 1,
+			"self.resist.fire": 1,
+			"self.resist.water": 1,
+			"self.resist.land": 1
+		}
+	},
+	{
+		"id": "heavyarmor",
+		"name": "沉重",
+		"adj": "沉重",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"防御": 2,
+				"闪避": -3
+			}
+		},
+		"mod": {
+			"self.defense": 2,
+			"self.dodge": -3
+		}
+	},
+	{
+		"id": "goodmannered",
+		"name": "厚重",
+		"adj": "厚重",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"防御": 2,
+				"速度": -2
+			}
+		},
+		"mod": {
+			"self.defense": 2,
+			"self.speed": -3
+		}
+	},
+	{
+		"id": "lightarmor",
+		"name": "轻质",
+		"adj": "轻质",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"防御": -2,
+				"速度": 2
+			}
+		},
+		"mod": {
+			"self.defense": -2,
+			"self.speed": 2
+		}
+	},
+	{
+		"id": "xuanbu",
+		"name": "玄布",
+		"adj": "轻质",
+		"weight": 1,
+		"rank": 1,
+		"perk_slot": 2,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"防御": -2,
+				"闪避": 2
+			}
+		},
+		"mod": {
+			"self.defense": -2,
+			"self.dodge": 2
+		}
+	},
+	{
+		"id": "sellshiled",
+		"name": "法力盾",
+		"adj": "法力盾",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"防御": 1,
+				"护盾上限": 13
+			}
+		},
+		"mod": {
+			"self.defense": 1,
+			"player.shiled_max": 13
+		}
+	},
+	{
+		"id": "fohuo",
+		"name": "附火",
+		"adj": "附火",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"真火伤害加成": 2
+			}
+		},
+		"mod": {
+			"player.bonuses.fire": 2
+		}
+	},
+	{
+		"id": "foshui",
+		"name": "附水",
+		"adj": "附水",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"真火伤害加成": 2
+			}
+		},
+		"mod": {
+			"player.bonuses.water": 2
+		}
+	},
+	{
+		"id": "fomuwood",
+		"name": "附木",
+		"adj": "附木",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"源泉伤害加成": 2
+			}
+		},
+		"mod": {
+			"player.bonuses.wood": 2
+		}
+	},
+	{
+		"id": "foland",
+		"name": "附土",
+		"adj": "附土",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"厚土伤害加成": 2
+			}
+		},
+		"mod": {
+			"player.bonuses.land": 2
+		}
+	},
+	{
+		"id": "fogold",
+		"name": "附金",
+		"adj": "附金",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"锐金伤害加成": 2
+			}
+		},
+		"mod": {
+			"player.bonuses.gold": 2
+		}
+	},
+	{
+		"id": "kanghuo",
+		"name": "抗火",
+		"adj": "抗火",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"真火抗性%": 1
+			}
+		},
+		"mod": {
+			"player.resist.fire": 1
+		}
+	},
+	{
+		"id": "kangshui",
+		"name": "抗水",
+		"adj": "抗水",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"真火抗性%": 1
+			}
+		},
+		"mod": {
+			"player.resist.water": 1
+		}
+	},
+	{
+		"id": "fomuwood",
+		"name": "抗木",
+		"adj": "抗木",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"源泉抗性%": 1
+			}
+		},
+		"mod": {
+			"player.resist.wood": 1
+		}
+	},
+	{
+		"id": "kangland",
+		"name": "抗土",
+		"adj": "抗土",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"厚土抗性%": 1
+			}
+		},
+		"mod": {
+			"player.resist.land": 1
+		}
+	},
+	{
+		"id": "kanggold",
+		"name": "抗金",
+		"adj": "抗金",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"锐金抗性%": 1
+			}
+		},
+		"mod": {
+			"player.resist.gold": 1
+		}
+	},
+	{
+		"id": "guangzheng",
+		"name": "光整",
+		"adj": "光整",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"防御": 1
+			}
+		},
+		"mod": {
+			"player.defense": 1
+		}
+	},
+	{
+		"id": "rongyin",
+		"name": "融影",
+		"adj": "融影",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 3,
+		"perk_for": "armor",
+		"perk_info":{
+			"info":{
+				"闪避": 0.5
+			}
+		},
+		"mod": {
+			"player.dodge": 0.5
+		}
+	},
+	{
+		"id": "paralysis",
+		"name": "麻痹",
+		"adj": "麻痹之",
+		"weight": 4,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"闪避": -6,
+				"命中": 3
+			}
+		},
+		"mod": {
+			"self.dodge": -6,
+			"self.tohit" :3
+		}
+	},
+	{
+		"id": "atrophy",
+		"name": "萎缩",
+		"adj": "萎缩之",
+		"weight": 5,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"闪避": -3,
+				"命中": 5
+			}
+		},
+		"mod": {
+			"self.dodge": -3,
+			"self.tohit": 5
+		}
+	},
+	{
+		"id": "dexterity",
+		"name": "熟练",
+		"adj": "熟练之",
+		"weight": 10,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"闪避": 2
+			}
+		},
+		"mod": {
+			"self.dodge": 2
+		}
+	},
+	{
+		"id": "accuracy",
+		"name": "准确",
+		"adj": "准确之",
+		"weight": 6,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"闪避": 3,
+				"命中": 2
+			}		},
+		"mod": {
+			"self.dodge": 3,
+			"self.tohit": 2
+		}
+	},
+	{
+		"id": "precision",
+		"name": "精准",
+		"adj": "精准之",
+		"weight": 5,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"闪避": 4,
+				"命中": 4
+			}
+		},
+		"mod": {
+			"self.dodge": 4,
+			"self.tohit": 4
+		}
+	},
+	{
+		"id": "the_fool",
+		"name": "愚钝",
+		"adj": "愚钝之",
+		"weight": 5,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"法术强度": -10,
+				"物理强度": 3
+			}
+		},
+		"mod": {
+			"self.spell_class": -10,
+			"self.physical_class": 3
+		}
+	},
+	{
+		"id": "dyslexia",
+		"name": "障碍",
+		"adj": "障碍之",
+		"weight": 6,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"法术强度": -6,
+				"物理强度": 5
+			}
+		},
+		"mod": {
+			"self.spell_class": -6,
+			"self.physical_class": 5
+		}
+	},
+	{
+		"id": "the_mind",
+		"name": "智力",
+		"adj": "智力之",
+		"weight": 10,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"法术强度": 4
+			}
+		},
+		"mod": {
+			"self.spell_class": 4
+		}
+	},
+	{
+		"id": "sorcery",
+		"name": "奥术",
+		"adj": "奥术之",
+		"weight": 7,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"法术强度": 6
+			}
+		},
+		"mod": {
+			"self.spell_class": 6
+		}
+	},
+	{
+		"id": "wizardry",
+		"name": "秘法",
+		"adj": "秘法之",
+		"weight": 3,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"法术强度": 7,
+				"法术抵抗": 4
+			}
+		},
+		"mod": {
+			"self.spell_class": 7,
+			"self.spell_save": 4
+		}
+	},
+	{
+		"id": "wizardry_1",
+		"name": "秘法",
+		"adj": "秘法之",
+		"weight": 3,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"命中": 4,
+				"法术抵抗": 7
+			}
+		},
+		"mod": {
+			"self.tohit": 4,
+			"self.spell_save": 7
+		}
+	},
+	{
+		"id": "frailty",
+		"name": "脆弱",
+		"adj": "脆弱之",
+		"weight": 5,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"物理强度": -10,
+				"法术强度": 3
+			}
+		},
+		"mod": {
+			"self.physical_class": -10,
+			"self.spell_class": 3
+		}
+	},
+	{
+		"id": "weakness",
+		"name": "虚弱",
+		"adj": "虚弱之",
+		"weight": 6,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"物理强度": -6,
+				"法术强度": 5
+			}
+		},
+		"mod": {
+			"self.physical_class": -6,
+			"self.spell_class": 5
+		}
+	},
+	{
+		"id": "strength",
+		"name": "力量",
+		"adj": "力量之",
+		"weight": 10,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 2,
+				"物理强度": 4
+			}
+		},
+		"mod": {
+			"self.hp.max": 2,
+			"self.physical_class": 4
+		}
+	},
+	{
+		"id": "might",
+		"name": "威力",
+		"adj": "威力之",
+		"weight": 7,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 2,
+				"物理强度": 6
+			}
+		},
+		"mod": {
+			"self.hp.max": 2,
+			"self.physical_class": 6
+		}
+	},
+	{
+		"id": "giants",
+		"name": "巨人",
+		"adj": "巨人之",
+		"weight": 3,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 4,
+				"物理强度": 7,
+				"物理抵抗": 4
+			}
+		},
+		"mod": {
+			"self.hp.max": 4,
+			"self.physical_class": 7,
+			"self.physical_save": 4
+		}
+	},
+	{
+		"id": "giants_1",
+		"name": "巨人",
+		"adj": "巨人之",
+		"weight": 3,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"体型": 1,
+				"气血上限": 4,
+				"物理抵抗": 7
+			}
+		},
+		"mod": {
+			"self.shape": 1,
+			"self.hp.max": 4,
+			"self.physical_save": 7
+		}
+	},
+	{
+		"id": "giants_2",
+		"name": "巨人",
+		"adj": "巨人之",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"体型": 1,
+				"物理强度": 4,
+				"物理抵抗": 3
+			}
+		},
+		"mod": {
+			"self.shape": 1,
+			"self.physical_class": 3,
+			"self.physical_save": 3
+		}
+	},
+	{
+		"id": "illness",
+		"name": "疾病",
+		"adj": "疾病之",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": -6,
+				"混沌上限": 2
+			}
+		},
+		"mod": {
+			"self.hp.max": -6,
+			"self.chaos.max": 2
+		}
+	},
+	{
+		"id": "illness_1",
+		"name": "疾病",
+		"adj": "疾病之",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": -4,
+				"法术强度": 2
+			}
+		},
+		"mod": {
+			"self.hp.max": -4,
+			"self.spell_save": 2
+		}
+	},
+	{
+		"id": "disease",
+		"name": "传染",
+		"adj": "传染之",
+		"weight": 5,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": -2,
+				"精力上限": 2,
+				"体力上限": 2
+			}
+		},
+		"mod": {
+			"self.hp.max": -4,
+			"stamina.max": 2,
+			"tili.max": 2
+		}
+	},
+	{
+		"id": "vitality",
+		"name": "活力",
+		"adj": "活力之",
+		"weight": 10,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 4,
+				"精力上限": 1,
+				"体力上限": 1
+			}
+		},
+		"mod": {
+			"self.hp.max": 4,
+			"stamina.max": 1,
+			"tili.max": 1
+		}
+	},
+	{
+		"id": "zest",
+		"name": "热情",
+		"adj": "热情之",
+		"weight": 6,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 4,
+				"气血恢复": 1,
+				"体力上限": 1
+			}	
+		},
+		"mod": {
+			"self.hp.max": 4,
+			"self.hp.rate": 1,
+			"tili.max": 1
+		}
+	},
+	{
+		"id": "plife",
+		"name": "生命",
+		"adj": "生命之",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 6,
+				"气血恢复": 2,
+				"精力上限": 2,
+				"体力上限": 3
+			}
+		},
+		"mod": {
+			"self.hp.max": 6,
+			"self.hp.rate": 2,
+			"stamina.max": 2,
+			"tili.max": 3
+		}
+	},
+	{
+		"id": "adapt",
+		"name": "顺应",
+		"adj": "顺应之",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 6,
+				"合理上限": 4,
+				"精力上限": 2,
+				"体力上限": 3
+			}
+		},
+		"mod": {
+			"self.hp.max": 6,
+			"self.heli.max": 2,
+			"stamina.max": 2,
+			"tili.max": 3
+		}
+	},
+	{
+		"id": "trouble",
+		"name": "困难",
+		"adj": "困难之",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"物理强度": -4,
+				"法术强度": -4,
+				"物理抵抗": 2
+			}
+		},
+		"mod": {
+			"self.physical_class": -4,
+			"self.spell_class": -4,
+			"self.physical_save": 2
+		}
+	},
+	{
+		"id": "trouble_1",
+		"name": "陷阱",
+		"adj": "陷阱之",
+		"weight": 2,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"物理强度": -4,
+				"法术强度": -4,
+				"法术抵抗": 2
+			}
+		},
+		"mod": {
+			"self.physical_class": -4,
+			"self.spell_class": -4,
+			"self.spell_save": 2
+		}
+	},
+	{
+		"id": "polish",
+		"name": "打磨",
+		"adj": "打磨之",
+		"weight": 10,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"物理强度": 4,
+				"法术强度": 4
+			}
+		},
+		"mod": {
+			"self.physical_class": 4,
+			"self.spell_class": 4
+		}
+	},
+	{
+		"id": "burnishing",
+		"name": "抛光",
+		"adj": "抛光之",
+		"weight": 6,
+		"rank": 1,
+		"perk_slot": 1,
+		"perk_for": "weapon",
+		"perk_info":{
+			"info":{
+				"物理强度": 7,
+				"法术强度": 7
+			}	
+		},
+		"mod": {
+			"self.physical_class": 7,
+			"self.spell_class": 7
+		}
+	},
+	{
+		"id": "stout",
+		"name": "坚韧",
+		"adj": "坚韧之",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"气血上限": 5,
+				"气血恢复":1,
+				"物理抵抗": 5,
+				"法术抵抗": 5
+			}
+		},
+		"mod": {
+			"self.hp.max": 5,
+			"self.hp.rate": 1,
+			"self.physical_save": 5,
+			"self.spell_save": 5
+		}
+	},
+	{
+		"id": "reject",
+		"name": "抵制",
+		"adj": "抵制之",
+		"weight": 2,
+		"rank": 2,
+		"perk_slot": 1,
+		"perk_for": "weapon,armor",
+		"perk_info":{
+			"info":{
+				"护盾上限": 10,
+				"物理抵抗": 12,
+				"法术抵抗": 12
+			}
+		},
+		"mod": {
+			"player.shiled_max": 10,
+			"self.physical_save": 12,
+			"self.spell_save": 12
+		}
+	},
+	{
+		"id": "tianlan_1",
+		"name": "【财源】",
+		"adj": "【财源】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"钱币上限": 100,
+				"钱币增加速率": 10
+			}
+		},
+		"mod": {
+			"money.max": 100,
+			"money.rate":10
+		}
+	},
+	{
+		"id": "tianlan_2",
+		"name": "【权兆】",
+		"adj": "【权兆】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"人力上限": 100,
+				"计算力上限": 100,
+				"地板空间加成": 20
+			}
+		},
+		"mod": {
+			"human_power.max": 100,
+			"alculation.max":100,
+			"space.max": 20
+		}
+	},
+	{
+		"id": "mutengjia_perk",
+		"name": "【木藤】",
+		"adj": "【木藤】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"气血恢复": 10,
+				"源泉抗性%": 10,
+				"源泉伤害加成": 10
+			}
+		},
+		"mod": {
+			"self.hp.rate": 10,
+			"self.resist.wood": 10,
+			"player.bonuses.wood": 10
+		}
+	},
+	{
+		"id": "huoshangyaodai_perk",
+		"name": "【伤火】",
+		"adj": "【伤火】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"真火抗性%": 10,
+				"感悟恢复": 10,
+				"灵光恢复": 0.3
+			}
+		},
+		"mod": {
+			"self.resist.fire": 10,
+			"ganwu.rate": 10,
+			"lg.rate": 0.3
+		}
+	},
+	{
+		"id": "gentu_feet_perk",
+		"name": "【根土】",
+		"adj": "【根土】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"厚土抗性%": 10,
+				"防御": 26,
+				"闪避": -10,
+				"速度": -6,
+				"命中": -5
+			}
+		},
+		"mod": {
+			"self.resist.land": 10,
+			"player.defense": 26,
+			"player.dodge": -10,
+			"player.speed": -6,
+			"player.tohit_bonus": -5
+		}
+	},
+	{
+		"id": "jinyijian_perk",
+		"name": "【金意】",
+		"adj": "【金意】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"锐金抗性%": 10,
+				"命中": 10,
+				"全局伤害加成": 5
+			}
+		},
+		"mod": {
+			"self.resist.gold": 10,
+			"player.tohit_bonus": 10,
+			"player.damage_bonus": 5
+		}
+	},
+	{
+		"id": "shuiliu_armor_perk",
+		"name": "【水流】",
+		"adj": "【水流】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"真水抗性%": 10,
+				"命中": 2,
+				"闪避": 2,
+				"速度": 2
+			}
+		},
+		"mod": {
+			"self.resist.water": 20,
+			"player.tohit_bonus": 2,
+			"player.dodge": 2,
+			"player.speed": 2
+		}
+	},
+	{
+		"id": "blood_trinket_perk_1",
+		"name": "【攫取之血】",
+		"adj": "【攫取之血】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"气血上限": -20,
+				"气血恢复": -5,
+				"召唤物上限": 2
+			}
+		},
+		"mod": {
+			"self.hp.max": -20,
+			"self.hp.rate": -5,
+			"player.summoned_max": 2
+		}
+	},
+	{
+		"id": "blood_trinket_perk_2",
+		"name": "【染血护符】",
+		"adj": "【染血护符】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"合理抗性%": -20,
+				"混沌抗性%": -20,
+				"召唤物造成伤害加成%": 15
+			}
+		},
+		"mod": {
+			"self.resist.heli": -20,
+			"self.resist.chaos": -20,
+			"player.summoned_damage": 15
+		}
+	},
+	{
+		"id": "ssw_perk_1",
+		"name": "【贪婪银蛇】",
+		"adj": "【贪婪银蛇】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"闪避": 1,
+				"命中": 1,
+				"气血恢复": -5,
+				"游空真魂恢复": 0.2,
+				"钱币增加速率": 5,
+				"钱币上限": 100
+			}
+		},
+		"mod": {
+			"player.dodge": 1,
+			"player.tohit_bonus": 1,
+			"self.hp.rate": -5,
+			"zhenhun_pice_1.rate": 0.2,
+			"money.rate": 5,
+			"money.max": 100
+		}
+	},
+	{
+		"id": "back_homeland_perk_1",
+		"name": "【昔火于雪】",
+		"adj": "【昔火于雪】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"命中": 5,
+				"厚土伤害加成": 12,
+				"真火伤害加成": 3,
+				"物理强度": 15
+			}
+		},
+		"mod": {
+			"player.tohit_bonus": 5,
+			"player.bonuses.land": 12,
+			"player.bonuses.fire": 3,
+			"self.physical_class": 15
+		}
+	},
+	{
+		"id": "back_homeland_perk_2",
+		"name": "【归国】",
+		"adj": "【归国】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"命中": 1,
+				"物理抵抗": 10,
+				"法术强度": 15
+			}
+		},
+		"mod": {
+			"player.tohit_bonus": 1,
+			"self.physical_save": 10,
+			"self.spell_class": 20
+		}
+	},
+	{
+		"id": "hgw_perk_1",
+		"name": "【古本重剑】",
+		"adj": "【古本重剑】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"命中": -15,
+				"闪避": -18,
+				"速度": -20,
+				"厚土伤害加成": 25,
+				"物理强度": 30
+			}
+		},
+		"mod": {
+			"player.tohit_bonus": -15,
+			"player.dodge": -18,
+			"player.speed": -20,
+			"player.bonuses.land": 25,
+			"self.physical_class": 30
+		}
+	},
+	{
+		"id": "hgw_perk_2",
+		"name": "【险灵锋芒】",
+		"adj": "【险灵锋芒】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"物理暴击率%": 6,
+				"暴击伤害加成%": 10,
+				"武器伤害加成": 15
+			}
+		},
+		"mod": {
+			"player.physical_critical": 6,
+			"player.critical_damage": 5,
+			"player.weapon_bonus": 35
+		}
+	},
+	{
+		"id": "stromagel_1",
+		"name": "【风暴之鹰】",
+		"adj": "【风暴之鹰】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"电击伤害加成": 10,
+				"闪避": 5,
+				"命中": 5
+			}
+		},
+		"mod": {
+			"player.bonuses.elect": 10,
+			"player.dodge":5,
+			"player.tohit": 5
+		}
+	},
+	{
+		"id": "stromagel_2",
+		"name": "【霸天之禽】",
+		"adj": "【霸天之禽】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"perk_info":{
+			"info":{
+				"对天空生物伤害加成": 15,
+				"对陆生生物伤害加成": 5
+			}
+		},
+		"mod": {
+			"sky_living.damage_bonus": 15,
+			"land_living.damage_bonus":5
+		}
+	},
+	{
+		"id": "zuoyanzhihuan_perk",
+		"name": "【灼魂火焰】",
+		"adj": "【灼魂火焰】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"adddot": "zuoyanzhihuan_perk_dot",
+		"perk_info":{
+			"info":{
+				"真火抗性%": -20,
+				"真火伤害加成": -10,
+				"归藏伤害加成": 10,
+				"装备后获得灼焰状态，每被敌人攻击命中时，10%几率对敌人释放法术(灼魂),对敌人造成40%物理属性的基础武器伤害并尝试附加10s的烧伤状态h": 1
+			}
+		},
+		"mod": {
+			"player.resist.fire": -20,
+			"player.bonuses.fire": -10,
+			"player.bonuses.body": 10,
+			"player.equip_dot_count": 1
+		}
+	},
+	{
+		"id": "sulingjingcui_perk",
+		"name": "【调谐】",
+		"adj": "【调谐】",
+		"weight": 0,
+		"rank": 0,
+		"perk_slot": 2,
+		"adddot": "tiaoxie_perk_dot",
+		"perk_info":{
+			"info":{
+				"法术暴击率%": 5,
+				"暴击伤害加成%": 5,
+				"装备后获得调谐状态，所有抗性效果提升5%h": 1
+			}
+		},
+		"mod": {
+			"player.spell_critical": 5,
+			"player.critical_damage": 5,
+			"player.equip_dot_count": 1
+		}
+	}
+]

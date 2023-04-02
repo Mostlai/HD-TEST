@@ -4882,7 +4882,7 @@
 		"name": "负阴蚀烛(立足)",
 		"desc": "昔有双星环之当世，近则名月，远则名幽。北方有天相烛龙蔽大阳火光，世俗不见幽，万万生生不思觉。人已负阴，当见证月幽，思索漫步光河。",
 		"tags": "立足",
-		"require": "g.baoyangsizhen>=9",
+		"require": "g.fuyinsizhu>=9",
 		"max": 2,
 		"cost": {
 			"element_blood": 40,
@@ -4926,6 +4926,31 @@
 			"heli.max": 50,
 			"chaos.max": 50,
 			"xl_crzj_zhujierchong":1
+		}
+	},
+	{
+		"id": "siwei_jxswei",
+		"name": "机性思维(思维)",
+		"desc": "对事物运行的思考",
+		"tags": "思维",
+		"require": "g.zhenzyyjjx>=1",
+		"max": 2,
+		"cost": {
+			"shenshi": 20,
+			"qiyiyeti":20,
+			"xuanmuye": 150,
+			"gubenxianling": 15,
+			"zhenzhi_spindle": 150,
+			"money": 7000,
+			"back_dream": 20,
+			"spare_parts": 200,
+			"steel": 350,
+			"gongzhiliang": 350,
+			"ganwu": 4500
+		},
+		"xiulianresult": {
+			"shenshi.max": 2,
+			"xl_siwei_jxswei":1
 		}
 	},
 	{

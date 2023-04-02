@@ -6213,6 +6213,56 @@
 		}
 	},
 	{
+		"id": "yingci_floor_extend",
+		"name": "萤磁步行路",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.techo_eng_yjyy_1>=1",
+		"repeat": true,
+		"cost": {
+			"yingcixian": 100,
+			"spare_parts": 200,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"limestone": 10,
+			"quartz": 10,
+			"human_power": 1000,
+			"money": 4000
+		},
+		"mod": {
+			"industry_space.max": 7,
+			"space": 50
+		}
+	},
+	{
+		"id": "yingci_theard_extend",
+		"name": "萤磁通讯室",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.techo_eng_yjyy_1>=1",
+		"repeat": true,
+		"cost": {
+			"yingcixian": 100,
+			"spare_parts": 200,
+			"zero_crystal":25,
+			"jingdian":10,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"human_power": 1000,
+			"money": 4000
+		},
+		"mod": {
+			"industry_thread.max": 3,
+			"space": 55
+		}
+	},
+	{
 		"id": "coal_cang",
 		"name": "煤炭仓库",
 		"desc": "",
@@ -6655,7 +6705,7 @@
 		"name": "古本分神柱",
 		"desc": "提高所有固体类资源上限",
 		"tags": "",
-		"max":5,
+		"max":3,
 		"require": "g.gubenhejiexi>=1",
 		"repeat": true,
 		"cost": {
@@ -6669,7 +6719,7 @@
 			"money": 6700
 		},
 		"mod": {
-			"固体.max": 30,
+			"固体.max": 10,
 			"space": 60
 		}
 	},
@@ -6678,7 +6728,7 @@
 		"name": "古本分体柱",
 		"desc": "提高所有液体类资源上限",
 		"tags": "",
-		"max":5,
+		"max":3,
 		"require": "g.gubenhejiexi>=1",
 		"repeat": true,
 		"cost": {
@@ -6692,7 +6742,7 @@
 			"money": 6700
 		},
 		"mod": {
-			"液体.max": 30,
+			"液体.max": 10,
 			"space": 60
 		}
 	},
@@ -6701,7 +6751,7 @@
 		"name": "古本分旋柱",
 		"desc": "提高所有气体类资源上限",
 		"tags": "",
-		"max":5,
+		"max":3,
 		"require": "g.gubenhejiexi>=1",
 		"repeat": true,
 		"cost": {
@@ -6715,7 +6765,7 @@
 			"money": 6700
 		},
 		"mod": {
-			"气体.max": 30,
+			"气体.max": 10,
 			"space": 60
 		}
 	},
@@ -6741,6 +6791,91 @@
 		"mod": {
 			"xuanmuye.max": 80,
 			"space": 20
+		}
+	},
+	{
+		"id": "jichuancangku",
+		"name": "机传仓库",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.techo_eng_zyzz_1>=1",
+		"repeat": true,
+		"cost": {
+			"xuanmuye": 30,
+			"guben_core": 100,
+			"ganwu": 100,
+			"ljdy": 10,
+			"money": 4700,
+			"mech_mo_struct": 2
+		},
+		"mod": {
+			"mech_mo_struct.max": 50,
+			"space": 55
+		}
+	},
+	{
+		"id": "taojiancangku",
+		"name": "套件仓库",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.techo_eng_zyzz_1>=1",
+		"repeat": true,
+		"cost": {
+			"xuanmuye": 30,
+			"guben_core": 100,
+			"ganwu": 100,
+			"ljdy": 10,
+			"money": 4700,
+			"emember_unit": 2
+		},
+		"mod": {
+			"emember_unit.max": 50,
+			"space": 55
+		}
+	},
+	{
+		"id": "dk1_cangku",
+		"name": "装卸单元仓库",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.techo_eng_zyzz_1>=1",
+		"repeat": true,
+		"cost": {
+			"xuanmuye": 30,
+			"guben_core": 100,
+			"ganwu": 100,
+			"ljdy": 10,
+			"money": 4700,
+			"emember_unit": 33,
+			"mech_mo_struct": 33
+		},
+		"mod": {
+			"dock_unit_1.max": 30,
+			"space": 55
+		}
+	},
+	{
+		"id": "ycixian_cangku",
+		"name": "萤磁仓库",
+		"desc": "",
+		"tags": "",
+		"max":10,
+		"require": "g.techo_eng_yjyy_1>=1",
+		"repeat": true,
+		"cost": {
+			"xuanmuye": 30,
+			"guben_core": 100,
+			"ganwu": 100,
+			"ljdy": 10,
+			"money": 4700,
+			"yingcixian": 2
+		},
+		"mod": {
+			"yingcixian.max": 30,
+			"space": 55
 		}
 	},
 	{
@@ -7793,1304 +7928,6 @@
 			"snp_data.rate": 0.5,
 			"adv_snp_data.max": 8,
 			"space": 21
-		}
-	},
-	{
-		"id": "ornatechest",
-		"name": "ornate chest",
-		"desc": "Treasure chest.",
-		"require": "g.gold.max>=500",
-		"repeat": true,
-		"cost": {
-			"gold": 350,
-			"gems": 5
-		},
-		"mod": {
-			"inv.max": 2,
-			"gold.max": 500,
-			"space": 3
-		}
-	},
-	{
-		"id": "cot",
-		"desc": "Slightly better than sleeping on the floor",
-		"require": "apprentice",
-		"tags": "bed",
-		"slot": "bed",
-		"max": 1,
-		"cost": {
-			"gold": 10
-		},
-		"mod": {
-			"rest.effect.stamina": 0.23,
-			"space": 1
-		}
-	},
-	{
-		"id": "magiccircle",
-		"name": "magic circle",
-		"desc": "Magic circle",
-		"locked": true,
-		"max": 3,
-		"cost": {
-			"research": 40,
-			"mana": 5
-		},
-		"mod": {
-			"research.max": 10,
-			"research.rate": 0.01,
-			"arcana.rate": 0.0001,
-			"space": 1
-		}
-	},
-	{
-		"id": "smcage",
-		"name": "rusty cage",
-		"desc": "A cramped cage for keeping tiny test subjects.",
-		"tags": "t_pets,shadowsource",
-		"locked": true,
-		"max": 3,
-		"cost": {
-			"gold": 50,
-			"research": 100
-		},
-		"flavor": "It doesn't seem very nice.",
-		"mod": {
-			"animals.max": 1,
-			"shadowlore.max": 1,
-			"evilamt": 1,
-			"space": 1
-		}
-	},
-	{
-		"id": "terrarium",
-		"desc": "A glass enclosure of dirt, insects, and wormy things.",
-		"tags": "earthsource,t_pets",
-		"locked": true,
-		"repeat": true,
-		"cost": {
-			"research": 40,
-			"gold": 40
-		},
-		"mod": {
-			"research.max": 5,
-			"earth.rate": 0.01,
-			"space": 1
-		}
-	},
-	{
-		"id": "vivarium",
-		"desc": "A glass enclosure for small reptiles, snakes, and frogs.",
-		"tags": "earthsource,t_pets,naturesource",
-		"locked": true,
-		"cost": {
-			"research": 300,
-			"gold": 500
-		},
-		"mod": {
-			"research.max": 10,
-			"animals.max": 1,
-			"animals.rate": 0.3,
-			"naturelore.max": 1,
-			"naturelore.rate": "0.3+1%",
-			"space": 2
-		}
-	},
-	{
-		"id": "workbench",
-		"desc": "A small bench for arts and crafts. Necessary for many wizard studies.",
-		"tags": "workspace",
-		"locked": true,
-		"repeat": true,
-		"cost": {
-			"gold": 15
-		},
-		"mod": {
-			"research.max": 5,
-			"space": 1
-		}
-	},
-	{
-		"id": "writingdesk",
-		"name": "writing desk",
-		"desc": "A desk for working and scribing.",
-		"locked": true,
-		"tags": "workspace",
-		"cost": {
-			"gold": 100
-		},
-		"mod": {
-			"scrolls.rate": 0.001,
-			"research.max": 5,
-			"languages.max": 1,
-			"scrolls.max": 10,
-			"space": 2
-		}
-	},
-	{
-		"id": "crafttable",
-		"name": "crafting table",
-		"tags": "workspace",
-		"desc": "Wide table for crafting projects.",
-		"locked": true,
-		"cost": {
-			"gold": 100
-		},
-		"mod": {
-			"crafting.max": 1,
-			"crafting.rate": 0.2,
-			"space": 2
-		}
-	},
-	{
-		"id": "enchanttable",
-		"name": "enchanting table",
-		"tags": "workspace,enchantsource",
-		"desc": "Runed table for enchanting",
-		"locked": true,
-		"cost": {
-			"gold": 200,
-			"research": 200,
-			"gems": 5
-		},
-		"mod": {
-			"enchanting.max": 1,
-			"enchanting.rate": 0.2,
-			"space": 2
-		}
-	},
-	{
-		"id": "plant",
-		"name": "potted milkweed",
-		"locked": true,
-		"desc": "Really brightens up the place.",
-		"tags": "plantsource",
-		"repeat": true,
-		"cost": {
-			"gold": 25
-		},
-		"mod": {
-			"research.max": 5,
-			"space": 1
-		}
-	},
-	{
-		"id": "creepingvine",
-		"name": "creeping vine",
-		"desc": "A quickly growing plant",
-		"tags": "plantsource",
-		"locked": true,
-		"max": 5,
-		"cost": {
-			"gold": 75
-		},
-		"mod": {
-			"herbs.max": 1,
-			"herbalism.max": 1,
-			"herbs.rate": 0.2,
-			"space": 1
-		}
-	},
-	{
-		"id": "birdcage",
-		"desc": "Perfect for robins.",
-		"tags": "t_pets",
-		"require": "apprentice",
-		"repeat": true,
-		"cost": {
-			"gold": 25
-		},
-		"mod": {
-			"research.max": 5,
-			"space": 1
-		}
-	},
-	{
-		"id": "pedestal",
-		"desc": "A pedestal for reading magic tomes. Improves study habits.",
-		"require": "evt_helper",
-		"cost": {
-			"gold": 50
-		},
-		"mod": {
-			"research.max": 10,
-			"study.effect.research": 0.1,
-			"space": 1
-		}
-	},
-	{
-		"id": "loom",
-		"desc": "Unlocks the art of weaving",
-		"tags": "weavesource",
-		"require": "g.crafting>=6",
-		"cost": {
-			"gold": 50,
-			"research": 100
-		},
-		"mod": {
-			"crafting.max": 1,
-			"crafting.rate": 0.1,
-			"space": 1
-		}
-	},
-	{
-		"id": "spinwheel",
-		"name": "spinning wheel",
-		"desc": "Eases tasks related to weaving.",
-		"tags": "weavesource",
-		"require": "g.weaving>=5",
-		"cost": {
-			"gold": 1000,
-			"research": 5000,
-			"gems": 50
-		},
-		"mod": {
-			"weaving.max": 2,
-			"weaving.rate": "10%",
-			"space": 1
-		}
-	},
-	{
-		"id": "sextant",
-		"desc": "Measure the stars.",
-		"require": "neophyte",
-		"tags": "starsource",
-		"cost": {
-			"gold": 75,
-			"research": 50
-		},
-		"mod": {
-			"arcana.max": 1,
-			"arcana.rate": 0.0001,
-			"space": 2
-		}
-	},
-	{
-		"id": "scrollrack",
-		"name": "scroll rack",
-		"repeat": true,
-		"desc": "Latticed shelves for easy scroll storage.",
-		"require": "g.apprentice>0&&g.scrolls>=20",
-		"cost": {
-			"gold": 75,
-			"research": 100
-		},
-		"mod": {
-			"scrolls.max": 15,
-			"space": 1
-		}
-	},
-	{
-		"id": "bookshelf",
-		"name": "bookshelf",
-		"repeat": true,
-		"desc": "A single bookshelf for your books.",
-		"require": "g.codices>=5&&g.scrolls.max>=15",
-		"cost": {
-			"gold": 100
-		},
-		"mod": {
-			"codices.max": 5,
-			"scrolls.max": 10,
-			"space": 1
-		}
-	},
-	{
-		"id": "bookcase",
-		"name": "bookcase",
-		"repeat": true,
-		"desc": "A rough but sturdy bookcase.",
-		"require": "g.codices>=20",
-		"max": 20,
-		"cost": {
-			"gold": 200
-		},
-		"mod": {
-			"starcharts.max": 1,
-			"codices": {
-				"max": 15,
-				"mod.research.max": 0.5
-			},
-			"tomes.max": 1,
-			"space": 2
-		}
-	},
-	{
-		"id": "cloudchamber",
-		"name": "cloud chamber",
-		"tags": "airsource",
-		"desc": "A chamber of swirling vapours for study.",
-		"require": "g.tier0>0&&g.airlore>=5",
-		"max": 3,
-		"cost": {
-			"gold": 500,
-			"research": 500,
-			"air": 5
-		},
-		"mod": {
-			"airlore.max": 1,
-			"airlore.rate": 0.2,
-			"space": 1
-		}
-	},
-	{
-		"id": "brasscandelabra",
-		"name": "brass candelabra",
-		"desc": "Candle holder.",
-		"require": "g.waxcandle>0&&g.gold.max>=200",
-		"repeat": false,
-		"cost": {
-			"gold": 200
-		},
-		"mod": {
-			"candle.max": 4,
-			"space": 1
-		}
-	},
-	{
-		"id": "bonecandelabra",
-		"name": "bone candelabra",
-		"desc": "Creepy",
-		"require": "g.necromancer>0||g.witch>0||g.bonemonger>0",
-		"repeat": false,
-		"cost": {
-			"bones": 10,
-			"research": 50,
-			"gold": 50
-		},
-		"mod": {
-			"candle.max": 4,
-			"shadow.rate": 0.03,
-			"space": 1
-		}
-	},
-	{
-		"id": "basin",
-		"name": "basin",
-		"tags": "watersource",
-		"desc": "Basin of water.",
-		"require": "apprentice",
-		"repeat": true,
-		"cost": {
-			"gold": 50
-		},
-		"mod": {
-			"water.rate": 0.02,
-			"space": 1
-		}
-	},
-	{
-		"id": "brazier",
-		"desc": "Stand of burning hot coals.",
-		"tags": "firesource,spiritsource",
-		"require": "g.tier0>0",
-		"max": 3,
-		"repeat": true,
-		"cost": {
-			"gold": 150
-		},
-		"mod": {
-			"firelore.max": 1,
-			"fire.rate": 0.02,
-			"space": 1
-		}
-	},
-	{
-		"id": "campfire",
-		"tags": "firesource",
-		"need": "outdoors",
-		"cost": {},
-		"mod": {
-			"naturelore.max": 1,
-			"firelore.max": 1,
-			"fire.rate": 0.05,
-			"space": 1
-		}
-	},
-	{
-		"id": "bonfire",
-		"tags": "firesource",
-		"locked": true,
-		"desc": "A burning pyre for the practice of pyromancy.",
-		"cost": {
-			"fire": 4
-		},
-		"mod": {
-			"firelore.max": 1,
-			"fire.rate": 0.05,
-			"space": 2
-		},
-		"flavor": "Be careful where you put it."
-	},
-	{
-		"id": "clepsydra",
-		"desc": "Crude measure of time",
-		"require": "tier3",
-		"tags": "timesource",
-		"repeat": true,
-		"cost": {
-			"gold": 100,
-			"research": 100
-		},
-		"mod": {
-			"tempus.max": 1,
-			"tempus.rate": 0.01,
-			"water.rate": 0.01,
-			"space": 1
-		},
-		"flavor": "What is gone is gone"
-	},
-	{
-		"id": "fireplace",
-		"desc": "A cozy place for cooking food and brewing potions.",
-		"tags": "firesource",
-		"locked": true,
-		"repeat": true,
-		"cost": {
-			"gold": 175
-		},
-		"mod": {
-			"fire.rate": 0.01,
-			"space": 1
-		}
-	},
-	{
-		"id": "grotesque",
-		"tags": "earthsource",
-		"require": "g.tier1>0&&(g.earthlore>3||g.shadowlore>3)",
-		"desc": "A grim, disfigured stone statue",
-		"max": 4,
-		"cost": {
-			"gold": 750
-		},
-		"mod": {
-			"earthlore.rate": 0.2,
-			"earthlore.max": 1,
-			"shadowlore.rate": 0.1,
-			"shadowlore.max": 1,
-			"space": 5
-		}
-	},
-	{
-		"id": "gargoyle",
-		"tags": "watersource",
-		"require": "g.tier1>0&&(g.waterlore>3||g.shadowlore>3)",
-		"desc": "A fountain issues from the stone demon's mouth",
-		"max": 4,
-		"cost": {
-			"gold": 750
-		},
-		"mod": {
-			"waterlore.rate": 0.2,
-			"shadowlore.rate": 0.1,
-			"shadowlore.max": 1,
-			"waterlore.max": 1,
-			"space": 5
-		}
-	},
-	{
-		"id": "fountain",
-		"desc": "Water Fountain",
-		"tags": "watersource",
-		"locked": true,
-		"cost": {
-			"gold": 500
-		},
-		"mod": {
-			"water.rate": 0.1,
-			"waterlore.max": 1,
-			"space": 5
-		}
-	},
-	{
-		"id": "smstables",
-		"name": "stables",
-		"require": "g.tier2>0||(g.tier1>0&&g.animals>=6)",
-		"tags": "stables",
-		"cost": {
-			"gold": 500,
-			"research": 800
-		},
-		"mod": {
-			"animals.max": 1,
-			"animals.rate": 0.2,
-			"space": 10
-		}
-	},
-	{
-		"id": "menagerie",
-		"require": "g.tier1>0&&g.animals>=10&&g.magicbeasts>=5",
-		"tags": "stables",
-		"cost": {
-			"gold": 500,
-			"gems": 10,
-			"research": 500
-		},
-		"mod": {
-			"magicbeasts.max": 2,
-			"magicbeasts.rate": 0.4,
-			"animals.rate": "15%",
-			"space": 20
-		}
-	},
-	{
-		"id": "elemsiphon",
-		"name": "elemental siphon",
-		"desc": "A crystal apparatus to siphon elemental energies into mana.",
-		"require": "g.tier4>0&&g.mana.max>30",
-		"need": "workshop",
-		"max": 2,
-		"cost": {
-			"gold": 2500,
-			"managem": 25,
-			"firegem": 50,
-			"watergem": 50,
-			"airgem": 50,
-			"earthgem": 50
-		},
-		"mod": {
-			"mana.rate": 0.5,
-			"arcana.rate": -0.002,
-			"element.rate": -0.75,
-			"space": 5
-		}
-	},
-	{
-		"id": "elemflux",
-		"name": "elemental flux",
-		"desc": "Gems draw in pure mana and disperse it into elemental forms.",
-		"require": "g.tier4>0&&g.mana.max>30",
-		"max": 2,
-		"cost": {
-			"gold": 2500,
-			"managem": 50,
-			"firegem": 25,
-			"watergem": 25,
-			"airgem": 25,
-			"earthgem": 25
-		},
-		"mod": {
-			"mana.rate": -2,
-			"arcana.rate": -0.002,
-			"element.rate": 0.25,
-			"space": 5
-		}
-	},
-	{
-		"id": "cairn",
-		"desc": "Mystic Rock Pile",
-		"tags": "spiritsource",
-		"require": "g.spirit.max>=10",
-		"cost": {
-			"gold": 200,
-			"spirit": 5
-		},
-		"mod": {
-			"runestones.max": 5,
-			"spiritgem.max": 4,
-			"spiritlore.max": 2,
-			"spirit.rate": 0.02,
-			"nature.rate": 0.01,
-			"space": 10
-		}
-	},
-	{
-		"id": "reliquary",
-		"desc": "Saferoom for ancient sources of magic.",
-		"tags": "spiritsource",
-		"require": "g.spirit.max>=5",
-		"cost": {
-			"gold": 250
-		},
-		"mod": {
-			"tapestries.max": 3,
-			"souls.max": 1,
-			"spiritgem.max": 2,
-			"spirit.max": 1,
-			"spirit.rate": 0.01,
-			"space": 5
-		}
-	},
-	{
-		"id": "ironcell",
-		"name": "iron cell",
-		"desc": "A simple, bare cell.",
-		"tags": "prison,shadowsource",
-		"repeat": true,
-		"locked": true,
-		"cost": {
-			"gold": 400
-		},
-		"mod": {
-			"shadow.max": 1,
-			"bodies.max": 2,
-			"dissection.rate": 0.1,
-			"space": 5
-		}
-	},
-	{
-		"id": "armory",
-		"desc": "A storeroom of arms.",
-		"tags": "armssource",
-		"require": "g.tier0>0&&g.player.defense>=10",
-		"repeat": true,
-		"cost": {
-			"gold": 400
-		},
-		"mod": {
-			"tapestries.max": 1,
-			"inv.max": 1,
-			"player.defense": 1,
-			"player.tohit": 1,
-			"space": 10
-		}
-	},
-	{
-		"id": "mineshaft",
-		"tags": "t_mine",
-		"require": "g.earthlore>=10&&g.planeslore>=20",
-		"max": 1,
-		"cost": {
-			"earth": 25,
-			"earthrune": 5,
-			"gold": 7000,
-			"research": 2500,
-			"gate": 1
-		},
-		"mod": {
-			"earthlore.max": 1,
-			"earthlore.rate": 0.2,
-			"gold.rate": 0.1,
-			"space": 20
-		}
-	},
-	{
-		"id": "weaponrack",
-		"name": "weapon rack",
-		"desc": "Holds equipment you aren't using",
-		"require": "g.player.level>=5&&g.armory>0",
-		"tags": "armssource",
-		"max": 3,
-		"cost": {
-			"gold": 400,
-			"research": 100
-		},
-		"mod": {
-			"inv.max": 5,
-			"space": 2
-		}
-	},
-	{
-		"id": "shrine",
-		"desc": "A shrine to divine forces.",
-		"require": "good",
-		"tags": "lightsource",
-		"cost": {
-			"gold": 30,
-			"gems": 5,
-			"light": 2
-		},
-		"mod": {
-			"virtue": 1,
-			"lightgem.max": 2,
-			"light.rate": 0.01,
-			"light.max": 1,
-			"space": 1
-		}
-	},
-	{
-		"id": "bloodfountain",
-		"name": "blood fountain",
-		"desc": "Fountain of blood",
-		"tags": "shadowsource",
-		"require": "g.evil>0&&g.shadowlore>=3",
-		"cost": {
-			"gold": 300,
-			"shadow": 20,
-			"bones": 20
-		},
-		"mod": {
-			"regen": 0.1,
-			"shadow.rate": 0.05,
-			"shadow.max": 1,
-			"space": 5
-		}
-	},
-	{
-		"id": "casket",
-		"desc": "Simple container for preserving bodies.",
-		"require": "g.tier0>0&&g.embalming>=5&&g.crafting>=5",
-		"repeat": true,
-		"cost": {
-			"research": 100,
-			"gold": 75
-		},
-		"mod": {
-			"bodies.max": 1,
-			"space": 1
-		}
-	},
-	{
-		"id": "vat",
-		"desc": "Grows bodies from raw materials",
-		"require": "g.tier1>0&&g.anatomy>=5&&g.embalming>=5&&g.crafting>=10",
-		"repeat": true,
-		"cost": {
-			"research": 300,
-			"gold": 100
-		},
-		"mod": {
-			"anatomy.rate": 0.3,
-			"embalming.rate": 0.3,
-			"bodies.rate": 0.01,
-			"bodies.max": 1,
-			"space": 2
-		}
-	},
-	{
-		"id": "portaalchemica",
-		"name": "porta alchemica",
-		"require": "g.alchemy>=5&&g.planeslore>=5&&g.crafting>=10",
-		"desc": "A monument inscribed with alchemical runes",
-		"cost": {
-			"gems": 20
-		},
-		"mod": {
-			"managem.max": 2,
-			"alchemy.max": 2,
-			"potions.max": 1,
-			"potionessence.rate": 0.0002,
-			"potionessence.max": 1,
-			"alchemy.rate": 0.1,
-			"arcana.rate": 0.0001,
-			"space": 5
-		}
-	},
-	{
-		"id": "studyroom",
-		"name": "study",
-		"desc": "A place for reading and research",
-		"require": "g.codices>=100",
-		"cost": {
-			"gold": 200,
-			"research": 100
-		},
-		"mod": {
-			"tapestries.max": 1,
-			"starcharts.max": 50,
-			"codices.max": 100,
-			"lore.rate": 0.2,
-			"research.max": 100,
-			"scrolls.rate": 0.05,
-			"space": 20
-		}
-	},
-	{
-		"id": "arcanestudy",
-		"name": "enchanted study",
-		"desc": "A study enchanted with magic.",
-		"require": "g.codices>=100&&g.enchanting>=6",
-		"cost": {
-			"studyroom": 1,
-			"gold": 1000,
-			"research": 1000
-		},
-		"mod": {
-			"tapestries.max": 3,
-			"tomes.rate": 0.002,
-			"codices.rate": -0.001,
-			"starcharts.max": 50,
-			"codices.max": 100,
-			"scrolls.rate": 0.05,
-			"space": 20
-		}
-	},
-	{
-		"id": "orrery",
-		"desc": "A vast mechanical model of existence",
-		"require": "g.codices>=80&&g.astronomy>7",
-		"tags": "starsource",
-		"repeat": false,
-		"cost": {
-			"gold": 500,
-			"research": 900
-		},
-		"mod": {
-			"starcharts.max": 50,
-			"chronomancy.max": 1,
-			"chronomancy.rate": 0.01,
-			"astronomy.max": 3,
-			"astronomy.rate": 0.1,
-			"planeslore.max": 2,
-			"planeslore.rate": 0.1,
-			"divination.max": 2,
-			"divination.rate": 0.1,
-			"space": 50
-		}
-	},
-	{
-		"id": "garden",
-		"desc": "A small garden by your home.",
-		"tags": "naturesource,plantsource",
-		"require": "(g.witch+g.druid+g.fey+g.kell)>0",
-		"max": 3,
-		"cost": {
-			"gold": 300,
-			"research": 550
-		},
-		"mod": {
-			"herbs.max": 15,
-			"herbs.rate": 1,
-			"herbalism.rate": 0.2,
-			"herbalism.max": 3,
-			"nature.max": 1,
-			"nature.rate": 0.3,
-			"naturelore.rate": 0.2,
-			"space": 10
-		}
-	},
-	{
-		"id": "liquifier",
-		"name": "arcane alembic",
-		"repeat": true,
-		"require": "solidifier",
-		"desc": "A complex alchemical process drips arcane energy onto gemstones.",
-		"cost": {
-			"research": 1000,
-			"gold": 500
-		},
-		"mod": {
-			"arcana.rate": -0.001,
-			"managem.rate": 0.01,
-			"gems.rate": -0.01,
-			"space": 5
-		}
-	},
-	{
-		"id": "starweb",
-		"desc": "Motes of stars fall daily from the sky. One need only collect them.",
-		"require": "tier5",
-		"max": 5,
-		"cost": {
-			"research": 10000,
-			"starcharts": 25,
-			"arcana": 20
-		},
-		"mod": {
-			"sindel.rate": 0.0001,
-			"arcana.rate": 0.0001,
-			"airlore.max": 1,
-			"airlore.rate": "1%",
-			"space": 5
-		}
-	},
-	{
-		"id": "starwell",
-		"name": "star well",
-		"desc": "Pools of light congeal softly in the basin.",
-		"require": "tier5",
-		"max": 3,
-		"cost": {
-			"research": 30000,
-			"starcharts": 50,
-			"arcana": 30
-		},
-		"mod": {
-			"sindel.rate": 0.0005,
-			"waterlore.max": 1,
-			"arcana.rate": 0.0003,
-			"waterlore.rate": "1%",
-			"space": 10
-		}
-	},
-	{
-		"id": "runechest",
-		"name": "rune chest",
-		"desc": "A box carved from idrasil to hold the most potent runes",
-		"require": "g.runelore>=5",
-		"repeat": true,
-		"cost": {
-			"gold": 2000,
-			"research": 5000,
-			"gems": 75
-		},
-		"mod": {
-			"t_runes.max": 5,
-			"space": 5
-		}
-	},
-	{
-		"id": "latticefence",
-		"name": "lattice fence",
-		"desc": "Latticed fence for growing vines",
-		"require": "g.tier0>0&&g.naturelore>=7",
-		"cost": {
-			"gold": 200,
-			"research": 250
-		},
-		"mod": {
-			"herbs.max": 5,
-			"herbalism.max": 1,
-			"herbalism.rate": 0.3,
-			"nature.rate": 0.2,
-			"space": 2
-		}
-	},
-	{
-		"id": "pond",
-		"desc": "Pond",
-		"tags": "watersource",
-		"locked": true,
-		"cost": {
-			"gold": 500
-		},
-		"mod": {
-			"water.rate": 0.01,
-			"nature.rate": 0.01,
-			"naturelore.max": 1,
-			"naturelore.rate": "0.2+5%",
-			"waterlore.max": 2,
-			"waterlore.rate": "0.3+5%",
-			"space": 25
-		}
-	},
-	{
-		"id": "sandgarden",
-		"name": "sand garden",
-		"tags": "earthsource",
-		"desc": "Rocks and sand form patterns of intricate design.",
-		"locked": true,
-		"cost": {
-			"gold": 100,
-			"research": 100
-		},
-		"mod": {
-			"earthlore.max": 2,
-			"earthlore.rate": "5%",
-			"earth.rate": 0.02,
-			"space": 20
-		}
-	},
-	{
-		"id": "banquethall",
-		"name": "banquet hall",
-		"desc": "A grand hall to entertain guests and supplicants",
-		"require": "tier2",
-		"cost": {
-			"gems": 20,
-			"gold": 5000
-		},
-		"mod": {
-			"tapestries.max": 5,
-			"minions.max": "10%",
-			"allies.max": "10%",
-			"space": 50
-		}
-	},
-	{
-		"id": "lakeoffire",
-		"name": "lake of fire",
-		"desc": "A lake of burning fire.",
-		"tags": "firesource",
-		"locked": true,
-		"cost": {
-			"fire": 10,
-			"gold": 100,
-			"firegem": 10,
-			"research": 200
-		},
-		"mod": {
-			"fire.max": 2,
-			"fire.rate": 0.02,
-			"firegem.rate": 0.01,
-			"space": 20
-		}
-	},
-	{
-		"id": "bottomlesspit",
-		"name": "bottomless pit",
-		"desc": "An endless hole in the ground.",
-		"locked": true,
-		"cost": {
-			"gems": 10,
-			"research": 500,
-			"arcana": 1
-		},
-		"mod": {
-			"air.max": 1,
-			"air.rate": 0.01,
-			"earth.max": 1,
-			"earth.rate": 0.01,
-			"void.max": 3,
-			"void.rate": 0.1,
-			"shadow.max": 1,
-			"shadow.rate": 0.01,
-			"space": 5
-		}
-	},
-	{
-		"id": "potroom",
-		"name": "potions room",
-		"desc": "Room for preparing and brewing potions",
-		"require": "potions",
-		"tags": "potsource",
-		"cost": {
-			"gold": 3000,
-			"research": 3000
-		},
-		"mod": {
-			"herbs.max": 10,
-			"potions.max": 2,
-			"potionessence.rate": 0.0002,
-			"potionessence.max": 1,
-			"potions.rate": 0.5,
-			"alchemy.max": 1,
-			"alchemy.rate": 1,
-			"space": 20
-		}
-	},
-	{
-		"id": "torturechamber",
-		"name": "torture chamber",
-		"desc": "A room for inquisitions and research.",
-		"locked": true,
-		"tags": "shadowsource",
-		"cost": {
-			"gold": 400,
-			"research": 250
-		},
-		"mod": {
-			"tapestries.max": 1,
-			"dissection.max": 3,
-			"dissection.rate": 0.4,
-			"shadow.max": 5,
-			"shadow.rate": 0.1,
-			"space": 50
-		}
-	},
-	{
-		"id": "graveyard",
-		"desc": "A resting place for the dead.",
-		"locked": true,
-		"tags": "shadowsource,spiritsource",
-		"cost": {
-			"gold": 700,
-			"spiritgem": 20,
-			"research": 1000
-		},
-		"mod": {
-			"bonedust.max": 10,
-			"souls.rate": 0.01,
-			"bodies.max": 20,
-			"bones.max": 50,
-			"souls.max": 20,
-			"reanimation.max": 1,
-			"reanimation.rate": "10%",
-			"spiritlore.rate": "20%",
-			"spiritlore.max": 1,
-			"space": 50
-		}
-	},
-	{
-		"id": "workshop",
-		"tags": "workspace",
-		"desc": "A space suitable for crafting and enchanting items.",
-		"locked": true,
-		"cost": {
-			"gold": 1000,
-			"research": 2500
-		},
-		"mod": {
-			"tapestries.max": 1,
-			"sp.rate": 0.001,
-			"ichor.rate": 0.0005,
-			"liquifier.mod.managem.rate": "10%",
-			"enchanting.max": 1,
-			"crafting.max": 2,
-			"crafting.rate": 0.4,
-			"space": 50
-		}
-	},
-	{
-		"id": "library",
-		"desc": "The most important part of a proper wizard's stronghold.",
-		"require": "g.codices>=100",
-		"cost": {
-			"gold": 500,
-			"research": 750
-		},
-		"mod": {
-			"tapestries.max": 2,
-			"starcharts.max": 50,
-			"codices.max": 400,
-			"tomes.max": 75,
-			"codices.mod.research.max": 10,
-			"research.max": 50,
-			"lore.rate": "0.3+5%",
-			"research.rate": 0.1,
-			"space": 75
-		}
-	},
-	{
-		"id": "lexyrinth",
-		"desc": "All libraries hold hidden doors into its halls. Unlocking them is the hard bit.",
-		"require": "g.library>0&&g.planeslore>=20",
-		"max": 1,
-		"cost": {
-			"gate": 1,
-			"gold": 5000,
-			"research": 10000
-		},
-		"mod": {
-			"tapestries.max": 3,
-			"tomes.rate": 0.01,
-			"starcharts.max": 50,
-			"tomes.mod.research.max": "3%",
-			"tomes.mod.arcana.max": "0.5",
-			"codices.max": 100,
-			"scrolls.max": 100,
-			"tomes.max": 100,
-			"space": 100
-		},
-		"flavor": "Its shelves extend beyond all sight."
-	},
-	{
-		"id": "gate",
-		"desc": "Dhrunic Gate",
-		"require": "g.planeslore>=20&&g.tier4>0",
-		"max": 3,
-		"cost": {
-			"gold": 5000,
-			"tomes": 25,
-			"runestones": 20,
-			"arcana": 10
-		},
-		"mod": {
-			"arcana.rate": 0.001,
-			"voidlore.max": 1,
-			"planeslore.max": 1,
-			"space": 25
-		}
-	},
-	{
-		"id": "nexus",
-		"desc": "A nexus between all worlds",
-		"max": 1,
-		"cost": {
-			"gate": 3,
-			"tomes": 50,
-			"runestones": 25
-		},
-		"mod": {
-			"arcana.rate": 0.005,
-			"prismaticgems.rate": 0.01,
-			"space": 50
-		}
-	},
-	{
-		"id": "ziggurat",
-		"desc": "A vast mound of earth dedicated to occult practices.",
-		"require": "tier4",
-		"tags": "starsource",
-		"cost": {
-			"gold": 300,
-			"research": 4000,
-			"arcana": 5
-		},
-		"mod": {
-			"voidlore.max": 1,
-			"astronomy.max": 2,
-			"astronomy.rate": 0.2,
-			"airlore.max": 1,
-			"airlore.rate": "1%",
-			"earthlore.max": 3,
-			"earthlore.rate": 0.4,
-			"planeslore.max": 2,
-			"planeslore.rate": "1%",
-			"scrying.max": 1,
-			"scrying.rate": "5%",
-			"space": 100
-		}
-	},
-	{
-		"id": "bindcircle",
-		"name": "binding circle",
-		"desc": "Magic circle for binding summoned entities",
-		"tags": "prison",
-		"require": "g.summoning>=6||g.demonology>=7",
-		"cost": {
-			"gold": 500,
-			"gems": 25,
-			"bloodgem": 10,
-			"spiritgem": 10
-		},
-		"mod": {
-			"summoning.max": 2,
-			"summoning.rate": "5%",
-			"demonology.max": 1,
-			"demonology.rate": "5%",
-			"space": 6
-		}
-	},
-	{
-		"id": "pentagram",
-		"name": "demonic pentagram",
-		"desc": "Used for summoning demonic entities.",
-		"tags": "prison",
-		"require": "g.demonology>=12",
-		"cost": {
-			"gold": 1500,
-			"gems": 50,
-			"bloodgem": 10,
-			"spiritgem": 10,
-			"shadowgem": 10
-		},
-		"mod": {
-			"summoning.max": 1,
-			"summoning.rate": "2%",
-			"demonology.max": 2,
-			"demonology.rate": "10%",
-			"space": 10
-		}
-	},
-	{
-		"id": "crypt",
-		"require": "g.necromancy>0&&g.ruinedcrypt>0",
-		"tags": "prison",
-		"cost": {
-			"research": 5000,
-			"gold": 500,
-			"bodies": 5,
-			"bones": 20,
-			"arcana": 1
-		},
-		"mod": {
-			"tapestries.max": 2,
-			"bodies.max": 25,
-			"bones.max": 30,
-			"bonedust.max": 20,
-			"necromancy.max": 2,
-			"embalming.max": 1,
-			"reanimation.max": 1,
-			"space": 30
-		}
-	},
-	{
-		"id": "dungeon",
-		"desc": "A vast complex to lock away hazardous experiments, deadly creatures, and all those who displease you.",
-		"tags": "prison",
-		"require": "tier3",
-		"cost": {
-			"gold": 1000
-		},
-		"mod": {
-			"tapestries.max": 1,
-			"bodies.max": 20,
-			"bones.max": 20,
-			"shadowlore.max": 1,
-			"shadow.rate": 0.01,
-			"demonology.max": 1,
-			"space": 100
 		}
 	}
 ]

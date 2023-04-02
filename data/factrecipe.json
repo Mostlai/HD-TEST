@@ -115,10 +115,10 @@
 		"tags": "光感数据",
 		"require": "g.xl_lj_konwledege_1>=1",
 		"inp":[
-			{"id":"guanggan_data","base_val":1,"now_val":0}
+			{"id":"guanggan_data","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"physic_point","base_val":3,"now_val":0}
+			{"id":"physic_point","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"cost":{
 			"guanggan_data": 5
@@ -144,10 +144,10 @@
 			"nicheng_data": 5
 		},
 		"inp":[
-			{"id":"nicheng_data","base_val":1,"now_val":0}
+			{"id":"nicheng_data","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"socia_point","base_val":3,"now_val":0}
+			{"id":"socia_point","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_thread": 1,
@@ -170,10 +170,10 @@
 			"xicheng_data": 5
 		},
 		"inp":[
-			{"id":"xicheng_data","base_val":1,"now_val":0}
+			{"id":"xicheng_data","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"engineer_point","base_val":3,"now_val":0}
+			{"id":"engineer_point","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_thread": 1,
@@ -220,11 +220,11 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"coal","base_val":0.6,"now_val":0},
-			{"id":"ind_water","base_val":1,"now_val":0}
+			{"id":"coal","base_val":0.6,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"ind_steam_1","base_val":1.9,"now_val":0}
+			{"id":"ind_steam_1","base_val":1.9,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"burn_thread": 1,
@@ -250,11 +250,11 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"coke","base_val":0.5,"now_val":0},
-			{"id":"ind_water","base_val":1,"now_val":0}
+			{"id":"coke","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"ind_steam_1","base_val":2.9,"now_val":0}
+			{"id":"ind_steam_1","base_val":2.9,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"burn_thread": 1,
@@ -359,10 +359,10 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"coal","base_val":1,"now_val":0}
+			{"id":"coal","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"temper_1","base_val":1.5,"now_val":0}
+			{"id":"temper_1","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"burn_thread": 1,
@@ -386,10 +386,10 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"coke","base_val":1,"now_val":0}
+			{"id":"coke","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"temper_1","base_val":2.2,"now_val":0}
+			{"id":"temper_1","base_val":2.2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"burn_thread": 1,
@@ -409,11 +409,11 @@
 		"tags": "玻璃",
 		"require": "g.ind_reliwendu>=1",
 		"inp":[
-			{"id":"quartz","base_val":1,"now_val":0},
-			{"id":"limestone","base_val":0.5,"now_val":0}
+			{"id":"quartz","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"limestone","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"glass","base_val":1,"now_val":0}
+			{"id":"glass","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"cost":{
 			"quartz": 50,
@@ -443,10 +443,10 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"glass","base_val":1.5,"now_val":0}
+			{"id":"glass","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"blank_unit","base_val":2,"now_val":0}
+			{"id":"blank_unit","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"burn_thread": 1,
@@ -471,11 +471,11 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"blank_unit","base_val":1,"now_val":0},
-			{"id":"temper_1","base_val":1,"now_val":0}
+			{"id":"blank_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"temper_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"temp_1_unit","base_val":1,"now_val":0}
+			{"id":"temp_1_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"daore_thread": 1,
@@ -501,11 +501,11 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"temp_1_unit","base_val":1,"now_val":0},
-			{"id":"coal","base_val":1.5,"now_val":0}
+			{"id":"temp_1_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coal","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"coke","base_val":1.6,"now_val":0}
+			{"id":"coke","base_val":1.6,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"distillation_thread": 1,
@@ -531,11 +531,11 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"cu_iron","base_val":2,"now_val":0},
-			{"id":"coke","base_val":2,"now_val":0}
+			{"id":"cu_iron","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coke","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"steel","base_val":1.3,"now_val":0}
+			{"id":"steel","base_val":1.3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"furnace_thread": 1,
@@ -561,11 +561,11 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"yjdl","base_val":0.6,"now_val":0},
-			{"id":"cu_copper","base_val":2,"now_val":0}
+			{"id":"yjdl","base_val":0.6,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"cu_copper","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"coil_1","base_val":1.5,"now_val":0}
+			{"id":"coil_1","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
@@ -593,12 +593,12 @@
 			"human_power": 200
 		},
 		"inp":[
-			{"id":"steel","base_val":2,"now_val":0},
-			{"id":"glass","base_val":1.5,"now_val":0},
-			{"id":"coil_1","base_val":2,"now_val":0}
+			{"id":"steel","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"glass","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coil_1","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"spare_parts","base_val":2.5,"now_val":0}
+			{"id":"spare_parts","base_val":2.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
@@ -613,6 +613,101 @@
 		}
 	},
 	{
+		"id": "mms_rp_1",
+		"name": "组装机传",
+		"desc": "消耗2工制梁和2逻辑单元和1.7玻璃并生产1机传结构",
+		"thread_use": "assemble_thread",
+		"tags": "机传结构",
+		"require": "g.techo_eng_zyzz_1>=1",
+		"cost":{
+			"gongzhiliang": 30,
+			"ljdy": 2,
+			"glass": 30,
+			"human_power": 500
+		},
+		"inp":[
+			{"id":"gongzhiliang","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ljdy","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"glass","base_val":1.7,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"mech_mo_struct","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"assemble_thread": 1,
+			"gongzhiliang.balance": -2,
+			"ljdy.balance": -2,
+			"glass.balance": -1.7,
+			"mech_mo_struct.balance": 1,
+			"human_power.max": -300,
+			"industry_space": 0.5,
+			"industry_elect": 0.5,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "ememu_rp_1",
+		"name": "组装套件",
+		"desc": "消耗2零部件和0.2玄牝液和1黄温单元并生产1套件单元",
+		"thread_use": "assemble_thread",
+		"tags": "套件单元",
+		"require": "g.techo_eng_zyzz_1>=1",
+		"cost":{
+			"spare_parts": 30,
+			"xuanmuye": 10,
+			"temp_1_unit": 30,
+			"human_power": 500
+		},
+		"inp":[
+			{"id":"spare_parts","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"xuanmuye","base_val":0.2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"temp_1_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"emember_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"assemble_thread": 1,
+			"spare_parts.balance": -2,
+			"xuanmuye.balance": -0.2,
+			"temp_1_unit.balance": -1,
+			"emember_unit.balance": 1,
+			"human_power.max": -300,
+			"industry_space": 0.5,
+			"industry_elect": 0.5,
+			"industry_thread": 0.5
+		}
+	},
+	{
+		"id": "dk1_rp_1",
+		"name": "装卸合成",
+		"desc": "消耗5机传结构和7组装套件并生产1装卸单元I",
+		"thread_use": "assemble_thread",
+		"tags": "装卸单元I",
+		"require": "g.techo_eng_zyzz_1>=1",
+		"cost":{
+			"emember_unit": 80,
+			"mech_mo_struct": 80
+		},
+		"inp":[
+			{"id":"emember_unit","base_val":5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"mech_mo_struct","base_val":7,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"dock_unit_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"assemble_thread": 1,
+			"emember_unit.balance": -5,
+			"mech_mo_struct.balance": -7,
+			"dock_unit_1.balance": -1,
+			"human_power.max": -300,
+			"industry_space": 0.5,
+			"industry_elect": 0.5,
+			"industry_thread": 1
+		}
+	},
+	{
 		"id": "soft_dirt_rp_1",
 		"name": "生物质净化",
 		"desc": "消耗0.1生物质和0.5水并生产1.5生物软泥",
@@ -624,11 +719,11 @@
 			"swzhi": 0.5
 		},
 		"inp":[
-			{"id":"swzhi","base_val":0.1,"now_val":0},
-			{"id":"ind_water","base_val":0.5,"now_val":0}
+			{"id":"swzhi","base_val":0.1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"soft_dirt","base_val":1.5,"now_val":0}
+			{"id":"soft_dirt","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -653,11 +748,11 @@
 			"pei_zhi": 60
 		},
 		"inp":[
-			{"id":"xianban","base_val":0.2,"now_val":0},
-			{"id":"pei_zhi","base_val":0.4,"now_val":0}
+			{"id":"xianban","base_val":0.2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"pei_zhi","base_val":0.4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"soft_dirt","base_val":1.5,"now_val":0}
+			{"id":"soft_dirt","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -682,11 +777,11 @@
 			"soft_dirt": 10
 		},
 		"inp":[
-			{"id":"ind_water","base_val":0.5,"now_val":0},
-			{"id":"soft_dirt","base_val":0.5,"now_val":0}
+			{"id":"ind_water","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"soft_dirt","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"pei_zhi","base_val":0.5,"now_val":0}
+			{"id":"pei_zhi","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -711,11 +806,11 @@
 			"glass": 30
 		},
 		"inp":[
-			{"id":"ind_water","base_val":0.5,"now_val":0},
-			{"id":"glass","base_val":0.5,"now_val":0}
+			{"id":"ind_water","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"glass","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"xianban","base_val":0.5,"now_val":0}
+			{"id":"xianban","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -740,11 +835,11 @@
 			"pei_zhi": 30
 		},
 		"inp":[
-			{"id":"soft_dirt","base_val":1,"now_val":0},
-			{"id":"pei_zhi","base_val":0.5,"now_val":0}
+			{"id":"soft_dirt","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"pei_zhi","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"songfeng_jizhi","base_val":1.5,"now_val":0}
+			{"id":"songfeng_jizhi","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -769,11 +864,11 @@
 			"steel": 30
 		},
 		"inp":[
-			{"id":"spare_parts","base_val":1,"now_val":0},
-			{"id":"steel","base_val":1,"now_val":0}
+			{"id":"spare_parts","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"steel","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"ryongping","base_val":3,"now_val":0}
+			{"id":"ryongping","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
@@ -797,10 +892,10 @@
 			"ryongping": 30
 		},
 		"inp":[
-			{"id":"ryongping","base_val":2,"now_val":0}
+			{"id":"ryongping","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"money","base_val":15,"now_val":0}
+			{"id":"money","base_val":15,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"trade_thread": 1,
@@ -824,12 +919,12 @@
 			"glass": 50
 		},
 		"inp":[
-			{"id":"spare_parts","base_val":1,"now_val":0},
-			{"id":"steel","base_val":1,"now_val":0},
-			{"id":"glass","base_val":2,"now_val":0}
+			{"id":"spare_parts","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"steel","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"glass","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"gaojihuowu","base_val":3,"now_val":0}
+			{"id":"gaojihuowu","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
@@ -854,10 +949,10 @@
 			"gaojihuowu": 30
 		},
 		"inp":[
-			{"id":"gaojihuowu","base_val":2,"now_val":0}
+			{"id":"gaojihuowu","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"money","base_val":27,"now_val":0}
+			{"id":"money","base_val":27,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"trade_thread": 1,
@@ -880,11 +975,11 @@
 			"ryongping": 50
 		},
 		"inp":[
-			{"id":"gaojihuowu","base_val":1,"now_val":0},
-			{"id":"ryongping","base_val":2,"now_val":0}
+			{"id":"gaojihuowu","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ryongping","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"shichiping","base_val":2,"now_val":0}
+			{"id":"shichiping","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
@@ -908,10 +1003,10 @@
 			"shichiping": 30
 		},
 		"inp":[
-			{"id":"shichiping","base_val":0.5,"now_val":0}
+			{"id":"shichiping","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"money","base_val":20,"now_val":0}
+			{"id":"money","base_val":20,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"trade_thread": 1,
@@ -934,11 +1029,11 @@
 			"spare_parts": 50
 		},
 		"inp":[
-			{"id":"songfeng_jizhi","base_val":2,"now_val":0},
-			{"id":"spare_parts","base_val":1,"now_val":0}
+			{"id":"songfeng_jizhi","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"spare_parts","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"nicheng_data","base_val":1,"now_val":0}
+			{"id":"nicheng_data","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -962,11 +1057,11 @@
 			"coil_1": 50
 		},
 		"inp":[
-			{"id":"cbclb","base_val":2,"now_val":0},
-			{"id":"coil_1","base_val":0.5,"now_val":0}
+			{"id":"cbclb","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coil_1","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"wujianbao","base_val":2,"now_val":0}
+			{"id":"wujianbao","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -990,11 +1085,11 @@
 			"quartz": 50
 		},
 		"inp":[
-			{"id":"ind_water","base_val":1,"now_val":0},
-			{"id":"quartz","base_val":2,"now_val":0}
+			{"id":"ind_water","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"quartz","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"zhenxishi","base_val":1.5,"now_val":0}
+			{"id":"zhenxishi","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -1018,11 +1113,11 @@
 			"wujianbao": 50
 		},
 		"inp":[
-			{"id":"zhenxishi","base_val":1.3,"now_val":0},
-			{"id":"wujianbao","base_val":1,"now_val":0}
+			{"id":"zhenxishi","base_val":1.3,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"wujianbao","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"cbclb","base_val":2,"now_val":0}
+			{"id":"cbclb","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -1046,11 +1141,11 @@
 			"wujianbao": 50
 		},
 		"inp":[
-			{"id":"spare_parts","base_val":1,"now_val":0},
-			{"id":"wujianbao","base_val":1,"now_val":0}
+			{"id":"spare_parts","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"wujianbao","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"yjdl","base_val":3,"now_val":0}
+			{"id":"yjdl","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
@@ -1075,12 +1170,12 @@
 			"wujianbao": 50
 		},
 		"inp":[
-			{"id":"temp_1_unit","base_val":1,"now_val":0},
-			{"id":"steel","base_val":1.5,"now_val":0},
-			{"id":"wujianbao","base_val":1.5,"now_val":0}
+			{"id":"temp_1_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"steel","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"wujianbao","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"gongzhiliang","base_val":1,"now_val":0}
+			{"id":"gongzhiliang","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1106,12 +1201,12 @@
 			"wujianbao": 50
 		},
 		"inp":[
-			{"id":"zhenxishi","base_val":1,"now_val":0},
-			{"id":"gongzhiliang","base_val":1,"now_val":0},
-			{"id":"ind_water","base_val":2,"now_val":0}
+			{"id":"zhenxishi","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"gongzhiliang","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"xicheng_data","base_val":1,"now_val":0}
+			{"id":"xicheng_data","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -1135,15 +1230,44 @@
 			"coil_1": 50
 		},
 		"inp":[
-			{"id":"coil_1","base_val":3,"now_val":0}
+			{"id":"coil_1","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"naicixian","base_val":1.5,"now_val":0}
+			{"id":"naicixian","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"rline_thread": 1,
 			"coil_1.balance": -3,
 			"naicixian.balance": 1.5,
+			"industry_space": 0.1,
+			"industry_elect": 0.5,
+			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "yicixian_rp_1",
+		"name": "产萤磁线",
+		"desc": "消耗1耐磁线和2萤晶和1水并生产1萤磁线",
+		"thread_use": "rline_thread",
+		"tags": "萤磁线",
+		"require": "g.techo_eng_yjyy_1>=1",
+		"cost":{
+			"naicixian": 50
+		},
+		"inp":[
+			{"id":"naicixian","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yinjing","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"yingcixian","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"rline_thread": 1,
+			"naicixian.balance": -1,
+			"yinjing.balance": -2,
+			"ind_water.balance": -1,
+			"yingcixian.balance": 1,
 			"industry_space": 0.1,
 			"industry_elect": 0.5,
 			"industry_thread": 0.1
@@ -1173,6 +1297,29 @@
 		}
 	},
 	{
+		"id": "yingcixian_rp_2",
+		"name": "萤磁产电",
+		"desc": "消耗2萤磁线和1低温蒸汽并生产8.2工业电力",
+		"thread_use": "steam_thread",
+		"tags": "低温蒸汽,发电",
+		"require": "g.techo_eng_yjyy_1>=1",
+		"cost":{
+			"yingcixian": 50,
+			"ind_steam_1": 50
+		},
+		"mod":{
+			"steam_thread": 1,
+			"yingcixian.balance": -2,
+			"ind_steam_1.balance": -1,
+			"yingcixian.rate": -2,
+			"ind_steam_1.rate": -1,
+			"industry_elect.max": 8.2,
+			"industry_space": 0.4,
+			"industry_elect": 0.1,
+			"industry_thread": 0.1
+		}
+	},
+	{
 		"id": "ganguangtj_rp_1",
 		"name": "产感光透镜",
 		"desc": "消耗1玻璃和1水和1工制线圈并生产1感光透镜",
@@ -1185,12 +1332,12 @@
 			"coil_1": 50
 		},
 		"inp":[
-			{"id":"glass","base_val":1,"now_val":0},
-			{"id":"ind_water","base_val":1,"now_val":0},
-			{"id":"coil_1","base_val":1,"now_val":0}
+			{"id":"glass","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coil_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"ganguangtj","base_val":1,"now_val":0}
+			{"id":"ganguangtj","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1215,17 +1362,46 @@
 			"naicixian": 100
 		},
 		"inp":[
-			{"id":"ganguangtj","base_val":1,"now_val":0},
-			{"id":"naicixian","base_val":1,"now_val":0}
+			{"id":"ganguangtj","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"naicixian","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"guanggan_data","base_val":1,"now_val":0}
+			{"id":"guanggan_data","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
 			"ganguangtj.balance": -1,
 			"naicixian.balance": -1,
 			"guanggan_data.balance": 1,
+			"industry_space": 0.3,
+			"industry_elect": 0.5,
+			"industry_thread": 0.3
+		}
+	},
+	{
+		"id": "guanggan_data_rp_2",
+		"name": "光感萤磁生产",
+		"desc": "消耗1感光透镜和1萤磁线并生产1光感数据",
+		"thread_use": "assemble_thread",
+		"tags": "光感数据",
+		"require": "g.techo_eng_yjyy_1>=1",
+		"cost":{
+			"ganguangtj": 50,
+			"naicixian": 100,
+			"yingcixian": 33
+		},
+		"inp":[
+			{"id":"ganguangtj","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yingcixian","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"guanggan_data","base_val":1.5,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"assemble_thread": 1,
+			"ganguangtj.balance": -1,
+			"yingcixian.balance": -1,
+			"guanggan_data.balance": 1.5,
 			"industry_space": 0.3,
 			"industry_elect": 0.5,
 			"industry_thread": 0.3
@@ -1244,11 +1420,11 @@
 			"life_crystal": 5
 		},
 		"inp":[
-			{"id":"suixifanmo","base_val":1,"now_val":0},
-			{"id":"ind_water","base_val":0.2,"now_val":0}
+			{"id":"suixifanmo","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":0.2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"guben_core","base_val":5,"now_val":0}
+			{"id":"guben_core","base_val":5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_zuanji_1": 1,
@@ -1273,11 +1449,11 @@
 			"life_crystal": 20
 		},
 		"inp":[
-			{"id":"ind_water","base_val":1,"now_val":0},
-			{"id":"coal","base_val":1,"now_val":0}
+			{"id":"ind_water","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coal","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"suixifanmo","base_val":0.2,"now_val":0}
+			{"id":"suixifanmo","base_val":0.2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1302,13 +1478,13 @@
 			"coil_1": 20
 		},
 		"inp":[
-			{"id":"guben_core","base_val":2,"now_val":0}
+			{"id":"guben_core","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"yanqi","base_val":10,"now_val":0},
-			{"id":"ind_water","base_val":3,"now_val":0,"ignore": true},
-			{"id":"yinjing","base_val":2,"now_val":0,"ignore": true},
-			{"id":"zhenzhi_ore","base_val":2,"now_val":0,"ignore": true}
+			{"id":"yanqi","base_val":10,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":3,"now_val":0,"ignore": true,"dock_id":"","dock_val":0},
+			{"id":"yinjing","base_val":2,"now_val":0,"ignore": true,"dock_id":"","dock_val":0},
+			{"id":"zhenzhi_ore","base_val":2,"now_val":0,"ignore": true,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_posui_1": 1,
@@ -1335,10 +1511,10 @@
 			"ind_water": 50
 		},
 		"inp":[
-			{"id":"guben_core","base_val":2,"now_val":0}
+			{"id":"guben_core","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"wujianbao","base_val":0.5,"now_val":0}
+			{"id":"wujianbao","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1362,13 +1538,13 @@
 			"ind_water": 50
 		},
 		"inp":[
-			{"id":"tian","base_val":50,"now_val":0},
-			{"id":"zhenzhi_ore","base_val":6,"now_val":0}
+			{"id":"tian","base_val":50,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"zhenzhi_ore","base_val":6,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"tian","base_val":48,"now_val":0,"ignore": true},
-			{"id":"ind_steam_1","base_val":1,"now_val":0,"ignore": true},
-			{"id":"zhenzhi_spindle","base_val":3,"now_val":0}
+			{"id":"tian","base_val":48,"now_val":0,"ignore": true,"dock_id":"","dock_val":0},
+			{"id":"ind_steam_1","base_val":1,"now_val":0,"ignore": true,"dock_id":"","dock_val":0},
+			{"id":"zhenzhi_spindle","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"furnace_thread": 1,
@@ -1392,11 +1568,11 @@
 			"ind_water": 50
 		},
 		"inp":[
-			{"id":"yinjing","base_val":4,"now_val":0},
-			{"id":"ind_water","base_val":3,"now_val":0}
+			{"id":"yinjing","base_val":4,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"xuanmuye","base_val":0.5,"now_val":0}
+			{"id":"xuanmuye","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -1420,11 +1596,11 @@
 			"ind_water": 50
 		},
 		"inp":[
-			{"id":"xuanmuye","base_val":1,"now_val":0},
-			{"id":"yanqi","base_val":8,"now_val":0}
+			{"id":"xuanmuye","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yanqi","base_val":8,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"qiyiyeti","base_val":1,"now_val":0}
+			{"id":"qiyiyeti","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"purify_thread": 1,
@@ -1449,11 +1625,11 @@
 			"ind_water": 50
 		},
 		"inp":[
-			{"id":"yanqi","base_val":12,"now_val":0}
+			{"id":"yanqi","base_val":12,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"coal","base_val":0.3,"now_val":0,"ignore": true},
-			{"id":"coke","base_val":0.1,"now_val":0,"ignore": true}
+			{"id":"coal","base_val":0.3,"now_val":0,"ignore": true,"dock_id":"","dock_val":0},
+			{"id":"coke","base_val":0.1,"now_val":0,"ignore": true,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_qitipaifang_1": 1,
@@ -1476,12 +1652,12 @@
 			"xuanmuye": 40
 		},
 		"inp":[
-			{"id":"xuanmuye","base_val":2,"now_val":0},
-			{"id":"glass","base_val":2,"now_val":0},
-			{"id":"blank_unit","base_val":1,"now_val":0}
+			{"id":"xuanmuye","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"glass","base_val":2,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"blank_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"element_wuhuan","base_val":1,"now_val":0}
+			{"id":"element_wuhuan","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"juhe_thread": 1,
@@ -1506,12 +1682,12 @@
 			"xuanmuye": 40
 		},
 		"inp":[
-			{"id":"xuanmuye","base_val":1,"now_val":0},
-			{"id":"xianban","base_val":9,"now_val":0},
-			{"id":"zhenxishi","base_val":4,"now_val":0}
+			{"id":"xuanmuye","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"xianban","base_val":9,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"zhenxishi","base_val":4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"swzhi","base_val":8,"now_val":0}
+			{"id":"swzhi","base_val":8,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"juhe_thread": 1,
@@ -1537,11 +1713,11 @@
 			"ljdy": 1
 		},
 		"inp":[
-			{"id":"zhenzhi_spindle","base_val":1,"now_val":0},
-			{"id":"ljdy","base_val":0.5,"now_val":0}
+			{"id":"zhenzhi_spindle","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ljdy","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"yisuanzi","base_val":0.5,"now_val":0}
+			{"id":"yisuanzi","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1565,12 +1741,12 @@
 			"ind_water": 50
 		},
 		"inp":[
-			{"id":"yinjing","base_val":1,"now_val":0},
-			{"id":"coil_1","base_val":0.6,"now_val":0},
-			{"id":"glass","base_val":0.3,"now_val":0}
+			{"id":"yinjing","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coil_1","base_val":0.6,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"glass","base_val":0.3,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"ljdy","base_val":0.5,"now_val":0}
+			{"id":"ljdy","base_val":0.5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1586,7 +1762,7 @@
 	{
 		"id": "f_qingjia_1_chaijie",
 		"name": "I轻拆解",
-		"desc": "消耗5标准轻甲I并生产50轻甲",
+		"desc": "消耗1标准轻甲I并生产40轻甲",
 		"thread_use": "sysn_chaijie_1",
 		"tags": "标准轻甲I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
@@ -1594,15 +1770,15 @@
 			"f_qingjia_1": 1
 		},
 		"inp":[
-			{"id":"f_qingjia_1","base_val":5,"now_val":0}
+			{"id":"f_qingjia_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"qingjia","base_val":50,"now_val":0}
+			{"id":"qingjia","base_val":40,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_chaijie_1": 1,
-			"f_qingjia_1.balance": -5,
-			"qingjia.balance": 50,
+			"f_qingjia_1.balance": -1,
+			"qingjia.balance": 40,
 			"human_power.max": -100,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -1621,10 +1797,10 @@
 			"factory_1": 1
 		},
 		"inp":[
-			{"id":"r_adv_w_sj1","base_val":2,"now_val":0}
+			{"id":"r_adv_w_sj1","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"f_qingjia_1","base_val":0.4,"now_val":0}
+			{"id":"f_qingjia_1","base_val":0.4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1639,7 +1815,7 @@
 	{
 		"id": "f_zhongjia_1_chaijie",
 		"name": "I中拆解",
-		"desc": "消耗5标准中甲I并生产50中甲",
+		"desc": "消耗1标准中甲I并生产40中甲",
 		"thread_use": "sysn_chaijie_1",
 		"tags": "标准中甲I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
@@ -1647,15 +1823,15 @@
 			"f_zhongjia_1": 1
 		},
 		"inp":[
-			{"id":"f_zhongjia_1","base_val":5,"now_val":0}
+			{"id":"f_zhongjia_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"zhongjia","base_val":50,"now_val":0}
+			{"id":"zhongjia","base_val":40,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_chaijie_1": 1,
-			"f_zhongjia_1.balance": -5,
-			"zhongjia.balance": 50,
+			"f_zhongjia_1.balance": -1,
+			"zhongjia.balance": 40,
 			"human_power.max": -110,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -1674,10 +1850,10 @@
 			"factory_ar_1": 1
 		},
 		"inp":[
-			{"id":"r_adv_bzzj","base_val":2,"now_val":0}
+			{"id":"r_adv_bzzj","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"f_zhongjia_1","base_val":0.4,"now_val":0}
+			{"id":"f_zhongjia_1","base_val":0.4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1692,7 +1868,7 @@
 	{
 		"id": "f_heavyjia_1_chaijie",
 		"name": "I重拆解",
-		"desc": "消耗5标准重甲I并生产50重甲",
+		"desc": "消耗1标准重甲I并生产40重甲",
 		"thread_use": "sysn_chaijie_1",
 		"tags": "标准重甲I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
@@ -1700,15 +1876,15 @@
 			"f_heavyjia_1": 1
 		},
 		"inp":[
-			{"id":"f_heavyjia_1","base_val":5,"now_val":0}
+			{"id":"f_heavyjia_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"heavyjia","base_val":50,"now_val":0}
+			{"id":"heavyjia","base_val":40,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_chaijie_1": 1,
-			"f_heavyjia_1.balance": -5,
-			"heavyjia.balance": 50,
+			"f_heavyjia_1.balance": -1,
+			"heavyjia.balance": 40,
 			"human_power.max": -120,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -1727,10 +1903,10 @@
 			"factory_ar_2": 1
 		},
 		"inp":[
-			{"id":"r_adv_bzhj","base_val":2,"now_val":0}
+			{"id":"r_adv_bzhj","base_val":2,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"f_heavyjia_1","base_val":0.4,"now_val":0}
+			{"id":"f_heavyjia_1","base_val":0.4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1745,7 +1921,7 @@
 	{
 		"id": "f_wuzhuo_1_chaijie",
 		"name": "I浊拆解",
-		"desc": "消耗5标准污浊I并生产50污浊",
+		"desc": "消耗1标准污浊I并生产40污浊",
 		"thread_use": "sysn_chaijie_1",
 		"tags": "标准污浊I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
@@ -1753,15 +1929,15 @@
 			"f_wuzhuo_1": 1
 		},
 		"inp":[
-			{"id":"f_wuzhuo_1","base_val":5,"now_val":0}
+			{"id":"f_wuzhuo_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"wuzhuo","base_val":50,"now_val":0}
+			{"id":"wuzhuo","base_val":40,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_chaijie_1": 1,
-			"f_wuzhuo_1.balance": -5,
-			"wuzhuo.balance": 50,
+			"f_wuzhuo_1.balance": -1,
+			"wuzhuo.balance": 40,
 			"human_power.max": -110,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -1780,10 +1956,10 @@
 			"factory_2": 1
 		},
 		"inp":[
-			{"id":"r_adv_w_sj2","base_val":5,"now_val":0}
+			{"id":"r_adv_w_sj2","base_val":5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"f_wuzhuo_1","base_val":0.4,"now_val":0}
+			{"id":"f_wuzhuo_1","base_val":0.4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
@@ -1798,7 +1974,7 @@
 	{
 		"id": "f_bingdong_1_chaijie",
 		"name": "I冷拆解",
-		"desc": "消耗5标准冷结I并生产50冰冻",
+		"desc": "消耗1标准冷结I并生产40冰冻",
 		"thread_use": "sysn_chaijie_1",
 		"tags": "标准冷结I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
@@ -1806,15 +1982,15 @@
 			"f_bingdong_1": 1
 		},
 		"inp":[
-			{"id":"f_bingdong_1","base_val":5,"now_val":0}
+			{"id":"f_bingdong_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"bingdong","base_val":50,"now_val":0}
+			{"id":"bingdong","base_val":40,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"sysn_chaijie_1": 1,
-			"f_bingdong_1.balance": -5,
-			"bingdong.balance": 50,
+			"f_bingdong_1.balance": -1,
+			"bingdong.balance": 40,
 			"human_power.max": -110,
 			"industry_space": 0.1,
 			"industry_elect": 0.1,
@@ -1833,10 +2009,10 @@
 			"factory_3": 1
 		},
 		"inp":[
-			{"id":"r_adv_w_sj3","base_val":5,"now_val":0}
+			{"id":"r_adv_w_sj3","base_val":5,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"f_bingdong_1","base_val":0.4,"now_val":0}
+			{"id":"f_bingdong_1","base_val":0.4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,

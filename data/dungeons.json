@@ -1,9 +1,39 @@
 [
 	{
+		"id": "secret_realm_1",
+		"name": "闭尘门外",
+		"desc": "凡人一生有意或无意至少造访两次的地点，存在于飘渺的梦境与幽深的死界间。在此处战斗可获得20级以下的装备。",
+		"require": "g.level>=1",
+		"level": 20,
+		"dist": 1,
+		"length": 50,
+		"run": {
+			"back_dream": 0.1,
+			"hp": 1,
+			"tili": 2,
+			"time": -0.1
+		},
+		"boss": "secret_realm_monster_3",
+		"spawns": [
+			[
+				"secret_realm_monster_1",
+				"secret_realm_monster_2"
+			],
+			[
+				"secret_realm_monster_1",
+				"secret_realm_monster_1"
+			],
+			[
+				"secret_realm_monster_2",
+				"secret_realm_monster_2"
+			]
+		]
+	},
+	{
 		"id": "under_dreaam",
 		"name": "底层梦境[黄泉前置]",
 		"desc": "梦境的深处,实界的边缘,这里的时间流速更快,环境更危险",
-		"require": "evt_hq",
+		"require": "g.active_huangquan>=1",
 		"level": 1,
 		"length": 50,
 		"run": {
@@ -168,7 +198,7 @@
 		"id": "hq_4",
 		"name": "荒芜气旋层[黄泉]",
 		"desc": "",
-		"require": "g.evt_huangwuqixuan>=1",
+		"require": "g.xunqiuguangmao>=1",
 		"level": 35,
 		"dist": 600,
 		"length": 40,
@@ -199,7 +229,7 @@
 		"id": "hq_5",
 		"name": "穷究雪原[黄泉]",
 		"desc": "",
-		"require": "g.evt_xunqiuty>=1",
+		"require": "g.xunqiuty>=1",
 		"level": 35,
 		"dist": 600,
 		"length": 40,
@@ -245,7 +275,7 @@
 		"id": "hq_mo_1",
 		"name": "无光平原[魔导]",
 		"desc": "无法看见光明。这里的时间流速更快,环境更危险",
-		"require": "g.evt_modao>=1",
+		"require": "g.xiulian_modaozhiyin>=1 && g.dream_death_mo && g.spirit_light>=1 && g.spirit_mo>=1",
 		"level": 1,
 		"length": 30,
 		"run": {
@@ -285,7 +315,7 @@
 		"id": "yysl",
 		"name": "月影森林",
 		"desc": "繁茂的森林,地表常年处于阴影之中。",
-		"require": "evt_zcx",
+		"require": "g.zcx>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 40,
@@ -321,7 +351,7 @@
 		"id": "slsc",
 		"name": "森林深处[滴露花,灵壤,阳露珠]",
 		"desc": "繁茂的森林,地表常年处于阴影之中。",
-		"require": "g.yysl>=1 && g.evt_tansuo_1>=1",
+		"require": "g.yysl>=1 && g.tansuo>=1",
 		"level": 20,
 		"dist": 250,
 		"length": 20,
@@ -336,7 +366,7 @@
 			"lingrang": "2~4",
 			"yangluzhu": 5
 		},
-		"boss": ["tree_man","tree_man"],
+		"boss": ["tree_man","tree_man","tree_man_big"],
 		"spawns": [
 			[
 				"small_tree_man",
@@ -359,7 +389,7 @@
 		"id": "jlss",
 		"name": "巨灵山",
 		"desc": "最巍峨的山脉，最纯正的金石之力",
-		"require": "evt_zcx",
+		"require": "g.zcx>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 40,
@@ -394,7 +424,7 @@
 		"id": "dmhs",
 		"name": "地脉火山",
 		"desc": "喷发着岩浆,散发着恐怖的高温",
-		"require": "evt_zcx",
+		"require": "g.zcx>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 40,
@@ -429,7 +459,7 @@
 		"id": "hsby",
 		"name": "火山边缘[红衫,火伤藤]",
 		"desc": "喷发着岩浆,散发着恐怖的高温",
-		"require": "g.dmhs>=1 && g.evt_tansuo_1>=1",
+		"require": "g.dmhs>=1 && g.tansuo>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 18,
@@ -444,7 +474,7 @@
 			"hongshan": 4,
 			"huoshangteng": 5
 		},
-		"boss": "fire_bird",
+		"boss": "fire_bird_big",
 		"spawns": [
 			[
 				"fireb",
@@ -466,7 +496,7 @@
 		"id": "lzdh",
 		"name": "劳泽大湖",
 		"desc": "泥泞的沼泽,庞大的湖泊",
-		"require": "evt_zcx",
+		"require": "g.zcx>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 40,
@@ -501,7 +531,7 @@
 		"id": "glpd",
 		"name": "古老盆地",
 		"desc": "存在几万年的古老盆地,有着纯粹的厚土之力",
-		"require": "evt_zcx",
+		"require": "g.zcx>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 40,
@@ -536,7 +566,7 @@
 		"id": "pendizx",
 		"name": "盆地中心[土金,岩火,水银花]",
 		"desc": "存在几万年的古老盆地,有着纯粹的厚土之力",
-		"require": "g.glpd>=1 && g.evt_tansuo_1>=1",
+		"require": "g.glpd>=1 && g.tansuo>=1",
 		"level": 20,
 		"dist": 250,
 		"length": 18,
@@ -551,7 +581,7 @@
 			"yanhuo": 4,
 			"shuiyinhua": 5
 		},
-		"boss": "tu_bird",
+		"boss": "tu_bird_big",
 		"spawns": [
 			[
 				"wggg",
@@ -572,7 +602,7 @@
 		"id": "zxzc",
 		"name": "中型战场",
 		"desc": "曾经发生战争",
-		"require": "evt_zxzc",
+		"require": "g.shenglingshi>=1",
 		"level": 20,
 		"dist": 200,
 		"length": 40,
@@ -619,7 +649,7 @@
 		"id": "daxzc",
 		"name": "大型战场",
 		"desc": "曾经发生战争",
-		"require": "evt_zhengzhan",
+		"require": "g.zhengzhan>=1",
 		"level": 30,
 		"dist": 600,
 		"length": 40,
@@ -772,7 +802,7 @@
 		"name": "未见之村[渴血]",
 		"sym": "🕯",
 		"desc": "",
-		"require": "evt_quanxiangren",
+		"require": "g.quanxiangren>=1",
 		"dist":600,
 		"level": 39,
 		"length": 35,
@@ -818,7 +848,7 @@
 		"name": "风暴崖",
 		"sym": "",
 		"desc": "",
-		"require": "evt_xunqiusl",
+		"require": "g.xunqiusl>=1",
 		"dist":600,
 		"level": 39,
 		"length": 35,
@@ -854,7 +884,7 @@
 		"name": "失落图书馆",
 		"sym": "",
 		"desc": "",
-		"require": "evt_xunqiuzh",
+		"require": "g.xunqiuzh>=1",
 		"dist":600,
 		"level": 30,
 		"length": 35,
@@ -889,7 +919,7 @@
 		"name": "银色森林",
 		"sym": "",
 		"desc": "",
-		"require": "evt_xunqiuhj",
+		"require": "g.xunqiuhj>=1",
 		"dist":600,
 		"level": 30,
 		"length": 35,
@@ -922,7 +952,7 @@
 		"name": "白色诵读团",
 		"sym": "",
 		"desc": "",
-		"require": "evt_xunqiukb",
+		"require": "g.xunqiukb>=1",
 		"dist":600,
 		"level": 30,
 		"length": 25,
@@ -947,7 +977,7 @@
 		"name": "黑色诵读团",
 		"sym": "",
 		"desc": "",
-		"require": "evt_xunqiuhy",
+		"require": "g.xunqiuhy>=1",
 		"dist":600,
 		"level": 30,
 		"length": 25,
@@ -972,7 +1002,7 @@
 		"name": "无言小屋",
 		"sym": "",
 		"desc": "",
-		"require": "evt_xunqiupans",
+		"require": "g.xunqiupans>=1",
 		"dist":600,
 		"level": 30,
 		"length": 25,
@@ -1045,7 +1075,7 @@
 		"name": "灼魂之灵",
 		"sym": "",
 		"desc": "炽热灵魂",
-		"require": "g.evt_zhuohunzhiling>=1",
+		"require": "g.techo_phy_zhenhu_1>=1",
 		"dist":700,
 		"level": 35,
 		"length": 30,
@@ -1077,7 +1107,7 @@
 		"name": "共位之灵",
 		"sym": "",
 		"desc": "二素之灵",
-		"require": "g.evt_gongweizhiling>=1",
+		"require": "g.techo_phy_zhenhu_2>=1",
 		"dist":700,
 		"level": 35,
 		"length": 30,
@@ -1112,7 +1142,7 @@
 		"name": "调谐之灵",
 		"sym": "",
 		"desc": "调谐正灵",
-		"require": "g.evt_tiaoxiezhiling>=1",
+		"require": "g.techo_phy_zhenhu_3>=1",
 		"dist":700,
 		"level": 35,
 		"length": 2,
@@ -1143,7 +1173,7 @@
 		"name": "躁动之灵",
 		"sym": "",
 		"desc": "躁动不安",
-		"require": "g.evt_zaodongzhiling>=1",
+		"require": "g.techo_phy_zhenhu_4>=1",
 		"dist":700,
 		"level": 35,
 		"length": 50,
@@ -1186,557 +1216,5 @@
 			]
 		],
 		"flavor": ""
-	},
-	{
-		"id": "sunnyfield",
-		"name": "Sunny Field",
-		"level": 1,
-		"length": 10,
-		"require": "evt_helper",
-		"run": {
-			"stamina": 0.4
-		},
-		"result": {
-			"gold": "5~10"
-		},
-		"loot": {
-			"maxlevel": 1
-		},
-		"boss": {"10":[
-			"kakapo"
-		]},
-		"spawns": [
-			"gardengnome",
-			[
-				"newt",
-				"newt",
-				"newt"
-			],
-			"lgmouse",
-			"bigstone",
-			"stingybee",
-			"smsnake",
-			"twikman"
-		],
-		"flavor": "Every budding mage needs to start somewhere."
-	},
-	{
-		"id": "placidgrove",
-		"name": "Placid Grove",
-		"require": "sunnyfield",
-		"level": 2,
-		"length": 12,
-		"run": {
-			"stamina": 0.5
-		},
-		"result": {
-			"gold": "7~14"
-		},
-		"loot": {
-			"maxlevel": 2
-		},
-		"spawns": [
-			[
-				"stingybee",
-				"stingybee"
-			],
-			"lgrat",
-			"smbox",
-			"gremlin",
-			"angrybird",
-			"smsnake"
-		],
-		"desc": "An idyllic grove for a walk or long nap."
-	},
-	{
-		"id": "pestcontrol",
-		"name": "Leaky Cellar",
-		"require": "g.sunnyfield>0&&(g.apprentice.value>0||g.neophyte.value>0)",
-		"start": {
-			"name": "Pest Control",
-			"desc": "After your daily castigation, your master mentions the rats in the basement have become a problem. Something about stolen shortswords and building barricades. You had better go down and deal with it."
-		},
-		"repeat": false,
-		"level": 3,
-		"length": 25,
-		"dist": 0,
-		"run": {
-			"stamina": 1
-		},
-		"result": {
-			"sp": 1,
-			"gold": "15~20",
-			"player.exp": 10,
-			"title": "Master of the Cellar"
-		},
-		"loot": {
-			"maxlevel": 4
-		},
-		"log": {
-			"name": "Pests Clear",
-			"desc": "With the basement cleared your master will have more room to stash all the gold you've been earning."
-		},
-		"boss": {"25":[
-			"ratking"
-		]},
-		"spawns": [
-			[
-				"lgmouse",
-				"lgmouse"
-			],
-			"lgrat",
-			"badexperiment",
-			"ratskeleton",
-			"homunculus",
-			"gremlin"
-		]
-	},
-	{
-		"id": "stonyhills",
-		"alias": "hills",
-		"name": "Stony Hills",
-		"require": "placidgrove",
-		"level": 3,
-		"length": 25,
-		"run": {
-			"stamina": 0.75
-		},
-		"result": {
-			"gold": "10~15"
-		},
-		"loot": {
-			"maxlevel": 3
-		},
-		"biome": "hills",
-		"spawns": [
-			"coyote",
-			"warthog",
-			"kobold",
-			"goblin",
-			"smbox",
-			[
-				"bat",
-				"bat",
-				"bat"
-			],
-			[
-				"twikman",
-				"twikman"
-			],
-			"bigstone",
-			"hawk"
-		]
-	},
-	{
-		"id": "fetidbarrow",
-		"name": "The Fetid Barrows",
-		"desc": "When the fetid barrows were discovered, dark acolytes gathered at the mounds seeking ancient patrons of their art.",
-		"require": "evt_cabal",
-		"max": 1,
-		"level": 15,
-		"length": 200,
-		"run": {
-			"stamina": 2
-		},
-		"result": {
-			"title": "Cabal Breaker",
-			"bones": "3~7",
-			"bodies": "0~2"
-		},
-		"boss": {"200":[
-			"palus"
-		]},
-		"spawns": [
-			[
-				"evilpriest",
-				"evilpriest",
-				"evilpriest"
-			],
-			[
-				"corpse",
-				"corpse",
-				"skeleton",
-				"corpse"
-			],
-			[
-				"ghost",
-				"ghost",
-				"wraith"
-			],
-			[
-				"evilpriest",
-				"greaterzombie"
-			],
-			[
-				"undeadhorror",
-				"undeadhorror"
-			],
-			[
-				"wight",
-				"wight",
-				"ghast"
-			],
-			"vampiremaster",
-			"skellord",
-			[
-				"m_hierophant",
-				"evilpriest",
-				"evilpriest"
-			],
-			[
-				"blasphemer",
-				"blasphemer"
-			],
-			"wraith",
-			[
-				"ghoul",
-				"ghoul",
-				"ghast",
-				"evilpriest"
-			]
-		]
-	},
-	{
-		"id": "aragheights",
-		"name": "Arag Heights",
-		"desc": "Barren mountains on the coast of Arazor.",
-		"require": "stonyhills",
-		"level": 6,
-		"run": {
-			"stamina": 1
-		},
-		"boss": "roc",
-		"result": {
-			"gold": "20~30"
-		},
-		"spawns": [
-			"lgbird",
-			[
-				"kobold",
-				"kobold",
-				"kobold"
-			],
-			"orc",
-			"bandit",
-			"wolf",
-			"hawk",
-			"goblin",
-			"coyote"
-		]
-	},
-	{
-		"id": "hauntedmanor",
-		"name": "Haunted Manor",
-		"desc": "",
-		"require": "g.spirit.max>=9",
-		"level": 6,
-		"run": {
-			"stamina": 1
-		},
-		"length": 30,
-		"result": {
-			"gold": "20~30"
-		},
-		"boss": "poltergeist",
-		"spawns": [
-			"ghost",
-			"ghost",
-			"zombie",
-			"skeleton",
-			"skeleton",
-			"direrat"
-		]
-	},
-	{
-		"id": "orccamp",
-		"name": "Orc Camp",
-		"desc": "A scourge of towns and cities.",
-		"require": "goblincamp",
-		"level": 7,
-		"run": {
-			"stamina": 1.2
-		},
-		"result": {
-			"gold": "40~50"
-		},
-		"boss": "orcchief",
-		"spawns": [
-			"orc",
-			"orcwarrior",
-			"orcwarrior",
-			"orc",
-			"orc",
-			"orcpriest"
-		],
-		"flavor": "Lok'tar!"
-	},
-	{
-		"id": "aragogres",
-		"name": "Ogre Cavern",
-		"start": {
-			"name": "Ogre Cavern",
-			"desc": "While scrying the outlying lands you discover a colossal cave in the arag heights."
-		},
-		"desc": "A scourge of towns and cities.",
-		"require": "g.orccamp>0&&g.aragheights>0&&g.scrying>0",
-		"level": 10,
-		"length": 100,
-		"run": {
-			"stamina": 1.7
-		},
-		"result": {
-			"bones": "5~10",
-			"gold": "40~50"
-		},
-		"boss": {"100":[
-			"orcchief",
-			"ogre",
-			"ogre"
-		]},
-		"spawns": [
-			"ogre",
-			[
-				"bugbear",
-				"bugbear"
-			],
-			[
-				"giantspider",
-				"lgspider",
-				"lgspider",
-				"lgspider"
-			],
-			[
-				"ogre",
-				"warg",
-				"warg"
-			],
-			"orcwarrior",
-			[
-				"ogrewarrior",
-				"ogrewarrior"
-			],
-			"troll",
-			"minotaur",
-			[
-				"vampirebat",
-				"vampirebat",
-				"vampirebat"
-			],
-			[
-				"ogre",
-				"wolf",
-				"wolf",
-				"wolf"
-			],
-			"hillgiant",
-			"direbear",
-			"ettin",
-			"orcchief",
-			[
-				"orcpriest",
-				"ogre",
-				"ogre"
-			]
-		]
-	},
-	{
-		"id": "spidercave",
-		"name": "Skittering Caverns",
-		"desc": "The only treasures here, are those lost by adventurers searching for treasure.",
-		"require": "tier0",
-		"level": 7,
-		"run": {
-			"stamina": 1.2
-		},
-		"result": {
-			"title": "Spider Slayer",
-			"gold": "40~50"
-		},
-		"boss": "spiderqueen",
-		"spawns": [
-			"giantspider",
-			"kobold",
-			{
-				"ids": "jazid",
-				"weight": 0.1
-			},
-			[
-				"lgspider",
-				"lgspider"
-			],
-			"lgspider",
-			"lgspider",
-			"direbat"
-		]
-	},
-	{
-		"id": "aragwastes",
-		"name": "Arag Wastes",
-		"desc": "An arid plain stretching across Arazor from the Arag Heights.",
-		"require": "aragheights",
-		"level": 8,
-		"run": {
-			"stamina": 2
-		},
-		"boss": "roc",
-		"result": {
-			"gold": "20~30",
-			"bones": "3~7"
-		},
-		"spawns": [
-			"vulture",
-			"minotaur",
-			"orc",
-			"warg",
-			[
-				"vrrek",
-				"vrrek"
-			],
-			[
-				"m_scarab",
-				"m_scarab"
-			],
-			"bandit",
-			"wolf",
-			"sandmite",
-			"bugbear",
-			"hawk",
-			"goblin",
-			[
-				"vulture",
-				"vulture",
-				"vulture"
-			],
-			[
-				"coyote",
-				"coyote",
-				"coyote"
-			]
-		]
-	},
-	{
-		"id": "catacrypts",
-		"name": "The Catacrypts",
-		"desc": "Old Mirthemgnar dug its dungeons til they joined the hollows beneath the world. In terror they sealed them forever. Or so they tried.",
-		"require": [
-			"mtgorborung",
-			"tier3"
-		],
-		"level": 15,
-		"run": {
-			"stamina": 3
-		},
-		"length": 10000,
-		"result": {
-			"title": "Twice Born",
-			"fame": 3,
-			"gems": "30~50",
-			"gold": "1000~2000"
-		},
-		"biome": [
-			"cave",
-			"mountain"
-		],
-		"spawns": {
-			"level": "15~23",
-			"range": 2
-		},
-		"flavor": "Day and night the dark gates stand open to all... but to return to the open air... that is the task, that is the labor"
-	},
-	{
-		"id": "elementrift",
-		"name": "Elemental Rift",
-		"desc": "A tear in the fabric of reality leads to a land of raw elements.",
-		"require": "g.planeslore>=7",
-		"level": 12,
-		"run": {
-			"stamina": 4
-		},
-		"length": 50,
-		"result": {
-			"gems": "9~12",
-			"lightgem":3
-		},
-		"boss": "lightningelemental",
-		"spawns": [
-			"fireelemental",
-			"iceelemental",
-			"earthelemental",
-			"airelemental",
-			"lightningelemental"
-		]
-	},
-	{
-		"id": "temple of strativax",
-		"desc": "His acolytes fed the beast on offerings from a thousand leagues.",
-		"flavor": "Strativax curled up to nap. His temple fell to ruins, and the ages fled like leaves.",
-		"require": "g.scrying>=12&&g.history>=12",
-		"start": "You scry the location of an ancient ruined temple.",
-		"level": 20,
-		"length":3,
-		"boss": {
-			"1": "strativax1",
-			"2": "strativax2",
-			"3": "strativax3"
-		}
-	},
-	{
-		"id": "holyhall",
-		"name": "Hall of the Holy",
-		"desc": "Various divine spirits watch over the world. And the greatest have their halls and kingdoms.",
-		"require": "g.planeslore.max>=12&&g.evil>0",
-		"level": 17,
-		"length": 50,
-		"run": {
-			"stamina": 2
-		},
-		"result": {
-			"title": "Holy Defiler",
-			"evilamt": 10,
-			"gold": "150~275"
-		},
-		"boss": "archon",
-		"spawns": [
-			"angel",
-			[
-				"valkyrie",
-				"valkyrie"
-			],
-			[
-				"gryffon",
-				"gryffon"
-			],
-			"mithrilgolem",
-			"angel",
-			"firegolem",
-			[
-				"angel",
-				"angel"
-			],
-			[
-				"lightelem",
-				"lightelem",
-				"lightelem"
-			],
-			[
-				"roc",
-				"roc",
-				"roc"
-			],
-			[
-				"unicorn",
-				"unicorn"
-			],
-			[
-				"ghost",
-				"ghost",
-				"ghost"
-			],
-			[
-				"pegasus",
-				"pegasus",
-				"pegasus"
-			]
-		]
 	}
 ]

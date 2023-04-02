@@ -1,185 +1,280 @@
 [
 	{
-		"id": "karnivexcrown",
-		"name": "crown of karnivex",
-		"desc": "The conceits of Karnivex were without bounds.",
-		"slot": "head",
-		"unique": true,
-		"level": 7,
-		"enchants": 7,
-		"armor": 5,
+		"id": "tianlan_cloak",
+		"name": "天澜斗篷",
+		"desc": "从天澜国敌军处缴获的斗篷，看起来曾经属于天澜国某人。",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 2,
+		"slot": "back",
+		"name_keep": true,
+		"regular_perk": true,
 		"alter": {
 			"mod": {
-				"self.bonuses.fire": "5%",
-				"self.resist.fire": 10,
-				"self.resist.silence": 5,
-				"self.tohit": 1,
-				"rage.rate": 0.5
+				"self.hardiness": 0.1
 			}
+		},
+		"perk1": "tianlan_1",
+		"perk2": "tianlan_2",
+		"level": 5,
+		"enchants":0,
+		"sell": {
+			"money": 1000
 		}
 	},
 	{
-		"id": "veldranearring",
-		"name": "veldran's earring",
-		"desc": "A small blue stone with swirls of white.",
-		"unique": true,
-		"level": 5,
-		"enchants": 5,
+		"id": "mutengjia",
+		"name": "木藤甲",
+		"desc": "奇异木藤编制的护甲",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 15,
+		"slot": "chest",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.3
+			}
+		},
+		"perk1": "mutengjia_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "huoshangyaodai",
+		"name": "伤火护腰",
+		"desc": "火山深处找到的腰带",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 3,
+		"slot": "waist",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
+		"perk1": "huoshangyaodai_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "gentu_feet",
+		"name": "根土",
+		"desc": "穿上去难以移动",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 3,
+		"slot": "feet",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.25
+			}
+		},
+		"perk1": "gentu_feet_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "jinyijian",
+		"name": "金意剑",
+		"desc": "纯白金石天然形成的利器",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"kind": "gold",
+			"isweapon": true,
+			"damage": "29~30"
+		},
+		"alter": {
+			"mod": {
+				"self.tohit": 3
+			}
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "jinyijian_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "shuiliu_armor",
+		"name": "水流",
+		"desc": "由不断流动的水组成的护腿",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 7,
+		"slot": "shins",
+		"name_keep": true,
+		"regular_perk": true,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
+		"perk1": "shuiliu_armor_perk",
+		"level": 10,
+		"enchants":0,
+		"sell": {
+			"money": 200
+		}
+	},
+	{
+		"id": "blood_trinket",
+		"name": "血渍护身符",
+		"desc": "从渴血的野兽身上取下的护身符，沾满了血渍。\n在未见村，人们喜爱佩戴护身符驱散邪恶。",
+		"color": "#FFD700",
+		"type": "armor",
 		"armor": 1,
 		"slot": "trinket",
-		"alter": {
-			"mod": {
-				"water.rate": 0.1,
-				"self.resist.water": 5
-			}
-		}
-	},
-	{
-		"id": "ecdysiastwrap",
-		"name": "wraps of the ecdysiast",
-		"type": "armor",
-		"slot": "shins",
-		"material": "silk",
-		"level": 7,
-		"enchants": 7,
-		"desc": "Desilla awarded her servants with articles of apparel.",
-		"alter": {
-			"mod": {
-				"self.resist.paralysis": 10,
-				"charms.max": 1,
-				"charms.rate": 0.3
-			}
-		},
-		"flavor": "The awards however, were given sparingly."
-	},
-	{
-		"id": "lillitscord",
-		"name": "lillit's cord",
-		"type": "armor",
-		"slot": "waist",
-		"armor": 2,
-		"unique": true,
-		"level": 5,
-		"enchants": 5,
-		"desc": "Lillit was known for her soothing presence.",
-		"alter": {
-			"mod": {
-				"rage.rate": -0.25
-			}
-		}
-	},
-	{
-		"id": "botanistgloves",
-		"name": "gloves of the botanist",
-		"type": "armor",
-		"slot": "hands",
-		"material": "basiliskhide",
-		"armor": 5,
-		"enchants": 5,
-		"alter": {
-			"mod": {
-				"self.resist.poison": 10
-			}
-		}
-	},
-	{
-		"id": "jazidscompass",
-		"name": "jazid's compass",
-		"unique": true,
-		"level": 10,
-		"enchants": 10,
-		"desc": "What leads your way can lead to you.",
-		"type": "armor",
-		"slot": "neck",
-		"alter": {
-			"mod": {
-				"s_travel.max": 2,
-				"bf.rate": -0.5
-			}
-		},
-		"flavor": "Jazid always finds his compass."
-	},
-	{
-		"id": "patronring1",
-		"name": "ring of the patron",
-		"unique": true,
-		"material": "adamant",
-		"desc": "A trinket bestowed on mages embroiled in the world's affairs.",
-		"alter": {
-			"mod": {
-				"space.max": "1%"
-			}
-		}
-	},
-	{
-		"id": "icedagg",
-		"name": "icy dagger",
-		"material": "ice",
-		"enchants": 3,
-		"type": "weapon",
-		"tohit": 1,
-		"attack": {
-			"kind": "pierce",
-			"damage": "2~4",
-			"dot": {
-				"duration": 5,
-				"dmg": "1~3",
-				"name": "frosty",
-				"kind": "frost"
-			}
-		},
-		"cost": {
-			"gold": 20
-		},
-		"level": 3
-	},
-	{
-		"id": "tenwickstick",
-		"name": "tenwick's walking stick",
-		"level": 5,
-		"enchants": 5,
-		"unique": true,
-		"type": "weapon",
-		"material": "wood",
-		"alter": {
-			"mod": {
-				"unease.rate": "-5%",
-				"weary.rate": "-10%",
-				"dist": "5%"
-			}
-		},
-		"attack": {
-			"dmg": "5~10",
-			"kind": "blunt"
-		}
-	},
-	{
-		"id": "titanhammer",
-		"name": "titan's hammer",
-		"desc": "Wrought from unyielding adamant, it hums with the energies of the earth.",
-		"type": "weapon",
-		"attack": {
-			"kind": "blunt",
-			"damage": "40~50"
-		},
-		"alter": {
-			"mod": {
-				"earth.rate": 1,
-				"earth.max": 10,
-				"self.defense": 30,
-				"smite.attack.tohit": 5,
-				"smite.level": -2,
-				"smite.attack.damage": "20%",
-				"fissure.cd": "-25%",
-				"fissure.attack.dot.duration": 1
-			}
-		},
-		"hands": 2,
-		"tags": "hammer",
-		"level": 10,
-		"enchants":10,
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "blood_trinket_perk_1",
+		"perk2": "blood_trinket_perk_2",
+		"level": 35,
+		"enchants":0,
 		"sell": {
-			"gold": 1000
+			"money": 1000
+		}
+	},
+	{
+		"id": "silver_scale_wrister",
+		"name": "银鳞护腕",
+		"desc": "银蛇的鳞片制成的护腕。",
+		"color": "#FFD700",
+		"type": "hands",
+		"armor": 0,
+		"slot": "trinket",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "ssw_perk_1",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "back_homeland",
+		"name": "归国",
+		"desc": "我行远地，茫茫其雪。\n问于青白，何以决绝？",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"kind": "land",
+			"isweapon": true,
+			"bonus_class": 1,
+			"damage": "34~37"
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "back_homeland_perk_1",
+		"perk2": "back_homeland_perk_2",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "heavy_guben_sword",
+		"name": "沉重灭刃【AL-T】",
+		"desc": "巨大的刀刃，能对所有敌人同时造成伤害，同时重到难以想象....",
+		"equneed":"g.ALT>=1",
+		"color": "#FFD700",
+		"type": "weapon",
+		"attack": {
+			"id": "hgs_attack",
+			"name": "灭刃挥击",
+			"kind": "land",
+			"isweapon": true,
+			"targets": "enemies",
+			"damage": "42~56"
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "hgw_perk_1",
+		"perk2": "hgw_perk_2",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "stromagel_cloak",
+		"name": "风暴鹰斗篷",
+		"desc": "由风暴鹰的羽毛制成的斗篷，披上去感觉身体有点酥麻....",
+		"color": "#FFD700",
+		"type": "armor",
+		"slot": "back",
+		"alter": {
+			"mod": {
+				"elect.max": 10,
+				"self.defense": 3
+			}
+		},
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "electthrough",
+		"perk2": "stromagel_1",
+		"perk3": "stromagel_2",
+		"level": 10,
+		"enchants":2,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "zuoyanzhihuan",
+		"name": "灼焰之环【BASE】",
+		"desc": "这条火红的束带不断的往外吐出火舌，装备者虽不会被其伤害，但也会对火焰产生一些畏惧。",
+		"equneed":"g.base>=1",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 4,
+		"slot": "waist",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "zuoyanzhihuan_perk",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
+		}
+	},
+	{
+		"id": "sulingjingcui",
+		"name": "调谐晶粹【AL-T】",
+		"desc": "从调谐之灵处取得的晶粹，摸上去有些凉...",
+		"equneed":"g.ALT>=1",
+		"color": "#FFD700",
+		"type": "armor",
+		"armor": 1,
+		"slot": "trinket",
+		"name_keep": true,
+		"regular_perk": true,
+		"perk1": "sulingjingcui_perk",
+		"level": 35,
+		"enchants":0,
+		"sell": {
+			"money": 1000
 		}
 	}
 ]

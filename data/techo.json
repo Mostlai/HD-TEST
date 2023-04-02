@@ -156,7 +156,7 @@
 	},
 	{
 		"id": "techo_eng_assemble_1",
-		"name": "组装优化",
+		"name": "组装优化I",
 		"tags": "工程域",
 		"desc": "提高组装机的建造上限",
 		"require": "g.zhenzyyjjx>=1",
@@ -170,6 +170,25 @@
 		},
 		"mod":{
 			"factory_zuzhuangji.max": 25
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_assemble_2",
+		"name": "组装优化II",
+		"tags": "工程域",
+		"desc": "提高组装机的建造上限",
+		"require": "g.zhenzyyjjx>=1",
+		"research_need_point": 6000,
+		"run":{
+			"xuanmuye": 1,
+			"ind_water": 2,
+			"shenglingshi": 1,
+			"money": 300,
+			"ganwu": 100
+		},
+		"mod":{
+			"factory_zuzhuangji.max": 15
 		},
 		"max": 1
 	},
@@ -434,6 +453,79 @@
 		"mod":{
 			"speed_soulcore_pice.max": 10,
 			"spell_soulcore_pice.max": 10
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_soc_tm_1",
+		"name": "成果扩展",
+		"tags": "社会域",
+		"desc": "容纳更多的成果！",
+		"require": "g.xl_lj_konwledege_1>=1",
+		"research_need_point": 4000,
+		"run":{
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"mod":{
+			"normal_data_box.max": 15
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_zyzz_1",
+		"name": "专业性真直应用",
+		"tags": "工程域",
+		"desc": "解锁真直锭更广泛的运用，倾向于自动化技术",
+		"require": "g.xl_siwei_jxswei>=1",
+		"research_need_point": 5800,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"xuanmuye": 1,
+			"yinjing": 1,
+			"elect": 5,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_eng_yjyy_1",
+		"name": "专业性萤晶应用",
+		"tags": "工程域",
+		"desc": "解锁萤晶更广泛的运用，倾向于能量与空间控制",
+		"require": "g.xl_siwei_jxswei>=1",
+		"research_need_point": 5800,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"xuanmuye": 1,
+			"yinjing": 1,
+			"elect": 5,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"max": 1
+	},
+	{
+		"id": "techo_phy_sszdyy",
+		"name": "神识战斗应用",
+		"tags": "物理域",
+		"desc": "解锁神识法术",
+		"require": "g.xl_siwei_jxswei>=1",
+		"research_need_point": 200,
+		"run":{
+			"xuanmuye": 1,
+			"elect": 5,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
 		},
 		"max": 1
 	}

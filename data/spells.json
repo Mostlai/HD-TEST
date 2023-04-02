@@ -1,5 +1,134 @@
 [
 	{
+		"id": "e_phy_overload",
+		"name":"失去平衡",
+		"school": "越层效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "e_e_phy_overload",
+			"name": "失去平衡",
+			"desc":"当此状态存在时，每次造成的伤害降低15%。",
+			"duration": 1,
+			"dot_effect":{
+				"damage_scale":{
+					"num": 0.85
+				}
+			}
+		}
+	},
+	{
+		"id": "e_spe_overload",
+		"name":"法术冲击",
+		"school": "越层效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "e_e_spe_overload",
+			"name": "法术冲击",
+			"desc":"当此状态存在时，抗性效果下降20%。",
+			"duration": 1,
+			"dot_effect":{
+				"resist_mod_val":{
+					"num": -0.2
+				}
+			}
+		}
+	},
+	{
+		"id": "tiaoxie_perk_dot",
+		"name":"调谐晶粹效果",
+		"school": "效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "equip_txpd_tpd",
+			"name": "调谐",
+			"desc":"当此状态存在时，抗性效果上升5%。",
+			"duration": 10000,
+			"dot_effect":{
+				"resist_mod_val":{
+					"num": 0.05
+				}
+			}
+		}
+	},
+	{
+		"id": "zuoyanzhihuan_perk_dot",
+		"name":"灼焰之环效果",
+		"school": "效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "equip_zyzhpd_tpd",
+			"name": "灼焰",
+			"desc":"当此状态存在时，每被敌人攻击命中时，10%几率对敌人释放法术(灼魂),对敌人造成40%物理属性的基础武器伤害并尝试附加10s的烧伤状态。",
+			"duration": 10000,
+			"dot_effect":{
+				"cast_spell":{
+					"if": "bedmg",
+					"spell": "zuoyanzhihuan_perk_spell",
+					"num": 1,
+					"percent": 10
+				}
+			}
+		}
+	},
+	{
+		"id": "zuoyanzhihuan_perk_spell",
+		"name":"灼魂",
+		"school": "效果",
+		"level": 1,
+		"desc": "",
+		"locked": true,
+		"buy": {
+			"ganwu": 20
+		},
+		"cost": {
+			"tili": 1
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.weapon_bonus)*0.4",
+			"kind": "physical",
+			"bonus_class": 0,
+			"dot": {
+				"id": "syzhps_dot__bf",
+				"name": "烧伤",
+				"kind": "fire",
+				"duration": 10,
+				"damage": 20
+			}
+		}
+	},
+	{
 		"id": "heli_enchant_1",
 		"name": "合理之行",
 		"level": 1,
@@ -27,7 +156,7 @@
 		"id": "chaos_enchant_1",
 		"name": "混沌之行",
 		"level": 1,
-		"locked":true,
+		"require": "g.chaos>=1",
 		"school": "附魔",
 		"desc": "将混沌运用在躲闪上,这比合理更加难以琢磨",
 		"buy": {
@@ -61,11 +190,11 @@
 			"exe_paper": 1,
 			"zero_crystal":1
 		},
-		"flavor": "低能级....",
 		"cost": {
 			"heli": 2
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "3~5",
 			"dot": {
 				"kind": "heli",
@@ -79,7 +208,7 @@
 		"name": "混沌飞弹",
 		"tag":"低能级",
 		"level": 2,
-		"locked":true,
+		"require": "g.chaos>=1",
 		"school": "混沌",
 		"desc": "将混沌转化为纯粹的能量形式并发射出去",
 		"buy": {
@@ -89,11 +218,11 @@
 			"exe_paper": 2,
 			"zero_crystal":2
 		},
-		"flavor": "低能级....",
 		"cost": {
 			"chaos": 2
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "6~8"
 		}
 	},
@@ -250,6 +379,7 @@
 			"elect": 16
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "8~9",
 			"dot": {
 				"kind": "chaos",
@@ -262,7 +392,7 @@
 		"id": "solid_1",
 		"name": "召唤贴身侍卫",
 		"school": "人力",
-		"locked":true,
+		"require": "g.rlgl>=1",
 		"level": 5,
 		"buy": {
 			"human_power": 60,
@@ -279,7 +409,7 @@
 		"id": "solid_2",
 		"name": "召唤士兵",
 		"school": "人力",
-		"locked":true,
+		"require": "g.rlgl>=1",
 		"level": 5,
 		"buy": {
 			"human_power": 100,
@@ -298,7 +428,7 @@
 		"desc": "需要【白白鼠控制接口】",
 		"school": "生物",
 		"need": "g.bbskzjk>=1",
-		"locked":true,
+		"require": "g.quntizysw>=1",
 		"level": 5,
 		"cd": 10,
 		"buy": {
@@ -318,7 +448,7 @@
 		"desc": "需要【剑背龟控制接口】",
 		"school": "生物",
 		"need": "g.jbgckzjk>=1",
-		"locked":true,
+		"require": "g.quntifysw>=1",
 		"level": 5,
 		"cd": 10,
 		"buy": {
@@ -338,7 +468,7 @@
 		"desc": "需要【钳尾刀虫控制接口】",
 		"school": "生物",
 		"need": "g.qwdckzjk>=1",
-		"locked":true,
+		"require": "g.quntijgsw>=1",
 		"level": 5,
 		"cd": 10,
 		"buy": {
@@ -358,7 +488,7 @@
 		"desc": "需要【碎魂散列控制器】",
 		"school": "生物",
 		"need": "g.suihunslkzq>=1",
-		"locked":true,
+		"require": "g.fuhexsw>=1",
 		"level": 5,
 		"cd": 10,
 		"buy": {
@@ -388,7 +518,7 @@
 		"id": "wmgxj",
 		"name": "万木归心决[筑基]",
 		"school": "源泉",
-		"locked":true,
+		"require": "g.yqlife>=4",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -403,6 +533,7 @@
 		"attack": {
 			"damage": "16~22",
 			"kind": "wood",
+			"bonus_class": 1,
 			"dot": {
 				"kind": "wood",
 				"name": "万木[筑基]",
@@ -415,7 +546,7 @@
 		"id": "frjxf",
 		"name": "浮日净心法[筑基]",
 		"level": 5,
-		"locked":true,
+		"require": "g.yqlife>=4",
 		"school": "源泉",
 		"buy": {
 			"sp": 2,
@@ -446,7 +577,7 @@
 		"name": "破落化伤术[筑基]",
 		"level": 5,
 		"cd": 20,
-		"locked":true,
+		"require": "g.yqlife>=4",
 		"school": "源泉",
 		"buy": {
 			"sp": 2,
@@ -472,7 +603,7 @@
 		"name": "源灵障土法[筑基]",
 		"desc": "提高对木和土的抗性",
 		"level": 5,
-		"locked":true,
+		"require": "g.yqlife>=4",
 		"school": "源泉",
 		"buy": {
 			"sp": 2,
@@ -499,7 +630,7 @@
 		"name": "真水避火法[筑基]",
 		"desc": "提高对水和火的抗性",
 		"level": 5,
-		"locked":true,
+		"require": "g.jsnlx>=4",
 		"school": "真水",
 		"buy": {
 			"sp": 2,
@@ -525,7 +656,7 @@
 		"id": "ljzj",
 		"name": "雷诀[筑基]",
 		"school": "真水",
-		"locked":true,
+		"require": "g.jsnlx>=4",
 		"cd": 1,
 		"level": 5,
 		"buy": {
@@ -554,7 +685,7 @@
 		"name": "红极激光",
 		"desc":"",
 		"school": "激光",
-		"locked":true,
+		"require": "g.red_jgsys>=1",
 		"level": 7,
 		"buy": {
 			"money": 5
@@ -579,7 +710,7 @@
 		"name": "血色万华流",
 		"desc":"超高能红极激光造成的毁灭性打击",
 		"school": "激光",
-		"locked":true,
+		"require": "g.chaoshujujiao>=1",
 		"level": 9,
 		"buy": {
 			"red_jgsys": 1
@@ -605,7 +736,7 @@
 		"name": "长金破空[筑基]",
 		"desc": "勤加练习,越战越强",
 		"school": "锐金",
-		"locked":true,
+		"require": "g.jjclx>=4",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -640,6 +771,7 @@
 			}
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "3~5",
 			"tohit": 8,
 			"kind": "gold"
@@ -650,7 +782,7 @@
 		"name": "锐金之意[筑基]",
 		"desc": "大幅度降低敌人对金的抗性",
 		"school": "锐金",
-		"locked":true,
+		"require": "g.jjclx>=4",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -680,7 +812,7 @@
 		"name": "化金败木术[筑基]",
 		"desc": "提高对金和木的抗性",
 		"level": 5,
-		"locked":true,
+		"require": "g.jjclx>=4",
 		"school": "锐金",
 		"buy": {
 			"sp": 2,
@@ -706,7 +838,7 @@
 		"id": "yyj",
 		"name": "炎炎诀[筑基]",
 		"school": "真火",
-		"locked":true,
+		"require": "g.gwwlx>=4",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -719,6 +851,7 @@
 			"heli": 6
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "18~20",
 			"kind": "fire",
 			"dot": {
@@ -734,7 +867,7 @@
 		"name": "真火掩金法[筑基]",
 		"desc": "提高对火和金的抗性",
 		"level": 5,
-		"locked":true,
+		"require": "g.gwwlx>=4",
 		"school": "真火",
 		"buy": {
 			"sp": 2,
@@ -761,7 +894,7 @@
 		"name": "厚土抑水诀[筑基]",
 		"desc": "提高对土和水的抗性",
 		"level": 5,
-		"locked":true,
+		"require": "g.htgcx>=4",
 		"school": "厚土",
 		"buy": {
 			"sp": 2,
@@ -788,7 +921,7 @@
 		"name": "困兽术[筑基]",
 		"desc": "降低敌人的速度",
 		"school": "厚土",
-		"locked":true,
+		"require": "g.htgcx>=4",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -816,9 +949,9 @@
 	{
 		"id": "sgfszj",
 		"name": "死骨复苏[筑基]",
-		"desc": "从黄泉引导【三位】【黄泉灵体】帮助你作战",
+		"desc": "从黄泉引导三位【黄泉灵体】帮助你作战",
 		"school": "源泉",
-		"locked":true,
+		"require": "g.xiulian_eye_huangquan>=1",
 		"cd": 10,
 		"level": 5,
 		"buy": {
@@ -844,7 +977,7 @@
 		"name": "凝界歌于我",
 		"desc": "提高防御和速度",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.mima_xue>=3",
 		"level": 4,
 		"buy": {
 			"ganwu": 200,
@@ -869,7 +1002,7 @@
 		"id": "xclyt",
 		"name": "星辰落于天",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.mima_xue>=3",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -881,6 +1014,7 @@
 			"chaos": 10
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "18~20",
 			"kind": "chaos",
 			"dot": {
@@ -895,7 +1029,7 @@
 		"id": "bdjgk",
 		"name": "百代皆过客[筑基]",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.nolight_mishu>=2",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -907,6 +1041,7 @@
 			"chaos": 10
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "30~35",
 			"kind": "chaos",
 			"dot": {
@@ -922,7 +1057,7 @@
 		"name": "大梦如歌[筑基]",
 		"desc": "恢复自己",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.nolight_mishu>=2",
 		"level": 6,
 		"cd": 25,
 		"buy": {
@@ -948,7 +1083,7 @@
 		"name": "午夜无归[落日]",
 		"desc": "恢复自己",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.luorxiushi>=1 && g.zlssx>=2",
 		"level": 9,
 		"cd": 45,
 		"buy": {
@@ -974,7 +1109,7 @@
 		"name": "自然生灵[破道]",
 		"desc": "恢复自己",
 		"school": "合理",
-		"locked":true,
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
 		"level": 9,
 		"cd": 120,
 		"buy": {
@@ -998,7 +1133,7 @@
 		"id": "xkzspd",
 		"name": "星空震慑[破道]",
 		"school": "合理",
-		"locked":true,
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
 		"level": 9,
 		"buy": {
 			"sp": 2,
@@ -1020,7 +1155,7 @@
 		"name": "源知[破道]",
 		"desc": "大幅提高防御和感悟获取速度",
 		"school": "合理",
-		"locked":true,
+		"require": "g.podaoxius>=1 && g.zlssx>=2",
 		"level": 9,
 		"buy": {
 			"ganwu": 200,
@@ -1046,7 +1181,7 @@
 		"id": "zylr",
 		"name": "真夜[落日]",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.luorxiushi>=1 && g.zlssx>=2",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -1058,6 +1193,7 @@
 			"chaos": 10
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "52~61",
 			"kind": "chaos",
 			"dot": {
@@ -1073,7 +1209,7 @@
 		"name": "万草荒于沙",
 		"desc": "大幅度降低敌人对混沌和木的抗性",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.mima_xue>=3",
 		"level": 5,
 		"buy": {
 			"sp": 2,
@@ -1101,7 +1237,7 @@
 		"name": "流水送昼夜",
 		"desc": "恢复自己",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.mima_xue>=3",
 		"level": 6,
 		"buy": {
 			"sp": 2,
@@ -1130,7 +1266,7 @@
 		"id": "hwxlmx",
 		"name": "化物行理[命玄]",
 		"school": "合理",
-		"locked":true,
+		"require": "g.xiulian_lizu_wxyh>=1",
 		"level": 6,
 		"buy": {
 			"money": 100
@@ -1140,6 +1276,7 @@
 			"stamina": 1
 		},
 		"attack": {
+			"bonus_class": 1,
 			"damage": "43~48",
 			"kind": "wuhuan",
 			"dot": {
@@ -1152,9 +1289,9 @@
 	},
 	{
 		"id": "yqwks",
-		"name": "云气望空式[初归]",
+		"name": "云气望空式",
 		"school": "归藏",
-		"locked":true,
+		"require": "g.canglanxiezou>=1",
 		"level": 4,
 		"buy": {
 			"canglan": 3,
@@ -1169,7 +1306,7 @@
 			"kind": "body",
 			"dot": {
 				"kind": "body",
-				"name": "云气望空式[初归]",
+				"name": "云气望空式",
 				"duration": 1,
 				"damage": 14
 			}
@@ -1177,9 +1314,9 @@
 	},
 	{
 		"id": "cdfxs",
-		"name": "抽刀封隙式[初归]",
+		"name": "抽刀封隙式",
 		"school": "归藏",
-		"locked":true,
+		"require": "g.canglanxiezou>=1",
 		"level": 5,
 		"cd": 25,
 		"buy": {
@@ -1201,24 +1338,25 @@
 	},
 	{
 		"id": "lzgxs",
-		"name": "浪子归乡式[初归]",
-		"desc": "短时间内提升大里躲闪和速度",
+		"name": "浪子归乡式",
+		"desc": "短时间内提升大量躲闪和速度",
 		"school": "归藏",
-		"locked":true,
+		"require": "g.canglanxiezou>=1",
 		"level": 5,
+		"cd": 30,
 		"buy": {
 			"canglan": 3,
 			"huiguang": 3,
 			"huiguangzy": 1
 		},
 		"cost": {
-			"tili": 5,
-			"stamina": 25
+			"tili": 25,
+			"stamina": 7
 		},
 		"dot": {
 			"id": "lzgxsbf",
 			"name": "浪子归乡式",
-			"duration": 6,
+			"duration": 4,
 			"mod": {
 				"self": {
 					"dodge": 50,
@@ -1228,17 +1366,137 @@
 		}
 	},
 	{
+		"id": "assault_attack",
+		"name": "惊神斩击",
+		"desc": "快速冲向敌人,造成120%的基础武器伤害。如果此次攻击命中,那么目标会被恍惚10s(减少30躲闪和20命中)。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 7,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 12,
+			"stamina": 7
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.weapon_bonus)*1.2",
+			"kind": "body",
+			"bonus_class": 0,
+			"dot": {
+				"id": "assault_attack_bf",
+				"name": "恍惚",
+				"desc": "减少30躲闪和20命中",
+				"duration": 10,
+				"mod": {
+					"self": {
+						"dodge": -30,
+						"tohit": -20
+					}
+				}
+			}
+		}
+	},
+	{
+		"id": "accuracy_tohit",
+		"name": "精准打击",
+		"desc": "你集中精神攻击，减少你10%速度并增加你25点命中和9%物理暴击率。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 20,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 25,
+			"stamina": 7
+		},
+		"dot": {
+			"id": "accuracy_tohit_bf",
+			"name": "精准打击",
+			"desc": "你集中精神攻击，减少你10%速度并增加你25点命中和9%物理暴击率。",
+			"duration": 10000,
+			"mod": {
+				"self": {
+					"physical_critical": 9,
+					"speed": "-10%",
+					"tohit": 25
+				}
+			}
+		}
+	},
+	{
+		"id": "perfect_tohit",
+		"name": "完美打击",
+		"desc": "你已经学会专注你的攻击来命中目标,在10s内增加你的30点命中。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 20,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 20
+		},
+		"dot": {
+			"id": "perfect_tohit_bf",
+			"name": "完美打击",
+			"duration": 10,
+			"mod": {
+				"self": {
+					"tohit": 30
+				}
+			}
+		}
+	},
+	{
+		"id": "speed_up",
+		"name": "急速",
+		"desc": "通过严格的训练你已经学会在短时间内爆发你的速度，10s内提高你15速度。",
+		"school": "归藏",
+		"require": "g.guixuan>=1",
+		"level": 5,
+		"cd": 15,
+		"buy": {
+			"canglan": 3,
+			"huiguang": 3,
+			"huiguangzy": 1
+		},
+		"cost": {
+			"tili": 20
+		},
+		"dot": {
+			"id": "speed_up_bf",
+			"name": "急速",
+			"duration": 10,
+			"mod": {
+				"self": {
+					"speed": 15
+				}
+			}
+		}
+	},
+	{
 		"id": "blood_sum_1",
 		"name": "渴望血",
-		"desc":"消耗一颗血核碎片召唤【残缺的渴血野兽】",
+		"desc":"消耗0.3血核碎片召唤【残缺的渴血野兽】",
 		"school": "血术",
-		"locked":true,
+		"require": "g.xl_lj_blood_1>=1",
 		"level": 7,
 		"buy": {
-			"blood_soulcore_pice": 1,
+			"blood_soulcore_pice": 0.3,
 			"element_blood": 20,
 			"zhenhun_pice_1": 5,
-			"money": 3000
+			"money": 1000
 		},
 		"cost": {
 			"blood_soulcore_pice": 1
@@ -1250,7 +1508,7 @@
 		"name": "遗忘血",
 		"desc":"损失气血来获取气血恢复",
 		"school": "血术",
-		"locked":true,
+		"require": "g.xl_lj_blood_1>=1",
 		"level": 7,
 		"cd": 14,
 		"buy": {
@@ -1273,7 +1531,7 @@
 		"id": "smxue",
 		"name": "生命血",
 		"school": "血术",
-		"locked":true,
+		"require": "g.xl_lj_blood_1>=1",
 		"level": 7,
 		"buy": {
 			"zhenhun_pice_1": 5,
@@ -1302,7 +1560,7 @@
 		"level": 10,
 		"desc": "引导曾经的火惩罚每个人",
 		"cd": 10,
-		"locked":true,
+		"require": "g.xl_lj_zhenhun_12>=1",
 		"need": "g.heisezhist>=1",
 		"buy": {
 			"ganwu": 2000,
@@ -1346,7 +1604,7 @@
 		"level": 10,
 		"desc": "引导曾经的火治愈每个人",
 		"cd": 10,
-		"locked":true,
+		"require": "g.xl_lj_zhenhun_12>=1",
 		"need": "g.heisezhist>=1",
 		"buy": {
 			"ganwu": 2000,
@@ -1390,7 +1648,7 @@
 		"name": "狩魂场【狩魂】",
 		"desc": "激活狩魂场",
 		"school": "神机",
-		"locked":true,
+		"require": "g.kangjuxingzj>=1",
 		"need": "g.shouhun_chang>=1",
 		"level": 1,
 		"cd": 20,
@@ -1416,7 +1674,7 @@
 		"name": "碎魂注射【狩魂】",
 		"desc": "注射大量神经活性物质以恢复活力",
 		"school": "神机",
-		"locked":true,
+		"require": "g.zhushemokuai>=1",
 		"cd": 10,
 		"need": "g.jisu_zhushe>=1",
 		"buy": {
@@ -1488,8 +1746,9 @@
 			"land": 60
 		},
 		"attack": {
-			"tohit": -10,
+			"tohit": 100,
 			"damage": "252~310",
+			"bonus_class": 1,
 			"kind": "wuhuan",
 			"dot": {
 				"kind": "wuhuan",
@@ -1502,13 +1761,16 @@
 	{
 		"id": "yinyingmiansha",
 		"name": "阴影面纱",
-		"desc": "将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%",
+		"desc": "将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%。物理强度仅加成造成伤害百分比。",
 		"school": "混沌",
-		"locked":true,
+		"require": "g.xiulian_jj_jclr>=1",
 		"level": 5,
 		"cd": 60,
 		"buy": {
-			"ganwu": 2
+			"chaos": 20,
+			"money": 2000,
+			"paper": 100,
+			"sp": 1
 		},
 		"cost": {
 			"heli": 12,
@@ -1518,9 +1780,17 @@
 			"duration": 30,
 			"id": "effect_dark_mask",
 			"name": "阴影面纱",
-			"desc":"将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%",
-			"dmg_scale": 2,
-			"be_dmg_scale": 2.5,
+			"desc":"将自己融入于阴影中，在效果持续时间内，你的命中降低20，造成的伤害提高150%，受到的伤害提高250%。物理强度仅加成造成伤害百分比。",
+			"dot_effect":{
+				"damage_scale":{
+					"amsg": "于暗影中袭击!",
+					"num": 1.5,
+					"bonus_class": 0
+				},
+				"be_damage_scale":{
+					"num": 2.5
+				}
+			},
 			"mod": {
 				"self.tohit": -20
 			}
@@ -1570,6 +1840,168 @@
 		"attack": {
 			"damage": 1
 		}
+	},
+	{
+		"id": "shenshidun",
+		"name":"神识盾",
+		"school": "神识",
+		"level": 9,
+		"desc": "用神识保护自己。当受到伤害且伤害大于0时,如果神识大于10，则有10%几率转化10神识为50护盾。当此状态存在时，提高50护盾上限和降低10神识上限和降低3神识速率。",
+		"require": "g.techo_phy_sszdyy>=1",
+		"buy": {
+			"ganwu": 2000,
+			"ganwu": 2000,
+			"paper": 200,
+			"books": 50,
+			"jingdian": 20,
+			"super_mind": 20,
+			"sp": 3
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_shenshidun",
+			"name": "神识盾",
+			"duration": 10000,
+			"desc":"当受到伤害且伤害大于0时,如果神识大于10，则有10%几率转化10神识为50护盾。当此状态存在时，提高50护盾上限和降低10神识上限和降低3神识速率。",
+			"dot_effect":{
+				"shiled": {
+					"if": "bedmg",
+					"bonus_class": 1,
+					"num": 50,
+					"euse":{
+						"shenshi": 10
+					},
+					"amsg": "生成了一面护盾",
+					"percent": 10
+				}
+			},
+			"mod":{
+				"self.shiled_max": 50,
+				"shenshi.max": -10,
+				"shenshi.rate": -3
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "ruodianzhencha",
+		"name":"弱点侦察",
+		"school": "神识",
+		"level": 9,
+		"desc": "使用神识感知敌人弱点。当此状态存在时，物理暴击率和法术暴击率提高5%。",
+		"require": "g.techo_phy_sszdyy>=1",
+		"buy": {
+			"shenshi": 10,
+			"ganwu": 2000,
+			"paper": 200,
+			"books": 50,
+			"jingdian": 20,
+			"super_mind": 20,
+			"sp": 3
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_ruodianzhencha",
+			"name": "弱点侦察",
+			"desc":"当此状态存在时，物理暴击率和法术暴击率提高5%。",
+			"duration": 10000,
+			"duration": 10,
+			"mod": {
+				"self": {
+					"physical_critical": 5,
+					"spell_critical": 5
+				}
+			}
+		},
+		"dot_unused": {
+			"id": "effect_ruodianzhencha",
+			"name": "弱点侦察",
+			"desc":"当此状态存在时，每次造成的最终伤害有5%几率提高20%。",
+			"duration": 10000,
+			"dot_effect":{
+				"damage_scale":{
+					"amsg": "侦察到了弱点",
+					"num": 1.2,
+					"percent": 5,
+					"bonus_class": 1
+				}
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "sheshengtongji",
+		"name":"舍身痛击",
+		"school": "神识",
+		"level": 9,
+		"desc": "勇猛之姿。当此状态存在时，每次造成伤害时，有1%几率额外造成你55%气血上限的伤害，当对方的层级高于你时，触发几率提升至2%。此效果触发时，降低自身60气血。",
+		"locked": true,
+		"buy": {
+			"shenshi": 10,
+			"ganwu": 2000,
+			"paper": 200,
+			"books": 50,
+			"jingdian": 20,
+			"super_mind": 20,
+			"sp": 3
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_sheshengtongji",
+			"name": "舍身痛击",
+			"desc":"当此状态存在时，每次造成伤害时，有1%几率额外造成你55%气血上限的伤害，当对方的层级比你大于1时，触发几率提升至2%。此效果触发时，降低自身60气血。",
+			"duration": 10000,
+			"dot_effect":{
+				"damage_add_transfer":{
+					"target": "hp",
+					"brave": 1,
+					"brave_percent": 2,
+					"num": 0.55,
+					"percent": 1,
+					"euse":{
+						"hp": 60
+					},
+					"bonus_class": 1
+				}
+			}
+		},
+		"flavor": ""
+	},
+	{
+		"id": "overlord_symbol_1",
+		"name":"天誓",
+		"school": "神识",
+		"level": 1,
+		"desc": "霸王天誓，必承霸者之重。施法后，额外受到30%伤害，遇到的敌人将获得额外加强效果。敌人死亡后掉落稀有装备。",
+		"require": "g.xiulian_zhuji_2_1>=1",
+		"buy": {
+			"shenshi": 20
+		},
+		"cost": {
+			"shenshi": 10
+		},
+		"dot": {
+			"id": "effect_overlord_symbol_1",
+			"name": "天誓",
+			"desc":"霸王天誓，必承霸者之重。此效果存在时，额外受到30%伤害，遇到的敌人将获得额外加强效果。敌人死亡后掉落稀有装备。",
+			"duration": 10000,
+			"dot_effect":{
+				"be_damage_scale":{
+					"num": 1.3
+				}
+			},
+			"mod": {
+				"overlord_symbol.max": 1,
+				"overlord_symbol": 1
+			}
+		},
+		"flavor": ""
 	},
 	{
 		"id": "stam1",

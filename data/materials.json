@@ -100,7 +100,7 @@
 	},
 	{
 		"id": "stone",
-		"name": "石头",
+		"name": "石质",
 		"kind": "natural",
 		"weight": 3,
 		"level": 0,

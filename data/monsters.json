@@ -1,33 +1,31 @@
 [
 	{
 		"id": "m_solid_1",
-		"tags": "soldiers_1",
 		"name": "侍卫",
 		"level": 10,
-		"kind": "人力",
+		"kind": "humanoid/human/summoned",
 		"noproc": true,
 		"hp": 40,
 		"tohit": 10,
 		"defense": 7,
 		"attack": {
 			"name": "攻击",
-			"kind": "pierce",
+			"kind": "psychic",
 			"dmg": "10~20"
 		}
 	},
 	{
 		"id": "m_solid_2",
-		"tags": "soldiers_1",
 		"name": "士兵",
 		"level": 10,
-		"kind": "人力",
+		"kind": "humanoid/human/summoned",
 		"noproc": true,
 		"hp": 55,
 		"tohit": 10,
 		"defense": 10,
 		"attack": {
 			"name": "攻击",
-			"kind": "pierce",
+			"kind": "psychic",
 			"dmg": "15~20"
 		}
 	},
@@ -36,7 +34,7 @@
 		"name": "治愈鼠",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living/summoned",
 		"hp": 450,
 		"speed": 29,
 		"tohit": 33,
@@ -44,7 +42,8 @@
 		"attack": [
 			{
 				"name": "攻击",
-				"kind": "heli",
+				"bonus_class": 1,
+				"kind": "psychic",
 				"dmg": "30~50",
 				"targets": "enemies"
 			},
@@ -62,7 +61,7 @@
 		"name": "守御龟",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living/summoned",
 		"hp": 600,
 		"speed": 29,
 		"tohit": 33,
@@ -70,7 +69,7 @@
 		"attack": [
 			{
 				"name": "攻击",
-				"kind": "heli",
+				"kind": "psychic",
 				"dmg": "10~40",
 				"targets": "enemies"
 			},
@@ -91,7 +90,7 @@
 		"name": "猛攻螳螂",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living/summoned",
 		"hp": 300,
 		"speed": 45,
 		"tohit": 33,
@@ -99,7 +98,7 @@
 		"attack": [
 			{
 				"name": "攻击",
-				"kind": "heli",
+				"kind": "psychic",
 				"dmg": "89~100",
 				"targets": "enemies"
 			}
@@ -110,7 +109,7 @@
 		"name": "碎魂子个体",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "elementals/soul_form/summoned",
 		"hp": 200,
 		"speed": 39,
 		"tohit": 33,
@@ -118,7 +117,8 @@
 		"attack": [
 			{
 				"name": "攻击",
-				"kind": "heli",
+				"bonus_class": 1,
+				"kind": "psychic",
 				"dmg": "55~77",
 				"targets": "enemies"
 			},
@@ -146,14 +146,14 @@
 		"tags": "soldiers_1",
 		"name": "披甲士兵",
 		"level": 10,
-		"kind": "人力",
+		"kind": "humanoid/human",
 		"noproc": true,
 		"hp": 55,
 		"tohit": 10,
 		"defense": 20,
 		"attack": {
 			"name": "攻击",
-			"kind": "pierce",
+			"kind": "psychic",
 			"dmg": "15~20"
 		}
 	},
@@ -162,14 +162,14 @@
 		"tags": "soldiers_1",
 		"name": "重装士兵",
 		"level": 10,
-		"kind": "人力",
+		"kind": "humanoid/human",
 		"noproc": true,
 		"hp": 55,
 		"tohit": 10,
 		"defense": 30,
 		"attack": {
 			"name": "攻击",
-			"kind": "pierce",
+			"kind": "psychic",
 			"dmg": "20~25"
 		}
 	},
@@ -178,13 +178,13 @@
 		"name": "百夫长[筑基]",
 		"level": 25,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 140,
 		"tohit": 16,
 		"defense": 31,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "44~45"
 		},
 		"loot": {
@@ -197,15 +197,16 @@
 		"name": "雪国士兵",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 250,
 		"tohit": 16,
 		"defense": 22,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "55~56"
 		},
+		"shiled_max": 30,
 		"loot": {
 			"shenglingshi": 0.1,
 			"dirty_lingti": 0.3
@@ -216,15 +217,16 @@
 		"name": "雪国重甲士兵",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 250,
 		"tohit": 16,
 		"defense": 44,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "55~56"
 		},
+		"shiled_max": 30,
 		"loot": {
 			"shenglingshi": 0.1,
 			"dirty_lingti": 0.3
@@ -235,15 +237,16 @@
 		"name": "雪国长枪士兵",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 100,
 		"tohit": 99,
 		"defense": 0,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "66~67"
 		},
+		"shiled_max": 30,
 		"loot": {
 			"shenglingshi": 0.1,
 			"dirty_lingti": 0.3
@@ -254,14 +257,14 @@
 		"name": "雪国弓箭手",
 		"level": 35,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 55,
 		"speed": 55,
 		"tohit": 99,
 		"defense": 0,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "77~88"
 		},
 		"loot": {
@@ -274,17 +277,20 @@
 		"name": "逝去的将军",
 		"level": 40,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/undead",
+		"rank": 3,
 		"hp": 1500,
 		"speed": 55,
 		"tohit": 99,
 		"defense": 100,
 		"attack": {
 			"name": "攻击",
+			"bonus_class": 2,
 			"kind": "heli",
 			"dmg": "123~156"
 		},
 		"loot": {
+			"back_homeland": "8%",
 			"shenglingshi": 10,
 			"dirty_lingti": 10
 		}
@@ -294,13 +300,13 @@
 		"name": "未见村民",
 		"level": 37,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 180,
 		"tohit": 16,
 		"defense": 21,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "76~78"
 		},
 		"loot": {
@@ -314,13 +320,13 @@
 		"name": "未见狼",
 		"level": 37,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "beast/land_living",
 		"hp": 120,
 		"tohit": 16,
 		"defense": 22,
 		"attack": {
 			"name": "爪击",
-			"kind": "chaos",
+			"kind": "psychic",
 			"dmg": "76~78",
 			"dot": {
 				"kind": "chaos",
@@ -340,13 +346,13 @@
 		"name": "持盾村民",
 		"level": 37,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "humanoid/human",
 		"hp": 250,
 		"tohit": 99,
 		"defense": 44,
 		"attack": {
-			"name": "拍击",
-			"kind": "chaos",
+			"name": "盾击",
+			"kind": "psychic",
 			"dmg": "33~36"
 		},
 		"loot": {
@@ -360,13 +366,13 @@
 		"name": "咳血村民",
 		"level": 37,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "humanoid/human",
 		"hp": 60,
 		"tohit": 99,
 		"defense": 22,
 		"attack": {
 			"name": "剑击",
-			"kind": "chaos",
+			"kind": "psychic",
 			"dmg": "45~56",
 			"dot": {
 				"kind": "chaos",
@@ -386,15 +392,17 @@
 		"name": "渴血野兽",
 		"level": 40,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "beast/monstrosities",
+		"rank": 3,
 		"hp": 900,
 		"speed": 55,
-		"tohit": 99,
+		"tohit": 45,
 		"defense": 20,
 		"attack": [
 			{
 				"name": "渴血攻击",
-				"kind": "chaos",
+				"kind": "psychic",
+				"bonus_class": 1,
 				"dmg": "66~77",
 				"targets": "enemies"
 			},
@@ -411,7 +419,8 @@
 			},
 			{
 				"name": "深度伤口",
-				"kind": "chaos",
+				"kind": "psychic",
+				"bonus_class": 1,
 				"dmg": "10~15",
 				"dot": {
 					"kind": "chaos",
@@ -422,6 +431,7 @@
 			}
 		],
 		"loot": {
+			"blood_trinket": "15%",
 			"shenglingshi": 10,
 			"lxue": 15,
 			"money": 500
@@ -432,7 +442,8 @@
 		"name": "风暴鹰",
 		"level": 40,
 		"desc": "",
-		"kind": "elect",
+		"kind": "beast/monstrosities",
+		"rank": 3,
 		"hp": 850,
 		"speed": 33,
 		"tohit": 33,
@@ -441,6 +452,7 @@
 			{
 				"name": "风暴",
 				"kind": "elect",
+				"bonus_class": 1,
 				"dmg": "119~120",
 				"targets": "enemies"
 			},
@@ -457,6 +469,7 @@
 			}
 		],
 		"loot": {
+			"stromagel_cloak": "90%",
 			"shenglingshi": 10,
 			"lxue": 15,
 			"money": 500
@@ -467,7 +480,8 @@
 		"name": "丢失灵魂的人",
 		"level": 40,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/undead",
+		"rank": 2,
 		"hp": 1700,
 		"speed": 10,
 		"tohit": 33,
@@ -475,12 +489,14 @@
 		"attack": [
 			{
 				"name": "弃魂",
-				"kind": "heli",
+				"bonus_class": 1,
+				"kind": "chaos",
 				"dmg": "119~120",
 				"targets": "enemies"
 			},
 			{
 				"name": "弃魂",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "130~149",
 				"dot": {
@@ -500,10 +516,11 @@
 	},
 	{
 		"id": "sliver_snake",
-		"name": "银色蛇【五行抗性-60%】",
+		"name": "银色蛇",
 		"level": 40,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/monstrosities",
+		"rank": 2,
 		"hp": 3000,
 		"speed": 33,
 		"tohit": 33,
@@ -511,16 +528,16 @@
 		"attack": [
 			{
 				"name": "咬",
-				"kind": "heli",
+				"kind": "psychic",
 				"dmg": "119~120",
 				"targets": "enemies"
 			},
 			{
 				"name": "啃",
-				"kind": "heli",
+				"kind": "psychic",
 				"dmg": "130~149",
 				"dot": {
-					"kind": "heli",
+					"kind": "psychic",
 					"name": "流血",
 					"dmg": "10~17",
 					"duration": 10
@@ -557,6 +574,7 @@
 			}
 		],
 		"loot": {
+			"silver_scale_wrister": "10%",
 			"shenglingshi": 10,
 			"lxue": 15,
 			"money": 1000
@@ -574,19 +592,22 @@
 		"name": "渴血野兽【残】",
 		"level": 40,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "beast/monstrosities/summoned",
+		"rank": 2,
 		"hp": 650,
 		"tohit": 99,
 		"defense": 10,
 		"attack": [
 			{
 				"name": "渴血攻击",
-				"kind": "chaos",
+				"bonus_class": 1,
+				"kind": "psychic",
 				"dmg": "30~40",
 				"targets": "enemies"
 			},
 			{
 				"name": "毒雾",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "0~1",
 				"dot": {
@@ -598,7 +619,8 @@
 			},
 			{
 				"name": "深度伤口",
-				"kind": "chaos",
+				"bonus_class": 1,
+				"kind": "psychic",
 				"dmg": "10~15",
 				"dot": {
 					"kind": "chaos",
@@ -614,13 +636,14 @@
 		"name": "透明鱼",
 		"level": 37,
 		"desc": "",
-		"kind": "elect",
+		"kind": "beast/water_living",
 		"hp": 250,
 		"tohit": 16,
 		"defense": 4,
 		"attack": {
 			"name": "泡泡",
-			"kind": "elect",
+			"bonus_class": 1,
+			"kind": "water",
 			"dmg": "95~120"
 		},
 		"loot": {
@@ -634,13 +657,13 @@
 		"name": "带状鸟",
 		"level": 37,
 		"desc": "",
-		"kind": "elect",
+		"kind": "beast/sky_living",
 		"hp": 200,
 		"tohit": 16,
 		"defense": 44,
 		"attack": {
 			"name": "喙击",
-			"kind": "elect",
+			"kind": "psychic",
 			"dmg": "95~100"
 		},
 		"loot": {
@@ -654,12 +677,13 @@
 		"name": "闪电球",
 		"level": 37,
 		"desc": "",
-		"kind": "elect",
+		"kind": "elementals/water_living",
 		"hp": 60,
 		"tohit": 99,
 		"defense": 100,
 		"attack": {
 			"name": "闪电",
+			"bonus_class": 1,
 			"kind": "elect",
 			"dmg": "89~98",
 			"dot": {
@@ -680,7 +704,7 @@
 		"name": "弃书者",
 		"level": 37,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 250,
 		"shiled": 250,
 		"shiled_max": 250,
@@ -688,7 +712,7 @@
 		"defense": 83,
 		"attack": {
 			"name": "拍击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "55~57"
 		},
 		"loot": {
@@ -702,13 +726,14 @@
 		"name": "弃眷者",
 		"level": 37,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 500,
 		"tohit": 10,
 		"defense": -100,
 		"attack": {
 			"name": "弃眷",
-			"kind": "heli",
+			"bonus_class": 1,
+			"kind": "chaos",
 			"dmg": "160~170"
 		},
 		"loot": {
@@ -722,13 +747,13 @@
 		"name": "白狮",
 		"level": 37,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living",
 		"hp": 250,
 		"tohit": 99,
 		"defense": 25,
 		"attack": {
 			"name": "撕咬",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "67~77"
 		},
 		"loot": {
@@ -742,13 +767,13 @@
 		"name": "木鳞蛇",
 		"level": 37,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living",
 		"hp": 300,
 		"tohit": 99,
 		"defense": 25,
 		"attack": {
 			"name": "撕咬",
-			"kind": "heli",
+			"kind": "wood",
 			"dmg": "67~77"
 		},
 		"loot": {
@@ -766,13 +791,13 @@
 		"name": "金鳞蛇",
 		"level": 37,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living",
 		"hp": 300,
 		"tohit": 99,
 		"defense": 25,
 		"attack": {
 			"name": "撕咬",
-			"kind": "heli",
+			"kind": "gold",
 			"dmg": "67~77"
 		},
 		"loot": {
@@ -790,7 +815,7 @@
 		"name": "白衣人",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 400,
 		"speed": 10,
 		"tohit": 33,
@@ -798,7 +823,8 @@
 		"attack": [
 			{
 				"name": "落雪",
-				"kind": "heli",
+				"bonus_class": 1,
+				"kind": "water",
 				"dmg": "119~120",
 				"targets": "enemies"
 			},
@@ -823,6 +849,7 @@
 			{
 				"name": "静默",
 				"kind": "chaos",
+				"bonus_class": 1,
 				"dmg": "70~92",
 				"log": {
 					"%": "100%",
@@ -861,7 +888,7 @@
 		"name": "黑衣人",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
 		"hp": 400,
 		"speed": 10,
 		"tohit": 33,
@@ -869,6 +896,7 @@
 		"attack": [
 			{
 				"name": "黑火",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "129~130",
 				"targets": "enemies"
@@ -895,7 +923,7 @@
 		"name": "勿言",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "aberration/hyper_geology",
 		"hp": 400,
 		"speed": 50,
 		"tohit": 33,
@@ -903,6 +931,7 @@
 		"attack": [
 			{
 				"name": "无论",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "129~130",
 				"targets": "enemies"
@@ -931,7 +960,7 @@
 		"name": "勿视",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "aberration/hyper_geology",
 		"hp": 400,
 		"speed": 50,
 		"tohit": 33,
@@ -939,6 +968,7 @@
 		"attack": [
 			{
 				"name": "无观",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "129~130",
 				"targets": "enemies"
@@ -967,7 +997,7 @@
 		"name": "勿闻",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "aberration/hyper_geology",
 		"hp": 400,
 		"speed": 50,
 		"tohit": 33,
@@ -1003,7 +1033,8 @@
 		"name": "沉重灭轮",
 		"level": 44,
 		"desc": "见此奥秘！",
-		"kind": "heli",
+		"kind": "aberration/hyper_geology",
+		"rank": 3,
 		"hp": 4300,
 		"speed": 19,
 		"tohit": 200,
@@ -1017,6 +1048,7 @@
 			},
 			{
 				"name": "反河",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "50~730",
 				"targets": "enemies"
@@ -1044,6 +1076,7 @@
 			}
 		],
 		"loot": {
+			"heavy_guben_sword": "10%",
 			"gubenxianling": 9,
 			"shenglingshi": 10,
 			"lxue": 10,
@@ -1065,7 +1098,7 @@
 		"name": "山妖",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/fey",
 		"hp": 140,
 		"speed": 10,
 		"tohit": 33,
@@ -1073,7 +1106,7 @@
 		"attack": [
 			{
 				"name": "打击",
-				"kind": "heli",
+				"kind": "land",
 				"dmg": "129~130",
 				"targets": "enemies"
 			}
@@ -1089,7 +1122,7 @@
 		"name": "韧龟",
 		"level": 39,
 		"desc": "",
-		"kind": "heli",
+		"kind": "beast/land_living",
 		"hp": 350,
 		"speed": 10,
 		"tohit": 33,
@@ -1097,7 +1130,7 @@
 		"attack": [
 			{
 				"name": "打击",
-				"kind": "heli",
+				"kind": "land",
 				"dmg": "100~110",
 				"targets": "enemies"
 			}
@@ -1113,7 +1146,8 @@
 		"name": "无言歌者",
 		"level": 40,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
+		"rank": 3,
 		"hp": 3500,
 		"speed": 29,
 		"tohit": 33,
@@ -1121,12 +1155,14 @@
 		"attack": [
 			{
 				"name": "沉默",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "100~110",
 				"targets": "enemies"
 			},
 			{
 				"name": "哭泣",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "120~126",
 				"targets": "enemies"
@@ -1153,7 +1189,8 @@
 		"name": "白衣主唱者",
 		"level": 40,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
+		"rank": 3,
 		"hp": 1000,
 		"speed": 22,
 		"tohit": 33,
@@ -1161,12 +1198,14 @@
 		"attack": [
 			{
 				"name": "落雪",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "119~120",
 				"targets": "enemies"
 			},
 			{
 				"name": "落霜",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "119~120"
 			},
@@ -1229,7 +1268,8 @@
 		"name": "黑衣主唱者",
 		"level": 40,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
+		"rank": 3,
 		"hp": 1000,
 		"speed": 22,
 		"tohit": 33,
@@ -1239,12 +1279,14 @@
 			{
 				"name": "黑焰",
 				"kind": "fire",
+				"bonus_class": 1,
 				"dmg": "129~130",
 				"targets": "enemies"
 			},
 			{
 				"name": "黑焰",
 				"kind": "fire",
+				"bonus_class": 1,
 				"dmg": "129~130",
 				"targets": "enemies",
 				"dot": {
@@ -1276,14 +1318,15 @@
 		"name": "护阵使者[筑基]",
 		"level": 30,
 		"desc": "",
-		"kind": "heli",
+		"kind": "humanoid/human",
+		"rank": 2,
 		"hp": 400,
 		"tohit": 16,
 		"defense": 51,
 		"spells": "sgfszj",
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"kind": "psychic",
 			"dmg": "55~65"
 		},
 		"loot": {
@@ -1296,16 +1339,18 @@
 		"name": "先天生命[筑基]",
 		"level": 25,
 		"desc": "",
-		"kind": "heli",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 120,
 		"tohit": 16,
 		"defense": 31,
 		"attack": {
 			"name": "攻击",
-			"kind": "heli",
+			"bonus_class": 1,
+			"kind": "psychic",
 			"dmg": "44~46",
 			"dot": {
-				"kind": "heli",
+				"kind": "psychic",
 				"name": "疼痛",
 				"dmg": "5~7",
 				"duration": 3
@@ -1317,15 +1362,16 @@
 	},
 	{
 		"id": "hqsl_1",
-		"name": "黄泉灵体[木伤-木抗25%]",
+		"name": "黄泉灵体",
 		"level": 10,
-		"kind": "wood",
+		"kind": "undead/soul_form",
 		"noproc": true,
 		"hp": 35,
 		"tohit": 21,
 		"defense": 30,
 		"attack": {
 			"name": "嚎叫",
+			"bonus_class": 1,
 			"kind": "wood",
 			"dmg": "10~14"
 		},
@@ -1337,13 +1383,14 @@
 		"id": "smz",
 		"name": "黑色流体",
 		"level": 13,
-		"kind": "chaos",
+		"kind": "undead/beast",
 		"desc": "一团黑色的流体物质",
 		"hp": 20,
 		"tohit": 2,
 		"defense": 12,
 		"attack": {
 			"name": "包裹",
+			"bonus_class": 1,
 			"kind": "chaos",
 			"dmg": "3~4"
 		}
@@ -1353,12 +1400,13 @@
 		"name": "无影者",
 		"level": 15,
 		"desc": "没有影子",
-		"kind": "chaos",
+		"kind": "undead/beast",
 		"hp": 38,
 		"tohit": 8,
 		"defense": 18,
 		"attack": {
 			"name": "尖叫",
+			"bonus_class": 1,
 			"kind": "chaos",
 			"dmg": "3~4",
 			"dot": {
@@ -1374,12 +1422,13 @@
 		"name": "黑色浓雾",
 		"level": 15,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "undead/unshape",
 		"hp": 15,
 		"tohit": 8,
 		"defense": 3,
 		"attack": {
 			"name": "黑色浓雾",
+			"bonus_class": 1,
 			"kind": "chaos",
 			"dmg": "4~6",
 			"dot": {
@@ -1395,12 +1444,13 @@
 		"name": "死灵",
 		"level": 16,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "undead/unshape",
 		"hp": 20,
 		"tohit": 3,
 		"defense": 6,
 		"attack": {
 			"name": "攻击",
+			"bonus_class": 1,
 			"kind": "chaos",
 			"dmg": "4~8",
 			"dot": {
@@ -1419,13 +1469,14 @@
 		"name": "嚎叫者",
 		"level": 16,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "undead/beast",
 		"hp": 50,
 		"tohit": 3,
 		"defense": 15,
 		"attack": {
 			"name": "攻击",
-			"kind": "chaos",
+			"bonus_class": 1,
+			"kind": "psychic",
 			"dmg": "3~9",
 			"dot": {
 				"kind": "chaos",
@@ -1443,12 +1494,13 @@
 		"name": "不洁粘液",
 		"level": 16,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "undead/water_living",
 		"hp": 60,
 		"tohit": 3,
 		"defense": 20,
 		"attack": {
 			"name": "攻击",
+			"bonus_class": 1,
 			"kind": "chaos",
 			"dmg": "6~8",
 			"dot": {
@@ -1466,7 +1518,7 @@
 		"id": "huian_fashi",
 		"name": "晦暗法师[筑基]",
 		"level": 20,
-		"kind": "chaos",
+		"kind": "humanoid/human",
 		"desc": "像你一样的人",
 		"hp": 150,
 		"tohit": 10,
@@ -1480,6 +1532,7 @@
 			},
 			{
 				"name": "无光",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "20~25",
 				"dot": {
@@ -1500,7 +1553,7 @@
 		"id": "huian_fashi_1",
 		"name": "晦暗法师[筑基]",
 		"level": 36,
-		"kind": "chaos",
+		"kind": "humanoid/human",
 		"desc": "",
 		"hp": 350,
 		"tohit": 10,
@@ -1516,6 +1569,7 @@
 			{
 				"name": "无光",
 				"kind": "chaos",
+				"bonus_class": 1,
 				"dmg": "60~75",
 				"dot": {
 					"kind": "chaos",
@@ -1535,7 +1589,8 @@
 		"id": "huian_fashi_2",
 		"name": "虚幻法师[筑基]",
 		"level": 36,
-		"kind": "heli",
+		"kind": "humanoid/human",
+		"rank": 2,
 		"desc": "",
 		"hp": 350,
 		"tohit": 10,
@@ -1544,12 +1599,14 @@
 		"attack": [
 			{
 				"name": "光",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "60~75",
 				"targets": "enemies"
 			},
 			{
 				"name": "光",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "60~75",
 				"dot": {
@@ -1561,12 +1618,14 @@
 			},
 			{
 				"name": "无光",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "60~75",
 				"targets": "enemies"
 			},
 			{
 				"name": "无光",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "60~75",
 				"dot": {
@@ -1588,7 +1647,8 @@
 		"id": "huian_fashi_3",
 		"name": "构造法师[筑基]",
 		"level": 36,
-		"kind": "heli",
+		"kind": "humanoid/human",
+		"rank": 2,
 		"desc": "",
 		"hp": 600,
 		"tohit": 10,
@@ -1597,6 +1657,7 @@
 		"attack": [
 			{
 				"name": "光",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "60~75",
 				"targets": "enemies"
@@ -1624,16 +1685,16 @@
 		"name": "水鬼",
 		"level": 13,
 		"desc": "",
-		"kind": "chaos",
+		"kind": "humanoid/water_living",
 		"hp": 19,
 		"tohit": 3,
 		"defense": 8,
 		"attack": {
 			"name": "攻击",
-			"kind": "chaos",
+			"kind": "water",
 			"dmg": "5~7",
 			"dot": {
-				"kind": "chaos",
+				"kind": "water",
 				"name": "窒息",
 				"dmg": "1~2",
 				"duration": 10
@@ -1648,7 +1709,7 @@
 		"name": "木灵",
 		"level": 15,
 		"desc": "",
-		"kind": "wood",
+		"kind": "elementals/humanoid",
 		"hp": 19,
 		"tohit": 3,
 		"defense": 8,
@@ -1672,7 +1733,7 @@
 		"name": "阴暗飞虫",
 		"level": 15,
 		"desc": "",
-		"kind": "wood",
+		"kind": "insect/land_living",
 		"hp": 30,
 		"tohit": 3,
 		"defense": 15,
@@ -1690,7 +1751,7 @@
 		"name": "小鬼",
 		"level": 15,
 		"desc": "",
-		"kind": "wood",
+		"kind": "beast/land_living",
 		"hp": 22,
 		"tohit": 3,
 		"defense": 15,
@@ -1707,7 +1768,7 @@
 		"id": "small_tree_man",
 		"name": "小树人",
 		"level": 15,
-		"kind": "wood",
+		"kind": "humanoid/plant",
 		"desc": "小型的树人",
 		"hp": 60,
 		"tohit": 10,
@@ -1715,6 +1776,7 @@
 		"attack": [
 			{
 				"name": "树木",
+				"bonus_class": 1,
 				"kind": "wood",
 				"dmg": "14~16",
 				"targets": "enemies"
@@ -1731,7 +1793,7 @@
 		"name": "山猿",
 		"level": 15,
 		"desc": "",
-		"kind": "gold",
+		"kind": "beast/land_living",
 		"hp": 30,
 		"tohit": 3,
 		"defense": 15,
@@ -1748,7 +1810,7 @@
 		"id": "yanj",
 		"name": "岩精",
 		"level": 15,
-		"kind": "gold",
+		"kind": "elementals/beast",
 		"desc": "",
 		"hp": 50,
 		"tohit": 10,
@@ -1769,7 +1831,7 @@
 		"id": "huoj",
 		"name": "火精",
 		"level": 15,
-		"kind": "fire",
+		"kind": "elementals/beast",
 		"desc": "",
 		"hp": 50,
 		"tohit": 10,
@@ -1777,6 +1839,7 @@
 		"attack": [
 			{
 				"name": "火焰",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "15~18",
 				"targets": "enemies"
@@ -1790,7 +1853,7 @@
 		"id": "fireb",
 		"name": "炎雀",
 		"level": 15,
-		"kind": "fire",
+		"kind": "beast/sky_living",
 		"desc": "",
 		"hp": 40,
 		"tohit": 10,
@@ -1798,6 +1861,7 @@
 		"attack": [
 			{
 				"name": "火羽",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "12~19",
 				"targets": "enemies"
@@ -1811,7 +1875,7 @@
 		"id": "hls",
 		"name": "火灵",
 		"level": 20,
-		"kind": "fire",
+		"kind": "elementals/beast",
 		"desc": "",
 		"hp": 50,
 		"tohit": 10,
@@ -1819,6 +1883,7 @@
 		"attack": [
 			{
 				"name": "火焰",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "20~22",
 				"targets": "enemies"
@@ -1843,7 +1908,7 @@
 		"id": "syu",
 		"name": "大鱼",
 		"level": 15,
-		"kind": "water",
+		"kind": "beast/water_living",
 		"desc": "",
 		"hp": 40,
 		"tohit": 10,
@@ -1851,6 +1916,7 @@
 		"attack": [
 			{
 				"name": "拍击",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "12~19",
 				"targets": "enemies"
@@ -1864,7 +1930,7 @@
 		"id": "waterj",
 		"name": "水精",
 		"level": 15,
-		"kind": "water",
+		"kind": "beast/water_living",
 		"desc": "",
 		"hp": 40,
 		"tohit": 10,
@@ -1872,6 +1938,7 @@
 		"attack": [
 			{
 				"name": "浪花",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "15~17",
 				"targets": "enemies"
@@ -1885,7 +1952,7 @@
 		"id": "wggg",
 		"name": "移动石块",
 		"level": 15,
-		"kind": "land",
+		"kind": "elementals/land_living",
 		"desc": "",
 		"hp": 40,
 		"tohit": 10,
@@ -1906,7 +1973,7 @@
 		"id": "tuj",
 		"name": "土精",
 		"level": 15,
-		"kind": "land",
+		"kind": "elementals/land_living",
 		"desc": "",
 		"hp": 40,
 		"tohit": 10,
@@ -1927,7 +1994,7 @@
 		"id": "sls",
 		"name": "水灵",
 		"level": 20,
-		"kind": "water",
+		"kind": "elementals/water_living",
 		"desc": "",
 		"hp": 60,
 		"tohit": 10,
@@ -1935,12 +2002,14 @@
 		"attack": [
 			{
 				"name": "水流",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "18~20",
 				"targets": "enemies"
 			},
 			{
 				"name": "大水",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "20~22",
 				"dot": {
@@ -1959,7 +2028,7 @@
 		"id": "tls",
 		"name": "地灵龟",
 		"level": 20,
-		"kind": "land",
+		"kind": "beast/land_living",
 		"desc": "",
 		"hp": 70,
 		"tohit": 10,
@@ -1991,7 +2060,7 @@
 		"id": "fjian",
 		"name": "飞剑",
 		"level": 20,
-		"kind": "gold",
+		"kind": "constructs",
 		"desc": "",
 		"hp": 50,
 		"tohit": 10,
@@ -2023,7 +2092,8 @@
 		"id": "tree_man",
 		"name": "沉寂树人[筑基]",
 		"level": 20,
-		"kind": "wood",
+		"kind": "humanoid/plant",
+		"rank": 2,
 		"desc": "巨大的树人,颤抖的大地",
 		"hp": 200,
 		"tohit": 10,
@@ -2031,12 +2101,14 @@
 		"attack": [
 			{
 				"name": "树木",
+				"bonus_class": 1,
 				"kind": "wood",
 				"dmg": "20~22",
 				"targets": "enemies"
 			},
 			{
 				"name": "百年木",
+				"bonus_class": 1,
 				"kind": "wood",
 				"dmg": "22~29",
 				"dot": {
@@ -2054,10 +2126,51 @@
 		}
 	},
 	{
+		"id": "tree_man_big",
+		"name": "巨型树人[筑基]",
+		"level": 25,
+		"kind": "humanoid/plant",
+		"rank": 2,
+		"desc": "巨大的树人,颤抖的大地",
+		"hp": 200,
+		"tohit": 10,
+		"defense": 40,
+		"shape": 15,
+		"attack": [
+			{
+				"name": "树木",
+				"bonus_class": 1,
+				"kind": "wood",
+				"dmg": "28~32",
+				"targets": "enemies"
+			},
+			{
+				"name": "百年木",
+				"bonus_class": 1,
+				"kind": "wood",
+				"dmg": "22~29",
+				"dot": {
+					"kind": "wood",
+					"name": "震撼",
+					"dmg": "6~9",
+					"duration": 5
+				}
+			}
+		],
+		"loot": {
+			"mutengjia": "10%",
+			"zero_crystal": 4,
+			"lxue": 5,
+			"yqlm": 5
+		}
+	},
+
+	{
 		"id": "mujie_1",
-		"name": "木劫[筑基-弱金]",
+		"name": "木劫",
 		"level": 20,
-		"kind": "wood",
+		"kind": "elementals/world_mind",
+		"rank": 3,
 		"desc": "源泉",
 		"hp": 1700,
 		"tohit": 10,
@@ -2065,6 +2178,7 @@
 		"attack": [
 			{
 				"name": "源泉震撼",
+				"bonus_class": 1,
 				"kind": "wood",
 				"dmg": "100~160",
 				"targets": "enemies"
@@ -2092,9 +2206,10 @@
 	},
 	{
 		"id": "huojie_1",
-		"name": "火劫[筑基-弱水]",
+		"name": "火劫",
 		"level": 20,
-		"kind": "fire",
+		"kind": "elementals/world_mind",
+		"rank": 3,
 		"desc": "真火",
 		"hp": 1300,
 		"tohit": 16,
@@ -2102,6 +2217,7 @@
 		"attack": [
 			{
 				"name": "真火震撼",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "120~160",
 				"targets": "enemies"
@@ -2129,9 +2245,10 @@
 	},
 	{
 		"id": "tujie_1",
-		"name": "土劫[筑基-弱木]",
+		"name": "土劫",
 		"level": 20,
-		"kind": "land",
+		"kind": "elementals/world_mind",
+		"rank": 3,
 		"desc": "厚土",
 		"hp": 2500,
 		"tohit": 20,
@@ -2169,9 +2286,10 @@
 	},
 	{
 		"id": "jinjie_1",
-		"name": "金劫[筑基-弱火]",
+		"name": "金劫",
 		"level": 20,
-		"kind": "gold",
+		"kind": "elementals/world_mind",
+		"rank": 3,
 		"desc": "锐金",
 		"hp": 1000,
 		"tohit": 50,
@@ -2206,9 +2324,10 @@
 	},
 	{
 		"id": "shuijie_1",
-		"name": "水劫[筑基-弱土]",
+		"name": "水劫",
 		"level": 20,
-		"kind": "water",
+		"kind": "elementals/world_mind",
+		"rank": 3,
 		"desc": "真水",
 		"hp": 2500,
 		"tohit": 10,
@@ -2216,6 +2335,7 @@
 		"attack": [
 			{
 				"name": "汪洋",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "60~71",
 				"targets": "enemies"
@@ -2250,7 +2370,8 @@
 		"id": "wuxiangmo",
 		"name": "无相真魔[筑基]",
 		"level": 20,
-		"kind": "chaos",
+		"kind": "humanoid/world_mind",
+		"rank": 3,
 		"desc": "混沌表示",
 		"hp": 3000,
 		"tohit": 10,
@@ -2283,7 +2404,8 @@
 		"id": "wuxiangling",
 		"name": "无相真灵[筑基]",
 		"level": 20,
-		"kind": "heli",
+		"kind": "humanoid/world_mind",
+		"rank": 3,
 		"desc": "合理表示",
 		"hp": 3000,
 		"tohit": 10,
@@ -2291,12 +2413,14 @@
 		"attack": [
 			{
 				"name": "至始",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "40~50",
 				"targets": "enemies"
 			},
 			{
 				"name": "至终",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "0~1",
 				"dot": {
@@ -2316,7 +2440,8 @@
 		"id": "shengmen_1",
 		"name": "生门[命玄]",
 		"level": 29,
-		"kind": "heli",
+		"kind": "unshape/world_mind",
+		"rank": 3,
 		"desc": "生表示",
 		"hp": 10000,
 		"tohit": 50,
@@ -2339,7 +2464,8 @@
 		"id": "simen_1",
 		"name": "死门[落日]",
 		"level": 29,
-		"kind": "chaos",
+		"kind": "unshape/world_mind",
+		"rank": 3,
 		"desc": "死表示",
 		"hp": 4000,
 		"tohit": 50,
@@ -2348,6 +2474,7 @@
 		"attack": [
 			{
 				"name": "死亡边缘",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "64~65",
 				"targets": "enemies"
@@ -2362,7 +2489,8 @@
 		"id": "yueshengshike_1",
 		"name": "跃升时刻",
 		"level": 29,
-		"kind": "holy",
+		"kind": "unshape/world_mind",
+		"rank": 3,
 		"desc": "",
 		"hp": 20000,
 		"tohit": 1000,
@@ -2422,7 +2550,8 @@
 		"id": "zhenyang",
 		"name": "真阳[筑基]",
 		"level": 20,
-		"kind": "sun",
+		"kind": "unshape/world_mind",
+		"rank": 3,
 		"desc": "他是真阳",
 		"hp": 8000,
 		"tohit": 10,
@@ -2430,6 +2559,7 @@
 		"attack": [
 			{
 				"name": "真水",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "30~35",
 				"dot": {
@@ -2441,6 +2571,7 @@
 			},
 			{
 				"name": "真火",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "30~35",
 				"dot": {
@@ -2463,6 +2594,7 @@
 			},
 			{
 				"name": "源泉",
+				"bonus_class": 1,
 				"kind": "wood",
 				"dmg": "30~35",
 				"dot": {
@@ -2493,7 +2625,8 @@
 		"id": "luor",
 		"name": "落日[筑基]",
 		"level": 20,
-		"kind": "sun",
+		"kind": "unshape/world_mind",
+		"rank": 3,
 		"desc": "他是落日",
 		"hp": 8000,
 		"tohit": 10,
@@ -2501,6 +2634,7 @@
 		"attack": [
 			{
 				"name": "至始",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "30~35",
 				"dot": {
@@ -2512,6 +2646,7 @@
 			},
 			{
 				"name": "至终",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "30~35",
 				"dot": {
@@ -2553,22 +2688,24 @@
 		"id": "gold_man",
 		"name": "金石傀儡[筑基]",
 		"level": 20,
-		"kind": "gold",
+		"kind": "constructs/humanoid",
 		"desc": "神秘的庞大傀儡,没人知道是谁建造的",
+		"rank": 2,
 		"hp": 160,
+		"shape": 15,
 		"tohit": 10,
 		"defense": 40,
 		"attack": [
 			{
 				"name": "猛砸",
-				"kind": "gold",
+				"kind": "psychic",
 				"dmg": "20~22",
 				"targets": "enemies"
 			},
 			{
 				"name": "锐利之意",
 				"kind": "gold",
-				"dmg": "0~1",
+				"dmg": "10~11",
 				"dot": {
 					"kind": "gold",
 					"name": "锐利伤痕",
@@ -2578,6 +2715,7 @@
 			}
 		],
 		"loot": {
+			"jinyijian": "10%",
 			"zero_crystal": 10,
 			"cbjs": 6
 		}
@@ -2586,20 +2724,23 @@
 		"id": "fire_bird",
 		"name": "火羽鸟[筑基]",
 		"level": 17,
-		"kind": "fire",
+		"kind": "beast/sky_living",
 		"desc": "浑身散发着火焰的危险鸟类",
+		"rank": 2,
 		"hp": 100,
 		"tohit": 10,
 		"defense": 28,
 		"attack": [
 			{
 				"name": "灼烧",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "22~26",
 				"targets": "enemies"
 			},
 			{
 				"name": "黄炎",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "7~39",
 				"dot": {
@@ -2618,11 +2759,51 @@
 		}
 	},
 	{
+		"id": "fire_bird_big",
+		"name": "烈羽鸟[筑基]",
+		"level": 22,
+		"kind": "beast/sky_living",
+		"desc": "浑身散发着火焰的危险鸟类",
+		"rank": 2,
+		"hp": 160,
+		"tohit": 27,
+		"defense": 28,
+		"attack": [
+			{
+				"name": "灼烧",
+				"bonus_class": 1,
+				"kind": "fire",
+				"dmg": "26~32",
+				"targets": "enemies"
+			},
+			{
+				"name": "黄炎",
+				"bonus_class": 1,
+				"kind": "fire",
+				"dmg": "7~39",
+				"dot": {
+					"kind": "fire",
+					"name": "炎",
+					"dmg": "10~10",
+					"duration": 20
+				}
+			}
+		],
+		"loot": {
+			"huoshangyaodai": "10%",
+			"zero_crystal": 10,
+			"lxue": 2,
+			"snp_data": 9,
+			"yxls": 6
+		}
+	},
+	{
 		"id": "tu_bird",
 		"name": "古老岩雀[筑基]",
 		"level": 17,
-		"kind": "land",
+		"kind": "beast/sky_living",
 		"desc": "有着坚硬无比的羽毛",
+		"rank": 2,
 		"hp": 200,
 		"tohit": 10,
 		"defense": 25,
@@ -2653,10 +2834,48 @@
 		}
 	},
 	{
+		"id": "tu_bird_big",
+		"name": "原始岩雀[筑基]",
+		"level": 25,
+		"kind": "beast/sky_living",
+		"desc": "有着坚硬无比的羽毛",
+		"rank": 2,
+		"hp": 300,
+		"tohit": 10,
+		"defense": 25,
+		"attack": [
+			{
+				"name": "土壤掩埋",
+				"kind": "land",
+				"dmg": "32~44",
+				"targets": "enemies"
+			},
+			{
+				"name": "厚土",
+				"kind": "land",
+				"dmg": "22~29",
+				"dot": {
+					"kind": "land",
+					"name": "窒息",
+					"dmg": "2~13",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"gentu_feet": "15%",
+			"zero_crystal": 10,
+			"lxue": 2,
+			"snp_data": 9,
+			"zdht": 6
+		}
+	},
+	{
 		"id": "lake_wheel",
 		"name": "洪泽巨鱼[筑基]",
 		"level": 17,
-		"kind": "chaos",
+		"kind": "monstrosities/water_living",
+		"rank": 2,
 		"desc": "大泽中的大鱼",
 		"hp": 150,
 		"tohit": 10,
@@ -2664,12 +2883,13 @@
 		"attack": [
 			{
 				"name": "压迫",
-				"kind": "water",
+				"kind": "psychic",
 				"dmg": "12~12",
 				"targets": "enemies"
 			},
 			{
 				"name": "洪泽水流",
+				"bonus_class": 1,
 				"kind": "water",
 				"dmg": "10~20",
 				"dot": {
@@ -2681,6 +2901,7 @@
 			}
 		],
 		"loot": {
+			"shuiliu_armor": "10%",
 			"zero_crystal": 10,
 			"lxue": 2,
 			"snp_data": 9,
@@ -2691,7 +2912,7 @@
 		"id": "river_wheel",
 		"name": "荒芜鲸[筑基]",
 		"level": 17,
-		"kind": "chaos",
+		"kind": "monstrosities/water_living",
 		"desc": "庞大的鱼,生活在荒芜大河中",
 		"hp": 100,
 		"tohit": 10,
@@ -2699,12 +2920,13 @@
 		"attack": [
 			{
 				"name": "压迫",
-				"kind": "chaos",
+				"kind": "psychic",
 				"dmg": "12~12",
 				"targets": "enemies"
 			},
 			{
 				"name": "荒芜水流",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "10~20",
 				"dot": {
@@ -2726,7 +2948,7 @@
 		"id": "hanhai_youl",
 		"name": "瀚海幽灵[筑基]",
 		"level": 25,
-		"kind": "chaos",
+		"kind": "monstrosities/undead",
 		"desc": "",
 		"hp": 280,
 		"tohit": 10,
@@ -2734,12 +2956,14 @@
 		"attack": [
 			{
 				"name": "压迫",
-				"kind": "chaos",
+				"bonus_class": 1,
+				"kind": "psychic",
 				"dmg": "12~12",
 				"targets": "enemies"
 			},
 			{
 				"name": "瀚海",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "10~20",
 				"dot": {
@@ -2761,7 +2985,8 @@
 		"id": "hanhai_juxiang",
 		"name": "瀚海巨象[筑基]",
 		"level": 25,
-		"kind": "chaos",
+		"kind": "monstrosities/land_living",
+		"rank": 2,
 		"desc": "",
 		"hp": 500,
 		"tohit": 40,
@@ -2769,13 +2994,13 @@
 		"attack": [
 			{
 				"name": "碾压",
-				"kind": "chaos",
+				"kind": "psychic",
 				"dmg": "31~37",
 				"targets": "enemies"
 			},
 			{
 				"name": "瀚海",
-				"kind": "chaos",
+				"kind": "land",
 				"dmg": "23~29",
 				"dot": {
 					"kind": "chaos",
@@ -2797,7 +3022,7 @@
 		"id": "dreamloot",
 		"name": "归梦者",
 		"level": 15,
-		"kind": "chaos",
+		"kind": "humanoid/human",
 		"desc": "从底层梦境返回现实的神秘人",
 		"hp": 55,
 		"tohit": 10,
@@ -2805,12 +3030,14 @@
 		"attack": [
 			{
 				"name": "合理飞弹",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "5~12",
 				"targets": "enemies"
 			},
 			{
 				"name": "混沌飞弹",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "10~20"
 			}
@@ -2826,7 +3053,8 @@
 		"name": "灼魂",
 		"level": 38,
 		"desc": "",
-		"kind": "body",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 1800,
 		"speed": 22,
 		"tohit": 200,
@@ -2834,6 +3062,7 @@
 		"attack": [
 			{
 				"name": "灼神",
+				"bonus_class": 1,
 				"kind": "body",
 				"dmg": "150~220",
 				"targets": "enemies"
@@ -2865,7 +3094,8 @@
 		"name": "灼魂之灵",
 		"level": 38,
 		"desc": "",
-		"kind": "body",
+		"kind": "elementals/soul_form",
+		"rank": 3,
 		"hp": 2500,
 		"speed": 22,
 		"tohit": 200,
@@ -2886,6 +3116,7 @@
 			}
 		],
 		"loot": {
+			"zuoyanzhihuan": "20%",
 			"body_soulcore_pice":0.3,
 			"hunti_core": 7,
 			"shenglingshi": 10,
@@ -2904,7 +3135,8 @@
 		"name": "共位之灾",
 		"level": 38,
 		"desc": "",
-		"kind": "heli",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 1700,
 		"speed": 22,
 		"tohit": 200,
@@ -2912,6 +3144,7 @@
 		"attack": [
 			{
 				"name": "合害",
+				"bonus_class": 1,
 				"kind": "heli",
 				"dmg": "150~220",
 				"targets": "enemies"
@@ -2931,7 +3164,8 @@
 		"name": "共位之幸",
 		"level": 38,
 		"desc": "",
-		"kind": "heli",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 900,
 		"speed": 22,
 		"tohit": 200,
@@ -2958,7 +3192,8 @@
 		"name": "共位之灵",
 		"level": 38,
 		"desc": "免疫99%合理以及混沌伤害",
-		"kind": "heli",
+		"kind": "elementals/soul_form",
+		"rank": 3,
 		"hp": 2000,
 		"speed": 22,
 		"tohit": 160,
@@ -2966,6 +3201,7 @@
 		"attack": [
 			{
 				"name": "混沌之理",
+				"bonus_class": 1,
 				"kind": "chaos",
 				"dmg": "170~320",
 				"targets": "enemies"
@@ -2987,7 +3223,8 @@
 		"name": "寻何物?",
 		"level": 38,
 		"desc": "",
-		"kind": "wuhuan",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 1,
 		"speed": 1,
 		"tohit": 1,
@@ -2995,6 +3232,7 @@
 		"attack": [
 			{
 				"name": "可憎之影",
+				"bonus_class": 1,
 				"kind": "wuhuan",
 				"dmg": "5000~5200",
 				"targets": "enemies"
@@ -3016,7 +3254,8 @@
 		"name": "正灵宿本位",
 		"level": 38,
 		"desc": "开虚张弓影",
-		"kind": "wuhuan",
+		"kind": "elementals/soul_form",
+		"rank": 3,
 		"hp": 4000,
 		"speed": 22,
 		"tohit": 200,
@@ -3024,6 +3263,7 @@
 		"attack": [
 			{
 				"name": "谁役使万灵",
+				"bonus_class": 1,
 				"kind": "wuhuan",
 				"dmg": "340~520",
 				"targets": "enemies"
@@ -3036,6 +3276,7 @@
 			}
 		],
 		"loot": {
+			"sulingjingcui": "7%",
 			"fire_soulcore_pice":1,
 			"gold_soulcore_pice":1,
 			"water_soulcore_pice":1,
@@ -3057,7 +3298,8 @@
 		"name": "躁动之灵",
 		"level": 38,
 		"desc": "",
-		"kind": "fire",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 2000,
 		"speed": 22,
 		"tohit": 200,
@@ -3065,6 +3307,7 @@
 		"attack": [
 			{
 				"name": "攻击",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "160~320",
 				"targets": "enemies"
@@ -3086,7 +3329,8 @@
 		"tags": "无影",
 		"level": 1,
 		"desc": "",
-		"kind": "blood",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 350,
 		"speed": 22,
 		"tohit": 80,
@@ -3094,6 +3338,7 @@
 		"attack": [
 			{
 				"name": "攻击",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "10~120",
 				"targets": "enemies"
@@ -3108,7 +3353,8 @@
 		"name": "血界-流天灵",
 		"level": 38,
 		"desc": "",
-		"kind": "fire",
+		"kind": "elementals/soul_form",
+		"rank": 2,
 		"hp": 1200,
 		"speed": 22,
 		"tohit": 120,
@@ -3116,6 +3362,7 @@
 		"attack": [
 			{
 				"name": "血界爆裂",
+				"bonus_class": 1,
 				"kind": "fire",
 				"dmg": "160~320",
 				"targets": "enemies",
@@ -3133,6 +3380,78 @@
 		"resist": {
 			"fire": 20
 		}
+	},
+	{
+		"id": "secret_realm_monster_1",
+		"name": "沸金之灵",
+		"level": 20,
+		"desc": "",
+		"kind": "aberration/soul_form",
+		"rank": 1,
+		"hp": 110,
+		"tohit": 45,
+		"dodge": 20,
+		"defense": 50,
+		"attack": [
+			{
+				"name": "攻击",
+				"bonus_class": 1,
+				"kind": "gold",
+				"dmg": "54~56"
+			},
+			{
+				"name": "攻击",
+				"bonus_class": 1,
+				"kind": "fire",
+				"dmg": "54~56"
+			}
+		]
+	},
+	{
+		"id": "secret_realm_monster_2",
+		"name": "洪地之灵",
+		"level": 20,
+		"desc": "",
+		"kind": "aberration/soul_form",
+		"rank": 1,
+		"hp": 110,
+		"tohit": 45,
+		"dodge": 20,
+		"defense": 50,
+		"attack": [
+			{
+				"name": "攻击",
+				"bonus_class": 1,
+				"kind": "land",
+				"dmg": "54~56"
+			},
+			{
+				"name": "攻击",
+				"bonus_class": 1,
+				"kind": "water",
+				"dmg": "54~56"
+			}
+		]
+	},
+	{
+		"id": "secret_realm_monster_3",
+		"name": "具尘者",
+		"level": 20,
+		"desc": "大量的雾气环绕在他周围，你能看见一双蓝色的眼睛在雾中盯着你",
+		"kind": "aberration/soul_form",
+		"rank": 1,
+		"hp": 350,
+		"tohit": 45,
+		"dodge": 33,
+		"defense": 78,
+		"attack": [
+			{
+				"name": "雾气",
+				"bonus_class": 1,
+				"kind": "heli",
+				"dmg": "64~66"
+			}
+		]
 	},
 	{
 		"id": "newt",

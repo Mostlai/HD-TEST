@@ -45,22 +45,6 @@
 		"disable":["freight"]
 	},
 	{
-		"id": "evt_pingyuan",
-		"name": "平原",
-		"require": "g.star_map>=1",
-		"desc": "附近有个平原,那里观察星星很不错"
-	},
-	{
-		"id": "evt_chaos",
-		"name": "混沌",
-		"require": "g.chaos>=1",
-		"desc": "混沌让原本可预测的事实变为不可预测,这是一张全新的危险的力量",
-		"result": {
-			"chaos_enchant_1": true,
-			"hundun_missile": true
-		}
-	},
-	{
 		"id": "evt_jihun",
 		"name": "真魂",
 		"require": "g.xiulian_zhuji_2>=1",
@@ -77,284 +61,12 @@
 		"desc": "你清醒的头脑和强健的身体足以探索这片区域"
 	},
 	{
-		"id": "evt_hq",
-		"name": "底层梦境",
-		"require": "g.active_huangquan>=1",
-		"desc": "现在你可以前往最底层的梦境了"
-	},
-	{
-		"id": "evt_modao",
-		"name": "魔导之地",
-		"require": "g.xiulian_modaozhiyin>=1 && g.dream_death_mo && g.spirit_light>=1 && g.spirit_mo>=1",
-		"desc": "前往未知之地"
-	},
-	{
-		"id": "evt_rlzy",
-		"name": "人力资源",
-		"require": "g.rlgl>=1",
-		"desc": "你对人力资源的调动分配有了更深的理解",
-		"result": {
-			"solid_1": true,
-			"solid_2": true
-		}
-	},
-	{
-		"id": "evt_zcx",
-		"name": "侦察员报告",
-		"require": "g.zcx>=1",
-		"desc": "派出的侦察员带了附近地形的报告"
-	},
-	{
 		"id": "evt_ljzhb",
 		"name": "联军压境",
 		"require": "g.xiulian_siwei_qtswyj>=1",
 		"desc": "你的征服行为终将吸引围攻",
 		"result": {
 			"f_stress": 5
-		}
-	},
-	{
-		"id": "evt_zxzc",
-		"name": "中型战场",
-		"require": "g.shenglingshi>=1",
-		"desc": "大战过后"
-	},
-	{
-		"id": "evt_yqlife",
-		"name": "源泉力量",
-		"require": "g.yqlife>=4",
-		"desc": "使用源泉的力量",
-		"result": {
-			"prhss": true,
-			"frjxf": true,
-			"wmgxj": true,
-			"ylzsf": true
-		}
-	},
-	{
-		"id": "evt_zsll",
-		"name": "真水力量",
-		"require": "g.jsnlx>=4",
-		"desc": "使用真水的力量",
-		"result": {
-			"zsbhf": true,
-			"ljzj": true
-		}
-	},
-	{
-		"id": "evt_rjll",
-		"name": "锐金力量",
-		"require": "g.jjclx>=4",
-		"desc": "使用锐金的力量",
-		"result": {
-			"cjpk": true,
-			"rjzy": true,
-			"hjbms": true
-		}
-	},
-	{
-		"id": "evt_zhll",
-		"name": "真火力量",
-		"require": "g.gwwlx>=4",
-		"desc": "使用真火的力量",
-		"result": {
-			"zhyjf": true
-		}
-	},
-	{
-		"id": "evt_htll",
-		"name": "厚土力量",
-		"require": "g.htgcx>=4",
-		"desc": "使用厚土的力量",
-		"result": {
-			"htymj": true,
-			"kss": true
-		}
-	},
-	{
-		"id": "evt_yszl",
-		"name": "源灵障水法",
-		"require": "g.yqlife>=4",
-		"desc": "使用源泉的力量",
-		"result": {
-			"ylzsf": true
-		}
-	},
-	{
-		"id": "evt_mfaxue",
-		"name": "混沌秘法",
-		"require": "g.mima_xue>=3",
-		"desc": "使用混沌的力量",
-		"result": {
-			"lsszy": true,
-			"wchys": true,
-			"xclyt": true,
-			"ngjyw": true
-		}
-	},
-	{
-		"id": "evt_wgmf",
-		"name": "无光秘法",
-		"require": "g.nolight_mishu>=2",
-		"desc": "使用无光的力量",
-		"result": {
-			"bdjgk": true,
-			"dmrg": true
-		}
-	},
-	{
-		"id": "evt_clxz",
-		"name": "苍蓝协奏",
-		"require": "g.canglanxiezou>=1",
-		"desc": "苍蓝之力",
-		"result": {
-			"lzgxs": true,
-			"cdfxs": true,
-			"yqwks": true
-		}
-	},
-	{
-		"id": "evt_hwxlmx",
-		"name": "化物行理",
-		"require": "g.xiulian_lizu_wxyh>=1",
-		"desc": "解锁化物行理",
-		"result": {
-			"hwxlmx": true
-		}
-	},
-	{
-		"id": "evt_luorspell",
-		"name": "落日法术",
-		"require": "g.luorxiushi>=1 && g.zlssx>=2",
-		"desc": "",
-		"result": {
-			"zylr": true,
-			"wywgll": true
-		}
-	},
-	{
-		"id": "evt_benyuanspell",
-		"name": "本源法术",
-		"require": "g.podaoxius>=1 && g.zlssx>=2",
-		"desc": "",
-		"result": {
-			"yuanzhipod": true,
-			"xkzspd": true,
-			"ziranslpd": true
-		}
-	},
-	{
-		"id": "evt_xueshu",
-		"name": "血术",
-		"require": "g.xl_lj_blood_1>=1",
-		"desc": "",
-		"result": {
-			"smxue": true,
-			"yiwangxue": true,
-			"blood_sum_1": true
-		}
-	},
-	{
-		"id": "evt_heiyan",
-		"name": "黑焰",
-		"require": "g.xl_lj_zhenhun_12>=1",
-		"desc": "",
-		"result": {
-			"balck_firestorm_cure": true,
-			"balck_firestorm": true
-		}
-	},
-	{
-		"id": "evt_kangjuxingzj",
-		"name": "狩魂场",
-		"require": "g.kangjuxingzj>=1",
-		"desc": "",
-		"result": {
-			"shouhunchang": true
-		}
-	},
-	{
-		"id": "evt_zhushemokuai",
-		"name": "碎魂注射",
-		"require": "g.zhushemokuai>=1",
-		"desc": "",
-		"result": {
-			"suihun_zhushe": true
-		}
-	},
-	{
-		"id": "evt_zyszh",
-		"name": "治愈鼠召唤",
-		"require": "g.quntizysw>=1",
-		"desc": "",
-		"result": {
-			"solid_3": true
-		}
-	},
-	{
-		"id": "evt_sygzh",
-		"name": "守御龟召唤",
-		"require": "g.quntifysw>=1",
-		"desc": "",
-		"result": {
-			"solid_4": true
-		}
-	},
-	{
-		"id": "evt_mgtlzh",
-		"name": "猛攻螳螂召唤",
-		"require": "g.quntijgsw>=1",
-		"desc": "",
-		"result": {
-			"solid_5": true
-		}
-	},
-	{
-		"id": "evt_shqzhuan",
-		"name": "碎魂群召唤",
-		"require": "g.fuhexsw>=1",
-		"desc": "",
-		"result": {
-			"solid_6": true
-		}
-	},
-	{
-		"id": "evt_zhujiyuesheng",
-		"name": "基魂跃升",
-		"require": "g.jihunyuesheng>=1",
-		"desc": ""
-	},
-	{
-		"id": "evt_redlaser",
-		"name": "红极激光",
-		"require": "g.red_jgsys>=1",
-		"desc": "解锁红极激光",
-		"result": {
-			"spell_red_laser": true
-		}
-	},
-	{
-		"id": "evt_redlaser_1",
-		"name": "血色万华流",
-		"require": "g.chaoshujujiao>=1",
-		"desc": "解锁红极激光",
-		"result": {
-			"spell_red_laser_jujiao": true
-		}
-	},
-	{
-		"id": "evt_huangquansc",
-		"name": "黄泉深处",
-		"require": "g.canglanchaoben>=1 && g.bafangwfs>=1 && g.flont_hqhhjz>=1",
-		"desc": "继续深入黄泉,这里更危险"
-	},
-	{
-		"id": "evt_hqsy",
-		"name": "死骨复苏",
-		"require": "g.xiulian_eye_huangquan>=1",
-		"desc": "将黄泉的灵体引导到现实",
-		"result": {
-			"sgfszj": true
 		}
 	},
 	{
@@ -404,78 +116,6 @@
 			"zhujijie_1",
 			"zhujijie"
 		]
-	},
-	{
-		"id": "evt_tansuo_1",
-		"name": "探索成果",
-		"require": "g.tansuo>=1",
-		"desc": "你发现一些有趣的地点...."
-	},
-	{
-		"id": "evt_tansuo_2",
-		"name": "探索成果[扭曲]",
-		"require": "g.tansuo>=3 && g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
-		"desc": "你发现一些有趣的地点...."
-	},
-	{
-		"id": "evt_zhengzhan",
-		"name": "征战",
-		"require": "g.zhengzhan>=1",
-		"desc": "解锁大型战场...."
-	},
-	{
-		"id": "evt_quanxiangren",
-		"name": "未见之村",
-		"require": "g.quanxiangren>=1",
-		"desc": "发现未见之村...."
-	},
-	{
-		"id": "evt_xunqiusl",
-		"name": "风暴崖",
-		"require": "g.xunqiusl>=1",
-		"desc": "发现风暴崖...."
-	},
-	{
-		"id": "evt_xunqiuzh",
-		"name": "失落图书馆",
-		"require": "g.xunqiuzh>=1",
-		"desc": "发现失落图书馆...."
-	},
-	{
-		"id": "evt_xunqiuhj",
-		"name": "银色森林",
-		"require": "g.xunqiuhj>=1",
-		"desc": "发现银色森林...."
-	},
-	{
-		"id": "evt_xunqiukb",
-		"name": "白色诵读团",
-		"require": "g.xunqiukb>=1",
-		"desc": "发现白色诵读团...."
-	},
-	{
-		"id": "evt_xunqiuhy",
-		"name": "黑色诵读团",
-		"require": "g.xunqiuhy>=1",
-		"desc": "发现黑色诵读团...."
-	},
-	{
-		"id": "evt_xunqiupans",
-		"name": "无言小屋",
-		"require": "g.xunqiupans>=1",
-		"desc": "发现无言小屋...."
-	},
-	{
-		"id": "evt_huangwuqixuan",
-		"name": "荒芜气旋层",
-		"require": "g.xunqiuguangmao>=1",
-		"desc": "发现荒芜气旋层...."
-	},
-	{
-		"id": "evt_xunqiuty",
-		"name": "穷究雪原",
-		"require": "g.xunqiuty>=1",
-		"desc": "发现穷究雪原...."
 	},
 	{
 		"id": "evt_yuansutunshi_gold_success",
@@ -573,34 +213,13 @@
 		}
 	},
 	{
-		"id": "evt_adv_zcha",
-		"name": "侦察路线",
-		"require": "g.adv_junshixue>=10",
-		"desc": "侦察路线...."
-	},
-	{
-		"id": "evt_zhuohunzhiling",
-		"name": "灼魂之灵",
-		"require": "g.techo_phy_zhenhu_1>=1",
-		"desc": "发现灼魂之灵...."
-	},
-	{
-		"id": "evt_gongweizhiling",
-		"name": "共位之灵",
-		"require": "g.techo_phy_zhenhu_2>=1",
-		"desc": "发现共位之灵...."
-	},
-	{
-		"id": "evt_tiaoxiezhiling",
-		"name": "调谐之灵",
-		"require": "g.techo_phy_zhenhu_3>=1",
-		"desc": "发现调谐之灵...."
-	},
-	{
-		"id": "evt_zaodongzhiling",
-		"name": "躁动之灵",
-		"require": "g.techo_phy_zhenhu_4>=1",
-		"desc": "发现躁动之灵...."
+		"id": "hundun_s_fix",
+		"name": "混沌修复",
+		"require": "g.techo_phy_zhenhu_2>=1 && g.hundun_soulcore_pice.max<=0",
+		"desc": "修复混沌碎片上限....",
+		"result": {
+			"hundun_soulcore_pice.max": 10
+		}
 	},
 	{
 		"id": "evt_helper",
@@ -617,54 +236,29 @@
 	},
 	{
 		"id": "tier0",
-		"name": "Solitary Magic",
-		"desc": "Some say the study of magic doesn't truly begin until apprenticeship ends. People say a lot of things.",
-		"disable": [
-			"study",
-			"chores",
-			"errands",
-			"leavemaster",
-			"slaymaster",
-			"pestcontrol",
-			"alcove",
-			"atticbedroom"
-		],
-		"lock": "t_tier0",
+		"name": "T0",
+		"desc": "AP+1",
+		"hide": true,
 		"result": {
-			"innroom": true,
-			"sp": 1,
-			"player.exp": 15,
-			"fame": 1
+			"ap": 1,
+			"player.exp": 15
 		},
 		"mod": {
-			"research.max": 15,
-			"buyscroll.result.scrolls": 1,
-			"buyscroll.cost.gold": 20
+			"gold.max": 1
 		}
 	},
 	{
 		"id": "tier1",
-		"name": "Professional Magick",
-		"desc": "Every province has its handful of runaway apprentices and failed Adepts. It's not uncommon for thieves and rangers to know a spell or two. They are nothing compared to the talents of a true professional.",
-		"disable": [
-			"prestidigitation"
-		],
-		"lock": [
-			"t_tier1",
-			"t_tier0"
-		],
+		"name": "T1",
+		"desc": "AP+1",
+		"hide": true,
 		"result": {
 			"sp": 1,
 			"player.exp": 15,
-			"fame": 2
+			"ap": 1
 		},
 		"mod": {
-			"crafting.max": 1,
-			"arcanebody.max": 1,
-			"occultendure.max": 1,
-			"crystalmind.max": 1,
-			"buyscroll.result.scrolls": 1,
-			"buyscroll.cost.gold": 30
+			"gold.max": 1
 		}
 	},
 	{

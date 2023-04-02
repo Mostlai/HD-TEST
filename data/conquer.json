@@ -80,7 +80,7 @@
 	{
 		"id": "conquer_dxczhen",
 		"name": "大型城镇",
-		"tags":"5级",
+		"tags":"3级",
 		"desc": "大型城镇",
 		"power": 700,
 		"max": 3,
@@ -109,10 +109,10 @@
 		},
 		"mod":{
 			"f_power": 30,
-			"space.max": 45,
-			"alculation.max": 15,
+			"space.max": 30,
+			"alculation.max": 8,
 			"alculation.rate": 0.2,
-			"human_power.max": 200 
+			"human_power.max": 160 
 		},
 		"result":{
 			"yanzhandu": 44
@@ -166,7 +166,7 @@
 	{
 		"id": "conquer_xxyaosai",
 		"name": "小型要塞",
-		"tags":"5级",
+		"tags":"4级",
 		"desc": "一处小型要塞",
 		"power": 890,
 		"max": 1,

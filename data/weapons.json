@@ -5,9 +5,11 @@
 		"color": "#FF4500",
 		"slot": "hands",
 		"enchants": 20,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "熵增",
-			"kind": "slash",
+			"kind": "psychic",
 			"damage": "1000~3000"
 		},
 		"alter": {
@@ -22,7 +24,7 @@
 				"fissure.attack.dot.duration": 1
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 100
 	},
 	{
@@ -31,7 +33,9 @@
 		"color": "#FF4500",
 		"desc": "你狗屁才艺",
 		"enchants": 10,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"kind": "玄武顿嗦那斩月刀",
 			"damage": "6~12"
 		},
@@ -40,7 +44,7 @@
 				"self.tohit": 1
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 100,
 		"flavor": "你没排面"
 	},
@@ -49,7 +53,8 @@
 		"name": "短剑",
 		"desc": "一把结实耐用的短剑",
 		"attack": {
-			"kind": "slash",
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": "1~3"
 		},
 		"alter": {
@@ -57,7 +62,7 @@
 				"self.tohit": 1
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 1
 	},
 	{
@@ -65,7 +70,8 @@
 		"name": "手斧",
 		"desc": "锋利的斧子",
 		"attack": {
-			"kind": "slash",
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": "1~3"
 		},
 		"alter": {
@@ -73,7 +79,7 @@
 				"self.tohit": 1
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 1
 	},
 	{
@@ -82,8 +88,9 @@
 		"slot": "hands",
 		"enchants": 2,
 		"attack": {
+			"isweapon": true,
 			"name": "神念冲击",
-			"kind": "slash",
+			"kind": "heli",
 			"damage": "6~8"
 		},
 		"alter": {
@@ -92,7 +99,7 @@
 				"f_power": 8
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 4
 	},
 	{
@@ -101,6 +108,7 @@
 		"slot": "hands",
 		"enchants": 2,
 		"attack": {
+			"isweapon": true,
 			"name": "幽蚀",
 			"kind": "chaos",
 			"damage": "12~18"
@@ -111,7 +119,7 @@
 				"f_power": 18
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 10
 	},
 	{
@@ -122,6 +130,7 @@
 		"material": "rumo",
 		"enchants": 2,
 		"attack": {
+			"isweapon": true,
 			"name": "长斩",
 			"kind": "chaos",
 			"damage": "16~18",
@@ -138,7 +147,7 @@
 				"f_power": 18
 			}
 		},
-		"cost": 30,
+		"cost": 10,
 		"level": 10
 	},
 	{
@@ -150,7 +159,9 @@
 		"slot": "hands",
 		"material": "rumo",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "黯淡无月",
 			"kind": "chaos",
 			"damage": "27~30",
@@ -168,8 +179,8 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 30,
+		"cost": 10,
+		"level": 25,
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
@@ -181,7 +192,9 @@
 		"slot": "hands",
 		"material": "yangxi",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "阳火",
 			"kind": "fire",
 			"damage": "27~30",
@@ -199,8 +212,8 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 30,
+		"cost": 10,
+		"level": 25,
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
@@ -212,7 +225,9 @@
 		"slot": "hands",
 		"material": "chubai",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "纯白打击",
 			"kind": "gold",
 			"damage": "24~27",
@@ -230,8 +245,8 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 30,
+		"cost": 10,
+		"level": 25,
 		"flavor": "装备需求:[AL]级神机"
 	},
 	{
@@ -243,7 +258,9 @@
 		"slot": "hands",
 		"material": "shouhun",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "射击",
 			"kind": "fire",
 			"damage": "38~39",
@@ -262,8 +279,8 @@
 				"f_power": 45
 			}
 		},
-		"cost": 30,
-		"level": 55,
+		"cost": 10,
+		"level": 35,
 		"flavor": "装备需求:[AL-T]级神机"
 	},
 	{
@@ -275,7 +292,9 @@
 		"slot": "hands",
 		"material": "shouhun",
 		"enchants": 5,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "射击",
 			"kind": "elect",
 			"damage": "43~44"
@@ -288,8 +307,8 @@
 				"f_power": 45
 			}
 		},
-		"cost": 30,
-		"level": 55,
+		"cost": 10,
+		"level": 35,
 		"flavor": "装备需求:[AL-T]级神机"
 	},
 	{
@@ -300,7 +319,9 @@
 		"slot": "hands",
 		"material": "shouhun",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "火射",
 			"kind": "fire",
 			"damage": "70~80"
@@ -310,8 +331,8 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 55
+		"cost": 10,
+		"level": 35
 	},
 	{
 		"id": "base_zd",
@@ -322,7 +343,9 @@
 		"slot": "hands",
 		"material": "chubai",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "电闪",
 			"kind": "water",
 			"damage": "20~25",
@@ -343,8 +366,8 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 30,
+		"cost": 10,
+		"level": 20,
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
@@ -356,7 +379,9 @@
 		"slot": "hands",
 		"material": "yangxi",
 		"enchants": 2,
+		"unique": true,
 		"attack": {
+			"isweapon": true,
 			"name": "红莲",
 			"kind": "fire",
 			"damage": "20~25",
@@ -377,8 +402,8 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 30,
+		"cost": 10,
+		"level": 20,
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
@@ -391,6 +416,7 @@
 		"material": "liushui",
 		"enchants": 2,
 		"attack": {
+			"isweapon": true,
 			"name": "飞刺",
 			"kind": "water",
 			"damage": "20~25",
@@ -411,131 +437,347 @@
 				"f_power": 25
 			}
 		},
-		"cost": 30,
-		"level": 30,
+		"cost": 10,
+		"level": 20,
 		"flavor": "装备需求:[BASE]级神机"
 	},
 	{
 		"id": "staff",
+		"name": "破损杖",
 		"attack": {
-			"kind": "blunt",
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": "1~2"
 		},
 		"cost": 25,
-		"level": 1,
-		"hands": 2,
-		"enchants": 6
-	},
-	{
-		"id": "broomstick",
-		"only": "wood",
-		"attack": {
-			"kind": "blunt",
-			"damage": 1
-		},
-		"cost": 20,
-		"level": 0,
+		"level": 3,
 		"enchants": 4
 	},
 	{
-		"id": "wand",
-		"tags": "magic,wand",
+		"id": "staff_1",
+		"name": "戒杖",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"name": "攻击",
+			"kind": "psychic",
+			"damage": "23~27"
+		},
+		"alter": {
+			"mod": {
+				"f_power": 35
+			}
+		},
 		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "broomstick",
+		"name": "木棍",
+		"only": "wood",
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 1
+		},
+		"cost": 10,
+		"level": 3,
+		"enchants": 2
+	},
+	{
+		"id": "broomstick_1",
+		"name": "火把",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"name": "攻击",
+			"kind": "fire",
+			"damage": "23~27",
+			"dot": {
+				"duration": 20,
+				"dmg": "10~11",
+				"name": "灼烧",
+				"kind": "fire"
+			}
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "broomstick_2",
+		"name": "沉水棍",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"name": "攻击",
+			"kind": "water",
+			"damage": "23~27",
+			"dot": {
+				"duration": 20,
+				"dmg": "10~11",
+				"name": "被洗涤",
+				"kind": "water"
+			}
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "wand",
+		"name": "生锈长杖",
+		"cost": 10,
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 1
+		},
 		"hands": 1,
-		"level": 0,
-		"enchants": 4,
-		"properties": 1
+		"level": 3
+	},
+	{
+		"id": "wand_1",
+		"name": "土灵杖",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"name": "攻击",
+			"bonus_class": 1,
+			"kind": "land",
+			"damage": "25~28"
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "wand_2",
+		"name": "木灵杖",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"name": "攻击",
+			"bonus_class": 1,
+			"kind": "wood",
+			"damage": "25~28"
+		},
+		"cost": 10,
+		"level": 15
 	},
 	{
 		"id": "rod",
-		"tags": "magic,rod",
-		"cost": 30,
+		"name": "生锈长杆",
+		"cost": 10,
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 1
+		},
 		"hands": 1,
-		"level": 4,
+		"level": 3,
+		"properties": 1
+	},
+	{
+		"id": "rod_1",
+		"name": "战斗长杆",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"name": "攻击",
+			"kind": "body",
+			"damage": "22~26"
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "fetish",
+		"name": "残破雕像",
+		"cost": 100,
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 1
+		},
+		"hands": 1,
+		"level": 3,
+		"only": "wood,natural",
+		"enchants": 2
+	},
+	{
+		"id": "fetish_1",
+		"name": "秘像",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"bonus_class": 1,
+			"name": "封锁",
+			"kind": "chaos",
+			"damage": "10~26",
+			"dot": {
+				"duration": 5,
+				"dmg": "14~15",
+				"name": "封锁",
+				"kind": "chaos"
+			}
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "weap_orb",
+		"name": "残破法球",
+		"cost": 100,
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 1
+		},
+		"level": 3,
+		"enchants": 3,
+		"properties": 1
+	},
+	{
+		"id": "weap_orb_1",
+		"name": "法球",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"bonus_class": 1,
+			"name": "飞弹",
+			"kind": "heli",
+			"damage": "1~4",
+			"dot": {
+				"duration": 3,
+				"dmg": "21~24",
+				"name": "飞弹",
+				"kind": "heli"
+			}
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "greatstaff",
+		"name": "生锈权杖",
+		"cost": 10,
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 1
+		},
+		"level": 3,
 		"enchants": 5,
 		"properties": 1
 	},
 	{
-		"id": "fetish",
-		"tags": "magic,fetish",
-		"cost": 100,
-		"hands": 1,
-		"level": 5,
-		"only": "wood,natural",
-		"enchants": 8,
-		"properties": 1
-	},
-	{
-		"id": "weap_orb",
-		"name": "orb",
-		"desc": "A focus for your magic.",
-		"tags": "magic,orb,weap_orb",
-		"cost": 100,
-		"hands": 2,
-		"level": 8,
-		"enchants": 7,
-		"properties": 1
-	},
-	{
-		"id": "greatstaff",
-		"tags": "magic,greatstaff",
-		"cost": 50,
-		"hands": 2,
-		"level": 6,
-		"enchants": 12,
-		"properties": 1
-	},
-	{
 		"id": "dagger",
+		"name": "生锈匕首",
 		"attack": {
-			"kind": "pierce",
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": 1
 		},
-		"cost": 20,
+		"cost": 10,
 		"level": 1,
 		"enchants": 2
 	},
 	{
 		"id": "sword",
+		"name": "生锈铁剑",
 		"attack": {
-			"kind": "slash",
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": "1~4"
 		},
-		"cost": 50,
+		"cost": 10,
 		"hands": 2,
 		"level": 3,
 		"enchants": 1
 	},
 	{
 		"id": "longsword",
+		"name": "生锈长剑",
 		"attack": {
-			"kind": "slash",
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": "2~4"
 		},
-		"cost": 50,
+		"cost": 10,
 		"hands": 2,
 		"level": 3,
 		"enchants": 3
 	},
 	{
-		"id": "mace",
+		"id": "longsword_1",
+		"name": "直剑",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
 		"attack": {
-			"kind": "blunt",
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": 25
+		},
+		"cost": 10,
+		"level": 15
+	},
+	{
+		"id": "mace",
+		"name": "生锈狼牙棒",
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
 			"damage": "1~2"
 		},
-		"cost": 30,
+		"cost": 10,
 		"hands": 1,
 		"level": 3,
 		"enchants": 2
 	},
 	{
 		"id": "warhammer",
+		"name": "生锈战锤",
 		"attack": {
-			"kind": "blunt",
-			"damage": "1~4"
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": "4~7"
 		},
-		"cost": 50,
+		"cost": 10,
 		"hands": 2,
 		"level": 3
+	},
+	{
+		"id": "warhammer_1",
+		"name": "战锤",
+		"color": "#2ECC71",
+		"slot": "hands",
+		"enchants": 2,
+		"attack": {
+			"isweapon": true,
+			"kind": "psychic",
+			"damage": "27~28"
+		},
+		"alter": {
+			"mod": {
+				"self.speed": -2
+			}
+		},
+		"cost": 10,
+		"level": 15
 	}
 ]

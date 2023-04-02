@@ -503,6 +503,22 @@
 		}
 	},
 	{
+		"id": "ach_human_power_6",
+		"name": "人力40K",
+		"desc": "人力达到40000",
+		"target_item": "human_power",
+		"target_val": 40000,
+		"hide": true,
+		"require":"g.ach_human_power_5>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 1,
+			"human_power.max": 200,
+			"human_power.rate": 5
+		}
+	},
+	{
 		"id": "ach_alculation_1",
 		"name": "计算器",
 		"desc": "计算力达到1000",
@@ -560,6 +576,21 @@
 		"result":{
 			"ap": 1,
 			"alculation.max": 200
+		}
+	},
+	{
+		"id": "ach_alculation_5",
+		"name": "算力40k",
+		"desc": "这个也能40K?计算力达到40000",
+		"target_item": "alculation",
+		"target_val": 40000,
+		"hide": true,
+		"require":"g.ach_alculation_4>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 2,
+			"alculation.max": 400
 		}
 	},
 	{
@@ -691,7 +722,7 @@
 		"target_item": "command_code",
 		"target_val": 10,
 		"hide": true,
-		"require":"command_code>=1",
+		"require":"g.command_code>=1",
 		"val":0,
 		"max": 1,
 		
@@ -707,13 +738,27 @@
 		"target_item": "command_code",
 		"target_val": 100,
 		"hide": true,
-		"require":"ach_zl_1>0",
+		"require":"g.ach_zl_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 1,
 			"command_code.max": 20
+		}
+	},
+	{
+		"id": "ach_zl_3",
+		"name": "高级计算",
+		"desc": "激活250指令容量",
+		"target_item": "command_code",
+		"target_val": 250,
+		"hide": true,
+		"require":"g.ach_zl_2>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 2,
+			"command_code.max": 30
 		}
 	},
 	{
@@ -941,10 +986,24 @@
 		"require" : "g.ach_space_5>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 1,
 			"space.max": 500
+		}
+	},
+	{
+		"id": "ach_space_7",
+		"name": "半年都不用加地了",
+		"desc": "用地面积达到50000",
+		"target_item": "space",
+		"target_val": 50000,
+		"hide": true,
+		"require" : "g.ach_space_6>0",
+		"val":0,
+		"max": 1,
+		"result":{
+			"ap": 2,
+			"space.max": 1000
 		}
 	},
 	{

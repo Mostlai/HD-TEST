@@ -1,0 +1,192 @@
+[
+	{
+		"id": "humanoid",
+		"name": "类人生物"
+	},
+	{
+		"id": "summoned",
+		"name": "召唤生物"
+	},
+	{
+		"id": "aberration",
+		"name": "异怪",
+		"race_mod":{
+			"regen": 0.2,
+			"hardiness": 0.02,
+			"defense": 0.7,
+			"speed": 0.4,
+			"dodge": 0.35
+		},
+		"max_muti": 25
+	},
+	{
+		"id": "beast",
+		"name": "野兽",
+		"race_mod":{
+			"regen": 0.2,
+			"hardiness": -0.01,
+			"defense": 0.7,
+			"speed": 0.6,
+			"dodge": 0.4
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "constructs",
+		"name": "构造体",
+		"race_mod":{
+			"hardiness": 0.05,
+			"defense": 2
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "elementals",
+		"name": "元素体",
+		"race_mod":{
+			"regen": 0.2,
+			"dodge": 1,
+			"speed": 0.5
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "monstrosities",
+		"name": "怪兽",
+		"race_mod":{
+			"dodge": 0.8,
+			"speed": 0.5
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "insect",
+		"name": "昆虫",
+		"race_mod":{
+			"regen": 0.1,
+			"speed": 0.8,
+			"shape": -0.3
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "plant",
+		"name": "植物",
+		"race_mod":{
+			"regen": 1,
+			"speed": -1,
+			"hardiness": 0.005,
+			"resist":{
+				"wood": 1,
+				"fire": -1
+			}
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "undead",
+		"name": "亡灵",
+		"race_mod":{
+			"tohit": 1,
+			"dodge": 1,
+			"defense": -0.7,
+			"hardiness": -0.005
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "human",
+		"name": "人类",
+		"race_mod":{
+			"hp.max": 2,
+			"defense": 1
+		},
+		"max_muti": 1
+	},
+	{
+		"id": "fey",
+		"name": "精怪"
+	},
+	{
+		"id": "soul_form",
+		"name": "魂魄体",
+		"race_mod":{
+			"tohit": 2,
+			"defense": -1
+		},
+		"max_muti": 2
+	},
+	{
+		"id": "land_living",
+		"name": "陆地生物",
+		"race_mod":{
+			"resist":{
+				"gold": 1
+			}
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "water_living",
+		"name": "水域生物",
+		"race_mod":{
+			"resist":{
+				"water": 1.5,
+				"fire": 1
+			}
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "sky_living",
+		"name": "天空生物",
+		"race_mod":{
+			"resist":{
+				"land": 2
+			}
+		},
+		"max_muti": 10
+	},
+	{
+		"id": "unshape",
+		"name": "无定形",
+		"race_mod":{
+			"dodge": 0.4
+		},
+		"max_muti": 25
+	},
+	{
+		"id": "world_mind",
+		"name": "世界意识"
+	},
+	{
+		"id": "hyper_geology",
+		"name": "超地质",
+		"race_mod":{
+			"shpe": 0.2,
+			"hardiness": 0.005,
+			"speed": 0.5
+		},
+		"max_muti": 25
+	},
+	{
+		"id": "elderich",
+		"name": "埃尔德里奇",
+		"race_mod":{
+			"name": "·灼魂",
+			"hp.max": 1000,
+			"defense": 1000,
+			"hardiness": 0.8,
+			"shiled_max": 1000,
+			"speed": 1000,
+			"shape": 10,
+			"rank": 10,
+			"tohit": 1000,
+			"dodge":  1000,
+			"resist":{
+				"fire": 100
+			}
+		},
+		"max_muti": 1
+	}
+]

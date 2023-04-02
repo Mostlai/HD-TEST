@@ -1363,10 +1363,89 @@
 			}
 		],
 		"dungeons": [
-			
+			{
+				"id": "tianlanguo_war_1",
+				"name": "天澜战场",
+				"level": 1,
+				"length": 25,
+				"require": "g.off_influence>=5000",
+				"desc": "",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": "tianlanguo_war_m_3",
+				"spawns": [
+					[
+						"tianlanguo_war_m_1",
+						"tianlanguo_war_m_1"
+					],
+					[
+						"tianlanguo_war_m_1",
+						"tianlanguo_war_m_2"
+					],
+					[
+						"tianlanguo_war_m_2",
+						"tianlanguo_war_m_2"
+					]
+				]
+			}
 		],
 		"monsters": [
-			
+			{
+				"id": "tianlanguo_war_m_1",
+				"name": "天澜敌探",
+				"kind": "humanoid/human",
+				"desc": "",
+				"level": 25,
+				"unique": true,
+				"hp": 170,
+				"attack": {
+					"name": "土刺",
+					"kind": "land",
+					"dmg": "31~43"
+				}
+			},
+			{
+				"id": "tianlanguo_war_m_2",
+				"name": "天澜敌士",
+				"kind": "humanoid/human",
+				"desc": "",
+				"level": 25,
+				"unique": true,
+				"hp": 210,
+				"attack": {
+					"name": "土刺",
+					"kind": "land",
+					"dmg": "43~48"
+				}
+			},
+			{
+				"id": "tianlanguo_war_m_3",
+				"name": "天澜敌将",
+				"kind": "humanoid/human",
+				"desc": "",
+				"level": 28,
+				"unique": true,
+				"hp": 270,
+				"rank": 2,
+				"shape": 13,
+				"attack": {
+					"name": "大土刺",
+					"kind": "land",
+					"dmg": "57~89"
+				},
+				"loot":{
+					"tianlan_cloak": "10%"
+				}
+			}
 		],
 		"locales": [
 			{

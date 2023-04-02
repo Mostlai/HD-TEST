@@ -245,7 +245,7 @@
 		"desc": "一块凝结了高能污浊的晶体,由于有着外壳保护,所以不会对自身造成伤害",
 		"group": "结晶",
 		"tags": "",
-		"require": "g.dirty_core>=1",
+		"require": "g.frs_nj>=1",
 		"max": 0
 	},
 	{
@@ -2289,6 +2289,16 @@
 		"max":1
 	},
 	{
+		"id": "xl_siwei_jxswei",
+		"name": "机性思维",
+		"desc": "",
+		"hide": true,
+		"group": "修行",
+		"tags": "",
+		"locked":false,
+		"max":1
+	},
+	{
 		"id": "tapestries",
 		"name": "tapestries",
 		"desc": "History, lore, and even spells, may be woven in their threads.",
@@ -2709,14 +2719,14 @@
 	{
 		"id": "exchange_code_1",
 		"desc": "2022兑换码",
-		"info": "2022新年快乐,2022个钱币请收下!",
+		"info": "2022新年快乐",
 		"useinfo": "兑换码已经被使用或者达到上限",
 		"hide": true,
 		"name": "code",
 		"val":0,
 		"max": 1,
 		"coderesult":{
-			"money": 2022
+			"money": 22
 		}
 	},
 	{
@@ -2843,6 +2853,33 @@
 		}
 	},
 	{
+		"id": "exchange_code_10",
+		"desc": "?",
+		"info": "?",
+		"needinfo": "你还不能兑换此兑换码",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"ganwu": 100
+		}
+	},
+	{
+		"id": "exchange_code_11",
+		"desc": "2023兑换码",
+		"info": "2023新年快乐",
+		"useinfo": "兑换码已经被使用或者达到上限",
+		"hide": true,
+		"name": "code",
+		"val":0,
+		"max": 1,
+		"coderesult":{
+			"money": 2023
+		}
+	},
+	{
 		"id": "time",
 		"desc": "",
 		"flavor": "餐玉驻年龄，吞霞反容颜",
@@ -2853,12 +2890,13 @@
 	},
 	{
 		"id": "alculation",
-		"desc": "计算力的多少决定了你的建造水准和施法水平",
+		"desc": "计算力的多少决定了你的建造水准和施法水平。每1000计算力提供0.9法术强度。",
 		"hide": true,
 		"name": "计算力",
 		"val":1,
 		"max": 1,
 		"mod":{
+			"player.spell_class": "0.9:1000",
 			"1级.max": 0.005,
 			"2级.max": 0.004,
 			"3级.max": 0.003,
@@ -2906,11 +2944,14 @@
 	},
 	{
 		"id": "human_power",
-		"desc": "能指挥的劳动力",
+		"desc": "能指挥的劳动力。每1000人力提供0.25物理强度。",
 		"hide": true,
 		"name": "人力",
 		"val":0,
-		"max": 1
+		"max": 1,
+		"mod":{
+			"player.physical_class": "0.25:1000"
+		}
 	},
 	{
 		"id": "command_code",
@@ -3013,46 +3054,58 @@
 	{
 		"id": "tili",
 		"tags": "Bar",
-		"desc": "",
+		"desc": "每1体力提供0.2物理强度。",
 		"flavor": "行动所用",
 		"unit": false,
 		"name": "体力",
 		"val":10,
 		"color": "#29d61d",
 		"locked": false,
-		"max": 10
+		"max": 10,
+		"mod":{
+			"player.physical_class": 0.2
+		}
 	},
 	{
 		"id": "shenshi",
 		"tags": "Bar,prismatic",
-		"desc": "脑中奥秘",
+		"desc": "脑中奥秘。每1神识提供0.7法术抵抗。",
 		"unit": false,
 		"color": "#9400D3",
 		"require": "g.shenshi_1>=4",
 		"name": "神识",
-		"max": 1
+		"max": 1,
+		"mod":{
+			"player.spell_save": 0.7
+		}
 	},
 	{
 		"id": "heli",
 		"tags": "Bar,prismatic",
-		"desc": "合乎天地道理的力量",
+		"desc": "合乎天地道理的力量。每1合理提供0.1物理抵抗。",
 		"unit": false,
 		"color": "#ffeb00",
 		"require": "g.touch_daoli",
 		"name": "合理",
 		"val": 0,
-		"max": 0
+		"max": 0,
+		"mod":{
+			"player.physical_save": 0.1
+		}
 	},
 	{
 		"id": "chaos",
 		"tags": "Bar,prismatic",
-		"desc": "无序的,不合理的",
+		"desc": "无序的,不合理的。每1混沌提供0.1物理抵抗。",
 		"unit": false,
 		"color": "#808080",
 		"require": "g.xiulian_astro_zhuji_3>=1",
 		"name": "混沌",
 		"val": 0,
-		"max": 0
+		"max": 0,
+		"mod":{
+			"player.physical_save": 0.1
+		}
 	},
 	{
 		"id": "elect",
@@ -3071,7 +3124,7 @@
 		"desc": "Raw magical energy",
 		"unit": false,
 		"require": "lore",
-		"name": "mana",
+		"name": "魔力",
 		"max": 5
 	},
 	{
@@ -3079,6 +3132,7 @@
 		"require": "firelore",
 		"unit": false,
 		"tags": "manas,element,prismatic",
+		"name": "火",
 		"desc": "Fire Mana",
 		"max": 0
 	},
@@ -3087,6 +3141,7 @@
 		"require": "airlore",
 		"unit": false,
 		"tags": "manas,element,prismatic",
+		"name": "气",
 		"desc": "Air Mana",
 		"max": 0
 	},
@@ -3095,6 +3150,7 @@
 		"unit": false,
 		"tags": "manas,element,prismatic",
 		"require": "earthlore",
+		"name": "大地",
 		"desc": "Earth Mana",
 		"max": 0
 	},
@@ -3103,6 +3159,7 @@
 		"unit": false,
 		"tags": "manas,element,prismatic",
 		"desc": "Water Mana",
+		"name": "水",
 		"require": "waterlore",
 		"max": 0
 	},
@@ -3120,6 +3177,7 @@
 		"tags": "manas,prismatic",
 		"unit": false,
 		"require": "shadowlore",
+		"name": "暗影",
 		"desc": "Shadow mana",
 		"max": 0
 	},
@@ -3128,6 +3186,7 @@
 		"tags": "manas,prismatic",
 		"unit": false,
 		"require": "lightlore",
+		"name": "光",
 		"desc": "Light mana",
 		"max": 0
 	},
@@ -3136,6 +3195,7 @@
 		"tags": "manas,prismatic",
 		"unit": false,
 		"desc": "Spirit mana",
+		"name": "精神",
 		"require": "spiritlore",
 		"max": 0
 	},
@@ -3144,6 +3204,7 @@
 		"require": "chronomancy",
 		"tags": "manas,primordial",
 		"unit": false,
+		"name": "时",
 		"desc": "Time incarnate. If only...",
 		"max": 0
 	},
@@ -3151,8 +3212,24 @@
 		"id": "void",
 		"tags": "manas,primordial",
 		"unit": false,
+		"name": "虚",
 		"desc": "Nothingness. No current use.",
 		"flavor": "",
+		"max": 0
+	},
+	{
+		"id": "class_save_info",
+		"unit": false,
+		"locked": true,
+		"name": "强度/抵抗有效值说明",
+		"desc": "此处显示的强度/抗性为计算后的有效值，在有效值<20前，获得的每点强度/抵抗为1:1有效加成，>20且<40这个部分，为2:1，>40且<60这个部分，为3:1，>60且<80这个部分，为4:1，>80且<1000这个部分，为5:1，大于1000后的部分，为20:1"
+	},
+	{
+		"id": "overlord_symbol",
+		"name": "霸者之誓",
+		"desc": "霸者之誓",
+		"group": "霸者",
+		"locked": true,
 		"max": 0
 	}
 ]

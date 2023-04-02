@@ -4,7 +4,7 @@
 		"name": "皮手套",
 		"armor": 1,
 		"slot": "hands",
-		"cost": 20,
+		"cost": 10,
 		"enchants": 1,
 		"only": "cloth,leather"
 	},
@@ -13,7 +13,7 @@
 		"name": "布鞋",
 		"armor": 1,
 		"slot": "feet",
-		"cost": 20,
+		"cost": 10,
 		"enchants": 1,
 		"only": "cloth,leather,metal"
 	},
@@ -39,6 +39,11 @@
 		"armor": 5,
 		"slot": "chest",
 		"enchants": 1,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
 		"cost": 10,
 		"level": 2
 	},
@@ -48,6 +53,11 @@
 		"armor": 4,
 		"slot": "shins",
 		"enchants": 1,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
 		"cost": 10,
 		"level": 2
 	},
@@ -57,6 +67,11 @@
 		"armor": 2,
 		"slot": "feet",
 		"enchants": 1,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.1
+			}
+		},
 		"cost": 10,
 		"level": 2
 	},
@@ -70,6 +85,7 @@
 		"cost": 10,
 		"alter": {
 			"mod": {
+				"self.hardiness": 0.1,
 				"self.resist.chaos": 2
 			}
 		},
@@ -85,6 +101,7 @@
 		"level": 10,
 		"alter": {
 			"mod": {
+				"self.hardiness": 0.1,
 				"self.resist.chaos": 1
 			}
 		},
@@ -100,6 +117,7 @@
 		"level": 10,
 		"alter": {
 			"mod": {
+				"self.hardiness": 0.1,
 				"self.resist.heli": 2
 			}
 		},
@@ -115,6 +133,7 @@
 		"level": 9,
 		"alter": {
 			"mod": {
+				"self.hardiness": 0.1,
 				"self.resist.chaos": 2
 			}
 		},
@@ -125,7 +144,7 @@
 		"name": "坎肩",
 		"armor": 2,
 		"slot": "chest",
-		"cost": 100,
+		"cost": 10,
 		"level": 1,
 		"only": "natural,leather,cloth"
 	},
@@ -134,7 +153,7 @@
 		"name": "皮裤",
 		"armor": 2,
 		"slot": "shins",
-		"cost": 100,
+		"cost": 10,
 		"level": 1,
 		"only": "natural,leather,cloth"
 	},
@@ -148,6 +167,7 @@
 		"slot": "trinket",
 		"enchants": 3,
 		"cost": 10,
+		"unique": true,
 		"level": 20,
 		"alter": {
 			"mod": {
@@ -169,7 +189,8 @@
 		"slot": "trinket",
 		"enchants": 6,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 25,
 		"alter": {
 			"mod": {
 				"yxls.rate": -0.01,
@@ -190,7 +211,8 @@
 		"slot": "trinket",
 		"enchants": 6,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 26,
 		"alter": {
 			"mod": {
 				"yxls.rate": -0.01,
@@ -211,10 +233,12 @@
 		"slot": "head",
 		"enchants": 3,
 		"cost": 10,
+		"unique": true,
 		"level": 20,
 		"alter": {
 			"mod": {
 				"f_power": 5,
+				"self.hardiness": 0.1,
 				"self.resist.wood": 5,
 				"self.resist.fire": 5,
 				"self.resist.land": 5,
@@ -237,10 +261,12 @@
 		"slot": "head",
 		"enchants": 3,
 		"cost": 10,
+		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
 				"f_power": 5,
+				"self.hardiness": 0.1,
 				"self.resist.chaos": 6,
 				"shenshi.max": -1,
 				"elect.max": -3,
@@ -259,6 +285,7 @@
 		"slot": "head",
 		"enchants": 3,
 		"cost": 10,
+		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -281,7 +308,8 @@
 		"slot": "head",
 		"enchants": 6,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 25,
 		"alter": {
 			"mod": {
 				"f_power": 20,
@@ -309,11 +337,13 @@
 		"slot": "head",
 		"enchants": 0,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 25,
 		"alter": {
 			"mod": {
 				"f_power": 40,
 				"lg.rate": 0.5,
+				"self.hardiness": 0.1,
 				"super_mind.rate": 0.5,
 				"self.resist.wood": 5,
 				"self.resist.fire": 5,
@@ -334,10 +364,12 @@
 		"slot": "head",
 		"enchants": 0,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 30,
 		"alter": {
 			"mod": {
 				"f_power": 60,
+				"self.hardiness": 0.2,
 				"self.resist.heli": 10,
 				"self.resist.chaos": 10,
 				"self.resist.wood": 5,
@@ -359,7 +391,8 @@
 		"slot": "back",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 5,
@@ -381,7 +414,8 @@
 		"slot": "waist",
 		"enchants": 2,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 5,
@@ -403,11 +437,13 @@
 		"slot": "waist",
 		"enchants": 10,
 		"cost": 10,
-		"level": 60,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 20,
 				"lg.rate": 0.2,
+				"self.hardiness": 0.1,
 				"super_mind.rate": 0.2,
 				"self.resist.wood": 5,
 				"self.resist.fire": 5,
@@ -428,10 +464,12 @@
 		"slot": "chest",
 		"enchants": 3,
 		"cost": 10,
-		"level": 20,
+		"unique": true,
+		"level": 12,
 		"alter": {
 			"mod": {
 				"f_power": 10,
+				"self.hardiness": 0.2,
 				"self.resist.wood": 10,
 				"self.resist.fire": 10,
 				"self.resist.land": 10,
@@ -454,10 +492,12 @@
 		"slot": "chest",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 10,
+				"self.hardiness": 0.2,
 				"self.resist.chaos": 12,
 				"shenshi.max": -1,
 				"elect.max": -5,
@@ -476,10 +516,12 @@
 		"slot": "chest",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 10,
+				"self.hardiness": 0.2,
 				"self.resist.water": 12,
 				"shenshi.max": -1,
 				"elect.max": -5,
@@ -498,7 +540,8 @@
 		"slot": "chest",
 		"enchants": 6,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 25,
 		"alter": {
 			"mod": {
 				"f_power": 25,
@@ -526,10 +569,12 @@
 		"slot": "chest",
 		"enchants": 0,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 30,
 		"alter": {
 			"mod": {
 				"f_power": 100,
+				"self.hardiness": 0.36,
 				"self.resist.heli": 15,
 				"self.resist.chaos": 15,
 				"self.resist.wood": 20,
@@ -553,10 +598,12 @@
 		"slot": "shins",
 		"enchants": 3,
 		"cost": 10,
-		"level": 20,
+		"unique": true,
+		"level": 15,
 		"alter": {
 			"mod": {
 				"f_power": 7,
+				"self.hardiness": 0.2,
 				"self.resist.wood": 5,
 				"self.resist.fire": 5,
 				"self.resist.land": 5,
@@ -579,10 +626,12 @@
 		"slot": "shins",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 20,
 		"alter": {
 			"mod": {
 				"f_power": 7,
+				"self.hardiness": 0.2,
 				"self.resist.chaos": 5,
 				"shenshi.max": -1,
 				"elect.max": -3,
@@ -601,10 +650,12 @@
 		"slot": "shins",
 		"enchants": 0,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 30,
 		"alter": {
 			"mod": {
 				"f_power": 60,
+				"self.hardiness": 0.2,
 				"self.resist.heli": 15,
 				"self.resist.chaos": 15,
 				"self.resist.wood": 13,
@@ -628,10 +679,12 @@
 		"slot": "shins",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 7,
+				"self.hardiness": 0.1,
 				"self.resist.water": 8,
 				"shenshi.max": -1,
 				"elect.max": -3,
@@ -650,10 +703,12 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 7,
+				"self.hardiness": 0.1,
 				"self.resist.water": 7,
 				"shenshi.max": -1,
 				"elect.max": -3,
@@ -672,10 +727,12 @@
 		"slot": "feet",
 		"enchants": 3,
 		"cost": 10,
-		"level": 20,
+		"unique": true,
+		"level": 15,
 		"alter": {
 			"mod": {
 				"f_power": 4,
+				"self.hardiness": 0.1,
 				"self.resist.wood": 3,
 				"self.resist.fire": 3,
 				"self.resist.land": 3,
@@ -698,10 +755,12 @@
 		"slot": "feet",
 		"enchants": 0,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 30,
 		"alter": {
 			"mod": {
 				"f_power": 40,
+				"self.hardiness": 0.2,
 				"self.resist.heli": 8,
 				"self.resist.chaos": 8,
 				"self.resist.wood": 8,
@@ -725,10 +784,12 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 4,
+				"self.hardiness": 0.2,
 				"self.resist.chaos": 5,
 				"shenshi.max": -1,
 				"elect.max": -1,
@@ -748,7 +809,8 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"level": 30,
+		"unique": true,
+		"level": 15,
 		"alter": {
 			"mod": {
 				"laser_ene.rate": 0.5,
@@ -772,7 +834,8 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 10,
 		"alter": {
 			"mod": {
 				"laser_ene.rate": 0.7,
@@ -796,7 +859,7 @@
 		"slot": "back",
 		"enchants": 1,
 		"cost": 10,
-		"level": 20,
+		"level": 15,
 		"alter": {
 			"mod": {
 				"f_power": 2,
@@ -814,9 +877,11 @@
 		"slot": "back",
 		"enchants": 6,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 25,
 		"alter": {
 			"mod": {
+				"self.hardiness": 0.1,
 				"f_power": 15,
 				"jls.rate": 0.3,
 				"gwl.rate": 0.3,
@@ -836,7 +901,8 @@
 		"slot": "back",
 		"enchants": 3,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 10,
 		"alter": {
 			"mod": {
 				"jisu_zhushe.max":1,
@@ -858,7 +924,7 @@
 		"slot": "neck",
 		"enchants": 1,
 		"cost": 10,
-		"level": 20,
+		"level": 11,
 		"alter": {
 			"mod": {
 				"f_power": 2,
@@ -876,7 +942,7 @@
 		"kind": "ring",
 		"enchants": 1,
 		"cost": 10,
-		"level": 20,
+		"level": 11,
 		"alter": {
 			"mod": {
 				"f_power": 2,
@@ -894,7 +960,8 @@
 		"slot": "fingers",
 		"enchants": 6,
 		"cost": 10,
-		"level": 55,
+		"unique": true,
+		"level": 22,
 		"alter": {
 			"mod": {
 				"f_power": 7,
@@ -912,7 +979,7 @@
 		"slot": "hands",
 		"enchants": 1,
 		"cost": 10,
-		"level": 20,
+		"level": 11,
 		"alter": {
 			"mod": {
 				"f_power": 2,
@@ -922,76 +989,193 @@
 	},
 	{
 		"id": "paddedarmor",
-		"name": "padded armor",
+		"name": "鼓甲",
 		"armor": 3,
 		"slot": "chest",
 		"tags": "t_paddedarmor,d_paddedarmor",
-		"cost": 150,
+		"cost": 10,
 		"level": 4,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.2
+			}
+		},
 		"only": "leather,cloth"
 	},
 	{
+		"id": "paddedarmor_1",
+		"name": "硬甲",
+		"armor": 15,
+		"color": "#2ECC71",
+		"slot": "chest",
+		"cost": 30,
+		"level": 15,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.2
+			}
+		}
+	},
+	{
 		"id": "chainmail",
+		"name": "锁甲",
 		"armor": 5,
 		"slot": "chest",
 		"tags": "t_chainmail,d_chainmail",
-		"cost": 350,
+		"cost": 10,
 		"level": 5,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.3
+			}
+		},
 		"enchants": 0
 	},
 	{
+		"id": "chainmail_1",
+		"name": "硬锁甲",
+		"armor": 10,
+		"color": "#2ECC71",
+		"slot": "chest",
+		"cost": 10,
+		"level": 15,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.3
+			}
+		}
+	},
+	{
 		"id": "platemail",
-		"name": "plate mail",
+		"name": "平甲",
 		"armor": 8,
 		"slot": "chest",
 		"tags": "t_platemail,d_platemail",
-		"cost": 700,
+		"cost": 10,
 		"level": 9,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.2
+			}
+		},
 		"enchants": 0
 	},
 	{
 		"id": "robe",
+		"name": "长袍",
 		"armor": 0,
 		"slot": "chest",
 		"tags": "t_robe,d_robe",
-		"cost": 50,
+		"cost": 10,
 		"only": "cloth",
 		"enchants": 0
 	},
 	{
+		"id": "robe_1",
+		"name": "白袍",
+		"armor": 0,
+		"color": "#2ECC71",
+		"slot": "chest",
+		"cost": 10,
+		"level": 11,
+		"alter": {
+			"mod": {
+				"player.tohit": 1,
+				"player.critical_damage": 5
+			}
+		}
+	},
+	{
+		"id": "robe_1",
+		"name": "黑袍",
+		"armor": 0,
+		"color": "#2ECC71",
+		"slot": "chest",
+		"cost": 10,
+		"level": 11,
+		"alter": {
+			"mod": {
+				"player.physical_critical": 3,
+				"player.spell_critical": 3
+			}
+		}
+	},
+	{
 		"id": "conicalhelm",
-		"name": "conical helm",
+		"name": "锥形头盔",
 		"armor": 3,
 		"slot": "head",
 		"tags": "t_conicalhelm,d_conicalhelm",
-		"cost": 40,
+		"level": 3,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.2
+			}
+		},
 		"only": "metal,ethereal"
 	},
 	{
+		"id": "conicalhelm_1",
+		"name": "头盔",
+		"armor": 7,
+		"color": "#2ECC71",
+		"slot": "head",
+		"level": 11,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.hardiness": 0.2
+			}
+		}
+	},
+	{
 		"id": "belt",
+		"name": "皮带",
 		"armor": 0,
 		"slot": "waist",
 		"tags": "t_belt,d_belt",
-		"cost": 30,
+		"cost": 10,
 		"enchants": 0
 	},
 	{
+		"id": "belt_1",
+		"name": "皮带",
+		"armor": 3,
+		"slot": "waist",
+		"tags": "t_belt,d_belt",
+		"level": 15,
+		"cost": 30
+	},
+	{
 		"id": "girdle",
+		"name": "腰带",
 		"armor": 1,
 		"slot": "waist",
 		"tags": "t_girdle,d_girdle",
-		"cost": 50
+		"cost": 10
+	},
+	{
+		"id": "girdle_1",
+		"name": "腰带",
+		"armor": 3,
+		"slot": "waist",
+		"tags": "t_belt,d_belt",
+		"level": 11,
+		"cost": 10
 	},
 	{
 		"id": "cincture",
+		"name": "束带",
 		"armor": 1,
 		"slot": "waist",
 		"tags": "t_cincture,d_cincture",
-		"cost": 50,
+		"cost": 10,
 		"enchants": 0
 	},
 	{
 		"id": "sash",
+		"name": "护腰",
 		"armor": 0,
 		"slot": "waist",
 		"tags": "t_sash,d_sash",
@@ -1001,105 +1185,252 @@
 	},
 	{
 		"id": "cape",
+		"name": "披风",
 		"armor": 0,
 		"slot": "back",
 		"tags": "t_cape,d_cape",
-		"cost": 50,
+		"cost": 10,
 		"only": "cloth",
 		"enchants": 0
 	},
 	{
 		"id": "cloak",
+		"name": "斗篷",
 		"armor": 1,
 		"slot": "back",
 		"tags": "t_cloak,d_cloak",
-		"cost": 50,
+		"cost": 10,
 		"only": "cloth",
 		"enchants": 0
 	},
 	{
+		"id": "cloak_1",
+		"name": "羊毛斗篷",
+		"armor": 3,
+		"color": "#2ECC71",
+		"slot": "back",
+		"tags": "t_cloak,d_cloak",
+		"level": 11,
+		"cost": 30
+	},
+	{
 		"id": "wings",
+		"name": "假翅",
 		"armor": 1,
 		"slot": "back",
 		"tags": "t_wings,d_wings",
 		"level": 20,
-		"cost": 5000,
+		"cost": 10,
 		"properties": "10%",
 		"enchants": 0
 	},
 	{
 		"id": "greaves",
+		"name": "皮护胫",
 		"armor": 1,
 		"slot": "shins",
+		"level": 3,
 		"tags": "t_greaves,d_greaves",
 		"cost": 30
 	},
 	{
 		"id": "pendant",
-		"armor": 0,
+		"name": "吊坠",
+		"armor": 1,
 		"slot": "neck",
+		"color": "#2ECC71",
 		"tags": "t_pendant,d_pendant",
-		"cost": 300,
+		"cost": 10,
+		"level": 3,
 		"properties": "5%",
 		"enchants": 0
 	},
 	{
+		"id": "pendant_1",
+		"name": "玉坠",
+		"armor": 3,
+		"slot": "neck",
+		"color": "#2ECC71",
+		"tags": "t_pendant,d_pendant",
+		"level": 15,
+		"cost": 10
+	},
+	{
+		"id": "pendant_2",
+		"name": "雕饰吊坠",
+		"armor": 3,
+		"slot": "neck",
+		"color": "#2ECC71",
+		"tags": "t_pendant,d_pendant",
+		"level": 15,
+		"cost": 10
+	},
+	{
 		"id": "collar",
+		"name": "领子",
 		"armor": 1,
 		"slot": "neck",
 		"tags": "t_collar,d_collar",
-		"cost": 30,
+		"cost": 10,
+		"level": 3,
 		"enchants": 0
 	},
 	{
-		"id": "amulet",
-		"armor": 0,
+		"id": "collar_1",
+		"name": "领子",
+		"armor": 2,
 		"slot": "neck",
+		"tags": "t_collar,d_collar",
+		"level": 10,
+		"cost": 10
+	},
+	{
+		"id": "amulet",
+		"name": "护颈",
+		"armor": 6,
+		"slot": "neck",
+		"color": "#2ECC71",
 		"tags": "t_amulet,d_amulet",
-		"cost": 500,
+		"cost": 10,
 		"level": 15,
 		"properties": "10%",
 		"enchants": 0
 	},
 	{
 		"id": "necklace",
-		"armor": 0,
+		"name": "项链",
+		"armor": 1,
 		"slot": "neck",
 		"tags": "t_necklace,d_necklace",
-		"cost": 50,
+		"cost": 10,
 		"properties": "1%",
 		"enchants": 0
 	},
 	{
+		"id": "necklace_1",
+		"name": "项链",
+		"armor": 3,
+		"slot": "fingers",
+		"color": "#2ECC71",
+		"tags": "t_ring,d_ring",
+		"kind": "ring",
+		"level": 15,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"player.physical_class": 6,
+				"player.spell_class": 6,
+				"f_power": 25
+			}
+		}
+	},
+	{
+		"id": "necklace_2",
+		"name": "项链",
+		"armor": 3,
+		"slot": "fingers",
+		"color": "#2ECC71",
+		"tags": "t_ring,d_ring",
+		"kind": "ring",
+		"level": 15,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"player.physical_save": 6,
+				"player.physical_save": 6,
+				"f_power": 25
+			}
+		}
+	},
+	{
 		"id": "band",
-		"armor": 0,
+		"name": "护手带",
+		"armor": 1,
 		"slot": "fingers",
 		"tags": "t_band,d_band",
 		"kind": "ring",
-		"cost": 50,
+		"cost": 10,
 		"level": 3,
 		"properties": "1%",
 		"enchants": 0
 	},
 	{
 		"id": "loop",
-		"armor": 0,
+		"name": "指圈",
+		"armor": 1,
 		"slot": "fingers",
 		"tags": "t_loop,d_loop",
 		"kind": "ring",
 		"cost": 10,
-		"level": 1,
+		"level": 3,
 		"enchants": 0
 	},
 	{
 		"id": "ring",
-		"armor": 0,
+		"name": "指环",
+		"armor": 3,
 		"slot": "fingers",
 		"tags": "t_ring,d_ring",
 		"kind": "ring",
-		"level": 5,
-		"cost": 100,
+		"level": 3,
+		"cost": 10,
 		"properties": "3%",
 		"enchants": 0
+	},
+	{
+		"id": "ring_1",
+		"name": "指环",
+		"armor": 3,
+		"slot": "fingers",
+		"color": "#2ECC71",
+		"tags": "t_ring,d_ring",
+		"kind": "ring",
+		"level": 3,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.resist.wood": 1,
+				"self.resist.fire": 1,
+				"self.resist.water": 1,
+				"f_power": 25
+			}
+		}
+	},
+	{
+		"id": "ring_2",
+		"name": "指环",
+		"armor": 3,
+		"slot": "fingers",
+		"color": "#2ECC71",
+		"tags": "t_ring,d_ring",
+		"kind": "ring",
+		"level": 3,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.resist.wood": 1,
+				"self.resist.gold": 1,
+				"self.resist.water": 1,
+				"f_power": 25
+			}
+		}
+	},
+	{
+		"id": "ring_3",
+		"name": "指环",
+		"armor": 3,
+		"slot": "fingers",
+		"color": "#2ECC71",
+		"tags": "t_ring,d_ring",
+		"kind": "ring",
+		"level": 3,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.resist.fire": 1,
+				"self.resist.land": 1,
+				"f_power": 25
+			}
+		}
 	}
 ]
