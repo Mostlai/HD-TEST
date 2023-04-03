@@ -169,6 +169,8 @@
 				"kind": "undead/soul_form",
 				"level": 7,
 				"speed": 3,
+				"defense": 0,
+				"dodge": 0,
 				"hp": 24,
 				"attack": {
 					"name": "嚎叫",
@@ -184,6 +186,8 @@
 				"level": 7,
 				"speed": 3,
 				"hp": 30,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "嚎叫",
 					"dmg": "6~7",
@@ -198,6 +202,8 @@
 				"level": 7,
 				"speed": 3,
 				"hp": 35,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "嚎叫",
 					"dmg": "6~7",
@@ -212,6 +218,8 @@
 				"level": 6,
 				"speed": 2,
 				"hp": 30,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "冰冻",
 					"dmg": "3~7",
@@ -226,6 +234,8 @@
 				"level": 6,
 				"speed": 3,
 				"hp": 10,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "冲撞",
 					"dmg": "8~9",
@@ -240,6 +250,8 @@
 				"level": 6,
 				"speed": 3,
 				"hp": 10,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "冲撞",
 					"dmg": "8~9",
@@ -254,6 +266,8 @@
 				"level": 0,
 				"speed": -5,
 				"hp": 8,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "抓挠",
 					"dmg": "0~5",
@@ -268,6 +282,8 @@
 				"level": 0,
 				"speed": -7,
 				"hp": 15,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "爪击",
 					"dmg": "1~5",
@@ -282,6 +298,8 @@
 				"level": 0,
 				"speed": -5,
 				"hp": 20,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "爪击",
 					"dmg": "1~5",
@@ -297,6 +315,8 @@
 				"level": 0,
 				"speed": -10,
 				"hp": 15,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "刺击",
 					"dmg": "0~4",
@@ -312,6 +332,8 @@
 				"level": 0,
 				"speed": -6,
 				"hp": 9,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "猛击",
 					"dmg": "1~2",
@@ -327,6 +349,8 @@
 				"level": 0,
 				"speed": -10,
 				"hp": 15,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "刺击",
 					"dmg": "0~3",
@@ -342,6 +366,8 @@
 				"level": 0,
 				"speed": -10,
 				"hp": 5,
+				"defense": 0,
+				"dodge": 0,
 				"attack": {
 					"name": "爪击",
 					"dmg": "0~1",
