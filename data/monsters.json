@@ -1347,10 +1347,10 @@
 		"attack": {
 			"name": "攻击",
 			"bonus_class": 1,
-			"kind": "psychic",
+			"kind": "chaos",
 			"dmg": "44~46",
 			"dot": {
-				"kind": "psychic",
+				"kind": "chaos",
 				"name": "疼痛",
 				"dmg": "5~7",
 				"duration": 3
