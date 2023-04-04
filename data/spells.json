@@ -195,7 +195,7 @@
 		},
 		"attack": {
 			"bonus_class": 1,
-			"damage": "3~5",
+			"damage": "10~12",
 			"dot": {
 				"kind": "heli",
 				"duration": 10,
@@ -223,7 +223,7 @@
 		},
 		"attack": {
 			"bonus_class": 1,
-			"damage": "6~8"
+			"damage": "15~18",
 		}
 	},
 	{
@@ -380,7 +380,7 @@
 		},
 		"attack": {
 			"bonus_class": 1,
-			"damage": "8~9",
+			"damage": "19~22",
 			"dot": {
 				"kind": "chaos",
 				"duration": 3,
@@ -531,7 +531,7 @@
 			"heli": 5
 		},
 		"attack": {
-			"damage": "16~22",
+			"damage": "19~25",
 			"kind": "wood",
 			"bonus_class": 1,
 			"dot": {
@@ -1747,7 +1747,7 @@
 		},
 		"attack": {
 			"tohit": 100,
-			"damage": "252~310",
+			"damage": "352~410",
 			"bonus_class": 1,
 			"kind": "wuhuan",
 			"dot": {
@@ -2002,6 +2002,41 @@
 			}
 		},
 		"flavor": ""
+	},
+	{
+		"id": "hujiashibapai_1",
+		"name": "胡笳十八拍·起势",
+		"school": "归藏",
+		"level": 10,
+		"desc": "鞞鼓喧兮从夜达明，胡风浩浩兮暗塞营。感今伤昔兮三拍成，衔悲畜恨兮何时平。\n对周围敌人造成150%基础武器伤害,此攻击获得3命中加成,如果此次攻击未命中,为自己叠加一层胡笳起势,每层增加2气血恢复。",
+		"cd": 1,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000
+		},
+		"cost": {
+			"tili": 15,
+			"heli": 5,
+			"chaos": 5
+		},
+		"attack": {
+			"damage": "(a.weapon.damage+a.weapon_bonus)*1.5",
+			"targets": "enemies",
+			"kind": "body",
+			"tohit": 3,
+			"bonus_class": 0,
+			"unhit_dot": {
+				"add_target": "self",
+				"id": "hujiashibapai_1_bf",
+				"name": "胡笳起势",
+				"desc": "增加2气血恢复",
+				"maxstack": 5,
+				"duration": 10,
+				"effect": {
+					"hp": 2
+				}
+			}
+		}
 	},
 	{
 		"id": "stam1",

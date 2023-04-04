@@ -91,7 +91,7 @@
 			"isweapon": true,
 			"name": "神念冲击",
 			"kind": "heli",
-			"damage": "6~8"
+			"damage": "12~17"
 		},
 		"alter": {
 			"mod": {
@@ -111,7 +111,7 @@
 			"isweapon": true,
 			"name": "幽蚀",
 			"kind": "chaos",
-			"damage": "12~18"
+			"damage": "17~18"
 		},
 		"alter": {
 			"mod": {

@@ -662,44 +662,6 @@
 				}
 			},
 			{
-				"id": "iceflame",
-				"name": "icy flame",
-				"level": 3,
-				"desc": "A contradiction sustained by magic.",
-				"require": "(g.icelore>=10&&g.firelore>=10)||g.warmpotion",
-				"school": "ice",
-				"buy": {
-					"frost.rate": -2
-				},
-				"cost": {
-					"ice": 3,
-					"fire": 1
-				},
-				"at": {
-					"100": {
-						"attack.dot.effect.dmg.min": 2,
-						"attack.dot.effect.dmg.max": 5,
-						"attack.tohit": 1,
-						"attack.dot.duration": 5
-					},
-					"1000": {
-						"attack.dot.effect.dmg.min": 5,
-						"attack.dot.effect.dmg.max": 10,
-						"attack.tohit": 2,
-						"attack.dot.duration": 10
-					}
-				},
-				"attack": {
-					"damage": "5~10",
-					"tohit": 7,
-					"kind": "fire",
-					"dot": {
-						"duration": 5,
-						"dmg": "3~5"
-					}
-				}
-			},
-			{
 				"id": "warmfield",
 				"name": "field of heat",
 				"level": 5,
