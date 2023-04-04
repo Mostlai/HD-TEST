@@ -223,7 +223,7 @@
 		},
 		"attack": {
 			"bonus_class": 1,
-			"damage": "15~18",
+			"damage": "15~18"
 		}
 	},
 	{
@@ -1850,7 +1850,6 @@
 		"require": "g.techo_phy_sszdyy>=1",
 		"buy": {
 			"ganwu": 2000,
-			"ganwu": 2000,
 			"paper": 200,
 			"books": 50,
 			"jingdian": 20,
@@ -1909,7 +1908,6 @@
 			"name": "弱点侦察",
 			"desc":"当此状态存在时，物理暴击率和法术暴击率提高5%。",
 			"duration": 10000,
-			"duration": 10,
 			"mod": {
 				"self": {
 					"physical_critical": 5,
