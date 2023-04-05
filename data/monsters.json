@@ -1352,7 +1352,7 @@
 			"dot": {
 				"kind": "chaos",
 				"name": "疼痛",
-				"dmg": "5~7",
+				"dmg": "2~3",
 				"duration": 3
 			}
 		},
