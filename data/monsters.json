@@ -1348,7 +1348,7 @@
 			"name": "攻击",
 			"bonus_class": 1,
 			"kind": "chaos",
-			"dmg": "44~46",
+			"dmg": "34~46",
 			"dot": {
 				"kind": "chaos",
 				"name": "疼痛",
