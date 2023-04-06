@@ -1521,7 +1521,7 @@
 		"kind": "humanoid/human",
 		"desc": "像你一样的人",
 		"hp": 150,
-		"tohit": 10,
+		"tohit": 45,
 		"defense": 50,
 		"attack": [
 			{
@@ -1556,7 +1556,7 @@
 		"kind": "humanoid/human",
 		"desc": "",
 		"hp": 350,
-		"tohit": 10,
+		"tohit": 45,
 		"speed": 22,
 		"defense": 70,
 		"attack": [
@@ -1593,7 +1593,7 @@
 		"rank": 2,
 		"desc": "",
 		"hp": 350,
-		"tohit": 10,
+		"tohit": 45,
 		"speed": 22,
 		"defense": 70,
 		"attack": [
@@ -1651,7 +1651,7 @@
 		"rank": 2,
 		"desc": "",
 		"hp": 600,
-		"tohit": 10,
+		"tohit": 45,
 		"speed": 22,
 		"defense": 100,
 		"attack": [
