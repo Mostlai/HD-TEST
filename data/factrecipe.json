@@ -700,7 +700,7 @@
 			"assemble_thread": 1,
 			"emember_unit.balance": -5,
 			"mech_mo_struct.balance": -7,
-			"dock_unit_1.balance": -1,
+			"dock_unit_1.balance": 1,
 			"human_power.max": -300,
 			"industry_space": 0.5,
 			"industry_elect": 0.5,
