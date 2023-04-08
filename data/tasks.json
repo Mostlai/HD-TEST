@@ -2622,9 +2622,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 30,
+		"length": 8,
 		"cost": {
-			"money": 100,
+			"money": 50,
 			"ganwu": 30
 		},
 		"run": {
@@ -2642,9 +2642,9 @@
 		"verb": "研究中",
 		"require": "g.hjyj_1>=10",
 		"max": 1,
-		"length": 10,
+		"length": 8,
 		"cost": {
-			"money": 100,
+			"money": 50,
 			"ganwu": 30
 		},
 		"run": {
@@ -2694,9 +2694,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 30,
+		"length": 8,
 		"cost": {
-			"money": 100,
+			"money": 50,
 			"ganwu": 30
 		},
 		"run": {
@@ -2758,9 +2758,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 30,
+		"length": 8,
 		"cost": {
-			"money": 100,
+			"money": 50,
 			"ganwu": 30
 		},
 		"run": {
@@ -2782,9 +2782,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=5",
 		"max": 50,
-		"length": 30,
+		"length": 8,
 		"cost": {
-			"money": 100,
+			"money": 50,
 			"ganwu": 30
 		},
 		"run": {
