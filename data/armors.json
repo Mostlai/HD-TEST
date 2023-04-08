@@ -31,6 +31,11 @@
 		"slot": "head",
 		"enchants": 1,
 		"level": 2,
+		"alter": {
+			"mod": {
+				"self.tohit": 1
+			}
+		},
 		"cost": 10
 	},
 	{
@@ -41,6 +46,7 @@
 		"enchants": 1,
 		"alter": {
 			"mod": {
+				"self.tohit": 1,
 				"self.hardiness": 0.1
 			}
 		},
@@ -69,6 +75,7 @@
 		"enchants": 1,
 		"alter": {
 			"mod": {
+				"self.tohit": 1,
 				"self.hardiness": 0.1
 			}
 		},
@@ -85,6 +92,7 @@
 		"cost": 10,
 		"alter": {
 			"mod": {
+				"self.tohit": 1,
 				"self.hardiness": 0.1,
 				"self.resist.chaos": 2
 			}
@@ -101,6 +109,7 @@
 		"level": 10,
 		"alter": {
 			"mod": {
+				"self.tohit": 1,
 				"self.hardiness": 0.1,
 				"self.resist.chaos": 1
 			}
@@ -117,6 +126,7 @@
 		"level": 10,
 		"alter": {
 			"mod": {
+				"self.tohit": 1,
 				"self.hardiness": 0.1,
 				"self.resist.heli": 2
 			}
@@ -133,6 +143,7 @@
 		"level": 9,
 		"alter": {
 			"mod": {
+				"self.tohit": 1,
 				"self.hardiness": 0.1,
 				"self.resist.chaos": 2
 			}

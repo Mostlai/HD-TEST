@@ -59,7 +59,7 @@
 		},
 		"alter": {
 			"mod": {
-				"self.tohit": 1
+				"self.tohit": 3
 			}
 		},
 		"cost": 10,
@@ -76,7 +76,7 @@
 		},
 		"alter": {
 			"mod": {
-				"self.tohit": 1
+				"self.tohit": 3
 			}
 		},
 		"cost": 10,
@@ -95,6 +95,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.defense": 1,
 				"f_power": 8
 			}
@@ -115,6 +116,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.chaos": 10,
 				"f_power": 18
 			}
@@ -143,6 +145,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.chaos": 10,
 				"f_power": 18
 			}
@@ -174,6 +177,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.chaos": 5,
 				"self.resist.heli": 5,
 				"f_power": 25
@@ -207,6 +211,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.fire": 5,
 				"self.resist.water": 5,
 				"f_power": 25
@@ -240,6 +245,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.gold": 5,
 				"self.resist.wood": 5,
 				"f_power": 25
@@ -273,6 +279,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.gold": 5,
 				"self.resist.wood": 5,
 				"elect.rate": -4,
@@ -301,6 +308,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.gold": 5,
 				"self.resist.wood": 5,
 				"elect.rate": -3,
@@ -328,6 +336,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"f_power": 25
 			}
 		},
@@ -358,6 +367,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.wood": 1,
 				"self.resist.fire": 1,
 				"self.resist.land": 1,
@@ -394,6 +404,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.wood": 1,
 				"self.resist.fire": 1,
 				"self.resist.land": 1,
@@ -429,6 +440,7 @@
 		},
 		"alter": {
 			"mod": {
+				"self.tohit": 5,
 				"self.resist.wood": 1,
 				"self.resist.fire": 1,
 				"self.resist.land": 1,
