@@ -12,6 +12,15 @@
 					"maolitoushe": true,
 					"maozhihaoling": true
 				}
+			},
+			{
+				"id": "evt_blackcat_thd_1",
+				"require": "g.ht_blackcat_power>=1 && g.guixuan>=1",
+				"name": "猫力霸拳",
+				"desc": "",
+				"result": {
+					"maolibaopo": true
+				}
 			}
 		],
 		"spells": [
@@ -38,6 +47,30 @@
 						"damage": 10
 					}
 				}
+			},
+			{
+				"id": "maolibaopo",
+				"name": "猫力霸拳",
+				"level": 9,
+				"school": "猫力",
+				"desc": "狗子，你便绝对不能胜过我，我这已去至十万境界猫力的拳力，就比那之前的猫力投射流量强大五十倍，如此霸道，如此狂劲，他妈的天下还有谁能阻挡了。狗子，你已经败了。",
+				"locked": true,
+				"cd": 100,
+				"buy": {
+					"blackcat_power": 100000,
+					"ht_blackcat_power": 1
+				},
+				"cost": {
+					"tili": 50,
+					"stamina": 50,
+					"hp": 50,
+					"blackcat_power": 1000,
+					"ht_blackcat_power": 1
+				},
+				"attack": {
+					"damage": "300~500"
+				},
+				"flavor": "请看下期--世上最强的爪"
 			},
 			{
 				"id": "maozhihaoling",
