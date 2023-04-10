@@ -170,6 +170,17 @@
 		"max_muti": 25
 	},
 	{
+		"id": "timeraft_cat",
+		"name": "时空形态-猫主",
+		"race_mod":{
+			"resist":{
+				"all": 100,
+				"cat": -100
+			}
+		},
+		"max_muti": 1
+	},
+	{
 		"id": "elderich",
 		"name": "埃尔德里奇",
 		"race_mod":{
