@@ -146,7 +146,7 @@
 				"tohit": 90,
 				"dodge": 50,
 				"speed": 10,
-				"hp": 1000,
+				"hp": 1100,
 				"attack": {
 					"name": "狗力霸拳",
 					"kind": "cat",
