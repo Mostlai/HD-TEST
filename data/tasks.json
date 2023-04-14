@@ -2622,9 +2622,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 8,
+		"length": 3,
 		"cost": {
-			"money": 50,
+			"money": 20,
 			"ganwu": 30
 		},
 		"run": {
@@ -2694,9 +2694,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 8,
+		"length": 3,
 		"cost": {
-			"money": 50,
+			"money": 20,
 			"ganwu": 30
 		},
 		"run": {
@@ -2758,9 +2758,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=3",
 		"max": 50,
-		"length": 8,
+		"length": 3,
 		"cost": {
-			"money": 50,
+			"money": 20,
 			"ganwu": 30
 		},
 		"run": {
@@ -2782,9 +2782,9 @@
 		"verb": "研究中",
 		"require": "g.jungongxue>=5",
 		"max": 50,
-		"length": 8,
+		"length": 3,
 		"cost": {
-			"money": 50,
+			"money": 20,
 			"ganwu": 30
 		},
 		"run": {
@@ -2795,6 +2795,113 @@
 			"yanzhandu.rate": -0.05,
 			"shiqi.rate": 0.01,
 			"zhuzhidu.rate": 0.006
+		}
+	},
+	{
+		"id": "qianwnag_yysl",
+		"name": "前往月影森林",
+		"desc": "解锁月影森林及相关征服",
+		"verb": "前往中",
+		"require": "g.zcx>=1",
+		"max": 1,
+		"length": 5,
+		"cost": {
+			"money": 20,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -0.5
+		},
+		"flavor": "我猜比较简单"
+	},
+	{
+		"id": "qianwnag_jlss",
+		"name": "前往巨灵山",
+		"desc": "解锁巨灵山及相关征服",
+		"verb": "前往中",
+		"require": "g.zcx>=1",
+		"max": 1,
+		"length": 5,
+		"cost": {
+			"money": 20,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -0.5
+		}
+	},
+	{
+		"id": "qianwnag_dmhs",
+		"name": "前往地脉火山",
+		"desc": "解锁地脉火山及相关征服",
+		"verb": "前往中",
+		"require": "g.zcx>=1",
+		"max": 1,
+		"length": 5,
+		"cost": {
+			"money": 20,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -0.5
+		}
+	},
+	{
+		"id": "qianwnag_lzdh",
+		"name": "前往劳泽大湖",
+		"desc": "解锁劳泽大湖及相关征服",
+		"verb": "前往中",
+		"require": "g.zcx>=1",
+		"max": 1,
+		"length": 5,
+		"cost": {
+			"money": 20,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -0.5
+		}
+	},
+	{
+		"id": "qianwnag_glpd",
+		"name": "前往古老盆地",
+		"desc": "解锁古老盆地及相关征服",
+		"verb": "前往中",
+		"require": "g.zcx>=1",
+		"max": 1,
+		"length": 5,
+		"cost": {
+			"money": 20,
+			"ganwu": 30
+		},
+		"run": {
+			"ganwu": 2,
+			"time": -0.5
+		}
+	},
+	{
+		"id": "zuheguancha",
+		"name": "武器组合解析",
+		"desc": "",
+		"verb": "解析中",
+		"require": "g.r_adv_w_sj3>=1",
+		"length": 5,
+		"cost": {
+			"paper": 15,
+			"r_adv_bzzj": 2,
+			"r_adv_w_sj1": 2,
+			"r_adv_w_sj2": 1,
+			"r_adv_w_sj3": 1,
+			"r_adv_bzhj": 2
+		},
+		"result": {
+			"exe_paper": 15,
+			"books": 2,
+			"exp": 20
 		}
 	},
 	{

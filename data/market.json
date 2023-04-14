@@ -39,6 +39,71 @@
 		}
 	},
 	{
+		"id": "market_sell_qingjia",
+		"name": "出售标准轻甲",
+		"tags": "市场出售",
+		"desc": "",
+		"require": "g.r_adv_w_sj1>=1",
+		"cost": {
+			"r_adv_w_sj1": 1
+		},
+		"result": {
+			"money": 9
+		}
+	},
+	{
+		"id": "market_sell_zhongjia",
+		"name": "出售标准中甲",
+		"tags": "市场出售",
+		"desc": "",
+		"require": "g.r_adv_bzzj>=1",
+		"cost": {
+			"r_adv_bzzj": 1
+		},
+		"result": {
+			"money": 13
+		}
+	},
+	{
+		"id": "market_sell_zhongjia",
+		"name": "出售标准重甲",
+		"tags": "市场出售",
+		"desc": "",
+		"require": "g.r_adv_bzhj>=1",
+		"cost": {
+			"r_adv_bzhj": 1
+		},
+		"result": {
+			"money": 18
+		}
+	},
+	{
+		"id": "market_sell_wuzhuo",
+		"name": "出售污浊武器",
+		"tags": "市场出售",
+		"desc": "",
+		"require": "g.r_adv_w_sj2>=1",
+		"cost": {
+			"r_adv_bzhj": 1
+		},
+		"result": {
+			"money": 15
+		}
+	},
+	{
+		"id": "market_sell_lengjie",
+		"name": "出售冷结武器",
+		"tags": "市场出售",
+		"desc": "",
+		"require": "g.r_adv_w_sj3>=1",
+		"cost": {
+			"r_adv_w_sj3": 1
+		},
+		"result": {
+			"money": 25
+		}
+	},
+	{
 		"id": "market_shortsword",
 		"name": "短剑",
 		"tags": "购买武器",
