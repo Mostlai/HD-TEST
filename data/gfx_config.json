@@ -4,6 +4,9 @@
 		"ap_ic": "./images/ap.png",
 		"up_ic": "./images/upgrade.png",
 		"f_n_img": "./images/wujianbao.png",
-		"b_music": "./music/bgm.mp3"
+		"b_music": "./music/bgm.mp3",
+		"maotou": "./images/猫猫头.png",
+		"maosheng": "./images/身体.png",
+		"maowei": "./images/尾巴.png"
 	}
 ]

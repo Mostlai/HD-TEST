@@ -178,6 +178,7 @@ input[type="button"], button, div.text-button, div.popup-close {
 }
 
 button.runnable {
+	z-index: 1;
 	background: var(--task-btn-color);
 }
 
