@@ -55,7 +55,7 @@
 				"level": 9,
 				"school": "猫力",
 				"desc": "狗子，你便绝对不能胜过我，我这已去至十万重境界猫力的拳力，就比那之前的猫力投射流量强大五十倍，如此霸道，如此狂劲，他妈的天下还有谁能阻挡了。狗子，你已经败了。",
-				"locked": true,
+				"require": "g.ht_blackcat_power>=1 && g.guixuan>=1",
 				"cd": 100,
 				"buy": {
 					"blackcat_power": 100000,
