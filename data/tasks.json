@@ -2887,6 +2887,7 @@
 		"id": "zuheguancha",
 		"name": "武器组合解析",
 		"desc": "",
+		"tags": "生产",
 		"verb": "解析中",
 		"require": "g.r_adv_w_sj3>=1",
 		"length": 5,
