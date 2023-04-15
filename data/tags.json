@@ -1,6 +1,332 @@
 [
     {
+        "id": "ColdBio",
+        "name": "低温生物",
+        "t_furniture": true
+    },
+    {
+        "id": "Telescope",
+        "name": "望远镜片",
+        "t_furniture": true
+    },
+    {
+        "id": "TelescopeBase",
+        "name": "望远底座",
+        "t_furniture": true
+    },
+    {
+        "id": "TENV",
+        "name": "10V电源",
+        "t_furniture": true
+    },
+    {
         "id": "TENTYV",
-        "name": "20V级电源"
+        "name": "20V电源",
+        "t_furniture": true
+    },
+    {
+        "id": "OHFV",
+        "name": "150V电源",
+        "t_furniture": true
+    },
+    {
+        "id": "Fdeath",
+        "name": "向死法坛",
+        "t_furniture": true
+    },
+    {
+        "id": "warm_clothe",
+        "name": "保暖服装生产点",
+        "t_furniture": true
+    },
+    {
+        "id": "work_space",
+        "name": "工作台",
+        "t_furniture": true
+    },
+    {
+        "id": "research_space",
+        "name": "研究台",
+        "t_furniture": true
+    },
+    {
+        "id": "bed",
+        "name": "床",
+        "t_furniture": true
+    },
+    {
+        "id": "astro",
+        "name": "天文仪",
+        "t_furniture": true
+    },
+    {
+        "id": "bio",
+        "name": "生物实验",
+        "t_furniture": true
+    },
+    {
+        "id": "bio",
+        "name": "生物实验",
+        "t_furniture": true
+    },
+    {
+        "id": "ultraviolet_rays",
+        "name": "紫外实验",
+        "t_furniture": true
+    },
+    {
+        "id": "metal",
+        "name": "熔炉",
+        "t_furniture": true
+    },
+    {
+        "id": "slight",
+        "name": "光学底座",
+        "t_furniture": true
+    },
+    {
+        "id": "enchantsource",
+        "name": "铭刻工作台",
+        "t_furniture": true
+    },
+    {
+        "id": "small_broadcast",
+        "name": "小型广播站",
+        "t_furniture": true
+    },
+    {
+        "id": "candlestick",
+        "name": "烛台",
+        "t_furniture": true
+    },
+    {
+        "id": "spirit_mo",
+        "name": "灵体指引",
+        "t_furniture": true
+    },
+    {
+        "id": "spirit_light",
+        "name": "灵体灯塔",
+        "t_furniture": true
+    },
+    {
+        "id": "spirit_beacon",
+        "name": "灵体信标",
+        "t_furniture": true
+    },
+    {
+        "id": "spirit_stable",
+        "name": "灵体稳定器",
+        "t_furniture": true
+    },
+    {
+        "id": "hq_well",
+        "name": "黄泉稳流井",
+        "t_furniture": true
+    },
+    {
+        "id": "spirit_beacon",
+        "name": "灵体信标",
+        "t_furniture": true
+    },
+    {
+        "id": "music_1",
+        "name": "琴",
+        "t_furniture": true
+    },
+    {
+        "id": "chess_1",
+        "name": "棋",
+        "t_furniture": true
+    },
+    {
+        "id": "book_1",
+        "name": "书",
+        "t_furniture": true
+    },
+    {
+        "id": "paint_1",
+        "name": "画",
+        "t_furniture": true
+    },
+    {
+        "id": "design_core",
+        "name": "设计总台",
+        "t_furniture": true
+    },
+    {
+        "id": "design_sand",
+        "name": "设计沙盒",
+        "t_furniture": true
+    },
+    {
+        "id": "element_dish",
+        "name": "元素皿",
+        "t_furniture": true
+    },
+    {
+        "id": "artifice_1",
+        "name": "基础炼化台",
+        "t_furniture": true
+    },
+    {
+        "id": "mix_1",
+        "name": "基础混合器",
+        "t_furniture": true
+    },
+    {
+        "id": "adv_mix_1",
+        "name": "基础衍生器",
+        "t_furniture": true
+    },
+    {
+        "id": "element_distillation",
+        "name": "元素蒸馏器",
+        "t_furniture": true
+    },
+    {
+        "id": "element_purify",
+        "name": "元素净化器",
+        "t_furniture": true
+    },
+    {
+        "id": "obelisk",
+        "name": "方尖碑",
+        "t_furniture": true
+    },
+    {
+        "id": "dexterous",
+        "name": "机巧构造",
+        "t_furniture": true
+    },
+    {
+        "id": "heli_pump",
+        "name": "合理泵机",
+        "t_furniture": true
+    },
+    {
+        "id": "meg_1",
+        "name": "线圈1",
+        "t_furniture": true
+    },
+    {
+        "id": "alculation_1",
+        "name": "演算器1",
+        "t_furniture": true
+    },
+    {
+        "id": "statistics_1",
+        "name": "管理所1",
+        "t_furniture": true
+    },
+    {
+        "id": "equation_1",
+        "name": "计算处1",
+        "t_furniture": true
+    },
+    {
+        "id": "space_alculation_1",
+        "name": "空间沙盒",
+        "t_furniture": true
+    },
+    {
+        "id": "reflex_1",
+        "name": "基魂反射仪",
+        "t_furniture": true
+    },
+    {
+        "id": "hotlab",
+        "name": "高温实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "signal",
+        "name": "信号实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "nepheloscope",
+        "name": "粒子云室",
+        "t_furniture": true
+    },
+    {
+        "id": "laser",
+        "name": "激光实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "adv_hot_lab",
+        "name": "进阶热力实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "microscope",
+        "name": "显微实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "bio_dry",
+        "name": "高温烘干室",
+        "t_furniture": true
+    },
+    {
+        "id": "bio_screen",
+        "name": "生物质筛选机",
+        "t_furniture": true
+    },
+    {
+        "id": "bio_grind",
+        "name": "几丁质球形研磨机",
+        "t_furniture": true
+    },
+    {
+        "id": "bio_wash",
+        "name": "生物冲洗床",
+        "t_furniture": true
+    },
+    {
+        "id": "anatomy_1",
+        "name": "解剖实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "unreal_point",
+        "name": "黄泉研究基础",
+        "t_furniture": true
+    },
+    {
+        "id": "point_blade",
+        "name": "全向刃",
+        "t_furniture": true
+    },
+    {
+        "id": "unreal_lab",
+        "name": "非实研究所",
+        "t_furniture": true
+    },
+    {
+        "id": "FIFTYV",
+        "name": "50V电源",
+        "t_furniture": true
+    },
+    {
+        "id": "wave_ana",
+        "name": "波形解构仪",
+        "t_furniture": true
+    },
+    {
+        "id": "spect_ind",
+        "name": "频谱指示器",
+        "t_furniture": true
+    },
+    {
+        "id": "green_lab",
+        "name": "绿色实验室",
+        "t_furniture": true
+    },
+    {
+        "id": "ntctc",
+        "name": "无涉控制中心",
+        "t_furniture": true
     }
 ]
