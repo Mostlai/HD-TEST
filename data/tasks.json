@@ -2892,7 +2892,7 @@
 		"require": "g.r_adv_w_sj3>=1",
 		"length": 5,
 		"cost": {
-			"paper": 15,
+			"paper": 25,
 			"r_adv_bzzj": 2,
 			"r_adv_w_sj1": 2,
 			"r_adv_w_sj2": 1,
@@ -2900,9 +2900,62 @@
 			"r_adv_bzhj": 2
 		},
 		"result": {
-			"exe_paper": 15,
+			"exe_paper": 25,
 			"books": 2,
 			"exp": 20
+		}
+	},
+	{
+		"id": "lengjiezhileng",
+		"name": "冷结制冷",
+		"desc": "使用冷结武器制取冰冻核心和晶流水",
+		"tags": "生产",
+		"verb": "制冷中",
+		"require": "g.r_adv_w_sj3>=1",
+		"length": 5,
+		"cost": {
+			"r_adv_w_sj3": 1
+		},
+		"result": {
+			"cold_core": 2,
+			"frs": 15,
+			"jls": 20
+		}
+	},
+	{
+		"id": "wuzhuokekongmy",
+		"name": "污浊可控蔓延",
+		"desc": "定量的使用污浊武器获得污浊核心和纯浊灵体",
+		"tags": "生产",
+		"verb": "蔓延中",
+		"require": "g.r_adv_w_sj2>=1",
+		"length": 5,
+		"cost": {
+			"money": 10,
+			"jls": 15,
+			"r_adv_w_sj2": 1
+		},
+		"result": {
+			"dirty_core": 4,
+			"dirty_lingti": 3,
+			"frs": 14
+		}
+	},
+	{
+		"id": "renliyouhua_hujia",
+		"name": "人力防御优化",
+		"desc": "",
+		"require": "g.r_adv_bzhj>=1",
+		"max": 40,
+		"length": 3,
+		"cost": {
+			"human_power": 20,
+			"r_adv_w_sj1": 2,
+			"r_adv_bzzj": 2,
+			"r_adv_bzhj": 1
+		},
+		"result": {
+			"human_power.max": 10
 		}
 	},
 	{
