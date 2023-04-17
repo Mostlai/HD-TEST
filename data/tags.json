@@ -125,11 +125,6 @@
         "t_furniture": true
     },
     {
-        "id": "spirit_beacon",
-        "name": "灵体信标",
-        "t_furniture": true
-    },
-    {
         "id": "music_1",
         "name": "琴",
         "t_furniture": true
