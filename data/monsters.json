@@ -933,7 +933,7 @@
 				"name": "无论",
 				"bonus_class": 1,
 				"kind": "fire",
-				"dmg": "129~130",
+				"dmg": "99~100",
 				"targets": "enemies"
 			}
 		],
@@ -970,7 +970,7 @@
 				"name": "无观",
 				"bonus_class": 1,
 				"kind": "water",
-				"dmg": "129~130",
+				"dmg": "99~100",
 				"targets": "enemies"
 			}
 		],
@@ -1006,7 +1006,7 @@
 			{
 				"name": "无听",
 				"kind": "land",
-				"dmg": "129~130",
+				"dmg": "99~100",
 				"targets": "enemies"
 			}
 		],
@@ -1043,14 +1043,14 @@
 			{
 				"name": "沉默",
 				"kind": "heli",
-				"dmg": "240~300",
+				"dmg": "170~190",
 				"targets": "enemies"
 			},
 			{
 				"name": "反河",
 				"bonus_class": 1,
 				"kind": "chaos",
-				"dmg": "50~730",
+				"dmg": "50~250",
 				"targets": "enemies"
 			},
 			{
