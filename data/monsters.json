@@ -3064,7 +3064,7 @@
 				"name": "灼神",
 				"bonus_class": 1,
 				"kind": "body",
-				"dmg": "150~220",
+				"dmg": "100~110",
 				"targets": "enemies"
 			},
 			{
@@ -3104,7 +3104,7 @@
 			{
 				"name": "灼神",
 				"kind": "body",
-				"dmg": "360~420",
+				"dmg": "280~350",
 				"targets": "enemies"
 			},
 			{
