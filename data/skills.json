@@ -293,6 +293,7 @@
 		"buy": {
 			"books": 1
 		},
+		"require": "g.petri_dish>=1",
 		"need": "bio",
 		"run": {
 			"ganwu": 0.2,
