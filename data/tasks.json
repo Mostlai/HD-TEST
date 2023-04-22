@@ -5084,7 +5084,7 @@
 		"name": "归藏秘术",
 		"desc": "天地开辟，万物浑浑，无知无识；阴阳所凭，天体始于北极之野。归藏秘术纳天地之灵，萃不灭真体",
 		"verb": "感悟中",
-		"require": "g.shenglixue>=5 && g.shenglingshi>=10 && g.ap>=5 && g.tongren>=1",
+		"require": "g.shenglixue>=5 && g.shenglingshi>=10 && g.tongren>=1",
 		"max": 1,
 		"length": 300,
 		"cost": {
@@ -5176,6 +5176,28 @@
 			"time": 1,
 			"money": 1,
 			"ganwu": 0.5
+		}
+	},
+	{
+		"id": "huanjweihu_1",
+		"name": "环境优化",
+		"desc": "对周围环境进行优化",
+		"max": 10,
+		"length": 60,
+		"verb": "",
+		"require": "g.huanjweihu>=50",
+		"cost": {
+			"paper": 33,
+			"exe_paper": 33,
+			"snp_data": 15,
+			"heli": 2,
+			"chaos": 2,
+			"elect": 4,
+			"tili": 0.7,
+			"stamina": 0.8
+		},
+		"result": {
+			"space.max": 8
 		}
 	},
 	{
