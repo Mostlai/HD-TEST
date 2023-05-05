@@ -352,7 +352,8 @@
 	{
 		"id": "old_horse",
 		"name": "老马",
-		"desc": "一匹老马",
+		"desc": "一匹老马。（警告仅为了确保你看描述里的更多信息）",
+		"warn": true,
 		"require": "g.horse_training>=1",
 		"slot": "mount",
 		"tags": "steed",
@@ -1175,9 +1176,10 @@
 	},
 	{
 		"id": "aofa_drive",
-		"name": "奥法驱动",
-		"desc": "利用合理和电能进行高效驱动",
+		"name": "法力托驭",
+		"desc": "利用合理和电能进行高效驱动。（警告仅为了确保你看描述里的更多信息）",
 		"require": "g.super_mind>=3 && g.metal_app>=6 &&g.energ_1>=8 &&g.tian>=3",
+		"warn": true,
 		"slot": "mount",
 		"tags": "steed",
 		"buy": {
