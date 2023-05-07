@@ -70,28 +70,24 @@
 				]
 			},
 			{
-				"id": "far_mountant",
-				"name": "远山",
-				"title": "山行者",
+				"id": "far_mountant_after",
+				"name": "伯地",
+				"desc": "掉落【地契】，【黄昏的思绪】，【狂人的思绪】",
 				"run": {
-					"time": -0.07
+					"time": -0.01
 				},
 				"level": 10,
-				"distance": 1,
-				"length": 10,
-				"locked": false,
-				"boss": {
-					"1": "robber",
-					"2": "tramp",
-					"3": "monkey",
-					"4": "tiger"
-				},
+				"dist": 3,
+				"length": 60,
+				"require": "g.far_mountant >= 1",
+				"boss": "mad_man_boss",
 				"result": {
-					"zero_crystal": "1~3",
-					"snp_data": "0~3"
+					"money": "15~22",
+					"zero_crystal": "9~10",
+					"snp_data": "21~22"
 				},
 				"spawns": [
-					"robber"
+					"mad_man"
 				]
 			},
 			{
@@ -175,7 +171,7 @@
 				"attack": {
 					"name": "嚎叫",
 					"dmg": "4~7",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1}
 			},
@@ -191,7 +187,7 @@
 				"attack": {
 					"name": "嚎叫",
 					"dmg": "6~7",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1, "dirty_lingti":0.2}
 			},
@@ -207,7 +203,7 @@
 				"attack": {
 					"name": "嚎叫",
 					"dmg": "6~7",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1, "dirty_lingti":0.2}
 			},
@@ -223,7 +219,7 @@
 				"attack": {
 					"name": "冰冻",
 					"dmg": "3~7",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":2}
 			},
@@ -239,7 +235,7 @@
 				"attack": {
 					"name": "冲撞",
 					"dmg": "8~9",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1}
 			},
@@ -255,7 +251,7 @@
 				"attack": {
 					"name": "冲撞",
 					"dmg": "8~9",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":3}
 			},
@@ -271,7 +267,7 @@
 				"attack": {
 					"name": "抓挠",
 					"dmg": "0~5",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1}
 			},
@@ -287,7 +283,7 @@
 				"attack": {
 					"name": "爪击",
 					"dmg": "1~5",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1}
 			},
@@ -320,7 +316,7 @@
 				"attack": {
 					"name": "刺击",
 					"dmg": "0~4",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1}
 			},
@@ -337,7 +333,7 @@
 				"attack": {
 					"name": "猛击",
 					"dmg": "1~2",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":3,"zero_crystal":1}
 			},
@@ -354,7 +350,7 @@
 				"attack": {
 					"name": "刺击",
 					"dmg": "0~3",
-					"type": "slashing"
+					"type": "physical"
 				},
 				"loot": {"money":1.7}
 			},
@@ -371,7 +367,45 @@
 				"attack": {
 					"name": "爪击",
 					"dmg": "0~1",
-					"type": "slashing"
+					"type": "physical"
+				}
+			},
+			{
+				"id": "mad_man",
+				"name": "狂人",
+				"kind": "humanoid/human",
+				"level": 0,
+				"speed": 1,
+				"hp": 25,
+				"defense": 2,
+				"dodge": 2,
+				"attack": {
+					"name": "刺击",
+					"dmg": "2~3",
+					"type": "physical"
+				},
+				"loot": {
+					"thought_madman": "4%",
+					"land_declaration":"8%"
+				}
+			},
+			{
+				"id": "mad_man_boss",
+				"name": "黄昏之人",
+				"kind": "humanoid/human",
+				"level": 6,
+				"speed": 2,
+				"hp": 45,
+				"defense": 2,
+				"dodge": 2,
+				"attack": {
+					"name": "迷离",
+					"dmg": "4~10",
+					"type": "chaos"
+				},
+				"loot": {
+					"land_declaration":"80%",
+					"thought_dusk": "40%"
 				}
 			}
 		]

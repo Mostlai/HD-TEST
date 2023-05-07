@@ -438,5 +438,59 @@
 			}
 		},
 		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "land_declaration",
+		"name": "地契",
+		"desc": "可以增加2空间上限",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 20,
+		"sell":{
+			"money": 60
+		},
+		"use": {
+			"space.max":2
+		}
+	},
+	{
+		"id": "thought_madman",
+		"name": "狂人的思绪",
+		"desc": "我都头脑好似玻璃，思维好似光",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 50,
+		"sell":{
+			"money": 60
+		},
+		"use": {
+			"exp": 3,
+			"age.max": 30,
+			"age": 30,
+			"dot": {
+				"effect": {
+					"hp": 15
+				},
+				"duration": 90
+			}
+		}
+	},
+	{
+		"id": "thought_dusk",
+		"name": "黄昏的思绪",
+		"desc": "我在思念一些事情，大概吧",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 33,
+		"sell":{
+			"money": 60
+		},
+		"use": {
+			"age.max": 180,
+			"age": 180
+		}
 	}
 ]
