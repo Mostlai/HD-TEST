@@ -448,7 +448,7 @@
 		"level": 1,
 		"max_use_time": 20,
 		"sell":{
-			"money": 50
+			"money": 10
 		},
 		"use": {
 			"space.max":2
@@ -463,7 +463,7 @@
 		"level": 1,
 		"max_use_time": 50,
 		"sell":{
-			"money": 35
+			"money": 20
 		},
 		"use": {
 			"player.exp": 3,
@@ -501,10 +501,52 @@
 		"hide": true,
 		"level": 1,
 		"sell":{
+			"money": 10
+		},
+		"use": {
+			"money": 10
+		}
+	},
+	{
+		"id": "gold_bullion",
+		"name": "金块",
+		"desc": "",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 35
+		},
+		"use": {
+			"money": 35
+		}
+	},
+	{
+		"id": "zero_crystal_bullion",
+		"name": "零结晶核",
+		"desc": "可以敲碎获得零结晶，也可以卖个好价钱",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
 			"money": 15
 		},
 		"use": {
-			"money": 15
+			"zero_crystal": 3
+		}
+	},
+	{
+		"id": "zero_crystal_bullion_1",
+		"name": "纯零结晶核",
+		"desc": "稀有的纯化体，可以敲碎获得零结晶，也可以卖个好价钱",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 35
+		},
+		"use": {
+			"zero_crystal": 8
 		}
 	},
 	{
@@ -554,6 +596,34 @@
 			"star_map": 10,
 			"paper": 10,
 			"exe_paper": 10
+		}
+	},
+	{
+		"id": "qiyiyeti_soild_1",
+		"name": "贫奇异泥",
+		"desc": "一块含有少量奇异液体的物质",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 90
+		},
+		"use": {
+			"qiyiyeti": 2
+		}
+	},
+	{
+		"id": "qiyiyeti_soild_2",
+		"name": "奇异泥",
+		"desc": "一块含有奇异液体的物质",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 120
+		},
+		"use": {
+			"qiyiyeti": 3.5
 		}
 	}
 ]

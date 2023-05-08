@@ -13,18 +13,23 @@
 		},
 		"result": {
 			"ganwu": 1,
-			"zero_crystal": 4
+			"money": 10,
+			"zero_crystal": 6
 		},
 		"loot": {
 			"money": "0~1",
 			"zero_crystal": 1
 		},
 		"encs": [
+			"enc_zero_c",
 			"enc_cave_1",
 			"enc_cave_2",
 			"enc_cave_3",
 			"enc_cave_4",
-			"enc_cave_5"
+			"enc_cave_5",
+			"enc_cave_6",
+			"enc_cave_7",
+			"enc_cave_8"
 		]
 	},
 	{
@@ -317,6 +322,8 @@
 			"enc_rest",
 			"enc_star_map",
 			"enc_qiyiyet",
+			"enc_qiyiyet_1",
+			"enc_qiyiyet_2",
 			"enc_box_1"
 		]
 	},

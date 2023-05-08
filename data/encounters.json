@@ -126,7 +126,32 @@
 			"qiyiyeti": 0.8
 		}
 	},
-
+	{
+		"id": "enc_qiyiyet_1",
+		"name": "贫奇异泥",
+		"desc": "收集一些奇异泥",
+		"effect": {
+			"weary": "2~3",
+			"unease": "1~2"
+		},
+		"result": {
+			"qiyiyeti": 0.1,
+			"qiyiyeti_soild_1": "33%"
+		}
+	},
+	{
+		"id": "enc_qiyiyet_2",
+		"name": "奇异泥",
+		"desc": "收集一些奇异泥",
+		"effect": {
+			"weary": "2~3",
+			"unease": "1~2"
+		},
+		"result": {
+			"qiyiyeti": 0.4,
+			"qiyiyeti_soild_2": "25%"
+		}
+	},
 	{
 		"id": "enc_box_1",
 		"name": "遗落的箱子",
@@ -219,6 +244,51 @@
 		},
 		"result": {
 			"zero_crystal": 4
+		}
+	},
+	{
+		"id": "enc_cave_6",
+		"name": "挖掘零结晶核",
+		"desc": "",
+		"effect": {
+			"weary": "0~1",
+			"unease": "0~1",
+			"zero_crystal": "0~0.4"
+		},
+		"result": {
+			"zero_crystal": 2.8,
+			"zero_crystal_bullion": "37%",
+			"zero_crystal_bullion_1": "13%"
+		}
+	},
+	{
+		"id": "enc_cave_7",
+		"name": "贫瘠金矿",
+		"desc": "",
+		"effect": {
+			"weary": "0~1",
+			"unease": "0~1",
+			"zero_crystal": "0~0.4"
+		},
+		"result": {
+			"money": 3,
+			"gold_fragment": "19%",
+			"gold_bullion": "6%"
+		}
+	},
+	{
+		"id": "enc_cave_8",
+		"name": "金矿",
+		"desc": "",
+		"effect": {
+			"weary": "0~1",
+			"unease": "0~1",
+			"zero_crystal": "0~0.4"
+		},
+		"result": {
+			"money": 10,
+			"gold_fragment": "30%",
+			"gold_bullion": "10%"
 		}
 	},
 	{
