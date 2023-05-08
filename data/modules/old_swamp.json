@@ -230,7 +230,7 @@
                 "flavor": "需要1级炼化台"
             }
         ],
-        "potions":[
+        "consumables":[
             {
                 "id": "oldswamp_p_1",
                 "name": "雪毒汁",

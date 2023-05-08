@@ -3454,6 +3454,103 @@
 		]
 	},
 	{
+		"id": "pingyuan_loc_mon_1",
+		"name": "夜音符",
+		"level": 10,
+		"desc": "",
+		"kind": "elementals/soul_form",
+		"hp": 30,
+		"speed": 5,
+		"tohit": 20,
+		"defense": 12,
+		"attack": [
+			{
+				"name": "攻击",
+				"bonus_class": 1,
+				"kind": "psychic",
+				"dmg": "9~17",
+				"targets": "enemies"
+			},
+			{
+				"name": "恢复",
+				"targets": "ally",
+				"result": {
+					"hp": 2
+				}
+			}
+		],
+		"loot": {
+			"gold_fragment": "10%",
+			"night_imagine": "6%",
+			"night_book": "5%"
+		}
+	},
+	{
+		"id": "pingyuan_loc_mon_2",
+		"name": "夜颂",
+		"level": 10,
+		"desc": "",
+		"kind": "elementals/soul_form",
+		"hp": 35,
+		"speed": 5,
+		"tohit": 20,
+		"defense": 12,
+		"attack": [
+			{
+				"name": "攻击",
+				"bonus_class": 1,
+				"kind": "psychic",
+				"dmg": "5~14",
+				"targets": "enemies"
+			},
+			{
+				"name": "恢复",
+				"targets": "ally",
+				"result": {
+					"hp": 4
+				}
+			}
+		],
+		"loot": {
+			"gold_fragment": "6%",
+			"night_imagine": "8%",
+			"night_book": "5%"
+		}
+	},
+	{
+		"id": "pingyuan_loc_mon_3",
+		"name": "夜无墙",
+		"level": 10,
+		"desc": "请你细看，漫夜之中，可有围墙，你造访漫夜，在黑色的草丛中前行，暗影随风振翅飘荡，无需我向你多言，你已知晓回去的途径。",
+		"kind": "elementals/soul_form",
+		"hp": 35,
+		"speed": 5,
+		"tohit": 20,
+		"defense": 12,
+		"attack": [
+			{
+				"name": "观察",
+				"bonus_class": 1,
+				"kind": "psychic",
+				"dmg": "13~14",
+				"targets": "enemies"
+			},
+			{
+				"name": "恢复",
+				"targets": "ally",
+				"result": {
+					"hp": 4
+				}
+			}
+		],
+		"loot": {
+			"night_memory": "50%",
+			"gold_fragment": "70%",
+			"night_imagine": "70%",
+			"night_book": "70%"
+		}
+	},
+	{
 		"id": "newt",
 		"level": 0.2,
 		"kind": "beast",

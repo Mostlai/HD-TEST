@@ -170,6 +170,25 @@
 		}
 	},
 	{
+		"id": "pingyuan_loc_find",
+		"name": "漫夜平原",
+		"desc": "你得知了地点：漫夜平原。完成此任务解锁漫夜平原。",
+		"require": "g.pingyuan_loc>=1",
+		"max": 20,
+		"length": 10,
+		"cost": {
+			"money": 15,
+			"star_map": 10
+		},
+		"run": {
+			"time": -0.3,
+			"tili": 0.2
+		},
+		"result": {
+			"player.exp": 10
+		}
+	},
+	{
 		"id": "canglanninghua",
 		"name": "苍蓝凝华",
 		"desc": "五环的集结",

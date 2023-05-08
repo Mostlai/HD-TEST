@@ -1,0 +1,559 @@
+[	
+	{
+		"id": "element_wuhuan_juhe",
+		"name": "聚合五环",
+		"desc": "凝聚五环元素成衍生元素-五环点",
+		"tags": "元素制作",
+		"equneed": "g.adv_mix_1>=1",
+		"require": "g.xiulian_space_ysys>=1 && g.xiulian_space_yswd>=1 && g.xiulian_space_ysch>=1",
+		"level": 1,
+		"buy": {
+			"sp":10,
+			"life_crystal": 5,
+			"star_map_1": 10,
+			"yjdl": 20,
+			"cbclb": 30,
+			"money": 1500,
+			"ganwu": 400
+		},
+		"cost": {
+			"money": 200,
+			"jls": 50,
+			"gwl": 10,
+			"cbclb": 10,
+			"element_gold": 5,
+			"element_wood": 5,
+			"element_water": 5,
+			"element_fire": 5,
+			"element_land": 5
+		},
+		"result":{
+			"time": 33,
+			"element_wuhuan": 3.9
+		},
+		"flavor": "需要1级纠缠实验室"
+	},
+	{
+		"id": "element_wuhuan_niuqu",
+		"name": "五环扭曲",
+		"desc": "扭曲五环点成衍生不稳定元素-落日点【该配方初始成本较贵,需要建造家具或解锁升级降低成本】",
+		"tags": "元素制作",
+		"equneed": "g.adv_mix_1>=1",
+		"require": "g.xiulian_fc_niuquhanshu>=1 &&g.xiulian_fc_niuqushuxues>=1",
+		"level": 1,
+		"buy": {
+			"element_wuhuan": 5,
+			"life_crystal": 5,
+			"star_map_1": 10,
+			"yjdl": 30,
+			"cbclb": 30,
+			"money": 1500,
+			"ganwu": 400
+		},
+		"cost": {
+			"qiyiyeti": 10,
+			"money": 1300,
+			"life_crystal": 4,
+			"zero_crystal": 30,
+			"jls": 80,
+			"gwl": 20,
+			"cbclb": 20,
+			"element_wuhuan": 10
+		},
+		"result":{
+			"time": 33,
+			"ele_confusion": 5,
+			"element_luor": 1
+		},
+		"flavor": "需要1级纠缠实验室"
+	},
+	{
+		"id": "kqs",
+		"name": "矿泉水",
+		"desc": "一瓶矿泉水",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=1",
+		"level": 1,
+		"dr": 0.2,
+		"sell":{
+			"money": 30
+		},
+		"buy": {
+			"sp":1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"money": 4,
+			"element_fire": 2,
+			"element_water": 1,
+			"shuiyinhua": 1
+		},
+		"use": {
+			"drug_resist": 0.2,
+			"hp": 30
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "goodguozhi",
+		"name": "好果汁",
+		"desc": "好果汁会变质吗",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=1",
+		"level": 1,
+		"dr": 0.1,
+		"sell":{
+			"money": 60
+		},
+		"buy": {
+			"sp":1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"money": 10,
+			"element_fire": 2,
+			"element_wood": 1,
+			"element_water": 1,
+			"diluhua": 1
+		},
+		"use": {
+			"drug_resist": 0.1,
+			"hp": 10
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "gold_jiu",
+		"name": "黄金酒",
+		"desc": "金色液体",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=1",
+		"level": 1,
+		"dr": 2,
+		"sell":{
+			"money": 60
+		},
+		"buy": {
+			"sp":1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"money": 10,
+			"element_fire": 2.5,
+			"element_gold": 2,
+			"element_water": 2
+		},
+		"use": {
+			"drug_resist": 2,
+			"dot": {
+				"duration": 600,
+				"effect": {
+					"money": 3
+				}
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "liaoshangyao",
+		"name": "疗伤散",
+		"desc": "一小瓶疗伤散",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=1",
+		"level": 1,
+		"dr": 1,
+		"sell":{
+			"money": 30
+		},
+		"buy": {
+			"sp":1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"element_wood": 2.5,
+			"element_water": 1
+		},
+		"use": {
+			"drug_resist": 1,
+			"dot": {
+				"duration": 300,
+				"effect": {
+					"hp": 9
+				}
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "wangyoushui",
+		"name": "忘忧水",
+		"desc": "一小瓶忘忧水",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=1",
+		"level": 1,
+		"dr": 1,
+		"sell":{
+			"money": 30
+		},
+		"buy": {
+			"sp":1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"element_gold": 1,
+			"element_wood": 2,
+			"element_land": 2,
+			"element_water": 1
+		},
+		"use": {
+			"drug_resist": 1,
+			"dot": {
+				"mod": {
+					"stress.rate": -2
+				},
+				"duration": 600
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "kuoxuedan",
+		"name": "扩血丹",
+		"desc": "短时间内提高气血上限",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=2",
+		"level": 1,
+		"dr": 1,
+		"sell":{
+			"money": 30
+		},
+		"buy": {
+			"sp":1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"element_gold": 2,
+			"element_wood": 2,
+			"element_land": 2,
+			"element_water": 2
+		},
+		"use": {
+			"drug_resist": 1,
+			"dot": {
+				"duration": 180,
+				"effect": {
+					"hp": 1
+				},
+				"mod": {
+					"hp.max": 20
+				}
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "wuhuankangx",
+		"name": "🔅五环抗性丹",
+		"desc": "五环抗性+70%",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=3",
+		"level": 1,
+		"dr": 4,
+		"sell":{
+			"money": 120
+		},
+		"buy": {
+			"sp":1,
+			"shenglingshi": 2,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"element_gold": 4,
+			"element_wood": 4,
+			"element_land": 4,
+			"element_water": 4,
+			"element_fire": 4
+		},
+		"use": {
+			"drug_resist": 4,
+			"dot": {
+				"mod": {
+					"self.resist.gold": 70,
+					"self.resist.wood": 70,
+					"self.resist.water": 70,
+					"self.resist.fire": 70,
+					"self.resist.land": 70
+				},
+				"duration": 60
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "ssbxdan",
+		"name": "🔅生生不息丹",
+		"desc": "每秒恢复15气血",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=4",
+		"level": 1,
+		"dr": 4,
+		"sell":{
+			"money": 120
+		},
+		"buy": {
+			"sp":2,
+			"shenglingshi": 2,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"element_gold": 4,
+			"element_wood": 4,
+			"element_land": 4,
+			"element_water": 4,
+			"element_fire": 4
+		},
+		"use": {
+			"drug_resist": 4,
+			"dot": {
+				"effect": {
+					"hp": 15
+				},
+				"duration": 90
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "qiehundan",
+		"name": "🔅祛混丹",
+		"desc": "每秒减少1混乱度",
+		"equneed": "g.mix_1>=1",
+		"require": "g.yaolixue>=5",
+		"level": 1,
+		"dr": 1,
+		"sell":{
+			"money": 120
+		},
+		"buy": {
+			"sp":2,
+			"shenglingshi": 1,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"element_gold": 1,
+			"element_wood": 1,
+			"element_land": 5,
+			"element_water": 1,
+			"element_fire": 1
+		},
+		"use": {
+			"drug_resist": 1,
+			"dot": {
+				"effect": {
+					"ele_confusion": -3
+				},
+				"duration": 30
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "shenglingdan",
+		"name": "💠生灵专注丹",
+		"desc": "生灵石做成的丹药,有着极强的提神醒脑效果[专注收益提高30exp]",
+		"equneed": "g.mix_1>=1",
+		"require": "g.xiulian_life_slylyj>=1",
+		"level": 1,
+		"dr": 4,
+		"sell":{
+			"money": 120
+		},
+		"buy": {
+			"sp":1,
+			"shenglingshi": 2,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"shenglingshi": 0.5,
+			"element_gold": 2,
+			"element_wood": 2,
+			"element_land": 2,
+			"element_water": 2,
+			"element_fire": 3
+		},
+		"use": {
+			"drug_resist": 4,
+			"dot": {
+				"mod": {
+					"focus.result.runner.exp": 30
+				},
+				"duration": 600
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "shenglingwanzhid",
+		"name": "💠生灵万智丹",
+		"desc": "生灵石做成的丹药,有着极强的提神醒脑效果[技能自然学习速度+500%]",
+		"equneed": "g.mix_1>=1",
+		"require": "g.xiulian_life_slylyj>=1",
+		"level": 1,
+		"dr": 4,
+		"sell":{
+			"money": 150
+		},
+		"buy": {
+			"sp":1,
+			"shenglingshi": 5,
+			"money": 600,
+			"ganwu": 400
+		},
+		"cost": {
+			"shenglingshi": 1.5,
+			"life_crystal": 1,
+			"element_gold": 4,
+			"element_wood": 4,
+			"element_land": 4,
+			"element_water": 4,
+			"element_fire": 3
+		},
+		"use": {
+			"drug_resist": 4,
+			"dot": {
+				"mod": {
+					"skill.rate": "500%"
+				},
+				"duration": 600
+			}
+		},
+		"flavor": "需要1级元素混合器"
+	},
+	{
+		"id": "land_declaration",
+		"name": "地契",
+		"desc": "可以增加2空间上限",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 20,
+		"sell":{
+			"money": 50
+		},
+		"use": {
+			"space.max":2
+		}
+	},
+	{
+		"id": "thought_madman",
+		"name": "狂人的思绪",
+		"desc": "我的头脑好似玻璃，思维好似光",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 50,
+		"sell":{
+			"money": 35
+		},
+		"use": {
+			"player.exp": 3,
+			"age.max": 30,
+			"age": 30,
+			"dot": {
+				"effect": {
+					"hp": 15
+				},
+				"duration": 90
+			}
+		}
+	},
+	{
+		"id": "thought_dusk",
+		"name": "黄昏的思绪",
+		"desc": "我在思念一些事情，大概吧",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 33,
+		"sell":{
+			"money": 25
+		},
+		"use": {
+			"age.max": 180,
+			"age": 180
+		}
+	},
+	{
+		"id": "gold_fragment",
+		"name": "金粒",
+		"desc": "",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 15
+		},
+		"use": {
+			"money": 15
+		}
+	},
+	{
+		"id": "night_imagine",
+		"name": "夜图",
+		"desc": "",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 3
+		},
+		"use": {
+			"ganwu": 10,
+			"star_map": 1
+		}
+	},
+	{
+		"id": "night_book",
+		"name": "夜卷",
+		"desc": "",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"sell":{
+			"money": 3
+		},
+		"use": {
+			"paper": 1,
+			"exe_paper": 1
+		}
+	},
+	{
+		"id": "night_memory",
+		"name": "漫夜的回忆",
+		"desc": "我知道那个夜晚，一片风中跃动的草地，自远处而来的褐色云朵，黑暗从月光中溜走，挤满了我的眼，我的嘴。无需他多言，我已知晓回去的道路。",
+		"locked": false,
+		"hide": true,
+		"level": 1,
+		"max_use_time": 33,
+		"sell":{
+			"money": 45
+		},
+		"use": {
+			"age.max": 365,
+			"age": 365,
+			"star_map": 10,
+			"paper": 10,
+			"exe_paper": 10
+		}
+	}
+]

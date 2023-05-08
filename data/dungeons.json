@@ -30,6 +30,35 @@
 		]
 	},
 	{
+		"id": "pingyuan_loc_after",
+		"name": "漫夜平原",
+		"desc": "掉落【金粒】，【夜图】，【夜卷】，【漫夜的回忆】",
+		"require": "g.pingyuan_loc_find>=20",
+		"level": 5,
+		"dist": 1,
+		"length": 200,
+		"run": {
+			"hp": 1,
+			"tili": 1,
+			"time": -0.02
+		},
+		"boss": "secret_realm_monster_3",
+		"spawns": [
+			[
+				"pingyuan_loc_mon_2",
+				"pingyuan_loc_mon_2"
+			],
+			[
+				"pingyuan_loc_mon_1",
+				"pingyuan_loc_mon_1"
+			],
+			[
+				"pingyuan_loc_mon_2",
+				"pingyuan_loc_mon_1"
+			]
+		]
+	},
+	{
 		"id": "under_dreaam",
 		"name": "底层梦境[黄泉前置]",
 		"desc": "梦境的深处,实界的边缘,这里的时间流速更快,环境更危险",
