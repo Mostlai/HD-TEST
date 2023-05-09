@@ -1,0 +1,241 @@
+<div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+<p hidden>
+0.0.3.8
+1.增加两个新副本，用于优化前期资源获取
+2.为新的消耗性道具增加使用上限
+3.显示消耗性道具的售卖所得
+4.增加一个按钮打开征服指示器
+5.更改指示器样式
+6.移除了药剂类别，增加道具类别
+7.获得十万猫力后可以按退格键召唤一个黑猫
+8.移动更新日志
+9.补充本地化
+</p>
+<p class="output">更新日志
+右上角有本游戏的百科,如有不懂可加入Q群281738137
+请在更新之后点击左上角的保存然后点击加载以为存档加载最新的游戏配置
+
+0.0.3.7
+1.为部分界面增加补充说明
+2.实现TAG的本地化
+3.TAG条件不满足时会显示为红色
+4.家具现在可以隐藏了
+5.增加后台运行功能
+6.调低征服前置花费
+7.调低部分怪物属性
+8.为征服武器增加相关任务升级
+9.增加定时存档提醒
+
+0.0.3.6
+1.修复混沌真魂
+2.线程现在将可以配置装卸单元
+3.更改了武器拆解的消耗获得比例
+4.线程现在可以暂停输入
+5.物品可以收藏了,一键卖出将不会卖出已收藏的物品
+6.为装备增加了随机词条
+7.添加多件独特装备
+8.添加了永久性持续状态
+9.添加了多项战斗相关属性
+10.为怪物增加了种族
+11.更改了战斗计算公式
+12.重新编写WIKI
+13.新增一些法术
+14.新增一些成就
+
+0.0.3.5
+1.增加里程点升级项
+2.增加若干成就
+3.增加两个兑换码
+4.增加军事扩展
+5.增加真魂扩展
+6.可以在购买前查看装备属性了
+7.模式现在将共用线程
+8.修复若干BUG
+
+0.0.3.4
+1.增加指引页(WIP)
+2.增加异闻页(WIP)
+3.增加护盾机制(WIP)
+4.修复了当生产对象满仓或者生产材料不足时仍然需要消耗生产材料的问题
+5.为产品添加平衡值显示
+6.增加了废热水小于0时自动恢复到0的功能
+7.增加少量成就
+8.增加筑基二重进阶
+
+0.0.3.1
+1.修复工厂图标问题和格式化
+2.添加了长官和求索者的后续
+3.添加了两个指令
+4.修复了焦炭的发电量
+5.添加了人力相关设施
+6.修复软泥的配方
+7.修复黑焰法术解锁问题
+8.修复货物的销售问题
+
+0.0.3.0
+1.修复BUG
+2.添加模型生产机制
+3.添加研究机制
+4.添加沼泽扩展
+
+0.0.2.9
+1.扩展战斗副本
+2.扩展一算子
+3.扩展真魂
+
+0.0.2.8
+1.扩展热力学和生物学
+2.扩展筑基一重
+3.添加地块障碍
+4.此版本终局为地面环境研究
+5.修复白色灵药BUG
+
+0.0.2.7
+1.增加炼体线,目前炼体终局为归玄境
+2.重做征服,按E打开战争指示器
+3.修复芥子系列家具BUG
+4.取消背包及相关成就,对左侧栏进行格式化
+5.主界面任务类细分为任务类和生产类.并添加折叠按钮
+6.扩展电力内容,增加一条事件链
+7.官场入场卷增加50次陌生人事件必出一张
+8.增加T2尊号和筑基一重进阶,筑基一暂时只解锁新征服
+</p>
+</div>
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+
+html {
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #000000;
+  background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Inconsolata', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1ex rgba(51, 255, 51, 1),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.noise {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: .02;
+}
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+      repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: auto 4px;
+  z-index: 1;
+}
+
+.overlay::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      transparent 0%,
+      rgba(32, 128, 32, 0.2) 2%,
+      rgba(32, 128, 32, 0.8) 3%,
+      rgba(32, 128, 32, 0.2) 3%,
+      transparent 100%);
+  background-repeat: no-repeat;
+  animation: scan 7.5s linear 0s infinite;
+}
+
+@keyframes scan {
+  0%        { background-position: 0 -100vh; }
+  35%, 100% { background-position: 0 100vh; }
+}
+
+.terminal {
+  box-sizing: inherit;
+  position: absolute;
+  height: 100%;
+  width: 1000px;
+  max-width: 100%;
+  padding: 4rem;
+  text-transform: uppercase;
+}
+
+.output {
+  white-space: pre;
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+  height: 100%;
+  overflow: auto;
+  /*隐藏滚轮*/
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.output::before {
+  content: "> ";
+}
+
+/*
+.input {
+  color: rgba(192, 255, 192, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.input::before {
+  content: "$ ";
+}
+*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a::before {
+  content: "[";
+}
+
+a::after {
+  content: "]";
+}
+
+.errorcode {
+  color: white;
+}
+</style>
