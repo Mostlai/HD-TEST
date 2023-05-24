@@ -922,7 +922,6 @@
 		"require" : "g.ach_space_1>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"space.max": 130
@@ -938,7 +937,6 @@
 		"require" : "g.ach_space_2>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"space.max": 130
@@ -954,7 +952,6 @@
 		"require" : "g.ach_space_3>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"space.max": 200
@@ -963,14 +960,13 @@
 	{
 		"id": "ach_space_5",
 		"name": "建设工厂",
-		"desc": "用地面积达到28000",
+		"desc": "用地面积达到12000",
 		"target_item": "space",
 		"target_val": 12000,
 		"hide": true,
 		"require" : "g.ach_space_4>0",
 		"val":0,
 		"max": 1,
-		
 		"result":{
 			"ap": 0.3,
 			"space.max": 250

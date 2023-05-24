@@ -270,5 +270,25 @@
 		"result":{
 			"money": 1
 		}
+	},
+	{
+		"id": "missions_14",
+		"name": "高能电容获取",
+		"tags": "指引任务",
+		"desc": "现在你已经解锁了@高能电容$,此资源默认上限为0,一开始请在交易/市场处购买@红极激光发射器$并穿戴以获取上限以及速率",
+		"require": "g.red_jgsys>=1",
+		"val": 0,
+		"target":{
+			"0":{
+				"id": "laser_ene",
+				"val": 1
+			}
+		},
+		"lhxy":{
+			"laser_ene": 1
+		},
+		"result":{
+			"money": 100
+		}
 	}
 ]
