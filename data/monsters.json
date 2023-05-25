@@ -3544,7 +3544,7 @@
 			}
 		],
 		"loot": {
-			"night_memory": "50%",
+			"night_memory": "100%",
 			"gold_fragment": "70%",
 			"night_imagine": "70%",
 			"night_book": "70%"
