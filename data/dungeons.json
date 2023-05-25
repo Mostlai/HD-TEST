@@ -42,7 +42,7 @@
 			"tili": 1,
 			"time": -0.02
 		},
-		"boss": "secret_realm_monster_3",
+		"boss": "pingyuan_loc_mon_3",
 		"spawns": [
 			[
 				"pingyuan_loc_mon_2",
