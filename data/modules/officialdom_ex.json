@@ -1,0 +1,98 @@
+{
+	"module": "officialdom_ex",
+	"sym": "👑",
+	"data": {
+		"homes":[
+		],
+		"events": [
+		],
+		"tasks": [
+			{
+				"id": "off_ex_start",
+				"name": "某个下午",
+				"desc": "在某个迷离的下午，陈旧的书本中是否有着隐秘的知识呢。",
+				"require": "g.off_influence>=34900",
+				"verb": "检索中",
+				"max": 1,
+				"length": 10,
+				"cost": {
+					"off_influence": 10000,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"off_influence.max": 1000
+				}
+			},
+			{
+				"id": "off_ex_general_1",
+				"name": "黑衣人跑进沙漠",
+				"desc": "在以前的天澜国，在某个君主失踪的时代，一位将军做过何事现在已无人知晓",
+				"require": "g.off_ex_start>=1",
+				"verb": "寻找中",
+				"max": 1,
+				"length": 10,
+				"warn": true,
+				"disable": ["off_ex_prince_1"],
+				"cost": {
+					"off_influence": 10000,
+					"human_power": 300,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"human_power.max": 300,
+					"off_influence.max": 500
+				}
+			},
+			{
+				"id": "off_ex_prince_1",
+				"name": "他跳进了兔子洞",
+				"desc": "在以前的天澜国，在某个君主失踪的时代，一位太子做过何事现在已无人知晓",
+				"require": "g.off_ex_start>=1",
+				"verb": "寻找中",
+				"max": 1,
+				"length": 10,
+				"warn": true,
+				"disable": ["off_ex_general_1"],
+				"cost": {
+					"off_influence": 10000,
+					"alculation": 100,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"alculation.max": 100,
+					"off_influence.max": 500
+				}
+			}
+		],
+		"upgrades": [
+		],
+		"classes": [
+		],
+		"furniture": [
+		],
+		"skills": [
+		],
+		"dungeons": [
+		],
+		"monsters": [
+		]
+	}
+}
