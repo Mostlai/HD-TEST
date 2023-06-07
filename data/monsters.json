@@ -3104,7 +3104,7 @@
 			{
 				"name": "灼神",
 				"kind": "body",
-				"dmg": "280~350",
+				"dmg": "230~290",
 				"targets": "enemies"
 			},
 			{
@@ -3174,7 +3174,7 @@
 			{
 				"name": "混幸",
 				"kind": "chaos",
-				"dmg": "150~220",
+				"dmg": "150~280",
 				"targets": "enemies"
 			}
 		],
@@ -3203,7 +3203,7 @@
 				"name": "混沌之理",
 				"bonus_class": 1,
 				"kind": "chaos",
-				"dmg": "170~320",
+				"dmg": "150~280",
 				"targets": "enemies"
 			}
 		],
@@ -3265,14 +3265,13 @@
 				"name": "谁役使万灵",
 				"bonus_class": 1,
 				"kind": "wuhuan",
-				"dmg": "340~520",
+				"dmg": "160~350",
 				"targets": "enemies"
 			},
 			{
 				"name": "五元难伤神",
 				"kind": "wuhuan",
-				"dmg": "340~520",
-				"targets": "enemies"
+				"dmg": "340~520"
 			}
 		],
 		"loot": {
