@@ -919,7 +919,7 @@
 	{
 		"id": "kss",
 		"name": "困兽术[筑基]",
-		"desc": "降低敌人的速度",
+		"desc": "降低敌人的速度和闪避",
 		"school": "厚土",
 		"require": "g.htgcx>=4",
 		"level": 5,
@@ -941,7 +941,8 @@
 				"duration": 30,
 				"dmg": "5~9",
 				"mod": {
-					"self.speed": -5
+					"self.speed": -5,
+					"self.dodge": -5
 				}
 			}
 		}
@@ -2034,6 +2035,68 @@
 					"hp": 2
 				}
 			}
+		}
+	},
+	{
+		"id": "thunder_light",
+		"name": "闪空雷光",
+		"school": "真水",
+		"level": 10,
+		"desc": "用法力引动雷电攻击一名敌人,并将战斗环境更改为雷天。\n此攻击获得-10命中加成,如果此次攻击未命中,为自己增加5命中10s。",
+		"cd": 4,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000
+		},
+		"cost": {
+			"tili": 15,
+			"heli": 15,
+			"alculation": 5,
+			"shenshi": 1
+		},
+		"attack": {
+			"damage": "120",
+			"kind": "water",
+			"tohit": -10,
+			"bonus_class": 1,
+			"unhit_dot": {
+				"add_target": "self",
+				"id": "thunder_light_bf",
+				"name": "闪空雷光",
+				"desc": "增加5命中",
+				"duration": 10,
+				"mod": {
+					"self.tohit": 5
+				}
+			},
+			"change_env":"env_thunder",
+			"change_env_log":"天空布满乌云"
+		}
+	},
+	{
+		"id": "land_shake",
+		"name": "地震",
+		"school": "厚土",
+		"level": 10,
+		"desc": "引发地震攻击所有敌人,并将战斗环境更改为地震。",
+		"cd": 4,
+		"locked":true,
+		"buy": {
+			"ganwu": 2000
+		},
+		"cost": {
+			"tili": 15,
+			"heli": 15,
+			"alculation": 5,
+			"shenshi": 1
+		},
+		"attack": {
+			"damage": "110",
+			"kind": "land",
+			"targets": "enemies",
+			"bonus_class": 0,
+			"change_env":"env_landshake",
+			"change_env_log":"大地摇晃"
 		}
 	},
 	{

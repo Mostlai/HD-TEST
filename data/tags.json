@@ -1,4 +1,12 @@
 [
+	{
+        "id": "armor",
+        "name": "护甲"
+    },
+    {
+        "id": "weapon",
+        "name": "武器"
+    },
     {
         "id": "ColdBio",
         "name": "低温生物",

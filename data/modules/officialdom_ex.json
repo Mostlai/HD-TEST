@@ -6,11 +6,49 @@
 		],
 		"events": [
 		],
+		"resources": [
+			{
+				"id": "off_ex_reasource_1",
+				"name": "墨彩许可",
+				"desc": "",
+				"val": 0,
+				"hide": true,
+				"locked": false,
+				"max": 0
+			},
+			{
+				"id": "off_ex_reasource_1p",
+				"name": "生命乱序许可",
+				"desc": "",
+				"val": 0,
+				"hide": true,
+				"locked": false,
+				"max": 0
+			},
+			{
+				"id": "off_ex_reasource_2",
+				"name": "旧蛇许可",
+				"desc": "",
+				"val": 0,
+				"hide": true,
+				"locked": false,
+				"max": 0
+			},
+			{
+				"id": "off_ex_reasource_2p",
+				"name": "生命篡夺许可",
+				"desc": "",
+				"val": 0,
+				"hide": true,
+				"locked": false,
+				"max": 0
+			}
+		],
 		"tasks": [
 			{
 				"id": "off_ex_start",
 				"name": "某个下午",
-				"desc": "在某个迷离的下午，陈旧的书本中是否有着隐秘的知识呢。",
+				"desc": "在某个下午，在陈旧的书本中寻找秘史。",
 				"require": "g.off_influence>=34900",
 				"verb": "检索中",
 				"max": 1,
@@ -31,8 +69,8 @@
 			},
 			{
 				"id": "off_ex_general_1",
-				"name": "黑衣人跑进沙漠",
-				"desc": "在以前的天澜国，在某个君主失踪的时代，一位将军做过何事现在已无人知晓",
+				"name": "将军",
+				"desc": "位无王影，则执毒匕",
 				"require": "g.off_ex_start>=1",
 				"verb": "寻找中",
 				"max": 1,
@@ -56,9 +94,66 @@
 				}
 			},
 			{
+				"id": "off_ex_general_2",
+				"name": "在故乡",
+				"desc": "孤独的星！我祈求如你般冷漠，但我不愿高悬夜空，弃世而去。",
+				"require": "g.off_ex_general_1>=1",
+				"verb": "寻找中",
+				"max": 1,
+				"length": 10,
+				"cost": {
+					"off_ex_c_1": 80,
+					"off_ex_c_2": 20,
+					"off_influence": 5000,
+					"human_power": 300,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"age.max": 3650,
+					"age": 3650,
+					"human_power.max": 300,
+					"off_influence.max": 500
+				}
+			},
+			{
+				"id": "off_ex_general_3",
+				"name": "茂伊约之刃",
+				"desc": "在幽暗里，他们的瘪嘴大张着，预告着灾祸；我一觉醒来，看见自己躺在这冰冷的山坡。芦苇已经枯了，鸟儿也不再歌唱；快快把高悬之日的光芒带去彼方",
+				"require": "g.off_ex_general_2>=1",
+				"verb": "寻找中",
+				"max": 1,
+				"length": 10,
+				"cost": {
+					"off_ex_c_1": 120,
+					"off_ex_c_2": 20,
+					"off_ex_c_3": 10,
+					"off_influence": 5000,
+					"human_power": 300,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"age.max": 3650,
+					"age": 3650,
+					"human_power.max": 300,
+					"off_influence.max": 500
+				}
+			},
+			{
 				"id": "off_ex_prince_1",
-				"name": "他跳进了兔子洞",
-				"desc": "在以前的天澜国，在某个君主失踪的时代，一位太子做过何事现在已无人知晓",
+				"name": "太子",
+				"desc": "位无父影，执兵驱恶",
 				"require": "g.off_ex_start>=1",
 				"verb": "寻找中",
 				"max": 1,
@@ -80,6 +175,63 @@
 					"alculation.max": 100,
 					"off_influence.max": 500
 				}
+			},
+			{
+				"id": "off_ex_prince_2",
+				"name": "秘事崇拜",
+				"desc": "我们出生了，我们便死了，远古凶祟篡夺了我们自祖先得来的一切。",
+				"require": "g.off_ex_prince_1>=1",
+				"verb": "寻找中",
+				"max": 1,
+				"length": 10,
+				"cost": {
+					"off_ex_c_1": 80,
+					"off_ex_cp_2": 20,
+					"off_influence": 5000,
+					"alculation": 300,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"age.max": 3650,
+					"age": 3650,
+					"alculation.max": 120,
+					"off_influence.max": 500
+				}
+			},
+			{
+				"id": "off_ex_prince_3",
+				"name": "真正生命",
+				"desc": "于陨坑中苏醒血液中的古老秘密，拥抱于无尽饥饿，吞噬一切所欲之物，以自身延展盛宴，侍奉猩红宇宙之石。",
+				"require": "g.off_ex_prince_2>=1",
+				"verb": "寻找中",
+				"max": 1,
+				"length": 10,
+				"cost": {
+					"off_ex_c_1": 120,
+					"off_ex_cp_2": 10,
+					"off_ex_cp_3": 20,
+					"off_influence": 5000,
+					"alculation": 300,
+					"ganwu": 300,
+					"money": 1000
+				},
+				"run": {
+					"time": -1,
+					"stamina": 0.5,
+					"tili": 1
+				},
+				"result":{
+					"age.max": 3650,
+					"age": 3650,
+					"alculation.max": 200,
+					"off_influence.max": 500
+				}
 			}
 		],
 		"upgrades": [
@@ -91,8 +243,1120 @@
 		"skills": [
 		],
 		"dungeons": [
+			{
+				"id": "off_ex_war_1",
+				"name": "金之漠",
+				"level": 25,
+				"dist":500,
+				"length": 100,
+				"require": "g.off_ex_general_1>=1",
+				"desc": "金之漠是由古人用巨石建造的大片整齐到偏执的行列，在时间的冲刷下，巨石不知为何坚不可摧，将军被派往此地寻找古人的宝藏，据说在无月之夜，遥远的星辰注目之处，早已逝去的人会从大地中苏醒，完成他们的未竟之事。",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"off_ex_c_1": 10,
+					"off_ex_c_2": 1,
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": "off_ex_mon_3",
+				"spawns": [
+					[
+						"off_ex_mon_2",
+						"off_ex_mon_2"
+					],
+					[
+						"off_ex_mon_1",
+						"off_ex_mon_1"
+					]
+				]
+			},
+			{
+				"id": "off_ex_warp_1",
+				"name": "阴影殿堂",
+				"level": 25,
+				"dist":500,
+				"length": 100,
+				"require": "g.off_ex_general_1>=1",
+				"desc": "旧时谋密之处，崩毁于地坼，记载着远古的天外之物坠落之事。",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"off_ex_c_1": 10,
+					"off_ex_cp_2": 1,
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": "off_ex_monp_3",
+				"spawns": [
+					[
+						"off_ex_monp_1",
+						"off_ex_monp_1"
+					]
+				]
+			},
+			{
+				"id": "off_ex_war_2",
+				"name": "垂落废墟",
+				"level": 25,
+				"dist":500,
+				"length": 100,
+				"require": "g.off_ex_general_2>=1",
+				"desc": "一片断壁残垣，在曾经，一位外来者背叛了与爱人的约定，将军队带来此处。已破败的建筑上，只有乌鸦盘旋。",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"off_ex_c_3": 1,
+					"off_ex_c_1": 50,
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": "off_ex_mon_5",
+				"spawns": [
+					[
+						"off_ex_mon_4",
+						"off_ex_mon_4"
+					]
+				]
+			},
+			{
+				"id": "off_ex_warp_2",
+				"name": "古坑",
+				"level": 25,
+				"dist":500,
+				"length": 100,
+				"require": "g.off_ex_prince_2>=1",
+				"desc": "天外之石坠落于此，血肉之密于此扎根",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"off_ex_c_1": 10,
+					"off_ex_cp_3": 1,
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": "off_ex_monp_5",
+				"spawns": [
+					[
+						"off_ex_monp_4",
+						"off_ex_monp_4",
+						"off_ex_monp_4"
+					]
+				]
+			},
+			{
+				"id": "off_ex_war_3",
+				"name": "澜之高壁",
+				"level": 25,
+				"dist":500,
+				"length": 100,
+				"require": "g.off_ex_general_3>=1",
+				"desc": "在更加遥远的年代，纠缠盘旋大物自北而来，天澜王筑起高墙以抵挡祂。高耸之墙随着时间不断崩塌，如今已难抵挡复仇之人的刀锋。",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"off_ex_c_4": 1,
+					"off_ex_c_1": 50,
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": "off_ex_mon_7",
+				"spawns": [
+					[
+						"off_ex_mon_6",
+						"off_ex_mon_6"
+					]
+				]
+			},
+			{
+				"id": "off_ex_warp_3",
+				"name": "澜之高壁",
+				"level": 25,
+				"dist":500,
+				"length": 100,
+				"require": "g.off_ex_prince_3>=1",
+				"desc": "在更加遥远的年代，纠缠盘旋大物自北而来，天澜王筑起高墙以抵挡祂。高耸之墙随着时间不断崩塌，如今已难抵挡复仇之人的刀锋。",
+				"run": {
+					"tili":1,
+					"stamina": 0.4
+				},
+				"effect": {
+					"time": 0.2
+				},
+				"result": {
+					"off_ex_c_1": 10,
+					"off_ex_cp_4": 1,
+					"money": 10,
+					"ganwu": 5
+				},
+				"boss": {"100":["off_ex_monp_7","off_ex_monp_7"]},
+				"spawns": [
+					[
+						"off_ex_monp_6",
+						"off_ex_monp_6"
+					]
+				]
+			}
 		],
 		"monsters": [
+			{
+				"id": "off_ex_mon_1",
+				"name": "无声亡者",
+				"kind": "humanoid/undead",
+				"desc": "无声亡者自虚界而来，将言语抛在深渊之底，落灰之肩使其得以承受秘术之能。",
+				"level": 25,
+				"unique": true,
+				"hp": 170,
+				"attack": {
+					"name": "影响：无声秘术",
+					"kind": "chaos",
+					"dmg": "40~43"
+				},
+				"loot":{
+					"off_ex_c_1": 1
+				}
+			},
+			{
+				"id": "off_ex_monp_1",
+				"name": "阴影刺客",
+				"kind": "humanoid/undead",
+				"desc": "",
+				"level": 25,
+				"unique": true,
+				"hp": 100,
+				"attack": {
+					"name": "影响：刺杀秘术",
+					"kind": "chaos",
+					"dmg": "43~53"
+				},
+				"loot":{
+					"off_ex_c_1": 1
+				}
+			},
+			{
+				"id": "off_ex_mon_2",
+				"name": "眷听亡者",
+				"kind": "humanoid/undead",
+				"desc": "眷听亡者自虚界而来，感受之事只余万物之音。",
+				"level": 25,
+				"unique": true,
+				"hp": 170,
+				"attack": {
+					"name": "影响：眷听秘术",
+					"kind": "chaos",
+					"dmg": "40~43"
+				},
+				"loot":{
+					"off_ex_c_1": 1
+				}
+			},
+			{
+				"id": "off_ex_mon_3",
+				"name": "破碎承受之人",
+				"kind": "humanoid/undead",
+				"desc": "他对星辰爱到痴狂，从夜空中预言到来之事，抚平旅途上的坑穴，破碎之形体使其免受厄兆之苦，宝石之眼使其窥视凡物本源。",
+				"level": 30,
+				"unique": true,
+				"hp": 365,
+				"attack": [
+					{
+						"name": "影响：子将有难",
+						"bonus_class": 1,
+						"kind": "chaos",
+						"dmg": "50~80",
+						"targets": "enemies",
+						"dot": {
+							"%": "20%",
+							"id": "off_ex_dot_weak",
+							"name": "厄兆",
+							"mod": {
+								"defense": -20
+							},
+							"duration": 10
+						}
+					}
+				],
+				"loot":{
+					"off_ex_c_1": 5,
+					"off_ex_c_2": 1
+				}
+			},
+			{
+				"id": "off_ex_monp_3",
+				"name": "黑刀",
+				"kind": "humanoid/undead",
+				"desc": "夜穿窗扉出光芒",
+				"level": 30,
+				"unique": true,
+				"hp": 365,
+				"attack": [
+					{
+						"name": "影响：命穿秘术",
+						"bonus_class": 1,
+						"kind": "chaos",
+						"dmg": "80~81",
+						"targets": "enemies"
+					}
+				],
+				"loot":{
+					"off_ex_c_1": 5,
+					"off_ex_cp_2": 1
+				}
+			},
+			{
+				"id": "off_ex_mon_4",
+				"name": "暗喻之鸟",
+				"kind": "beast/sky_living",
+				"desc": "叫声使闻者烦闷，思索过去不平之事",
+				"level": 25,
+				"unique": true,
+				"hp": 100,
+				"attack": {
+					"name": "影响：暗喻秘术",
+					"kind": "chaos",
+					"dmg": "60~73"
+				},
+				"loot":{
+					"off_ex_c_1": 3
+				}
+			},
+			{
+				"id": "off_ex_monp_4",
+				"name": "六臂精怪",
+				"kind": "aberration/fey",
+				"desc": "",
+				"level": 25,
+				"unique": true,
+				"hp": 100,
+				"attack": {
+					"name": "影响：精怪之音",
+					"kind": "chaos",
+					"dmg": "10~55"
+				},
+				"loot":{
+					"off_ex_c_1": 3
+				}
+			},
+			{
+				"id": "off_ex_mon_5",
+				"name": "阴影源鸟",
+				"kind": "beast/sky_living",
+				"desc": "亮丽羽发覆盖其身，最深之墨以蔽面容，自天空降临人世，带来远星的消息，传达亡者的意愿。",
+				"level": 31,
+				"unique": true,
+				"hp": 435,
+				"attack": [
+					{
+						"name": "影响：逝者之事",
+						"bonus_class": 1,
+						"kind": "chaos",
+						"dmg": "75~80",
+						"targets": "enemies",
+						"dot": {
+							"%": "20%",
+							"id": "off_ex_dot_weak",
+							"name": "厄兆",
+							"mod": {
+								"defense": -20,
+								"tohit": -5
+							},
+							"duration": 10
+						}
+					}
+				],
+				"loot":{
+					"off_ex_c_3": 1,
+					"off_ex_c_1": 5
+				}
+			},
+			{
+				"id": "off_ex_monp_5",
+				"name": "陆地之音",
+				"kind": "aberration/fey",
+				"desc": "自地底延展千里，传唱生命秘密",
+				"level": 31,
+				"unique": true,
+				"hp": 367,
+				"attack": [
+					{
+						"name": "影响：陆地之音",
+						"kind": "chaos",
+						"dmg": "45~60",
+						"targets": "enemies",
+						"dot": {
+							"%": "20%",
+							"id": "off_ex_dot_weak",
+							"name": "遗传异常",
+							"mod": {
+								"defense": -60
+							},
+							"duration": 10
+						}
+					}
+				],
+				"loot":{
+					"off_ex_cp_3": 1,
+					"off_ex_c_1": 5
+				}
+			},
+			{
+				"id": "off_ex_mon_6",
+				"name": "天澜构造物",
+				"kind": "humanoid/constructs",
+				"desc": "金铁铿锵",
+				"level": 31,
+				"unique": true,
+				"hp": 210,
+				"attack": {
+					"name": "影响：壁垒秘术",
+					"kind": "heli",
+					"dmg": "63~70"
+				},
+				"loot":{
+					"off_ex_c_1": 3.5
+				}
+			},
+			{
+				"id": "off_ex_monp_6",
+				"name": "天音传达者",
+				"kind": "humanoid/elementals",
+				"desc": "侍奉残酷宇宙宏伟之物的仆人",
+				"level": 35,
+				"unique": true,
+				"hp": 210,
+				"attack": {
+					"name": "影响：天音秘术",
+					"kind": "water",
+					"dmg": "31~79",
+					"dot": {
+							"%": "20%",
+							"id": "off_exp_dot_weak",
+							"name": "天音",
+							"mod": {
+								"hp": -5,
+								"tili": -5
+							},
+							"duration": 5
+						}
+				},
+				"loot":{
+					"off_ex_c_1": 3.5
+				}
+			},
+			{
+				"id": "off_ex_mon_7",
+				"name": "至限生命构造",
+				"kind": "humanoid/constructs",
+				"desc": "自远古而来的遗传信息于此处流淌，为此等超越凡俗之物庆贺",
+				"level": 35,
+				"unique": true,
+				"hp": 4000,
+				"attack": [
+					{
+						"name": "影响：远古遗传",
+						"bonus_class": 1,
+						"kind": "wood",
+						"dmg": "75~80",
+						"targets": "enemies",
+						"dot": {
+							"%": "20%",
+							"id": "off_ex_dot_weak",
+							"name": "伤兆",
+							"mod": {
+								"tohit": -20
+							},
+							"duration": 5
+						}
+					},
+					{
+						"name": "上古遗传",
+						"targets": "self",
+						"result": {
+							"hp": 40
+						}
+					}
+				],
+				"loot":{
+					"off_ex_c_4": 1,
+					"off_ex_c_1": 5
+				}
+			},
+			{
+				"id": "off_ex_monp_7",
+				"name": "白阳之双眸",
+				"kind": "humanoid/elementals",
+				"desc": "白阳于上古之时消匿，时至今日只有残存的一瞥能被世人所呼唤。",
+				"level": 35,
+				"unique": true,
+				"hp": 2900,
+				"attack": [
+					{
+						"name": "影响：不可视之光",
+						"bonus_class": 1,
+						"kind": "fire",
+						"dmg": "75~80",
+						"targets": "enemies"
+					},
+					{
+						"name": "影响：白阳之绚",
+						"bonus_class": 1,
+						"kind": "fire",
+						"dmg": "1~120",
+						"targets": "enemies",
+						"dot": {
+							"%": "80%",
+							"id": "off_ex_dot_baiyang",
+							"name": "白阳之绚",
+							"mod": {
+								"hp": -5,
+								"tili": -5,
+								"stamina": -1,
+								"heli": -15,
+								"chaos": -15
+							},
+							"duration": 20
+						}
+					}
+				],
+				"loot":{
+					"off_ex_cp_4": 1,
+					"off_ex_c_1": 5
+				}
+			}
+		],
+		"consumables": [
+			{
+				"id": "off_ex_c_1",
+				"name": "秘史年鉴",
+				"desc": "秘密的岁月隐匿在光河的幕幕之中。",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 10
+				},
+				"use": {
+					"paper": 10,
+					"exe_paper": 10
+				}
+			},
+			{
+				"id": "off_ex_c_2",
+				"name": "破碎沙砾",
+				"desc": "灾厄之兆",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 77
+				},
+				"use": {
+					"hp": 10
+				}
+			},
+			{
+				"id": "off_ex_cp_2",
+				"name": "黑夜浮渣",
+				"desc": "",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 77
+				},
+				"use": {
+					"tili": 10,
+					"hp": -10
+				}
+			},
+			{
+				"id": "off_ex_c_3",
+				"name": "阴影之羽",
+				"desc": "黑羽蔽面以不见世间恶事",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 121
+				},
+				"use": {
+					"hp": 15
+				}
+			},
+			{
+				"id": "off_ex_cp_3",
+				"name": "陨岩之血",
+				"desc": "炙热之物从天而降",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 121
+				},
+				"use": {
+					"hp": 15
+				}
+			},
+			{
+				"id": "off_ex_c_4",
+				"name": "纠缠枝条",
+				"desc": "仇雠为生父之源",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 178
+				},
+				"use": {
+					"hp": 4
+				}
+			},
+			{
+				"id": "off_ex_cp_4",
+				"name": "穹外沙砾",
+				"desc": "飘荡在冷光之星周围的沙砾",
+				"locked": false,
+				"hide": true,
+				"level": 1,
+				"sell":{
+					"money": 214
+				},
+				"use": {
+					"ganwu": 100,
+					"elect": 1,
+					"hp": -10
+				}
+			}
+		],
+		"market":[
+			{
+				"id": "off_ex_market_1",
+				"name": "破碎形体",
+				"tags": "购买护甲",
+				"desc": "言之诸事，皆为必然。",
+				"require": "g.off_ex_general_1>1",
+				"cost": {
+					"off_ex_c_2": 25,
+					"money": 1000,
+					"off_influence": 4000,
+					"qingjia": 30,
+					"zhongjia":30,
+					"heavyjia": 30,
+					"pyy": 20,
+					"fypyj": 20,
+					"life_crystal": 5
+				},
+				"loot": {
+					"off_ex_rares_1": "100%"
+				}
+			},
+			{
+				"id": "off_ex_market_1p",
+				"name": "黑夜珠宝",
+				"tags": "购买护甲",
+				"desc": "",
+				"require": "g.off_ex_prince_1>1",
+				"cost": {
+					"off_ex_cp_2": 25,
+					"money": 1000,
+					"off_influence": 4000,
+					"qingjia": 30,
+					"zhongjia":30,
+					"heavyjia": 30,
+					"pyy": 20,
+					"fypyj": 20,
+					"life_crystal": 5
+				},
+				"loot": {
+					"off_ex_rares_1p": "100%"
+				}
+			},
+			{
+				"id": "off_ex_market_2",
+				"name": "避劫之羽",
+				"tags": "购买护甲",
+				"desc": "",
+				"require": "g.off_ex_general_2>1",
+				"cost": {
+					"off_ex_c_1": 5,
+					"off_ex_c_2": 5,
+					"off_ex_c_3": 15,
+					"money": 1000,
+					"off_influence": 4000,
+					"qingjia": 30,
+					"zhongjia":30,
+					"heavyjia": 30,
+					"pyy": 20,
+					"fypyj": 20,
+					"life_crystal": 5
+				},
+				"loot": {
+					"off_ex_rares_2": "100%"
+				}
+			},
+			{
+				"id": "off_ex_market_2p",
+				"name": "陨岩之清",
+				"tags": "购买护甲",
+				"desc": "",
+				"require": "g.off_ex_prince_2>1",
+				"cost": {
+					"off_ex_c_1": 5,
+					"off_ex_cp_2": 5,
+					"off_ex_cp_3": 15,
+					"money": 1000,
+					"off_influence": 4000,
+					"qingjia": 30,
+					"zhongjia":30,
+					"heavyjia": 30,
+					"pyy": 20,
+					"fypyj": 20,
+					"life_crystal": 5
+				},
+				"loot": {
+					"off_ex_rares_2p": "100%"
+				}
+			},
+			{
+				"id": "off_ex_market_3",
+				"name": "纠结冷漠之锋",
+				"tags": "购买武器",
+				"desc": "",
+				"require": "g.off_ex_general_3>1",
+				"cost": {
+					"off_ex_c_1": 5,
+					"off_ex_c_2": 5,
+					"off_ex_c_3": 5,
+					"off_ex_c_4": 15,
+					"money": 1000,
+					"off_influence": 4000,
+					"qingjia": 30,
+					"zhongjia":30,
+					"heavyjia": 30,
+					"pyy": 20,
+					"fypyj": 20,
+					"life_crystal": 5
+				},
+				"loot": {
+					"off_ex_rares_3": "100%"
+				}
+			},
+			{
+				"id": "off_ex_market_3p",
+				"name": "星尘寄生",
+				"tags": "购买武器",
+				"desc": "",
+				"require": "g.off_ex_prince_3>1",
+				"cost": {
+					"off_ex_c_1": 5,
+					"off_ex_c_2p": 5,
+					"off_ex_c_3p": 5,
+					"off_ex_c_4p": 15,
+					"money": 1000,
+					"off_influence": 4000,
+					"qingjia": 30,
+					"zhongjia":30,
+					"heavyjia": 30,
+					"pyy": 20,
+					"fypyj": 20,
+					"life_crystal": 5
+				},
+				"loot": {
+					"off_ex_rares_3p": "100%"
+				}
+			}
+		],
+		"rares": [
+			{
+				"id": "off_ex_rares_1",
+				"name": "破碎形体",
+				"desc": "言之诸事，皆为必然。",
+				"color": "#FFD700",
+				"type": "armor",
+				"armor": 0,
+				"slot": "chest",
+				"name_keep": true,
+				"regular_perk": true,
+				"alter": {
+					"mod": {
+						"self.hardiness": 0.3
+					}
+				},
+				"perk2": "off_ex_perk_1",
+				"level": 31,
+				"enchants":0,
+				"sell": {
+					"money": 1000
+				}
+			},
+			{
+				"id": "off_ex_rares_1p",
+				"name": "黑夜珠宝",
+				"desc": "",
+				"color": "#FFD700",
+				"armor": 4,
+				"slot": "trinket",
+				"name_keep": true,
+				"regular_perk": true,
+				"perk2": "off_ex_perk_1p",
+				"level": 31,
+				"enchants":2,
+				"sell": {
+					"money": 1000
+				}
+			},
+			{
+				"id": "off_ex_rares_2",
+				"name": "避劫之羽",
+				"desc": "",
+				"color": "#FFD700",
+				"type": "armor",
+				"armor": 0,
+				"slot": "talisman",
+				"name_keep": true,
+				"regular_perk": true,
+				"perk2": "off_ex_perk_2",
+				"level": 35,
+				"enchants":0,
+				"sell": {
+					"money": 1000
+				}
+			},
+			{
+				"id": "off_ex_rares_2p",
+				"name": "陨岩之清",
+				"desc": "",
+				"color": "#FFD700",
+				"type": "armor",
+				"armor": 0,
+				"slot": "talisman",
+				"name_keep": true,
+				"regular_perk": true,
+				"perk2": "off_ex_perk_2p",
+				"level": 35,
+				"enchants":1,
+				"sell": {
+					"money": 1000
+				}
+			},
+			{
+				"id": "off_ex_rares_3",
+				"name": "纠结冷漠之锋",
+				"desc": "",
+				"color": "#FFD700",
+				"type": "weapon",
+				"armor": -20,
+				"name_keep": true,
+				"regular_perk": true,
+				"attack": {
+					"id": "oex3_attack",
+					"name": "苦恨之根",
+					"kind": "wood",
+					"isweapon": true,
+					"targets": "enemies",
+					"damage": "10~66"
+				},
+				"perk2": "off_ex_perk_3",
+				"level": 38,
+				"enchants":2,
+				"sell": {
+					"money": 1000
+				}
+			},
+			{
+				"id": "off_ex_rares_3p",
+				"name": "星尘寄生",
+				"desc": "",
+				"color": "#FFD700",
+				"type": "weapon",
+				"name_keep": true,
+				"regular_perk": true,
+				"attack": {
+					"id": "oex4_attack",
+					"name": "外引光",
+					"kind": "fire",
+					"isweapon": true,
+					"damage": "46~68"
+				},
+				"perk2": "off_ex_perk_3p",
+				"level": 38,
+				"enchants":3,
+				"sell": {
+					"money": 1000
+				}
+			}
+		],
+		"equip_perk":[
+			{
+				"id": "off_ex_perk_1",
+				"name": "【厄兆】",
+				"adj": "【厄兆】",
+				"weight": 0,
+				"rank": 0,
+				"perk_slot": 2,
+				"perk_info":{
+					"info":{
+						"防御": 35,
+						"闪避": 10,
+						"物理抵抗": 20,
+						"法术抵抗": 20,
+						"全体抗性%": 4
+					}
+				},
+				"mod": {
+					"player.defense": 35,
+					"player.dodge": 10,
+					"self.physical_save": 20,
+					"self.spell_save": 20,
+					"self.resist.all": 4
+				}
+			},
+			{
+				"id": "off_ex_perk_1p",
+				"name": "【夜游】",
+				"adj": "【夜游】",
+				"weight": 0,
+				"rank": 0,
+				"perk_slot": 2,
+				"perk_info":{
+					"info":{
+						"计算力恢复": 70,
+						"计算力上限": 1000,
+						"物理抵抗": 1,
+						"法术抵抗": 1
+					}
+				},
+				"mod": {
+					"alculation.rate": 70,
+					"alculation.max": 1000,
+					"self.physical_save": 1,
+					"self.spell_save": 1
+				}
+			},
+			{
+				"id": "off_ex_perk_2",
+				"name": "【避劫】",
+				"adj": "【避劫】",
+				"weight": 0,
+				"rank": 0,
+				"perk_slot": 2,
+				"perk_info":{
+					"info":{
+						"对世界意识伤害加成": 30,
+						"全体抗性%": 1,
+						"气血恢复": -2,
+						"能够使用法术-墨彩h": 10
+					}
+				},
+				"mod": {
+					"world_mind.damage_bonus": 30,
+					"self.resist.all": 1,
+					"self.hp.rate": 2,
+					"off_ex_reasource_1.rate": 1
+				}
+			},
+			{
+				"id": "off_ex_perk_2p",
+				"name": "【岩之清】",
+				"adj": "【岩之清】",
+				"weight": 0,
+				"rank": 0,
+				"perk_slot": 2,
+				"perk_info":{
+					"info":{
+						"全体抗性%": 1,
+						"气血恢复": 10,
+						"能够使用法术-生命乱序h": 10
+					}
+				},
+				"mod": {
+					"self.resist.all": 1,
+					"self.hp.rate": 10,
+					"off_ex_reasource_1p.rate": 1
+				}
+			},
+			{
+				"id": "off_ex_perk_3",
+				"name": "【宿怨】",
+				"adj": "【宿怨】",
+				"weight": 0,
+				"rank": 0,
+				"perk_slot": 2,
+				"perk_info":{
+					"info":{
+						"气血恢复": -18,
+						"能够使用法术-旧蛇蜷其身h": 10
+					}
+				},
+				"mod": {
+					"self.hp.rate": -10,
+					"off_ex_reasource_2.rate": 1
+				}
+			},
+			{
+				"id": "off_ex_perk_3p",
+				"name": "【外来】",
+				"adj": "【外来】",
+				"weight": 0,
+				"rank": 0,
+				"perk_slot": 2,
+				"perk_info":{
+					"info":{
+						"全体抗性%": 1,
+						"能够使用法术-生命篡夺h": 10
+					}
+				},
+				"mod": {
+					"self.resist.all": 1,
+					"off_ex_reasource_2p.rate": 1
+				}
+			}
+		],
+		"spells":[
+			{
+				"id": "off_ex_spell_1",
+				"name": "墨彩",
+				"school": "混沌",
+				"level": 20,
+				"desc": "激发避劫之羽的力量，在10s内提高20防御以及10闪避，并恢复40气血。",
+				"cd": 20,
+				"locked":false,
+				"show_require": "g.off_ex_reasource_1.rate>0",
+				"buy": {
+					"ganwu": 100
+				},
+				"cost": {
+					"tili": 15,
+					"chaos": 15,
+					"alculation": 5,
+					"shenshi": 1
+				},
+				"dot": {
+					"name": "墨彩",
+					"duration": 10,
+					"mod": {
+						"self.defense": 20,
+						"self.dodge": 10
+					}
+				},
+				"result":{
+					"self.hp": 40
+				}
+			},
+			{
+				"id": "off_ex_spell_1p",
+				"name": "生命乱序",
+				"desc": "大幅度降低敌人对混沌和合理的抗性，以及降低闪避和防御",
+				"school": "源泉",
+				"level": 20,
+				"cd": 20,
+				"locked":false,
+				"show_require": "g.off_ex_reasource_1p.rate>0",
+				"buy": {
+					"ganwu": 100
+				},
+				"cost": {
+					"tili": 10,
+					"heli": 15,
+					"alculation": 15,
+					"shenshi": 5
+				},
+				"attack": {
+					"targets": "enemies",
+					"dot": {
+						"name": "生命乱序",
+						"kind": "chaos",
+						"duration": 10,
+						"mod": {
+							"self.resist.chaos": -20,
+							"self.resist.heli": -20,
+							"self.dodge": -10,
+							"self.defense": -10
+						}
+					}
+				}
+			},
+			{
+				"id": "off_ex_spell_2",
+				"name": "旧蛇蜷其身",
+				"school": "混沌",
+				"level": 28,
+				"desc": "上古邪祟之物居于世界之北，其有五首，吞岳食峰，岁寒之时蜷于地底。\n在接下来的1s内，你的所有伤害提高40，闪避降低20，体力恢复降低20",
+				"cd": 20,
+				"locked":false,
+				"show_require": "g.off_ex_reasource_2.rate>0",
+				"buy": {
+					"ganwu": 100
+				},
+				"cost": {
+					"tili": 60,
+					"chaos": 15,
+					"alculation": 5,
+					"shenshi": 1
+				},
+				"dot": {
+					"name": "旧蛇蜷其身",
+					"duration": 1,
+					"mod": {
+						"self.damage_bonus": 40,
+						"self.dodge": -20,
+						"tili.rate": -20
+					}
+				}
+			},
+			{
+				"id": "off_ex_spell_2p",
+				"name": "生命篡夺",
+				"desc": "造成伤害并恢复气血。",
+				"school": "源泉",
+				"level": 30,
+				"cd": 20,
+				"locked":false,
+				"show_require": "g.off_ex_reasource_2p.rate>0",
+				"buy": {
+					"ganwu": 100
+				},
+				"cost": {
+					"hp": 5,
+					"tili": 35,
+					"heli": 15,
+					"alculation": 60,
+					"shenshi": 5
+				},
+				"attack": {
+					"bonus_class": 1,
+					"damage": "81~120",
+					"kind": "wuhuan"
+				},
+				"result": {
+					"self.hp": 50
+				}
+			}
 		]
 	}
 }

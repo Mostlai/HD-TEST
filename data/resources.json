@@ -911,8 +911,8 @@
 	},
 	{
 		"id": "xiulian_eye_zhuji_1",
-		"name": "外置扩展眼镜",
-		"desc": "外置扩展眼镜",
+		"name": "扩展视野",
+		"desc": "扩展视野",
 		"hide": true,
 		"group": "修行",
 		"tags": "",

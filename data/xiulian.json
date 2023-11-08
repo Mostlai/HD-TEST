@@ -228,9 +228,9 @@
 	},
 	{
 		"id": "fangyuan_1",
-		"name": "寻找规矩(方圆)",
+		"name": "寻找规矩(立足)",
 		"desc": "充分考察自然后,你需要从中找出总在变化并限制一切的自然规则",
-		"tags": "方圆",
+		"tags": "立足",
 		"require": "g.reading>=3&&g.heli&&g.xiulian_jizhun_1>=1",
 		"max": 2,
 		"buy": {
@@ -351,9 +351,9 @@
 	},
 	{
 		"id": "heli_li_1_controll",
-		"name": "初步流控制(导向)",
+		"name": "初步流控制(能量解构)",
 		"desc": "初步学会自动地获取合理并对其拥有更好的控制能力",
-		"tags": "导向",
+		"tags": "能量解构",
 		"require": "g.xiulian_heli_1>0",
 		"max": 2,
 		"cost": {
@@ -369,9 +369,9 @@
 	},
 	{
 		"id": "heli_li_1_solid",
-		"name": "合理实质化(导向)",
+		"name": "合理实质化(能量解构)",
 		"desc": "将合理化为不依赖其他的介质的形态,研究将允许解锁更多法术",
-		"tags": "导向",
+		"tags": "能量解构",
 		"require": "g.xiulian_heli_1>0",
 		"max": 2,
 		"cost": {
@@ -389,9 +389,9 @@
 	},
 	{
 		"id": "heli_li_1_escape",
-		"name": "合理外放(导向)",
+		"name": "合理外放(能量解构)",
 		"desc": "允许将合理作为纯粹能量形式外放出来",
-		"tags": "导向",
+		"tags": "能量解构",
 		"require": "g.xiulian_heli_li_1_soild>0",
 		"max": 2,
 		"cost": {
@@ -411,9 +411,9 @@
 	},
 	{
 		"id": "heli_li_2_escape",
-		"name": "精神抚慰(导向)",
+		"name": "精神抚慰(能量解构)",
 		"desc": "运用合理来安定情绪",
-		"tags": "导向",
+		"tags": "能量解构",
 		"require": "g.xiulian_heli_li_1_esc>0",
 		"max": 2,
 		"cost": {
@@ -731,9 +731,9 @@
 	},
 	{
 		"id": "astro_zhuji_3",
-		"name": "混沌揭示(获取)",
+		"name": "混沌揭示(能量解构)",
 		"desc": "混沌运动学揭示了一种新的力量",
-		"tags": "获取",
+		"tags": "能量解构",
 		"require": "g.chaos_sci>=3",
 		"max": 2,
 		"cost": {
@@ -754,9 +754,9 @@
 	},
 	{
 		"id": "chaos_ly_1",
-		"name": "混沌释放(利用)",
+		"name": "混沌释放(能量解构)",
 		"desc": "学习利用混沌",
-		"tags": "利用",
+		"tags": "能量解构",
 		"require": "g.xiulian_astro_zhuji_3>=1",
 		"max": 2,
 		"cost": {
@@ -775,8 +775,8 @@
 	},
 	{
 		"id": "eye_zhuji_1",
-		"name": "外置扩展眼镜(观测之术)",
-		"desc": "你意识到还有很多看不见的光,这种开创性的随身镜片可以帮助你看到其中的一部分",
+		"name": "扩展视野(观测之术)",
+		"desc": "你意识到还有很多看不见的光,新的修炼将帮助你发现他们",
 		"tags": "观测之术",
 		"require": "g.snp_data>=1&&g.ult_guancha>=3&&g.astronomy>=2",
 		"max": 2,
@@ -944,9 +944,9 @@
 	},
 	{
 		"id": "zhuji_2",
-		"name": "筑基零重(初入筑基)",
+		"name": "筑基零重(永生之望)",
 		"desc": "在结合天体,生物,材料,能量后,混沌与合理交织,电能被你带入世间,神识成就思维之光,你的博学,力量和功业足以让你迈入这个层次,这是生命层次的飞跃",
-		"tags": "初入筑基",
+		"tags": "永生之望",
 		"require": "g.chaos_up>=1 && g.xiulian_zhuji_1>=1 && g.zhuji_qianzhi_2>=1",
 		"max": 2,
 		"cost": {
@@ -973,9 +973,9 @@
 	},
 	{
 		"id": "zhuji_2_1",
-		"name": "筑基一重(初入筑基)",
+		"name": "筑基一重(永生之望)",
 		"desc": "进入筑基一重,[一重跃升]资源需要对副本进行探索获得",
-		"tags": "初入筑基",
+		"tags": "永生之望",
 		"require": "g.jihunyuesheng>=1",
 		"max": 2,
 		"cost": {
@@ -1357,9 +1357,9 @@
 	},
 	{
 		"id": "chaos_ld_1",
-		"name": "混沌集合(流动)",
+		"name": "混沌集合(能量解构)",
 		"desc": "在纯浊影响下,混沌表达了一定规律的数理逻辑",
-		"tags": "流动",
+		"tags": "能量解构",
 		"require": "g.dirty_lingti>=5 && g.chaos_up>=1",
 		"max": 2,
 		"cost": {
@@ -1391,9 +1391,9 @@
 	},
 	{
 		"id": "heli_dx_1",
-		"name": "合理之表(导向)",
+		"name": "合理之表(能量解构)",
 		"desc": "合理在纯浊的状态下,呈现高度逻辑化的形式",
-		"tags": "导向",
+		"tags": "能量解构",
 		"require": "g.xiulian_chaos_ld_1>=1",
 		"max": 2,
 		"cost": {
@@ -1425,9 +1425,9 @@
 	},
 	{
 		"id": "heli_dx_2",
-		"name": "灵虚合理(导向)",
+		"name": "灵虚合理(能量解构)",
 		"desc": "灵体开发的数学进一步指导了合理的用途",
-		"tags": "导向",
+		"tags": "能量解构",
 		"require": "g.fanshe_math>=4 && g.energ_shenshi>=4",
 		"max": 2,
 		"cost": {
@@ -1723,9 +1723,9 @@
 	},
 	{
 		"id": "heli_ys_1",
-		"name": "浓缩合理(压缩)",
+		"name": "浓缩合理(能量解构)",
 		"desc": "压缩合理,在最小的空间内获取最大的能量",
-		"tags": "压缩",
+		"tags": "能量解构",
 		"require": "g.xiulian_energ_struct_ss>=1",
 		"max": 2,
 		"cost": {
@@ -2593,9 +2593,9 @@
 	},
 	{
 		"id": "chaos_ld_hdsw",
-		"name": "混沌生物(流动)",
+		"name": "混沌生物(能量解构)",
 		"desc": "微观下细胞进行混沌运动",
-		"tags": "流动",
+		"tags": "能量解构",
 		"require": "g.wgswx>=1",
 		"max": 2,
 		"cost": {
@@ -2618,9 +2618,9 @@
 	},
 	{
 		"id": "chaos_ld_wglt",
-		"name": "微观灵体(流动)",
+		"name": "微观灵体(能量解构)",
 		"desc": "微观层次下研究灵体",
-		"tags": "流动",
+		"tags": "能量解构",
 		"require": "g.wgswx>=1",
 		"max": 2,
 		"cost": {
@@ -2644,9 +2644,9 @@
 	},
 	{
 		"id": "chaos_ly_zhenjieyan",
-		"name": "真解眼(利用)",
+		"name": "真解眼(能量解构)",
 		"desc": "直视混沌",
-		"tags": "利用",
+		"tags": "能量解构",
 		"require": "g.unreal_lab>=1",
 		"max": 2,
 		"cost": {
@@ -2672,9 +2672,9 @@
 	},
 	{
 		"id": "chaos_ly_hundraoliu",
-		"name": "混沌扰流(利用)",
+		"name": "混沌扰流(能量解构)",
 		"desc": "对抗混沌。注意,会产生1点乱邪",
-		"tags": "利用",
+		"tags": "能量解构",
 		"require": "g.unreal_lab>=1",
 		"max": 2,
 		"cost": {
@@ -2699,9 +2699,9 @@
 	},
 	{
 		"id": "chaos_ly_hundkongj",
-		"name": "混沌控件(利用)",
+		"name": "混沌控件(能量解构)",
 		"desc": "学习如何使仪器在高混沌环境下能恢复大部分功能。注意,会产生1点乱邪",
-		"tags": "利用",
+		"tags": "能量解构",
 		"require": "g.unreal_lab>=1",
 		"max": 2,
 		"cost": {
@@ -2726,9 +2726,9 @@
 	},
 	{
 		"id": "chaos_yuansuydong",
-		"name": "元素涌动(元素能量)",
+		"name": "元素涌动(元素工程)",
 		"desc": "利用元素产生持久能量。注意,会产生1点乱邪",
-		"tags": "元素能量",
+		"tags": "元素工程",
 		"require": "g.unreal_lab>=1",
 		"max": 2,
 		"cost": {
@@ -2802,9 +2802,9 @@
 	},
 	{
 		"id": "space_ysgz",
-		"name": "元素构造(元素结构)",
+		"name": "元素构造(元素工程)",
 		"desc": "元素的基本构造",
-		"tags": "元素结构",
+		"tags": "元素工程",
 		"require": "g.xiulian_smfx>=1",
 		"max": 2,
 		"cost": {
@@ -2829,9 +2829,9 @@
 	},
 	{
 		"id": "space_hlys",
-		"name": "混乱元素(元素结构)",
+		"name": "混乱元素(元素工程)",
 		"desc": "元素间的不对称会导致混乱",
-		"tags": "元素结构",
+		"tags": "元素工程",
 		"require": "g.xiulian_space_ysgz>=1",
 		"max": 2,
 		"cost": {
@@ -2881,9 +2881,9 @@
 	},
 	{
 		"id": "space_yspl",
-		"name": "元素排列(元素排列)",
+		"name": "元素工程(元素工程)",
 		"desc": "元素在空间中的排列顺序",
-		"tags": "元素排列",
+		"tags": "元素工程",
 		"require": "g.xiulian_smfx>=1",
 		"max": 2,
 		"cost": {
@@ -3037,9 +3037,9 @@
 	},
 	{
 		"id": "space_ysch",
-		"name": "元素缠合(元素反应)",
+		"name": "元素缠合(元素工程)",
 		"desc": "试着将不同元素缠合在一起",
-		"tags": "元素反应",
+		"tags": "元素工程",
 		"require": "g.yuansuxue>=3",
 		"max": 2,
 		"cost": {
@@ -3065,9 +3065,9 @@
 	},
 	{
 		"id": "space_yswd",
-		"name": "元素稳定(元素结构)",
+		"name": "元素稳定(元素工程)",
 		"desc": "稳定缠合元素",
-		"tags": "元素结构",
+		"tags": "元素工程",
 		"require": "g.yuansuxue>=3",
 		"max": 2,
 		"cost": {
@@ -3093,9 +3093,9 @@
 	},
 	{
 		"id": "space_ysbwd",
-		"name": "不稳定元素(元素结构)",
+		"name": "不稳定元素(元素工程)",
 		"desc": "不稳定的衍生元素也有有着独特的性质",
-		"tags": "元素结构",
+		"tags": "元素工程",
 		"require": "g.element_wuhuan>=1",
 		"max": 2,
 		"cost": {
@@ -3119,9 +3119,9 @@
 	},
 	{
 		"id": "space_sbzq",
-		"name": "衰败周期(元素结构)",
+		"name": "衰败周期(元素工程)",
 		"desc": "不稳定的元素会自然的衰败",
-		"tags": "元素结构",
+		"tags": "元素工程",
 		"require": "g.xiulian_space_ysbwd>=1",
 		"max": 2,
 		"cost": {
@@ -3189,9 +3189,9 @@
 	},
 	{
 		"id": "space_ysys",
-		"name": "元素衍生(元素结构)",
+		"name": "元素衍生(元素工程)",
 		"desc": "两种或多种元素的衍生物",
-		"tags": "元素结构",
+		"tags": "元素工程",
 		"require": "g.yuansuxue>=3",
 		"max": 2,
 		"cost": {
@@ -3469,9 +3469,9 @@
 	},
 	{
 		"id": "jj_jliugeshi",
-		"name": "晶流格式(元素物理)",
+		"name": "晶流格式(元素工程)",
 		"desc": "研究如何高效获得晶流水",
-		"tags": "元素物理",
+		"tags": "元素工程",
 		"require": "g.xiulian_zhenyuandaolun>=1",
 		"max": 2,
 		"cost": {
@@ -3493,9 +3493,9 @@
 	},
 	{
 		"id": "jj_hunluanges",
-		"name": "混乱格式(元素物理)",
+		"name": "混乱格式(元素工程)",
 		"desc": "神识混乱化",
-		"tags": "元素物理",
+		"tags": "元素工程",
 		"require": "g.zlssx>=1 && g.luoryuequ>=1",
 		"max": 2,
 		"cost": {
@@ -3519,9 +3519,9 @@
 	},
 	{
 		"id": "jj_benyuanges",
-		"name": "本源格式(元素物理)",
+		"name": "本源格式(元素工程)",
 		"desc": "神识本源化",
-		"tags": "元素物理",
+		"tags": "元素工程",
 		"require": "g.zlssx>=1 && g.podaozhim>=1",
 		"max": 2,
 		"cost": {
@@ -3971,9 +3971,9 @@
 	},
 	{
 		"id": "hundunpohuai",
-		"name": "混沌破坏(流动)",
+		"name": "混沌破坏(能量解构)",
 		"desc": "利用混沌达成破坏目的",
-		"tags": "流动",
+		"tags": "能量解构",
 		"require": "g.xiulian_hunpoyanjiu>=1",
 		"max": 2,
 		"cost": {
@@ -4348,9 +4348,9 @@
 	},
 	{
 		"id": "heli_ph_1",
-		"name": "合理平衡(平衡)",
+		"name": "合理平衡(能量解构)",
 		"desc": "平衡不均匀的合理分布",
-		"tags": "平衡",
+		"tags": "能量解构",
 		"require": "g.heli_pump>=1",
 		"max": 2,
 		"cost": {
@@ -4375,9 +4375,9 @@
 	},
 	{
 		"id": "heli_ys_2",
-		"name": "进阶合理压缩(压缩)",
+		"name": "进阶合理压缩(能量解构)",
 		"desc": "进一步压缩合理",
-		"tags": "压缩",
+		"tags": "能量解构",
 		"require": "g.heli_pump>=1",
 		"max": 2,
 		"cost": {
@@ -4401,9 +4401,9 @@
 	},
 	{
 		"id": "heli_ys_3",
-		"name": "外部合理收缩(压缩)",
+		"name": "外部合理收缩(能量解构)",
 		"desc": "进一步压缩合理",
-		"tags": "压缩",
+		"tags": "能量解构",
 		"require": "g.heli_pump>=1",
 		"max": 2,
 		"cost": {
@@ -4728,9 +4728,9 @@
 	},
 	{
 		"id": "lj_zhenhun_12",
-		"name": "黑焰引导(元素能量)",
+		"name": "黑焰引导(元素工程)",
 		"desc": "学习黑焰法术",
-		"tags": "元素能量",
+		"tags": "元素工程",
 		"require": "g.heisezhist>=1",
 		"max": 2,
 		"cost": {
@@ -4903,9 +4903,9 @@
 	},
 	{
 		"id": "crzj_zhujierchong",
-		"name": "筑基二重(初入筑基)",
+		"name": "筑基二重(永生之望)",
 		"desc": "夜与昼穿梭于天幕时，我随之颤抖，光从远端照于行星，我不禁看他，月幽匿于云中之时，我伸出双手。如壁垒般的天穹，人必要超越它。",
-		"tags": "初入筑基",
+		"tags": "永生之望",
 		"require": "g.baoyangsizhen>=9",
 		"max": 2,
 		"cost": {
@@ -4983,6 +4983,69 @@
 		"xiulianresult": {
 			"age.max": 18250,
 			"age": 18250
+		}
+	},
+	{
+		"id": "offlinetimewarp_1",
+		"name": "滞时之事(死亡)",
+		"desc": "允许在离线时获得时间能量，时间能量可以加速游戏。",
+		"tags": "死亡",
+		"require": "g.zhuji_2>=1",
+		"max": 2,
+		"cost": {
+			"shenshi": 1,
+			"ganwu":150,
+			"heli": 5,
+			"elect": 20,
+			"chaos": 5,
+			"books": 5,
+			"zero_crystal": 8,
+			"snp_data": 5,
+			"paper": 25,
+			"exe_paper": 6
+		},
+		"xiulianresult": {
+			"offlinefarm_energy.max": 600
+		}
+	},
+	{
+		"id": "offlinetimewarp_2",
+		"name": "脉动思绪(死亡)",
+		"desc": "提高时间能量上限",
+		"tags": "死亡",
+		"require": "g.zhuji_2_1>=1",
+		"max": 2,
+		"cost": {
+			"jingdian": 10,
+			"yjswyb": 20,
+			"element_luor": 10,
+			"element_wuhuan": 20
+		},
+		"xiulianresult": {
+			"offlinefarm_energy.max": 3600
+		}
+	},
+	{
+		"id": "offlinetimewarp_3",
+		"name": "超凡之影(死亡)",
+		"desc": "提高时间能量上限",
+		"tags": "死亡",
+		"require": "g.crzj_zhujierchong>=1",
+		"max": 2,
+		"cost": {
+			"jihun": 5,
+			"qiyiyeti":20,
+			"zhenhun_pice_1": 40,
+			"element_blood": 40,
+			"xuanmuye": 150,
+			"gubenxianling": 15,
+			"zhenzhi_spindle": 150,
+			"element_wuhuan": 20,
+			"element_luor": 20,
+			"ganwu": 4500
+		},
+		"xiulianresult": {
+			"offlinefarm_energy.max": 7200
 		}
 	}
 ]

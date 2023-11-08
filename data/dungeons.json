@@ -417,7 +417,7 @@
 	{
 		"id": "jlss",
 		"name": "巨灵山",
-		"desc": "最巍峨的山脉，最纯正的金石之力",
+		"desc": "巍峨的山脉，最纯正的金石之力",
 		"require": "g.qianwnag_jlss>=1",
 		"level": 20,
 		"dist": 200,

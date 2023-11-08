@@ -413,8 +413,8 @@
 	{
 		"id": "logversion",
 		"name": "2023005",
-		"logversion": "2023005",
-		"frecipever": "20203r06",
+		"logversion": "2023007",
+		"frecipever": "20205r01",
 		"hide": true,
 		"locked": false,
 		"stat": true,
@@ -474,6 +474,22 @@
 	{
 		"id": "equip_dot_count",
 		"name": "物品DOT",
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "offlinefarm_energy",
+		"name": "时间能量",
+		"hide": true,
+		"locked": false,
+		"stat": true,
+		"max": 3000
+	},
+	{
+		"id": "offlinefarm_speed",
+		"name": "时间流速",
+		"val": 1,
 		"hide": true,
 		"locked": false,
 		"stat": true

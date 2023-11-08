@@ -84,7 +84,7 @@
 		"desc": "",
 		"require": "g.r_adv_w_sj2>=1",
 		"cost": {
-			"r_adv_bzhj": 1
+			"r_adv_w_sj2": 1
 		},
 		"result": {
 			"money": 15

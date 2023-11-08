@@ -1381,7 +1381,7 @@
 	{
 		"id": "guanggan_data_rp_2",
 		"name": "光感萤磁生产",
-		"desc": "消耗1感光透镜和1萤磁线并生产1光感数据",
+		"desc": "消耗1感光透镜和1萤磁线并生产1.5光感数据",
 		"thread_use": "assemble_thread",
 		"tags": "光感数据",
 		"require": "g.techo_eng_yjyy_1>=1",

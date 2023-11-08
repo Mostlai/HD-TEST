@@ -1,0 +1,35 @@
+[
+	{
+		"id": "env_none",
+		"name": "无",
+		"desc": "无特殊环境"
+	},
+	{
+		"id": "env_thunder",
+		"name": "雷天",
+		"desc": "天空布满乌云\n\n真水伤害+10\n真火伤害-10",
+		"dot": {
+			"id": "spell_env_thunder_dot",
+			"name": "雷天",
+			"duration": 3,
+			"mod": {
+				"self.bonuses.fire": -10,
+				"self.bonuses.water": 10
+			}
+		}
+	},
+	{
+		"id": "env_landshake",
+		"name": "地震",
+		"desc": "厚土伤害+10\n防御-10",
+		"dot": {
+			"id": "spell_env_landshake_dot",
+			"name": "地震",
+			"duration": 3,
+			"mod": {
+				"self.bonuses.land": 10,
+				"self.defense": -10
+			}
+		}
+	}
+]

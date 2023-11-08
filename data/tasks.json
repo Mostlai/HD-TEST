@@ -16,6 +16,21 @@
 		"flavor": "按TAB打开指引页,警告没别的意思,放心点"
 	},
 	{
+		"id": "helper_2",
+		"name": "按TAB打开指引页",
+		"desc": "按TAB打开指引页",
+		"verb": "",
+		"warn": true,
+		"locked": false,
+		"cost": {
+			"alculation": 10000
+		},
+		"result": {
+			"money": 1
+		},
+		"flavor": "按TAB打开指引页,警告没别的意思,放心点"
+	},
+	{
 		"id": "clean",
 		"name": "扫地",
 		"desc": "给大户人家做仆役...",
