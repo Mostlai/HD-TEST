@@ -282,7 +282,7 @@
 				"level": 25,
 				"dist":500,
 				"length": 100,
-				"require": "g.off_ex_general_1>=1",
+				"require": "g.off_ex_prince_1>=1",
 				"desc": "旧时谋密之处，崩毁于地坼，记载着远古的天外之物坠落之事。",
 				"run": {
 					"tili":1,
