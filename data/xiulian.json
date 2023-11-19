@@ -1832,9 +1832,9 @@
 	},
 	{
 		"id": "zhuji_wuhuan",
-		"name": "五环进阶(方圆)",
+		"name": "五环进阶(路径)",
 		"desc": "对五种截然不同属性的元素进行吸收",
-		"tags": "方圆",
+		"tags": "路径",
 		"require": "g.evilamt<=0 && g.yqlm>=1 && g.cbjs>=1 && g.yxls>=1 && g.wgys>=1 && g.zdht>=1",
 		"max": 2,
 		"cost": {
