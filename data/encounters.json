@@ -272,7 +272,7 @@
 		},
 		"result": {
 			"money": 3,
-			"gold_fragment": "19%",
+			"gold_fragment_x": "19%",
 			"gold_bullion": "6%"
 		}
 	},
@@ -287,7 +287,7 @@
 		},
 		"result": {
 			"money": 10,
-			"gold_fragment": "30%",
+			"gold_fragment_x": "30%",
 			"gold_bullion": "10%"
 		}
 	},

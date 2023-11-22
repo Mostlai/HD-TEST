@@ -3486,7 +3486,7 @@
 			}
 		],
 		"loot": {
-			"gold_fragment": "10%",
+			"gold_fragment_x": "10%",
 			"night_imagine": "6%",
 			"night_book": "5%"
 		}
@@ -3518,7 +3518,7 @@
 			}
 		],
 		"loot": {
-			"gold_fragment": "6%",
+			"gold_fragment_x": "6%",
 			"night_imagine": "8%",
 			"night_book": "5%"
 		}
@@ -3551,7 +3551,7 @@
 		],
 		"loot": {
 			"night_memory": "70%",
-			"gold_fragment": "70%",
+			"gold_fragment_x": "70%",
 			"night_imagine": "70%",
 			"night_book": "70%"
 		}

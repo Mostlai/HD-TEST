@@ -23,7 +23,7 @@
 			"hp.rate": -2,
 			"heli.rate": -2,
 			"chaos.rate": 2,
-			"time.rate": 1
+			"time.rate": 0.7
 		}
 	},
 	{
