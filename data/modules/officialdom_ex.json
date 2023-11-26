@@ -859,7 +859,7 @@
 				"name": "破碎形体",
 				"tags": "购买护甲",
 				"desc": "言之诸事，皆为必然。",
-				"require": "g.off_ex_general_1>1",
+				"require": "g.off_ex_general_1>=1",
 				"cost": {
 					"off_ex_c_2": 25,
 					"money": 1000,
@@ -880,7 +880,7 @@
 				"name": "黑夜珠宝",
 				"tags": "购买护甲",
 				"desc": "",
-				"require": "g.off_ex_prince_1>1",
+				"require": "g.off_ex_prince_1>=1",
 				"cost": {
 					"off_ex_cp_2": 25,
 					"money": 1000,
@@ -901,7 +901,7 @@
 				"name": "避劫之羽",
 				"tags": "购买护甲",
 				"desc": "",
-				"require": "g.off_ex_general_2>1",
+				"require": "g.off_ex_general_2>=1",
 				"cost": {
 					"off_ex_c_1": 5,
 					"off_ex_c_2": 5,
@@ -924,7 +924,7 @@
 				"name": "陨岩之清",
 				"tags": "购买护甲",
 				"desc": "",
-				"require": "g.off_ex_prince_2>1",
+				"require": "g.off_ex_prince_2>=1",
 				"cost": {
 					"off_ex_c_1": 5,
 					"off_ex_cp_2": 5,
@@ -947,7 +947,7 @@
 				"name": "纠结冷漠之锋",
 				"tags": "购买武器",
 				"desc": "",
-				"require": "g.off_ex_general_3>1",
+				"require": "g.off_ex_general_3>=1",
 				"cost": {
 					"off_ex_c_1": 5,
 					"off_ex_c_2": 5,
@@ -971,7 +971,7 @@
 				"name": "星尘寄生",
 				"tags": "购买武器",
 				"desc": "",
-				"require": "g.off_ex_prince_3>1",
+				"require": "g.off_ex_prince_3>=1",
 				"cost": {
 					"off_ex_c_1": 5,
 					"off_ex_c_2p": 5,
