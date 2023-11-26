@@ -974,9 +974,9 @@
 				"require": "g.off_ex_prince_3>=1",
 				"cost": {
 					"off_ex_c_1": 5,
-					"off_ex_c_2p": 5,
-					"off_ex_c_3p": 5,
-					"off_ex_c_4p": 15,
+					"off_ex_cp_2": 5,
+					"off_ex_cp_3": 5,
+					"off_ex_cp_4": 15,
 					"money": 1000,
 					"off_influence": 4000,
 					"qingjia": 30,
