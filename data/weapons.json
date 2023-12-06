@@ -162,7 +162,6 @@
 		"slot": "hands",
 		"material": "rumo",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "黯淡无月",
@@ -196,7 +195,6 @@
 		"slot": "hands",
 		"material": "yangxi",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "阳火",
@@ -230,7 +228,6 @@
 		"slot": "hands",
 		"material": "chubai",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "纯白打击",
@@ -264,7 +261,6 @@
 		"slot": "hands",
 		"material": "shouhun",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "射击",
@@ -299,7 +295,6 @@
 		"slot": "hands",
 		"material": "shouhun",
 		"enchants": 5,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "射击",
@@ -327,7 +322,6 @@
 		"slot": "hands",
 		"material": "shouhun",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "火射",
@@ -352,7 +346,6 @@
 		"slot": "hands",
 		"material": "chubai",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "电闪",
@@ -389,7 +382,6 @@
 		"slot": "hands",
 		"material": "yangxi",
 		"enchants": 2,
-		"unique": true,
 		"attack": {
 			"isweapon": true,
 			"name": "红莲",

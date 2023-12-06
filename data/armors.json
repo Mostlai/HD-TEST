@@ -178,7 +178,7 @@
 		"slot": "trinket",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
+		
 		"level": 20,
 		"alter": {
 			"mod": {
@@ -200,7 +200,6 @@
 		"slot": "trinket",
 		"enchants": 6,
 		"cost": 10,
-		"unique": true,
 		"level": 25,
 		"alter": {
 			"mod": {
@@ -222,7 +221,6 @@
 		"slot": "trinket",
 		"enchants": 6,
 		"cost": 10,
-		"unique": true,
 		"level": 26,
 		"alter": {
 			"mod": {
@@ -244,7 +242,6 @@
 		"slot": "head",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 20,
 		"alter": {
 			"mod": {
@@ -272,7 +269,6 @@
 		"slot": "head",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -296,7 +292,6 @@
 		"slot": "head",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -319,7 +314,6 @@
 		"slot": "head",
 		"enchants": 6,
 		"cost": 10,
-		"unique": true,
 		"level": 25,
 		"alter": {
 			"mod": {
@@ -348,7 +342,6 @@
 		"slot": "head",
 		"enchants": 0,
 		"cost": 10,
-		"unique": true,
 		"level": 25,
 		"alter": {
 			"mod": {
@@ -375,7 +368,6 @@
 		"slot": "head",
 		"enchants": 0,
 		"cost": 10,
-		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -402,7 +394,6 @@
 		"slot": "back",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -425,7 +416,6 @@
 		"slot": "waist",
 		"enchants": 2,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -448,7 +438,6 @@
 		"slot": "waist",
 		"enchants": 10,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -475,7 +464,6 @@
 		"slot": "chest",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 12,
 		"alter": {
 			"mod": {
@@ -503,7 +491,6 @@
 		"slot": "chest",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -527,7 +514,6 @@
 		"slot": "chest",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -551,7 +537,6 @@
 		"slot": "chest",
 		"enchants": 6,
 		"cost": 10,
-		"unique": true,
 		"level": 25,
 		"alter": {
 			"mod": {
@@ -580,7 +565,6 @@
 		"slot": "chest",
 		"enchants": 0,
 		"cost": 10,
-		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -609,7 +593,6 @@
 		"slot": "shins",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 15,
 		"alter": {
 			"mod": {
@@ -637,7 +620,6 @@
 		"slot": "shins",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 20,
 		"alter": {
 			"mod": {
@@ -661,7 +643,6 @@
 		"slot": "shins",
 		"enchants": 0,
 		"cost": 10,
-		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -690,7 +671,6 @@
 		"slot": "shins",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -714,7 +694,6 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -738,7 +717,6 @@
 		"slot": "feet",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 15,
 		"alter": {
 			"mod": {
@@ -766,7 +744,6 @@
 		"slot": "feet",
 		"enchants": 0,
 		"cost": 10,
-		"unique": true,
 		"level": 30,
 		"alter": {
 			"mod": {
@@ -795,7 +772,6 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {
@@ -820,7 +796,6 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 15,
 		"alter": {
 			"mod": {
@@ -845,7 +820,6 @@
 		"slot": "hands",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 10,
 		"alter": {
 			"mod": {
@@ -888,7 +862,6 @@
 		"slot": "back",
 		"enchants": 6,
 		"cost": 10,
-		"unique": true,
 		"level": 25,
 		"alter": {
 			"mod": {
@@ -912,7 +885,6 @@
 		"slot": "back",
 		"enchants": 3,
 		"cost": 10,
-		"unique": true,
 		"level": 10,
 		"alter": {
 			"mod": {
@@ -971,7 +943,6 @@
 		"slot": "fingers",
 		"enchants": 6,
 		"cost": 10,
-		"unique": true,
 		"level": 22,
 		"alter": {
 			"mod": {

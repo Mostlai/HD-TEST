@@ -1002,6 +1002,7 @@
 				"slot": "chest",
 				"name_keep": true,
 				"regular_perk": true,
+				"canbuy":true,
 				"alter": {
 					"mod": {
 						"self.hardiness": 0.3
@@ -1019,10 +1020,12 @@
 				"name": "黑夜珠宝",
 				"desc": "",
 				"color": "#FFD700",
+				"type": "armor",
 				"armor": 4,
 				"slot": "trinket",
 				"name_keep": true,
 				"regular_perk": true,
+				"canbuy":true,
 				"perk2": "off_ex_perk_1p",
 				"level": 31,
 				"enchants":2,
@@ -1040,6 +1043,7 @@
 				"slot": "talisman",
 				"name_keep": true,
 				"regular_perk": true,
+				"canbuy":true,
 				"perk2": "off_ex_perk_2",
 				"level": 35,
 				"enchants":0,
@@ -1057,6 +1061,7 @@
 				"slot": "talisman",
 				"name_keep": true,
 				"regular_perk": true,
+				"canbuy":true,
 				"perk2": "off_ex_perk_2p",
 				"level": 35,
 				"enchants":1,
@@ -1073,6 +1078,7 @@
 				"armor": -20,
 				"name_keep": true,
 				"regular_perk": true,
+				"canbuy":true,
 				"attack": {
 					"id": "oex3_attack",
 					"name": "苦恨之根",
@@ -1096,6 +1102,7 @@
 				"type": "weapon",
 				"name_keep": true,
 				"regular_perk": true,
+				"canbuy":true,
 				"attack": {
 					"id": "oex4_attack",
 					"name": "外引光",
