@@ -10,7 +10,7 @@
 			"zhongjia"
 		],
 		"cost": {
-			"money": 100,
+			"money": 35,
 			"cu_iron": 5,
 			"cu_copper": 3,
 			"iron_copper":5,
@@ -37,7 +37,7 @@
 		},
 		"cost": {
 			"r_adv_bzzj": 2,
-			"money": 100,
+			"money": 35,
 			"cu_iron": 5,
 			"cu_copper": 3,
 			"iron_copper":5,
@@ -63,7 +63,7 @@
 			"f_power":5
 		},
 		"cost": {
-			"money": 100,
+			"money": 35,
 			"iron_copper":3,
 			"sj_met": 1,
 			"zero_crystal": 1,
@@ -89,7 +89,7 @@
 			"f_power":5
 		},
 		"cost": {
-			"money": 100,
+			"money": 70,
 			"iron_copper":20,
 			"dirty_core": 2,
 			"tian":10,
@@ -118,7 +118,7 @@
 			"f_power":5
 		},
 		"cost": {
-			"money": 100,
+			"money": 70,
 			"iron_copper":20,
 			"cold_core": 4,
 			"tian":2,
