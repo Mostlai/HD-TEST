@@ -440,7 +440,7 @@
 		"desc": "催动合理和混沌加工出神经材料",
 		"verb": "合成中",
 		"require": "g.xiulian_struct_2>=1 && g.iron_copper>=1 && g.chaos_sci>=5",
-		"length": 10,
+		"length": 5,
 		"fill": [
 			"sj_met"
 		],
