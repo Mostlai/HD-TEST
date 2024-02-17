@@ -445,17 +445,17 @@
 			"sj_met"
 		],
 		"cost": {
-			"iron_copper": 6,
-			"shenshi": 2
+			"iron_copper": 3,
+			"shenshi": 1
 		},
 		"run": {
-			"time": -0.5,
-			"tili": 0.2
+			"time": -0.25,
+			"tili": 0.1
 		},
 		"result": {
-			"metal_app.exp": 2,
-			"shenshi_1.exp": 1,
-			"sj_met": 2
+			"metal_app.exp": 1,
+			"shenshi_1.exp": 0.5,
+			"sj_met": 1
 		}
 	},
 	{
