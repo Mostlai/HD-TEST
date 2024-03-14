@@ -1696,7 +1696,7 @@
 		"level": 10,
 		"desc": "而人自幽诸秘史观诸生灵，知彼之伤衰残寡孤害，汝当庆贺见证三害三败。",
 		"cd": 25,
-		"locked":true,
+		"require": "g.crzj_zhujierchong>=1",
 		"buy": {
 			"ganwu": 2000,
 			"gubenxianling": 5,
