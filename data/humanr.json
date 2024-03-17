@@ -106,7 +106,7 @@
 		"mod":{
 			"command_code":1,
 			"space.max": -10,
-			"ganwu.rate": -1,
+			"ganwu.rate": -0.7,
 			"human_power.max": -100,
 			"alculation.max": -50,
 			"alculation.rate": -1,
@@ -129,7 +129,7 @@
 		"mod":{
 			"command_code":1,
 			"space.max": -10,
-			"ganwu.rate": -2,
+			"ganwu.rate": -1.5,
 			"human_power.max": -100,
 			"alculation.max": -50,
 			"alculation.rate": -1,
@@ -152,7 +152,7 @@
 		"mod":{
 			"command_code":1,
 			"space.max": -10,
-			"ganwu.rate": -2,
+			"ganwu.rate": -1.5,
 			"human_power.max": -100,
 			"alculation.max": -50,
 			"alculation.rate": -1,

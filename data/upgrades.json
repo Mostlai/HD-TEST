@@ -879,6 +879,21 @@
 		}
 	},
 	{
+		"id": "upd_yongdifal_1",
+		"name": "用地调度",
+		"desc": "！请记得花费掉【小型广播站】之后重新购买，以防探险距离不足！\n！请记得花费掉【小型广播站】之后重新购买，以防探险距离不足！",
+		"max": 1,
+		"warn": true,
+		"require": "g.upd_yongdifal>=1",
+		"cost": {
+			"small_gbz": 1,
+			"ganwu": 250
+		},
+		"mod": {
+			"upd_zhanshiyongdi.max":2
+		}
+	},
+	{
 		"id": "bio_astro_upd",
 		"name": "超压升级",
 		"desc": "进一步研究生命的极端生存",
@@ -3568,6 +3583,29 @@
 		},
 		"mod":{
 			"conquer_xxyaosai.max": 1
+		}
+	},
+	{
+		"id": "yjdl_ljsc",
+		"name": "虚至亚极",
+		"desc": "提供亚极电缆的回复速度",
+		"require": "g.shengchanlun>=1",
+		"max": 10,
+		"cost": {
+			"ljdy": 10,
+			"jls": 20,
+			"human_power": 1300,
+			"alculation":700,
+			"money": 2100,
+			"ganwu": 1000,
+			"books": 60,
+			"snp_data": 70,
+			"star_map": 100,
+			"cbclb": 25,
+			"yjdl": 80
+		},
+		"mod":{
+			"yjdl.rate": 0.1
 		}
 	},
 	{

@@ -494,6 +494,25 @@
 		"max": 1
 	},
 	{
+		"id": "techo_eng_zyzz_2",
+		"name": "破坏性真直应用",
+		"tags": "工程域",
+		"desc": "解锁真直锭更广泛的运用，倾向于破坏性技术",
+		"require": "g.xl_siwei_jxswei>=1",
+		"research_need_point": 5800,
+		"run":{
+			"zhenzhi_spindle": 1,
+			"xuanmuye": 1,
+			"yinjing": 1,
+			"elect": 5,
+			"money": 300,
+			"heli": 30,
+			"chaos": 20,
+			"ganwu": 100
+		},
+		"max": 1
+	},
+	{
 		"id": "techo_eng_yjyy_1",
 		"name": "专业性萤晶应用",
 		"tags": "工程域",

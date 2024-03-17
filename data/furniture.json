@@ -165,7 +165,6 @@
 		"name": "软床",
 		"desc": "柔软的床铺",
 		"tags": "bed",
-		"slot": "bed",
 		"max": 1,
 		"require": "g.stamina>=11",
 		"cost": {
@@ -651,6 +650,30 @@
 			"skill.rate": 20,
 			"ele_confusion.rate": -0.3,
 			"elect.rate": -6,
+			"space": 30
+		}
+	},
+	{
+		"id": "conquer_extend_modules",
+		"name": "征服扩展模块",
+		"desc": "",
+		"tags": "",
+		"max": 5,
+		"require": "g.xingtusuanzi>=1",
+		"repeat": true,
+		"cost": {
+			"jlcjmk": 3,
+			"helicjdj": 3,
+			"kewangtian": 3,
+			"cu_iron": 100,
+			"cu_copper": 100,
+			"tian": 100,
+			"human_power": 2000,
+			"money": 3000,
+			"ganwu": 600
+		},
+		"mod": {
+			"一级武器工厂.max": 1,
 			"space": 30
 		}
 	},
@@ -2802,7 +2825,6 @@
 		"name": "纯白床榻",
 		"desc": "虽然坚硬,但是舒适",
 		"tags": "bed",
-		"slot": "bed",
 		"max":1,
 		"require": "g.xiulian_jihe_fuzajianzhu>=1",
 		"cost": {
@@ -5118,7 +5140,7 @@
 		"cost": {
 			"hongshan": 5,
 			"yanhuo": 8,
-			"lingrang": 10,
+			"lingrang": 5,
 			"cishuadianquan": 2,
 			"sj_met": 60,
 			"yjswyb": 10,
@@ -5723,6 +5745,27 @@
 		}
 	},
 	{
+		"id": "conquer_extend_modules_mod",
+		"name": "征服扩展模块改",
+		"desc": "",
+		"tags": "",
+		"max": 5,
+		"require": "g.ljdy>=1",
+		"repeat": true,
+		"cost": {
+			"jlcjmk": 3,
+			"helicjdj": 3,
+			"jingdian": 20,
+			"ljdy": 5,
+			"money": 3000,
+			"ganwu": 600
+		},
+		"mod": {
+			"一级武器工厂.max": 1,
+			"space": 15
+		}
+	},
+	{
 		"id": "feirefsq",
 		"name": "芥子废热发生器",
 		"desc": "产生顽固废热水",
@@ -6119,6 +6162,52 @@
 		}
 	},
 	{
+		"id": "limestone_floor_extend",
+		"name": "粗糙步行路",
+		"desc": "",
+		"tags": "",
+		"max":20,
+		"require": "g.limestone>=1",
+		"repeat": true,
+		"cost": {
+			"limestone": 160,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"quartz": 10,
+			"human_power": 1000,
+			"money": 6000
+		},
+		"mod": {
+			"industry_space.max": 1,
+			"space": 10
+		}
+	},
+	{
+		"id": "limestone_theard_extend",
+		"name": "粗糙通讯室",
+		"desc": "",
+		"tags": "",
+		"max":13,
+		"require": "g.limestone>=1",
+		"repeat": true,
+		"cost": {
+			"limestone": 160,
+			"zero_crystal":25,
+			"heli":40,
+			"tian": 30,
+			"yjdl": 50,
+			"quartz": 10,
+			"human_power": 1000,
+			"money": 6000
+		},
+		"mod": {
+			"industry_thread.max": 2,
+			"space": 28
+		}
+	},
+	{
 		"id": "glass_floor_extend",
 		"name": "琉璃步行路",
 		"desc": "",
@@ -6138,7 +6227,7 @@
 			"money": 4000
 		},
 		"mod": {
-			"industry_space.max": 3,
+			"industry_space.max": 4,
 			"space": 7
 		}
 	},
@@ -7928,6 +8017,29 @@
 			"snp_data.rate": 0.5,
 			"adv_snp_data.max": 8,
 			"space": 21
+		}
+	},
+	{
+		"id": "conquer_extend_modules_advance",
+		"name": "先进征服扩展模块",
+		"tags": "",
+		"desc": "此建筑需要接通150V级电源",
+		"need": "OHFV",
+		"max":15,
+		"require": "g.techo_eng_zyzz_2>=1",
+		"cost": {
+			"ljdy": 10,
+			"zhenzhi_spindle": 10,
+			"spare_parts": 60,
+			"glass": 100,
+			"temp_1_unit": 50,
+			"xuanmuye": 40,
+			"adv_snp_data": 5,
+			"money": 300
+		},
+		"mod": {
+			"一级武器工厂.max":1,
+			"space": 15
 		}
 	}
 ]

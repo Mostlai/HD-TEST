@@ -3403,13 +3403,13 @@
 				"name": "攻击",
 				"bonus_class": 1,
 				"kind": "gold",
-				"dmg": "14~15"
+				"dmg": "7~15"
 			},
 			{
 				"name": "攻击",
 				"bonus_class": 1,
 				"kind": "fire",
-				"dmg": "14~17"
+				"dmg": "7~17"
 			}
 		]
 	},
@@ -3429,13 +3429,13 @@
 				"name": "攻击",
 				"bonus_class": 1,
 				"kind": "land",
-				"dmg": "14~16"
+				"dmg": "7~16"
 			},
 			{
 				"name": "攻击",
 				"bonus_class": 1,
 				"kind": "water",
-				"dmg": "14~15"
+				"dmg": "7~15"
 			}
 		]
 	},
@@ -3455,7 +3455,7 @@
 				"name": "雾气",
 				"bonus_class": 1,
 				"kind": "heli",
-				"dmg": "24~34"
+				"dmg": "14~34"
 			}
 		]
 	},

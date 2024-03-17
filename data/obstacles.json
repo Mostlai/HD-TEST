@@ -108,9 +108,9 @@
 		"lhxy":{
 			"time": -790,
 			"money": 4000,
-			"ljdy": 20,
+			"ljdy": 15,
 			"gwl": 120,
-			"swzhi": 20,
+			"swzhi": 15,
 			"element_luor": 10,
 			"element_wuhuan": 20,
 			"qingjia": 50,
@@ -120,13 +120,38 @@
 			"bingdong": 50
 		},
 		"ele":{
-			"adv_snp_data": 4,
+			"adv_snp_data": 8,
 			"snp_data": 55
 		},
 		"mod":{
 			"money.rate": 3,
 			"ganwu.rate": 10,
 			"space.max": -100
+		}
+	},
+	{
+		"id": "xuanmu_unit_target",
+		"name": "对减目标",
+		"desc": "用于玄牝对减机关的目标",
+		"tags": "",
+		"clean_need": "mount_res",
+		"require": "g.techo_eng_zyzz_2>=1",
+		"max": 1000000000000,
+		"cost":{
+			"heli": 100000000000
+		},
+		"lhxy":{
+			"time": -365,
+			"money": 4000,
+			"ljdy": 3,
+			"yjdl": 10,
+			"xuanmu_exploded_unit": 1
+		},
+		"ele":{
+			"adv_snp_data": 3
+		},
+		"mod":{
+			"space.max": -150
 		}
 	}
 ]

@@ -1732,7 +1732,7 @@
 	{
 		"id": "luojihecheng",
 		"name": "逻辑合成",
-		"desc": "消耗1萤晶和0.6工制线圈和0.3玻璃并生产0.5逻辑单元",
+		"desc": "消耗1荧晶和0.6工制线圈和0.3玻璃并生产0.5逻辑单元",
 		"thread_use": "assemble_thread",
 		"tags": "荧晶",
 		"require": "g.zhenzyyjjx>=1",
@@ -2022,6 +2022,65 @@
 			"industry_space": 0.2,
 			"industry_elect": 0.1,
 			"industry_thread": 0.1
+		}
+	},
+	{
+		"id": "f_underworld_pin_1_zz_1",
+		"name": "幽冥节点合成",
+		"desc": "消耗5逻辑单元和20亚极电缆和5真直锭和3荧晶和20水和4物件包并生产1幽冥节点",
+		"thread_use": "assemble_thread",
+		"tags": "幽冥节点",
+		"require": "g.techo_eng_zyzz_2>=1",
+		"cost":{
+			"zhenzhi_spindle": 10
+		},
+		"inp":[
+			{"id":"ljdy","base_val":5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yjdl","base_val":20,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"zhenzhi_spindle","base_val":5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yinjing","base_val":3,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"ind_water","base_val":20,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"wujianbao","base_val":4,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"underworld_pin","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"assemble_thread": 1,
+			"human_power.max": -100,
+			"industry_space": 0.4,
+			"industry_elect": 0.4,
+			"industry_thread": 0.2
+		}
+	},
+	{
+		"id": "f_xuanmu_exploded_unit_zz_1",
+		"name": "玄牝对减机关合成",
+		"desc": "消耗3逻辑单元和10亚极电缆和1真直锭和1荧晶和5玄牝液和10煤炭和3物件包并生产1玄牝对减机关",
+		"thread_use": "juhe_thread",
+		"tags": "玄牝对减机关",
+		"require": "g.techo_eng_zyzz_2>=1",
+		"cost":{
+			"zhenzhi_spindle": 10
+		},
+		"inp":[
+			{"id":"ljdy","base_val":3,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yjdl","base_val":10,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"zhenzhi_spindle","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"yinjing","base_val":1,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"xuanmuye","base_val":5,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"coal","base_val":10,"now_val":0,"dock_id":"","dock_val":0},
+			{"id":"wujianbao","base_val":3,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"outp":[
+			{"id":"xuanmu_exploded_unit","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+		],
+		"mod":{
+			"juhe_thread": 1,
+			"human_power.max": -100,
+			"industry_space": 0.4,
+			"industry_elect": 0.4,
+			"industry_thread": 0.2
 		}
 	}
 ]

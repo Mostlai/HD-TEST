@@ -260,6 +260,47 @@
 		}
 	},
 	{
+		"id": "underworld_pin_research",
+		"name": "幽冥节点勘测",
+		"desc": "启动一枚幽冥节点深入黄泉获取【非实波段数据】及有关资料。",
+		"verb": "",
+		"require": "g.underworld_pin_1>=1",
+		"cost": {
+			"human_power": 200,
+			"money": 4000,
+			"laser_ene": 5,
+			"underworld_pin_1": 1
+		},
+		"result": {
+			"time": 20,
+			"player.exp": 300,
+			"lxue": 3,
+			"shuaibai_core": 3,
+			"fsbdsj": 5
+		}
+	},
+	{
+		"id": "underworld_pin_hook",
+		"name": "幽冥节点诱饵",
+		"desc": "启动一枚幽冥节点深入黄泉获取魂体核心",
+		"verb": "",
+		"require": "g.underworld_pin_1>=1 && g.canglanchaoben>=1 && g.bafangwfs>=1 && g.flont_hqhhjz>=1",
+		"cost": {
+			"human_power": 1200,
+			"money": 4000,
+			"ljdy": 5,
+			"yuansurechi": 1,
+			"zhenzhi_spindle": 1,
+			"dirty_lingti": 3,
+			"underworld_pin_1": 1
+		},
+		"result": {
+			"time": 20,
+			"hunti_core": 3,
+			"fsbdsj": 0.1
+		}
+	},
+	{
 		"id": "buhuolt",
 		"name": "灵体捕获",
 		"desc": "捕获游荡的灵体",
@@ -606,7 +647,7 @@
 		"verb": "写作中",
 		"max": 1,
 		"require": "g.neizailingxue>=1",
-		"length": 600,
+		"length": 240,
 		"cost": {
 			"lg":30,
 			"back_dream": 20,
@@ -629,7 +670,7 @@
 		"desc": "启动一枚黄泉探针深入黄泉对黄泉真魂进行探查任务。此动作需要至少3点【黄泉研究基础】",
 		"verb": "探查中",
 		"require": "g.xl_lj_zhenhun_13>=1",
-		"length": 600,
+		"length": 240,
 		"max": 10,
 		"cost": {
 			"human_power": 3000,
@@ -658,7 +699,7 @@
 		"verb": "研究中",
 		"max": 1,
 		"require": "g.daishukexue>=1",
-		"length": 600,
+		"length": 240,
 		"cost": {
 			"lg":30,
 			"yjdl": 80,
@@ -686,7 +727,7 @@
 		"max": 2,
 		"require": "g.xiulian_eye_weiguanlz>=1",
 		"need":"g.nepheloscope>=1",
-		"length": 600,
+		"length": 240,
 		"cost": {
 			"lg":30,
 			"ljdy": 10,
@@ -709,7 +750,7 @@
 		"verb": "编写中",
 		"max": 1,
 		"require": "g.xiulian_zhenyuandaolun>=1",
-		"length": 600,
+		"length": 250,
 		"cost": {
 			"lg":30,
 			"paper": 300,
@@ -916,7 +957,7 @@
 		"max": 1,
 		"require": "g.yanfatai>=1 && g.yuanzirexue>=5",
 		"need":"g.yanfatai>=1",
-		"length": 600,
+		"length": 270,
 		"cost": {
 			"lg":30,
 			"jingdian": 10,
@@ -1115,7 +1156,7 @@
 		"verb": "研究中",
 		"max": 5,
 		"require": "g.cxxwjp>=1 && g.jieziobelisk>=1",
-		"length": 600,
+		"length": 300,
 		"cost": {
 			"cxxwjp": 1,
 			"yjdl": 80,
@@ -1489,7 +1530,7 @@
 		"verb": "培训中",
 		"max": 1,
 		"require": "g.xibaobiji>=1",
-		"length": 600,
+		"length": 100,
 		"cost": {
 			"yjswyb": 20,
 			"pyy":20,
@@ -1856,6 +1897,92 @@
 		}
 	},
 	{
+		"id": "ske_twoside_rest1",
+		"tags": "t_rest",
+		"name": "彼界渗透",
+		"slot": "rest",
+		"desc": "",
+		"verb": "渗透中",
+		"require": "g.ske_c_towside_dream_2>=1",
+		"owned": true,
+		"perpetual": true,
+		"fill": [
+			"tili",
+			"prismatic",
+			"stamina",
+			"hp",
+			"stress"
+		],
+		"effect": {
+			"prismatic": {
+				"skipLocked": true,
+				"value": 3
+			},
+			"time": 0.22,
+			"tili": 12,
+			"stamina": 3,
+			"hp": 7,
+			"stress": -2
+		}
+	},
+	{
+		"id": "ske_twoside_rest2",
+		"tags": "t_rest",
+		"name": "彼界超知",
+		"slot": "rest",
+		"desc": "",
+		"verb": "超知中",
+		"require": "g.ske_c_towside_dream_2>=2",
+		"owned": true,
+		"perpetual": true,
+		"fill": [
+			"tili",
+			"prismatic",
+			"stamina",
+			"hp",
+			"stress"
+		],
+		"effect": {
+			"prismatic": {
+				"skipLocked": true,
+				"value": 1
+			},
+			"time": 0.1,
+			"tili": 8,
+			"stamina": 5,
+			"hp": 1,
+			"stress": -5
+		}
+	},
+	{
+		"id": "ske_twoside_rest3",
+		"tags": "t_rest",
+		"name": "彼界超形",
+		"slot": "rest",
+		"desc": "",
+		"verb": "休养中",
+		"require": "g.ske_c_towside_dream_2>=3",
+		"owned": true,
+		"perpetual": true,
+		"fill": [
+			"tili",
+			"prismatic",
+			"stamina",
+			"hp",
+			"stress"
+		],
+		"effect": {
+			"prismatic": {
+				"skipLocked": true,
+				"value": 1
+			},
+			"time": 0.5,
+			"tili": 12,
+			"stamina": 12,
+			"hp": 25
+		}
+	},
+	{
 		"id": "focus",
 		"name": "专注",
 		"desc": "使用合理来加快学习的过程.",
@@ -2085,7 +2212,7 @@
 		"verb": "寻求中",
 		"max": 1,
 		"require": "g.xl_lj_zhenhun_11>=1",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"elect":20,
 			"yisuanzi":5,
@@ -2110,7 +2237,7 @@
 		"verb": "寻求中",
 		"max": 1,
 		"require": "g.xl_lj_zhenhun_11>=1",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"paper":300,
 			"books":30,
@@ -2136,7 +2263,7 @@
 		"verb": "寻求中",
 		"max": 1,
 		"require": "g.xl_lj_zhenhun_11>=1",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"shenglingshi":10,
 			"zhenhun_pice_1": 40,
@@ -2523,7 +2650,7 @@
 		"max": 1,
 		"verb": "寻求中",
 		"require": "g.xl_lj_zhenhun_11>=1",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"shenglingshi":10,
 			"zhenhun_pice_1": 40,
@@ -2546,7 +2673,7 @@
 		"desc": "探寻火焰之魂",
 		"verb": "寻求中",
 		"require": "g.xl_lj_zhenhun_11>=1",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"shenglingshi":10,
 			"zhenhun_pice_1": 40,
@@ -2569,7 +2696,7 @@
 		"desc": "探寻磐石之魂",
 		"verb": "寻求中",
 		"require": "g.xl_lj_zhenhun_11>=1",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"shenglingshi":10,
 			"zhenhun_pice_1": 40,
@@ -2592,7 +2719,7 @@
 		"desc": "探寻界中之魂",
 		"verb": "寻求中",
 		"require": "g.sdlttancha>=5",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"fsbdsj": 20,
 			"shenglingshi":10,
@@ -2616,7 +2743,7 @@
 		"max": 1,
 		"verb": "寻求中",
 		"require": "g.sdlttancha>=10",
-		"length": 600,
+		"length": 400,
 		"cost": {
 			"fsbdsj": 20,
 			"shenglingshi":10,
@@ -3781,7 +3908,7 @@
 	{
 		"id": "getbos_mount1",
 		"name": "山脉纳入",
-		"desc": "获取周围的盆地纳入【研究需要绿色实验室】",
+		"desc": "获取周围的山脉纳入【研究需要绿色实验室】",
 		"tags": "生产",
 		"verb": "获取中",
 		"warn": true,
@@ -4657,7 +4784,7 @@
 		"id": "tianwenjiluyh",
 		"name": "天文记录优化",
 		"tags": "co_optimiza",
-		"desc": "提高经验记录指令的效率",
+		"desc": "提高天文记录指令的效率",
 		"verb": "研究中",
 		"require": "g.sweisys>=1",
 		"need": "g.sweisys>=1",
@@ -5551,7 +5678,7 @@
 			"time": -10
 		},
 		"result": {
-			"pyy": 1
+			"pyy": 3
 		}
 	},
 	{
@@ -6216,6 +6343,27 @@
 		},
 		"result": {
 			"ganwu.max": 20
+		}
+	},
+	{
+		"id": "getbos_xuanmu_target",
+		"name": "对减目标定位",
+		"desc": "获取对减目标【研究需要绿色实验室】",
+		"tags": "生产",
+		"verb": "获取中",
+		"require": "g.techo_eng_zyzz_2>=1",
+		"need": "g.green_lab>=1",
+		"length": 10,
+		"cost": {
+			"human_power": 1000,
+			"snp_data": 140,
+			"fsbdsj": 10
+		},
+		"run": {
+			"time": -2
+		},
+		"result":{
+			"xuanmu_unit_target": 2
 		}
 	}
 ]
