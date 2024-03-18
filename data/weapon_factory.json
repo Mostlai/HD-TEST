@@ -88,7 +88,6 @@
 			"money": 500
 		},
 		"mod": {
-			"space": -10,
 			"r_adv_w_sj2.max": 2,
 			"r_adv_w_sj2.rate": 0.003,
 			"space": 15
@@ -119,6 +118,58 @@
 		"mod": {
 			"r_adv_w_sj3.max": 2,
 			"r_adv_w_sj3.rate": 0.003,
+			"space": 15
+		}
+	},
+	{
+		"id": "factory_4",
+		"name": "改进污浊工厂",
+		"desc": "自动制作污浊武器",
+		"tags": "二级武器工厂",
+		"max": 10,
+		"require":"g.techo_eng_zyzz_2>=1",
+		"repeat": true,
+		"cost": {
+			"ljdy": 10,
+			"yjdl": 60,
+			"wujianbao": 70,
+			"r_adv_w_sj2": 20,
+			"zhenzhi_spindle": 30,
+			"spare_parts": 50,
+			"glass": 100,
+			"jingdian": 5,
+			"money": 2500
+		},
+		"mod": {
+			"r_adv_w_sj2.max": 2,
+			"r_adv_w_sj2.rate": 0.05,
+			"space": 15
+		}
+	},
+	{
+		"id": "factory_5",
+		"name": "改进冷结工厂",
+		"desc": "自动制作冷结武器",
+		"tags": "二级武器工厂",
+		"max": 10,
+		"require":"g.techo_eng_zyzz_2>=1",
+		"repeat": true,
+		"cost": {
+			"ljdy": 5,
+			"yjdl": 60,
+			"wujianbao": 70,
+			"r_adv_w_sj3": 20,
+			"zhenzhi_spindle": 10,
+			"spare_parts": 100,
+			"glass": 100,
+			"xuanmuye": 5,
+			"tian": 100,
+			"snp_data": 60,
+			"money": 2500
+		},
+		"mod": {
+			"r_adv_w_sj3.max": 2,
+			"r_adv_w_sj3.rate": 0.05,
 			"space": 15
 		}
 	}

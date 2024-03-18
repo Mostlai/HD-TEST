@@ -414,7 +414,7 @@
 		"id": "logversion",
 		"name": "20230010",
 		"logversion": "2023011",
-		"frecipever": "20205r01",
+		"frecipever": "20403r01",
 		"hide": true,
 		"locked": false,
 		"stat": true,
@@ -489,6 +489,14 @@
 	{
 		"id": "offlinefarm_speed",
 		"name": "时间流速",
+		"val": 1,
+		"hide": true,
+		"locked": false,
+		"stat": true
+	},
+	{
+		"id": "playertime",
+		"name": "游玩时间",
 		"val": 1,
 		"hide": true,
 		"locked": false,

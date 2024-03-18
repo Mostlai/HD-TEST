@@ -8041,5 +8041,168 @@
 			"一级武器工厂.max":1,
 			"space": 15
 		}
+	},
+	{
+		"id": "huge_construct_business_1",
+		"name": "贸易主功能区",
+		"tags": "",
+		"desc": "大规模建筑群贸易中心的主功能区",
+		"max":35,
+		"require": "g.techo_eng_zyzz_3>=1",
+		"cost": {
+			"ljdy": 5,
+			"zhenzhi_spindle": 10,
+			"spare_parts": 100,
+			"glass": 100,
+			"xuanmuye": 5,
+			"cu_copper": 100,
+			"snp_data": 20,
+			"jingdian": 5,
+			"money": 1000
+		},
+		"mod": {
+			"money.rate":1,
+			"space": 25
+		}
+	},
+	{
+		"id": "huge_construct_business_2",
+		"name": "贸易供电区",
+		"tags": "",
+		"desc": "大规模建筑群贸易中心的供电区",
+		"max":35,
+		"require": "g.techo_eng_zyzz_3>=1",
+		"cost": {
+			"zhenzhi_spindle": 10,
+			"spare_parts": 100,
+			"glass": 100,
+			"yjswyb": 10,
+			"yjdl": 60,
+			"cu_copper": 100,
+			"snp_data": 30,
+			"money": 1200
+		},
+		"mod": {
+			"money.rate":0.5,
+			"elect.rate":0.1,
+			"space": 30
+		}
+	},
+	{
+		"id": "huge_construct_business",
+		"name": "贸易中心",
+		"tags": "",
+		"desc": "大规模建筑群贸易中心，提供大量钱币收入",
+		"max":1,
+		"require": "g.techo_eng_zyzz_3>=1",
+		"cost": {
+			"huge_construct_business_1": 35,
+			"huge_construct_business_2": 35
+		},
+		"mod": {
+			"money.rate":150,
+			"elect.rate":10,
+			"huge_construct_business_1.max": -35,
+			"huge_construct_business_2.max": -35,
+			"space": 1300
+		}
+	},
+	{
+		"id": "huge_construct_duijian_reactor_1",
+		"name": "幽冥对减冷却管",
+		"tags": "",
+		"desc": "构建幽冥对减原型堆的必要冷却设施",
+		"max":35,
+		"require": "g.techo_eng_zyzz_3>=1 && g.underworld_pin_1>=1 && g.xuanmu_exploded_unit>=1",
+		"cost": {
+			"ljdy": 15,
+			"jls": 180,
+			"coil_1": 100,
+			"cold_core": 40,
+			"dirty_lingti": 5,
+			"zhenzhi_spindle": 10,
+			"spare_parts": 120,
+			"cu_copper": 100,
+			"money": 1000
+		},
+		"mod": {
+			"elect.rate":-0.5,
+			"space": 40
+		}
+	},
+	{
+		"id": "huge_construct_duijian_reactor_2",
+		"name": "幽冥对减聚焦管",
+		"tags": "",
+		"desc": "构建幽冥对减原型堆的必要设施，用于发射玄牝对减机关到指定的位置进行引爆",
+		"max":20,
+		"require": "g.techo_eng_zyzz_3>=1 && g.underworld_pin_1>=1 && g.xuanmu_exploded_unit>=1",
+		"cost": {
+			"ljdy": 5,
+			"underworld_pin_1": 5,
+			"xuanmu_exploded_unit": 10,
+			"coil_1": 100,
+			"cold_core": 20,
+			"zhenzhi_spindle": 15,
+			"spare_parts": 120,
+			"tian": 100,
+			"cu_iron": 60,
+			"wujianbao": 50,
+			"xianban": 40,
+			"money": 1600
+		},
+		"mod": {
+			"elect.rate":-0.5,
+			"space": 25
+		}
+	},
+	{
+		"id": "huge_construct_duijian_reactor_3",
+		"name": "幽冥对减旋轮器",
+		"tags": "",
+		"desc": "构建幽冥对减原型堆的必要设施，用于将爆炸产生的能量换热成电能",
+		"max":25,
+		"require": "g.techo_eng_zyzz_3>=1 && g.underworld_pin_1>=1 && g.xuanmu_exploded_unit>=1",
+		"cost": {
+			"elect": 30,
+			"coil_1": 150,
+			"cold_core": 50,
+			"zhenzhi_spindle": 10,
+			"spare_parts": 120,
+			"wujianbao": 50,
+			"yxls": 6,
+			"ganwu": 1000,
+			"fsbdsj": 5,
+			"laser_ene": 3,
+			"xianban": 40,
+			"money": 1600
+		},
+		"mod": {
+			"elect.rate":-0.5,
+			"space": 30
+		}
+	},
+	{
+		"id": "huge_construct_duijian_reactor",
+		"name": "幽冥对减原型堆",
+		"tags": "",
+		"desc": "一个建成的幽冥对减原型堆，原型堆是对玄牝对减机关可控爆炸的初步尝试，虽然热效率低下，但也可以提供大量的电能供应。",
+		"max":1,
+		"require": "g.techo_eng_zyzz_3>=1 && g.underworld_pin_1>=1 && g.xuanmu_exploded_unit>=1",
+		"cost": {
+			"underworld_pin_1": 20,
+			"xuanmu_exploded_unit": 20,
+			"huge_construct_duijian_reactor_1":35,
+			"huge_construct_duijian_reactor_2":20,
+			"huge_construct_duijian_reactor_3":25
+		},
+		"mod": {
+			"huge_construct_duijian_reactor_1.max":-35,
+			"huge_construct_duijian_reactor_2.max":-20,
+			"huge_construct_duijian_reactor_3.max":-25,
+			"elect.rate":350,
+			"industry_elect": 80,
+			"space": 2900
+		}
 	}
 ]

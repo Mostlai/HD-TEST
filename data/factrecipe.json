@@ -1764,7 +1764,7 @@
 		"name": "I轻拆解",
 		"desc": "消耗1标准轻甲I并生产40轻甲",
 		"thread_use": "sysn_chaijie_1",
-		"tags": "标准轻甲I",
+		"tags": "轻甲单元I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
 		"cost":{
 			"f_qingjia_1": 1
@@ -1790,7 +1790,7 @@
 		"name": "反材I轻",
 		"desc": "消耗2反材料工具并生产0.4标准轻甲I",
 		"thread_use": "assemble_thread",
-		"tags": "标准轻甲I",
+		"tags": "轻甲单元I",
 		"require": "g.techo_eng_conquer_2>=1",
 		"cost":{
 			"r_adv_w_sj1": 1,
@@ -1817,7 +1817,7 @@
 		"name": "I中拆解",
 		"desc": "消耗1标准中甲I并生产40中甲",
 		"thread_use": "sysn_chaijie_1",
-		"tags": "标准中甲I",
+		"tags": "中甲单元I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
 		"cost":{
 			"f_zhongjia_1": 1
@@ -1843,7 +1843,7 @@
 		"name": "标中I中",
 		"desc": "消耗2标准中甲并生产0.4标准中甲I",
 		"thread_use": "assemble_thread",
-		"tags": "标准中甲I",
+		"tags": "中甲单元I",
 		"require": "g.techo_eng_conquer_2>=1",
 		"cost":{
 			"r_adv_bzzj": 1,
@@ -1870,7 +1870,7 @@
 		"name": "I重拆解",
 		"desc": "消耗1标准重甲I并生产40重甲",
 		"thread_use": "sysn_chaijie_1",
-		"tags": "标准重甲I",
+		"tags": "重甲单元I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
 		"cost":{
 			"f_heavyjia_1": 1
@@ -1896,7 +1896,7 @@
 		"name": "标重I重",
 		"desc": "消耗2标准重甲并生产0.4标准重甲I",
 		"thread_use": "assemble_thread",
-		"tags": "标准重甲I",
+		"tags": "重甲单元I",
 		"require": "g.techo_eng_conquer_2>=1",
 		"cost":{
 			"r_adv_bzhj": 1,
@@ -1923,7 +1923,7 @@
 		"name": "I浊拆解",
 		"desc": "消耗1标准污浊I并生产40污浊",
 		"thread_use": "sysn_chaijie_1",
-		"tags": "标准污浊I",
+		"tags": "污浊单元I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
 		"cost":{
 			"f_wuzhuo_1": 1
@@ -1949,7 +1949,7 @@
 		"name": "污浊I浊",
 		"desc": "消耗5污浊武器并生产0.4标准污浊I",
 		"thread_use": "assemble_thread",
-		"tags": "标准污浊I",
+		"tags": "污浊单元I",
 		"require": "g.techo_eng_conquer_2>=1",
 		"cost":{
 			"r_adv_w_sj2": 1,
@@ -1976,7 +1976,7 @@
 		"name": "I冷拆解",
 		"desc": "消耗1标准冷结I并生产40冰冻",
 		"thread_use": "sysn_chaijie_1",
-		"tags": "标准冷结I",
+		"tags": "冷结单元I",
 		"require": "g.techo_eng_conquer_1>=1 && g.jungongxue>=10",
 		"cost":{
 			"f_bingdong_1": 1
@@ -2002,7 +2002,7 @@
 		"name": "冷结I冷",
 		"desc": "消耗5冷结武器并生产0.4标准冷结I",
 		"thread_use": "assemble_thread",
-		"tags": "标准冷结I",
+		"tags": "冷结单元I",
 		"require": "g.techo_eng_conquer_2>=1",
 		"cost":{
 			"r_adv_w_sj3": 1,
@@ -2043,7 +2043,7 @@
 			{"id":"wujianbao","base_val":4,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"outp":[
-			{"id":"underworld_pin","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
+			{"id":"underworld_pin_1","base_val":1,"now_val":0,"dock_id":"","dock_val":0}
 		],
 		"mod":{
 			"assemble_thread": 1,
