@@ -26,7 +26,7 @@
 		}
 	},
 	{
-		"id": "market_buy_zero_crystal",
+		"id": "market_buy_cold_core",
 		"name": "购买冰冻核心",
 		"tags": "购买资源",
 		"desc": "",
