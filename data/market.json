@@ -26,6 +26,84 @@
 		}
 	},
 	{
+		"id": "market_buy_zero_crystal",
+		"name": "购买冰冻核心",
+		"tags": "购买资源",
+		"desc": "",
+		"require": "g.cold_3>=10",
+		"cost": {
+			"money": 200
+		},
+		"result": {
+			"cold_core": 1
+		}
+	},
+	{
+		"id": "market_buy_dirty_core",
+		"name": "购买污浊核心",
+		"tags": "购买资源",
+		"desc": "",
+		"require": "g.quchu_frs>=45",
+		"cost": {
+			"money": 300
+		},
+		"result": {
+			"dirty_core": 1
+		}
+	},
+	{
+		"id": "market_buy_tian",
+		"name": "购买钛板",
+		"tags": "购买资源",
+		"desc": "",
+		"require": "g.tian>=30 && g.human_power>=100",
+		"cost": {
+			"money": 250
+		},
+		"result": {
+			"tian": 1.5
+		}
+	},
+	{
+		"id": "market_buy_lxue",
+		"name": "购买灵血",
+		"tags": "购买资源",
+		"desc": "",
+		"require": "g.wcjg>=1",
+		"cost": {
+			"money": 450
+		},
+		"result": {
+			"lxue": 1
+		}
+	},
+	{
+		"id": "market_buy_yjdl",
+		"name": "购买亚极电缆",
+		"tags": "购买资源",
+		"desc": "",
+		"require": "g.yjdl>=50 && g.human_power>=500",
+		"cost": {
+			"money": 400
+		},
+		"result": {
+			"lxue": 1
+		}
+	},
+	{
+		"id": "market_buy_qiyiyeti",
+		"name": "购买奇异液体",
+		"tags": "购买资源",
+		"desc": "",
+		"require": "g.qiyi_1>=10",
+		"cost": {
+			"money": 1550
+		},
+		"result": {
+			"qiyiyeti": 1
+		}
+	},
+	{
 		"id": "market_sell_baibaishu",
 		"name": "出售白白鼠",
 		"tags": "市场出售",
