@@ -370,7 +370,6 @@
 					"time": 0.2
 				},
 				"result": {
-					"off_ex_c_1": 10,
 					"off_ex_c_2": 1,
 					"money": 10,
 					"ganwu": 5
@@ -403,7 +402,6 @@
 					"time": 0.2
 				},
 				"result": {
-					"off_ex_c_1": 10,
 					"off_ex_cp_2": 1,
 					"money": 10,
 					"ganwu": 5
@@ -433,7 +431,6 @@
 				},
 				"result": {
 					"off_ex_c_3": 1,
-					"off_ex_c_1": 50,
 					"money": 10,
 					"ganwu": 5
 				},
@@ -461,7 +458,6 @@
 					"time": 0.2
 				},
 				"result": {
-					"off_ex_c_1": 10,
 					"off_ex_cp_3": 1,
 					"money": 10,
 					"ganwu": 5
@@ -492,7 +488,6 @@
 				},
 				"result": {
 					"off_ex_c_4": 1,
-					"off_ex_c_1": 50,
 					"money": 10,
 					"ganwu": 5
 				},
@@ -520,7 +515,6 @@
 					"time": 0.2
 				},
 				"result": {
-					"off_ex_c_1": 10,
 					"off_ex_cp_4": 1,
 					"money": 10,
 					"ganwu": 5
