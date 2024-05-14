@@ -444,7 +444,46 @@
 		"desc": "",
 		"kind": "beast/monstrosities",
 		"rank": 3,
-		"hp": 850,
+		"hp": 1,
+		"speed": 23,
+		"tohit": 33,
+		"defense": 45,
+		"adv_death_transform":"storm_egal_1",
+		"attack": [
+			{
+				"name": "风暴",
+				"kind": "water",
+				"bonus_class": 1,
+				"dmg": "99~120",
+				"targets": "enemies"
+			},
+			{
+				"name": "风暴",
+				"kind": "water",
+				"dmg": "101~119",
+				"dot": {
+					"kind": "elect",
+					"name": "失衡",
+					"dmg": "10~17",
+					"duration": 10
+				}
+			}
+		],
+		"loot": {
+			"stromagel_cloak": "90%",
+			"shenglingshi": 10,
+			"lxue": 15,
+			"money": 500
+		}
+	},
+	{
+		"id": "storm_egal_1",
+		"name": "齐羽天禽",
+		"level": 49,
+		"desc": "",
+		"kind": "beast/monstrosities",
+		"rank": 3,
+		"hp": 1550,
 		"speed": 33,
 		"tohit": 33,
 		"defense": 50,
@@ -1035,10 +1074,10 @@
 		"desc": "见此奥秘！",
 		"kind": "aberration/hyper_geology",
 		"rank": 3,
-		"hp": 4300,
+		"hp": 3800,
 		"speed": 19,
 		"tohit": 200,
-		"defense": 800,
+		"defense": 600,
 		"attack": [
 			{
 				"name": "沉默",
@@ -1071,7 +1110,7 @@
 				"name": "沉重生轮",
 				"targets": "self",
 				"result": {
-					"hp": 67
+					"hp": 35
 				}
 			}
 		],
@@ -3448,7 +3487,7 @@
 		"rank": 1,
 		"hp": 350,
 		"tohit": 45,
-		"dodge": 33,
+		"dodge": 13,
 		"defense": 78,
 		"attack": [
 			{
