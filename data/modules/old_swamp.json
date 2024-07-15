@@ -1,19 +1,19 @@
 {
-	"module": "old_swamp",
-	"data": {
-		"events": [
-			{
-				"id": "evt_oldswamp_l1",
-				"require": "g.evt_oldswamp_1>=1",
-				"name": "远沼",
-				"desc": "贸然进入大沼非明智之举,你决定先在边缘探索一下。远沼边缘每次探险完成获得1远沼堪舆数据,10远沼堪舆数据解锁下一步"
-			},
+    "module": "old_swamp",
+    "data": {
+        "events": [
             {
-				"id": "evt_oldswamp_2",
-				"require": "g.oldswamp_data>=10",
-				"name": "远沼探明",
-				"desc": "你收集了10份远沼堪舆数据，这足以帮助你进行下一步探查了"
-			},
+                "id": "evt_oldswamp_l1",
+                "require": "g.evt_oldswamp_1>=1",
+                "name": "远沼",
+                "desc": "贸然进入大沼非明智之举,你决定先在边缘探索一下。远沼边缘每次探险完成获得1远沼堪舆数据,10远沼堪舆数据解锁下一步"
+            },
+            {
+                "id": "evt_oldswamp_2",
+                "require": "g.oldswamp_data>=10",
+                "name": "远沼探明",
+                "desc": "你收集了10份远沼堪舆数据，这足以帮助你进行下一步探查了"
+            },
             {
                 "id": "evt_oldswamp_2_1",
                 "require": "g.oldswamp_data>=10",
@@ -25,54 +25,54 @@
                 }
             },
             {
-				"id": "evt_oldswamp_3",
-				"require": "g.heiyan>=1 && g.jinshimu>=1",
-				"name": "焰与泽",
-				"desc": "黑焰在大沼",
+                "id": "evt_oldswamp_3",
+                "require": "g.heiyan>=1 && g.jinshimu>=1",
+                "name": "焰与泽",
+                "desc": "黑焰在大沼",
                 "result": {
                     "balckfire_oldswamp_1": true
                 }
-			},
+            },
             {
-				"id": "evt_oldswamp_5",
-				"require": "g.heiyan>=1 && g.hp<=20 && g.jinshimu>=1",
-				"name": "焰与血",
-				"desc": "黑焰在衰亡",
+                "id": "evt_oldswamp_5",
+                "require": "g.heiyan>=1 && g.hp<=20 && g.jinshimu>=1",
+                "name": "焰与血",
+                "desc": "黑焰在衰亡",
                 "result": {
                     "balckfire_oldswamp_2": true
                 }
-			},
+            },
             {
-				"id": "evt_oldswamp_6",
-				"require": "g.heiyan>=1 && g.ganwu<=1000 && g.jinshimu>=1",
-				"name": "焰与愚",
-				"desc": "黑焰认定人不智",
+                "id": "evt_oldswamp_6",
+                "require": "g.heiyan>=1 && g.ganwu<=1000 && g.jinshimu>=1",
+                "name": "焰与愚",
+                "desc": "黑焰认定人不智",
                 "result": {
                     "balckfire_oldswamp_3": true
                 }
-			}
-		],
-		"spells": [
-			{
-				"id": "balckfire_oldswamp_1",
-				"name": "焰与泽",
-				"level": 12,
-				"school": "真火",
-				"desc": "遗忘火曾到远沼",
-				"locked": true,
-		        "need": "g.heisezhist>=1",
-				"buy": {
+            }
+        ],
+        "spells": [
+            {
+                "id": "balckfire_oldswamp_1",
+                "name": "焰与泽",
+                "level": 12,
+                "school": "真火",
+                "desc": "遗忘火曾到远沼",
+                "locked": true,
+                "need": "g.heisezhist>=1",
+                "buy": {
                   "heli": 20,
                   "chaos": 10,
                   "alculation": 1000,
                   "heiyan": 9
-				},
-				"cost": {
+                },
+                "cost": {
                   "heli": 20,
                   "chaos": 20,
                   "alculation": 60,
                   "heiyan": 10
-				},
+                },
                 "attack": {
                     "hits": [
                         {
@@ -97,33 +97,33 @@
                         }
                     ]
                 },
-		        "flavor": "需要有【黑色置书台】家具"
+                "flavor": "需要有【黑色置书台】家具"
             },
-			{
-				"id": "balckfire_oldswamp_2",
-				"name": "焰与血",
-				"level": 12,
-				"school": "真火",
-				"desc": "判罚火曾面临熄灭",
-				"locked": true,
-		        "need": "g.heisezhist>=1",
-				"buy": {
+            {
+                "id": "balckfire_oldswamp_2",
+                "name": "焰与血",
+                "level": 12,
+                "school": "真火",
+                "desc": "判罚火曾面临熄灭",
+                "locked": true,
+                "need": "g.heisezhist>=1",
+                "buy": {
                   "jinshimu": 20,
                   "xueduhua": 20,
                   "heli": 20,
                   "chaos": 10,
                   "alculation": 1000,
                   "heiyan": 9
-				},
-				"cost": {
+                },
+                "cost": {
                   "hp": 80,
                   "alculation": 60,
                   "heiyan": 10
-				},
+                },
                 "attack": {
                     "damage": 200,
                     "kind": "fire",
-			        "targets": "enemies",
+                    "targets": "enemies",
                     "dot": {
                         "kind": "fire",
                         "name": "熄灭",
@@ -131,29 +131,29 @@
                         "damage": 10
                     }
                 },
-		        "flavor": "需要有【黑色置书台】家具"
+                "flavor": "需要有【黑色置书台】家具"
             },
             {
                 "id": "balckfire_oldswamp_3",
-				"name": "焰与愚",
-				"level": 9,
-				"school": "真火",
-				"desc": "智慧火曾遭到蒙蔽",
-				"locked": true,
-		        "need": "g.heisezhist>=1",
-				"buy": {
+                "name": "焰与愚",
+                "level": 9,
+                "school": "真火",
+                "desc": "智慧火曾遭到蒙蔽",
+                "locked": true,
+                "need": "g.heisezhist>=1",
+                "buy": {
                   "jinshimu": 20,
                   "xueduhua": 20,
                   "heli": 20,
                   "chaos": 10,
                   "alculation": 1000,
                   "heiyan": 9
-				},
-				"cost": {
+                },
+                "cost": {
                   "ganwu": 200,
                   "alculation": 60,
                   "heiyan": 10
-				},
+                },
                 "dot": {
                     "duration": 30,
                     "mod": {
@@ -162,20 +162,20 @@
                         "skill.rate": 40
                     }
                 },
-		        "flavor": "需要有【黑色置书台】家具"
+                "flavor": "需要有【黑色置书台】家具"
             }
         ],
-		"resources": [
-			{
-				"id": "oldswamp_data",
-				"name": "远沼堪舆数据",
-				"desc": "",
-				"locked": false,
-				"max": 10,
+        "resources": [
+            {
+                "id": "oldswamp_data",
+                "name": "远沼堪舆数据",
+                "desc": "",
+                "locked": false,
+                "max": 10,
                 "hide": true,
-				"group": "修行"
-			}
-		],
+                "group": "修行"
+            }
+        ],
         "herbal":[
             {
                 "id": "xueduhua",
@@ -267,12 +267,12 @@
                 "flavor": "需要1级元素混合器"
             }
         ],
-		"homes": [
-			{
-				"id": "oldswamp_home_1",
-				"name": "石厦",
-				"desc": "",
-				"require": "g.task_oldswamp_3>=10",
+        "homes": [
+            {
+                "id": "oldswamp_home_1",
+                "name": "石厦",
+                "desc": "",
+                "require": "g.task_oldswamp_3>=10",
                 "cost": {
                     "lg": 30,
                     "jls": 150,
@@ -286,19 +286,19 @@
                     "snp_data": 100,
                     "exe_paper": 100
                 },
-				"mod": {
+                "mod": {
                     "money.max": 1000,
                     "space.max": 700,
                     "skill.rate": 20,
                     "ganwu.rate":3,
                     "ganwu.max": 400
-				}
-			},
+                }
+            },
             {
-				"id": "oldswamp_home_2",
-				"name": "壤厦",
-				"desc": "",
-				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
+                "id": "oldswamp_home_2",
+                "name": "壤厦",
+                "desc": "",
+                "require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
                 "cost": {
                     "lingrang": 20,
                     "jls": 150,
@@ -310,92 +310,92 @@
                     "adv_snp_data": 10,
                     "fsbdsj": 10
                 },
-				"mod": {
+                "mod": {
                     "industry_space.max": 20,
                     "money.max": 1300,
                     "space.max": 1000,
                     "skill.rate": 50,
                     "ganwu.rate":6,
                     "ganwu.max": 700
-				}
-			}
-		],
-		"tasks": [
-			{
-				"id": "evt_oldswamp_1",
-				"name": "陷于大沼",
-				"tags":"事件,陷于大沼事件链",
-				"desc": "你察觉到远处的沼泽中有未知的存在。本事件将解锁[陷于大沼]扩展内容",
-				"verb": "启动事件链",
-				"max": 1,
-				"warn": true,
+                }
+            }
+        ],
+        "tasks": [
+            {
+                "id": "evt_oldswamp_1",
+                "name": "陷于大沼",
+                "tags":"事件,陷于大沼事件链",
+                "desc": "你察觉到远处的沼泽中有未知的存在。本事件将解锁[陷于大沼]扩展内容",
+                "verb": "启动事件链",
+                "max": 1,
+                "warn": true,
                 "require": "g.max_rs>=1",
-				"length": 600,
-				"cost": {
-					"money": 8000,
+                "length": 600,
+                "cost": {
+                    "money": 8000,
                     "heli": 40,
                     "hp": 200,
-					"ganwu": 2500
-				},
-				"run": {
-					"time": -2
-				}
-			},
+                    "ganwu": 2500
+                },
+                "run": {
+                    "time": -2
+                }
+            },
             {
-				"id": "task_oldswamp_2",
-				"name": "芥子合并",
-				"tags":"",
-				"desc": "将金石芥子和雪毒芥子进行合并",
-				"verb": "",
-				"max": 1,
-				"warn": true,
+                "id": "task_oldswamp_2",
+                "name": "芥子合并",
+                "tags":"",
+                "desc": "将金石芥子和雪毒芥子进行合并",
+                "verb": "",
+                "max": 1,
+                "warn": true,
                 "require": "g.oswamp_fur_1>=1 && g.oswamp_fur_2>=1",
-				"length": 600,
-				"cost": {
-					"money": 8000,
+                "length": 600,
+                "cost": {
+                    "money": 8000,
                     "heli": 40,
                     "jinshimu": 10,
                     "xueduhua": 10,
                     "oswamp_fur_1": 3,
-					"oswamp_fur_2": 3
-				},
-				"run": {
-					"time": -2
-				}
-			},
+                    "oswamp_fur_2": 3
+                },
+                "run": {
+                    "time": -2
+                }
+            },
             {
-				"id": "task_oldswamp_3",
-				"name": "金石木建筑",
-				"tags":"",
-				"desc": "将金石木用于大型工程建设",
-				"verb": "",
-				"max": 10,
-				"warn": true,
+                "id": "task_oldswamp_3",
+                "name": "金石木建筑",
+                "tags":"",
+                "desc": "将金石木用于大型工程建设",
+                "verb": "",
+                "max": 10,
+                "warn": true,
                 "require": "g.jinshimu>=1",
-				"length": 600,
-				"cost": {
-					"money": 5000,
+                "length": 600,
+                "cost": {
+                    "money": 5000,
                     "ganwu": 2000,
                     "snp_data": 50,
                     "jinshimu": 10,
                     "xueduhua": 10
-				},
-				"run": {
-					"time": -2
-				}
-			},
+                },
+                "run": {
+                    "time": -2
+                }
+            },
             {
-				"id": "task_oldswamp_4",
-				"name": "金石理念",
-				"tags":"",
-				"desc": "继续驻留于世",
-				"verb": "",
-				"max": 50,
-				"warn": true,
+                "id": "task_oldswamp_4",
+                "name": "金石理念",
+                "tags":"",
+                "desc": "继续驻留于世",
+                "verb": "",
+                "max": 50,
+                "warn": true,
                 "require": "g.jinshimu>=1",
-				"length": 24,
-				"cost": {
-					"money": 5000,
+                "length": 24,
+                "cost": {
+                    "money": 5000,
                     "ganwu": 2000,
                     "dirty_lingti": 10,
                     "yjswyb": 10,
@@ -404,27 +404,27 @@
                     "snp_data": 50,
                     "jinshimu": 10,
                     "xueduhua": 10
-				},
-				"run": {
-					"time": -2
-				},
+                },
+                "run": {
+                    "time": -2
+                },
                 "result": {
-                    "age.max": 2400,
-                    "age": 2400
+                    "age.max": 2900,
+                    "age": 2900
                 }
-			},
+            },
             {
-				"id": "task_oldswamp_5",
-				"name": "黑焰理念",
-				"tags":"",
-				"desc": "继续驻留于世",
-				"verb": "",
-				"max": 30,
-				"warn": true,
+                "id": "task_oldswamp_5",
+                "name": "黑焰理念",
+                "tags":"",
+                "desc": "继续驻留于世",
+                "verb": "",
+                "max": 30,
+                "warn": true,
                 "require": "g.jinshimu>=1",
-				"length": 24,
-				"cost": {
-					"money": 5000,
+                "length": 24,
+                "cost": {
+                    "money": 5000,
                     "ganwu": 2000,
                     "dirty_lingti": 10,
                     "heiyan": 20,
@@ -433,19 +433,19 @@
                     "snp_data": 50,
                     "jinshimu": 10,
                     "xueduhua": 10
-				},
-				"run": {
-					"time": -2
-				},
+                },
+                "run": {
+                    "time": -2
+                },
                 "result": {
-                    "age.max": 3000,
-                    "age": 3000
+                    "age.max": 3600,
+                    "age": 3600
                 }
-			}
-		],
-		"upgrades": [
-			{
-				"id": "oswamp_blbeast",
+            }
+        ],
+        "upgrades": [
+            {
+                "id": "oswamp_blbeast",
                 "name": "空光兽",
                 "desc": "远沼路远,需要能远行的坐骑才能抵达",
                 "require": "g.evt_oldswamp_1>=1",
@@ -468,13 +468,13 @@
                     "hp.max": -5,
                     "shuaibai.rate": -0.1
                 }
-			},
+            },
             {
                 "id": "oswamp_flont_1",
                 "slot": "front",
                 "name": "阵厦",
                 "desc": "",
-				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
+                "require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
                 "buy": {
                     "lingrang": 20,
                     "jls": 150,
@@ -499,7 +499,7 @@
                 "slot": "front",
                 "name": "序阵厦",
                 "desc": "",
-				"require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
+                "require": "g.task_oldswamp_3>=10 && g.adv_snp_data>=1",
                 "buy": {
                     "lingrang": 20,
                     "jls": 150,
@@ -520,107 +520,107 @@
                 }
             }
         ],
-		"furniture": [
-			{
-				"id": "oswamp_fur_1",
-				"name": "雪毒芥子",
-				"desc": "雪毒花改造的芥子结构",
-				"max": 5,
-				"require": "g.evt_oldswamp_2>=1",
-				"repeat": true,
-				"cost": {
-					"money": 5000,
+        "furniture": [
+            {
+                "id": "oswamp_fur_1",
+                "name": "雪毒芥子",
+                "desc": "雪毒花改造的芥子结构",
+                "max": 5,
+                "require": "g.evt_oldswamp_2>=1",
+                "repeat": true,
+                "cost": {
+                    "money": 5000,
                     "ganwu": 2500,
                     "xueduhua": 10,
                     "element_fire": 10,
                     "element_water": 20,
                     "element_wuhuan": 20,
                     "syxjz": 2
-				},
-				"mod": {
+                },
+                "mod": {
                     "syxjz.max": 1,
-					"space": 10,
-			        "extra_space": 60
-				}
-			},
+                    "space": 10,
+                    "extra_space": 60
+                }
+            },
             {
-				"id": "oswamp_fur_2",
-				"name": "金石芥子",
-				"desc": "金石木改造的芥子结构",
-				"max": 5,
-				"require": "g.evt_oldswamp_2>=1",
-				"repeat": true,
-				"cost": {
-					"money": 5000,
+                "id": "oswamp_fur_2",
+                "name": "金石芥子",
+                "desc": "金石木改造的芥子结构",
+                "max": 5,
+                "require": "g.evt_oldswamp_2>=1",
+                "repeat": true,
+                "cost": {
+                    "money": 5000,
                     "ganwu": 2500,
                     "jinshimu": 10,
                     "element_fire": 10,
                     "element_water": 20,
                     "element_wuhuan": 20,
                     "syxjz": 2
-				},
-				"mod": {
+                },
+                "mod": {
                     "syxjz.max": 1,
-					"space": 10,
-			        "extra_space": 60
-				}
-			},
+                    "space": 10,
+                    "extra_space": 60
+                }
+            },
             {
-				"id": "oswamp_fur_2_1",
-				"name": "忘芥子",
-				"desc": "金石木与雪毒花改造的芥子结构",
-				"max": 5,
-				"require": "g.task_oldswamp_2>=1",
-				"repeat": true,
-				"cost": {
-					"money": 5000,
+                "id": "oswamp_fur_2_1",
+                "name": "忘芥子",
+                "desc": "金石木与雪毒花改造的芥子结构",
+                "max": 5,
+                "require": "g.task_oldswamp_2>=1",
+                "repeat": true,
+                "cost": {
+                    "money": 5000,
                     "ganwu": 2500,
                     "xueduhua": 10,
                     "jinshimu": 10,
                     "oswamp_fur_2": 1,
                     "oswamp_fur_1": 1
-				},
-				"mod": {
-					"space": 10,
-			        "extra_space": 100
-				}
-			},
+                },
+                "mod": {
+                    "space": 10,
+                    "extra_space": 100
+                }
+            },
             {
-				"id": "oswamp_fur_3",
-				"name": "金石木容器",
-				"desc": "利用金石木来存储奇异液体",
-				"max": 10,
-				"require": "g.jinshimu>=1",
-				"repeat": true,
-				"cost": {
-					"money": 2000,
+                "id": "oswamp_fur_3",
+                "name": "金石木容器",
+                "desc": "利用金石木来存储奇异液体",
+                "max": 10,
+                "require": "g.jinshimu>=1",
+                "repeat": true,
+                "cost": {
+                    "money": 2000,
                     "ganwu": 1000,
                     "xueduhua": 2,
                     "jinshimu": 10,
                     "qiyiyeti": 10
-				},
-				"mod": {
+                },
+                "mod": {
                     "qiyiyeti.max": 4,
-					"space": 5
-				}
-			}
-		],
-		"skills": [
-		],
-		"locales": [
-			{
-				"id": "oldswamp_l1",
-				"name": "远沼边缘",
-				"desc": "位于远古盆地北方数百里的远沼边缘,每次探险完成获得1远沼堪舆数据,10远沼堪舆数据解锁下一步",
-				"require": "evt_oldswamp_l1",
-				"level": 30,
-				"dist": 1000,
-				"run": {
+                    "space": 5
+                }
+            }
+        ],
+        "skills": [
+        ],
+        "locales": [
+            {
+                "id": "oldswamp_l1",
+                "name": "远沼边缘",
+                "desc": "位于远古盆地北方数百里的远沼边缘,每次探险完成获得1远沼堪舆数据,10远沼堪舆数据解锁下一步",
+                "require": "evt_oldswamp_l1",
+                "level": 30,
+                "dist": 1000,
+                "run": {
                     "hp": 5,
-					"stamina": 2
-				},
-				"length": 35,
-				"result": {
+                    "stamina": 2
+                },
+                "length": 35,
+                "result": {
                     "xueduhua": 1,
                     "ganwu": 100,
                     "qiyiyeti": 5,
@@ -634,20 +634,20 @@
                     "enc_zero_c",
                     "enc_oswamp_xdh"
                 ]
-			},
-			{
-				"id": "oldswamp_l2",
-				"name": "远沼",
-				"desc": "位于远古盆地北方数百里的远沼",
-				"require": "evt_oldswamp_2",
-				"level": 30,
-				"dist": 1000,
-				"run": {
+            },
+            {
+                "id": "oldswamp_l2",
+                "name": "远沼",
+                "desc": "位于远古盆地北方数百里的远沼",
+                "require": "evt_oldswamp_2",
+                "level": 30,
+                "dist": 1000,
+                "run": {
                     "hp": 5,
-					"stamina": 2
-				},
-				"length": 35,
-				"result": {
+                    "stamina": 2
+                },
+                "length": 35,
+                "result": {
                     "xueduhua": 1,
                     "jinshimu": 1,
                     "ganwu": 200,
@@ -662,8 +662,8 @@
                     "enc_oswamp_jsmu",
                     "enc_oswamp_xdh"
                 ]
-			}
-		],
+            }
+        ],
         "encounters":[
             {
                 "id": "enc_oswamp_1",
@@ -724,5 +724,5 @@
                 }
             }
         ]
-	}
+    }
 }
