@@ -617,7 +617,8 @@
                 "dist": 1000,
                 "run": {
                     "hp": 5,
-                    "stamina": 2
+                    "stamina": 2,
+                    "time": -0.02
                 },
                 "length": 35,
                 "result": {
@@ -644,7 +645,8 @@
                 "dist": 1000,
                 "run": {
                     "hp": 5,
-                    "stamina": 2
+                    "stamina": 2,
+                    "time": -0.02
                 },
                 "length": 35,
                 "result": {
