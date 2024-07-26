@@ -8201,8 +8201,81 @@
 			"huge_construct_duijian_reactor_2.max":-20,
 			"huge_construct_duijian_reactor_3.max":-25,
 			"elect.rate":350,
-			"industry_elect.max": 80,
+			"industry_elect": 90,
 			"space": 2900
+		}
+	},
+	{
+		"id": "huge_construct_ittelect_1",
+		"name": "逆差灵体控制器",
+		"tags": "",
+		"desc": "构建逆差灵体阵列的必要设施，用以控制灵体的工作流程",
+		"max":10,
+		"require": "g.techo_eng_zyzz_3>=1",
+		"cost": {
+			"jlcjmk": 1,
+			"helicjdj": 1,
+			"dirty_lingti": 30,
+			"cold_core": 25,
+			"zhenzhi_spindle": 20,
+			"spare_parts": 120,
+			"yjdl": 60,
+			"ertongzhe": 1,
+			"money": 5600
+		},
+		"mod": {
+			"elect.rate":-5,
+			"space": 75
+		}
+	},
+	{
+		"id": "huge_construct_ittelect_2",
+		"name": "逆差灵体工作仓",
+		"tags": "",
+		"desc": "构建逆差灵体阵列的必要设施，作为阵列的核心区域",
+		"max":20,
+		"require": "g.techo_eng_zyzz_3>=1",
+		"cost": {
+			"jlcjmk": 5,
+			"helicjdj": 5,
+			"cold_core": 50,
+			"laser_ene": 7,
+			"cbclb": 50,
+			"spare_parts": 120,
+			"yjdl": 200,
+			"swzhi": 10,
+			"shenglingshi": 5,
+			"yisuanzi": 6,
+			"ertongzhe": 2,
+			"money": 3000
+		},
+		"mod": {
+			"space": 575
+		}
+	},
+	{
+		"id": "huge_construct_ittelect_3",
+		"name": "逆差灵体阵列",
+		"tags": "",
+		"desc": "一个建成的逆差灵体阵列，无数灵体在差极模块的作用下构建势能差，热电机组以此提供稳定的电力供应。",
+		"max":10,
+		"require": "g.techo_eng_zyzz_3>=1",
+		"cost": {
+			"huge_construct_ittelect_1": 1,
+			"huge_construct_ittelect_2": 2,
+			"yjdl": 400,
+			"ljdy": 40,
+			"gwl": 300,
+			"jls": 200,
+			"money": 11000
+		},
+		"mod": {
+			"huge_construct_ittelect_1.max": -1,
+			"huge_construct_ittelect_2.max": -2,
+			"industry_elect.max":10,
+			"industry_space.max":-2,
+			"industry_thread.max":-5,
+			"space": 1300
 		}
 	}
 ]
