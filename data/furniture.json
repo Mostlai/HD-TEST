@@ -8201,7 +8201,7 @@
 			"huge_construct_duijian_reactor_2.max":-20,
 			"huge_construct_duijian_reactor_3.max":-25,
 			"elect.rate":350,
-			"industry_elect": 90,
+			"industry_elect.max": 90,
 			"space": 2900
 		}
 	},
