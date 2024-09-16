@@ -4,6 +4,7 @@
 
 ## 简介
 筑基是由放置游戏-Arcanum重制而成，目前仍在持续开发。
+爱发电地址：https://afdian.com/a/pldada
 
 ## Wiki
 筑基拥有一个基于Tiddlywiki而成的[Wiki](https://mostlai.github.io/HD-WIKI)页面
