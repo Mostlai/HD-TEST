@@ -14,7 +14,7 @@
 		"cost": {
 			"money": 500,
 			"iron_copper":10,
-			"sj_met": 10,
+			"sj_met": 5,
 			"zero_crystal": 20,
 			"cu_iron": 15,
 			"human_power": 100
@@ -38,7 +38,7 @@
 			"r_adv_bzhj":3,
 			"money": 500,
 			"iron_copper":10,
-			"sj_met": 10,
+			"sj_met": 5,
 			"zero_crystal": 20,
 			"cu_iron": 15,
 			"human_power": 100
@@ -74,7 +74,7 @@
 		"require":"g.xiulian_bio_dirty_1>=1 && g.r_adv_w_sj1>=4",
 		"repeat": true,
 		"cost": {
-			"sj_met": 10,
+			"sj_met": 5,
 			"human_power": 300,
 			"zero_crystal": 20,
 			"cold_core": 10,
@@ -102,7 +102,7 @@
 		"require":"g.weapon_1>=1 && g.cold_core>=10",
 		"repeat": true,
 		"cost": {
-			"sj_met": 10,
+			"sj_met": 5,
 			"human_power": 300,
 			"zero_crystal": 20,
 			"books": 5,
