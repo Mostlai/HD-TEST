@@ -185,7 +185,7 @@
 		"id": "hq_3",
 		"name": "黄泉瀚海[黄泉]",
 		"desc": "无际沙漠。这里的时间流速更快,环境更危险",
-		"require": "g.evt_huangquansc>=1",
+		"require": "g.xiulian_eye_canglanyan>=1",
 		"level": 25,
 		"dist": 500,
 		"length": 40,
