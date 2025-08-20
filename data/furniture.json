@@ -1,5 +1,22 @@
 [
 	{
+		"id": "afd_catnest",
+		"name": "⭐风屿猫窝",
+		"desc": "感谢【风语·糖猫】的支持",
+		"max": 1,
+		"require": "g.time>=36500",
+		"repeat": true,
+		"cost": {
+			"money": 50，
+			"hp": 10,
+			"tili": 10,
+			"stamina":10
+		},
+		"mod": {
+			"stamina.rate": 1
+		}
+	},
+	{
 		"id": "pl_workbench",
 		"name": "工作台",
 		"desc": "一张工作台让你可以从事生产工作",
