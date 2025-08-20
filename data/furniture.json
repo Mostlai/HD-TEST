@@ -7,7 +7,7 @@
 		"require": "g.time>=36500",
 		"repeat": true,
 		"cost": {
-			"money": 50，
+			"money": 50,
 			"hp": 10,
 			"tili": 10,
 			"stamina":10
