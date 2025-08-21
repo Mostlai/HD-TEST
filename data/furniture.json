@@ -14,7 +14,8 @@
 			"stamina":10
 		},
 		"mod": {
-			"stamina.rate": 1
+			"stamina.rate": 1,
+			"space":2
 		}
 	},
 	{
