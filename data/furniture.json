@@ -4,6 +4,7 @@
 		"name": "⭐风屿猫窝",
 		"desc": "感谢【风语·糖猫】的支持",
 		"max": 1,
+		"tags": "",
 		"require": "g.time>=36500",
 		"repeat": true,
 		"cost": {
