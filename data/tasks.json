@@ -38,8 +38,7 @@
 		"verb": "",
 		"locked": true,
 		"cost": {
-			"tili": 0.9,
-			"stamina": 0.2
+			"tili": 0.9
 		},
 		"result": {
 			"money": 0.3,
